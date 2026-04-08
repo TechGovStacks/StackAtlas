@@ -15,6 +15,7 @@ export function Footer() {
 				</div>
 				<nav className="footer__links" aria-label={t('footer.navigationAria')}>
 					<a href="/settings">{t('footer.links.settings')}</a>
+					<a href="/news">{t('footer.links.news')}</a>
 					<a href="/imprint">{t('footer.links.imprint')}</a>
 					<a href="https://github.com/deleonio/accessible-d-stack-landscape" rel="noopener noreferrer">
 						{t('footer.links.github')}

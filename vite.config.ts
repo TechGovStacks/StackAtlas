@@ -1,3 +1,4 @@
+import mdx from '@mdx-js/rollup';
 import preact from '@preact/preset-vite';
 import UnoCSS from '@unocss/vite';
 import { defineConfig } from 'vite';
@@ -14,6 +15,7 @@ export default defineConfig({
 		emptyOutDir: true,
 	},
 	plugins: [
+		mdx(),
 		preact(),
 		UnoCSS(),
 		VitePWA({

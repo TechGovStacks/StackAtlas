@@ -4,6 +4,7 @@ import { Header } from './components/Header';
 import { PwaWrapper } from './components/PwaWrapper';
 import { HomePage } from './pages/HomePage';
 import { ImprintPage } from './pages/ImprintPage';
+import { NewsPage } from './pages/NewsPage';
 import { SettingsPage } from './pages/SettingsPage';
 
 type RouteProps = {
@@ -25,6 +26,13 @@ function SettingsRoute({ default: isDefault, path }: RouteProps) {
 	return <SettingsPage />;
 }
 
+function NewsRoute({ default: isDefault, path }: RouteProps) {
+	void isDefault;
+	void path;
+
+	return <NewsPage />;
+}
+
 function ImprintRoute({ default: isDefault, path }: RouteProps) {
 	void isDefault;
 	void path;
@@ -40,6 +48,8 @@ function App() {
 				<HomeRoute path="/" default />
 				<SettingsRoute path="/settings" />
 				<SettingsRoute path="/einstellungen" />
+				<NewsRoute path="/news" />
+				<NewsRoute path="/neuigkeiten" />
 				<ImprintRoute path="/imprint" />
 				<ImprintRoute path="/impressum" />
 			</Router>

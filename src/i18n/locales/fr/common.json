@@ -31,7 +31,8 @@
 			"contact": "Contact",
 			"community": "Communauté",
 			"imprint": "Mentions légales",
-			"settings": "Paramètres"
+			"settings": "Paramètres",
+			"news": "Actualités"
 		},
 		"license": "Licence : EUPL-1.2",
 		"builtWith": "Built with",
@@ -130,6 +131,18 @@
 		"settings": {
 			"description": "Gérez ici les paramètres et préférences de l’application StackAtlas.",
 			"title": "Paramètres"
+		},
+		"news": {
+			"title": "Rapports de notation & actualités communauté",
+			"description": "Ajoutez simplement de nouveaux fichiers MD/MDX datés dans `src/content/news/`. Les posts peuvent importer directement d’autres rapports markdown.",
+			"sectionAria": "Liste des actualités publiées",
+			"pushHint": "Dès qu’un nouveau score est disponible, nous publions un post MDX et pouvons envoyer des notifications push associées.",
+			"metaDate": "Publié le {{date}}",
+			"empty": "Aucune actualité publiée pour le moment.",
+			"focus": {
+				"openDataGovernance": "Focus : Open Data Governance",
+				"identityWalletInteroperability": "Focus : Identity Wallet Interoperability"
+			}
 		}
 	}
 }

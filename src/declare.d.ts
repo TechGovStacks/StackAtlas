@@ -4,6 +4,8 @@ declare module '*.png';
 declare module '*.gif';
 declare module '*.scss';
 declare module '*.css';
+declare module '*.md';
+declare module '*.mdx';
 declare module 'uno.css';
 
 interface ImportMetaEnv {
@@ -16,4 +18,5 @@ interface ImportMetaEnv {
 
 interface ImportMeta {
 	readonly env: ImportMetaEnv;
+	glob: <T = unknown>(pattern: string, options?: { eager?: boolean }) => Record<string, T>;
 }

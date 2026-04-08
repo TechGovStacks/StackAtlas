@@ -31,7 +31,8 @@
 			"contact": "Kontakt",
 			"community": "Community",
 			"imprint": "Impressum",
-			"settings": "Einstellungen"
+			"settings": "Einstellungen",
+			"news": "News"
 		},
 		"license": "Lizenz: EUPL-1.2",
 		"builtWith": "Built with",
@@ -130,6 +131,18 @@
 		"settings": {
 			"description": "Verwalte hier anwendungsbezogene Einstellungen und Präferenzen für StackAtlas.",
 			"title": "Einstellungen"
+		},
+		"news": {
+			"title": "Rating-Reports & Community-News",
+			"description": "Lege neue News einfach als datierte MD/MDX-Datei in `src/content/news/` ab. Inhalte können direkt weitere Report-Markdown-Dateien importieren.",
+			"sectionAria": "Liste der veröffentlichten News",
+			"pushHint": "Sobald ein neuer Score vorliegt, veröffentlichen wir einen MDX-Post und können darauf basierend Push-Benachrichtigungen ausspielen.",
+			"metaDate": "Veröffentlicht am {{date}}",
+			"empty": "Noch keine News veröffentlicht.",
+			"focus": {
+				"openDataGovernance": "Fokus: Open Data Governance",
+				"identityWalletInteroperability": "Fokus: Identity Wallet Interoperability"
+			}
 		}
 	}
 }

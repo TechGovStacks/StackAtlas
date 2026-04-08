@@ -31,7 +31,8 @@
 			"contact": "Contact",
 			"community": "Community",
 			"imprint": "Imprint",
-			"settings": "Settings"
+			"settings": "Settings",
+			"news": "News"
 		},
 		"license": "License: EUPL-1.2",
 		"builtWith": "Built with",
@@ -130,6 +131,18 @@
 		"settings": {
 			"description": "Manage application settings and preferences for StackAtlas here.",
 			"title": "Settings"
+		},
+		"news": {
+			"title": "Rating Reports & Community News",
+			"description": "Add new dated MD/MDX files to `src/content/news/`. News posts can directly import additional report markdown files.",
+			"sectionAria": "List of published news posts",
+			"pushHint": "As soon as a new score is available, we publish an MDX post and can trigger push notifications from it.",
+			"metaDate": "Published on {{date}}",
+			"empty": "No news posts published yet.",
+			"focus": {
+				"openDataGovernance": "Focus: Open Data Governance",
+				"identityWalletInteroperability": "Focus: Identity Wallet Interoperability"
+			}
 		}
 	}
 }
