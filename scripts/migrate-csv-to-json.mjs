@@ -141,6 +141,13 @@ function inferSovereigntyCriteria(row) {
 
 	const permissiveLicenses = ['mit', 'apache', 'bsd', 'isc', 'mpl', 'lgpl', 'gpl', 'agpl', 'eupl', 'cc0', 'public-domain', 'unlicense'];
 	const permissiveLicense = oss && permissiveLicenses.some((l) => license.includes(l));
+	const owner = (row.owner_type || row.owner || row.maintainer_type || '').toLowerCase();
+
+	let ownerType;
+	if (owner.includes('consortium') || owner.includes('konsortium')) ownerType = 'independentConsortium';
+	else if (owner.includes('corporation') || owner.includes('company') || owner.includes('enterprise') || owner.includes('konzern')) ownerType = 'corporation';
+	else if (owner.includes('community')) ownerType = 'community';
+	else if (owner.includes('one-man') || owner.includes('one man') || owner.includes('single maintainer')) ownerType = 'oneManShow';
 
 	return {
 		openSource: oss,
@@ -149,6 +156,7 @@ function inferSovereigntyCriteria(row) {
 		permissiveLicense,
 		matureProject: Boolean(maturity),
 		largeEcosystem: stars > 1000,
+		...(ownerType ? { ownerType } : {}),
 	};
 }
 

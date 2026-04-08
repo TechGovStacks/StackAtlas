@@ -25,6 +25,7 @@ export type Layer = {
 // ---------------------------------------------------------------------------
 
 export type Maturity = 'sandbox' | 'incubation' | 'graduated';
+export type OwnerType = 'independentConsortium' | 'corporation' | 'community' | 'oneManShow';
 
 export type SovereigntyCriteria = {
 	/** Open-source with publicly accessible source code (+30) */
@@ -39,6 +40,8 @@ export type SovereigntyCriteria = {
 	matureProject: boolean;
 	/** Large community ecosystem — e.g. GitHub stars > 1 000 (+5) */
 	largeEcosystem: boolean;
+	/** Ownership model of the project (+0 to +20) */
+	ownerType?: OwnerType;
 };
 
 export type Item = {
@@ -54,6 +57,7 @@ export type Item = {
 	oss: boolean;
 	maturity?: Maturity;
 	sovereigntyCriteria: SovereigntyCriteria;
+	sovereigntyScore?: number;
 	github?: {
 		repo?: string;
 		stars?: number;

@@ -98,7 +98,15 @@
 			"hasAudit": "Audit de sécurité disponible",
 			"permissiveLicense": "Licence permissive ou copyleft",
 			"matureProject": "Projet mature (diplômé/stable)",
-			"largeEcosystem": "Grand écosystème communautaire"
+			"largeEcosystem": "Grand écosystème communautaire",
+			"ownerType": "Modèle d’owner : {{owner}} (+{{points}})"
+		},
+		"ownerType": {
+			"independentConsortium": "Consortium indépendant",
+			"corporation": "Grand groupe",
+			"community": "Communauté",
+			"oneManShow": "One-man show",
+			"unknown": "Non renseigné"
 		}
 	},
 	"pwa": {

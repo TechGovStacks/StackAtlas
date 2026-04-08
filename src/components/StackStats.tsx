@@ -19,7 +19,7 @@ const ROLE_COLORS: Record<ParticipantRole, string> = {
 export function StackStats({ stack, items, stackItemMap }: StackStatsProps) {
 	const { i18n, t } = useTranslation();
 
-	const scores = items.map((item) => computeSovereigntyScore(item.sovereigntyCriteria));
+	const scores = items.map((item) => item.sovereigntyScore ?? computeSovereigntyScore(item.sovereigntyCriteria));
 	const avgScore = scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0;
 	const avgColor = avgScore >= 70 ? '#2e7d32' : avgScore >= 40 ? '#f57c00' : '#c62828';
 
