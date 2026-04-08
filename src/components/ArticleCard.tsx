@@ -190,9 +190,11 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 											{t(`article.criteria.${key}`)}
 										</li>
 									))}
-									<li className={`drawer-criteria-item drawer-criteria-item--${selectedArticle.sovereigntyCriteria.ownerType ? 'yes' : 'no'}`}>
+									<li
+										className={`drawer-criteria-item drawer-criteria-item--${computeOwnerScore(selectedArticle.sovereigntyCriteria.ownerType) > 0 ? 'yes' : 'no'}`}
+									>
 										<span className="drawer-criteria-icon" aria-hidden="true">
-											{selectedArticle.sovereigntyCriteria.ownerType ? '✓' : '✗'}
+											{computeOwnerScore(selectedArticle.sovereigntyCriteria.ownerType) > 0 ? '✓' : '✗'}
 										</span>
 										{t('article.criteria.ownerType', {
 											owner: selectedArticle.sovereigntyCriteria.ownerType
