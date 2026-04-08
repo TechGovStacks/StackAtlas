@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { ITEMS, LAYERS } from '../data/catalog';
 import { Item, ParticipantRole, StackItem } from '../types';
 import { getLocalizedText } from '../utils';
-import { computeSovereigntyScore } from '../utils/sovereigntyScore';
+import { computeOwnerScore, computeSovereigntyScore } from '../utils/sovereigntyScore';
 
 type ViewMode = 'tile' | 'list';
 
@@ -45,7 +45,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 
 	const score = computeSovereigntyScore(article.sovereigntyCriteria);
 	const selectedScore = computeSovereigntyScore(selectedArticle.sovereigntyCriteria);
-	const criteriaKeys = Object.keys(article.sovereigntyCriteria) as Array<keyof typeof article.sovereigntyCriteria>;
+	const criteriaKeys = (Object.keys(article.sovereigntyCriteria) as Array<keyof typeof article.sovereigntyCriteria>).filter((key) => key !== 'ownerType');
 
 	const renderArticleLogo = (logo: string | undefined, localizedName: string, large = false) => {
 		if (!logo) {
@@ -190,6 +190,17 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 											{t(`article.criteria.${key}`)}
 										</li>
 									))}
+									<li className={`drawer-criteria-item drawer-criteria-item--${selectedArticle.sovereigntyCriteria.ownerType ? 'yes' : 'no'}`}>
+										<span className="drawer-criteria-icon" aria-hidden="true">
+											{selectedArticle.sovereigntyCriteria.ownerType ? '✓' : '✗'}
+										</span>
+										{t('article.criteria.ownerType', {
+											owner: selectedArticle.sovereigntyCriteria.ownerType
+												? t(`article.ownerType.${selectedArticle.sovereigntyCriteria.ownerType}`)
+												: t('article.ownerType.unknown'),
+											points: computeOwnerScore(selectedArticle.sovereigntyCriteria.ownerType),
+										})}
+									</li>
 								</ul>
 								{stackItem?.rationale && (
 									<div className="drawer-rationale">
