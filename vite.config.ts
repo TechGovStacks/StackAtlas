@@ -15,9 +15,7 @@ export default defineConfig({
 		emptyOutDir: true,
 	},
 	plugins: [
-		mdx({
-			providerImportSource: '@mdx-js/preact',
-		}),
+		mdx(),
 		preact(),
 		UnoCSS(),
 		VitePWA({
