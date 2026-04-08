@@ -138,7 +138,11 @@
 			"sectionAria": "List of published news posts",
 			"pushHint": "As soon as a new score is available, we publish an MDX post and can trigger push notifications from it.",
 			"metaDate": "Published on {{date}}",
-			"empty": "No news posts published yet."
+			"empty": "No news posts published yet.",
+			"focus": {
+				"openDataGovernance": "Focus: Open Data Governance",
+				"identityWalletInteroperability": "Focus: Identity Wallet Interoperability"
+			}
 		}
 	}
 }

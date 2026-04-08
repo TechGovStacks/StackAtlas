@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 type NewsModule = {
 	default: ComponentType;
 	metadata?: {
+		focus: string | undefined;
 		title?: string;
 		summary?: string;
 	};
@@ -14,6 +15,7 @@ type NewsModule = {
 type NewsEntry = {
 	Content: ComponentType;
 	date: string;
+	focus: string | undefined;
 	slug: string;
 	summary: string;
 	title: string;
@@ -22,6 +24,16 @@ type NewsEntry = {
 const modules = import.meta.glob('../content/news/*.{md,mdx}', {
 	eager: true,
 }) as Record<string, NewsModule>;
+
+function parseLocalIsoDate(value: string): Date {
+	const [year, month, day] = value.split('-').map(Number);
+
+	if (!year || !month || !day) {
+		return new Date(value);
+	}
+
+	return new Date(year, month - 1, day);
+}
 
 function normalizeEntries(): NewsEntry[] {
 	return Object.entries(modules)
@@ -38,12 +50,13 @@ function normalizeEntries(): NewsEntry[] {
 			return {
 				Content: module.default,
 				date,
+				focus: module.metadata?.focus,
 				slug,
 				summary: module.metadata?.summary ?? slug,
 				title: module.metadata?.title ?? slug,
 			};
 		})
-		.filter((entry): entry is NewsEntry => entry !== null)
+		.filter((entry): entry is NonNullable<typeof entry> => entry !== null)
 		.sort((a, b) => b.date.localeCompare(a.date));
 }
 
@@ -64,15 +77,15 @@ export function NewsPage() {
 
 				<div className="news-page__reports">
 					{entries.map((entry) => {
-						const publishedDate = dateFormatter.format(new Date(entry.date));
+						const publishedDate = dateFormatter.format(parseLocalIsoDate(entry.date));
 						const Content = entry.Content;
 
 						return (
 							<KolCard _label={entry.title} className="news-report-card" key={entry.slug}>
 								<div className="news-report-card__meta">
 									<span>{t('pages.news.metaDate', { date: publishedDate })}</span>
+									{entry.focus && <span>{t(`pages.news.focus.${entry.focus}`, { defaultValue: entry.focus })}</span>}
 								</div>
-								<h3>{entry.title}</h3>
 								<p>{entry.summary}</p>
 								<div className="news-report-card__content">
 									<Content />

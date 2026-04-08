@@ -138,7 +138,11 @@
 			"sectionAria": "Liste des actualités publiées",
 			"pushHint": "Dès qu’un nouveau score est disponible, nous publions un post MDX et pouvons envoyer des notifications push associées.",
 			"metaDate": "Publié le {{date}}",
-			"empty": "Aucune actualité publiée pour le moment."
+			"empty": "Aucune actualité publiée pour le moment.",
+			"focus": {
+				"openDataGovernance": "Focus : Open Data Governance",
+				"identityWalletInteroperability": "Focus : Identity Wallet Interoperability"
+			}
 		}
 	}
 }
