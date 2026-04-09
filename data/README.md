@@ -45,7 +45,7 @@ pnpm validate-schemas
 
 Die strukturelle Datenseite ist hier kanonisch. Inhaltliche Bewertungslogik ist kanonisch in:
 
-- `docs/scoring/sovereignty-scoring-model.md`
+- `docs/KONSOLIDIERTE_DOKU.md`
 
 ## Detaildokumente
 
