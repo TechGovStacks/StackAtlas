@@ -1,3 +1,12 @@
+---
+status: archived
+owner: Documentation Maintainers
+last_reviewed: 2026-04-09
+source_of_truth: docs/KONSOLIDIERTE_DOKU.md
+---
+
+> Archivhinweis: Dieses Dokument ist historisch und nicht normativ.
+
 # Landscape2-ähnliche Übersichtsseite | UI/UX Design Plan MVP
 
 ## KoliBri + KERN-Theme Integration

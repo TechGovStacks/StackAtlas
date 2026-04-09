@@ -1,65 +1,24 @@
-# data/layers/ — Splash-Stack-Layer
+---
+status: active
+owner: Data Engineering
+last_reviewed: 2026-04-09
+source_of_truth: data/README.md
+---
 
-Definiert die 5 konzeptionellen Ebenen des digitalen Stacks.
+# data/layers/
 
-## Übersicht
+Detaildokument fuer Layer-Dateien. Kanonische Gesamtquelle bleibt `data/README.md`.
 
-Die accessible-d-stack teilt die digitale Souveränität in 5 Schichten auf:
+## Verbindliche Layer-IDs
 
-| Layer                  | ID                    | Order | Beschreibung                                        |
-| ---------------------- | --------------------- | ----- | --------------------------------------------------- |
-| 1️⃣ Infrastructure      | `infrastructure`      | 1     | Cloud-Infrastruktur, Container, Virtualisierung     |
-| 2️⃣ Platform            | `platform`            | 2     | Plattformen & Middleware, KI, Integrationsschichten |
-| 3️⃣ Building Blocks     | `building-blocks`     | 3     | Kern-Komponenten, Datenbanken, Cache, Message Queue |
-| 4️⃣ Applications        | `applications`        | 4     | Business-Anwendungen, Dienste, Module               |
-| 5️⃣ Sovereign Standards | `sovereign-standards` | 5     | Standards, Best Practices, Governance               |
-
-## Dateistruktur
-
-```json
-{
-	"id": "infrastructure",
-	"order": 1,
-	"name": { "de": "Infrastruktur", "en": "Infrastructure" },
-	"description": { "de": "...", "en": "..." },
-	"color": "#1a56a0"
-}
-```
-
-### Felder
-
-- `id` (string): Eindeutige ID (lowercase, kebab-case)
-- `order` (integer): Display-Reihenfolge (1–5)
-- `name` (object): Lokalisierte Namen (de, en, optional fr)
-- `description` (object): Lokalisierte Beschreibungen
-- `color` (string): Hex-Farbe für das UI
-
-## Dateien
-
-- `infrastructure.json` — Layer 1 (Cloud & Container)
-- `platform.json` — Layer 2 (Middleware & Frameworks)
-- `building-blocks.json` — Layer 3 (Components & Services)
-- `applications.json` — Layer 4 (Business Apps)
-- `sovereign-standards.json` — Layer 5 (Standards & Governance)
+1. `infrastructure`
+2. `platform`
+3. `building-blocks`
+4. `applications`
+5. `sovereign-standards`
 
 ## Validierung
 
 ```bash
 pnpm validate-schemas
 ```
-
-→ Validiert gegen `data/schemas/layer.schema.json`
-
-## Änderungen
-
-Layer sollten **nicht** gelöscht oder umbenannt werden, da sie das Konzept-Fundament sind.
-Erlaubte Änderungen:
-
-- ✅ Farben aktualisieren
-- ✅ Beschreibungen übersetzen/aktualisieren
-- ✅ Reihenfolge anpassen
-- ❌ IDs ändern (würde zu Break führen)
-
-## Schema
-
-Siehe [data/schemas/layer.schema.json](../schemas/layer.schema.json)

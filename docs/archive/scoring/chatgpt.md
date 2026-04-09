@@ -1,3 +1,12 @@
+---
+status: archived
+owner: Documentation Maintainers
+last_reviewed: 2026-04-09
+source_of_truth: docs/KONSOLIDIERTE_DOKU.md
+---
+
+> Archivhinweis: Dieses Dokument ist historisch und nicht normativ.
+
 Gut — jetzt gehen wir von der Vision zu etwas wirklich Baubarem.
 Du willst keinen Länder-Score direkt bauen, sondern zuerst:
 

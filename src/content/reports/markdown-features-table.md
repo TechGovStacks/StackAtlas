@@ -9,7 +9,7 @@
 | Code-Blöcke     |   ✅   | Mit Syntax-Highlighting                 |
 | Blockquotes     |   ✅   | Einzeilig oder Multi-Line               |
 | Tabellen        |   ✅   | **EMPFEHLUNG:** Externe `.md`-Datei     |
-| Links           |   ✅   | `[text](url)` und inline HTML           |
+| Links           |   ✅   | ``[text](https://example.com)`` und inline HTML |
 | Bilder          |   ✅   | Remote & lokale Pfade                   |
 | HTML-Tags       |   ✅   | `<div>`, `<span>` etc. erlaubt          |
 | Emojis          |   ✅   | Direkt als Unicode                      |

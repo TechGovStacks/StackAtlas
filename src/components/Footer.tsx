@@ -43,11 +43,11 @@ export function Footer() {
 				<div className="footer__meta-inner flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
 					<p className="footer__copy">
 						© {year} StackAtlas · Lizenz: EUPL-1.2 · Built with{' '}
-						<a href="https://www.public-ui.de/" rel="noopener noreferrer" className="footer__copy-link underline">
+						<a href="https://public-ui.github.io/en/" rel="noopener noreferrer" className="footer__copy-link underline">
 							KoliBri
 						</a>
 						, {t('footer.and')}{' '}
-						<a href="https://www.kern-ux.com/" rel="noopener noreferrer" className="footer__copy-link underline">
+						<a href="https://designsystem.gov.de/" rel="noopener noreferrer" className="footer__copy-link underline">
 							KERN-UX
 						</a>
 					</p>
