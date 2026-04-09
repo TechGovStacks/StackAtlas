@@ -26,7 +26,7 @@ export function HomePage() {
 	const { filters, setFilters, filtered } = useFilters(baseItems);
 
 	return (
-		<main id="main-content" className="w-full">
+		<main id="main-content">
 			<FilterBar
 				filters={filters}
 				onFilterChange={setFilters}
