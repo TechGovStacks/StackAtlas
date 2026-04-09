@@ -43,8 +43,8 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 			candidate.layer === selectedArticle.layer && candidate.id !== selectedArticle.id && (stackItemMap === undefined || stackItemMap.has(candidate.id)),
 	).sort((a, b) => getLocalizedText(a.name, i18n.language).localeCompare(getLocalizedText(b.name, i18n.language), i18n.language));
 
-	const score = article.sovereigntyScore ?? computeSovereigntyScore(article.sovereigntyCriteria);
-	const selectedScore = selectedArticle.sovereigntyScore ?? computeSovereigntyScore(selectedArticle.sovereigntyCriteria);
+	const score = computeSovereigntyScore(article.sovereigntyCriteria);
+	const selectedScore = computeSovereigntyScore(selectedArticle.sovereigntyCriteria);
 	const criteriaKeys = (Object.keys(article.sovereigntyCriteria) as Array<keyof typeof article.sovereigntyCriteria>).filter((key) => key !== 'ownerType');
 
 	const renderArticleLogo = (logo: string | undefined, localizedName: string, large = false) => {

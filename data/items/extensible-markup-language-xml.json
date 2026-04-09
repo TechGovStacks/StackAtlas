@@ -9,9 +9,7 @@
 	},
 	"homepage": "https://www.w3.org/XML/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/XML_Logo.svg",
-	"tags": [
-		"datenformat"
-	],
+	"tags": ["datenformat"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -20,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "independentConsortium"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

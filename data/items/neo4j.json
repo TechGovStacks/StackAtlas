@@ -9,11 +9,7 @@
 	},
 	"homepage": "https://neo4j.com/",
 	"logo": "https://dist.neo4j.com/wp-content/uploads/20230926084108/Logo_FullColor_RGB_TransBG.svg",
-	"tags": [
-		"nosql",
-		"datenbank",
-		"graph"
-	],
+	"tags": ["nosql", "datenbank", "graph"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -22,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "corporation"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

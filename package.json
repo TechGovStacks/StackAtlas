@@ -3,6 +3,7 @@
 	"version": "0.0.0",
 	"type": "module",
 	"scripts": {
+		"assign-owner-types": "node scripts/assign-owner-types.mjs",
 		"build": "tsc && vite build",
 		"cap:add:android": "cap add android",
 		"cap:add:ios": "cap add ios",

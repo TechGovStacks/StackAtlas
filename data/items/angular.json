@@ -9,10 +9,7 @@
 	},
 	"homepage": "https://angular.dev/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Angular_full_color_logo.svg",
-	"tags": [
-		"webframework",
-		"user-interface"
-	],
+	"tags": ["webframework", "user-interface"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -21,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "corporation"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

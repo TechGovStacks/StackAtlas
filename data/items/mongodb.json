@@ -9,11 +9,7 @@
 	},
 	"homepage": "https://www.mongodb.com/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/MongoDB_Logo.svg",
-	"tags": [
-		"nosql",
-		"datenbank",
-		"dokumentenbasiert"
-	],
+	"tags": ["nosql", "datenbank", "dokumentenbasiert"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -22,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "corporation"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

@@ -9,11 +9,7 @@
 	},
 	"homepage": "https://couchdb.apache.org/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/CouchDB_logo.svg",
-	"tags": [
-		"nosql",
-		"datenbank",
-		"dokumentenbasiert"
-	],
+	"tags": ["nosql", "datenbank", "dokumentenbasiert"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -22,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "community"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

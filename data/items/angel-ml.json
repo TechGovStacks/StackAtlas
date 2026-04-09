@@ -8,11 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://angelml.ai",
-	"tags": [
-		"machine-learning",
-		"verarbeitung",
-		"ml"
-	],
+	"tags": ["machine-learning", "verarbeitung", "ml"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -21,7 +17,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "corporation"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

@@ -9,11 +9,7 @@
 	},
 	"homepage": "https://qdrant.tech/",
 	"logo": "https://qdrant.tech/images/qdrant-logo.svg",
-	"tags": [
-		"datenbank",
-		"container",
-		"vektor"
-	],
+	"tags": ["datenbank", "container", "vektor"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -22,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "corporation"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

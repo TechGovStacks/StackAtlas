@@ -40,7 +40,7 @@ export type SovereigntyCriteria = {
 	matureProject: boolean;
 	/** Large community ecosystem — e.g. GitHub stars > 1 000 (+5) */
 	largeEcosystem: boolean;
-	/** Ownership model of the project (+0 to +20) */
+	/** Ownership model of the project (+0 to +15); if missing score is capped at 60 */
 	ownerType?: OwnerType;
 };
 

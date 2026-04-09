@@ -8,12 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.oix.org/standards-and-certifications/ixp-oix-1-certification/",
-	"tags": [
-		"netz",
-		"netzwerk",
-		"internet-exchange-point",
-		"ixp"
-	],
+	"tags": ["netz", "netzwerk", "internet-exchange-point", "ixp"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -22,7 +17,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "independentConsortium"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

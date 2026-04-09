@@ -32,3 +32,20 @@ Detaildokument fuer Item-Dateien. Kanonische Gesamtquelle bleibt `data/README.md
 ```bash
 pnpm validate-schemas
 ```
+
+## Ownership-Metrik (`sovereigntyCriteria.ownerType`)
+
+Fuer jedes Item wird verpflichtend ein Ownership-Typ gepflegt, damit die Souveraenitaetsbewertung konsistent bleibt.
+
+- `independentConsortium`: neutrale Standardisierungsgremien, Foundations oder Multi-Stakeholder-Governance
+- `community`: offene Community-getriebene Projekte ohne dominante Einzelanbieter-Steuerung
+- `corporation`: primaer von einem Unternehmen gesteuerte Roadmap/Steuerung
+- `oneManShow`: im Wesentlichen durch einzelne Maintainer verantwortet
+
+Hinweis zur Bewertung: Fehlt `ownerType`, wird der Gesamt-Score aktuell auf 60 gedeckelt. Deshalb sollen neue Items immer mit `ownerType` angelegt werden.
+
+Automatisierte Herleitung und Pflege fuer alle Items:
+
+```bash
+pnpm assign-owner-types
+```

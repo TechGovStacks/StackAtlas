@@ -9,10 +9,7 @@
 	},
 	"homepage": "https://developer.hashicorp.com/nomad",
 	"logo": "https://www.datocms-assets.com/2885/1620155116-brandhcnomadprimaryattributedcolor.svg",
-	"tags": [
-		"orchestrierung",
-		"container"
-	],
+	"tags": ["orchestrierung", "container"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -21,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "corporation"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

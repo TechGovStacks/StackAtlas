@@ -91,6 +91,11 @@
 				"largeEcosystem": {
 					"type": "boolean",
 					"description": "Large community ecosystem — e.g., GitHub stars > 1000 (+5 points)"
+				},
+				"ownerType": {
+					"type": "string",
+					"description": "Ownership model (+0 to +15 points); if missing, total score is capped at 60",
+					"enum": ["independentConsortium", "corporation", "community", "oneManShow"]
 				}
 			}
 		},

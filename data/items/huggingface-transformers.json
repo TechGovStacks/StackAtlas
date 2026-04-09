@@ -9,12 +9,7 @@
 	},
 	"homepage": "https://huggingface.co/docs/transformers/index",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/HuggingFace_logo.svg",
-	"tags": [
-		"deep-learning",
-		"dl",
-		"transformer",
-		"verarbeitung"
-	],
+	"tags": ["deep-learning", "dl", "transformer", "verarbeitung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -23,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "corporation"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

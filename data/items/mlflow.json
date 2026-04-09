@@ -9,10 +9,7 @@
 	},
 	"homepage": "https://mlflow.org/",
 	"logo": "https://raw.githubusercontent.com/mlflow/mlflow/master/docs/source/_static/MLflow-logo-final-black.png",
-	"tags": [
-		"machine-learning",
-		"verarbeitung"
-	],
+	"tags": ["machine-learning", "verarbeitung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -21,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "independentConsortium"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

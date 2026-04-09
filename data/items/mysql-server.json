@@ -9,11 +9,7 @@
 	},
 	"homepage": "https://www.mysql.com/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/MySQL_logo.svg",
-	"tags": [
-		"datenbank",
-		"sql",
-		"relational"
-	],
+	"tags": ["datenbank", "sql", "relational"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -22,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "corporation"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

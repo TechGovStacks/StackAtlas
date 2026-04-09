@@ -9,12 +9,7 @@
 	},
 	"homepage": "https://www.tensorflow.org/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/TensorFlow_logo.svg",
-	"tags": [
-		"machine-learning",
-		"inferenz",
-		"verarbeitung",
-		"training"
-	],
+	"tags": ["machine-learning", "inferenz", "verarbeitung", "training"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -23,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "community"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

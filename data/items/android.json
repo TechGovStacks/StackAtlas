@@ -9,11 +9,7 @@
 	},
 	"homepage": "https://www.android.com/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Android_robot_2023.svg",
-	"tags": [
-		"mobil",
-		"app",
-		"betriebssystem"
-	],
+	"tags": ["mobil", "app", "betriebssystem"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -22,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "corporation"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",
