@@ -1,3 +1,12 @@
+---
+status: archived
+owner: Documentation Maintainers
+last_reviewed: 2026-04-09
+source_of_truth: docs/DOCS_HUB.md
+---
+
+> Archivhinweis: Dieses Dokument ist historisch und nicht normativ.
+
 # **Evaluierungskonzept für item-spezifische Souveränitätsscores – Version 2.0**
 
 *Stand: 08.04.2026*

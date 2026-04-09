@@ -1,106 +1,57 @@
-# Stack-Layer-Zuordnung (Vorgaben)
+---
+status: active
+owner: Data Governance
+last_reviewed: 2026-04-09
+source_of_truth: data/README.md
+---
 
-Diese Zuordnungstabelle ist die **autoritative Referenz** für die Einordnung von Technologien im Sovereign Stack.
-Sie wird kontinuierlich weiterentwickelt und muss mit den Daten in `data/layers/` und `data/items/` übereinstimmen.
+# Stack-Layer-Zuordnung
 
-## Ziel
+Detailreferenz fuer Layer- und Sublayer-Zuordnung. Terminologie ist mit `data/README.md` und den JSON-Schemas synchron.
 
-- Einheitliche Sprache für Architektur-, Produkt- und Plattformdiskussionen
-- Klare Zuordnung jeder Technologie zu einem Layer und einem Sublayer (Bereich)
-- Bessere Entscheidungsgrundlagen für Einführung, Ablösung und Standardisierung
+## Pflichtfelder fuer neue Items
 
-## Pflichtschema für neue Technologien
+1. `layer` (eine gueltige Layer-ID)
+2. `sublayer` (ein gueltiger Bereich innerhalb des Layers)
+3. `description.de` (fachliche Einordnung)
 
-Jede neu aufgenommene Technologie muss die folgenden Felder erhalten:
+## Layer-IDs (verbindlich)
 
-1. **Layer** (einer der 5 definierten Layer-IDs)
-2. **Sublayer** (einer der definierten Bereiche innerhalb des Layers)
-3. **Primäre Aufgabe** (Freitext)
+| Order | Layer-ID | Name (DE) |
+| ---: | --- | --- |
+| 1 | `infrastructure` | Infrastruktur |
+| 2 | `platform` | Plattform |
+| 3 | `building-blocks` | Bausteine |
+| 4 | `applications` | Anwendungen |
+| 5 | `sovereign-standards` | Souveraenitaetsstandards |
 
-Optional:
+## Sublayer-Bereiche
 
-- Reifegrad (`sandbox`, `incubation`, `graduated`)
-- Owner-Team
-- Alternativen
+### Infrastructure
+- `anschluss`
+- `transport`
+- `verteilung`
 
-## 5-Layer-Modell
+### Platform
+- `daten`
+- `integration`
+- `ki`
+- `lowcode`
 
-| Order | Layer-ID              | Name (DE)              | Name (EN)           | Farbe     |
-| :---: | :-------------------- | :--------------------- | :------------------ | :-------- |
-|   1   | `infrastructure`      | Infrastruktur          | Infrastructure      | `#c5192d` |
-|   2   | `platform`            | Plattform              | Platform            | `#1a56a0` |
-|   3   | `building-blocks`     | Bausteine              | Building Blocks     | `#00883d` |
-|   4   | `applications`        | Anwendungen            | Applications        | `#f39c12` |
-|   5   | `sovereign-standards` | Souveränitätsstandards | Sovereign Standards | `#e8e8e8` |
+### Building Blocks
+- `entwicklung`
+- `inbetriebnahme`
+- `sicherheit`
 
-## Sublayer-Zuordnung
+### Applications
+- `browser`
+- `native-apps`
 
-### 1. Infrastructure (27 Items)
+### Sovereign Standards
+- `ux`
+- `kommunikation`
+- `ki-souveraen`
 
-| Sublayer-ID  | Bereich (DE)              | Primäre Aufgabe                                  | Typische Beispiele                        |
-| :----------- | :------------------------ | :----------------------------------------------- | :---------------------------------------- |
-| `anschluss`  | Anschluss & Konnektivität | Physische und drahtlose Verbindungstechnologien  | Bluetooth, Glasfaser, Mobilfunk, WiFi     |
-| `transport`  | Transport & Protokolle    | Datenübertragung und Transportschicht-Protokolle | HTTP, TLS, TCP, UDP, QUIC, IPv6, JWT      |
-| `verteilung` | Verteilung & Routing      | Netzwerk-Routing, DNS und Verteilungsmechanismen | BGP, DNS, DHCP, IPSec, OSPF, MPLS, SD-WAN |
+## Hinweis
 
-### 2. Platform (60 Items)
-
-| Sublayer-ID   | Bereich (DE)                 | Primäre Aufgabe                                   | Typische Beispiele                          |
-| :------------ | :--------------------------- | :------------------------------------------------ | :------------------------------------------ |
-| `daten`       | Daten & Persistenz           | Datenhaltung, -formate und -kataloge              | PostgreSQL, MongoDB, MariaDB, Neo4j, CKAN   |
-| `integration` | Integration & Orchestrierung | Container, Service Mesh, API-Gateways, Ingress    | Kubernetes, Docker Swarm, Istio, Kong, REST |
-| `ki`          | Künstliche Intelligenz       | ML-Frameworks, Agenten-Protokolle und KI-Tooling  | PyTorch, TensorFlow, Huggingface, MCP       |
-| `lowcode`     | Low Code & Automatisierung   | Visuelle Entwicklung und Workflow-Automatisierung | N8N, Node-Red, Appsmith, Budibase           |
-
-### 3. Building Blocks (37 Items)
-
-| Sublayer-ID      | Bereich (DE)              | Primäre Aufgabe                                   | Typische Beispiele                       |
-| :--------------- | :------------------------ | :------------------------------------------------ | :--------------------------------------- |
-| `entwicklung`    | Entwicklung & Sprachen    | Programmiersprachen, Frameworks und UI-Toolkits   | TypeScript, Java, Python, React, Angular |
-| `inbetriebnahme` | Inbetriebnahme & CI/CD    | Build-, Test- und Deploy-Pipelines                | GitLab, GitHub Actions, Jenkins, Flux    |
-| `sicherheit`     | Sicherheit & Kryptografie | Verschlüsselung, Authentifizierung, Autorisierung | AES, RSA, OIDC, OAuth, Kerberos          |
-
-### 4. Applications (5 Items)
-
-| Sublayer-ID   | Bereich (DE)       | Primäre Aufgabe                        | Typische Beispiele   |
-| :------------ | :----------------- | :------------------------------------- | :------------------- |
-| `browser`     | Browser-Engines    | Web-Rendering und Browser-Technologien | Blink, Gecko, WebKit |
-| `native-apps` | Native Plattformen | Mobile und Desktop-Betriebssysteme     | Android, iOS         |
-
-### 5. Sovereign Standards (0 Items)
-
-| Sublayer-ID     | Bereich (DE)            | Primäre Aufgabe                                      | Typische Beispiele |
-| :-------------- | :---------------------- | :--------------------------------------------------- | :----------------- |
-| `ux`            | Design Systems & UX     | Barrierefreie, wiederverwendbare UI-Bausteine        | KoliBri, KERN-UX   |
-| `kommunikation` | Souveräne Kommunikation | Sichere, vertrauenswürdige Kommunikationsplattformen | BundesMessenger    |
-| `ki-souveraen`  | Souveräne KI            | KI-Modelle und -Dienste unter eigener Hoheit         | F13, Aleph Alpha   |
-
-> **Hinweis:** Der Layer `sovereign-standards` enthält aktuell noch keine Items in den Datendateien.
-> Die Sublayer sind als Vorschlag definiert und sollten befüllt werden.
-
-## Übersicht aller Sublayer
-
-| Layer                 | Sublayer-ID      |   Items |
-| :-------------------- | :--------------- | ------: |
-| `infrastructure`      | `anschluss`      |       4 |
-| `infrastructure`      | `transport`      |      12 |
-| `infrastructure`      | `verteilung`     |      11 |
-| `platform`            | `daten`          |      22 |
-| `platform`            | `integration`    |      18 |
-| `platform`            | `ki`             |      18 |
-| `platform`            | `lowcode`        |       5 |
-| `building-blocks`     | `entwicklung`    |      16 |
-| `building-blocks`     | `inbetriebnahme` |       7 |
-| `building-blocks`     | `sicherheit`     |       8 |
-| `applications`        | `browser`        |       3 |
-| `applications`        | `native-apps`    |       2 |
-| `sovereign-standards` | –                |       0 |
-| **Gesamt**            |                  | **126** |
-
-## Arbeitsmodus
-
-- Änderungen als PR mit kurzer Begründung
-- Neue Technologien einer bestehenden Sublayer-ID zuordnen; neue Sublayer nur nach Abstimmung
-- Pro Technologie nur **eine primäre** Zuordnung (Layer + Sublayer)
-- Quartalsweise Review der Einordnung und des Reifegrads
-- Dieses Dokument und die JSON-Dateien in `data/` müssen synchron gehalten werden
+`docs/STACK_LAYER_BEREICHE.md` ist Detailreferenz; die kanonische Datenquelle bleibt `data/README.md`.

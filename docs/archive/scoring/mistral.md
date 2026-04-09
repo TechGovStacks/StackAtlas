@@ -1,3 +1,12 @@
+---
+status: archived
+owner: Documentation Maintainers
+last_reviewed: 2026-04-09
+source_of_truth: docs/DOCS_HUB.md
+---
+
+> Archivhinweis: Dieses Dokument ist historisch und nicht normativ.
+
 Hier ist das **präzise Konzept für einen Souveränitäts-Score** – fokussiert auf **Technologien, Frameworks, Bibliotheken, Abhängigkeiten und digitale Projekte/Standards**, basierend auf **inneren Kompetenzen und Stack-Integration**:
 
 ---

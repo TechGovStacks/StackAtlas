@@ -1,3 +1,12 @@
+---
+status: archived
+owner: Documentation Maintainers
+last_reviewed: 2026-04-09
+source_of_truth: docs/DOCS_HUB.md
+---
+
+> Archivhinweis: Dieses Dokument ist historisch und nicht normativ.
+
 Ein solcher „Souveränitäts-Score“ für Software-Komponenten (Frameworks, Bibliotheken, Dependencies) und digitale Projekte ist ein hochaktueller Ansatz. Um die wahre digitale Souveränität jenseits von reinem Hosting zu bewerten, muss der Score tief in die Software-Lieferkette und die Entwickler-Community blicken.
 Hier ist ein Konzept für ein Bewertungs-Framework (z. B. von 0 bis 100 Punkten), das du in die Backend-Logik deiner App integrieren kannst. Es unterteilt sich in vier Hauptdimensionen:
 1. Abhängigkeiten & Lieferkette (Supply Chain Sovereignty) – Gewichtung: 30 %

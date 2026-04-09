@@ -1,3 +1,12 @@
+---
+status: archived
+owner: Documentation Maintainers
+last_reviewed: 2026-04-09
+source_of_truth: docs/DOCS_HUB.md
+---
+
+> Archivhinweis: Dieses Dokument ist historisch und nicht normativ.
+
 # File Structure Template für Developer Phase 1b
 
 Basierend auf DESIGN_PLAN_MVP.md - Diese Vorlage zeigt die exakte Dateistruktur für Phase 1.
