@@ -14,6 +14,8 @@ Interaktive Vergleichsplattform fuer staatliche und organisationale Tech-Stacks 
 ## Doku (ein Einstieg)
 
 - `docs/README.md`
+- `docs/BUSSINESS_CASE.md`
+- `docs/ARC42.md`
 
 ## Lokale Entwicklung
 
