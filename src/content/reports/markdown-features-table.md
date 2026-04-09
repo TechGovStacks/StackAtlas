@@ -1,20 +1,20 @@
 ## Unterstützte Markdown-Features
 
-| Feature         | Status | Hinweis                                 |
-| :-------------- | :----: | :-------------------------------------- |
-| Überschriften   |   ✅   | H1–H6 alle fürs Styling verfügbar       |
-| Bold/Italic     |   ✅   | `**bold**`, `_italic_`, `~~strikeout~~` |
-| Listen          |   ✅   | Ungeordnet, geordnet, checklisten       |
-| Code Inline     |   ✅   | `` `code` ``                            |
-| Code-Blöcke     |   ✅   | Mit Syntax-Highlighting                 |
-| Blockquotes     |   ✅   | Einzeilig oder Multi-Line               |
-| Tabellen        |   ✅   | **EMPFEHLUNG:** Externe `.md`-Datei     |
-| Links           |   ✅   | ``[text](https://example.com)`` und inline HTML |
-| Bilder          |   ✅   | Remote & lokale Pfade                   |
-| HTML-Tags       |   ✅   | `<div>`, `<span>` etc. erlaubt          |
-| Emojis          |   ✅   | Direkt als Unicode                      |
-| Fußnoten        |   ⚠️   | Benötigt zusätzliches Plugin            |
-| Markdown Tables |  ✅\*  | **Nur in externen `.md`-Dateien**       |
+| Feature         | Status | Hinweis                                       |
+| :-------------- | :----: | :-------------------------------------------- |
+| Überschriften   |   ✅   | H1–H6 alle fürs Styling verfügbar             |
+| Bold/Italic     |   ✅   | `**bold**`, `_italic_`, `~~strikeout~~`       |
+| Listen          |   ✅   | Ungeordnet, geordnet, checklisten             |
+| Code Inline     |   ✅   | `` `code` ``                                  |
+| Code-Blöcke     |   ✅   | Mit Syntax-Highlighting                       |
+| Blockquotes     |   ✅   | Einzeilig oder Multi-Line                     |
+| Tabellen        |   ✅   | **EMPFEHLUNG:** Externe `.md`-Datei           |
+| Links           |   ✅   | `[text](https://example.com)` und inline HTML |
+| Bilder          |   ✅   | Remote & lokale Pfade                         |
+| HTML-Tags       |   ✅   | `<div>`, `<span>` etc. erlaubt                |
+| Emojis          |   ✅   | Direkt als Unicode                            |
+| Fußnoten        |   ⚠️   | Benötigt zusätzliches Plugin                  |
+| Markdown Tables |  ✅\*  | **Nur in externen `.md`-Dateien**             |
 
 **Legende:**
 
