@@ -9,14 +9,7 @@
 	},
 	"homepage": "https://www.bluetooth.com/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bluetooth.svg",
-	"tags": [
-		"kurze-distanz",
-		"pairing",
-		"koppeln",
-		"drahtlos",
-		"funk",
-		"wpan"
-	],
+	"tags": ["kurze-distanz", "pairing", "koppeln", "drahtlos", "funk", "wpan"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -25,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "independentConsortium"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

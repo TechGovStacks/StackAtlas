@@ -9,10 +9,7 @@
 	},
 	"homepage": "https://www.r-project.org/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/R_logo.svg",
-	"tags": [
-		"programmierung",
-		"sprache"
-	],
+	"tags": ["programmierung", "sprache"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -21,6 +18,7 @@
 		"hasAudit": false,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "independentConsortium"
 	}
 }

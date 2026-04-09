@@ -9,12 +9,7 @@
 	},
 	"homepage": "https://github.com/actions",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/GitHub_Actions_Logo.svg",
-	"tags": [
-		"pipeline",
-		"cd",
-		"bereitstellung",
-		"ci"
-	],
+	"tags": ["pipeline", "cd", "bereitstellung", "ci"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -23,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "corporation"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

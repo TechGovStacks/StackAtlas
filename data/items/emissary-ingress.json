@@ -9,11 +9,7 @@
 	},
 	"homepage": "https://www.getambassador.io/products/api-gateway",
 	"logo": "https://www.getambassador.io/images/emissary-icon-black.svg",
-	"tags": [
-		"api",
-		"orchestrierung",
-		"gateway"
-	],
+	"tags": ["api", "orchestrierung", "gateway"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -22,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "corporation"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

@@ -52,8 +52,8 @@ export function FilterBar({
 	];
 
 	return (
-		<section className="filter-bar px-3 md:px-4 lg:px-5 py-2" aria-label={t('search.regionAria')}>
-			<div className="filter-bar__inner">
+    <section className="filter-bar px-3 md:px-4 lg:px-5 py-2 md:py-3" aria-label={t('search.regionAria')}>
+			<div className="filter-bar__inner px-3 md:px-4 lg:px-5">
 				<KolSingleSelect
 					className="filter-bar__select filter-bar__select--stack sort-select"
 					_label={t('stack.label')}

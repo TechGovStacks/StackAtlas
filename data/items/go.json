@@ -9,10 +9,7 @@
 	},
 	"homepage": "https://go.dev/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Go_Logo_Blue.svg",
-	"tags": [
-		"programmierung",
-		"sprache"
-	],
+	"tags": ["programmierung", "sprache"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -21,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "community"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

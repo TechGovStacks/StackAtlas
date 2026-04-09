@@ -9,12 +9,7 @@
 	},
 	"homepage": "https://budibase.com/",
 	"logo": "https://raw.githubusercontent.com/Budibase/budibase/master/packages/builder/public/logo.svg",
-	"tags": [
-		"automations",
-		"open-source",
-		"datenquellen",
-		"low-code"
-	],
+	"tags": ["automations", "open-source", "datenquellen", "low-code"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -23,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "corporation"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

@@ -8,13 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/doc/rfc9724/",
-	"tags": [
-		"identifier",
-		"uuid",
-		"adresse",
-		"guid",
-		"oui"
-	],
+	"tags": ["identifier", "uuid", "adresse", "guid", "oui"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -23,7 +17,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "independentConsortium"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

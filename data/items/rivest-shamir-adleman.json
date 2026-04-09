@@ -8,14 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://csrc.nist.gov/projects/digital-signatures",
-	"tags": [
-		"asymmetrisch",
-		"pki",
-		"schluessel",
-		"kryptografie",
-		"algorithmus",
-		"verschluesselung"
-	],
+	"tags": ["asymmetrisch", "pki", "schluessel", "kryptografie", "algorithmus", "verschluesselung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -24,7 +17,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "independentConsortium"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

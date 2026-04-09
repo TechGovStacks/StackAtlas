@@ -9,11 +9,7 @@
 	},
 	"homepage": "https://ragflow.io/",
 	"logo": "https://raw.githubusercontent.com/infiniflow/ragflow/main/web/src/assets/logo-with-text.png",
-	"tags": [
-		"retrieval-augmented-generation",
-		"rag",
-		"verarbeitung"
-	],
+	"tags": ["retrieval-augmented-generation", "rag", "verarbeitung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -22,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "community"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

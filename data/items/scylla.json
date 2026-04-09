@@ -9,11 +9,7 @@
 	},
 	"homepage": "https://www.scylladb.com/",
 	"logo": "https://www.scylladb.com/wp-content/uploads/scylla-mascot-flathead.svg",
-	"tags": [
-		"nosql",
-		"datenbank",
-		"spalten"
-	],
+	"tags": ["nosql", "datenbank", "spalten"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -22,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "corporation"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

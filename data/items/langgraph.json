@@ -9,10 +9,7 @@
 	},
 	"homepage": "https://www.langchain.com/langgraph",
 	"logo": "https://raw.githubusercontent.com/langchain-ai/langgraph/main/docs/static/img/langgraph_logo.png",
-	"tags": [
-		"ki",
-		"agent"
-	],
+	"tags": ["ki", "agent"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -21,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "corporation"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

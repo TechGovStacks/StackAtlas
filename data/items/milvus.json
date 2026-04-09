@@ -9,10 +9,7 @@
 	},
 	"homepage": "https://milvus.io/de",
 	"logo": "https://milvus.io/images/milvus_log.svg",
-	"tags": [
-		"datenbank",
-		"vektor"
-	],
+	"tags": ["datenbank", "vektor"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -21,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "community"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

@@ -11,11 +11,13 @@ const WEIGHTS: Record<keyof SovereigntyCriteria, number> = {
 };
 
 const OWNER_WEIGHTS: Record<OwnerType, number> = {
-	independentConsortium: 20,
-	community: 15,
+	independentConsortium: 15,
+	community: 10,
 	corporation: 5,
 	oneManShow: 0,
 };
+
+const MAX_SCORE_WITHOUT_OWNER = 60;
 
 export function computeOwnerScore(ownerType?: OwnerType): number {
 	if (!ownerType) return 0;
@@ -30,5 +32,9 @@ export function computeSovereigntyScore(criteria: SovereigntyCriteria): number {
 		return sum + (criteria[key] ? WEIGHTS[key] : 0);
 	}, 0);
 
-	return Math.min(100, baseScore + computeOwnerScore(criteria.ownerType));
+	const scoreWithOwner = Math.min(100, baseScore + computeOwnerScore(criteria.ownerType));
+	if (!criteria.ownerType) {
+		return Math.min(scoreWithOwner, MAX_SCORE_WITHOUT_OWNER);
+	}
+	return scoreWithOwner;
 }

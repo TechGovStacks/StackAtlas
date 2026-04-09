@@ -9,12 +9,7 @@
 	},
 	"homepage": "https://www.wi-fi.org/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Wi-Fi_Logo.svg",
-	"tags": [
-		"funk",
-		"hotspot",
-		"tethering",
-		"drahtlos"
-	],
+	"tags": ["funk", "hotspot", "tethering", "drahtlos"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -23,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "independentConsortium"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

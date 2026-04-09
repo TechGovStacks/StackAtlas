@@ -44,7 +44,7 @@ export function CategoryGrid({
 				const cmp =
 					sortField === 'name'
 						? getLocalizedText(a.name, i18n.language).localeCompare(getLocalizedText(b.name, i18n.language), i18n.language)
-						: (a.sovereigntyScore ?? computeSovereigntyScore(a.sovereigntyCriteria)) - (b.sovereigntyScore ?? computeSovereigntyScore(b.sovereigntyCriteria));
+						: computeSovereigntyScore(a.sovereigntyCriteria) - computeSovereigntyScore(b.sovereigntyCriteria);
 				return sortDir === 'asc' ? cmp : -cmp;
 			}),
 		[articles, sortField, sortDir, i18n.language],

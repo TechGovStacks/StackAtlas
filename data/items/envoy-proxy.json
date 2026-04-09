@@ -9,10 +9,7 @@
 	},
 	"homepage": "https://www.envoyproxy.io/",
 	"logo": "https://www.envoyproxy.io/img/envoy-logo.svg",
-	"tags": [
-		"proxy",
-		"orchestrierung"
-	],
+	"tags": ["proxy", "orchestrierung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -21,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "independentConsortium"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

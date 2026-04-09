@@ -9,11 +9,7 @@
 	},
 	"homepage": "https://firefox-source-docs.mozilla.org/overview/gecko.html",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Firefox_logo,_2019.svg",
-	"tags": [
-		"webseite",
-		"browser-engine",
-		"rendern"
-	],
+	"tags": ["webseite", "browser-engine", "rendern"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -22,7 +18,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "community"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

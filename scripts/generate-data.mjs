@@ -30,11 +30,13 @@ const SOVEREIGNTY_WEIGHTS = {
 };
 
 const OWNER_WEIGHTS = {
-	independentConsortium: 20,
-	community: 15,
+	independentConsortium: 15,
+	community: 10,
 	corporation: 5,
 	oneManShow: 0,
 };
+
+const MAX_SCORE_WITHOUT_OWNER = 60;
 
 // ---------------------------------------------------------------------------
 // Logo resolution (same logic as generate-articles.mjs)
@@ -60,7 +62,11 @@ function resolveLogo(item) {
 function computeSovereigntyScore(criteria = {}) {
 	const baseScore = Object.entries(SOVEREIGNTY_WEIGHTS).reduce((sum, [key, weight]) => sum + (criteria[key] ? weight : 0), 0);
 	const ownerScore = criteria.ownerType ? (OWNER_WEIGHTS[criteria.ownerType] ?? 0) : 0;
-	return Math.min(100, baseScore + ownerScore);
+	const scoreWithOwner = Math.min(100, baseScore + ownerScore);
+	if (!criteria.ownerType) {
+		return Math.min(scoreWithOwner, MAX_SCORE_WITHOUT_OWNER);
+	}
+	return scoreWithOwner;
 }
 
 // ---------------------------------------------------------------------------
