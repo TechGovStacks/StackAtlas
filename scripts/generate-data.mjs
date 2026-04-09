@@ -20,6 +20,22 @@ const LOGO_URLS_JSON = join(ROOT, 'src', 'data', 'logo-urls.json');
 const OUTPUT_TS = join(ROOT, 'src', 'data', 'items.generated.ts');
 const FALLBACK_LOGO = 'assets/broken-logo.svg';
 
+const SOVEREIGNTY_WEIGHTS = {
+	openSource: 30,
+	euHeadquartered: 25,
+	hasAudit: 20,
+	permissiveLicense: 10,
+	matureProject: 10,
+	largeEcosystem: 5,
+};
+
+const OWNER_WEIGHTS = {
+	independentConsortium: 20,
+	community: 15,
+	corporation: 5,
+	oneManShow: 0,
+};
+
 // ---------------------------------------------------------------------------
 // Logo resolution (same logic as generate-articles.mjs)
 // ---------------------------------------------------------------------------
@@ -39,6 +55,12 @@ function resolveLogo(item) {
 	if (csvLogo) return '/' + csvLogo.replace(/^\/+/, '');
 	if (logoUrls[name]?.verified && logoUrls[name]?.url) return logoUrls[name].url;
 	return FALLBACK_LOGO;
+}
+
+function computeSovereigntyScore(criteria = {}) {
+	const baseScore = Object.entries(SOVEREIGNTY_WEIGHTS).reduce((sum, [key, weight]) => sum + (criteria[key] ? weight : 0), 0);
+	const ownerScore = criteria.ownerType ? (OWNER_WEIGHTS[criteria.ownerType] ?? 0) : 0;
+	return Math.min(100, baseScore + ownerScore);
 }
 
 // ---------------------------------------------------------------------------
@@ -72,7 +94,11 @@ function readJsonDir(dir) {
 const layers = readJsonDir(join(DATA_DIR, 'layers')).sort((a, b) => (a.order ?? 99) - (b.order ?? 99));
 
 const rawItems = readJsonDir(join(DATA_DIR, 'items'));
-const items = rawItems.map((item) => ({ ...item, logo: resolveLogo(item) }));
+const items = rawItems.map((item) => ({
+	...item,
+	logo: resolveLogo(item),
+	sovereigntyScore: computeSovereigntyScore(item.sovereigntyCriteria),
+}));
 
 const stacks = readJsonDir(join(DATA_DIR, 'stacks'));
 

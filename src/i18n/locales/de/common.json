@@ -96,7 +96,15 @@
 			"hasAudit": "Sicherheitsaudit vorhanden",
 			"permissiveLicense": "Permissive oder Copyleft-Lizenz",
 			"matureProject": "Reifes Projekt (graduiert/stabil)",
-			"largeEcosystem": "Großes Community-Ökosystem"
+			"largeEcosystem": "Großes Community-Ökosystem",
+			"ownerType": "Owner-Modell: {{owner}} (+{{points}})"
+		},
+		"ownerType": {
+			"independentConsortium": "Unabhängiges Konsortium",
+			"corporation": "Konzern",
+			"community": "Community",
+			"oneManShow": "One-Man-Show",
+			"unknown": "Nicht gepflegt"
 		}
 	},
 	"pwa": {
