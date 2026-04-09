@@ -2,7 +2,7 @@
 status: active
 owner: Documentation Maintainers
 last_reviewed: 2026-04-09
-source_of_truth: docs/KONSOLIDIERTE_DOKU.md
+source_of_truth: docs/README.md
 ---
 
 # Konsolidierte Projektdokumentation
@@ -66,14 +66,42 @@ Verbindliche Layer-IDs:
 Mindestfelder fuer Items:
 - `id`, `name`, `layer`, `description`, `oss`, `sovereigntyCriteria`
 
-Kanonische Detailquelle: `data/README.md`
+Empfohlene Item-Felder:
+- `sublayer`, `homepage`, `logo`, `maturity`, `tags`, `audit`
+
+Pflichtfelder fuer Stack-Definition:
+- `id`, `name`, `version`, `items[]`
+
+Pflichtfelder je Stack-Item:
+- `itemId`
+- `status` (`recommended|approved|deprecated`)
+- `role` (`maintainer|contributor|funder|consumer`)
+
+Hauptschemas:
+- `data/schemas/layer.schema.json`
+- `data/schemas/item.schema.json`
+- `data/schemas/stack.schema.json`
+- `data/schemas/relation.schema.json`
 
 ## 7) Operations
 
-- Logo-Aufloesung und Fallback: `EXTERNAL_LOGOS.md`
+- Externe Logos:
+  - Tool: `scripts/fetch-external-logos.mjs`
+  - Mapping: `src/data/logo-urls.json`
+  - Fallback: `/assets/broken-logo.svg`
+  - Prioritaet: Simple Icons -> hinterlegte externe URL -> Wikidata -> Wikipedia
 - Schema-Validierung: `pnpm validate-schemas`
+
+Logo-Commands:
+
+```bash
+node scripts/fetch-external-logos.mjs
+node scripts/fetch-external-logos.mjs --update
+node scripts/fetch-external-logos.mjs --dry-run
+node scripts/fetch-external-logos.mjs --validate
+```
 
 ## 8) Start in 2 Minuten
 
 1. Dieses Dokument lesen
-2. Nur bei Daten-/Schema-Fragen in `data/README.md` springen.
+2. Optional nur fuer schnelle Verzeichnis-Checks in `data/README.md` springen.

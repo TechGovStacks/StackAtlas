@@ -2,54 +2,19 @@
 status: active
 owner: Data Engineering
 last_reviewed: 2026-04-09
-source_of_truth: data/README.md
+source_of_truth: docs/README.md
 ---
 
-# data/ - Kanonisches Datenmodell
+# data/
 
-Dieses Dokument ist die kanonische Quelle fuer Datenstruktur, IDs und operative Konventionen.
+Diese Datei ist die technische Kurzreferenz fuer das Datenverzeichnis.
 
-## Verzeichnisstruktur
+Die vollstaendige inhaltliche Referenz liegt in:
 
-- `data/layers/` - 5 Layer-Definitionen
-- `data/items/` - Technologie-Items
-- `data/stacks/` - Stack-Zusammenstellungen
-- `data/schemas/` - JSON-Schemas
+- `docs/README.md`
 
-## Verbindliche Layer-IDs
+## Schnellcheck
 
-1. `infrastructure`
-2. `platform`
-3. `building-blocks`
-4. `applications`
-5. `sovereign-standards`
-
-## Mindestanforderungen fuer Item-Daten
-
-- `id`
-- `name`
-- `layer`
-- `description`
-- `oss`
-- `sovereigntyCriteria`
-
-Empfohlen zusaetzlich: `sublayer`, `homepage`, `logo`, `maturity`, `tags`.
-
-## Validierung
-
-```bash
-pnpm validate-schemas
-```
-
-## Scoring-Bezug
-
-Die strukturelle Datenseite ist hier kanonisch. Inhaltliche Bewertungslogik ist kanonisch in:
-
-- `docs/KONSOLIDIERTE_DOKU.md`
-
-## Detaildokumente
-
-- `data/layers/README.md`
-- `data/items/README.md`
-- `data/stacks/README.md`
-- `data/schemas/README.md`
+- Layer-IDs: `infrastructure`, `platform`, `building-blocks`, `applications`, `sovereign-standards`
+- Validierung: `pnpm validate-schemas`
+- Kernschemas: `data/schemas/layer.schema.json`, `data/schemas/item.schema.json`, `data/schemas/stack.schema.json`

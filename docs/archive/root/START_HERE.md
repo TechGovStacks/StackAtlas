@@ -2,9 +2,9 @@
 status: active
 owner: Documentation Maintainers
 last_reviewed: 2026-04-09
-source_of_truth: docs/KONSOLIDIERTE_DOKU.md
+source_of_truth: docs/README.md
 ---
 
 # Start Here
 
-Lies zuerst: `docs/KONSOLIDIERTE_DOKU.md`
+Lies zuerst: `docs/README.md`

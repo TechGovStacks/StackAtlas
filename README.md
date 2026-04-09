@@ -2,7 +2,7 @@
 status: active
 owner: Product and Engineering
 last_reviewed: 2026-04-09
-source_of_truth: docs/KONSOLIDIERTE_DOKU.md
+source_of_truth: docs/README.md
 ---
 
 # Stack Atlas
@@ -13,7 +13,7 @@ Interaktive Vergleichsplattform fuer staatliche und organisationale Tech-Stacks 
 
 ## Doku (ein Einstieg)
 
-- `docs/KONSOLIDIERTE_DOKU.md`
+- `docs/README.md`
 
 ## Lokale Entwicklung
 

@@ -33,7 +33,7 @@ Historische Versionen: `docs/archive/architecture/`
 
 ## Referenzen
 
-- Hub: `docs/KONSOLIDIERTE_DOKU.md`
+- Hub: `docs/README.md`
 - Quick Reference: `docs/architecture/quick-reference.md`
 - Datenmodell: `data/README.md`
 - Layer-Zuordnung: `docs/STACK_LAYER_BEREICHE.md`

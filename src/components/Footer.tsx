@@ -19,7 +19,7 @@ export function Footer() {
 
 					{/* Links navigation */}
 					<nav className="footer__nav-section flex flex-wrap gap-4 md:gap-6 text-sm" aria-label={t('footer.navigationAria')}>
-						<a href="https://github.com/deleonio/accessible-d-stack-landscape/tree/main/docs" rel="noopener noreferrer" className="footer__link">
+						<a href="https://github.com/deleonio/accessible-d-stack-landscape/blob/main/docs/README.md" rel="noopener noreferrer" className="footer__link">
 							{t('footer.links.documentation')}
 						</a>
 						<a href="/news" className="footer__link">
