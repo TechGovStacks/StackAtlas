@@ -68,18 +68,18 @@
 			"required": ["openSource", "euHeadquartered", "hasAudit", "permissiveLicense", "matureProject", "largeEcosystem"],
 			"additionalProperties": false,
 			"properties": {
-					"openSource": {
-						"type": "boolean",
-						"description": "Open-source with publicly accessible source code (+30 points)"
-					},
-					"euHeadquartered": {
-						"type": "boolean",
-						"description": "Headquartered or legally registered in the EU (+25 points)"
-					},
-					"hasAudit": {
-						"type": "boolean",
-						"description": "Has documented and publicly available security/compliance audit (+20 points)"
-					},
+				"openSource": {
+					"type": "boolean",
+					"description": "Open-source with publicly accessible source code (+30 points)"
+				},
+				"euHeadquartered": {
+					"type": "boolean",
+					"description": "Headquartered or legally registered in the EU (+25 points)"
+				},
+				"hasAudit": {
+					"type": "boolean",
+					"description": "Has documented and publicly available security/compliance audit (+20 points)"
+				},
 				"permissiveLicense": {
 					"type": "boolean",
 					"description": "Uses permissive or copyleft open-source license (+10 points)"
