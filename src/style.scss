@@ -828,6 +828,11 @@ kol-card.article-card,
 	text-transform: capitalize;
 }
 
+.drawer-content {
+	width: min(100dvw, 600px);
+	max-width: 600px;
+}
+
 /* ─────────────────────────────────────────────────────────────────────────────
    Drawer Related Links
    ───────────────────────────────────────────────────────────────────────────── */
