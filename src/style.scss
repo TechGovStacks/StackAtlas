@@ -148,13 +148,13 @@ main {
 }
 
 .header__instance-meta {
-	color: rgb(255 255 255 / 0.65);
+	color: rgb(255 255 255 / 65%);
 	font-size: var(--ds-text-xs);
 }
 
 .header__instance-code {
 	font-family: var(--ds-font-mono);
-	background-color: rgb(255 255 255 / 0.1);
+	background-color: rgb(255 255 255 / 10%);
 	border-radius: var(--ds-radius-sm);
 	padding: var(--ds-space-1) var(--ds-space-2);
 	font-size: var(--ds-text-xs);
@@ -217,7 +217,7 @@ main {
 	font-weight: 700;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	color: rgb(255 255 255 / 0.65);
+	color: rgb(255 255 255 / 65%);
 	margin: 0 0 var(--ds-space-2) 0;
 
 	@media (width >= 768px) {
@@ -240,7 +240,7 @@ main {
 
 .header__subtitle {
 	font-size: var(--ds-text-sm);
-	color: rgb(255 255 255 / 0.8);
+	color: rgb(255 255 255 / 80%);
 	line-height: var(--ds-lh-body);
 	max-width: 52ch;
 	margin: 0;
@@ -256,8 +256,8 @@ main {
 
 .footer {
 	background-color: var(--ds-color-primary);
-	color: rgb(255 255 255 / 0.75);
-	border-top: 1px solid rgb(255 255 255 / 0.12);
+	color: rgb(255 255 255 / 75%);
+	border-top: 1px solid rgb(255 255 255 / 12%);
 	margin-top: auto;
 }
 
@@ -267,7 +267,7 @@ main {
 }
 
 .footer__nav {
-	border-bottom: 1px solid rgb(255 255 255 / 0.12);
+	border-bottom: 1px solid rgb(255 255 255 / 12%);
 }
 
 .footer__brand {
@@ -285,7 +285,7 @@ main {
 
 .footer__subtitle {
 	font-size: var(--ds-text-xs);
-	color: rgb(255 255 255 / 0.55);
+	color: rgb(255 255 255 / 55%);
 	margin: 0;
 }
 
@@ -298,7 +298,7 @@ main {
 }
 
 .footer__link {
-	color: rgb(255 255 255 / 0.6);
+	color: rgb(255 255 255 / 60%);
 	text-decoration: none;
 	font-size: var(--ds-text-sm);
 	transition: color 150ms ease-in-out;
