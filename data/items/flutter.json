@@ -20,7 +20,8 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "corporation"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",

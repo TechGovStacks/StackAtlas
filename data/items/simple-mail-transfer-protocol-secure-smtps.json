@@ -23,6 +23,7 @@
 		"hasAudit": false,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false
+		"largeEcosystem": false,
+		"ownerType": "independentConsortium"
 	}
 }
