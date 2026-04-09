@@ -2,12 +2,12 @@
 status: active
 owner: Documentation Maintainers
 last_reviewed: 2026-04-09
-source_of_truth: docs/KONSOLIDIERTE_DOKU.md
+source_of_truth: docs/README.md
 ---
 
 # Docs Hub
 
-Primare Arbeitsgrundlage: `docs/KONSOLIDIERTE_DOKU.md`
+Primare Arbeitsgrundlage: `docs/README.md`
 
 ## Detailquellen (nur bei Bedarf)
 
