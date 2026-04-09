@@ -78,6 +78,7 @@ export function FilterBar({
 					className="filter-bar__search"
 					_label={t('search.inputLabel')}
 					_hideLabel
+					_type="search"
 					_value={filters.searchQuery}
 					_placeholder={t('search.placeholder')}
 					_on={{
