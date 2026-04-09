@@ -2,6 +2,7 @@ import { KolButton, KolDrawer } from '@public-ui/preact';
 import { useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { SettingsForm } from './SettingsForm';
+import { getCommitDisplay } from '../utils';
 
 export function Header() {
 	const { t } = useTranslation();
@@ -9,7 +10,7 @@ export function Header() {
 
 	const baseUrl = import.meta.env.BASE_URL;
 	const brandUrl = import.meta.env.VITE_BRAND_URL ?? baseUrl;
-	const commitSha = (import.meta.env.VITE_COMMIT_SHA || 'dev').slice(0, 7);
+	const commitDisplay = getCommitDisplay();
 
 	return (
 		<>
@@ -32,7 +33,7 @@ export function Header() {
 						{t('header.officialProjectSetup')}
 					</div>
 					<span className="header__instance-meta">
-						{t('header.mvpLayoutAligned')} • {t('header.commit')}: <code className="header__instance-code">{commitSha}</code>
+						{t('header.mvpLayoutAligned')} • {t('header.commit')}: <code className="header__instance-code">{commitDisplay}</code>
 					</span>
 				</div>
 

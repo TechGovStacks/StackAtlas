@@ -1,10 +1,10 @@
 import { useTranslation } from 'react-i18next';
+import { getCommitDisplay } from '../utils';
 
 export function Footer() {
 	const { t } = useTranslation();
 	const year = new Date().getFullYear();
-	const commitSha = import.meta.env.VITE_COMMIT_SHA;
-	const commitDisplay = commitSha ? commitSha.slice(0, 7) : 'lokal';
+	const commitDisplay = getCommitDisplay();
 
 	return (
 		<footer className="footer w-full border-t mt-auto">
@@ -36,9 +36,11 @@ export function Footer() {
 						</a>
 					</nav>
 				</div>
+			</div>
 
-				{/* Footer copyright & metadata */}
-				<div className="footer__meta py-6 text-xs space-y-2">
+			{/* Footer Abschlussleiste (volle Breite) */}
+			<div className="footer__meta py-3 px-4 md:px-6">
+				<div className="footer__meta-inner flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
 					<p className="footer__copy">
 						© {year} StackAtlas · Lizenz: EUPL-1.2 · Built with{' '}
 						<a href="https://www.public-ui.de/" rel="noopener noreferrer" className="footer__copy-link underline">
@@ -50,7 +52,8 @@ export function Footer() {
 						</a>
 					</p>
 					<p className="footer__build-info" aria-label={t('footer.buildCommitAria', { commit: commitDisplay })}>
-						{t('footer.buildCommitLabel')} <code className="footer__build-code">{commitDisplay}</code>
+						<span className="footer__build-label">{t('footer.buildCommitLabel')}</span>{' '}
+						<code className="footer__build-code">{commitDisplay}</code>
 					</p>
 				</div>
 			</div>

@@ -255,7 +255,7 @@ main {
    ───────────────────────────────────────────────────────────────────────────── */
 
 .footer {
-	background-color: var(--ds-color-primary-dark);
+	background-color: var(--ds-color-primary);
 	color: rgb(255 255 255 / 0.75);
 	border-top: 1px solid rgb(255 255 255 / 0.12);
 	margin-top: auto;
@@ -318,23 +318,36 @@ main {
 }
 
 .footer__meta {
+	background-color: var(--ds-color-primary-dark);
+	border-top: 1px solid rgb(255 255 255 / 18%);
 	font-size: var(--ds-text-xs);
+}
+
+.footer__meta-inner {
 	display: flex;
 	flex-direction: column;
 	gap: var(--ds-space-2);
 }
 
+@media (width >= 768px) {
+	.footer__meta-inner {
+		align-items: center;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
 .footer__copy {
-	color: rgb(255 255 255 / 0.5);
+	color: rgb(255 255 255 / 82%);
 	margin: 0;
 
 	a {
-		color: rgb(255 255 255 / 0.75);
+		color: var(--ds-color-text-inverse);
 		text-decoration: underline;
 		transition: color 150ms ease-in-out;
 
 		&:hover {
-			color: var(--ds-color-text-inverse);
+			color: rgb(255 255 255 / 88%);
 		}
 
 		&:focus-visible {
@@ -345,12 +358,12 @@ main {
 }
 
 .footer__copy-link {
-	color: rgb(255 255 255 / 0.75);
+	color: var(--ds-color-text-inverse);
 	text-decoration: underline;
 	transition: color 150ms ease-in-out;
 
 	&:hover {
-		color: var(--ds-color-text-inverse);
+		color: rgb(255 255 255 / 88%);
 	}
 
 	&:focus-visible {
@@ -360,14 +373,26 @@ main {
 }
 
 .footer__build-info {
-	color: rgb(255 255 255 / 0.5);
+	color: rgb(255 255 255 / 82%);
 	margin: 0;
+	text-align: left;
+	white-space: nowrap;
+}
+
+@media (width >= 768px) {
+	.footer__build-info {
+		text-align: right;
+	}
+}
+
+.footer__build-label {
+	color: rgb(255 255 255 / 82%);
 }
 
 .footer__build-code {
 	font-family: var(--ds-font-mono);
-	background-color: rgb(255 255 255 / 0.08);
-	color: rgb(255 255 255 / 0.82);
+	background-color: rgb(255 255 255 / 14%);
+	color: var(--ds-color-text-inverse);
 	border-radius: var(--ds-radius-sm);
 	padding: var(--ds-space-1) var(--ds-space-2);
 	font-size: var(--ds-text-xs);
@@ -542,6 +567,7 @@ kol-select,
 .sort-select {
 	--kol-color-background: transparent;
 	--kol-color-input-background: transparent;
+
 	background: transparent;
 }
 
