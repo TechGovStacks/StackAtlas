@@ -845,6 +845,13 @@ kol-card.article-card,
 .drawer-content {
 	width: 100dvw;
 	max-width: 600px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+.drawer-content > * {
+	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
