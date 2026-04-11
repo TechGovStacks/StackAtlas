@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Item, ParticipantRole, Stack, StackItem } from '../types';
 import { getLocalizedText } from '../utils';
-import { computeSovereigntyScore } from '../utils/sovereigntyScore';
+import { computeSovereigntyScore, getScoreCategoryColor } from '../utils/sovereigntyScore';
 
 interface StackStatsProps {
 	stack: Stack;
@@ -21,7 +21,7 @@ export function StackStats({ stack, items, stackItemMap }: StackStatsProps) {
 
 	const scores = items.map((item) => computeSovereigntyScore(item.sovereigntyCriteria));
 	const avgScore = scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0;
-	const avgColor = avgScore >= 70 ? '#2e7d32' : avgScore >= 40 ? '#f57c00' : '#c62828';
+	const avgColor = getScoreCategoryColor(avgScore);
 
 	const roleCounts = Array.from(stackItemMap.values()).reduce(
 		(acc, si) => {
