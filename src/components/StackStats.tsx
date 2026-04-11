@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Item, ParticipantRole, Stack, StackItem } from '../types';
 import { getLocalizedText } from '../utils';
-import { computeSovereigntyScore, getScoreCategoryColor, getScoreCategory } from '../utils/sovereigntyScore';
+import { computeSovereigntyScore, getScoreCategoryColor, getScoreCategory, getScorePercentileInCategory } from '../utils/sovereigntyScore';
 
 interface StackStatsProps {
 	stack: Stack;
@@ -23,6 +23,7 @@ export function StackStats({ stack, items, stackItemMap }: StackStatsProps) {
 	const avgScore = scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0;
 	const avgColor = getScoreCategoryColor(avgScore);
 	const avgCategory = getScoreCategory(avgScore);
+	const avgPercentile = getScorePercentileInCategory(avgScore);
 
 	const roleCounts = Array.from(stackItemMap.values()).reduce(
 		(acc, si) => {
@@ -50,7 +51,7 @@ export function StackStats({ stack, items, stackItemMap }: StackStatsProps) {
 						{avgScore}/100
 					</span>
 					<span className="stack-stats__score-category" style={{ color: avgColor, fontSize: '0.75rem', fontWeight: 600 }}>
-						{t(`article.scoreCategories.${avgCategory}`)}
+						{t(`article.scoreCategories.${avgCategory}`)} ({avgPercentile}%)
 					</span>
 				</div>
 			</div>
