@@ -100,7 +100,6 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 				<span className="card-score-category">
 					{t(`article.scoreCategories.${scoreResult.category}`)}
 				</span>
-				<span className="card-score-percentile">{scoreResult.percentileInCategory}%</span>
 			</span>
 			{stackItem && (
 				<span className="card-role-badge" style={{ background: ROLE_COLORS[stackItem.role], color: '#fff' }} title={t(`stack.roles.${stackItem.role}`)}>
