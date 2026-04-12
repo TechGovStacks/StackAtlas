@@ -37,10 +37,11 @@ function scoreToAngle(score: number): number {
 
 /**
  * Konvertiert einen Winkel (Grad) in SVG-Koordinaten für Kurve
- * Rotiert um 135° gegen den Uhrzeigersinn für Tachometer-Layout (Öffnung unten mittig)
+ * Rotiert für Tachometer-Layout mit Öffnung unten mittig
+ * 0° → 315° (unten-rechts), 90° → 45° (oben-rechts), 270° → 225° (unten-links)
  */
 function angleToRadians(angle: number): number {
-	return (angle + 45) * (Math.PI / 180);
+	return (angle - 45) * (Math.PI / 180);
 }
 
 /**
