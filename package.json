@@ -2,6 +2,7 @@
 	"name": "accessible-d-stack-landscape",
 	"version": "0.0.0",
 	"type": "module",
+	"packageManager": "pnpm@10.33.0",
 	"scripts": {
 		"assign-owner-types": "node scripts/assign-owner-types.mjs",
 		"build": "tsc && vite build",
@@ -30,7 +31,7 @@
 		"postinstall:theme-kern": "cpy \"node_modules/@public-ui/theme-kern/assets/**/*\" public/assets --dot",
 		"migrate": "node scripts/migrate-csv-to-json.mjs",
 		"prebuild": "node scripts/generate-data.mjs && node scripts/generate-icons.mjs",
-		"prepare": "husky install",
+		"prepare": "husky",
 		"preview": "vite preview",
 		"start": "pnpm run dev",
 		"stylelint": "stylelint \"src/**/*.scss\"",
@@ -91,6 +92,14 @@
 		"vite": "8.0.8",
 		"vite-plugin-pwa": "1.2.0",
 		"workbox-window": "7.4.0"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"@parcel/watcher",
+			"@public-ui/components",
+			"esbuild",
+			"sharp"
+		]
 	},
 	"lint-staged": {
 		"src/**/*.{tsx,ts}": [

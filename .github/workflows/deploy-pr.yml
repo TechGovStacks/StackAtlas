@@ -23,10 +23,7 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}
 
-      - uses: pnpm/action-setup@v6
-        with:
-          version: latest
-          cache: true
+      - uses: pnpm/action-setup@v5
 
       - uses: actions/setup-node@v6
         with:

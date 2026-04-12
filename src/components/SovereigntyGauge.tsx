@@ -17,13 +17,15 @@ const CATEGORY_COLORS: Record<SovereigntyScoreCategory, string> = {
 };
 
 // Kategorie-Ranges für Winkel-Berechnung (0-270° Tachometer)
+// Winkel proportional zu Score-Grenzen: angle = (maxVorgänger / 100) * 270
+// Damit stimmt die Nadel (scoreToAngle) immer mit dem farbigen Segment überein.
 const CATEGORY_RANGES = [
-	{ category: 'insufficient' as const, min: 0, max: 30, angle: 0 },
-	{ category: 'minimal' as const, min: 31, max: 45, angle: 45 },
-	{ category: 'adequate' as const, min: 46, max: 60, angle: 90 },
-	{ category: 'good' as const, min: 61, max: 75, angle: 135 },
-	{ category: 'excellent' as const, min: 76, max: 90, angle: 180 },
-	{ category: 'outstanding' as const, min: 91, max: 100, angle: 225 },
+	{ category: 'insufficient' as const, min: 0, max: 30, angle: 0 }, // 0/100 * 270 = 0
+	{ category: 'minimal' as const, min: 31, max: 45, angle: 81 }, // 30/100 * 270 = 81
+	{ category: 'adequate' as const, min: 46, max: 60, angle: 121.5 }, // 45/100 * 270 = 121.5
+	{ category: 'good' as const, min: 61, max: 75, angle: 162 }, // 60/100 * 270 = 162
+	{ category: 'excellent' as const, min: 76, max: 90, angle: 202.5 }, // 75/100 * 270 = 202.5
+	{ category: 'outstanding' as const, min: 91, max: 100, angle: 243 }, // 90/100 * 270 = 243
 ];
 
 /**

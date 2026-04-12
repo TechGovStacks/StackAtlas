@@ -20,9 +20,10 @@ const LOGO_URLS_JSON = join(ROOT, 'src', 'data', 'logo-urls.json');
 const OUTPUT_TS = join(ROOT, 'src', 'data', 'items.generated.ts');
 const FALLBACK_LOGO = 'assets/broken-logo.svg';
 
+// Base weights sum to 90; max owner bonus is 10 → total maximum = 100 (no hard cap needed)
 const SOVEREIGNTY_WEIGHTS = {
-	openSource: 30,
-	euHeadquartered: 25,
+	openSource: 25,
+	euHeadquartered: 20,
 	hasAudit: 20,
 	permissiveLicense: 10,
 	matureProject: 10,
@@ -30,13 +31,11 @@ const SOVEREIGNTY_WEIGHTS = {
 };
 
 const OWNER_WEIGHTS = {
-	independentConsortium: 15,
-	community: 10,
-	corporation: 5,
+	independentConsortium: 10,
+	community: 7,
+	corporation: 3,
 	oneManShow: 0,
 };
-
-const MAX_SCORE_WITHOUT_OWNER = 60;
 
 // ---------------------------------------------------------------------------
 // Logo resolution (same logic as generate-articles.mjs)
@@ -62,11 +61,7 @@ function resolveLogo(item) {
 function computeSovereigntyScore(criteria = {}) {
 	const baseScore = Object.entries(SOVEREIGNTY_WEIGHTS).reduce((sum, [key, weight]) => sum + (criteria[key] ? weight : 0), 0);
 	const ownerScore = criteria.ownerType ? (OWNER_WEIGHTS[criteria.ownerType] ?? 0) : 0;
-	const scoreWithOwner = Math.min(100, baseScore + ownerScore);
-	if (!criteria.ownerType) {
-		return Math.min(scoreWithOwner, MAX_SCORE_WITHOUT_OWNER);
-	}
-	return scoreWithOwner;
+	return baseScore + ownerScore;
 }
 
 // ---------------------------------------------------------------------------

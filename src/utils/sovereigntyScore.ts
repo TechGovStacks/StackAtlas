@@ -1,23 +1,21 @@
 import { OwnerType, SovereigntyCriteria, SovereigntyScoreCategory, SovereigntyScoreResult } from '../types';
 
-const WEIGHTS: Record<keyof SovereigntyCriteria, number> = {
-	openSource: 30,
-	euHeadquartered: 25,
+// Base weights sum to 90; max owner bonus is 10 → total maximum = 100 (no hard cap needed)
+const WEIGHTS: Record<keyof Omit<SovereigntyCriteria, 'ownerType'>, number> = {
+	openSource: 25,
+	euHeadquartered: 20,
 	hasAudit: 20,
 	permissiveLicense: 10,
 	matureProject: 10,
 	largeEcosystem: 5,
-	ownerType: 0,
 };
 
 const OWNER_WEIGHTS: Record<OwnerType, number> = {
-	independentConsortium: 15,
-	community: 10,
-	corporation: 5,
+	independentConsortium: 10,
+	community: 7,
+	corporation: 3,
 	oneManShow: 0,
 };
-
-const MAX_SCORE_WITHOUT_OWNER = 60;
 
 // Hybrid Scoring Scale: 6 Categories
 const SCORE_CATEGORIES: Array<{
@@ -40,18 +38,11 @@ export function computeOwnerScore(ownerType?: OwnerType): number {
 }
 
 export function computeSovereigntyScore(criteria: SovereigntyCriteria): number {
-	const baseScore = (Object.keys(WEIGHTS) as Array<keyof SovereigntyCriteria>).reduce((sum, key) => {
-		if (key === 'ownerType') {
-			return sum;
-		}
+	const baseScore = (Object.keys(WEIGHTS) as Array<keyof typeof WEIGHTS>).reduce((sum, key) => {
 		return sum + (criteria[key] ? WEIGHTS[key] : 0);
 	}, 0);
 
-	const scoreWithOwner = Math.min(100, baseScore + computeOwnerScore(criteria.ownerType));
-	if (!criteria.ownerType) {
-		return Math.min(scoreWithOwner, MAX_SCORE_WITHOUT_OWNER);
-	}
-	return scoreWithOwner;
+	return baseScore + computeOwnerScore(criteria.ownerType);
 }
 
 /**
