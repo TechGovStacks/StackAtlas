@@ -16,31 +16,31 @@ const CATEGORY_COLORS: Record<SovereigntyScoreCategory, string> = {
 	outstanding: '#1B5E20', // Dunkelgrün
 };
 
-// Kategorie-Ranges für Winkel-Berechnung (225-315° rückwärts für Tachometer mit Öffnung unten)
+// Kategorie-Ranges für Winkel-Berechnung (0-270° Tachometer)
 const CATEGORY_RANGES = [
-	{ category: 'insufficient' as const, min: 0, max: 30, angle: 225 },
-	{ category: 'minimal' as const, min: 31, max: 45, angle: 225 - (30 / 100) * 270 },
-	{ category: 'adequate' as const, min: 46, max: 60, angle: 225 - (45 / 100) * 270 },
-	{ category: 'good' as const, min: 61, max: 75, angle: 225 - (60 / 100) * 270 },
-	{ category: 'excellent' as const, min: 76, max: 90, angle: 225 - (75 / 100) * 270 },
-	{ category: 'outstanding' as const, min: 91, max: 100, angle: 225 - (90 / 100) * 270 },
+	{ category: 'insufficient' as const, min: 0, max: 30, angle: 0 },
+	{ category: 'minimal' as const, min: 31, max: 45, angle: 45 },
+	{ category: 'adequate' as const, min: 46, max: 60, angle: 90 },
+	{ category: 'good' as const, min: 61, max: 75, angle: 135 },
+	{ category: 'excellent' as const, min: 76, max: 90, angle: 180 },
+	{ category: 'outstanding' as const, min: 91, max: 100, angle: 225 },
 ];
 
 /**
- * Konvertiert einen Score (0-100) in einen Winkel (225-315°)
- * Wird für die Gauge-Nadel verwendet (Tachometer-Stil mit Öffnung unten)
- * Winkel gehen rückwärts: 225° (unten-links) → 315° (unten-rechts)
+ * Konvertiert einen Score (0-100) in einen Winkel (0-270°)
+ * Wird für die Gauge-Nadel verwendet (Tachometer-Stil)
  */
 function scoreToAngle(score: number): number {
 	const clampedScore = Math.max(0, Math.min(100, score));
-	return 225 - (clampedScore / 100) * 270;
+	return (clampedScore / 100) * 270;
 }
 
 /**
  * Konvertiert einen Winkel (Grad) in SVG-Koordinaten für Kurve
+ * Rotiert um 135° gegen den Uhrzeigersinn für Tachometer-Layout (Öffnung unten mittig)
  */
 function angleToRadians(angle: number): number {
-	return (angle - 90) * (Math.PI / 180);
+	return (angle + 45) * (Math.PI / 180);
 }
 
 /**
@@ -77,7 +77,7 @@ export function SovereigntyGauge({ score, category, size = 200 }: SovereigntyGau
 	// Gauge-Ring Segmente für alle Kategorien (Hintergrund)
 	const segmentPaths = CATEGORY_RANGES.map((range, idx) => {
 		const nextRange = CATEGORY_RANGES[idx + 1];
-		const endAngle = nextRange ? nextRange.angle : 225 - 270;
+		const endAngle = nextRange ? nextRange.angle : 270;
 		const path = describeArc(centerX, centerY, outerRadius, range.angle, endAngle);
 
 		return (
