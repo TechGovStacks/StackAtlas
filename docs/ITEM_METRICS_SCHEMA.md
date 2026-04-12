@@ -257,10 +257,8 @@ sublayerBaseScore = (completeness ? 20 : 0)
 itemsAverageScore = AVERAGE(item.sovereigntyScore für alle Items im Sublayer)
 
 // Kombinierter Score (Gewichtung: 60% Items, 40% Criteria)
+// WICHTIG: Das Sublayer-Weight wird später auf Layer-Ebene mit WEIGHTED_AVERAGE angewendet
 sublayerScore = (itemsAverageScore * 0.6) + (sublayerBaseScore * 0.4)
-
-// Mit Sublayer-Weight anwenden
-finalSublayerScore = sublayerScore * (sublayer.weight / 1.0)
 ```
 
 ---
@@ -301,8 +299,8 @@ sublayersWeightedScore = WEIGHTED_AVERAGE(
 // Kombinierter Score (Gewichtung: 70% Sublayer, 30% Criteria)
 layerScore = (sublayersWeightedScore * 0.7) + (layerBaseScore * 0.3)
 
-// Mit Layer-Weight anwenden
-finalLayerScore = layerScore * (layer.weight / 1.0)
+// WICHTIG: Das Layer-Weight wird später auf Stack-Ebene mit WEIGHTED_AVERAGE angewendet
+// Nicht direkt hier anwenden, um Doppelgewichtung zu vermeiden!
 ```
 
 ---
@@ -328,28 +326,28 @@ Compute Sublayer:
   Average:        82/100
 ```
 
-**2. Sublayer-Scores**
+**2. Sublayer-Scores** (Gewicht wird auf Layer-Ebene angewendet)
 ```
 Storage:
   - Items Average:        68/100
   - Criteria (z.B.):      80/100
   - Combined: (68 × 0.6) + (80 × 0.4) = 72.8
-  - Weight (1.0):         72.8/100
+  - Score:                72.8/100
 
 Compute:
   - Items Average:        82/100
   - Criteria (z.B.):      90/100
   - Combined: (82 × 0.6) + (90 × 0.4) = 85.2
-  - Weight (1.0):         85.2/100
+  - Score:                85.2/100
 ```
 
-**3. Layer-Score**
+**3. Layer-Score** (Gewichteter Durchschnitt der Sublayer mit Gewichten)
 ```
 Infrastructure:
-  - Sublayer Average:     (72.8 + 84.4) / 2 = 78.6
+  - Sublayer Average:     (72.8 + 85.2) / 2 = 79.0
   - Criteria (z.B.):      85/100
-  - Combined: (78.6 × 0.7) + (85 × 0.3) = 80.82
-  - Weight (1.0):         80.82/100
+  - Combined: (79.0 × 0.7) + (85 × 0.3) = 80.8
+  - Score:                80.8/100
 ```
 
 ---
@@ -429,7 +427,7 @@ Stack Status: "Low Sovereignty" (unter 50)
   "id": "nextcloud",
   "name": "Nextcloud",
   "layer": "applications",
-  "sublayer": "content-management",      // ERFORDERLICH!
+  "sublayer": "content-management",      // Optional: Unterkategorisierung
   "description": { "de": "...", "en": "..." },
   "oss": true,
   "license": "AGPL-3.0",
