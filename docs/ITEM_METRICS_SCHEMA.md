@@ -56,7 +56,7 @@ Die Architektur folgt dem **Splash-Modell** mit 5 Layers:
 
 ### Sublayer (Kategorien)
 
-Jeder Layer kann mehrere **Sublayer** enthalten. Diese sind **nicht optional** - Items gehören immer zu einem Sublayer innerhalb eines Layers.
+Jeder Layer kann mehrere **Sublayer** enthalten. Items können einem Sublayer zugeordnet werden, um sie zu kategorisieren. Das `sublayer`-Feld ist **optional**.
 
 **Beispiele:**
 - Layer: `infrastructure` 
@@ -77,14 +77,14 @@ Jeder Layer kann mehrere **Sublayer** enthalten. Diese sind **nicht optional** -
 
 Items sind **konkrete Technologien oder Standards** (z.B. Nextcloud, Kubernetes, ActivityPub).
 
-**Jedes Item muss zu genau einem Sublayer gehören:**
+**Jedes Item gehört zu einem Layer. Das `sublayer`-Feld ist optional:**
 
 ```json
 {
   "id": "nextcloud",
   "name": "Nextcloud",
   "layer": "applications",
-  "sublayer": "content-management",
+  "sublayer": "content-management",  // Optional: Unterkategorisierung
   "description": { "de": "...", "en": "..." },
   "sovereigntyCriteria": { ... }
 }
@@ -339,8 +339,8 @@ Storage:
 Compute:
   - Items Average:        82/100
   - Criteria (z.B.):      90/100
-  - Combined: (82 × 0.7) + (90 × 0.3) = 84.4
-  - Weight (1.0):         84.4/100
+  - Combined: (82 × 0.6) + (90 × 0.4) = 85.2
+  - Weight (1.0):         85.2/100
 ```
 
 **3. Layer-Score**
@@ -502,8 +502,8 @@ export type Layer = {
 export type Item = {
   id: string;
   name: LocalizableText;
-  layer: string;                        // Layer ID
-  sublayer?: string;                    // WICHTIG: Zugehörigkeit!
+  layer: string;                        // Layer ID (erforderlich)
+  sublayer?: string;                    // Optional: Unterkategorisierung
   description: LocalizableText;
   sovereigntyCriteria: SovereigntyCriteria;
   sovereigntyScore?: number;            // Berechnet, nicht manuell
