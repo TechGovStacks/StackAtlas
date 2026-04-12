@@ -92,6 +92,14 @@
 		"vite-plugin-pwa": "1.2.0",
 		"workbox-window": "7.4.0"
 	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"@parcel/watcher",
+			"@public-ui/components",
+			"esbuild",
+			"sharp"
+		]
+	},
 	"lint-staged": {
 		"src/**/*.{tsx,ts}": [
 			"eslint --fix",
