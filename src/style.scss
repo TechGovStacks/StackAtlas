@@ -869,9 +869,7 @@ kol-card.article-card,
 	width: 100%;
 	max-width: 100%;
 	overflow-x: hidden;
-	word-wrap: break-word;
 	overflow-wrap: break-word;
-	word-break: break-word;
 }
 
 .drawer-headline,
@@ -888,7 +886,6 @@ kol-card.article-card,
 .drawer-content p,
 .drawer-content span,
 .drawer-content a {
-	word-wrap: break-word;
 	overflow-wrap: break-word;
 }
 
@@ -1109,7 +1106,7 @@ kol-card.article-card,
 	svg.sovereignty-gauge {
 		max-width: 100%;
 		height: auto;
-		filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+		filter: drop-shadow(0 2px 4px rgb(0 0 0 / 10%));
 
 		/* Smooth animation für Score-Änderungen */
 		path,
@@ -1121,7 +1118,7 @@ kol-card.article-card,
 }
 
 /* Responsive Gauge auf schmalen Bildschirmen */
-@media (max-width: 480px) {
+@media (width <= 480px) {
 	.drawer-gauge-container svg.sovereignty-gauge {
 		width: 140px;
 		height: auto;
