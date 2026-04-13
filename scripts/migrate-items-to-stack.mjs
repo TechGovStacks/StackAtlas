@@ -5,8 +5,8 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const ITEMS_DIR = path.join(__dirname, 'data', 'items');
-const STACK_FILE = path.join(__dirname, 'data', 'stacks', 'germany.json');
+const ITEMS_DIR = path.join(__dirname, '..', 'data', 'items');
+const STACK_FILE = path.join(__dirname, '..', 'data', 'stacks', 'germany.json');
 
 // Read all JSON files from data/items/
 const files = fs.readdirSync(ITEMS_DIR).filter(file => {

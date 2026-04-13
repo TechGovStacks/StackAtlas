@@ -1,0 +1,36 @@
+{
+	"id": "vuejs",
+	"name": "Vue.js",
+	"layer": "building-blocks",
+	"sublayer": "entwicklung",
+	"description": {
+		"de": "Vue.js ist ein progressives JavaScript-Framework für die Erstellung von Benutzeroberflächen. Es ermöglicht die deklarative Entwicklung von interaktiven Web-Anwendungen mit reaktiven Datenmodellen.",
+		"en": "Vue.js is a progressive JavaScript framework for building user interfaces. It enables declarative development of interactive web applications with reactive data models."
+	},
+	"homepage": "https://vuejs.org/",
+	"logo": "https://raw.githubusercontent.com/vuejs/art/master/logo.svg",
+	"tags": [
+		"webframework",
+		"user-interface",
+		"javascript",
+		"rendering"
+	],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": false,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://vuejs.org/guide/"
+	}
+}
