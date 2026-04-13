@@ -33,11 +33,11 @@ runs:
 
           | | |
           |---|---|
-          | **Preview URL** | [🔗 Open Preview](https://${{ inputs.repository-owner }}.github.io/accessible-d-stack-landscape/${{ inputs.slug }}/${{ inputs.commit-sha }}/) |
+          | **Preview URL** | [🔗 Open Preview](https://${{ inputs.repository-owner }}.github.io/${{ github.event.repository.name }}/${{ inputs.slug }}/${{ inputs.commit-sha }}/) |
           | **Slug** | `${{ inputs.slug }}` |
           | **Commit** | `${{ inputs.commit-sha }}` |
 
           **Access with QR Code:**
 
-          ![QR Code](https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://${{ inputs.repository-owner }}.github.io/accessible-d-stack-landscape/${{ inputs.slug }}/${{ inputs.commit-sha }}/)
+          ![QR Code](https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://${{ inputs.repository-owner }}.github.io/${{ github.event.repository.name }}/${{ inputs.slug }}/${{ inputs.commit-sha }}/)
         edit-mode: replace
