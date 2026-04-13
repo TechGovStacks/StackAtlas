@@ -91,7 +91,8 @@ export function FilterBar({
 					_options={layerOptions}
 					_value={filters.selectedLayer ?? ''}
 					_on={{
-						onChange: (_e: globalThis.Event, value: unknown) => onFilterChange({ ...filters, selectedLayer: value ? (value as string) : null, selectedSublayer: null }),
+						onChange: (_e: globalThis.Event, value: unknown) =>
+							onFilterChange({ ...filters, selectedLayer: value ? (value as string) : null, selectedSublayer: null }),
 					}}
 				/>
 				{filters.selectedLayer && (
@@ -99,10 +100,7 @@ export function FilterBar({
 						className="filter-bar__select filter-bar__select--sublayer sort-select"
 						_label="Sublayer"
 						_hideLabel
-						_options={[
-							{ label: 'All Sublayers', value: '' },
-							...sublayerOptions.map((sublayer) => ({ label: sublayer, value: sublayer })),
-						]}
+						_options={[{ label: 'All Sublayers', value: '' }, ...sublayerOptions.map((sublayer) => ({ label: sublayer, value: sublayer }))]}
 						_value={filters.selectedSublayer ?? ''}
 						_disabled={sublayerOptions.length === 0}
 						_on={{
