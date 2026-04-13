@@ -27,25 +27,31 @@ function dismissSplash(): void {
 	if (status) status.textContent = 'Anwendung bereit';
 
 	splash.classList.add('splash--exiting');
+	splash.style.display = 'none';
+	splash.style.visibility = 'hidden';
+	splash.style.pointerEvents = 'none';
+
 	const cleanup = () => {
-		splash.style.display = 'none';
-		splash.remove();
+		try {
+			splash.remove();
+		} catch {
+			// ignore
+		}
 	};
 	splash.addEventListener('transitionend', cleanup, { once: true });
-	// Fallback - immediately hide and remove
 	setTimeout(cleanup, 600);
 }
 
 let renderApp: (() => void) | null = null;
-const splash = document.getElementById('splash');
 
-if (splash instanceof HTMLElement) {
-	splash.style.cursor = 'pointer';
-	splash.addEventListener('click', () => {
+// Register click and keyboard handlers FIRST
+document.addEventListener('click', (e) => {
+	const splash = document.getElementById('splash');
+	if (splash?.contains(e.target as Node)) {
 		dismissSplash();
 		renderApp?.();
-	});
-}
+	}
+});
 
 document.addEventListener('keydown', (e: globalThis.KeyboardEvent) => {
 	if (e.key === 'Escape') {
