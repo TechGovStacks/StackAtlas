@@ -1,7 +1,7 @@
 import { KolButton, KolCard, KolDrawer, KolImage } from '@public-ui/preact';
-import { useState } from 'preact/hooks';
+import { useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
-import { ITEMS, LAYERS } from '../data/catalog';
+import { ITEMS, LAYERS, STACKS } from '../data/catalog';
 import { Item, ParticipantRole, StackItem } from '../types';
 import { getLocalizedText } from '../utils';
 import { computeOwnerScore, computeSovereigntyScoreResult } from '../utils/sovereigntyScore';
@@ -37,6 +37,10 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 		(candidate) =>
 			candidate.layer === selectedArticle.layer && candidate.id !== selectedArticle.id && (stackItemMap === undefined || stackItemMap.has(candidate.id)),
 	).sort((a, b) => getLocalizedText(a.name, i18n.language).localeCompare(getLocalizedText(b.name, i18n.language), i18n.language));
+
+	const stacksContainingItem = useMemo(() => {
+		return STACKS.filter((stack) => stack.items.some((item) => item.itemId === selectedArticle.id));
+	}, [selectedArticle.id]);
 
 	const scoreResult = computeSovereigntyScoreResult(article.sovereigntyCriteria);
 	const score = scoreResult.score;
@@ -216,6 +220,18 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 									<div className="drawer-rationale">
 										<p className="drawer-rationale__title">{t('stack.rationale')}</p>
 										<p>{getLocalizedText(stackItem.rationale, i18n.language)}</p>
+									</div>
+								)}
+								{!stackItem && stacksContainingItem.length > 0 && (
+									<div className="drawer-stacks">
+										<p className="drawer-stacks__title">Stacks</p>
+										<ul className="drawer-stacks__list">
+											{stacksContainingItem.map((stack) => (
+												<li key={stack.id} className="drawer-stacks__item">
+													{getLocalizedText(stack.name, i18n.language)}
+												</li>
+											))}
+										</ul>
 									</div>
 								)}
 							</div>{' '}
