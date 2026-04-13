@@ -406,34 +406,34 @@ main {
 	display: grid;
 	gap: var(--ds-space-2);
 	grid-template-columns: 1fr;
-	grid-template-areas: 'stack' 'layer' 'search' 'sort' 'toggle';
+	grid-template-areas: 'search' 'stack' 'layer' 'sublayer' 'sort' 'toggle';
 }
 
 .filter-bar__inner:not(:has(.filter-bar__select--stack)) {
-	grid-template-areas: 'layer' 'search' 'sort' 'toggle';
+	grid-template-areas: 'search' 'layer' 'sublayer' 'sort' 'toggle';
 }
 
 @media (width >= 480px) {
 	.filter-bar__inner {
 		grid-template-columns: 1fr 1fr;
-		grid-template-areas: 'stack  layer' 'search search' 'sort   toggle';
+		grid-template-areas: 'search search' 'stack  layer' 'sublayer sublayer' 'sort   toggle';
 	}
 
 	.filter-bar__inner:not(:has(.filter-bar__select--stack)) {
-		grid-template-areas: 'layer  layer' 'search search' 'sort   toggle';
+		grid-template-areas: 'search search' 'layer  layer' 'sublayer sublayer' 'sort   toggle';
 	}
 }
 
 @media (width >= 600px) {
 	.filter-bar__inner {
-		grid-template-columns: 1fr 1fr 2fr auto auto;
-		grid-template-areas: 'stack layer search sort toggle';
+		grid-template-columns: 2fr 1fr 1fr 1fr auto auto;
+		grid-template-areas: 'search stack layer sublayer sort toggle';
 		gap: var(--ds-space-2);
 	}
 
 	.filter-bar__inner:not(:has(.filter-bar__select--stack)) {
-		grid-template-columns: 1fr 2fr auto auto;
-		grid-template-areas: 'layer search sort toggle';
+		grid-template-columns: 2fr 1fr 1fr auto auto;
+		grid-template-areas: 'search layer sublayer sort toggle';
 	}
 }
 
@@ -449,6 +449,10 @@ main {
 
 .filter-bar__select--layer {
 	grid-area: layer;
+}
+
+.filter-bar__select--sublayer {
+	grid-area: sublayer;
 }
 
 .filter-bar__search {
