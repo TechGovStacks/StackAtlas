@@ -1,7 +1,7 @@
 // GENERATED FILE - DO NOT EDIT MANUALLY
 // Generated from: data/layers/ + data/items/ + data/stacks/
 // Logo fallback via: src/data/logo-urls.json
-// Generated at: 2026-04-13T07:16:18.930Z
+// Generated at: 2026-04-13T08:21:22.710Z
 
 import type { Item, Layer, Stack } from '../types';
 
@@ -2148,45 +2148,6 @@ const RAW_ITEMS: Item[] = [
 			"sovereigntyScore": 85
 		},
 		{
-			"id": "kern-ux-standard",
-			"name": "KERN UX Standard",
-			"layer": "building-blocks",
-			"sublayer": "entwicklung",
-			"description": {
-				"de": "Der KERN UX Standard ist ein deutschsprachiger Standard für barrierefreie und benutzergerechte Gestaltung von digitalen Schnittstellen. Er definiert Best Practices und Anforderungen für Accessibility, Usability und User Experience in der Entwicklung von Government-Anwendungen.",
-				"en": "The KERN UX Standard is a German-language standard for accessible and user-friendly design of digital interfaces. It defines best practices and requirements for accessibility, usability and user experience in the development of government applications."
-			},
-			"homepage": "https://www.kern-ux-standard.de/",
-			"tags": [
-				"standard",
-				"user-interface",
-				"accessibility",
-				"ux",
-				"usability",
-				"wcag"
-			],
-			"oss": true,
-			"maturity": "graduated",
-			"sovereigntyCriteria": {
-				"openSource": true,
-				"euHeadquartered": true,
-				"hasAudit": true,
-				"permissiveLicense": true,
-				"matureProject": true,
-				"selfHostable": true,
-				"dataPortability": true,
-				"openStandards": true,
-				"noTelemetryByDefault": true,
-				"ownerType": "government"
-			},
-			"audit": {
-				"lastDate": "2025-11-11",
-				"url": "https://www.kern-ux-standard.de/"
-			},
-			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 90
-		},
-		{
 			"id": "kong",
 			"name": "Kong",
 			"layer": "platform",
@@ -3511,44 +3472,6 @@ const RAW_ITEMS: Item[] = [
 			"sovereigntyScore": 78
 		},
 		{
-			"id": "public-ui-kolibri",
-			"name": "Public UI KoliBri",
-			"layer": "building-blocks",
-			"sublayer": "entwicklung",
-			"description": {
-				"de": "Public UI KoliBri ist eine Komponentenbibliothek für die Entwicklung barrierefreier Weboberflächen. Sie bietet vorgefertigte, zugängliche UI-Komponenten nach WCAG-Standards und ermöglicht die schnelle Entwicklung von Government-Anwendungen mit hohen Anforderungen an Accessibility.",
-				"en": "Public UI KoliBri is a component library for developing accessible web interfaces. It provides pre-built, accessible UI components that comply with WCAG standards and enables rapid development of government applications with high accessibility requirements."
-			},
-			"homepage": "https://public-ui.github.io/",
-			"logo": "https://public-ui.github.io/logo.svg",
-			"tags": [
-				"webframework",
-				"user-interface",
-				"components",
-				"accessibility",
-				"wcag"
-			],
-			"oss": true,
-			"maturity": "graduated",
-			"sovereigntyCriteria": {
-				"openSource": true,
-				"euHeadquartered": true,
-				"hasAudit": true,
-				"permissiveLicense": true,
-				"matureProject": true,
-				"selfHostable": true,
-				"dataPortability": true,
-				"openStandards": true,
-				"noTelemetryByDefault": true,
-				"ownerType": "government"
-			},
-			"audit": {
-				"lastDate": "2025-11-11",
-				"url": "https://github.com/public-ui/kolibri"
-			},
-			"sovereigntyScore": 90
-		},
-		{
 			"id": "pyro",
 			"name": "Pyro",
 			"layer": "platform",
@@ -4609,43 +4532,6 @@ const RAW_ITEMS: Item[] = [
 			"sovereigntyScore": 90
 		},
 		{
-			"id": "vuejs",
-			"name": "Vue.js",
-			"layer": "building-blocks",
-			"sublayer": "entwicklung",
-			"description": {
-				"de": "Vue.js ist ein progressives JavaScript-Framework für die Erstellung von Benutzeroberflächen. Es ermöglicht die deklarative Entwicklung von interaktiven Web-Anwendungen mit reaktiven Datenmodellen.",
-				"en": "Vue.js is a progressive JavaScript framework for building user interfaces. It enables declarative development of interactive web applications with reactive data models."
-			},
-			"homepage": "https://vuejs.org/",
-			"logo": "https://raw.githubusercontent.com/vuejs/art/master/logo.svg",
-			"tags": [
-				"webframework",
-				"user-interface",
-				"javascript",
-				"rendering"
-			],
-			"oss": true,
-			"maturity": "graduated",
-			"sovereigntyCriteria": {
-				"openSource": true,
-				"euHeadquartered": false,
-				"hasAudit": true,
-				"permissiveLicense": true,
-				"matureProject": true,
-				"selfHostable": true,
-				"dataPortability": true,
-				"openStandards": true,
-				"noTelemetryByDefault": false,
-				"ownerType": "independentConsortium"
-			},
-			"audit": {
-				"lastDate": "2025-11-11",
-				"url": "https://vuejs.org/guide/"
-			},
-			"sovereigntyScore": 90
-		},
-		{
 			"id": "webkit",
 			"name": "WebKit",
 			"layer": "applications",
@@ -4778,7 +4664,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "advanced-encryption-standard",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4786,7 +4673,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "agent-network-protocol",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4794,7 +4682,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "agent-to-agent-protocol",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4802,7 +4691,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "agent-user-interaction-protocol-ag-ui",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4810,7 +4700,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "android",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4818,7 +4709,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "angel-ml",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4826,7 +4718,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "angular",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4834,7 +4727,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "appsmith",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4842,7 +4736,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "axolotl",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4850,7 +4745,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "blink",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4858,7 +4754,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "bluetooth",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4866,7 +4763,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "border-gateway-protocol-bgp",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4874,7 +4772,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "budibase",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4882,7 +4781,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "c",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4890,7 +4790,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "cassandra",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4898,7 +4799,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "chroma",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4906,7 +4808,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "circleci",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4914,7 +4817,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "comma-separated-values-csv",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4922,7 +4826,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "comprehensive-knowledge-archive-network-ckan",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4930,7 +4835,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "contour",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4938,7 +4844,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "couchdb",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4946,7 +4853,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "css",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4954,7 +4862,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "data-catalog-vocabulary-dcat",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4962,7 +4871,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "docker-swarm",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4970,7 +4880,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "domain-name-system-dns",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4978,7 +4889,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "dynamic-host-configuration-protocol-dhcp",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4986,7 +4898,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "elliptic-curve-integrated-encryption-scheme",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -4994,7 +4907,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "emissary-ingress",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5002,7 +4916,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "envoy-proxy",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5010,7 +4925,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "ethernet",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5018,7 +4934,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "extensible-markup-language-xml",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5026,7 +4943,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "file-transfer-protocol-uber-tls-ftps",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5034,7 +4952,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "flutter",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5042,7 +4961,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "flux",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5050,7 +4970,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "gecko",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5058,7 +4979,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "general-purpose-remote-procedure-calls",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5066,7 +4988,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "github-actions",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5074,7 +4997,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "gitlab",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5082,7 +5006,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "glasfaser",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5090,7 +5015,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "go",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5098,7 +5024,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "graphql",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5106,7 +5033,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "haystack",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5114,7 +5042,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "hbase",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5122,7 +5051,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "huggingface-transformers",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5130,7 +5060,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "hypertext-transfer-protocol-http",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5138,7 +5069,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "internal-gateway-protocols-igp",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5146,7 +5078,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "internet-message-access-protocol-secure-imaps",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5154,7 +5087,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "internet-protocol-security-ipsec",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5162,7 +5096,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "internet-protocol-version-6-ipv6",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5170,7 +5105,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "ios",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5178,7 +5114,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "istio",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5186,7 +5123,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "java",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5194,7 +5132,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "javascript-ecma-script",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5202,7 +5141,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "javascript-object-notation-json",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5210,7 +5150,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "jenkins",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5218,7 +5159,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "joget",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5226,7 +5168,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "json-web-tokens-jwt",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5234,15 +5177,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "kerberos",
 					"status": "approved",
-					"note": {
-						"de": "Integriert in den Deutschland Stack",
-						"en": "Integrated into Germany Stack"
-					}
-				},
-				{
-					"itemId": "kern-ux-standard",
-					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5250,7 +5186,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "kong",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5258,7 +5195,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "kubernetes",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5266,7 +5204,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "langgraph",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5274,7 +5213,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "mariadb",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5282,7 +5222,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "markdown-md",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5290,7 +5231,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "media-access-control-mac",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5298,7 +5240,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "messaging-layer-security-mls",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5306,7 +5249,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "milvus",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5314,7 +5258,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "mlflow",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5322,7 +5267,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "mobilfunk",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5330,7 +5276,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "model-context-protocol-mcp",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5338,7 +5285,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "module-lattice-based-key-encapsulation-mechanism",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5346,7 +5294,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "mongodb",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5354,7 +5303,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "multiprotocol-label-switching-mpls",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5362,7 +5312,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "mysql-server",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5370,7 +5321,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "n8n",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5378,7 +5330,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "neo4j",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5386,7 +5339,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "nextjs",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5394,7 +5348,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "nginx",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5402,7 +5357,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "node-red",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5410,7 +5366,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "nomad",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5418,7 +5375,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "nqdrant",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5426,7 +5384,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "one-time-password-otp",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5434,7 +5393,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "open-archives-initiative-protocol-for-metadata-harvesting",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5442,7 +5402,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "open-authorization-oauth",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5450,7 +5411,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "open-id-connect-oidc",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5458,7 +5420,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "open-internet-exchange-point-ixp-oix-1",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5466,7 +5429,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "open-neural-network-exchange",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5474,7 +5438,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "open-shortest-path-first-ospf",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5482,7 +5447,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "openapi",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5490,7 +5456,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "openkruise",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5498,7 +5465,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "openshift-origin-okd",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5506,7 +5474,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "php",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5514,7 +5483,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "piveau",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5522,7 +5492,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "portainer",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5530,7 +5501,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "postgresql",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5538,15 +5510,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "promptflow",
 					"status": "approved",
-					"note": {
-						"de": "Integriert in den Deutschland Stack",
-						"en": "Integrated into Germany Stack"
-					}
-				},
-				{
-					"itemId": "public-ui-kolibri",
-					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5554,7 +5519,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "pyro",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5562,7 +5528,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "python",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5570,7 +5537,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "pytorch",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5578,7 +5546,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "quick-udp-internet-connections-quic",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5586,7 +5555,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "r",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5594,7 +5564,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "ragflow",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5602,7 +5573,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "rancher",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5610,7 +5582,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "react",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5618,7 +5591,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "representational-state-transfer",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5626,7 +5600,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "resource-description-framework-rdf",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5634,7 +5609,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "rivest-shamir-adleman",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5642,7 +5618,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "robot-framework",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5650,7 +5627,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "rust",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5658,7 +5636,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "scylla",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5666,7 +5645,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "sd-wan-service-attributes-and-service-framework-mef",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5674,7 +5654,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "secure-hash-algorithm",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5682,7 +5663,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "segment-routing-sr",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5690,7 +5672,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "selenium",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5698,7 +5681,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "session-initiation-protocol-sip",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5706,7 +5690,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "simple-mail-transfer-protocol-secure-smtps",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5714,7 +5699,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "simple-object-access-protocol",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5722,7 +5708,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "spacy",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5730,7 +5717,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "spinnaker",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5738,7 +5726,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "swift",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5746,7 +5735,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "tensorflow",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5754,7 +5744,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "traefik",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5762,7 +5753,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "transmission-control-protocol-tcp",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5770,7 +5762,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "transport-layer-security-tls",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5778,7 +5771,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "typescript",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5786,15 +5780,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "user-datagram-protocol-udp",
 					"status": "approved",
-					"note": {
-						"de": "Integriert in den Deutschland Stack",
-						"en": "Integrated into Germany Stack"
-					}
-				},
-				{
-					"itemId": "vuejs",
-					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5802,7 +5789,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "webkit",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5810,7 +5798,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "wifi",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
@@ -5818,7 +5807,8 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "yaml-ain-t-markup-language",
 					"status": "approved",
-					"note": {
+					"role": "consumer",
+					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
 					}
