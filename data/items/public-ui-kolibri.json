@@ -1,0 +1,37 @@
+{
+	"id": "public-ui-kolibri",
+	"name": "Public UI KoliBri",
+	"layer": "building-blocks",
+	"sublayer": "entwicklung",
+	"description": {
+		"de": "Public UI KoliBri ist eine Komponentenbibliothek für die Entwicklung barrierefreier Weboberflächen. Sie bietet vorgefertigte, zugängliche UI-Komponenten nach WCAG-Standards und ermöglicht die schnelle Entwicklung von Government-Anwendungen mit hohen Anforderungen an Accessibility.",
+		"en": "Public UI KoliBri is a component library for developing accessible web interfaces. It provides pre-built, accessible UI components that comply with WCAG standards and enables rapid development of government applications with high accessibility requirements."
+	},
+	"homepage": "https://public-ui.github.io/",
+	"logo": "https://public-ui.github.io/logo.svg",
+	"tags": [
+		"webframework",
+		"user-interface",
+		"components",
+		"accessibility",
+		"wcag"
+	],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://github.com/public-ui/kolibri"
+	}
+}

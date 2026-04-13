@@ -1,0 +1,37 @@
+{
+	"id": "kern-ux-standard",
+	"name": "KERN UX Standard",
+	"layer": "building-blocks",
+	"sublayer": "entwicklung",
+	"description": {
+		"de": "Der KERN UX Standard ist ein deutschsprachiger Standard für barrierefreie und benutzergerechte Gestaltung von digitalen Schnittstellen. Er definiert Best Practices und Anforderungen für Accessibility, Usability und User Experience in der Entwicklung von Government-Anwendungen.",
+		"en": "The KERN UX Standard is a German-language standard for accessible and user-friendly design of digital interfaces. It defines best practices and requirements for accessibility, usability and user experience in the development of government applications."
+	},
+	"homepage": "https://www.kern-ux-standard.de/",
+	"tags": [
+		"standard",
+		"user-interface",
+		"accessibility",
+		"ux",
+		"usability",
+		"wcag"
+	],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://www.kern-ux-standard.de/"
+	}
+}

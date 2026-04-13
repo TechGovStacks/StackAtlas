@@ -5,8 +5,8 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const ITEMS_DIR = path.join(__dirname, 'data', 'items');
-const STACK_FILE = path.join(__dirname, 'data', 'stacks', 'germany.json');
+const ITEMS_DIR = path.join(__dirname, '..', 'data', 'items');
+const STACK_FILE = path.join(__dirname, '..', 'data', 'stacks', 'germany.json');
 
 // Read all JSON files from data/items/
 const files = fs.readdirSync(ITEMS_DIR).filter(file => {
@@ -26,7 +26,8 @@ files.forEach(file => {
   const stackItem = {
     itemId: data.id,
     status: 'approved',
-    note: {
+    role: 'consumer',
+    rationale: {
       de: 'Integriert in den Deutschland Stack',
       en: 'Integrated into Germany Stack'
     }
