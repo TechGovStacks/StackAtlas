@@ -398,80 +398,6 @@ main {
 	font-size: var(--ds-text-xs);
 }
 
-/* ─────────────────────────────────────────────────────────────────────────────
-   Filter Bar (Complex Grid Layout)
-   ───────────────────────────────────────────────────────────────────────────── */
-
-.filter-bar__inner {
-	display: grid;
-	gap: var(--ds-space-2);
-	grid-template-columns: 1fr;
-	grid-template-areas: 'search' 'stack' 'layer' 'sublayer' 'sort' 'toggle';
-}
-
-.filter-bar__inner:not(:has(.filter-bar__select--stack)) {
-	grid-template-areas: 'search' 'layer' 'sublayer' 'sort' 'toggle';
-}
-
-@media (width >= 480px) {
-	.filter-bar__inner {
-		grid-template-columns: 1fr 1fr;
-		grid-template-areas: 'search search' 'stack  layer' 'sublayer sublayer' 'sort   toggle';
-	}
-
-	.filter-bar__inner:not(:has(.filter-bar__select--stack)) {
-		grid-template-areas: 'search search' 'layer  layer' 'sublayer sublayer' 'sort   toggle';
-	}
-}
-
-@media (width >= 600px) {
-	.filter-bar__inner {
-		grid-template-columns: 2fr 1fr 1fr 1fr auto auto;
-		grid-template-areas: 'search stack layer sublayer sort toggle';
-		gap: var(--ds-space-2);
-	}
-
-	.filter-bar__inner:not(:has(.filter-bar__select--stack)) {
-		grid-template-columns: 2fr 1fr 1fr auto auto;
-		grid-template-areas: 'search layer sublayer sort toggle';
-	}
-}
-
-@media (width >= 1024px) {
-	.filter-bar__inner {
-		gap: var(--ds-space-3);
-	}
-}
-
-.filter-bar__select--stack {
-	grid-area: stack;
-}
-
-.filter-bar__select--layer {
-	grid-area: layer;
-}
-
-.filter-bar__select--sublayer {
-	grid-area: sublayer;
-}
-
-.filter-bar__search {
-	grid-area: search;
-}
-
-.filter-bar__sort {
-	grid-area: sort;
-}
-
-.filter-bar__view-toggle {
-	grid-area: toggle;
-}
-
-@media (width < 480px) {
-	.filter-bar__view-toggle {
-		place-self: start;
-	}
-}
 
 /* ─────────────────────────────────────────────────────────────────────────────
    Articles Grid (Responsive Columns)
@@ -600,6 +526,14 @@ kol-select,
 	grid-template-areas: 'layer' 'search' 'sort' 'toggle';
 }
 
+.filter-bar__inner:has(.filter-bar__select--sublayer) {
+	grid-template-areas: 'stack' 'layer' 'sublayer' 'search' 'sort' 'toggle';
+}
+
+.filter-bar__inner:not(:has(.filter-bar__select--stack)):has(.filter-bar__select--sublayer) {
+	grid-template-areas: 'layer' 'sublayer' 'search' 'sort' 'toggle';
+}
+
 /* Tablet 480px: two columns */
 @media (width >= 480px) {
 	.filter-bar__inner {
@@ -609,6 +543,14 @@ kol-select,
 
 	.filter-bar__inner:not(:has(.filter-bar__select--stack)) {
 		grid-template-areas: 'layer  layer' 'search search' 'sort   toggle';
+	}
+
+	.filter-bar__inner:has(.filter-bar__select--sublayer) {
+		grid-template-areas: 'stack  layer' 'sublayer sublayer' 'search search' 'sort   toggle';
+	}
+
+	.filter-bar__inner:not(:has(.filter-bar__select--stack)):has(.filter-bar__select--sublayer) {
+		grid-template-areas: 'layer  layer' 'sublayer sublayer' 'search search' 'sort   toggle';
 	}
 }
 
@@ -623,6 +565,16 @@ kol-select,
 	.filter-bar__inner:not(:has(.filter-bar__select--stack)) {
 		grid-template-columns: 1fr 2fr auto auto;
 		grid-template-areas: 'layer search sort toggle';
+	}
+
+	.filter-bar__inner:has(.filter-bar__select--sublayer) {
+		grid-template-columns: 1fr 1fr 1fr 2fr auto auto;
+		grid-template-areas: 'stack layer sublayer search sort toggle';
+	}
+
+	.filter-bar__inner:not(:has(.filter-bar__select--stack)):has(.filter-bar__select--sublayer) {
+		grid-template-columns: 1fr 1fr 2fr auto auto;
+		grid-template-areas: 'layer sublayer search sort toggle';
 	}
 }
 
@@ -642,6 +594,10 @@ kol-select,
 
 .filter-bar__select--layer {
 	grid-area: layer;
+}
+
+.filter-bar__select--sublayer {
+	grid-area: sublayer;
 }
 
 .filter-bar__search {
