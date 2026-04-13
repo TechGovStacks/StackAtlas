@@ -47,7 +47,7 @@ let renderApp: (() => void) | null = null;
 // Register click and keyboard handlers FIRST
 document.addEventListener('click', (e) => {
 	const splash = document.getElementById('splash');
-	if (splash?.contains(e.target as Node)) {
+	if (splash?.contains(e.target as HTMLElement)) {
 		dismissSplash();
 		renderApp?.();
 	}
