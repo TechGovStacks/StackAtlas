@@ -55,6 +55,7 @@ jobs:
           path: dist/
 
       - name: Publish Preview to gh-pages subfolder
+        id: deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REPOSITORY: ${{ github.repository }}
@@ -62,6 +63,9 @@ jobs:
           SOURCE_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
           set -euo pipefail
+          SHORT_SHA="${SOURCE_SHA:0:7}"
+          DEPLOY_PATH="${SLUG}/${SHORT_SHA}"
+          echo "short-sha=${SHORT_SHA}" >> "$GITHUB_OUTPUT"
           REMOTE_URL="https://x-access-token:${GITHUB_TOKEN}@github.com/${REPOSITORY}.git"
 
           if git ls-remote --exit-code --heads "${REMOTE_URL}" gh-pages >/dev/null 2>&1; then
@@ -76,9 +80,10 @@ jobs:
 
           cd gh-pages
 
-          # Unterordner des PRs ersetzen
-          rm -rf "${SLUG}"
-          cp -a ../dist/. "${SLUG}/"
+          # Commit-spezifischen Unterordner des PRs ersetzen
+          rm -rf "${DEPLOY_PATH}"
+          mkdir -p "${DEPLOY_PATH}"
+          cp -a ../dist/. "${DEPLOY_PATH}/"
           touch .nojekyll
 
           git config user.name "github-actions[bot]"
@@ -86,7 +91,7 @@ jobs:
 
           if [ -n "$(git status --porcelain)" ]; then
             git add -A
-            git commit -m "Deploy PR preview '${SLUG}' (${SOURCE_SHA})"
+            git commit -m "Deploy PR preview '${DEPLOY_PATH}' (${SOURCE_SHA})"
             git push origin gh-pages
           else
             echo "No changes to deploy."
@@ -96,4 +101,5 @@ jobs:
         uses: ./.github/actions/post-preview-comment
         with:
           slug: ${{ env.SLUG }}
+          commit-sha: ${{ steps.deploy.outputs.short-sha }}
           repository-owner: ${{ github.repository_owner }}

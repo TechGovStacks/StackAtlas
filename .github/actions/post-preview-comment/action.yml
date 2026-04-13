@@ -3,7 +3,10 @@ description: Find or create a comment with the preview URL on a PR
 
 inputs:
   slug:
-    description: The slug/subdirectory for the preview
+    description: The slug/subdirectory for the PR preview (e.g. pr-42)
+    required: true
+  commit-sha:
+    description: The commit SHA to deploy under (e.g. abc1234...)
     required: true
   repository-owner:
     description: The repository owner username
@@ -30,11 +33,11 @@ runs:
 
           | | |
           |---|---|
-          | **Preview URL** | [🔗 Open Preview](https://${{ inputs.repository-owner }}.github.io/accessible-d-stack-landscape/${{ inputs.slug }}/) |
+          | **Preview URL** | [🔗 Open Preview](https://${{ inputs.repository-owner }}.github.io/${{ github.event.repository.name }}/${{ inputs.slug }}/${{ inputs.commit-sha }}/) |
           | **Slug** | `${{ inputs.slug }}` |
-          | **Commit** | ${{ github.sha }} |
+          | **Commit** | `${{ inputs.commit-sha }}` |
 
           **Access with QR Code:**
 
-          ![QR Code](https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://${{ inputs.repository-owner }}.github.io/accessible-d-stack-landscape/${{ inputs.slug }}/)
+          ![QR Code](https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://${{ inputs.repository-owner }}.github.io/${{ github.event.repository.name }}/${{ inputs.slug }}/${{ inputs.commit-sha }}/)
         edit-mode: replace
