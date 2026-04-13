@@ -27,9 +27,12 @@ function dismissSplash(): void {
 	if (status) status.textContent = 'Anwendung bereit';
 
 	splash.classList.add('splash--exiting');
-	const cleanup = () => splash.remove();
+	const cleanup = () => {
+		splash.style.display = 'none';
+		splash.remove();
+	};
 	splash.addEventListener('transitionend', cleanup, { once: true });
-	// Fallback if transitionend doesn't fire (e.g. reduced motion)
+	// Fallback - immediately hide and remove
 	setTimeout(cleanup, 600);
 }
 
@@ -51,10 +54,13 @@ document.addEventListener('keydown', (e: globalThis.KeyboardEvent) => {
 	}
 });
 
+// Safety timeout to dismiss splash after max 10 seconds regardless
+setTimeout(dismissSplash, 10000);
+
 Promise.all([
 	Promise.race([
 		register([KERN_V2, DEFAULT], defineCustomElements, { translation: { name: 'de' } }),
-		new Promise<void>((_, reject) => setTimeout(() => reject(new Error('KoliBri registration timeout')), 5000)),
+		new Promise<void>((_, reject) => setTimeout(() => reject(new Error('KoliBri registration timeout')), 3000)),
 	]),
 	new Promise<void>((resolve) => {
 		renderApp = resolve;
@@ -75,7 +81,7 @@ Promise.all([
 	.catch((error) => {
 		console.error('Error during app initialization:', error);
 		// Force splash to disappear even if there's an error
-		setTimeout(dismissSplash, 2000);
+		dismissSplash();
 		const htmlElement: HTMLElement | null = document.querySelector<HTMLDivElement>('div#app');
 		if (htmlElement instanceof HTMLElement) {
 			render(<App />, htmlElement);
