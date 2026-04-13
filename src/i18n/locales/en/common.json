@@ -91,12 +91,15 @@
 		"scoreAria": "Sovereignty score: {{score}} of 100",
 		"sovereigntyScore": "Sovereignty Score (0–100)",
 		"criteria": {
+			"selfHostable": "Self-hostable (no third-party infrastructure required)",
+			"dataPortability": "Data exportable in open, non-proprietary formats",
 			"openSource": "Open Source (public source code)",
-			"euHeadquartered": "EU headquarters or registration",
+			"openStandards": "Built on open, vendor-neutral standards",
+			"permissiveLicense": "Permissive or copyleft license (forkable)",
 			"hasAudit": "Security audit available",
-			"permissiveLicense": "Permissive or copyleft license",
 			"matureProject": "Mature project (graduated/stable)",
-			"largeEcosystem": "Large community ecosystem",
+			"noTelemetryByDefault": "No telemetry collected by default",
+			"euHeadquartered": "EU headquarters or registration",
 			"ownerType": "Owner model: {{owner}} (+{{points}})"
 		},
 		"ownerType": {

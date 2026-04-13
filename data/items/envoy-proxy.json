@@ -9,16 +9,22 @@
 	},
 	"homepage": "https://www.envoyproxy.io/",
 	"logo": "https://www.envoyproxy.io/img/envoy-logo.svg",
-	"tags": ["proxy", "orchestrierung"],
+	"tags": [
+		"proxy",
+		"orchestrierung"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
 	"audit": {

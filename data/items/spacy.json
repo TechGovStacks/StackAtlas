@@ -9,16 +9,23 @@
 	},
 	"homepage": "https://spacy.io/usage",
 	"logo": "https://spacy.io/_static/logo.png",
-	"tags": ["dl", "verarbeitung", "nlp"],
+	"tags": [
+		"dl",
+		"verarbeitung",
+		"nlp"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
-		"euHeadquartered": false,
+		"euHeadquartered": true,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
 		"ownerType": "corporation"
 	},
 	"audit": {

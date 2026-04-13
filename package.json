@@ -5,6 +5,7 @@
 	"packageManager": "pnpm@10.33.0",
 	"scripts": {
 		"assign-owner-types": "node scripts/assign-owner-types.mjs",
+		"backfill-sovereignty": "node scripts/backfill-sovereignty-criteria.mjs",
 		"build": "tsc && vite build",
 		"cap:add:android": "cap add android",
 		"cap:add:ios": "cap add ios",

@@ -9,16 +9,21 @@
 	},
 	"homepage": "https://yaml.org/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Official_yaml_logo.svg",
-	"tags": ["datenformat"],
+	"tags": [
+		"datenformat"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
 	"audit": {

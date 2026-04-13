@@ -9,16 +9,24 @@
 	},
 	"homepage": "https://github.com/actions",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/GitHub_Actions_Logo.svg",
-	"tags": ["pipeline", "cd", "bereitstellung", "ci"],
+	"tags": [
+		"pipeline",
+		"cd",
+		"bereitstellung",
+		"ci"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false,
 		"ownerType": "corporation"
 	},
 	"audit": {

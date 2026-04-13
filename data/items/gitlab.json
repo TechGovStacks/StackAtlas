@@ -9,16 +9,24 @@
 	},
 	"homepage": "https://about.gitlab.com/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/GitLab_logo.svg",
-	"tags": ["pipeline", "cd", "bereitstellung", "ci"],
+	"tags": [
+		"pipeline",
+		"cd",
+		"bereitstellung",
+		"ci"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": false,
 		"ownerType": "corporation"
 	},
 	"audit": {

@@ -9,7 +9,12 @@
 	},
 	"homepage": "https://onnx.ai/",
 	"logo": "https://onnx.ai/images/ONNX-Logo.svg",
-	"tags": ["machine-learning", "neuronale-netze", "verarbeitung", "ml"],
+	"tags": [
+		"machine-learning",
+		"neuronale-netze",
+		"verarbeitung",
+		"ml"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -18,7 +23,10 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
 	"audit": {

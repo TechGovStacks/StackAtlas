@@ -8,16 +8,22 @@
 		"en": ""
 	},
 	"homepage": "https://www.openarchives.org/pmh/",
-	"tags": ["datenkatalog", "metadaten"],
+	"tags": [
+		"datenkatalog",
+		"metadaten"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": false,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	}
 }

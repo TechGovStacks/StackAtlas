@@ -9,16 +9,23 @@
 	},
 	"homepage": "https://neo4j.com/",
 	"logo": "https://dist.neo4j.com/wp-content/uploads/20230926084108/Logo_FullColor_RGB_TransBG.svg",
-	"tags": ["nosql", "datenbank", "graph"],
+	"tags": [
+		"nosql",
+		"datenbank",
+		"graph"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
 		"ownerType": "corporation"
 	},
 	"audit": {

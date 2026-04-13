@@ -8,16 +8,23 @@
 		"en": ""
 	},
 	"homepage": "https://ag-ui.com",
-	"tags": ["agent", "agentische-ki", "user-interface"],
+	"tags": [
+		"agent",
+		"agentische-ki",
+		"user-interface"
+	],
 	"oss": true,
 	"maturity": "sandbox",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
 	"audit": {

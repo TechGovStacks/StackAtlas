@@ -9,16 +9,23 @@
 	},
 	"homepage": "https://cassandra.apache.org/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Cassandra_logo.svg",
-	"tags": ["nosql", "datenbank", "spalten"],
+	"tags": [
+		"nosql",
+		"datenbank",
+		"spalten"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "community"
 	},
 	"audit": {

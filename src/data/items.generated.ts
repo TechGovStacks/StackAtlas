@@ -1,7 +1,7 @@
 // GENERATED FILE - DO NOT EDIT MANUALLY
 // Generated from: data/layers/ + data/items/ + data/stacks/
 // Logo fallback via: src/data/logo-urls.json
-// Generated at: 2026-04-12T20:01:26.269Z
+// Generated at: 2026-04-13T06:37:08.726Z
 
 import type { Item, Layer, Stack } from '../types';
 
@@ -104,16 +104,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf?__blob=publicationFile"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "agent-network-protocol",
@@ -136,9 +139,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -146,7 +152,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://github.com/agent-network-protocol"
 			},
 			"logo": "https://upload.wikimedia.org/wikipedia/commons/7/71/Bluesky%E2%80%93AT_Protocol_federation_architecture.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "agent-to-agent-protocol",
@@ -170,9 +176,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -180,7 +189,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://github.com/i-am-bee/beeai-platform/blob/main/docs/community-and-support/acp-a2a-migration-guide.mdx"
 			},
 			"logo": "https://upload.wikimedia.org/wikipedia/commons/1/1f/US-Huey-helicopter-spraying-Agent-Orange-in-Vietnam.jpg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "agent-user-interaction-protocol-ag-ui",
@@ -203,9 +212,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -213,7 +225,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://github.com/ag-ui-protocol/ag-ui"
 			},
 			"logo": "https://upload.wikimedia.org/wikipedia/en/a/af/WeChat_logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "android",
@@ -237,16 +249,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://source.android.com/docs?hl=de"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 78
 		},
 		{
 			"id": "angel-ml",
@@ -269,9 +284,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
@@ -279,7 +297,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://github.com/Angel-ML/angel/"
 			},
 			"logo": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Ancistroteuthis_lichtensteini.jpg",
-			"sovereigntyScore": 58
+			"sovereigntyScore": 78
 		},
 		{
 			"id": "angular",
@@ -302,16 +320,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": false,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://angular.dev/overview"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 83
 		},
 		{
 			"id": "appsmith",
@@ -336,16 +357,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": false,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/appsmithorg/appsmith"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 63
 		},
 		{
 			"id": "axolotl",
@@ -368,9 +392,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
@@ -378,7 +405,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://docs.axolotl.ai/"
 			},
 			"logo": "https://upload.wikimedia.org/wikipedia/commons/0/00/Axolotl_ganz.jpg",
-			"sovereigntyScore": 58
+			"sovereigntyScore": 78
 		},
 		{
 			"id": "blink",
@@ -402,16 +429,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://developer.chrome.com/docs/web-platform/blink?hl=de"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 78
 		},
 		{
 			"id": "bluetooth",
@@ -438,16 +468,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://www.bluetooth.com/specifications/specs/"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "border-gateway-protocol-bgp",
@@ -470,9 +503,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
@@ -480,7 +516,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://fgithub.com/bgp/bgpq4"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 58
+			"sovereigntyScore": 88
 		},
 		{
 			"id": "budibase",
@@ -505,16 +541,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": false,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://docs.budibase.com/docs/what-is-budibase"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 63
 		},
 		{
 			"id": "c",
@@ -537,16 +576,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://isocpp.org/std/standing-documents"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "cassandra",
@@ -570,16 +612,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://cassandra.apache.org/doc/latest/"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 92
 		},
 		{
 			"id": "chroma",
@@ -602,16 +647,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://docs.trychroma.com/docs/overview/introduction"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 78
 		},
 		{
 			"id": "circleci",
@@ -638,14 +686,17 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": false,
+				"dataPortability": false,
+				"openStandards": false,
+				"noTelemetryByDefault": false,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://circleci.com/docs/"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 28
 		},
 		{
 			"id": "comma-separated-values-csv",
@@ -669,14 +720,17 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://datatracker.ietf.org/doc/html/rfc4180"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 85
 		},
 		{
 			"id": "comprehensive-knowledge-archive-network-ckan",
@@ -704,14 +758,17 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/ckan/ckan"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 85
 		},
 		{
 			"id": "contour",
@@ -735,16 +792,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/projectcontour/contour"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "couchdb",
@@ -768,16 +828,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://docs.couchdb.org/en/stable/"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 92
 		},
 		{
 			"id": "css",
@@ -802,14 +865,17 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://www.w3.org/Style/CSS/"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 85
 		},
 		{
 			"id": "data-catalog-vocabulary-dcat",
@@ -833,7 +899,10 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -841,7 +910,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://github.com/SEMICeu/DCAT-AP"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 85
 		},
 		{
 			"id": "docker-swarm",
@@ -864,16 +933,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": false,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://docs.docker.com/engine/swarm/"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 83
 		},
 		{
 			"id": "domain-name-system-dns",
@@ -896,16 +968,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://tools.ietf.org/html/rfc7858"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "dynamic-host-configuration-protocol-dhcp",
@@ -927,9 +1002,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -937,7 +1015,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://datatracker.ietf.org/doc/html/rfc8415"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "elliptic-curve-integrated-encryption-scheme",
@@ -962,11 +1040,14 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": false,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 38
+			"sovereigntyScore": 73
 		},
 		{
 			"id": "emissary-ingress",
@@ -990,16 +1071,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/emissary-ingress/emissary"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 88
 		},
 		{
 			"id": "envoy-proxy",
@@ -1022,16 +1106,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/envoyproxy/envoy"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "ethernet",
@@ -1056,9 +1143,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -1066,7 +1156,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=68"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "extensible-markup-language-xml",
@@ -1088,16 +1178,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://www.w3.org/TR/xml11/"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "file-transfer-protocol-uber-tls-ftps",
@@ -1119,9 +1212,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -1129,7 +1225,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://www.cerberusftp.com/blog/eight-essential-tips-for-securing-an-ftp-or-sftp-server"
 			},
 			"logo": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Internet_map_1024_-_transparent%2C_inverted.png",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "flutter",
@@ -1151,16 +1247,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": false,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://docs.flutter.dev/"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 73
 		},
 		{
 			"id": "flux",
@@ -1185,16 +1284,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://fluxcd.io/flux/"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 92
 		},
 		{
 			"id": "gecko",
@@ -1218,16 +1320,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/mozilla"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 82
 		},
 		{
 			"id": "general-purpose-remote-procedure-calls",
@@ -1253,14 +1358,17 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://grpc.io/docs/"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 82
 		},
 		{
 			"id": "github-actions",
@@ -1285,16 +1393,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": false,
+				"dataPortability": false,
+				"openStandards": false,
+				"noTelemetryByDefault": false,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://docs.github.com/en/actions"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 38
 		},
 		{
 			"id": "gitlab",
@@ -1319,16 +1430,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": false,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/gitlabhq/gitlabhq"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 83
 		},
 		{
 			"id": "glasfaser",
@@ -1348,11 +1462,14 @@ const RAW_ITEMS: Item[] = [
 			"maturity": "graduated",
 			"sovereigntyCriteria": {
 				"openSource": true,
-				"euHeadquartered": false,
+				"euHeadquartered": true,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -1360,7 +1477,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://www.itu.int/itu-t/recommendations/index.aspx?ser=G"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 100
 		},
 		{
 			"id": "go",
@@ -1383,16 +1500,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://go.dev/ref/spec"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 92
 		},
 		{
 			"id": "graphql",
@@ -1418,14 +1538,17 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://spec.graphql.org/"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 85
 		},
 		{
 			"id": "haystack",
@@ -1450,16 +1573,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://docs.haystack.deepset.ai/docs/intro"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 82
 		},
 		{
 			"id": "hbase",
@@ -1483,16 +1609,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://hbase.apache.org/book.html"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 92
 		},
 		{
 			"id": "huggingface-transformers",
@@ -1517,16 +1646,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": false,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/huggingface/transformers"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 73
 		},
 		{
 			"id": "hypertext-transfer-protocol-http",
@@ -1551,16 +1683,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://datatracker.ietf.org/doc/html/rfc9114"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "internal-gateway-protocols-igp",
@@ -1582,9 +1717,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -1592,7 +1730,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://www.rfc-editor.org/rfc/rfc9350.html"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "internet-message-access-protocol-secure-imaps",
@@ -1614,13 +1752,16 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": false,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 45
+			"sovereigntyScore": 90
 		},
 		{
 			"id": "internet-protocol-security-ipsec",
@@ -1643,9 +1784,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -1653,7 +1797,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://tools.ietf.org/html/rfc4835"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "internet-protocol-version-6-ipv6",
@@ -1675,13 +1819,16 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": false,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 45
+			"sovereigntyScore": 90
 		},
 		{
 			"id": "ios",
@@ -1707,10 +1854,13 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": false,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
-			"sovereigntyScore": 38
+			"sovereigntyScore": 63
 		},
 		{
 			"id": "istio",
@@ -1734,16 +1884,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/istio/istio"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "java",
@@ -1767,12 +1920,15 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": false,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
-			"sovereigntyScore": 38
+			"sovereigntyScore": 83
 		},
 		{
 			"id": "javascript-ecma-script",
@@ -1795,16 +1951,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://www.iso.org/standard/73002.html"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "javascript-object-notation-json",
@@ -1826,16 +1985,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://datatracker.ietf.org/doc/html/rfc4627"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "jenkins",
@@ -1860,16 +2022,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/jenkinsci/jenkins"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 92
 		},
 		{
 			"id": "joget",
@@ -1895,16 +2060,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": false,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://joget.com/joget-earns-govstack-software-requirements-compliance-helping-governments-fast-track-digital-transformation/"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 67
 		},
 		{
 			"id": "json-web-tokens-jwt",
@@ -1927,9 +2095,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -1937,7 +2108,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://datatracker.ietf.org/doc/html/rfc8725"
 			},
 			"logo": "https://cdn.simpleicons.org/jsonwebtokens",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "kerberos",
@@ -1964,14 +2135,17 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://web.mit.edu/kerberos/"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 85
 		},
 		{
 			"id": "kong",
@@ -1995,16 +2169,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/Kong/kong"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 88
 		},
 		{
 			"id": "kubernetes",
@@ -2027,16 +2204,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://kubernetes.io/docs/home/"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "langgraph",
@@ -2059,16 +2239,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://langchain-ai.github.io/langgraphjs/tutorials/quickstart/"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 78
 		},
 		{
 			"id": "mariadb",
@@ -2090,18 +2273,21 @@ const RAW_ITEMS: Item[] = [
 			"maturity": "graduated",
 			"sovereigntyCriteria": {
 				"openSource": true,
-				"euHeadquartered": false,
+				"euHeadquartered": true,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://mariadb.org/documentation/"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 100
 		},
 		{
 			"id": "markdown-md",
@@ -2125,14 +2311,17 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://daringfireball.net/projects/markdown/"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 85
 		},
 		{
 			"id": "media-access-control-mac",
@@ -2157,9 +2346,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -2167,7 +2359,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://tools.ietf.org/rfc/rfc826.txt"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "messaging-layer-security-mls",
@@ -2190,9 +2382,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -2200,7 +2395,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://github.com/mlswg/mls-protocol"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "milvus",
@@ -2223,16 +2418,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://milvus.io/docs/de"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 82
 		},
 		{
 			"id": "mlflow",
@@ -2255,16 +2453,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://mlflow.org/docs/latest/"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 85
 		},
 		{
 			"id": "mobilfunk",
@@ -2286,11 +2487,14 @@ const RAW_ITEMS: Item[] = [
 			"maturity": "graduated",
 			"sovereigntyCriteria": {
 				"openSource": true,
-				"euHeadquartered": false,
+				"euHeadquartered": true,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -2298,7 +2502,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://www.3gpp.org/specifications-technologies"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 100
 		},
 		{
 			"id": "model-context-protocol-mcp",
@@ -2322,16 +2526,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://modelcontextprotocol.io/specification/2025-06-18"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "module-lattice-based-key-encapsulation-mechanism",
@@ -2357,7 +2564,10 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -2365,7 +2575,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf?__blob=publicationFile"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 85
 		},
 		{
 			"id": "mongodb",
@@ -2389,16 +2599,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/mongodb"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 88
 		},
 		{
 			"id": "multiprotocol-label-switching-mpls",
@@ -2420,9 +2633,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -2430,7 +2646,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://datatracker.ietf.org/doc/html/rfc6790"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "mysql-server",
@@ -2454,16 +2670,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://dev.mysql.com/doc/"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 88
 		},
 		{
 			"id": "n8n",
@@ -2487,18 +2706,21 @@ const RAW_ITEMS: Item[] = [
 			"maturity": "graduated",
 			"sovereigntyCriteria": {
 				"openSource": true,
-				"euHeadquartered": false,
+				"euHeadquartered": true,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://docs.n8n.io/"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 97
 		},
 		{
 			"id": "neo4j",
@@ -2522,16 +2744,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://neo4j.com/docs/"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 78
 		},
 		{
 			"id": "nextjs",
@@ -2554,16 +2779,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": false,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://nextjs.org/docs"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 83
 		},
 		{
 			"id": "nginx",
@@ -2588,16 +2816,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://nginx.org/en/docs/index.html"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 88
 		},
 		{
 			"id": "node-red",
@@ -2621,16 +2852,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://nodered.org/docs/developing-flows/"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 92
 		},
 		{
 			"id": "nomad",
@@ -2653,16 +2887,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://developer.hashicorp.com/nomad/docs"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 88
 		},
 		{
 			"id": "nqdrant",
@@ -2686,16 +2923,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/qdrant/qdrant"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 78
 		},
 		{
 			"id": "one-time-password-otp",
@@ -2722,7 +2962,10 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -2730,7 +2973,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://datatracker.ietf.org/doc/html/rfc2289"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 85
 		},
 		{
 			"id": "open-archives-initiative-protocol-for-metadata-harvesting",
@@ -2752,13 +2995,16 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": false,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 45
+			"sovereigntyScore": 90
 		},
 		{
 			"id": "open-authorization-oauth",
@@ -2784,14 +3030,17 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://datatracker.ietf.org/doc/html/rfc6750"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 85
 		},
 		{
 			"id": "open-id-connect-oidc",
@@ -2816,7 +3065,10 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -2824,7 +3076,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://openid.net/specs/openid-connect-core-1_0.html#:~:text=Final:%20OpenID%20Connect%20Core%201.0%20incorporating%20errata%20set%202"
 			},
 			"logo": "https://cdn.simpleicons.org/openid",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 85
 		},
 		{
 			"id": "open-internet-exchange-point-ixp-oix-1",
@@ -2848,9 +3100,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -2858,7 +3113,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://www.oix.org/"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "open-neural-network-exchange",
@@ -2885,14 +3140,17 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/onnx/onnx"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 85
 		},
 		{
 			"id": "open-shortest-path-first-ospf",
@@ -2914,9 +3172,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -2924,7 +3185,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://datatracker.ietf.org/doc/html/rfc8362"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "openapi",
@@ -2951,14 +3212,17 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/OAI/OpenAPI-Specification"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 85
 		},
 		{
 			"id": "openkruise",
@@ -2982,9 +3246,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -2992,7 +3259,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://github.com/openkruise/kruise"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "openshift-origin-okd",
@@ -3015,16 +3282,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://okd.io/docs/documentation/"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 92
 		},
 		{
 			"id": "php",
@@ -3047,16 +3317,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://www.php.net/docs.php"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 88
 		},
 		{
 			"id": "piveau",
@@ -3079,11 +3352,14 @@ const RAW_ITEMS: Item[] = [
 			"maturity": "graduated",
 			"sovereigntyCriteria": {
 				"openSource": true,
-				"euHeadquartered": false,
+				"euHeadquartered": true,
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
@@ -3091,7 +3367,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://interoperable-europe.ec.europa.eu/collection/open-data/solution/piveau"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 58
+			"sovereigntyScore": 83
 		},
 		{
 			"id": "portainer",
@@ -3113,16 +3389,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/portainer"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 82
 		},
 		{
 			"id": "postgresql",
@@ -3147,12 +3426,15 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": false,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
-			"sovereigntyScore": 45
+			"sovereigntyScore": 90
 		},
 		{
 			"id": "promptflow",
@@ -3175,16 +3457,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/microsoft/promptflow"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 78
 		},
 		{
 			"id": "pyro",
@@ -3208,9 +3493,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
@@ -3218,7 +3506,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://docs.pyro.ai/en/stable/"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 58
+			"sovereigntyScore": 78
 		},
 		{
 			"id": "python",
@@ -3241,16 +3529,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://docs.python.org/3/"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "pytorch",
@@ -3276,16 +3567,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://docs.pytorch.org/docs/stable/index.html"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 92
 		},
 		{
 			"id": "quick-udp-internet-connections-quic",
@@ -3307,9 +3601,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -3317,7 +3614,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://github.com/quicwg"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "r",
@@ -3340,12 +3637,15 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": false,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
-			"sovereigntyScore": 45
+			"sovereigntyScore": 90
 		},
 		{
 			"id": "ragflow",
@@ -3369,16 +3669,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://ragflow.io/docs/dev/"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 82
 		},
 		{
 			"id": "rancher",
@@ -3401,16 +3704,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/rancher/rancher"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 78
 		},
 		{
 			"id": "react",
@@ -3434,16 +3740,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://react.dev/learn"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 92
 		},
 		{
 			"id": "representational-state-transfer",
@@ -3466,11 +3775,14 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": false,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 45
+			"sovereigntyScore": 80
 		},
 		{
 			"id": "resource-description-framework-rdf",
@@ -3494,14 +3806,17 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://www.w3.org/standards/techs/rdf"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 85
 		},
 		{
 			"id": "rivest-shamir-adleman",
@@ -3529,7 +3844,10 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -3537,7 +3855,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf?__blob=publicationFile"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 85
 		},
 		{
 			"id": "robot-framework",
@@ -3561,16 +3879,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://docs.robotframework.org/docs"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 92
 		},
 		{
 			"id": "rust",
@@ -3593,16 +3914,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://rust-lang.org/learn/"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "scylla",
@@ -3626,16 +3950,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/scylladb"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 78
 		},
 		{
 			"id": "sd-wan-service-attributes-and-service-framework-mef",
@@ -3660,9 +3987,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -3670,7 +4000,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://www.mplify.net/service-standards/overlay-services/sd-wan/"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "secure-hash-algorithm",
@@ -3697,14 +4027,17 @@ const RAW_ITEMS: Item[] = [
 				"hasAudit": true,
 				"permissiveLicense": false,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf?__blob=publicationFile"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 85
 		},
 		{
 			"id": "segment-routing-sr",
@@ -3728,13 +4061,16 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": false,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 45
+			"sovereigntyScore": 90
 		},
 		{
 			"id": "selenium",
@@ -3758,16 +4094,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://www.selenium.dev/documentation/"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 92
 		},
 		{
 			"id": "session-initiation-protocol-sip",
@@ -3789,9 +4128,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -3799,7 +4141,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://github.com/ietf-wg-sipcore"
 			},
 			"logo": "https://cdn.simpleicons.org/session",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "simple-mail-transfer-protocol-secure-smtps",
@@ -3824,13 +4166,16 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": false,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 45
+			"sovereigntyScore": 90
 		},
 		{
 			"id": "simple-object-access-protocol",
@@ -3853,9 +4198,12 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
@@ -3863,7 +4211,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://www.w3.org/2000/xp/Group/"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "spacy",
@@ -3885,18 +4233,21 @@ const RAW_ITEMS: Item[] = [
 			"maturity": "graduated",
 			"sovereigntyCriteria": {
 				"openSource": true,
-				"euHeadquartered": false,
+				"euHeadquartered": true,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://v2.spacy.io/"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 83
 		},
 		{
 			"id": "spinnaker",
@@ -3921,16 +4272,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/spinnaker/spinnaker"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 92
 		},
 		{
 			"id": "swift",
@@ -3954,16 +4308,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://www.swift.org/documentation/"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "tensorflow",
@@ -3988,16 +4345,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/tensorflow/serving"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 92
 		},
 		{
 			"id": "traefik",
@@ -4019,18 +4379,21 @@ const RAW_ITEMS: Item[] = [
 			"maturity": "graduated",
 			"sovereigntyCriteria": {
 				"openSource": true,
-				"euHeadquartered": false,
+				"euHeadquartered": true,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/traefik/traefik"
 			},
-			"sovereigntyScore": 62
+			"sovereigntyScore": 97
 		},
 		{
 			"id": "transmission-control-protocol-tcp",
@@ -4054,13 +4417,16 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": false,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"logo": "https://cdn.simpleicons.org/transmission",
-			"sovereigntyScore": 45
+			"sovereigntyScore": 90
 		},
 		{
 			"id": "transport-layer-security-tls",
@@ -4085,16 +4451,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://datatracker.ietf.org/doc/html/rfc8446"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "typescript",
@@ -4117,16 +4486,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://www.typescriptlang.org/docs/handbook/intro.html"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 88
 		},
 		{
 			"id": "user-datagram-protocol-udp",
@@ -4148,13 +4520,16 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": false,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 45
+			"sovereigntyScore": 90
 		},
 		{
 			"id": "webkit",
@@ -4178,16 +4553,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": false,
+				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/WebKit/WebKit"
 			},
-			"sovereigntyScore": 58
+			"sovereigntyScore": 78
 		},
 		{
 			"id": "wifi",
@@ -4212,16 +4590,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=68"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "yaml-ain-t-markup-language",
@@ -4243,16 +4624,19 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": true,
-				"permissiveLicense": false,
+				"permissiveLicense": true,
 				"matureProject": true,
-				"largeEcosystem": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
 				"ownerType": "independentConsortium"
 			},
 			"audit": {
 				"lastDate": "2025-11-11",
 				"url": "https://github.com/yaml/"
 			},
-			"sovereigntyScore": 65
+			"sovereigntyScore": 95
 		}
 	];
 

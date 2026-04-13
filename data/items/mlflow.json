@@ -9,16 +9,22 @@
 	},
 	"homepage": "https://mlflow.org/",
 	"logo": "https://raw.githubusercontent.com/mlflow/mlflow/master/docs/source/_static/MLflow-logo-final-black.png",
-	"tags": ["machine-learning", "verarbeitung"],
+	"tags": [
+		"machine-learning",
+		"verarbeitung"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
 	"audit": {

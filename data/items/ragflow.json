@@ -9,16 +9,23 @@
 	},
 	"homepage": "https://ragflow.io/",
 	"logo": "https://raw.githubusercontent.com/infiniflow/ragflow/main/web/src/assets/logo-with-text.png",
-	"tags": ["retrieval-augmented-generation", "rag", "verarbeitung"],
+	"tags": [
+		"retrieval-augmented-generation",
+		"rag",
+		"verarbeitung"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
 		"ownerType": "community"
 	},
 	"audit": {

@@ -9,16 +9,22 @@
 	},
 	"homepage": "https://kubernetes.io",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kubernetes_logo_without_workmark.svg",
-	"tags": ["orchestrierung", "container"],
+	"tags": [
+		"orchestrierung",
+		"container"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
 	"audit": {

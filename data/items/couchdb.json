@@ -9,16 +9,23 @@
 	},
 	"homepage": "https://couchdb.apache.org/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/CouchDB_logo.svg",
-	"tags": ["nosql", "datenbank", "dokumentenbasiert"],
+	"tags": [
+		"nosql",
+		"datenbank",
+		"dokumentenbasiert"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "community"
 	},
 	"audit": {

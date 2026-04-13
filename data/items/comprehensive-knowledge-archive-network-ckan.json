@@ -9,7 +9,13 @@
 	},
 	"homepage": "https://ckan.org/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ckan-logo-full.svg",
-	"tags": ["veroeffentlichung", "datenkatalog", "open-data", "suche", "bereitstellung"],
+	"tags": [
+		"veroeffentlichung",
+		"datenkatalog",
+		"open-data",
+		"suche",
+		"bereitstellung"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -18,7 +24,10 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
 	"audit": {

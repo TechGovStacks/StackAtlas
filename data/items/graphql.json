@@ -9,7 +9,11 @@
 	},
 	"homepage": "https://graphql.org/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/GraphQL_Logo.svg",
-	"tags": ["abfrage", "daten", "schnittstelle"],
+	"tags": [
+		"abfrage",
+		"daten",
+		"schnittstelle"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -18,7 +22,10 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
 	"audit": {

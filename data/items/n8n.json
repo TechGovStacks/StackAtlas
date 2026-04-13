@@ -9,16 +9,25 @@
 	},
 	"homepage": "https://www.n8n.io",
 	"logo": "https://raw.githubusercontent.com/n8n-io/n8n/master/packages/design-system/src/assets/images/n8n-logo.svg",
-	"tags": ["automatisierung", "open-source", "no-code", "api", "integration"],
+	"tags": [
+		"automatisierung",
+		"open-source",
+		"no-code",
+		"api",
+		"integration"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
-		"euHeadquartered": false,
+		"euHeadquartered": true,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "community"
 	},
 	"audit": {

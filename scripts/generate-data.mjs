@@ -20,14 +20,19 @@ const LOGO_URLS_JSON = join(ROOT, 'src', 'data', 'logo-urls.json');
 const OUTPUT_TS = join(ROOT, 'src', 'data', 'items.generated.ts');
 const FALLBACK_LOGO = 'assets/broken-logo.svg';
 
-// Base weights sum to 90; max owner bonus is 10 → total maximum = 100 (no hard cap needed)
+// User-Sovereignty Scoring v2 (2026-04)
+// Base weights sum to 90; max owner bonus is 10 → total maximum = 100 (no hard cap needed).
+// IMPORTANT: keep this in sync with src/utils/sovereigntyScore.ts WEIGHTS.
 const SOVEREIGNTY_WEIGHTS = {
-	openSource: 25,
-	euHeadquartered: 20,
-	hasAudit: 20,
+	selfHostable: 20,
+	dataPortability: 15,
+	openSource: 15,
+	openStandards: 10,
 	permissiveLicense: 10,
-	matureProject: 10,
-	largeEcosystem: 5,
+	hasAudit: 5,
+	matureProject: 5,
+	noTelemetryByDefault: 5,
+	euHeadquartered: 5,
 };
 
 const OWNER_WEIGHTS = {

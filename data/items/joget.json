@@ -9,16 +9,25 @@
 	},
 	"homepage": "https://www.joget.org/",
 	"logo": "https://raw.githubusercontent.com/jogetworkflow/jw-community/master/wflow-consoleweb/src/main/webapp/images/joget-logo.png",
-	"tags": ["plugins", "no-code-low-code", "ai", "workflow", "java"],
+	"tags": [
+		"plugins",
+		"no-code-low-code",
+		"ai",
+		"workflow",
+		"java"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
 		"ownerType": "community"
 	},
 	"audit": {

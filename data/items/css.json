@@ -9,7 +9,10 @@
 	},
 	"homepage": "https://www.w3.org/Style/CSS/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/CSS3_logo_and_wordmark.svg",
-	"tags": ["stil", "user-interface"],
+	"tags": [
+		"stil",
+		"user-interface"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -18,7 +21,10 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
 	"audit": {

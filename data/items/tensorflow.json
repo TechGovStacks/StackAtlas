@@ -9,16 +9,24 @@
 	},
 	"homepage": "https://www.tensorflow.org/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/TensorFlow_logo.svg",
-	"tags": ["machine-learning", "inferenz", "verarbeitung", "training"],
+	"tags": [
+		"machine-learning",
+		"inferenz",
+		"verarbeitung",
+		"training"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "community"
 	},
 	"audit": {

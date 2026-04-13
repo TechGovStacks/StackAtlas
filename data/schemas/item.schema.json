@@ -64,37 +64,59 @@
 		},
 		"sovereigntyCriteria": {
 			"type": "object",
-			"description": "Criteria used to calculate the sovereignty score (0–100)",
-			"required": ["openSource", "euHeadquartered", "hasAudit", "permissiveLicense", "matureProject", "largeEcosystem"],
+			"description": "Criteria used to calculate the user-sovereignty score (0–100)",
+			"required": [
+				"openSource",
+				"euHeadquartered",
+				"hasAudit",
+				"permissiveLicense",
+				"matureProject",
+				"selfHostable",
+				"dataPortability",
+				"openStandards",
+				"noTelemetryByDefault"
+			],
 			"additionalProperties": false,
 			"properties": {
 				"openSource": {
 					"type": "boolean",
-					"description": "Open-source with publicly accessible source code (+30 points)"
+					"description": "Open-source with publicly accessible source code (+15 points)"
 				},
 				"euHeadquartered": {
 					"type": "boolean",
-					"description": "Headquartered or legally registered in the EU (+25 points)"
+					"description": "Headquartered or legally registered in the EU (+5 points)"
 				},
 				"hasAudit": {
 					"type": "boolean",
-					"description": "Has documented and publicly available security/compliance audit (+20 points)"
+					"description": "Has documented and publicly available security/compliance audit (+5 points)"
 				},
 				"permissiveLicense": {
 					"type": "boolean",
-					"description": "Uses permissive or copyleft open-source license (+10 points)"
+					"description": "Uses a permissive or copyleft open-source license that allows forking (+10 points)"
 				},
 				"matureProject": {
 					"type": "boolean",
-					"description": "Project is mature — graduated/stable lifecycle status (+10 points)"
+					"description": "Project is mature — graduated/stable lifecycle status (+5 points)"
 				},
-				"largeEcosystem": {
+				"selfHostable": {
 					"type": "boolean",
-					"description": "Large community ecosystem — e.g., GitHub stars > 1000 (+5 points)"
+					"description": "Can be operated by the user without depending on third-party infrastructure (+20 points)"
+				},
+				"dataPortability": {
+					"type": "boolean",
+					"description": "User data can be exported in open, non-proprietary formats (+15 points)"
+				},
+				"openStandards": {
+					"type": "boolean",
+					"description": "Built on or implements open, vendor-neutral standards and protocols (+10 points)"
+				},
+				"noTelemetryByDefault": {
+					"type": "boolean",
+					"description": "Does not collect usage telemetry by default; privacy-respecting out of the box (+5 points)"
 				},
 				"ownerType": {
 					"type": "string",
-					"description": "Ownership model (+0 to +15 points); if missing, total score is capped at 60",
+					"description": "Ownership / governance model (+0 to +10 points)",
 					"enum": ["independentConsortium", "corporation", "community", "oneManShow"]
 				}
 			}

@@ -9,16 +9,21 @@
 	},
 	"homepage": "https://flutter.dev/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Google_Flutter_Logo.svg",
-	"tags": ["user-interface"],
+	"tags": [
+		"user-interface"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": false,
 		"ownerType": "corporation"
 	},
 	"audit": {

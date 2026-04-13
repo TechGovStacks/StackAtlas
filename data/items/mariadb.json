@@ -9,16 +9,23 @@
 	},
 	"homepage": "https://mariadb.org/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/MariaDB_Logo.svg",
-	"tags": ["datenbank", "sql", "relational"],
+	"tags": [
+		"datenbank",
+		"sql",
+		"relational"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
-		"euHeadquartered": false,
+		"euHeadquartered": true,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
 	"audit": {

@@ -9,16 +9,23 @@
 	},
 	"homepage": "https://www.selenium.dev/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Selenium_Logo.svg",
-	"tags": ["automation", "testing", "user-interface"],
+	"tags": [
+		"automation",
+		"testing",
+		"user-interface"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "community"
 	},
 	"audit": {

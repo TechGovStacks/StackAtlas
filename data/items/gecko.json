@@ -9,16 +9,23 @@
 	},
 	"homepage": "https://firefox-source-docs.mozilla.org/overview/gecko.html",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Firefox_logo,_2019.svg",
-	"tags": ["webseite", "browser-engine", "rendern"],
+	"tags": [
+		"webseite",
+		"browser-engine",
+		"rendern"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
 		"ownerType": "community"
 	},
 	"audit": {

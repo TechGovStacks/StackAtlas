@@ -9,16 +9,23 @@
 	},
 	"homepage": "https://konghq.com/",
 	"logo": "https://konghq.com/wp-content/uploads/2018/08/kong-combination-mark-color-256px.png",
-	"tags": ["gateway", "orchestrierung", "schnittstelle"],
+	"tags": [
+		"gateway",
+		"orchestrierung",
+		"schnittstelle"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "corporation"
 	},
 	"audit": {

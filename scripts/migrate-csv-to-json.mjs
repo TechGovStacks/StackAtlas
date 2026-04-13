@@ -155,7 +155,11 @@ function inferSovereigntyCriteria(row) {
 		hasAudit: hasAuditDate,
 		permissiveLicense,
 		matureProject: Boolean(maturity),
-		largeEcosystem: stars > 1000,
+		// User-Sovereignty Scoring v2 fields — defaults; refine via scripts/backfill-sovereignty-criteria.mjs
+		selfHostable: oss,
+		dataPortability: oss,
+		openStandards: false,
+		noTelemetryByDefault: oss,
 		...(ownerType ? { ownerType } : {}),
 	};
 }

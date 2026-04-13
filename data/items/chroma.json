@@ -9,16 +9,22 @@
 	},
 	"homepage": "https://www.trychroma.com/",
 	"logo": "https://raw.githubusercontent.com/chroma-core/chroma/main/docs/assets/chroma.svg",
-	"tags": ["datenbank", "vektor"],
+	"tags": [
+		"datenbank",
+		"vektor"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
 		"ownerType": "corporation"
 	},
 	"audit": {

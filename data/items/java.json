@@ -9,16 +9,23 @@
 	},
 	"homepage": "https://www.oracle.com/java/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Java_programming_language_logo.svg",
-	"tags": ["programmierung", "plattformunabhaengig", "sprache"],
+	"tags": [
+		"programmierung",
+		"plattformunabhaengig",
+		"sprache"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": false,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "corporation"
 	}
 }

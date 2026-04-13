@@ -8,7 +8,9 @@
 		"en": ""
 	},
 	"homepage": "https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
-	"tags": ["schnittstelle"],
+	"tags": [
+		"schnittstelle"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -17,7 +19,10 @@
 		"hasAudit": false,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	}
 }

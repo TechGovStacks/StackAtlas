@@ -9,7 +9,11 @@
 	},
 	"homepage": "https://grpc.io/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/GRPC_logo.svg",
-	"tags": ["rpc", "api", "schnittstelle"],
+	"tags": [
+		"rpc",
+		"api",
+		"schnittstelle"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -18,7 +22,10 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "community"
 	},
 	"audit": {

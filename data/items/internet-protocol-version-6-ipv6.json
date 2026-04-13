@@ -8,16 +8,22 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc8200",
-	"tags": ["adresse", "internet"],
+	"tags": [
+		"adresse",
+		"internet"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": false,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	}
 }

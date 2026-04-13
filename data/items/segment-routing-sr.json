@@ -8,16 +8,24 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc8402",
-	"tags": ["netz", "netzwerk", "segment", "routing"],
+	"tags": [
+		"netz",
+		"netzwerk",
+		"segment",
+		"routing"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": false,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	}
 }

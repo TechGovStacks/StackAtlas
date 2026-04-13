@@ -8,7 +8,11 @@
 		"en": ""
 	},
 	"homepage": "https://openid.net/developers/how-connect-works/",
-	"tags": ["authentifizierung", "protokoll", "zugriff"],
+	"tags": [
+		"authentifizierung",
+		"protokoll",
+		"zugriff"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -17,7 +21,10 @@
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
 	"audit": {

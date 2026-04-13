@@ -8,16 +8,23 @@
 		"en": ""
 	},
 	"homepage": "https://www.w3.org/TR/soap/",
-	"tags": ["api", "xml", "schnittstelle"],
+	"tags": [
+		"api",
+		"xml",
+		"schnittstelle"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
 	"audit": {

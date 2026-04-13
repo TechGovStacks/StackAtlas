@@ -9,16 +9,22 @@
 	},
 	"homepage": "https://www.typescriptlang.org/",
 	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Typescript_logo_2020.svg",
-	"tags": ["programmierung", "sprache"],
+	"tags": [
+		"programmierung",
+		"sprache"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
-		"largeEcosystem": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "corporation"
 	},
 	"audit": {

@@ -48,19 +48,25 @@ export type SovereigntyScoreResult = {
 };
 
 export type SovereigntyCriteria = {
-	/** Open-source with publicly accessible source code (+30) */
+	/** Open-source with publicly accessible source code (+15) */
 	openSource: boolean;
-	/** Headquartered or legally registered in the EU (+25) */
+	/** Headquartered or legally registered in the EU (+5) */
 	euHeadquartered: boolean;
-	/** Has a documented and publicly available security/compliance audit (+20) */
+	/** Has a documented and publicly available security/compliance audit (+5) */
 	hasAudit: boolean;
-	/** Uses a permissive or copyleft open-source license (+10) */
+	/** Uses a permissive or copyleft open-source license that allows forking (+10) */
 	permissiveLicense: boolean;
-	/** Project is mature — graduated/stable lifecycle status (+10) */
+	/** Project is mature — graduated/stable lifecycle status (+5) */
 	matureProject: boolean;
-	/** Large community ecosystem — e.g. GitHub stars > 1 000 (+5) */
-	largeEcosystem: boolean;
-	/** Ownership model of the project (+0 to +15); if missing score is capped at 60 */
+	/** Can be operated by the user without depending on third-party infrastructure (+20) */
+	selfHostable: boolean;
+	/** User data can be exported in open, non-proprietary formats (+15) */
+	dataPortability: boolean;
+	/** Built on or implements open, vendor-neutral standards and protocols (+10) */
+	openStandards: boolean;
+	/** Does not collect usage telemetry by default — privacy-respecting out of the box (+5) */
+	noTelemetryByDefault: boolean;
+	/** Ownership / governance model of the project (+0 to +10) */
 	ownerType?: OwnerType;
 };
 
