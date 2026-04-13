@@ -83,7 +83,7 @@ export function FilterBar({
 						onChange: (_e: globalThis.Event, value: unknown) => onFilterChange({ ...filters, selectedLayer: value ? (value as string) : null, selectedSublayer: null }),
 					}}
 				/>
-				{filters.selectedLayer && sublayerOptions.length > 0 && (
+				{filters.selectedLayer && (
 					<KolSingleSelect
 						className="filter-bar__select filter-bar__select--sublayer sort-select"
 						_label="Sublayer"
@@ -93,6 +93,7 @@ export function FilterBar({
 							...sublayerOptions.map((sublayer) => ({ label: sublayer, value: sublayer })),
 						]}
 						_value={filters.selectedSublayer ?? ''}
+						_disabled={sublayerOptions.length === 0}
 						_on={{
 							onChange: (_e: globalThis.Event, value: unknown) => onFilterChange({ ...filters, selectedSublayer: value ? (value as string) : null }),
 						}}
