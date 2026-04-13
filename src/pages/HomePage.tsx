@@ -34,6 +34,7 @@ export function HomePage() {
 				stacks={STACKS}
 				activeStackId={activeStackId}
 				onStackChange={setActiveStackId}
+				items={baseItems}
 				sortField={sortField}
 				onSortFieldChange={setSortField}
 				sortDir={sortDir}

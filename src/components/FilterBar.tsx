@@ -1,6 +1,6 @@
 import { KolButton, KolInputCheckbox, KolInputText, KolSingleSelect } from '@public-ui/preact';
 import { useTranslation } from 'react-i18next';
-import { FilterState, Layer, Stack } from '../types';
+import { FilterState, Item, Layer, Stack } from '../types';
 import { getLocalizedText } from '../utils';
 
 export type ViewMode = 'tile' | 'list';
@@ -14,6 +14,7 @@ interface FilterBarProps {
 	stacks: Stack[];
 	activeStackId: string | null;
 	onStackChange: (id: string | null) => void;
+	items: Item[];
 	sortField: SortField;
 	onSortFieldChange: (field: SortField) => void;
 	sortDir: SortDir;
@@ -29,6 +30,7 @@ export function FilterBar({
 	stacks,
 	activeStackId,
 	onStackChange,
+	items,
 	sortField,
 	onSortFieldChange,
 	sortDir,
@@ -51,6 +53,13 @@ export function FilterBar({
 		})),
 	];
 
+	const sublayerOptions = (() => {
+		if (!filters.selectedLayer) return [];
+		const layerItems = items.filter((item) => item.layer === filters.selectedLayer);
+		const sublayers = new Set(layerItems.map((item) => item.sublayer).filter(Boolean));
+		return Array.from(sublayers).sort();
+	})();
+
 	return (
 		<section className="filter-bar px-3 md:px-4 lg:px-5 py-2 md:py-3" aria-label={t('search.regionAria')}>
 			<div className="filter-bar__inner px-3 md:px-4 lg:px-5">
@@ -71,9 +80,24 @@ export function FilterBar({
 					_options={layerOptions}
 					_value={filters.selectedLayer ?? ''}
 					_on={{
-						onChange: (_e: globalThis.Event, value: unknown) => onFilterChange({ ...filters, selectedLayer: value ? (value as string) : null }),
+						onChange: (_e: globalThis.Event, value: unknown) => onFilterChange({ ...filters, selectedLayer: value ? (value as string) : null, selectedSublayer: null }),
 					}}
 				/>
+				{filters.selectedLayer && sublayerOptions.length > 0 && (
+					<KolSingleSelect
+						className="filter-bar__select filter-bar__select--sublayer sort-select"
+						_label="Sublayer"
+						_hideLabel
+						_options={[
+							{ label: 'All Sublayers', value: '' },
+							...sublayerOptions.map((sublayer) => ({ label: sublayer, value: sublayer })),
+						]}
+						_value={filters.selectedSublayer ?? ''}
+						_on={{
+							onChange: (_e: globalThis.Event, value: unknown) => onFilterChange({ ...filters, selectedSublayer: value ? (value as string) : null }),
+						}}
+					/>
+				)}
 				<KolInputText
 					className="filter-bar__search"
 					_label={t('search.inputLabel')}

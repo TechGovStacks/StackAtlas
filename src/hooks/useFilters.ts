@@ -8,6 +8,7 @@ export function useFilters(items: Item[]) {
 	const [filters, setFilters] = useState<FilterState>({
 		searchQuery: '',
 		selectedLayer: null,
+		selectedSublayer: null,
 	});
 
 	const filtered = useMemo(() => {
@@ -18,7 +19,8 @@ export function useFilters(items: Item[]) {
 			const localizedDescription = getLocalizedText(item.description, i18n.language).toLowerCase();
 			const matchesSearch = localizedName.includes(normalizedQuery) || localizedDescription.includes(normalizedQuery);
 			const matchesLayer = !filters.selectedLayer || item.layer === filters.selectedLayer;
-			return matchesSearch && matchesLayer;
+			const matchesSublayer = !filters.selectedSublayer || item.sublayer === filters.selectedSublayer;
+			return matchesSearch && matchesLayer && matchesSublayer;
 		});
 	}, [items, filters, i18n.language]);
 

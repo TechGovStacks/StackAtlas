@@ -131,6 +131,7 @@ export type Stack = {
 export type FilterState = {
 	searchQuery: string;
 	selectedLayer: string | null;
+	selectedSublayer: string | null;
 };
 
 // ---------------------------------------------------------------------------
