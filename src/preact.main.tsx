@@ -52,7 +52,10 @@ document.addEventListener('keydown', (e: globalThis.KeyboardEvent) => {
 });
 
 Promise.all([
-	register([KERN_V2, DEFAULT], defineCustomElements, { translation: { name: 'de' } }),
+	Promise.race([
+		register([KERN_V2, DEFAULT], defineCustomElements, { translation: { name: 'de' } }),
+		new Promise<void>((_, reject) => setTimeout(() => reject(new Error('KoliBri registration timeout')), 5000)),
+	]),
 	new Promise<void>((resolve) => {
 		renderApp = resolve;
 		setTimeout(resolve, SPLASH_MIN_MS);
@@ -69,4 +72,12 @@ Promise.all([
 		const remaining = Math.max(0, SPLASH_MIN_MS - elapsed);
 		setTimeout(dismissSplash, remaining);
 	})
-	.catch(console.error);
+	.catch((error) => {
+		console.error('Error during app initialization:', error);
+		// Force splash to disappear even if there's an error
+		setTimeout(dismissSplash, 2000);
+		const htmlElement: HTMLElement | null = document.querySelector<HTMLDivElement>('div#app');
+		if (htmlElement instanceof HTMLElement) {
+			render(<App />, htmlElement);
+		}
+	});
