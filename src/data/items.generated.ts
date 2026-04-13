@@ -1,7 +1,7 @@
 // GENERATED FILE - DO NOT EDIT MANUALLY
 // Generated from: data/layers/ + data/items/ + data/stacks/
 // Logo fallback via: src/data/logo-urls.json
-// Generated at: 2026-04-13T05:00:28.025Z
+// Generated at: 2026-04-13T06:37:08.726Z
 
 import type { Item, Layer, Stack } from '../types';
 
@@ -1852,7 +1852,7 @@ const RAW_ITEMS: Item[] = [
 				"openSource": true,
 				"euHeadquartered": false,
 				"hasAudit": false,
-				"permissiveLicense": true,
+				"permissiveLicense": false,
 				"matureProject": true,
 				"selfHostable": true,
 				"dataPortability": true,
@@ -1860,7 +1860,7 @@ const RAW_ITEMS: Item[] = [
 				"noTelemetryByDefault": true,
 				"ownerType": "corporation"
 			},
-			"sovereigntyScore": 73
+			"sovereigntyScore": 63
 		},
 		{
 			"id": "istio",
@@ -2668,7 +2668,7 @@ const RAW_ITEMS: Item[] = [
 			"maturity": "graduated",
 			"sovereigntyCriteria": {
 				"openSource": true,
-				"euHeadquartered": true,
+				"euHeadquartered": false,
 				"hasAudit": true,
 				"permissiveLicense": true,
 				"matureProject": true,
@@ -2682,7 +2682,7 @@ const RAW_ITEMS: Item[] = [
 				"lastDate": "2025-11-11",
 				"url": "https://dev.mysql.com/doc/"
 			},
-			"sovereigntyScore": 93
+			"sovereigntyScore": 88
 		},
 		{
 			"id": "n8n",
@@ -2993,7 +2993,7 @@ const RAW_ITEMS: Item[] = [
 			"maturity": "graduated",
 			"sovereigntyCriteria": {
 				"openSource": true,
-				"euHeadquartered": true,
+				"euHeadquartered": false,
 				"hasAudit": false,
 				"permissiveLicense": true,
 				"matureProject": true,
@@ -3004,7 +3004,7 @@ const RAW_ITEMS: Item[] = [
 				"ownerType": "independentConsortium"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 95
+			"sovereigntyScore": 90
 		},
 		{
 			"id": "open-authorization-oauth",
@@ -3985,7 +3985,7 @@ const RAW_ITEMS: Item[] = [
 			"maturity": "graduated",
 			"sovereigntyCriteria": {
 				"openSource": true,
-				"euHeadquartered": true,
+				"euHeadquartered": false,
 				"hasAudit": true,
 				"permissiveLicense": true,
 				"matureProject": true,
@@ -4000,7 +4000,7 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://www.mplify.net/service-standards/overlay-services/sd-wan/"
 			},
 			"logo": "assets/broken-logo.svg",
-			"sovereigntyScore": 100
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "secure-hash-algorithm",

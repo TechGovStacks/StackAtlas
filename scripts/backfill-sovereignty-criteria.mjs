@@ -92,16 +92,17 @@ const NOT_OPEN_STANDARDS = new Set([
 /** Items whose owner / governance org is headquartered or legally registered in the EU. */
 const EU_HEADQUARTERED = new Set([
 	'mariadb', // MariaDB Foundation, Sweden
-	'mysql-server', // Oracle (US) — false; left out
 	'spacy', // Explosion AI, Berlin (DE)
 	'piveau', // Fraunhofer FOKUS, Berlin (DE)
 	'n8n', // n8n GmbH, Berlin (DE)
 	'traefik', // Traefik Labs, Lyon (FR)
 	'mobilfunk', // 3GPP, Sophia Antipolis (FR)
-	'sd-wan-service-attributes-and-service-framework-mef', // MEF Forum (US) — false; left out
 	'glasfaser', // German concept
-	'open-archives-initiative-protocol-for-metadata-harvesting', // OAI, US — false; left out
 ]);
+// Intentionally excluded (sometimes assumed EU but actually US-based):
+//   - mysql-server (Oracle, US)
+//   - sd-wan-service-attributes-and-service-framework-mef (MEF Forum, US)
+//   - open-archives-initiative-protocol-for-metadata-harvesting (OAI, US)
 
 /**
  * License strings that count as a permissive or copyleft OSS license.
@@ -147,8 +148,8 @@ const KNOWN_PERMISSIVE = new Set([
 	'react', 'angular', 'nextjs', 'flutter', 'tensorflow', 'pytorch', 'huggingface-transformers',
 	'spacy', 'haystack', 'langgraph', 'mlflow', 'milvus', 'chroma', 'nqdrant', 'pyro',
 	'promptflow', 'ragflow', 'axolotl', 'angel-ml', 'selenium', 'robot-framework',
-	// browsers / engines
-	'gecko', 'webkit', 'blink', 'android', 'ios',
+	// browsers / engines (iOS is intentionally NOT here — it is proprietary)
+	'gecko', 'webkit', 'blink', 'android',
 	// apps / lowcode
 	'budibase', 'appsmith', 'joget', 'n8n', 'node-red',
 	// data
@@ -226,7 +227,10 @@ function deriveCriteria(item) {
 	}
 
 	// --- permissiveLicense (refresh) ------------------------------------
-	let permissiveLicense = existing.permissiveLicense === true;
+	// Authoritative recompute: seed false, set true only on positive evidence.
+	// Do NOT inherit the existing value — that would propagate prior backfill bugs
+	// (e.g. iOS being mistakenly listed as permissive in an earlier run).
+	let permissiveLicense = false;
 	const licenseStr = (item.license || '').toLowerCase();
 	if (licenseStr) {
 		permissiveLicense = PERMISSIVE_LICENSE_TOKENS.some((t) => licenseStr.includes(t));

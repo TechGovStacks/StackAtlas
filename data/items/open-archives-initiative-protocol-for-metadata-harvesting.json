@@ -16,7 +16,7 @@
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
-		"euHeadquartered": true,
+		"euHeadquartered": false,
 		"hasAudit": false,
 		"permissiveLicense": true,
 		"matureProject": true,
