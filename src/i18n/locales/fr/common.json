@@ -30,7 +30,8 @@
 			"community": "Communauté",
 			"documentation": "Documentation",
 			"settings": "Paramètres",
-			"news": "Actualités"
+			"news": "Actualités",
+			"stacks": "Galerie de stacks"
 		},
 		"license": "Licence : EUPL-1.2",
 		"builtWith": "Built with",
@@ -141,6 +142,31 @@
 			"contributor": "Contributeur",
 			"funder": "Financeur",
 			"consumer": "Utilisateur"
+		}
+	},
+	"stackGallery": {
+		"title": "Galerie de stacks",
+		"subtitle": "Tous les stacks technologiques évalués classés par score de souveraineté numérique – du meilleur au moins bon.",
+		"listAria": "Classement des stacks technologiques par score de souveraineté",
+		"bestStack": "Meilleur stack – classement or",
+		"rankAria": "Rang {{rank}}",
+		"avgScore": "Score moy. de souveraineté",
+		"avgScoreAria": "Score moyen de souveraineté : {{score}} sur 100",
+		"scoreDistribution": "Distribution des scores par catégorie",
+		"keyMetrics": "Indicateurs clés",
+		"exploreStack": "Explorer le stack dans le catalogue →",
+		"itemCount": "{{count}} entrées",
+		"recommended": "Recommandé",
+		"approved": "Approuvé",
+		"deprecated": "Obsolète",
+		"metrics": {
+			"selfHostable": "Auto-hébergeable",
+			"openSource": "Open source",
+			"euHQ": "Siège en UE",
+			"permissiveLicense": "Licence permissive",
+			"audit": "Audité",
+			"layerBreakdown": "Répartition par couche",
+			"roles": "Rôles"
 		}
 	},
 	"pages": {

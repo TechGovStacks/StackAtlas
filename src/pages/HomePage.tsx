@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'preact/hooks';
+import { useEffect, useMemo, useState } from 'preact/hooks';
 import { CategoryGrid } from '../components/CategoryGrid';
 import { FilterBar, SortDir, SortField, ViewMode } from '../components/FilterBar';
 import { ITEMS, LAYERS, STACKS } from '../data/catalog';
@@ -7,6 +7,15 @@ import { StackItem } from '../types';
 
 export function HomePage() {
 	const [activeStackId, setActiveStackId] = useState<string | null>(null);
+
+	// Beim ersten Rendern: ?stack=<id> aus der URL lesen und Stack vorauswählen
+	useEffect(() => {
+		const params = new URLSearchParams(window.location.search);
+		const stackParam = params.get('stack');
+		if (stackParam && STACKS.some((s) => s.id === stackParam)) {
+			setActiveStackId(stackParam);
+		}
+	}, []);
 	const [sortField, setSortField] = useState<SortField>('score');
 	const [sortDir, setSortDir] = useState<SortDir>('desc');
 	const [viewMode, setViewMode] = useState<ViewMode>('tile');

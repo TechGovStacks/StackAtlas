@@ -6,6 +6,7 @@ import { HomePage } from './pages/HomePage';
 import { ImprintPage } from './pages/ImprintPage';
 import { NewsPage } from './pages/NewsPage';
 import { SettingsPage } from './pages/SettingsPage';
+import { StackGalleryPage } from './pages/StackGalleryPage';
 
 type RouteProps = {
 	default?: boolean;
@@ -40,6 +41,13 @@ function ImprintRoute({ default: isDefault, path }: RouteProps) {
 	return <ImprintPage />;
 }
 
+function StackGalleryRoute({ default: isDefault, path }: RouteProps) {
+	void isDefault;
+	void path;
+
+	return <StackGalleryPage />;
+}
+
 function App() {
 	return (
 		<div className="flex flex-col min-h-screen w-full">
@@ -52,6 +60,8 @@ function App() {
 				<NewsRoute path="/neuigkeiten" />
 				<ImprintRoute path="/imprint" />
 				<ImprintRoute path="/impressum" />
+				<StackGalleryRoute path="/stacks" />
+				<StackGalleryRoute path="/stacks-galerie" />
 			</Router>
 			<Footer />
 			<PwaWrapper />
