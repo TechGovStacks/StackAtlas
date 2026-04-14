@@ -1,7 +1,7 @@
 // GENERATED FILE - DO NOT EDIT MANUALLY
 // Generated from: data/layers/ + data/items/ + data/stacks/
 // Logo fallback via: src/data/logo-urls.json
-// Generated at: 2026-04-13T15:08:57.486Z
+// Generated at: 2026-04-13T19:51:26.565Z
 
 import type { Item, Layer, Stack } from '../types';
 
@@ -82,6 +82,72 @@ export const LAYERS: Layer[] = [
 	];
 
 const RAW_ITEMS: Item[] = [
+		{
+			"id": "aadhaar",
+			"name": "Aadhaar",
+			"layer": "applications",
+			"sublayer": "sicherheit",
+			"description": {
+				"de": "Aadhaar ist Indiens biometrisches Identifikationssystem mit über 1,4 Milliarden Registrierungen, betrieben von der UIDAI. Es ermöglicht eKYC-Verfahren in Echtzeit und bildet die Identitätsschicht des India Stack.",
+				"en": "Aadhaar is India's biometric identification system with over 1.4 billion enrolments, operated by the UIDAI. It enables real-time eKYC processes and forms the identity layer of the India Stack."
+			},
+			"homepage": "https://uidai.gov.in/",
+			"tags": [
+				"egovernment",
+				"identity",
+				"biometric",
+				"india"
+			],
+			"oss": false,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": false,
+				"euHeadquartered": false,
+				"hasAudit": false,
+				"permissiveLicense": false,
+				"matureProject": true,
+				"selfHostable": false,
+				"dataPortability": false,
+				"openStandards": true,
+				"noTelemetryByDefault": false,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 25
+		},
+		{
+			"id": "activemq-artemis",
+			"name": "Apache ActiveMQ Artemis",
+			"layer": "platform",
+			"sublayer": "integration",
+			"description": {
+				"de": "Apache ActiveMQ Artemis ist ein hochperformanter, nicht-blockierender Message-Broker. Er wird unter anderem im GovStack Information Mediator und in X-Road-Umgebungen für asynchrone Nachrichtenwarteschlangen zwischen Behörden eingesetzt.",
+				"en": "Apache ActiveMQ Artemis is a high-performance, non-blocking message broker. It is used in the GovStack Information Mediator and in X-Road environments for asynchronous message queues between public authorities."
+			},
+			"homepage": "https://activemq.apache.org/components/artemis/",
+			"license": "Apache-2.0",
+			"tags": [
+				"messaging",
+				"queue",
+				"broker"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": false,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 90
+		},
 		{
 			"id": "advanced-encryption-standard",
 			"name": "Advanced Encryption Standard",
@@ -335,6 +401,105 @@ const RAW_ITEMS: Item[] = [
 			"sovereigntyScore": 83
 		},
 		{
+			"id": "ansible",
+			"name": "Ansible",
+			"layer": "platform",
+			"sublayer": "inbetriebnahme",
+			"description": {
+				"de": "Ansible ist ein Open-Source-Werkzeug für Konfigurationsmanagement, Provisioning und Anwendungs-Deployment. Es nutzt deklarative YAML-Playbooks und benötigt keine Agenten auf den Zielsystemen.",
+				"en": "Ansible is an open-source tool for configuration management, provisioning and application deployment. It uses declarative YAML playbooks and requires no agents on the target systems."
+			},
+			"homepage": "https://www.ansible.com/",
+			"license": "GPL-3.0-or-later",
+			"tags": [
+				"automation",
+				"configuration",
+				"iac"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": false,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "corporation"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 83
+		},
+		{
+			"id": "apache-airflow",
+			"name": "Apache Airflow",
+			"layer": "platform",
+			"sublayer": "daten",
+			"description": {
+				"de": "Apache Airflow ist eine Open-Source-Plattform zur Orchestrierung von Datenpipelines. Workflows werden als Python-Code definiert und ermöglichen Extraktion, Transformation und Laden zwischen heterogenen Verwaltungs-Systemen.",
+				"en": "Apache Airflow is an open-source platform for orchestrating data pipelines. Workflows are defined as Python code and enable extraction, transformation and loading between heterogeneous public-administration systems."
+			},
+			"homepage": "https://airflow.apache.org/",
+			"license": "Apache-2.0",
+			"tags": [
+				"etl",
+				"pipelines",
+				"data"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": false,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 90
+		},
+		{
+			"id": "apache-kafka",
+			"name": "Apache Kafka",
+			"layer": "platform",
+			"sublayer": "integration",
+			"description": {
+				"de": "Apache Kafka ist eine verteilte Event-Streaming-Plattform für hochskalierbare, asynchrone Nachrichtenverarbeitung. Sie wird in vielen GovTech-Stacks für Echtzeit-Datenverteilung, Microservice-Integration und Event-Driven-Architekturen eingesetzt.",
+				"en": "Apache Kafka is a distributed event-streaming platform for highly scalable, asynchronous message processing. It is used in many GovTech stacks for real-time data distribution, microservice integration and event-driven architectures."
+			},
+			"homepage": "https://kafka.apache.org/",
+			"license": "Apache-2.0",
+			"tags": [
+				"streaming",
+				"events",
+				"messaging"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 95
+		},
+		{
 			"id": "appsmith",
 			"name": "Appsmith",
 			"layer": "platform",
@@ -556,6 +721,39 @@ const RAW_ITEMS: Item[] = [
 			"sovereigntyScore": 63
 		},
 		{
+			"id": "bundid",
+			"name": "BundID",
+			"layer": "applications",
+			"sublayer": "sicherheit",
+			"description": {
+				"de": "Die BundID ist das zentrale Bürgerkonto des Bundes für digitale Verwaltungsleistungen. Sie unterstützt eIDAS-konforme Vertrauensniveaus und integriert sich via SAML oder OpenID Connect in Webdienste, sodass Formulare automatisch vorausgefüllt werden können.",
+				"en": "BundID is Germany's federal citizen account for digital administrative services. It supports eIDAS-compliant assurance levels and integrates with web services via SAML or OpenID Connect so that forms can be pre-filled automatically."
+			},
+			"homepage": "https://id.bund.de/",
+			"tags": [
+				"egovernment",
+				"identity",
+				"eidas",
+				"germany"
+			],
+			"oss": false,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": false,
+				"euHeadquartered": true,
+				"hasAudit": true,
+				"permissiveLicense": false,
+				"matureProject": true,
+				"selfHostable": false,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 55
+		},
+		{
 			"id": "c",
 			"name": "C++",
 			"layer": "building-blocks",
@@ -589,6 +787,39 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://isocpp.org/std/standing-documents"
 			},
 			"sovereigntyScore": 95
+		},
+		{
+			"id": "camunda",
+			"name": "Camunda",
+			"layer": "building-blocks",
+			"sublayer": "lowcode",
+			"description": {
+				"de": "Camunda ist eine Open-Source-Plattform für die Automatisierung von Geschäftsprozessen. Sie führt BPMN-Workflows und DMN-Entscheidungstabellen aus und ist ein bewährtes Werkzeug für die Modellierung und Ausführung komplexer Behördenprozesse.",
+				"en": "Camunda is an open-source platform for business process automation. It executes BPMN workflows and DMN decision tables and is an established tool for modelling and running complex public-administration processes."
+			},
+			"homepage": "https://camunda.com/",
+			"license": "Apache-2.0",
+			"tags": [
+				"bpmn",
+				"workflow",
+				"automation"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": true,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "corporation"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 93
 		},
 		{
 			"id": "cassandra",
@@ -913,6 +1144,71 @@ const RAW_ITEMS: Item[] = [
 			"sovereigntyScore": 85
 		},
 		{
+			"id": "digilocker",
+			"name": "DigiLocker",
+			"layer": "applications",
+			"sublayer": "daten",
+			"description": {
+				"de": "DigiLocker ist Indiens nationale Plattform für sichere Dokumentenspeicherung und papierlose Verwaltung. Sie wird vom Ministerium für Elektronik und IT (MeitY) betrieben und bildet zusammen mit eSign die Daten-Schicht des India Stack.",
+				"en": "DigiLocker is India's national platform for secure document storage and paperless administration. It is operated by the Ministry of Electronics and Information Technology (MeitY) and, together with eSign, forms the data layer of the India Stack."
+			},
+			"homepage": "https://www.digilocker.gov.in/",
+			"tags": [
+				"egovernment",
+				"documents",
+				"india"
+			],
+			"oss": false,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": false,
+				"euHeadquartered": false,
+				"hasAudit": false,
+				"permissiveLicense": false,
+				"matureProject": true,
+				"selfHostable": false,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": false,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 40
+		},
+		{
+			"id": "django",
+			"name": "Django",
+			"layer": "building-blocks",
+			"sublayer": "entwicklung",
+			"description": {
+				"de": "Django ist ein hochgradig produktives Python-Webframework. Es wird oft für Datenanalyse-Anwendungen und sichere Verwaltungsportale eingesetzt und stellt ORM, Auth und Admin-Backend out-of-the-box bereit.",
+				"en": "Django is a highly productive Python web framework. It is frequently used for data-analysis applications and secure administrative portals and provides ORM, authentication and an admin backend out of the box."
+			},
+			"homepage": "https://www.djangoproject.com/",
+			"license": "BSD-3-Clause",
+			"tags": [
+				"python",
+				"framework",
+				"web"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 95
+		},
+		{
 			"id": "docker-swarm",
 			"name": "Docker Swarm",
 			"layer": "platform",
@@ -983,6 +1279,39 @@ const RAW_ITEMS: Item[] = [
 			"sovereigntyScore": 95
 		},
 		{
+			"id": "drupal",
+			"name": "Drupal",
+			"layer": "applications",
+			"sublayer": "lowcode",
+			"description": {
+				"de": "Drupal ist ein quelloffenes Content-Management-System mit hohen Sicherheits- und Barrierefreiheitsanforderungen. Es ist die bevorzugte Wahl für große, komplexe Behördenportale weltweit.",
+				"en": "Drupal is an open-source content-management system with strong security and accessibility requirements. It is the preferred choice for large, complex government portals worldwide."
+			},
+			"homepage": "https://www.drupal.org/",
+			"license": "GPL-2.0-or-later",
+			"tags": [
+				"cms",
+				"egovernment",
+				"accessibility"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 95
+		},
+		{
 			"id": "dynamic-host-configuration-protocol-dhcp",
 			"name": "Dynamic Host Configuration Protocol (DHCP)",
 			"layer": "infrastructure",
@@ -1016,6 +1345,38 @@ const RAW_ITEMS: Item[] = [
 			},
 			"logo": "assets/broken-logo.svg",
 			"sovereigntyScore": 95
+		},
+		{
+			"id": "elasticsearch",
+			"name": "Elasticsearch",
+			"layer": "platform",
+			"sublayer": "daten",
+			"description": {
+				"de": "Elasticsearch ist eine verteilte Such- und Analyse-Engine, die im Zentrum des ELK-Stacks (Elasticsearch, Logstash, Kibana) steht. Sie wird in Verwaltungs-IT für Volltextsuche, Log-Aggregation und SIEM-Anwendungen verwendet.",
+				"en": "Elasticsearch is a distributed search and analytics engine at the heart of the ELK stack (Elasticsearch, Logstash, Kibana). It is used in public administration IT for full-text search, log aggregation and SIEM use cases."
+			},
+			"homepage": "https://www.elastic.co/elasticsearch/",
+			"tags": [
+				"search",
+				"logging",
+				"analytics"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": false,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": false,
+				"ownerType": "corporation"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 73
 		},
 		{
 			"id": "elliptic-curve-integrated-encryption-scheme",
@@ -1159,6 +1520,39 @@ const RAW_ITEMS: Item[] = [
 			"sovereigntyScore": 95
 		},
 		{
+			"id": "eudi-wallet",
+			"name": "EUDI Wallet",
+			"layer": "sovereign-standards",
+			"sublayer": "sicherheit",
+			"description": {
+				"de": "Das European Digital Identity Wallet (EUDI) ist ein EU-weit harmonisiertes digitales Brieftaschen-Konzept. Das zugehörige Architecture and Reference Framework (ARF) definiert Spezifikationen, Protokolle und Standards für den Informationsaustausch zwischen Ausstellern, Wallets und Service-Providern.",
+				"en": "The European Digital Identity Wallet (EUDI) is an EU-wide harmonised digital wallet concept. Its Architecture and Reference Framework (ARF) defines the specifications, protocols and standards for information exchange between issuers, wallets and service providers."
+			},
+			"homepage": "https://github.com/eu-digital-identity-wallet",
+			"tags": [
+				"identity",
+				"wallet",
+				"eidas",
+				"eu"
+			],
+			"oss": true,
+			"maturity": "incubation",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": true,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 95
+		},
+		{
 			"id": "extensible-markup-language-xml",
 			"name": "Extensible Markup Language (XML)",
 			"layer": "platform",
@@ -1190,6 +1584,38 @@ const RAW_ITEMS: Item[] = [
 				"lastDate": "2025-11-11",
 				"url": "https://www.w3.org/TR/xml11/"
 			},
+			"sovereigntyScore": 95
+		},
+		{
+			"id": "fido2-webauthn",
+			"name": "FIDO2 / WebAuthn",
+			"layer": "sovereign-standards",
+			"sublayer": "sicherheit",
+			"description": {
+				"de": "FIDO2 und WebAuthn sind offene Standards für passwortlose und Hardware-Token-basierte Authentifizierung. Sie ermöglichen sichere Anmeldungen via Smartphones, Sicherheitsschlüsseln und biometrischen Sensoren und sind eine Grundlage für moderne, phishing-resistente Identitätssysteme.",
+				"en": "FIDO2 and WebAuthn are open standards for passwordless and hardware-token authentication. They enable secure sign-in via smartphones, security keys and biometric sensors and form a foundation for modern, phishing-resistant identity systems."
+			},
+			"homepage": "https://fidoalliance.org/fido2/",
+			"tags": [
+				"authentication",
+				"passwordless",
+				"security"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
 			"sovereigntyScore": 95
 		},
 		{
@@ -1226,6 +1652,39 @@ const RAW_ITEMS: Item[] = [
 			},
 			"logo": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Internet_map_1024_-_transparent%2C_inverted.png",
 			"sovereigntyScore": 95
+		},
+		{
+			"id": "fit-connect",
+			"name": "FIT-Connect",
+			"layer": "building-blocks",
+			"sublayer": "integration",
+			"description": {
+				"de": "FIT-Connect ist der digitale Postbote des deutschen OZG-Ökosystems. Über eine Submission-API werden Anträge sicher, maschinenlesbar und Ende-zu-Ende-verschlüsselt zwischen Online-Antragsdiensten und den Backend-Systemen der Fachbehörden zugestellt; ein Event-Log gewährleistet die lückenlose Nachverfolgung der Übermittlung.",
+				"en": "FIT-Connect is the digital postal service of Germany's OZG ecosystem. A Submission API delivers applications securely, machine-readably and end-to-end encrypted between online services and the back-office systems of public authorities; an event log provides full traceability."
+			},
+			"homepage": "https://docs.fitko.de/fit-connect/",
+			"tags": [
+				"egovernment",
+				"integration",
+				"germany",
+				"ozg"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": true,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 100
 		},
 		{
 			"id": "flutter",
@@ -1515,6 +1974,172 @@ const RAW_ITEMS: Item[] = [
 			"sovereigntyScore": 92
 		},
 		{
+			"id": "gov-uk-notify",
+			"name": "GOV.UK Notify",
+			"layer": "applications",
+			"sublayer": "integration",
+			"description": {
+				"de": "GOV.UK Notify ist ein hochskalierbarer Benachrichtigungsdienst des britischen Government Digital Service. Er versendet E-Mails, SMS und Briefe für Behördenleistungen und reduziert telefonische Statusabfragen erheblich.",
+				"en": "GOV.UK Notify is a highly scalable notification service from the UK's Government Digital Service. It sends emails, SMS messages and letters for public services and significantly reduces phone-based status enquiries."
+			},
+			"homepage": "https://www.notifications.service.gov.uk/",
+			"license": "MIT",
+			"tags": [
+				"egovernment",
+				"notification",
+				"uk"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 95
+		},
+		{
+			"id": "gov-uk-one-login",
+			"name": "GOV.UK One Login",
+			"layer": "applications",
+			"sublayer": "sicherheit",
+			"description": {
+				"de": "GOV.UK One Login ist das zentrale britische Identitätssystem. Es löst die fragmentierte Landschaft lokaler Behördenkonten ab und stellt digitale Berechtigungsnachweise für Bürgerinnen und Bürger bereit.",
+				"en": "GOV.UK One Login is the UK's centralised identity system. It replaces the fragmented landscape of local agency accounts and provides digital credentials for citizens."
+			},
+			"homepage": "https://www.sign-in.service.gov.uk/",
+			"license": "MIT",
+			"tags": [
+				"egovernment",
+				"identity",
+				"uk",
+				"sso"
+			],
+			"oss": true,
+			"maturity": "incubation",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": false,
+				"selfHostable": false,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 70
+		},
+		{
+			"id": "gov-uk-pay",
+			"name": "GOV.UK Pay",
+			"layer": "applications",
+			"sublayer": "integration",
+			"description": {
+				"de": "GOV.UK Pay ist das standardisierte Zahlungs-Gateway des britischen Government Digital Service. Es wird regierungsweit für die Abwicklung von Gebühren und finanziellen Transaktionen eingesetzt.",
+				"en": "GOV.UK Pay is the standardised payment gateway from the UK's Government Digital Service. It is used across government to process fees and financial transactions."
+			},
+			"homepage": "https://www.payments.service.gov.uk/",
+			"license": "MIT",
+			"tags": [
+				"egovernment",
+				"payments",
+				"uk"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 95
+		},
+		{
+			"id": "govstack-information-mediator",
+			"name": "GovStack Information Mediator",
+			"layer": "building-blocks",
+			"sublayer": "integration",
+			"description": {
+				"de": "Der Information Mediator ist der zentrale Building Block der GovStack-Initiative für sicheren, asynchronen Datenaustausch zwischen Behörden. Er kombiniert einen X-Road Security Server mit ActiveMQ Artemis und stellt API-Gateway-, Routing- und Event-Mesh-Funktionen bereit.",
+				"en": "The Information Mediator is the GovStack initiative's central building block for secure asynchronous data exchange between public authorities. It combines an X-Road Security Server with ActiveMQ Artemis and provides API gateway, routing and event-mesh capabilities."
+			},
+			"homepage": "https://govstack.gitbook.io/bb-information-mediator",
+			"tags": [
+				"egovernment",
+				"integration",
+				"govstack",
+				"interoperability"
+			],
+			"oss": true,
+			"maturity": "incubation",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": true,
+				"hasAudit": false,
+				"permissiveLicense": true,
+				"matureProject": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 90
+		},
+		{
+			"id": "grafana",
+			"name": "Grafana",
+			"layer": "platform",
+			"sublayer": "inbetriebnahme",
+			"description": {
+				"de": "Grafana ist eine quelloffene Plattform für Visualisierung und Dashboards. In Kombination mit Prometheus und vielen weiteren Datenquellen stellt sie Metriken, Logs und Traces für Betriebssicherheit und Observability bereit.",
+				"en": "Grafana is an open-source platform for visualisation and dashboards. Combined with Prometheus and many other data sources it presents metrics, logs and traces for operational reliability and observability."
+			},
+			"homepage": "https://grafana.com/oss/grafana/",
+			"license": "AGPL-3.0",
+			"tags": [
+				"monitoring",
+				"dashboards",
+				"observability"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": false,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": false,
+				"ownerType": "corporation"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 78
+		},
+		{
 			"id": "graphql",
 			"name": "GraphQL",
 			"layer": "platform",
@@ -1622,6 +2247,39 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://hbase.apache.org/book.html"
 			},
 			"sovereigntyScore": 92
+		},
+		{
+			"id": "helm",
+			"name": "Helm",
+			"layer": "platform",
+			"sublayer": "inbetriebnahme",
+			"description": {
+				"de": "Helm ist der De-facto-Paketmanager für Kubernetes. Mit Helm-Charts werden komplexe Kubernetes-Anwendungen versioniert, geteilt und reproduzierbar deployt.",
+				"en": "Helm is the de-facto package manager for Kubernetes. Helm charts version, share and reproducibly deploy complex Kubernetes applications."
+			},
+			"homepage": "https://helm.sh/",
+			"license": "Apache-2.0",
+			"tags": [
+				"kubernetes",
+				"package-manager",
+				"deployment"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "huggingface-transformers",
@@ -2187,6 +2845,40 @@ const RAW_ITEMS: Item[] = [
 			"sovereigntyScore": 100
 		},
 		{
+			"id": "keycloak",
+			"name": "Keycloak",
+			"layer": "building-blocks",
+			"sublayer": "sicherheit",
+			"description": {
+				"de": "Keycloak ist eine Open-Source-Lösung für Identity- und Access-Management. Sie bietet Single Sign-On, OpenID Connect, OAuth2 und SAML, Benutzer- und Rollenverwaltung sowie Föderation und gilt als De-facto-Standard für IAM in vielen öffentlichen Verwaltungen.",
+				"en": "Keycloak is an open-source identity and access management solution. It provides single sign-on, OpenID Connect, OAuth2, SAML, user and role management as well as federation and is the de-facto IAM standard in many public administrations."
+			},
+			"homepage": "https://www.keycloak.org/",
+			"tags": [
+				"iam",
+				"sso",
+				"oidc",
+				"saml"
+			],
+			"license": "Apache-2.0",
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "community"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 92
+		},
+		{
 			"id": "kong",
 			"name": "Kong",
 			"layer": "platform",
@@ -2653,6 +3345,39 @@ const RAW_ITEMS: Item[] = [
 			"sovereigntyScore": 88
 		},
 		{
+			"id": "mosip",
+			"name": "MOSIP",
+			"layer": "applications",
+			"sublayer": "sicherheit",
+			"description": {
+				"de": "MOSIP (Modular Open Source Identity Platform) ist eine quelloffene Plattform für nationale digitale Identitäten. Sie wird in zahlreichen Schwellenländern als Basis für Bürgerregister und ID-Programme adaptiert.",
+				"en": "MOSIP (Modular Open Source Identity Platform) is an open-source platform for national digital identities. It is adopted in many emerging economies as a basis for civil registries and national ID programmes."
+			},
+			"homepage": "https://www.mosip.io/",
+			"license": "MPL-2.0",
+			"tags": [
+				"egovernment",
+				"identity",
+				"open-source"
+			],
+			"oss": true,
+			"maturity": "incubation",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": false,
+				"permissiveLicense": true,
+				"matureProject": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 85
+		},
+		{
 			"id": "multiprotocol-label-switching-mpls",
 			"name": "Multiprotocol Label Switching (MPLS)",
 			"layer": "infrastructure",
@@ -2686,6 +3411,38 @@ const RAW_ITEMS: Item[] = [
 			},
 			"logo": "assets/broken-logo.svg",
 			"sovereigntyScore": 95
+		},
+		{
+			"id": "myinfo",
+			"name": "Myinfo",
+			"layer": "applications",
+			"sublayer": "daten",
+			"description": {
+				"de": "Myinfo ist ein Datenfreigabe-Dienst aus Singapurs SGTS-Stack. Bürger geben mit ihrer Zustimmung verifizierte Stammdaten an Drittdienste weiter und vermeiden so erneute Eingaben.",
+				"en": "Myinfo is a data-sharing service from Singapore's SGTS stack. With user consent, citizens share verified personal data with third-party services and avoid re-entering it."
+			},
+			"homepage": "https://www.singpass.gov.sg/myinfo/",
+			"tags": [
+				"egovernment",
+				"data-sharing",
+				"singapore"
+			],
+			"oss": false,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": false,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": false,
+				"matureProject": true,
+				"selfHostable": false,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 50
 		},
 		{
 			"id": "mysql-server",
@@ -2904,6 +3661,39 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://nodered.org/docs/developing-flows/"
 			},
 			"sovereigntyScore": 92
+		},
+		{
+			"id": "nodejs",
+			"name": "Node.js",
+			"layer": "platform",
+			"sublayer": "entwicklung",
+			"description": {
+				"de": "Node.js ist eine quelloffene JavaScript-Laufzeitumgebung. Sie wird in vielen Verwaltungs-Backends für schnelle, ereignisgetriebene APIs und für Frontend-Build-Tooling eingesetzt.",
+				"en": "Node.js is an open-source JavaScript runtime. It is used in many public-administration backends for fast event-driven APIs and for frontend build tooling."
+			},
+			"homepage": "https://nodejs.org/",
+			"license": "MIT",
+			"tags": [
+				"javascript",
+				"runtime",
+				"backend"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "nomad",
@@ -3192,6 +3982,40 @@ const RAW_ITEMS: Item[] = [
 			"sovereigntyScore": 85
 		},
 		{
+			"id": "open-policy-agent",
+			"name": "Open Policy Agent",
+			"layer": "building-blocks",
+			"sublayer": "sicherheit",
+			"description": {
+				"de": "Open Policy Agent (OPA) ist eine Open-Source Policy-Engine, die Sicherheitsregeln und Zugriffsentscheidungen als Code (Policy-as-Code) umsetzt. OPA wird unter anderem zur Absicherung von Kubernetes-Pods und für Compliance-Prüfungen eingesetzt.",
+				"en": "Open Policy Agent (OPA) is an open-source policy engine that expresses security rules and access decisions as code (policy-as-code). OPA is used for example to secure Kubernetes pods and to perform compliance checks."
+			},
+			"homepage": "https://www.openpolicyagent.org/",
+			"license": "Apache-2.0",
+			"tags": [
+				"policy",
+				"security",
+				"compliance",
+				"cncf"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 95
+		},
+		{
 			"id": "open-shortest-path-first-ospf",
 			"name": "Open Shortest Path First (OSPF)",
 			"layer": "infrastructure",
@@ -3336,6 +4160,40 @@ const RAW_ITEMS: Item[] = [
 			"sovereigntyScore": 92
 		},
 		{
+			"id": "opentelemetry",
+			"name": "OpenTelemetry",
+			"layer": "platform",
+			"sublayer": "inbetriebnahme",
+			"description": {
+				"de": "OpenTelemetry ist ein CNCF-Projekt für herstellerunabhängige Instrumentierung von Logs, Metriken und Traces. Es definiert offene Standards und SDKs für Distributed Tracing in verteilten Verwaltungssystemen.",
+				"en": "OpenTelemetry is a CNCF project for vendor-neutral instrumentation of logs, metrics and traces. It defines open standards and SDKs for distributed tracing in distributed public-administration systems."
+			},
+			"homepage": "https://opentelemetry.io/",
+			"license": "Apache-2.0",
+			"tags": [
+				"observability",
+				"tracing",
+				"metrics",
+				"cncf"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 95
+		},
+		{
 			"id": "php",
 			"name": "PHP",
 			"layer": "building-blocks",
@@ -3474,6 +4332,40 @@ const RAW_ITEMS: Item[] = [
 				"ownerType": "independentConsortium"
 			},
 			"sovereigntyScore": 90
+		},
+		{
+			"id": "prometheus",
+			"name": "Prometheus",
+			"layer": "platform",
+			"sublayer": "inbetriebnahme",
+			"description": {
+				"de": "Prometheus ist ein quelloffenes Monitoring- und Alerting-System aus dem CNCF-Ökosystem. Es sammelt Metriken über ein Pull-Modell, speichert Zeitreihen und ist Standardwerkzeug für Cloud-Native-Observability.",
+				"en": "Prometheus is an open-source monitoring and alerting system from the CNCF ecosystem. It scrapes metrics, stores time-series data and is the standard tool for cloud-native observability."
+			},
+			"homepage": "https://prometheus.io/",
+			"license": "Apache-2.0",
+			"tags": [
+				"monitoring",
+				"metrics",
+				"observability",
+				"cncf"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 95
 		},
 		{
 			"id": "promptflow",
@@ -3725,6 +4617,39 @@ const RAW_ITEMS: Item[] = [
 			"sovereigntyScore": 90
 		},
 		{
+			"id": "rabbitmq",
+			"name": "RabbitMQ",
+			"layer": "platform",
+			"sublayer": "integration",
+			"description": {
+				"de": "RabbitMQ ist ein quelloffener, queue-basierter Message-Broker. Er unterstützt offene Protokolle wie AMQP, MQTT und STOMP und ist ein Standard-Tool für asynchrone System-Integration und entkoppelte Microservices in Verwaltungsanwendungen.",
+				"en": "RabbitMQ is an open-source queue-based message broker. It supports open protocols such as AMQP, MQTT and STOMP and is a standard tool for asynchronous system integration and decoupled microservices in public administration applications."
+			},
+			"homepage": "https://www.rabbitmq.com/",
+			"license": "MPL-2.0",
+			"tags": [
+				"messaging",
+				"queue",
+				"amqp"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "corporation"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 88
+		},
+		{
 			"id": "ragflow",
 			"name": "RAGFlow",
 			"layer": "platform",
@@ -3830,6 +4755,38 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://react.dev/learn"
 			},
 			"sovereigntyScore": 92
+		},
+		{
+			"id": "redis",
+			"name": "Redis",
+			"layer": "platform",
+			"sublayer": "daten",
+			"description": {
+				"de": "Redis ist eine schnelle, in-memory arbeitende Schlüssel-Wert-Datenbank. Sie wird typischerweise für Caching, Session-Speicher, Pub/Sub und Echtzeit-Lastspitzen in skalierbaren GovTech-Anwendungen eingesetzt.",
+				"en": "Redis is a fast in-memory key-value store. It is typically used for caching, session storage, pub/sub and real-time load peaks in scalable GovTech applications."
+			},
+			"homepage": "https://redis.io/",
+			"tags": [
+				"cache",
+				"in-memory",
+				"key-value"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": false,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "corporation"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 78
 		},
 		{
 			"id": "representational-state-transfer",
@@ -3968,6 +4925,39 @@ const RAW_ITEMS: Item[] = [
 				"lastDate": "2025-11-11",
 				"url": "https://docs.robotframework.org/docs"
 			},
+			"sovereigntyScore": 92
+		},
+		{
+			"id": "ruby-on-rails",
+			"name": "Ruby on Rails",
+			"layer": "building-blocks",
+			"sublayer": "entwicklung",
+			"description": {
+				"de": "Ruby on Rails ist ein Webframework für die Programmiersprache Ruby. Es prägte das britische GOV.UK-Ökosystem (GOV.UK Plattformen) und die US-amerikanische Login.gov-Plattform und ist auf schnelle Entwicklung und Konventionen vor Konfiguration ausgerichtet.",
+				"en": "Ruby on Rails is a web framework for the Ruby programming language. It shaped the UK's GOV.UK ecosystem (GOV.UK platforms) and the US Login.gov platform and is centred on rapid development and convention over configuration."
+			},
+			"homepage": "https://rubyonrails.org/",
+			"license": "MIT",
+			"tags": [
+				"ruby",
+				"framework",
+				"web"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "community"
+			},
+			"logo": "assets/broken-logo.svg",
 			"sovereigntyScore": 92
 		},
 		{
@@ -4291,6 +5281,71 @@ const RAW_ITEMS: Item[] = [
 			"sovereigntyScore": 95
 		},
 		{
+			"id": "singpass",
+			"name": "Singpass",
+			"layer": "applications",
+			"sublayer": "sicherheit",
+			"description": {
+				"de": "Singpass ist Singapurs nationaler Login-Dienst und Teil der National Digital Identity (NDI). Er bietet Bürgerinnen und Bürgern sicheren Zugriff auf hunderte digitale Verwaltungsdienste.",
+				"en": "Singpass is Singapore's national login service and part of its National Digital Identity (NDI) programme. It gives citizens secure access to hundreds of digital government services."
+			},
+			"homepage": "https://www.singpass.gov.sg/",
+			"tags": [
+				"egovernment",
+				"identity",
+				"singapore"
+			],
+			"oss": false,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": false,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": false,
+				"matureProject": true,
+				"selfHostable": false,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 50
+		},
+		{
+			"id": "sovereign-cloud-stack",
+			"name": "Sovereign Cloud Stack",
+			"layer": "sovereign-standards",
+			"sublayer": "inbetriebnahme",
+			"description": {
+				"de": "Der Sovereign Cloud Stack (SCS) ist ein offener Referenz-Standard für souveräne Cloud-Infrastruktur (IaaS und KaaS), entwickelt von der OSB Alliance. Er definiert unter anderem Flavor-Naming, Storage-Klassen und IAM-Standards und bildet eine Grundlage des Deutschland-Stacks.",
+				"en": "The Sovereign Cloud Stack (SCS) is an open reference standard for sovereign cloud infrastructure (IaaS and KaaS), developed by the OSB Alliance. It defines flavour naming, storage classes and IAM standards and is a foundation of the Germany Stack."
+			},
+			"homepage": "https://scs.community/",
+			"tags": [
+				"cloud",
+				"sovereignty",
+				"iaas",
+				"germany"
+			],
+			"oss": true,
+			"maturity": "incubation",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": true,
+				"hasAudit": false,
+				"permissiveLicense": true,
+				"matureProject": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 90
+		},
+		{
 			"id": "spacy",
 			"name": "spaCy",
 			"layer": "platform",
@@ -4364,6 +5419,39 @@ const RAW_ITEMS: Item[] = [
 			"sovereigntyScore": 92
 		},
 		{
+			"id": "spring-boot",
+			"name": "Spring Boot",
+			"layer": "building-blocks",
+			"sublayer": "entwicklung",
+			"description": {
+				"de": "Spring Boot ist ein Java-Framework für die schnelle Entwicklung produktionsreifer Microservices. Es ist De-facto-Standard für Backend-Services in zahlreichen GovTech-Stacks – darunter FIT-Connect, BundID, GovStack, India Stack (UPI) und MOSIP.",
+				"en": "Spring Boot is a Java framework for rapidly building production-ready microservices. It is the de-facto standard for backend services in many GovTech stacks, including FIT-Connect, BundID, GovStack, India Stack (UPI) and MOSIP."
+			},
+			"homepage": "https://spring.io/projects/spring-boot",
+			"license": "Apache-2.0",
+			"tags": [
+				"java",
+				"framework",
+				"microservices"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "corporation"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 88
+		},
+		{
 			"id": "swift",
 			"name": "Swift",
 			"layer": "building-blocks",
@@ -4398,6 +5486,72 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://www.swift.org/documentation/"
 			},
 			"sovereigntyScore": 95
+		},
+		{
+			"id": "tailwind-css",
+			"name": "Tailwind CSS",
+			"layer": "building-blocks",
+			"sublayer": "entwicklung",
+			"description": {
+				"de": "Tailwind CSS ist ein Utility-First-CSS-Framework. Es ermöglicht schnelle, konsistente Styling-Workflows ohne komponentengetriebene CSS-Pflege und wird in vielen modernen Verwaltungs-UIs verwendet.",
+				"en": "Tailwind CSS is a utility-first CSS framework. It enables fast, consistent styling workflows without component-driven CSS maintenance and is used in many modern public-administration UIs."
+			},
+			"homepage": "https://tailwindcss.com/",
+			"license": "MIT",
+			"tags": [
+				"css",
+				"frontend",
+				"framework"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": false,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "corporation"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 83
+		},
+		{
+			"id": "temporal-io",
+			"name": "Temporal",
+			"layer": "building-blocks",
+			"sublayer": "lowcode",
+			"description": {
+				"de": "Temporal ist eine moderne Open-Source-Orchestrierungsplattform für codebasierte Workflows in Microservice-Architekturen. Sie übernimmt automatisches State-Management, Wiederaufnahme und Versionierung von langlaufenden Prozessen.",
+				"en": "Temporal is a modern open-source orchestration platform for code-based workflows in microservice architectures. It handles automatic state management, resumption and versioning of long-running processes."
+			},
+			"homepage": "https://temporal.io/",
+			"license": "MIT",
+			"tags": [
+				"workflow",
+				"orchestration",
+				"microservices"
+			],
+			"oss": true,
+			"maturity": "incubation",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": false,
+				"permissiveLicense": true,
+				"matureProject": false,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "corporation"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 78
 		},
 		{
 			"id": "tensorflow",
@@ -4435,6 +5589,39 @@ const RAW_ITEMS: Item[] = [
 				"url": "https://github.com/tensorflow/serving"
 			},
 			"sovereigntyScore": 92
+		},
+		{
+			"id": "terraform",
+			"name": "Terraform",
+			"layer": "platform",
+			"sublayer": "inbetriebnahme",
+			"description": {
+				"de": "Terraform ist ein Open-Source-Werkzeug für Infrastructure-as-Code. Es ermöglicht das deklarative Provisioning von Cloud- und On-Premise-Ressourcen über Provider und sorgt für reproduzierbare, versionierte Infrastruktur-Setups.",
+				"en": "Terraform is an open-source Infrastructure-as-Code tool. It enables declarative provisioning of cloud and on-premise resources via providers and produces reproducible, versioned infrastructure setups."
+			},
+			"homepage": "https://www.terraform.io/",
+			"license": "BUSL-1.1",
+			"tags": [
+				"iac",
+				"infrastructure",
+				"automation"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": false,
+				"permissiveLicense": false,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": false,
+				"ownerType": "corporation"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 68
 		},
 		{
 			"id": "traefik",
@@ -4578,6 +5765,71 @@ const RAW_ITEMS: Item[] = [
 			"sovereigntyScore": 88
 		},
 		{
+			"id": "typo3",
+			"name": "TYPO3",
+			"layer": "applications",
+			"sublayer": "lowcode",
+			"description": {
+				"de": "TYPO3 ist ein in Europa entwickeltes Open-Source-Enterprise-CMS, das in vielen deutschsprachigen Behörden- und Hochschulportalen eingesetzt wird. Es bietet feingranulare Rechte und Mehrsprachigkeit.",
+				"en": "TYPO3 is an enterprise open-source CMS developed in Europe and used by many German-speaking public-administration and higher-education portals. It offers fine-grained permissions and multilingual capabilities."
+			},
+			"homepage": "https://typo3.org/",
+			"license": "GPL-2.0-or-later",
+			"tags": [
+				"cms",
+				"egovernment",
+				"europe"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": true,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 100
+		},
+		{
+			"id": "unified-payments-interface-upi",
+			"name": "Unified Payments Interface (UPI)",
+			"layer": "applications",
+			"sublayer": "integration",
+			"description": {
+				"de": "Das Unified Payments Interface (UPI) ist Indiens Echtzeit-Mobilzahlungssystem, betrieben von der NPCI. Es bildet die Zahlungsschicht des India Stack und verarbeitet inzwischen mehrere Milliarden Transaktionen pro Monat.",
+				"en": "The Unified Payments Interface (UPI) is India's real-time mobile payment system, operated by the NPCI. It forms the payments layer of the India Stack and processes billions of transactions per month."
+			},
+			"homepage": "https://www.npci.org.in/what-we-do/upi/product-overview",
+			"tags": [
+				"egovernment",
+				"payments",
+				"india"
+			],
+			"oss": false,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": false,
+				"euHeadquartered": false,
+				"hasAudit": false,
+				"permissiveLicense": false,
+				"matureProject": true,
+				"selfHostable": false,
+				"dataPortability": false,
+				"openStandards": true,
+				"noTelemetryByDefault": false,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 25
+		},
+		{
 			"id": "user-datagram-protocol-udp",
 			"name": "User Datagram Protocol (UDP)",
 			"layer": "infrastructure",
@@ -4719,6 +5971,71 @@ const RAW_ITEMS: Item[] = [
 			"sovereigntyScore": 95
 		},
 		{
+			"id": "wordpress",
+			"name": "WordPress",
+			"layer": "applications",
+			"sublayer": "lowcode",
+			"description": {
+				"de": "WordPress ist ein weit verbreitetes Open-Source-CMS für Websites und Blogs. Es wird in vielen Verwaltungs-Webauftritten und Informationsportalen eingesetzt.",
+				"en": "WordPress is a widely used open-source CMS for websites and blogs. It is deployed by many public-administration websites and information portals."
+			},
+			"homepage": "https://wordpress.org/",
+			"license": "GPL-2.0-or-later",
+			"tags": [
+				"cms",
+				"blogging"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": false,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 95
+		},
+		{
+			"id": "x-road",
+			"name": "X-Road",
+			"layer": "building-blocks",
+			"sublayer": "integration",
+			"description": {
+				"de": "X-Road ist eine in Estland entwickelte Open-Source-Plattform für den sicheren, dezentralen Datenaustausch zwischen Behörden- und privaten Informationssystemen. Daten werden direkt zwischen Konsument und Provider ausgetauscht; ein Security Server kapselt Authentifizierung, Verschlüsselung, Signatur und Zeitstempel.",
+				"en": "X-Road is an open-source data exchange layer originally developed in Estonia. It enables secure, decentralised, point-to-point exchange between public and private information systems; a Security Server encapsulates authentication, encryption, signing and time-stamping."
+			},
+			"homepage": "https://x-road.global/",
+			"tags": [
+				"egovernment",
+				"integration",
+				"interoperability",
+				"estonia"
+			],
+			"oss": true,
+			"maturity": "graduated",
+			"sovereigntyCriteria": {
+				"openSource": true,
+				"euHeadquartered": true,
+				"hasAudit": true,
+				"permissiveLicense": true,
+				"matureProject": true,
+				"selfHostable": true,
+				"dataPortability": true,
+				"openStandards": true,
+				"noTelemetryByDefault": true,
+				"ownerType": "independentConsortium"
+			},
+			"logo": "assets/broken-logo.svg",
+			"sovereigntyScore": 100
+		},
+		{
 			"id": "yaml-ain-t-markup-language",
 			"name": "YAML Ain't Markup Language",
 			"layer": "platform",
@@ -4760,6 +6077,282 @@ export const ITEMS: Item[] = RAW_ITEMS.map((item) => ({
 }));
 
 export const STACKS: Stack[] = [
+		{
+			"id": "estonia",
+			"name": {
+				"de": "Estland Stack",
+				"en": "Estonia Stack"
+			},
+			"description": {
+				"de": "Estnisches e-Government-Ökosystem mit X-Road als dezentraler Datenaustausch-Plattform und einem klaren Once-Only-Prinzip.",
+				"en": "Estonia's e-government ecosystem built around X-Road as a decentralised data exchange platform and a clear once-only principle."
+			},
+			"country": "EE",
+			"issuer": "Riigi Infosüsteemi Amet (RIA) / NIIS",
+			"version": "0.1.0",
+			"publishedAt": "2026-04-13",
+			"items": [
+				{
+					"itemId": "x-road",
+					"status": "recommended",
+					"role": "maintainer",
+					"rationale": {
+						"de": "Kernkomponente des estnischen Stacks, von Estland und NIIS gepflegt.",
+						"en": "Core component of the Estonia stack, maintained by Estonia and NIIS."
+					}
+				},
+				{
+					"itemId": "activemq-artemis",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Asynchrone Nachrichtenwarteschlangen rund um den X-Road Security Server.",
+						"en": "Asynchronous message queues around the X-Road Security Server."
+					}
+				},
+				{
+					"itemId": "java",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Implementierungssprache des X-Road Security Servers.",
+						"en": "Implementation language of the X-Road Security Server."
+					}
+				},
+				{
+					"itemId": "spring-boot",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Backend-Microservices in der estnischen Verwaltungs-IT.",
+						"en": "Backend microservices in Estonian public-administration IT."
+					}
+				},
+				{
+					"itemId": "postgresql",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Standard-Datenbank für X-Road und angeschlossene Fachverfahren.",
+						"en": "Standard database for X-Road and attached domain systems."
+					}
+				},
+				{
+					"itemId": "vuejs",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Frontend-Framework des X-Road Admin UIs.",
+						"en": "Frontend framework of the X-Road admin UI."
+					}
+				},
+				{
+					"itemId": "openapi",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "REST-Schnittstellen werden mit OpenAPI3 beschrieben.",
+						"en": "REST services are described with OpenAPI3."
+					}
+				},
+				{
+					"itemId": "simple-object-access-protocol",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Legacy-SOAP-Dienste werden über X-Road weiter unterstützt.",
+						"en": "Legacy SOAP services are still supported via X-Road."
+					}
+				},
+				{
+					"itemId": "transport-layer-security-tls",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Transportverschlüsselung zwischen Security Servern.",
+						"en": "Transport encryption between Security Servers."
+					}
+				},
+				{
+					"itemId": "open-id-connect-oidc",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Föderierte Authentifizierung von Bürgern und Organisationen.",
+						"en": "Federated authentication of citizens and organisations."
+					}
+				},
+				{
+					"itemId": "keycloak",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Häufig genutzter IAM-Provider in estnischen Behörden-Setups.",
+						"en": "Frequently used IAM provider in Estonian agency setups."
+					}
+				},
+				{
+					"itemId": "kubernetes",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Container-Orchestrierung für moderne X-Road-Deployments.",
+						"en": "Container orchestration for modern X-Road deployments."
+					}
+				},
+				{
+					"itemId": "docker-swarm",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Container-Orchestrierung in kleineren Setups.",
+						"en": "Container orchestration in smaller setups."
+					}
+				}
+			]
+		},
+		{
+			"id": "european-union",
+			"name": {
+				"de": "EU Referenz-Stack (EIRA / EUDI)",
+				"en": "EU Reference Stack (EIRA / EUDI)"
+			},
+			"description": {
+				"de": "Supranationaler Referenz-Stack der Europäischen Kommission auf Basis der European Interoperability Reference Architecture (EIRA) und des EUDI Wallets.",
+				"en": "Supranational reference stack from the European Commission based on the European Interoperability Reference Architecture (EIRA) and the EUDI Wallet."
+			},
+			"issuer": "Europäische Kommission / DG DIGIT",
+			"version": "0.1.0",
+			"publishedAt": "2026-04-13",
+			"items": [
+				{
+					"itemId": "eudi-wallet",
+					"status": "recommended",
+					"role": "maintainer",
+					"rationale": {
+						"de": "Harmonisierte EU-weite digitale Brieftasche.",
+						"en": "Harmonised EU-wide digital wallet."
+					}
+				},
+				{
+					"itemId": "keycloak",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Open-Source-IAM-Standard für eIDAS-konforme Login-Dienste.",
+						"en": "Open-source IAM standard for eIDAS-compliant login services."
+					}
+				},
+				{
+					"itemId": "open-id-connect-oidc",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Föderiertes SSO als Standardbaustein des EIRA-Ökosystems.",
+						"en": "Federated SSO as a standard building block of the EIRA ecosystem."
+					}
+				},
+				{
+					"itemId": "open-authorization-oauth",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Autorisierungs-Standard in EU-Diensten.",
+						"en": "Authorisation standard in EU services."
+					}
+				},
+				{
+					"itemId": "openapi",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "API-Beschreibung als EIRA-konformer Architecture Building Block.",
+						"en": "API description as an EIRA-compliant architecture building block."
+					}
+				},
+				{
+					"itemId": "comprehensive-knowledge-archive-network-ckan",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Open-Data-Plattform vieler europäischer Datenportale.",
+						"en": "Open data platform used by many European data portals."
+					}
+				},
+				{
+					"itemId": "piveau",
+					"status": "approved",
+					"role": "contributor",
+					"rationale": {
+						"de": "EU-Datenkatalog-Implementierung in europaweiten Open-Data-Portalen.",
+						"en": "EU data catalogue implementation used in pan-European open-data portals."
+					}
+				},
+				{
+					"itemId": "data-catalog-vocabulary-dcat",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Standard-Vokabular für europäische Datenkataloge.",
+						"en": "Standard vocabulary for European data catalogues."
+					}
+				},
+				{
+					"itemId": "java",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Backend-Sprache vieler EIRA-Referenzimplementierungen.",
+						"en": "Backend language of many EIRA reference implementations."
+					}
+				},
+				{
+					"itemId": "spring-boot",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Microservice-Framework in EU-Referenzprojekten.",
+						"en": "Microservice framework in EU reference projects."
+					}
+				},
+				{
+					"itemId": "postgresql",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Standard-Datenbank für EU-Referenzimplementierungen.",
+						"en": "Standard database for EU reference implementations."
+					}
+				},
+				{
+					"itemId": "kubernetes",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Container-Orchestrierung in europäischen Cloud-Umgebungen.",
+						"en": "Container orchestration in European cloud environments."
+					}
+				},
+				{
+					"itemId": "fido2-webauthn",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Phishing-resistente Authentifizierung im EUDI-Kontext.",
+						"en": "Phishing-resistant authentication in the EUDI context."
+					}
+				},
+				{
+					"itemId": "transport-layer-security-tls",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Standardverschlüsselung aller EU-API-Endpunkte.",
+						"en": "Standard encryption for all EU API endpoints."
+					}
+				}
+			]
+		},
 		{
 			"id": "germany",
 			"name": {
@@ -5952,6 +7545,820 @@ export const STACKS: Stack[] = [
 					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
+					}
+				},
+				{
+					"itemId": "bundid",
+					"status": "recommended",
+					"role": "maintainer",
+					"rationale": {
+						"de": "Zentrales Bürgerkonto des Bundes für digitale Verwaltungsleistungen.",
+						"en": "Federal citizen account for digital public services."
+					}
+				},
+				{
+					"itemId": "fit-connect",
+					"status": "recommended",
+					"role": "maintainer",
+					"rationale": {
+						"de": "Digitaler Postbote des OZG-Ökosystems für sichere Antragsübermittlung.",
+						"en": "Digital postal service of the OZG ecosystem for secure application delivery."
+					}
+				},
+				{
+					"itemId": "sovereign-cloud-stack",
+					"status": "recommended",
+					"role": "contributor",
+					"rationale": {
+						"de": "Offener Referenz-Standard für souveräne Cloud-Infrastruktur, Grundlage des D-Stacks.",
+						"en": "Open reference standard for sovereign cloud infrastructure, foundation of the D-Stack."
+					}
+				},
+				{
+					"itemId": "keycloak",
+					"status": "approved",
+					"role": "contributor",
+					"rationale": {
+						"de": "De-facto-IAM-Standard im BundID- und FIT-Connect-Umfeld.",
+						"en": "De-facto IAM standard in the BundID and FIT-Connect environment."
+					}
+				},
+				{
+					"itemId": "eudi-wallet",
+					"status": "recommended",
+					"role": "contributor",
+					"rationale": {
+						"de": "Deutschland trägt zur EU-weiten digitalen Brieftasche bei.",
+						"en": "Germany contributes to the EU-wide digital wallet."
+					}
+				},
+				{
+					"itemId": "fido2-webauthn",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Passwortlose Authentifizierung als Sicherheitsbaustein.",
+						"en": "Passwordless authentication as a security building block."
+					}
+				},
+				{
+					"itemId": "spring-boot",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Standard-Backend-Framework in BundID, FIT-Connect und vielen Fachverfahren.",
+						"en": "Standard backend framework in BundID, FIT-Connect and many domain systems."
+					}
+				},
+				{
+					"itemId": "nodejs",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "JavaScript-Runtime für Backend-APIs und Frontend-Tooling.",
+						"en": "JavaScript runtime for backend APIs and frontend tooling."
+					}
+				},
+				{
+					"itemId": "django",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Python-Framework für datennahe Verwaltungs-Anwendungen.",
+						"en": "Python framework for data-heavy public administration applications."
+					}
+				},
+				{
+					"itemId": "tailwind-css",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Utility-First-CSS-Framework in modernen Verwaltungs-UIs.",
+						"en": "Utility-first CSS framework in modern public-administration UIs."
+					}
+				},
+				{
+					"itemId": "apache-kafka",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Event-Streaming für asynchrone Behörden-Integration.",
+						"en": "Event streaming for asynchronous public-authority integration."
+					}
+				},
+				{
+					"itemId": "rabbitmq",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Queue-basiertes Messaging zwischen Microservices.",
+						"en": "Queue-based messaging between microservices."
+					}
+				},
+				{
+					"itemId": "redis",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "In-Memory-Caching für hochskalierte Verwaltungs-APIs.",
+						"en": "In-memory caching for highly scaled public-administration APIs."
+					}
+				},
+				{
+					"itemId": "elasticsearch",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Such- und Logging-Plattform in Verwaltungs-Setups.",
+						"en": "Search and logging platform in public-administration setups."
+					}
+				},
+				{
+					"itemId": "prometheus",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Standard-Monitoring im Cloud-Native-Betrieb.",
+						"en": "Standard monitoring in cloud-native operations."
+					}
+				},
+				{
+					"itemId": "grafana",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Visualisierung von Metriken und Logs.",
+						"en": "Visualisation of metrics and logs."
+					}
+				},
+				{
+					"itemId": "opentelemetry",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Distributed Tracing über verteilte Verwaltungs-Services.",
+						"en": "Distributed tracing across distributed public-administration services."
+					}
+				},
+				{
+					"itemId": "camunda",
+					"status": "approved",
+					"role": "contributor",
+					"rationale": {
+						"de": "BPMN-Engine, in Deutschland entwickelt, für Workflow-Automatisierung in Behörden.",
+						"en": "BPMN engine, developed in Germany, for workflow automation in public authorities."
+					}
+				},
+				{
+					"itemId": "temporal-io",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Codebasierte Workflow-Orchestrierung in Microservice-Stacks.",
+						"en": "Code-based workflow orchestration in microservice stacks."
+					}
+				},
+				{
+					"itemId": "open-policy-agent",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Policy-as-Code für Compliance- und Sicherheitsregeln.",
+						"en": "Policy-as-code for compliance and security rules."
+					}
+				},
+				{
+					"itemId": "apache-airflow",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Datenpipelines zwischen Fachverfahren und Datenplattformen.",
+						"en": "Data pipelines between domain systems and data platforms."
+					}
+				},
+				{
+					"itemId": "terraform",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Infrastructure-as-Code für Cloud-Provisionierung.",
+						"en": "Infrastructure-as-code for cloud provisioning."
+					}
+				},
+				{
+					"itemId": "helm",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Paketmanager für Kubernetes-Deployments.",
+						"en": "Package manager for Kubernetes deployments."
+					}
+				},
+				{
+					"itemId": "ansible",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Konfigurationsmanagement und Provisionierung.",
+						"en": "Configuration management and provisioning."
+					}
+				},
+				{
+					"itemId": "drupal",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "CMS für barrierefreie Behördenportale.",
+						"en": "CMS for accessible public-administration portals."
+					}
+				},
+				{
+					"itemId": "wordpress",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "CMS für Standard-Webauftritte und Informationsportale.",
+						"en": "CMS for standard websites and information portals."
+					}
+				},
+				{
+					"itemId": "typo3",
+					"status": "approved",
+					"role": "contributor",
+					"rationale": {
+						"de": "In Europa entwickeltes Enterprise-CMS für deutschsprachige Verwaltungs- und Hochschulportale.",
+						"en": "Enterprise CMS developed in Europe for German-speaking public-administration and higher-education portals."
+					}
+				}
+			]
+		},
+		{
+			"id": "govstack",
+			"name": {
+				"de": "GovStack Initiative",
+				"en": "GovStack Initiative"
+			},
+			"description": {
+				"de": "Internationale Initiative von Estland, Deutschland, ITU und DIAL für 19 essenzielle Digital-Public-Infrastructure-Building-Blocks und einen quelloffenen Werkzeugkasten.",
+				"en": "International initiative by Estonia, Germany, ITU and DIAL defining 19 essential digital public infrastructure building blocks and an open-source toolkit."
+			},
+			"issuer": "ITU / DIAL / Estonia / Germany",
+			"version": "0.1.0",
+			"publishedAt": "2026-04-13",
+			"items": [
+				{
+					"itemId": "govstack-information-mediator",
+					"status": "recommended",
+					"role": "maintainer",
+					"rationale": {
+						"de": "Zentraler Building Block für asynchronen Datenaustausch.",
+						"en": "Central building block for asynchronous data exchange."
+					}
+				},
+				{
+					"itemId": "x-road",
+					"status": "recommended",
+					"role": "contributor",
+					"rationale": {
+						"de": "Bildet die Security-Server-Schicht des Information Mediators.",
+						"en": "Provides the Security Server layer of the Information Mediator."
+					}
+				},
+				{
+					"itemId": "activemq-artemis",
+					"status": "recommended",
+					"role": "contributor",
+					"rationale": {
+						"de": "Asynchrone Nachrichtenwarteschlangen im Information Mediator.",
+						"en": "Asynchronous message queues in the Information Mediator."
+					}
+				},
+				{
+					"itemId": "mosip",
+					"status": "approved",
+					"role": "contributor",
+					"rationale": {
+						"de": "Quelloffene Identitätsplattform – Referenz für Identification & Authentication BB.",
+						"en": "Open-source identity platform – reference for the Identification & Authentication BB."
+					}
+				},
+				{
+					"itemId": "keycloak",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Verbreiteter IAM-Provider in GovStack-Implementierungen.",
+						"en": "Widely used IAM provider in GovStack implementations."
+					}
+				},
+				{
+					"itemId": "java",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Hauptsprache der GovStack-Building-Blocks.",
+						"en": "Primary language of the GovStack building blocks."
+					}
+				},
+				{
+					"itemId": "spring-boot",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Microservice-Framework der GovStack-Referenzimplementierungen.",
+						"en": "Microservice framework of GovStack reference implementations."
+					}
+				},
+				{
+					"itemId": "react",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Frontend-Framework vieler GovStack-Portale.",
+						"en": "Frontend framework of many GovStack portals."
+					}
+				},
+				{
+					"itemId": "postgresql",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Standard-Datenbank für GovStack-Building-Blocks.",
+						"en": "Standard database for GovStack building blocks."
+					}
+				},
+				{
+					"itemId": "kubernetes",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Container-Orchestrierung in der GovStack Sandbox.",
+						"en": "Container orchestration in the GovStack sandbox."
+					}
+				},
+				{
+					"itemId": "openapi",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "GovSpec-konforme API-Beschreibung.",
+						"en": "GovSpec-compliant API description."
+					}
+				},
+				{
+					"itemId": "open-id-connect-oidc",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Föderierte Authentifizierung in GovStack-BBs.",
+						"en": "Federated authentication in GovStack BBs."
+					}
+				},
+				{
+					"itemId": "transport-layer-security-tls",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Transportverschlüsselung aller GovStack-Schnittstellen.",
+						"en": "Transport encryption of all GovStack interfaces."
+					}
+				},
+				{
+					"itemId": "comprehensive-knowledge-archive-network-ckan",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Datenkatalog-Komponente in GovStack-Open-Data-Setups.",
+						"en": "Data catalogue component in GovStack open-data setups."
+					}
+				}
+			]
+		},
+		{
+			"id": "india",
+			"name": {
+				"de": "India Stack",
+				"en": "India Stack"
+			},
+			"description": {
+				"de": "Sammlung offener APIs und Building Blocks für Identität, Daten und Zahlungen auf Bevölkerungsebene – betrieben von UIDAI, NPCI und MeitY.",
+				"en": "A collection of open APIs and building blocks for identity, data and payments at population scale, operated by UIDAI, NPCI and MeitY."
+			},
+			"country": "IN",
+			"issuer": "UIDAI / NPCI / MeitY",
+			"version": "0.1.0",
+			"publishedAt": "2026-04-13",
+			"items": [
+				{
+					"itemId": "aadhaar",
+					"status": "recommended",
+					"role": "maintainer",
+					"rationale": {
+						"de": "Identitätsschicht des India Stack, betrieben von der UIDAI.",
+						"en": "Identity layer of the India Stack, operated by UIDAI."
+					}
+				},
+				{
+					"itemId": "unified-payments-interface-upi",
+					"status": "recommended",
+					"role": "maintainer",
+					"rationale": {
+						"de": "Echtzeit-Zahlungsschicht des India Stack, betrieben von der NPCI.",
+						"en": "Real-time payments layer of the India Stack, operated by NPCI."
+					}
+				},
+				{
+					"itemId": "digilocker",
+					"status": "recommended",
+					"role": "maintainer",
+					"rationale": {
+						"de": "Daten-/Dokumenten-Schicht für papierlose Verwaltung.",
+						"en": "Data/document layer for paperless administration."
+					}
+				},
+				{
+					"itemId": "mosip",
+					"status": "approved",
+					"role": "contributor",
+					"rationale": {
+						"de": "Open-Source-Identitätsplattform mit Vorbildfunktion für andere Länder.",
+						"en": "Open-source identity platform serving as a model for other countries."
+					}
+				},
+				{
+					"itemId": "java",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Hauptsprache der UPI- und MOSIP-Backends.",
+						"en": "Primary language of the UPI and MOSIP backends."
+					}
+				},
+				{
+					"itemId": "spring-boot",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "De-facto-Backend-Framework von UPI und MOSIP.",
+						"en": "De-facto backend framework of UPI and MOSIP."
+					}
+				},
+				{
+					"itemId": "react",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Frontend-Framework vieler India-Stack-Portale.",
+						"en": "Frontend framework of many India Stack portals."
+					}
+				},
+				{
+					"itemId": "nodejs",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Leichtgewichtige APIs und Tooling im India Stack.",
+						"en": "Lightweight APIs and tooling in the India Stack."
+					}
+				},
+				{
+					"itemId": "postgresql",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Standard-Datenbank für viele Backend-Services.",
+						"en": "Standard database for many backend services."
+					}
+				},
+				{
+					"itemId": "apache-kafka",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Event-Streaming für UPI-Lastspitzen und Echtzeit-Verarbeitung.",
+						"en": "Event streaming for UPI load peaks and real-time processing."
+					}
+				},
+				{
+					"itemId": "redis",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "In-Memory-Caching für hochfrequente UPI-Anfragen.",
+						"en": "In-memory caching for high-frequency UPI requests."
+					}
+				},
+				{
+					"itemId": "kubernetes",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Container-Orchestrierung für skalierbare India-Stack-Services.",
+						"en": "Container orchestration for scalable India Stack services."
+					}
+				},
+				{
+					"itemId": "open-authorization-oauth",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Autorisierung im DEPA-Consent-Layer.",
+						"en": "Authorisation in the DEPA consent layer."
+					}
+				},
+				{
+					"itemId": "transport-layer-security-tls",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Transportverschlüsselung aller India-Stack-Endpunkte.",
+						"en": "Transport encryption of all India Stack endpoints."
+					}
+				}
+			]
+		},
+		{
+			"id": "singapore",
+			"name": {
+				"de": "Singapur Stack (SGTS)",
+				"en": "Singapore Stack (SGTS)"
+			},
+			"description": {
+				"de": "Singapore Government Tech Stack mit Fokus auf Wiederverwendbarkeit, Cybersecurity und Whole-of-Government Entwicklungsplattformen.",
+				"en": "Singapore Government Tech Stack focused on reusability, cybersecurity and whole-of-government development platforms."
+			},
+			"country": "SG",
+			"issuer": "GovTech Singapore",
+			"version": "0.1.0",
+			"publishedAt": "2026-04-13",
+			"items": [
+				{
+					"itemId": "singpass",
+					"status": "recommended",
+					"role": "maintainer",
+					"rationale": {
+						"de": "Nationaler Login-Dienst der NDI-Plattform.",
+						"en": "National login service of the NDI platform."
+					}
+				},
+				{
+					"itemId": "myinfo",
+					"status": "recommended",
+					"role": "maintainer",
+					"rationale": {
+						"de": "Datenfreigabe-Service mit Nutzerzustimmung im SGTS.",
+						"en": "Consent-based data sharing service in SGTS."
+					}
+				},
+				{
+					"itemId": "java",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Backend-Sprache vieler SGTS-Komponenten.",
+						"en": "Backend language of many SGTS components."
+					}
+				},
+				{
+					"itemId": "spring-boot",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Standard-Framework für SGTS-Microservices.",
+						"en": "Standard framework for SGTS microservices."
+					}
+				},
+				{
+					"itemId": "react",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Frontend vieler regierungsweiter Anwendungen.",
+						"en": "Frontend of many whole-of-government applications."
+					}
+				},
+				{
+					"itemId": "nodejs",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Leichtgewichtige APIs und Tooling im SGTS.",
+						"en": "Lightweight APIs and tooling in SGTS."
+					}
+				},
+				{
+					"itemId": "go",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Performance-kritische Services und API-Gateways.",
+						"en": "Performance-critical services and API gateways."
+					}
+				},
+				{
+					"itemId": "postgresql",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Bevorzugte relationale Datenbank im SGTS.",
+						"en": "Preferred relational database in SGTS."
+					}
+				},
+				{
+					"itemId": "kubernetes",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Container Stack der SGTS Base Layer.",
+						"en": "Container Stack of the SGTS base layer."
+					}
+				},
+				{
+					"itemId": "kong",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "API-Gateway für SGTS-Dienste.",
+						"en": "API gateway for SGTS services."
+					}
+				},
+				{
+					"itemId": "open-id-connect-oidc",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Standardprotokoll für Singpass-Logins.",
+						"en": "Standard protocol for Singpass logins."
+					}
+				},
+				{
+					"itemId": "keycloak",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "IAM-Plattform in vielen SGTS-Deployments.",
+						"en": "IAM platform in many SGTS deployments."
+					}
+				},
+				{
+					"itemId": "prometheus",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Monitoring-Komponente in StackOps.",
+						"en": "Monitoring component in StackOps."
+					}
+				},
+				{
+					"itemId": "grafana",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Dashboards für SGTS Observability.",
+						"en": "Dashboards for SGTS observability."
+					}
+				}
+			]
+		},
+		{
+			"id": "united-kingdom",
+			"name": {
+				"de": "UK GOV.UK Stack",
+				"en": "UK GOV.UK Stack"
+			},
+			"description": {
+				"de": "Government-as-a-Platform-Ansatz des britischen Government Digital Service mit GOV.UK One Login, Pay und Notify als zentralen Bausteinen.",
+				"en": "The UK Government Digital Service's Government-as-a-Platform approach with GOV.UK One Login, Pay and Notify as central building blocks."
+			},
+			"country": "GB",
+			"issuer": "Government Digital Service (GDS)",
+			"version": "0.1.0",
+			"publishedAt": "2026-04-13",
+			"items": [
+				{
+					"itemId": "gov-uk-one-login",
+					"status": "recommended",
+					"role": "maintainer",
+					"rationale": {
+						"de": "Zentrales Identitätssystem für GOV.UK-Dienste.",
+						"en": "Centralised identity system for GOV.UK services."
+					}
+				},
+				{
+					"itemId": "gov-uk-pay",
+					"status": "recommended",
+					"role": "maintainer",
+					"rationale": {
+						"de": "Standard-Zahlungsgateway für britische Behörden.",
+						"en": "Standard payment gateway for UK government services."
+					}
+				},
+				{
+					"itemId": "gov-uk-notify",
+					"status": "recommended",
+					"role": "maintainer",
+					"rationale": {
+						"de": "Hochskalierbarer Benachrichtigungsdienst (E-Mail, SMS, Brief).",
+						"en": "Highly scalable notification service (email, SMS, letter)."
+					}
+				},
+				{
+					"itemId": "ruby-on-rails",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Historische Kernsprache für GOV.UK-Plattformen.",
+						"en": "Historical core language for GOV.UK platforms."
+					}
+				},
+				{
+					"itemId": "java",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Backend-Sprache für GOV.UK Pay und Notify.",
+						"en": "Backend language for GOV.UK Pay and Notify."
+					}
+				},
+				{
+					"itemId": "spring-boot",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Microservice-Framework in GOV.UK-Plattformen.",
+						"en": "Microservice framework in GOV.UK platforms."
+					}
+				},
+				{
+					"itemId": "python",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Eingesetzt in GOV.UK Notify und Datenanalyse.",
+						"en": "Used in GOV.UK Notify and data analytics."
+					}
+				},
+				{
+					"itemId": "django",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Python-Framework für ausgewählte GOV.UK-Services.",
+						"en": "Python framework for selected GOV.UK services."
+					}
+				},
+				{
+					"itemId": "nodejs",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "JavaScript-Backends in GOV.UK-Anwendungen.",
+						"en": "JavaScript backends in GOV.UK applications."
+					}
+				},
+				{
+					"itemId": "react",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Frontend-Komponenten in GOV.UK-Tooling.",
+						"en": "Frontend components in GOV.UK tooling."
+					}
+				},
+				{
+					"itemId": "postgresql",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Datenbank für GOV.UK Pay, Notify und weitere Services.",
+						"en": "Database for GOV.UK Pay, Notify and other services."
+					}
+				},
+				{
+					"itemId": "kubernetes",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Container-Orchestrierung im GOV.UK-Hosting.",
+						"en": "Container orchestration in GOV.UK hosting."
+					}
+				},
+				{
+					"itemId": "open-id-connect-oidc",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Standardprotokoll für GOV.UK One Login.",
+						"en": "Standard protocol for GOV.UK One Login."
+					}
+				},
+				{
+					"itemId": "transport-layer-security-tls",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Verschlüsselte Verbindungen in allen GOV.UK-Diensten.",
+						"en": "Encrypted connections across all GOV.UK services."
 					}
 				}
 			]

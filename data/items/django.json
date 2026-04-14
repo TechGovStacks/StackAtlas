@@ -1,0 +1,27 @@
+{
+	"id": "django",
+	"name": "Django",
+	"layer": "building-blocks",
+	"sublayer": "entwicklung",
+	"description": {
+		"de": "Django ist ein hochgradig produktives Python-Webframework. Es wird oft für Datenanalyse-Anwendungen und sichere Verwaltungsportale eingesetzt und stellt ORM, Auth und Admin-Backend out-of-the-box bereit.",
+		"en": "Django is a highly productive Python web framework. It is frequently used for data-analysis applications and secure administrative portals and provides ORM, authentication and an admin backend out of the box."
+	},
+	"homepage": "https://www.djangoproject.com/",
+	"license": "BSD-3-Clause",
+	"tags": ["python", "framework", "web"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	}
+}

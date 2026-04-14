@@ -1,0 +1,27 @@
+{
+	"id": "gov-uk-pay",
+	"name": "GOV.UK Pay",
+	"layer": "applications",
+	"sublayer": "integration",
+	"description": {
+		"de": "GOV.UK Pay ist das standardisierte Zahlungs-Gateway des britischen Government Digital Service. Es wird regierungsweit für die Abwicklung von Gebühren und finanziellen Transaktionen eingesetzt.",
+		"en": "GOV.UK Pay is the standardised payment gateway from the UK's Government Digital Service. It is used across government to process fees and financial transactions."
+	},
+	"homepage": "https://www.payments.service.gov.uk/",
+	"license": "MIT",
+	"tags": ["egovernment", "payments", "uk"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	}
+}

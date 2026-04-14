@@ -1,0 +1,27 @@
+{
+	"id": "terraform",
+	"name": "Terraform",
+	"layer": "platform",
+	"sublayer": "inbetriebnahme",
+	"description": {
+		"de": "Terraform ist ein Open-Source-Werkzeug für Infrastructure-as-Code. Es ermöglicht das deklarative Provisioning von Cloud- und On-Premise-Ressourcen über Provider und sorgt für reproduzierbare, versionierte Infrastruktur-Setups.",
+		"en": "Terraform is an open-source Infrastructure-as-Code tool. It enables declarative provisioning of cloud and on-premise resources via providers and produces reproducible, versioned infrastructure setups."
+	},
+	"homepage": "https://www.terraform.io/",
+	"license": "BUSL-1.1",
+	"tags": ["iac", "infrastructure", "automation"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
+	}
+}

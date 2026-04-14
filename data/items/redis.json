@@ -1,0 +1,26 @@
+{
+	"id": "redis",
+	"name": "Redis",
+	"layer": "platform",
+	"sublayer": "daten",
+	"description": {
+		"de": "Redis ist eine schnelle, in-memory arbeitende Schlüssel-Wert-Datenbank. Sie wird typischerweise für Caching, Session-Speicher, Pub/Sub und Echtzeit-Lastspitzen in skalierbaren GovTech-Anwendungen eingesetzt.",
+		"en": "Redis is a fast in-memory key-value store. It is typically used for caching, session storage, pub/sub and real-time load peaks in scalable GovTech applications."
+	},
+	"homepage": "https://redis.io/",
+	"tags": ["cache", "in-memory", "key-value"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	}
+}
