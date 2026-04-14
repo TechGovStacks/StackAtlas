@@ -122,6 +122,17 @@
 			"excellentDescription": "Highly recommended – excellent sovereignty",
 			"outstanding": "Outstanding",
 			"outstandingDescription": "Gold standard – optimal sovereignty"
+		},
+		"maintainerBoost": {
+			"title": "Maintainer sovereignty applied",
+			"explanation": "Within the active stack your organisation maintains this item. You control source code, hosting, data formats, protocols and telemetry directly – any lack of public access is a deliberate security posture rather than a sovereignty gap. Context score: {{effectiveScore}}/100 (public score: {{rawScore}}/100).",
+			"boostedCriteriaLabel": "Satisfied by maintainer context",
+			"criterionMarker": "satisfied as maintainer",
+			"criterionTitle": "This criterion is not publicly satisfied, but it counts as satisfied from the maintainer's perspective because the maintaining organisation controls it directly.",
+			"markerTitle": "Maintainer context boost",
+			"badgeTitle": "Maintainer context active – public score: {{rawScore}}/100",
+			"scoreAria": "Sovereignty score (maintainer context): {{score}} of 100 – public score: {{rawScore}} of 100",
+			"noteAria": "Note about the maintainer context"
 		}
 	},
 	"pwa": {

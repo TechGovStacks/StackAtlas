@@ -1,0 +1,26 @@
+{
+	"id": "aadhaar",
+	"name": "Aadhaar",
+	"layer": "applications",
+	"sublayer": "sicherheit",
+	"description": {
+		"de": "Aadhaar ist Indiens biometrisches Identifikationssystem mit über 1,4 Milliarden Registrierungen, betrieben von der UIDAI. Es ermöglicht eKYC-Verfahren in Echtzeit und bildet die Identitätsschicht des India Stack.",
+		"en": "Aadhaar is India's biometric identification system with over 1.4 billion enrolments, operated by the UIDAI. It enables real-time eKYC processes and forms the identity layer of the India Stack."
+	},
+	"homepage": "https://uidai.gov.in/",
+	"tags": ["egovernment", "identity", "biometric", "india"],
+	"oss": false,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": true,
+		"noTelemetryByDefault": false,
+		"ownerType": "independentConsortium"
+	}
+}

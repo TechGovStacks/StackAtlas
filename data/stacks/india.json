@@ -1,0 +1,143 @@
+{
+	"id": "india",
+	"name": {
+		"de": "India Stack",
+		"en": "India Stack"
+	},
+	"description": {
+		"de": "Sammlung offener APIs und Building Blocks für Identität, Daten und Zahlungen auf Bevölkerungsebene – betrieben von UIDAI, NPCI und MeitY.",
+		"en": "A collection of open APIs and building blocks for identity, data and payments at population scale, operated by UIDAI, NPCI and MeitY."
+	},
+	"country": "IN",
+	"issuer": "UIDAI / NPCI / MeitY",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-13",
+	"items": [
+		{
+			"itemId": "aadhaar",
+			"status": "recommended",
+			"role": "maintainer",
+			"rationale": {
+				"de": "Identitätsschicht des India Stack, betrieben von der UIDAI.",
+				"en": "Identity layer of the India Stack, operated by UIDAI."
+			}
+		},
+		{
+			"itemId": "unified-payments-interface-upi",
+			"status": "recommended",
+			"role": "maintainer",
+			"rationale": {
+				"de": "Echtzeit-Zahlungsschicht des India Stack, betrieben von der NPCI.",
+				"en": "Real-time payments layer of the India Stack, operated by NPCI."
+			}
+		},
+		{
+			"itemId": "digilocker",
+			"status": "recommended",
+			"role": "maintainer",
+			"rationale": {
+				"de": "Daten-/Dokumenten-Schicht für papierlose Verwaltung.",
+				"en": "Data/document layer for paperless administration."
+			}
+		},
+		{
+			"itemId": "mosip",
+			"status": "approved",
+			"role": "contributor",
+			"rationale": {
+				"de": "Open-Source-Identitätsplattform mit Vorbildfunktion für andere Länder.",
+				"en": "Open-source identity platform serving as a model for other countries."
+			}
+		},
+		{
+			"itemId": "java",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Hauptsprache der UPI- und MOSIP-Backends.",
+				"en": "Primary language of the UPI and MOSIP backends."
+			}
+		},
+		{
+			"itemId": "spring-boot",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "De-facto-Backend-Framework von UPI und MOSIP.",
+				"en": "De-facto backend framework of UPI and MOSIP."
+			}
+		},
+		{
+			"itemId": "react",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Frontend-Framework vieler India-Stack-Portale.",
+				"en": "Frontend framework of many India Stack portals."
+			}
+		},
+		{
+			"itemId": "nodejs",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Leichtgewichtige APIs und Tooling im India Stack.",
+				"en": "Lightweight APIs and tooling in the India Stack."
+			}
+		},
+		{
+			"itemId": "postgresql",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Standard-Datenbank für viele Backend-Services.",
+				"en": "Standard database for many backend services."
+			}
+		},
+		{
+			"itemId": "apache-kafka",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Event-Streaming für UPI-Lastspitzen und Echtzeit-Verarbeitung.",
+				"en": "Event streaming for UPI load peaks and real-time processing."
+			}
+		},
+		{
+			"itemId": "redis",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "In-Memory-Caching für hochfrequente UPI-Anfragen.",
+				"en": "In-memory caching for high-frequency UPI requests."
+			}
+		},
+		{
+			"itemId": "kubernetes",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Container-Orchestrierung für skalierbare India-Stack-Services.",
+				"en": "Container orchestration for scalable India Stack services."
+			}
+		},
+		{
+			"itemId": "open-authorization-oauth",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Autorisierung im DEPA-Consent-Layer.",
+				"en": "Authorisation in the DEPA consent layer."
+			}
+		},
+		{
+			"itemId": "transport-layer-security-tls",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Transportverschlüsselung aller India-Stack-Endpunkte.",
+				"en": "Transport encryption of all India Stack endpoints."
+			}
+		}
+	]
+}

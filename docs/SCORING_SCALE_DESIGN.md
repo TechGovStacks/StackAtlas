@@ -455,6 +455,98 @@ function computeScoreCategory(score: number): SovereigntyScoreWithCategory {
 
 ---
 
+## Kontextualisierung: Maintainer-Souveränität (2026-04)
+
+### Problem
+
+Das Basis-Scoring (v2) bewertet ein Item aus der Perspektive **eines generischen
+externen Nutzers**: Können Dritte das System selbst betreiben, den Quellcode
+einsehen, Daten exportieren, die Protokolle nachbauen? Diese Sichtweise ist für
+die meisten Stack-Kontexte richtig — aber sie wird **unfair**, sobald das Item
+innerhalb eines Stacks der Rolle `maintainer` zugeordnet ist.
+
+Ein Beispiel: **BundID** ist geschlossen, nicht selbstbetreibbar und nicht für
+Dritte verfügbar. Aus Public-Sicht ergibt das einen schlechten
+Souveränitäts-Score. Aus Sicht der deutschen Verwaltung — die BundID **selbst
+betreibt** — existiert aber genau umgekehrt **volle Kontrolle**: eigener
+Quellcode, eigene Infrastruktur, eigene Datenhaltung, eigene Protokolle, keine
+Fremd-Telemetrie. Die fehlende öffentliche Zugänglichkeit ist hier sogar eine
+**bewusste Sicherheitsmaßnahme**, kein Souveränitätsdefizit.
+
+Dieselbe Logik gilt für Aadhaar (Indien), Singpass/Myinfo (Singapur), GOV.UK
+One Login (UK) und weitere nationale Kernbausteine.
+
+### Lösung
+
+Wir führen eine **Kontext-abhängige Score-Anpassung** ein, die nur dann greift,
+wenn die Stack-Rolle `maintainer` lautet. Sechs der neun Kriterien — jene, die
+**Kontrollierbarkeit** beschreiben — werden in diesem Fall als erfüllt
+behandelt, weil die Maintainer-Organisation sie inhärent kontrolliert:
+
+| Kriterium            | Maintainer-Override | Begründung |
+|----------------------|---------------------|------------|
+| `openSource`         | ✅ auf `true`       | Maintainer besitzt Quellcode-Zugang und Modifikationsrechte |
+| `permissiveLicense`  | ✅ auf `true`       | Maintainer ist Lizenzgeber, kann Bedingungen selbst gestalten |
+| `selfHostable`       | ✅ auf `true`       | Maintainer betreibt es per Definition selbst |
+| `dataPortability`    | ✅ auf `true`       | Maintainer hält die Daten und ihr Schema |
+| `openStandards`      | ✅ auf `true`       | Maintainer definiert die Protokolle seiner Schnittstellen |
+| `noTelemetryByDefault` | ✅ auf `true`     | Maintainer kontrolliert Telemetriekanäle |
+
+**Unverändert** bleiben die faktischen Kriterien, die von der Rolle unabhängig
+sind:
+
+- `hasAudit` – externes Audit ist nicht durch Eigentum ersetzbar
+- `matureProject` – Reife ist ein zeitliches Faktum
+- `euHeadquartered` – Gerichtsstand des Eigentümers ist ein Faktum
+- `ownerType` – Governance-Modell ist ein Faktum
+
+### Zwei Score-Ebenen
+
+Die App zeigt beide Werte transparent nebeneinander, sobald der Maintainer-
+Kontext greift:
+
+- **Öffentlich bewerteter Score (`rawScore`)** – wie würde ein externer Nutzer
+  dieses Item einschätzen? Bleibt unverändert sichtbar für Drittvergleiche.
+- **Kontext-Score (`score` mit Maintainer-Boost)** – wie souverän ist dieses
+  Item aus Sicht des Stack-Betreibers, der es selbst maintainen? Dies ist der
+  in Detail-Drawer, Karten-Badge, Sortierung und Stack-Ø verwendete Wert.
+
+Ein Badge-Icon `⇪` zeigt kontextuell geboostete Karten; der Drawer enthält
+einen erklärenden Hinweis und markiert die durch den Kontext erfüllten
+Kriterien explizit.
+
+### Implementierung (Referenz)
+
+```typescript
+// src/utils/sovereigntyScore.ts
+export function computeEffectiveSovereigntyScore(
+  criteria: SovereigntyCriteria,
+  stackItem?: Pick<StackItem, 'role'>,
+): number {
+  if (roleGrantsMaintainerSovereignty(stackItem?.role)) {
+    return computeSovereigntyScore(applyMaintainerContext(criteria));
+  }
+  return computeSovereigntyScore(criteria);
+}
+```
+
+- `computeEffectiveSovereigntyScoreResult` liefert zusätzlich `rawScore`,
+  `maintainerBoosted` und die Liste `boostedCriteria`.
+- Alle UI-Komponenten (ArticleCard, CategoryGrid-Sortierung, StackStats-Ø)
+  nutzen den effektiven Score, damit Stacks mit maintainer-owned Kernbausteinen
+  nicht unfair niedriger ranken.
+
+### Warum nicht einfach `score = 100` für jedes Maintainer-Item?
+
+Ein Pauschal-Override auf 100 würde verstecken, dass z. B. ein maintainertes
+Altsystem trotz voller Kontrolle kein Audit und keine Produktreife besitzt.
+Das Kriterien-basierte Override behält genau diese faktischen Lücken, liefert
+aber bei regulären Maintainer-Systemen (BundID, FIT-Connect, GOV.UK Pay, …)
+in der Praxis 95–100 Punkte. Damit bleibt der Score **erklärbar** und
+**vergleichbar**, auch über Stacks hinweg.
+
+---
+
 ## Anhang: Vergleich mit Standard-Systemen
 
 ### CVSS (Vulnerability Scoring System)

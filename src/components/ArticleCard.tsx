@@ -2,9 +2,9 @@ import { KolButton, KolCard, KolDrawer, KolImage } from '@public-ui/preact';
 import { useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { ITEMS, LAYERS, STACKS } from '../data/catalog';
-import { Item, ParticipantRole, StackItem } from '../types';
+import { Item, ParticipantRole, SovereigntyCriteria, StackItem } from '../types';
 import { getLocalizedText } from '../utils';
-import { computeOwnerScore, computeSovereigntyScoreResult } from '../utils/sovereigntyScore';
+import { computeEffectiveSovereigntyScoreResult, computeOwnerScore } from '../utils/sovereigntyScore';
 import { SovereigntyGauge } from './SovereigntyGauge';
 
 type ViewMode = 'tile' | 'list';
@@ -42,13 +42,20 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 		return STACKS.filter((stack) => stack.items.some((item) => item.itemId === selectedArticle.id));
 	}, [selectedArticle.id]);
 
-	const scoreResult = computeSovereigntyScoreResult(article.sovereigntyCriteria);
+	const scoreResult = computeEffectiveSovereigntyScoreResult(article.sovereigntyCriteria, stackItem);
 	const score = scoreResult.score;
 	const scoreColor = scoreResult.color;
-	const selectedScoreResult = computeSovereigntyScoreResult(selectedArticle.sovereigntyCriteria);
+	// When the drawer is open and the active stack defines a role for the selected
+	// (drill-down) article, honour that role too; otherwise fall back to the
+	// outer stackItem context so navigation between related items keeps the
+	// maintainer boost consistent for the same stack.
+	const selectedStackItem = stackItemMap?.get(selectedArticle.id) ?? (selectedArticle.id === article.id ? stackItem : undefined);
+	const selectedScoreResult = computeEffectiveSovereigntyScoreResult(selectedArticle.sovereigntyCriteria, selectedStackItem);
 	const selectedScore = selectedScoreResult.score;
 	const selectedScoreColor = selectedScoreResult.color;
 	const selectedScoreCategory = selectedScoreResult.category;
+	const selectedMaintainerBoosted = selectedScoreResult.maintainerBoosted;
+	const selectedBoostedCriteria = new Set<keyof Omit<SovereigntyCriteria, 'ownerType'>>(selectedScoreResult.boostedCriteria);
 	const criteriaKeys = (Object.keys(article.sovereigntyCriteria) as Array<keyof typeof article.sovereigntyCriteria>).filter((key) => key !== 'ownerType');
 
 	const renderArticleLogo = (logo: string | undefined, localizedName: string, large = false) => {
@@ -93,16 +100,28 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 		/>
 	);
 
+	const cardMaintainerBoosted = scoreResult.maintainerBoosted;
+	const cardScoreTitleBase = `${t('article.scoreTitle')}: ${score}/100 (${t(`article.scoreCategories.${scoreResult.category}`)} - ${scoreResult.percentileInCategory}%)`;
+	const cardScoreTitle = cardMaintainerBoosted
+		? `${cardScoreTitleBase} — ${t('article.maintainerBoost.badgeTitle', { rawScore: scoreResult.rawScore })}`
+		: cardScoreTitleBase;
 	const badges = (
 		<>
 			<span
-				className="card-score-badge"
+				className={`card-score-badge${cardMaintainerBoosted ? ' card-score-badge--maintainer-boosted' : ''}`}
 				style={{ background: scoreColor, color: '#fff' }}
-				title={`${t('article.scoreTitle')}: ${score}/100 (${t(`article.scoreCategories.${scoreResult.category}`)} - ${scoreResult.percentileInCategory}%)`}
-				aria-label={t('article.scoreAria', { score })}
+				title={cardScoreTitle}
+				aria-label={
+					cardMaintainerBoosted ? t('article.maintainerBoost.scoreAria', { score, rawScore: scoreResult.rawScore }) : t('article.scoreAria', { score })
+				}
 			>
 				<span className="card-score-number">{score}</span>
 				<span className="card-score-category">{t(`article.scoreCategories.${scoreResult.category}`)}</span>
+				{cardMaintainerBoosted && (
+					<span className="card-score-boost-marker" aria-hidden="true" title={t('article.maintainerBoost.markerTitle')}>
+						⇪
+					</span>
+				)}
 			</span>
 			{stackItem && (
 				<span className="card-role-badge" style={{ background: ROLE_COLORS[stackItem.role], color: '#fff' }} title={t(`stack.roles.${stackItem.role}`)}>
@@ -192,16 +211,49 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 										({t(`article.scoreCategories.${selectedScoreCategory}`)})
 									</span>
 								</div>
+								{selectedMaintainerBoosted && (
+									<div className="drawer-maintainer-boost" role="note" aria-label={t('article.maintainerBoost.noteAria')}>
+										<p className="drawer-maintainer-boost__title">
+											<span aria-hidden="true">⇪ </span>
+											{t('article.maintainerBoost.title')}
+										</p>
+										<p className="drawer-maintainer-boost__text">
+											{t('article.maintainerBoost.explanation', {
+												rawScore: selectedScoreResult.rawScore,
+												effectiveScore: selectedScore,
+											})}
+										</p>
+										{selectedBoostedCriteria.size > 0 && (
+											<p className="drawer-maintainer-boost__criteria">
+												{t('article.maintainerBoost.boostedCriteriaLabel')}:{' '}
+												{Array.from(selectedBoostedCriteria)
+													.map((key) => t(`article.criteria.${key}`))
+													.join(', ')}
+											</p>
+										)}
+									</div>
+								)}
 								<p className="drawer-score-description">{t(`article.scoreCategories.${selectedScoreCategory}Description`)}</p>
 								<ul className="drawer-criteria-list">
-									{criteriaKeys.map((key) => (
-										<li key={key} className={`drawer-criteria-item drawer-criteria-item--${selectedArticle.sovereigntyCriteria[key] ? 'yes' : 'no'}`}>
-											<span className="drawer-criteria-icon" aria-hidden="true">
-												{selectedArticle.sovereigntyCriteria[key] ? '✓' : '✗'}
-											</span>
-											{t(`article.criteria.${key}`)}
-										</li>
-									))}
+									{criteriaKeys.map((key) => {
+										const factual = selectedArticle.sovereigntyCriteria[key];
+										const boosted = !factual && selectedBoostedCriteria.has(key);
+										const state = boosted ? 'boosted' : factual ? 'yes' : 'no';
+										const icon = boosted ? '⇪' : factual ? '✓' : '✗';
+										return (
+											<li
+												key={key}
+												className={`drawer-criteria-item drawer-criteria-item--${state}`}
+												title={boosted ? t('article.maintainerBoost.criterionTitle') : undefined}
+											>
+												<span className="drawer-criteria-icon" aria-hidden="true">
+													{icon}
+												</span>
+												{t(`article.criteria.${key}`)}
+												{boosted && <span className="drawer-criteria-boost-label"> ({t('article.maintainerBoost.criterionMarker')})</span>}
+											</li>
+										);
+									})}
 									<li
 										className={`drawer-criteria-item drawer-criteria-item--${computeOwnerScore(selectedArticle.sovereigntyCriteria.ownerType) > 0 ? 'yes' : 'no'}`}
 									>

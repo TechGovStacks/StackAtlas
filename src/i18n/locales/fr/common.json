@@ -108,6 +108,17 @@
 			"community": "Communauté",
 			"oneManShow": "One-man show",
 			"unknown": "Non renseigné"
+		},
+		"maintainerBoost": {
+			"title": "Souveraineté de mainteneur appliquée",
+			"explanation": "Dans le stack actif, votre organisation est mainteneur de cette entrée. Vous contrôlez directement le code source, l’hébergement, les formats de données, les protocoles et la télémétrie – l’éventuelle absence d’accès public est alors un choix de sécurité délibéré, pas un déficit de souveraineté. Score contextuel : {{effectiveScore}}/100 (score public : {{rawScore}}/100).",
+			"boostedCriteriaLabel": "Satisfait par le contexte de mainteneur",
+			"criterionMarker": "satisfait en tant que mainteneur",
+			"criterionTitle": "Ce critère n’est pas satisfait publiquement, mais il est considéré comme satisfait du point de vue du mainteneur, car l’organisation qui maintient l’item le contrôle directement.",
+			"markerTitle": "Boost du contexte mainteneur",
+			"badgeTitle": "Contexte mainteneur actif – score public : {{rawScore}}/100",
+			"scoreAria": "Score de souveraineté (contexte mainteneur) : {{score}} sur 100 – score public : {{rawScore}} sur 100",
+			"noteAria": "Note sur le contexte mainteneur"
 		}
 	},
 	"pwa": {

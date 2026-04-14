@@ -1,0 +1,27 @@
+{
+	"id": "camunda",
+	"name": "Camunda",
+	"layer": "building-blocks",
+	"sublayer": "lowcode",
+	"description": {
+		"de": "Camunda ist eine Open-Source-Plattform für die Automatisierung von Geschäftsprozessen. Sie führt BPMN-Workflows und DMN-Entscheidungstabellen aus und ist ein bewährtes Werkzeug für die Modellierung und Ausführung komplexer Behördenprozesse.",
+		"en": "Camunda is an open-source platform for business process automation. It executes BPMN workflows and DMN decision tables and is an established tool for modelling and running complex public-administration processes."
+	},
+	"homepage": "https://camunda.com/",
+	"license": "Apache-2.0",
+	"tags": ["bpmn", "workflow", "automation"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	}
+}

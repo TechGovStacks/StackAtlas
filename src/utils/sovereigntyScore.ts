@@ -1,4 +1,4 @@
-import { OwnerType, SovereigntyCriteria, SovereigntyScoreCategory, SovereigntyScoreResult } from '../types';
+import { OwnerType, ParticipantRole, SovereigntyCriteria, SovereigntyScoreCategory, SovereigntyScoreResult, StackItem } from '../types';
 
 // User-Sovereignty Scoring v2 (2026-04)
 // Base weights sum to 90; max owner bonus is 10 → total maximum = 100 (no hard cap needed).
@@ -15,6 +15,25 @@ const WEIGHTS: Record<keyof Omit<SovereigntyCriteria, 'ownerType'>, number> = {
 	noTelemetryByDefault: 5,
 	euHeadquartered: 5,
 };
+
+// Maintainer-Context Adjustment (2026-04)
+// When a stack owner holds the `maintainer` role for an item, the sovereignty
+// calculus shifts: even if the item is not publicly accessible or open source,
+// the maintaining organisation inherently has full control over source code,
+// hosting, data format, protocols and telemetry — closed access is then a
+// deliberate security choice, not a sovereignty gap. We therefore treat the
+// six "controllability" criteria as satisfied when scoring from the
+// maintainer's perspective. Factual criteria (audit, maturity, EU HQ, owner
+// type) remain untouched because they describe the item itself, not the
+// relationship.
+const MAINTAINER_CONTEXT_OVERRIDES: ReadonlyArray<keyof Omit<SovereigntyCriteria, 'ownerType'>> = [
+	'openSource',
+	'permissiveLicense',
+	'selfHostable',
+	'dataPortability',
+	'openStandards',
+	'noTelemetryByDefault',
+];
 
 const OWNER_WEIGHTS: Record<OwnerType, number> = {
 	independentConsortium: 10,
@@ -49,6 +68,52 @@ export function computeSovereigntyScore(criteria: SovereigntyCriteria): number {
 	}, 0);
 
 	return baseScore + computeOwnerScore(criteria.ownerType);
+}
+
+/**
+ * Returns true when a stack-context role inherits full control over the item.
+ * Currently only the `maintainer` role triggers the sovereignty boost.
+ */
+export function roleGrantsMaintainerSovereignty(role?: ParticipantRole): boolean {
+	return role === 'maintainer';
+}
+
+/**
+ * Applies the maintainer-context override to sovereignty criteria:
+ * controllability-focused flags are treated as satisfied because the
+ * maintaining organisation inherently holds those capabilities. Factual
+ * criteria (audit, maturity, EU HQ, owner type) are preserved.
+ */
+export function applyMaintainerContext(criteria: SovereigntyCriteria): SovereigntyCriteria {
+	const adjusted: SovereigntyCriteria = { ...criteria };
+	for (const key of MAINTAINER_CONTEXT_OVERRIDES) {
+		adjusted[key] = true;
+	}
+	return adjusted;
+}
+
+/**
+ * Returns the list of criteria keys that were lifted to true by the
+ * maintainer-context override. Used by the UI to visually mark which
+ * criteria are contextually granted rather than factually true.
+ */
+export function getMaintainerBoostedCriteria(criteria: SovereigntyCriteria): Array<keyof Omit<SovereigntyCriteria, 'ownerType'>> {
+	return MAINTAINER_CONTEXT_OVERRIDES.filter((key) => !criteria[key]);
+}
+
+/**
+ * Compute the effective sovereignty score in the context of a stack role.
+ * - For `maintainer` role: applies the maintainer-context override so that
+ *   items the stack owner fully controls are rated as fully sovereign, even
+ *   when they are not publicly accessible or open source.
+ * - For all other roles (or when no stack context is provided): returns the
+ *   unchanged raw sovereignty score.
+ */
+export function computeEffectiveSovereigntyScore(criteria: SovereigntyCriteria, stackItem?: Pick<StackItem, 'role'>): number {
+	if (roleGrantsMaintainerSovereignty(stackItem?.role)) {
+		return computeSovereigntyScore(applyMaintainerContext(criteria));
+	}
+	return computeSovereigntyScore(criteria);
 }
 
 /**
@@ -106,5 +171,36 @@ export function computeSovereigntyScoreResult(criteria: SovereigntyCriteria): So
 		category: getScoreCategory(score),
 		color: getScoreCategoryColor(score),
 		percentileInCategory: getScorePercentileInCategory(score),
+	};
+}
+
+/**
+ * Context-aware variant of {@link computeSovereigntyScoreResult}. When the
+ * stack role grants full maintainer sovereignty, the result reflects the
+ * boosted score and also reports the raw score alongside the list of
+ * criteria that were contextually satisfied, so the UI can explain the
+ * adjustment transparently.
+ */
+export function computeEffectiveSovereigntyScoreResult(
+	criteria: SovereigntyCriteria,
+	stackItem?: Pick<StackItem, 'role'>,
+): SovereigntyScoreResult & {
+	rawScore: number;
+	maintainerBoosted: boolean;
+	boostedCriteria: Array<keyof Omit<SovereigntyCriteria, 'ownerType'>>;
+} {
+	const rawScore = computeSovereigntyScore(criteria);
+	const maintainerBoosted = roleGrantsMaintainerSovereignty(stackItem?.role);
+	const effectiveCriteria = maintainerBoosted ? applyMaintainerContext(criteria) : criteria;
+	const score = computeSovereigntyScore(effectiveCriteria);
+
+	return {
+		score,
+		category: getScoreCategory(score),
+		color: getScoreCategoryColor(score),
+		percentileInCategory: getScorePercentileInCategory(score),
+		rawScore,
+		maintainerBoosted,
+		boostedCriteria: maintainerBoosted ? getMaintainerBoostedCriteria(criteria) : [],
 	};
 }

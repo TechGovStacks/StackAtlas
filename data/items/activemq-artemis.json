@@ -1,0 +1,27 @@
+{
+	"id": "activemq-artemis",
+	"name": "Apache ActiveMQ Artemis",
+	"layer": "platform",
+	"sublayer": "integration",
+	"description": {
+		"de": "Apache ActiveMQ Artemis ist ein hochperformanter, nicht-blockierender Message-Broker. Er wird unter anderem im GovStack Information Mediator und in X-Road-Umgebungen für asynchrone Nachrichtenwarteschlangen zwischen Behörden eingesetzt.",
+		"en": "Apache ActiveMQ Artemis is a high-performance, non-blocking message broker. It is used in the GovStack Information Mediator and in X-Road environments for asynchronous message queues between public authorities."
+	},
+	"homepage": "https://activemq.apache.org/components/artemis/",
+	"license": "Apache-2.0",
+	"tags": ["messaging", "queue", "broker"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	}
+}

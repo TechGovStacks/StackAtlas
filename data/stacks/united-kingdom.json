@@ -1,0 +1,143 @@
+{
+	"id": "united-kingdom",
+	"name": {
+		"de": "UK GOV.UK Stack",
+		"en": "UK GOV.UK Stack"
+	},
+	"description": {
+		"de": "Government-as-a-Platform-Ansatz des britischen Government Digital Service mit GOV.UK One Login, Pay und Notify als zentralen Bausteinen.",
+		"en": "The UK Government Digital Service's Government-as-a-Platform approach with GOV.UK One Login, Pay and Notify as central building blocks."
+	},
+	"country": "GB",
+	"issuer": "Government Digital Service (GDS)",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-13",
+	"items": [
+		{
+			"itemId": "gov-uk-one-login",
+			"status": "recommended",
+			"role": "maintainer",
+			"rationale": {
+				"de": "Zentrales Identitätssystem für GOV.UK-Dienste.",
+				"en": "Centralised identity system for GOV.UK services."
+			}
+		},
+		{
+			"itemId": "gov-uk-pay",
+			"status": "recommended",
+			"role": "maintainer",
+			"rationale": {
+				"de": "Standard-Zahlungsgateway für britische Behörden.",
+				"en": "Standard payment gateway for UK government services."
+			}
+		},
+		{
+			"itemId": "gov-uk-notify",
+			"status": "recommended",
+			"role": "maintainer",
+			"rationale": {
+				"de": "Hochskalierbarer Benachrichtigungsdienst (E-Mail, SMS, Brief).",
+				"en": "Highly scalable notification service (email, SMS, letter)."
+			}
+		},
+		{
+			"itemId": "ruby-on-rails",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Historische Kernsprache für GOV.UK-Plattformen.",
+				"en": "Historical core language for GOV.UK platforms."
+			}
+		},
+		{
+			"itemId": "java",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Backend-Sprache für GOV.UK Pay und Notify.",
+				"en": "Backend language for GOV.UK Pay and Notify."
+			}
+		},
+		{
+			"itemId": "spring-boot",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Microservice-Framework in GOV.UK-Plattformen.",
+				"en": "Microservice framework in GOV.UK platforms."
+			}
+		},
+		{
+			"itemId": "python",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Eingesetzt in GOV.UK Notify und Datenanalyse.",
+				"en": "Used in GOV.UK Notify and data analytics."
+			}
+		},
+		{
+			"itemId": "django",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Python-Framework für ausgewählte GOV.UK-Services.",
+				"en": "Python framework for selected GOV.UK services."
+			}
+		},
+		{
+			"itemId": "nodejs",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "JavaScript-Backends in GOV.UK-Anwendungen.",
+				"en": "JavaScript backends in GOV.UK applications."
+			}
+		},
+		{
+			"itemId": "react",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Frontend-Komponenten in GOV.UK-Tooling.",
+				"en": "Frontend components in GOV.UK tooling."
+			}
+		},
+		{
+			"itemId": "postgresql",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Datenbank für GOV.UK Pay, Notify und weitere Services.",
+				"en": "Database for GOV.UK Pay, Notify and other services."
+			}
+		},
+		{
+			"itemId": "kubernetes",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Container-Orchestrierung im GOV.UK-Hosting.",
+				"en": "Container orchestration in GOV.UK hosting."
+			}
+		},
+		{
+			"itemId": "open-id-connect-oidc",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Standardprotokoll für GOV.UK One Login.",
+				"en": "Standard protocol for GOV.UK One Login."
+			}
+		},
+		{
+			"itemId": "transport-layer-security-tls",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Verschlüsselte Verbindungen in allen GOV.UK-Diensten.",
+				"en": "Encrypted connections across all GOV.UK services."
+			}
+		}
+	]
+}

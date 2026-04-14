@@ -122,6 +122,17 @@
 			"excellentDescription": "Sehr empfohlen – hervorragende Souveränität",
 			"outstanding": "Hervorragend",
 			"outstandingDescription": "Gold-Standard – optimale Souveränität"
+		},
+		"maintainerBoost": {
+			"title": "Maintainer-Souveränität aktiv",
+			"explanation": "Im aktiven Stack ist deine Organisation Maintainer dieses Eintrags. Du kontrollierst Quellcode, Betrieb, Datenformate, Protokolle und Telemetrie selbst – fehlende öffentliche Zugänglichkeit ist aus dieser Perspektive eine bewusste Sicherheitsmaßnahme, kein Souveränitätsmangel. Kontext-Score: {{effectiveScore}}/100 (öffentlich bewerteter Score: {{rawScore}}/100).",
+			"boostedCriteriaLabel": "Durch Maintainer-Kontext erfüllt",
+			"criterionMarker": "als Maintainer erfüllt",
+			"criterionTitle": "Dieses Kriterium ist öffentlich nicht erfüllt, gilt aus Maintainer-Sicht aber als erfüllt, weil die Maintainer-Organisation es selbst kontrolliert.",
+			"markerTitle": "Maintainer-Kontext-Boost",
+			"badgeTitle": "Maintainer-Kontext aktiv – öffentlich bewerteter Score: {{rawScore}}/100",
+			"scoreAria": "Souveränitäts-Score (Maintainer-Kontext): {{score}} von 100 – öffentlich bewerteter Score: {{rawScore}} von 100",
+			"noteAria": "Hinweis zum Maintainer-Kontext"
 		}
 	},
 	"pwa": {

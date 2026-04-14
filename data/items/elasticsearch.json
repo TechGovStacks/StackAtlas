@@ -1,0 +1,27 @@
+{
+	"id": "elasticsearch",
+	"name": "Elasticsearch",
+	"layer": "platform",
+	"sublayer": "daten",
+	"description": {
+		"de": "Elasticsearch ist eine verteilte Such- und Analyse-Engine, die im Zentrum des ELK-Stacks (Elasticsearch, Logstash, Kibana) steht. Sie wird in Verwaltungs-IT für Volltextsuche, Log-Aggregation und SIEM-Anwendungen verwendet.",
+		"en": "Elasticsearch is a distributed search and analytics engine at the heart of the ELK stack (Elasticsearch, Logstash, Kibana). It is used in public administration IT for full-text search, log aggregation and SIEM use cases."
+	},
+	"homepage": "https://www.elastic.co/elasticsearch/",
+	"license": "SSPL-1.0",
+	"tags": ["search", "logging", "analytics"],
+	"oss": false,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
+	}
+}

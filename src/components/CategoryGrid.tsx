@@ -3,7 +3,7 @@ import { useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { FilterState, Item, Layer, Stack, StackItem } from '../types';
 import { getLocalizedText } from '../utils';
-import { computeSovereigntyScore } from '../utils/sovereigntyScore';
+import { computeEffectiveSovereigntyScore } from '../utils/sovereigntyScore';
 import { ArticleCard } from './ArticleCard';
 import { SortDir, SortField, ViewMode } from './FilterBar';
 import { StackStats } from './StackStats';
@@ -44,10 +44,11 @@ export function CategoryGrid({
 				const cmp =
 					sortField === 'name'
 						? getLocalizedText(a.name, i18n.language).localeCompare(getLocalizedText(b.name, i18n.language), i18n.language)
-						: computeSovereigntyScore(a.sovereigntyCriteria) - computeSovereigntyScore(b.sovereigntyCriteria);
+						: computeEffectiveSovereigntyScore(a.sovereigntyCriteria, stackItemMap?.get(a.id)) -
+							computeEffectiveSovereigntyScore(b.sovereigntyCriteria, stackItemMap?.get(b.id));
 				return sortDir === 'asc' ? cmp : -cmp;
 			}),
-		[articles, sortField, sortDir, i18n.language],
+		[articles, sortField, sortDir, i18n.language, stackItemMap],
 	);
 
 	const activeCount = articles.length;

@@ -1,0 +1,27 @@
+{
+	"id": "tailwind-css",
+	"name": "Tailwind CSS",
+	"layer": "building-blocks",
+	"sublayer": "entwicklung",
+	"description": {
+		"de": "Tailwind CSS ist ein Utility-First-CSS-Framework. Es ermöglicht schnelle, konsistente Styling-Workflows ohne komponentengetriebene CSS-Pflege und wird in vielen modernen Verwaltungs-UIs verwendet.",
+		"en": "Tailwind CSS is a utility-first CSS framework. It enables fast, consistent styling workflows without component-driven CSS maintenance and is used in many modern public-administration UIs."
+	},
+	"homepage": "https://tailwindcss.com/",
+	"license": "MIT",
+	"tags": ["css", "frontend", "framework"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	}
+}

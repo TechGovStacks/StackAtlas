@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Item, ParticipantRole, Stack, StackItem } from '../types';
 import { getLocalizedText } from '../utils';
-import { computeSovereigntyScore, getScoreCategory, getScoreCategoryColor, getScorePercentileInCategory } from '../utils/sovereigntyScore';
+import { computeEffectiveSovereigntyScore, getScoreCategory, getScoreCategoryColor, getScorePercentileInCategory } from '../utils/sovereigntyScore';
 
 interface StackStatsProps {
 	stack: Stack;
@@ -19,7 +19,10 @@ const ROLE_COLORS: Record<ParticipantRole, string> = {
 export function StackStats({ stack, items, stackItemMap }: StackStatsProps) {
 	const { i18n, t } = useTranslation();
 
-	const scores = items.map((item) => computeSovereigntyScore(item.sovereigntyCriteria));
+	// Use the effective score (with maintainer-context override) so that stacks
+	// whose owner maintains closed-source-but-fully-controlled building blocks
+	// are not unfairly penalised in the average.
+	const scores = items.map((item) => computeEffectiveSovereigntyScore(item.sovereigntyCriteria, stackItemMap.get(item.id)));
 	const avgScore = scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0;
 	const avgColor = getScoreCategoryColor(avgScore);
 	const avgCategory = getScoreCategory(avgScore);
