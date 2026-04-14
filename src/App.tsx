@@ -14,10 +14,18 @@ type RouteProps = {
 	path?: string;
 };
 
-// Hash-History-Instanz einmalig außerhalb der Komponente erstellen.
-// Alle Routen werden als #/path in der URL kodiert – die App funktioniert
-// damit unter beliebigen Server-Pfaden ohne Server-Konfiguration.
-const hashHistory = createHashHistory();
+// preact-router erwartet listen(callback: (location) => void),
+// history@5 liefert jedoch listen(listener: (update: { action, location }) => void).
+// Dieser Adapter gleicht die Signaturen an.
+const _raw = createHashHistory();
+const hashHistory = {
+	listen(callback: (location: { pathname: string; search: string }) => void) {
+		return _raw.listen(({ location }) => callback(location));
+	},
+	location: _raw.location,
+	push: (path: string) => _raw.push(path),
+	replace: (path: string) => _raw.replace(path),
+};
 
 function HomeRoute({ default: isDefault, path }: RouteProps) {
 	void isDefault;
