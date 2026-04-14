@@ -22,10 +22,10 @@ export function Footer() {
 						<a href="https://github.com/deleonio/accessible-d-stack-landscape/blob/main/docs/README.md" rel="noopener noreferrer" className="footer__link">
 							{t('footer.links.documentation')}
 						</a>
-						<a href="/news" className="footer__link">
+						<a href="#/news" className="footer__link">
 							{t('footer.links.news')}
 						</a>
-						<a href="/stacks" className="footer__link">
+						<a href="#/stacks" className="footer__link">
 							{t('footer.links.stacks')}
 						</a>
 						<a href="https://github.com/deleonio/accessible-d-stack-landscape" rel="noopener noreferrer" className="footer__link">
@@ -34,7 +34,7 @@ export function Footer() {
 						<a href="https://github.com/deleonio/accessible-d-stack-landscape/issues/new" rel="noopener noreferrer" className="footer__link">
 							{t('footer.links.community')}
 						</a>
-						<a href="/settings" className="footer__link">
+						<a href="#/settings" className="footer__link">
 							{t('footer.links.settings')}
 						</a>
 					</nav>
