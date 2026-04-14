@@ -538,7 +538,7 @@
 		{
 			"itemId": "kern-ux-standard",
 			"status": "approved",
-			"role": "consumer",
+			"role": "maintainer",
 			"rationale": {
 				"de": "Integriert in den Deutschland Stack",
 				"en": "Integrated into Germany Stack"
@@ -880,7 +880,7 @@
 		{
 			"itemId": "public-ui-kolibri",
 			"status": "approved",
-			"role": "consumer",
+			"role": "maintainer",
 			"rationale": {
 				"de": "Integriert in den Deutschland Stack",
 				"en": "Integrated into Germany Stack"
