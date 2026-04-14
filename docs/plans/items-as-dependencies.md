@@ -31,7 +31,7 @@
 ### Phase 1: Update Core Documentation
 
 **1.1 Update `docs/ARC42.md` - Data Model Section**
-- **File:** `/home/user/accessible-d-stack-landscape/docs/ARC42.md` (Section 5-6)
+- **File:** docs/ARC42.md (Section 5-6)
 - **Changes:**
   - Add explicit statement: "All Items are Dependencies, organized by layer"
   - Clarify that `sovereign-standards` items are the **foundational standards** that stacks must maintain
@@ -39,21 +39,21 @@
   - Add visual ASCII diagram showing: Layer → Item (Dependency) → Stack (Role Commitment)
 - **Reference:** Lines 58-96 (fachliches Datenmodell)
 
-**1.2 Update `docs/BUSINESS_CASE.md`**
-- **File:** `/home/user/accessible-d-stack-landscape/docs/BUSINESS_CASE.md`
+**1.2 Update `docs/BUSSINESS_CASE.md`**
+- **File:** docs/BUSSINESS_CASE.md
 - **Changes:**
   - Clarify in the "Model" section that items = dependencies
   - Explain that sovereign-standards are the linchpin items
   - Emphasize: "Stacks are responsibility declarations: by choosing a role (maintainer/contributor), a stack commits to maintaining/contributing to a standard"
 
 **1.3 Update `docs/README.md` - Documentation Index**
-- **File:** `/home/user/accessible-d-stack-landscape/docs/README.md`
+- **File:** docs/README.md
 - **Changes:**
   - Add breadcrumb explanation: "Items → Dependencies → Sovereign Standards → Stack Commitments"
   - Link to new examples doc and updated ARC42
 
 **1.4 Update `data/README.md` - Data Structure**
-- **File:** `/home/user/accessible-d-stack-landscape/data/README.md`
+- **File:** data/README.md
 - **Changes:**
   - Explain that `items/` contains all dependencies
   - Highlight that items in `sovereign-standards.json` layer are foundational standards
@@ -105,11 +105,11 @@
 ## Critical Files to Modify
 
 ### Documentation (Primary)
-- `/docs/ARC42.md` — Update sections 5-6 with dependency model explanation
-- `/docs/BUSINESS_CASE.md` — Clarify items-as-dependencies model
-- `/docs/README.md` — Update index and references
-- `/data/README.md` — Explain items as dependencies
-- `/docs/examples/items-as-dependencies.md` — **[NEW]** Create example documentation
+- docs/ARC42.md — Update sections 5-6 with dependency model explanation
+- docs/BUSSINESS_CASE.md — Clarify items-as-dependencies model
+- docs/README.md — Update index and references
+- data/README.md — Explain items as dependencies
+- docs/examples/items-as-dependencies.md — **[NEW]** Create example documentation
 
 ### Code (Secondary - Comments Only)
 - `/src/types/index.ts` — Add JSDoc to Item, StackItem, ParticipantRole

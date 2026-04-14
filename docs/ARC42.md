@@ -96,7 +96,7 @@ Pflichtfelder je Stack-Item:
 
 ### Items als Dependencies (Abhängigkeitsmodell)
 
-**Zentales Konzept:** Alle Items sind Dependencies — Abhängigkeiten, die in Layern organisiert sind.
+**Zentrales Konzept:** Alle Items sind Dependencies — Abhängigkeiten, die in Layern organisiert sind.
 
 ```
 Layer-Struktur:
