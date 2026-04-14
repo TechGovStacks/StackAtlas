@@ -210,7 +210,9 @@ main {
 	font-weight: 600;
 	padding: var(--ds-space-1) var(--ds-space-3);
 	border-radius: var(--ds-radius-sm);
-	transition: color 150ms ease-in-out, background-color 150ms ease-in-out;
+	transition:
+		color 150ms ease-in-out,
+		background-color 150ms ease-in-out;
 	outline: none;
 
 	&:hover {
@@ -1643,10 +1645,14 @@ kol-select {
 
 .stack-expose--rank1 {
 	border: 2px solid #c8a800;
-	box-shadow: 0 0 0 3px rgb(200 168 0 / 15%), var(--ds-shadow-card-hover);
+	box-shadow:
+		0 0 0 3px rgb(200 168 0 / 15%),
+		var(--ds-shadow-card-hover);
 
 	&:hover {
-		box-shadow: 0 0 0 4px rgb(200 168 0 / 25%), var(--ds-shadow-card-hover);
+		box-shadow:
+			0 0 0 4px rgb(200 168 0 / 25%),
+			var(--ds-shadow-card-hover);
 	}
 }
 
@@ -1956,7 +1962,9 @@ kol-select {
 	font-size: var(--ds-text-sm);
 	font-weight: 600;
 	text-decoration: none;
-	transition: background 150ms ease, transform 100ms ease;
+	transition:
+		background 150ms ease,
+		transform 100ms ease;
 
 	&:hover {
 		background: var(--ds-color-accent);

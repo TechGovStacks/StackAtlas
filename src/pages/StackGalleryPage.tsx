@@ -25,10 +25,7 @@ export function StackGalleryPage() {
 
 	// Stacks absteigend nach Ø-Score sortieren
 	const rankedStacks = useMemo(
-		() =>
-			[...STACKS]
-				.map((stack) => ({ stack, avgScore: computeStackAvgScore(stack, ITEMS) }))
-				.sort((a, b) => b.avgScore - a.avgScore),
+		() => [...STACKS].map((stack) => ({ stack, avgScore: computeStackAvgScore(stack, ITEMS) })).sort((a, b) => b.avgScore - a.avgScore),
 		[],
 	);
 

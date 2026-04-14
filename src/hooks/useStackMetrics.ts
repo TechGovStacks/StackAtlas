@@ -1,5 +1,5 @@
 import { useMemo } from 'preact/hooks';
-import { Item, Layer, ParticipantRole, Stack, StackItem, StackItemStatus, SovereigntyScoreCategory } from '../types';
+import { Item, Layer, ParticipantRole, SovereigntyScoreCategory, Stack, StackItem, StackItemStatus } from '../types';
 import { computeEffectiveSovereigntyScore, getScoreCategory, getScoreCategoryColor } from '../utils/sovereigntyScore';
 
 export interface StackMetrics {

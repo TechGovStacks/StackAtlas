@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'preact/hooks';
 import { Router } from 'preact-router';
+import { useEffect, useState } from 'preact/hooks';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { PwaWrapper } from './components/PwaWrapper';

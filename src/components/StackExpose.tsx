@@ -1,8 +1,8 @@
 import { useMemo } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
+import { StackMetrics } from '../hooks/useStackMetrics';
 import { Layer, ParticipantRole, SovereigntyScoreCategory, Stack } from '../types';
 import { getLocalizedText } from '../utils';
-import { StackMetrics } from '../hooks/useStackMetrics';
 import { SovereigntyGauge } from './SovereigntyGauge';
 
 interface StackExposeProps {
@@ -59,23 +59,15 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank }: StackExp
 	// Datumsformatierung memoizieren – stack.publishedAt und i18n.language sind stabil
 	const formattedDate = useMemo(
 		() =>
-			stack.publishedAt
-				? new Intl.DateTimeFormat(i18n.language, { year: 'numeric', month: 'long', day: 'numeric' }).format(new Date(stack.publishedAt))
-				: null,
+			stack.publishedAt ? new Intl.DateTimeFormat(i18n.language, { year: 'numeric', month: 'long', day: 'numeric' }).format(new Date(stack.publishedAt)) : null,
 		[stack.publishedAt, i18n.language],
 	);
 
 	return (
-		<article
-			className={`stack-expose${isTop ? ' stack-expose--rank1' : ''}`}
-			aria-labelledby={`expose-${stack.id}-title`}
-		>
+		<article className={`stack-expose${isTop ? ' stack-expose--rank1' : ''}`} aria-labelledby={`expose-${stack.id}-title`}>
 			{/* ── Header ───────────────────────────────────────────────── */}
 			<div className="stack-expose__header">
-				<span
-					className={`stack-expose__rank${isTop ? ' stack-expose__rank--top' : ''}`}
-					aria-label={t('stackGallery.rankAria', { rank })}
-				>
+				<span className={`stack-expose__rank${isTop ? ' stack-expose__rank--top' : ''}`} aria-label={t('stackGallery.rankAria', { rank })}>
 					{isTop ? (
 						<>
 							<span aria-hidden="true">★</span>
@@ -105,7 +97,11 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank }: StackExp
 				<div className="stack-expose__meta">
 					{stack.issuer && <span className="stack-expose__issuer">{stack.issuer}</span>}
 					<span className="stack-expose__version">v{stack.version}</span>
-					{formattedDate && <time className="stack-expose__date" dateTime={stack.publishedAt}>{formattedDate}</time>}
+					{formattedDate && (
+						<time className="stack-expose__date" dateTime={stack.publishedAt}>
+							{formattedDate}
+						</time>
+					)}
 				</div>
 			</div>
 
@@ -121,15 +117,10 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank }: StackExp
 						{metrics.avgScore}/100
 					</span>
 					<span className="stack-expose__avg-label">{t('stackGallery.avgScore')}</span>
-					<span
-						className="stack-expose__avg-category"
-						style={{ color: metrics.avgColor }}
-					>
+					<span className="stack-expose__avg-category" style={{ color: metrics.avgColor }}>
 						{t(`article.scoreCategories.${metrics.avgCategory}`)}
 					</span>
-					<span className="stack-expose__item-count">
-						{t('stackGallery.itemCount', { count: metrics.totalItems })}
-					</span>
+					<span className="stack-expose__item-count">{t('stackGallery.itemCount', { count: metrics.totalItems })}</span>
 				</div>
 			</div>
 
@@ -142,9 +133,7 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank }: StackExp
 						const fillPct = metrics.totalItems > 0 ? Math.round((count / metrics.totalItems) * 100) : 0;
 						return (
 							<li key={cat} className="stack-expose__dist-bar">
-								<span className="stack-expose__dist-label">
-									{t(`article.scoreCategories.${cat}`)}
-								</span>
+								<span className="stack-expose__dist-label">{t(`article.scoreCategories.${cat}`)}</span>
 								<div className="stack-expose__dist-track" role="presentation">
 									<div
 										className="stack-expose__dist-fill"
@@ -197,11 +186,7 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank }: StackExp
 				<h3 className="stack-expose__section-title">{t('stackGallery.metrics.roles')}</h3>
 				<div className="stack-expose__roles">
 					{PARTICIPANT_ROLES.filter((role) => metrics.roleCounts[role] > 0).map((role) => (
-						<span
-							key={role}
-							className="stack-expose__role-badge"
-							style={{ background: ROLE_COLORS[role], color: '#fff' }}
-						>
+						<span key={role} className="stack-expose__role-badge" style={{ background: ROLE_COLORS[role], color: '#fff' }}>
 							{metrics.roleCounts[role]} {t(`stack.roles.${role}`)}
 						</span>
 					))}
@@ -219,11 +204,7 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank }: StackExp
 							const layerColor = layer?.color ?? '#999';
 							return (
 								<li key={layerId} className="stack-expose__layer-item">
-									<span
-										className="stack-expose__layer-dot"
-										style={{ background: layerColor }}
-										aria-hidden="true"
-									/>
+									<span className="stack-expose__layer-dot" style={{ background: layerColor }} aria-hidden="true" />
 									<span>{layerName}:</span>
 									<strong>{count}</strong>
 								</li>
