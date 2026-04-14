@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { createHashHistory } from 'history';
 import { Router } from 'preact-router';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
@@ -14,11 +14,10 @@ type RouteProps = {
 	path?: string;
 };
 
-/** Liest die aktuelle Route aus dem URL-Hash: "#/stacks" → "/stacks", "" → "/" */
-function getHashUrl(): string {
-	const hash = window.location.hash;
-	return hash.length > 1 ? hash.slice(1) : '/';
-}
+// Hash-History-Instanz einmalig außerhalb der Komponente erstellen.
+// Alle Routen werden als #/path in der URL kodiert – die App funktioniert
+// damit unter beliebigen Server-Pfaden ohne Server-Konfiguration.
+const hashHistory = createHashHistory();
 
 function HomeRoute({ default: isDefault, path }: RouteProps) {
 	void isDefault;
@@ -56,21 +55,10 @@ function StackGalleryRoute({ default: isDefault, path }: RouteProps) {
 }
 
 function App() {
-	// Hash-Routing: URL-State wird aus window.location.hash gelesen und bei
-	// hashchange aktualisiert. Der Router bekommt immer die aktuelle Route
-	// als kontrollierter url-Prop – unabhängig vom Server-Pfad der App.
-	const [currentUrl, setCurrentUrl] = useState(getHashUrl);
-
-	useEffect(() => {
-		const onHashChange = () => setCurrentUrl(getHashUrl());
-		window.addEventListener('hashchange', onHashChange);
-		return () => window.removeEventListener('hashchange', onHashChange);
-	}, []);
-
 	return (
 		<div className="flex flex-col min-h-screen w-full">
 			<Header />
-			<Router url={currentUrl}>
+			<Router history={hashHistory}>
 				<HomeRoute path="/" default />
 				<SettingsRoute path="/settings" />
 				<SettingsRoute path="/einstellungen" />

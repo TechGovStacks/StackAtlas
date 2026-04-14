@@ -248,7 +248,7 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank }: StackExp
 
 			{/* ── CTA-Button ────────────────────────────────────────────── */}
 			<div className="stack-expose__cta">
-				<a href={`#/?stack=${stack.id}`} className="stack-expose__explore-link">
+				<a href={`/?stack=${stack.id}`} className="stack-expose__explore-link">
 					{t('stackGallery.exploreStack')}
 				</a>
 			</div>

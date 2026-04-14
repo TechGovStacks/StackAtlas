@@ -50,6 +50,7 @@
 		"@public-ui/preact": "4.1.2",
 		"@public-ui/theme-default": "4.1.2",
 		"@public-ui/theme-kern": "4.1.2",
+		"history": "^5.3.0",
 		"i18next": "26.0.4",
 		"i18next-browser-languagedetector": "8.2.1",
 		"preact": "10.29.1",
