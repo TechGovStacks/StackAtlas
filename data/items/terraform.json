@@ -10,10 +10,10 @@
 	"homepage": "https://www.terraform.io/",
 	"license": "BUSL-1.1",
 	"tags": ["iac", "infrastructure", "automation"],
-	"oss": true,
+	"oss": false,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
-		"openSource": true,
+		"openSource": false,
 		"euHeadquartered": false,
 		"hasAudit": false,
 		"permissiveLicense": false,

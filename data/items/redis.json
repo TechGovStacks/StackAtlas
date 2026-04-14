@@ -8,11 +8,12 @@
 		"en": "Redis is a fast in-memory key-value store. It is typically used for caching, session storage, pub/sub and real-time load peaks in scalable GovTech applications."
 	},
 	"homepage": "https://redis.io/",
+	"license": "RSALv2",
 	"tags": ["cache", "in-memory", "key-value"],
-	"oss": true,
+	"oss": false,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
-		"openSource": true,
+		"openSource": false,
 		"euHeadquartered": false,
 		"hasAudit": true,
 		"permissiveLicense": false,
