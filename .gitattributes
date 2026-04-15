@@ -1,3 +1,0 @@
-# Avoid merge conflicts in generated data files; regenerate when needed.
-src/data/items.generated.ts merge=ours
-src/data/articles.generated.ts merge=ours
