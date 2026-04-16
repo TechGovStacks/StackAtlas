@@ -4,13 +4,21 @@ import { useTranslation } from 'react-i18next';
 import { getCommitDisplay } from '../utils';
 import { SettingsForm } from './SettingsForm';
 
-export function Header() {
+interface HeaderProps {
+	currentUrl: string;
+}
+
+export function Header({ currentUrl }: HeaderProps) {
 	const { t } = useTranslation();
 	const [settingsDrawerOpen, setSettingsDrawerOpen] = useState(false);
 
 	const baseUrl = import.meta.env.BASE_URL;
 	const brandUrl = import.meta.env.VITE_BRAND_URL ?? baseUrl;
 	const commitDisplay = getCommitDisplay();
+
+	// Aktive Nav-Route bestimmen: alles was nicht mit /deps beginnt → Stacks
+	const isStacksActive = !currentUrl.startsWith('/deps');
+	const isDepsActive = currentUrl.startsWith('/deps');
 
 	return (
 		<>
@@ -48,6 +56,22 @@ export function Header() {
 							<span>StackAtlas</span>
 							<span className="header__brand-badge text-white font-bold text-xs px-1.5 py-0.5 rounded ml-1 uppercase tracking-wider">MVP</span>
 						</a>
+						<nav className="header__main-nav" aria-label={t('header.mainNavigationAria')}>
+							<a
+								href="#/"
+								className={`header__nav-link${isStacksActive ? ' header__nav-link--active' : ''}`}
+								aria-current={isStacksActive ? 'page' : undefined}
+							>
+								{t('header.nav.stacks')}
+							</a>
+							<a
+								href="#/deps"
+								className={`header__nav-link${isDepsActive ? ' header__nav-link--active' : ''}`}
+								aria-current={isDepsActive ? 'page' : undefined}
+							>
+								{t('header.nav.deps')}
+							</a>
+						</nav>
 						<div className="header__controls flex items-center gap-2 ml-auto">
 							<KolButton
 								className="header__lang-trigger"

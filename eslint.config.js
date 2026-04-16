@@ -23,6 +23,7 @@ export default [
 				performance: 'readonly',
 				setInterval: 'readonly',
 				setTimeout: 'readonly',
+				URLSearchParams: 'readonly',
 			},
 		},
 		plugins: {

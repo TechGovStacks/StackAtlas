@@ -11,7 +11,9 @@
 			"categories": "Categories",
 			"docs": "Docs",
 			"imprint": "Imprint",
-			"settings": "Settings"
+			"settings": "Settings",
+			"stacks": "Stacks",
+			"deps": "Deps"
 		},
 		"eyebrow": "Measure & Compare Digital Sovereignty",
 		"subtitle": "How sovereign is your tech stack? StackAtlas scores technologies and standards worldwide with a transparent sovereignty score from 0–100 – and reveals which dependencies threaten your digital independence.",
