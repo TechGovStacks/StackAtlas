@@ -16,8 +16,7 @@ export function Header({ currentUrl }: HeaderProps) {
 	const brandUrl = import.meta.env.VITE_BRAND_URL ?? baseUrl;
 	const commitDisplay = getCommitDisplay();
 
-	// Aktive Nav-Route bestimmen: alles was nicht mit /deps beginnt → Stacks
-	const isStacksActive = !currentUrl.startsWith('/deps');
+	const isStacksActive = currentUrl === '/' || currentUrl.startsWith('/stacks');
 	const isDepsActive = currentUrl.startsWith('/deps');
 
 	return (

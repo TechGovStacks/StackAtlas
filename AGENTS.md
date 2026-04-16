@@ -294,3 +294,4 @@ This approach eliminates duplication and keeps styling intent clear.
 3. `pnpm stylelint` – SCSS lint
 4. `pnpm format` – Formatting check
 5. `pnpm build` – Ensure production build succeeds
+6. **Required final step for AI agents:** run `pnpm prettier --write src` before commit, then re-run `pnpm format` to confirm formatting is clean

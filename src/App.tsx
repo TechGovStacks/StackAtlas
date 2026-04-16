@@ -16,16 +16,17 @@ function AppContent() {
 		<div className="flex flex-col min-h-screen w-full">
 			<Header currentUrl={path} />
 			<Router>
-				<Route path="/" component={HomePage} />
+				<Route path="/" component={StackGalleryPage} />
 				<Route path="/settings" component={SettingsPage} />
 				<Route path="/einstellungen" component={SettingsPage} />
+				<Route path="/deps" component={HomePage} />
 				<Route path="/news" component={NewsPage} />
 				<Route path="/neuigkeiten" component={NewsPage} />
 				<Route path="/imprint" component={ImprintPage} />
 				<Route path="/impressum" component={ImprintPage} />
 				<Route path="/stacks" component={StackGalleryPage} />
 				<Route path="/stacks-galerie" component={StackGalleryPage} />
-				<Route default component={HomePage} />
+				<Route default component={StackGalleryPage} />
 			</Router>
 			<Footer />
 			<PwaWrapper />
