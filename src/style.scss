@@ -1647,10 +1647,16 @@ kol-select {
 
 .stack-expose__header {
 	display: flex;
+	flex-direction: column;
+	gap: var(--ds-space-3);
+	margin-bottom: var(--ds-space-6);
+}
+
+.stack-expose__headline {
+	display: flex;
 	align-items: flex-start;
 	gap: var(--ds-space-4);
-	margin-bottom: var(--ds-space-6);
-	flex-wrap: wrap;
+	width: 100%;
 }
 
 .stack-expose__rank {
@@ -1698,6 +1704,16 @@ kol-select {
 	color: var(--ds-color-text-muted);
 	margin: 0;
 	line-height: 1.5;
+	width: 100%;
+}
+
+.stack-expose__meta-row {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: var(--ds-space-3);
+	width: 100%;
+	flex-wrap: wrap;
 }
 
 .stack-expose__meta {
@@ -1705,8 +1721,8 @@ kol-select {
 	flex-direction: column;
 	align-items: flex-end;
 	gap: var(--ds-space-1);
-	flex-shrink: 0;
 	text-align: right;
+	margin-left: auto;
 }
 
 .stack-expose__issuer {
@@ -1716,7 +1732,8 @@ kol-select {
 	margin: 0;
 	white-space: normal;
 	overflow-wrap: anywhere;
-	max-width: min(100%, 26ch);
+	flex: 1;
+	min-width: min(18rem, 100%);
 }
 
 .stack-expose__version {
