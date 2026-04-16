@@ -98,7 +98,7 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank }: StackExp
 				<div className="stack-expose__meta-row">
 					{stack.issuer && <p className="stack-expose__issuer">{stack.issuer}</p>}
 					<div className="stack-expose__meta">
-						<span className="stack-expose__version">v{stack.version}</span>
+						<span className={`stack-expose__version${formattedDate ? ' stack-expose__version--with-date' : ''}`}>v{stack.version}</span>
 						{formattedDate && (
 							<time className="stack-expose__date" dateTime={stack.publishedAt}>
 								{formattedDate}
@@ -114,13 +114,6 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank }: StackExp
 			<div className="stack-expose__score-section">
 				<SovereigntyGauge score={metrics.avgScore} category={metrics.avgCategory} size={160} />
 				<div className="stack-expose__score-meta">
-					<span
-						className="stack-expose__avg-value"
-						style={{ color: metrics.avgColor }}
-						aria-label={t('stackGallery.avgScoreAria', { score: metrics.avgScore })}
-					>
-						{metrics.avgScore}/100
-					</span>
 					<span className="stack-expose__avg-label">{t('stackGallery.avgScore')}</span>
 					<span className="stack-expose__avg-category" style={{ color: metrics.avgColor }}>
 						{t(`article.scoreCategories.${metrics.avgCategory}`)}
