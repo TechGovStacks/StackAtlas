@@ -71,11 +71,14 @@ export function SovereigntyGauge({ score, category, size = 200 }: SovereigntyGau
 	const radius = size / 2 - 30;
 	const innerRadius = radius - 12;
 	const outerRadius = radius - 4;
+	const ringWidth = outerRadius - innerRadius;
 	const centerX = size / 2;
 	const centerY = size / 2;
 
 	const angle = scoreToAngle(score);
 	const color = CATEGORY_COLORS[category];
+	const fullScaleAngle = 270;
+	const endCap = polarToCartesian(centerX, centerY, outerRadius, fullScaleAngle);
 
 	// Gauge-Ring Segmente für alle Kategorien (Hintergrund)
 	const segmentPaths = CATEGORY_RANGES.map((range, idx) => {
@@ -86,7 +89,7 @@ export function SovereigntyGauge({ score, category, size = 200 }: SovereigntyGau
 		return (
 			<g key={range.category}>
 				{/* Hintergrund-Segment (hell) */}
-				<path d={path} stroke={CATEGORY_COLORS[range.category]} strokeWidth={outerRadius - innerRadius} fill="none" opacity="0.2" />
+				<path d={path} stroke={CATEGORY_COLORS[range.category]} strokeWidth={ringWidth} fill="none" opacity="0.2" />
 			</g>
 		);
 	});
@@ -113,7 +116,7 @@ export function SovereigntyGauge({ score, category, size = 200 }: SovereigntyGau
 			<path
 				d={activePath}
 				stroke={color}
-				strokeWidth={outerRadius - innerRadius}
+				strokeWidth={ringWidth}
 				fill="none"
 				strokeLinecap="round"
 				style={{
@@ -122,12 +125,22 @@ export function SovereigntyGauge({ score, category, size = 200 }: SovereigntyGau
 				}}
 			/>
 
+			{/* Runde Endkappe für den Gauge-Hintergrund bei 100 */}
+			<circle cx={endCap.x} cy={endCap.y} r={ringWidth / 2} fill={CATEGORY_COLORS.outstanding} opacity="0.2" />
+
 			{/* Kategorie-Markierungs-Linien */}
 			{CATEGORY_RANGES.map((range) => {
 				const start = polarToCartesian(centerX, centerY, innerRadius - 2, range.angle);
 				const end = polarToCartesian(centerX, centerY, outerRadius + 6, range.angle);
 				return <line key={`marker-${range.angle}`} x1={start.x} y1={start.y} x2={end.x} y2={end.y} stroke="#999" strokeWidth="1" opacity="0.5" />;
 			})}
+
+			{/* Abschluss-Markierung für 100 */}
+			{(() => {
+				const start = polarToCartesian(centerX, centerY, innerRadius - 2, fullScaleAngle);
+				const end = polarToCartesian(centerX, centerY, outerRadius + 6, fullScaleAngle);
+				return <line x1={start.x} y1={start.y} x2={end.x} y2={end.y} stroke="#999" strokeWidth="1" opacity="0.5" />;
+			})()}
 
 			{/* Nadel/Zeiger */}
 			<line
@@ -151,7 +164,7 @@ export function SovereigntyGauge({ score, category, size = 200 }: SovereigntyGau
 			<rect x={centerX - 28} y={centerY + radius - 10} width="56" height="30" rx="5" ry="5" fill="white" stroke={color} strokeWidth="2" opacity="0.95" />
 
 			{/* Score-Text in der unteren Lücke */}
-			<text x={centerX} y={centerY + radius + 5} textAnchor="middle" dominantBaseline="middle" fontSize={Math.round(size * 0.16)} fontWeight="700" fill={color}>
+			<text x={centerX} y={centerY + radius + 7} textAnchor="middle" dominantBaseline="middle" fontSize={Math.round(size * 0.16)} fontWeight="700" fill={color}>
 				{score}
 			</text>
 		</svg>
