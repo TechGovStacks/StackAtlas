@@ -33,7 +33,7 @@
 			"documentation": "Documentation",
 			"settings": "Paramètres",
 			"news": "Actualités",
-				"stacks": "Stacks"
+			"stacks": "Stacks"
 		},
 		"license": "Licence : EUPL-1.2",
 		"builtWith": "Built with",
