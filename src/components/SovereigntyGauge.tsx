@@ -78,6 +78,7 @@ export function SovereigntyGauge({ score, category, size = 200 }: SovereigntyGau
 	const angle = scoreToAngle(score);
 	const color = CATEGORY_COLORS[category];
 	const fullScaleAngle = 270;
+	const startCap = polarToCartesian(centerX, centerY, outerRadius, 0);
 	const endCap = polarToCartesian(centerX, centerY, outerRadius, fullScaleAngle);
 	const marker100Start = polarToCartesian(centerX, centerY, innerRadius - 2, fullScaleAngle);
 	const marker100End = polarToCartesian(centerX, centerY, outerRadius + 6, fullScaleAngle);
@@ -88,12 +89,7 @@ export function SovereigntyGauge({ score, category, size = 200 }: SovereigntyGau
 		const endAngle = nextRange ? nextRange.angle : 270;
 		const path = describeArc(centerX, centerY, outerRadius, range.angle, endAngle);
 
-		return (
-			<g key={range.category}>
-				{/* Hintergrund-Segment (hell) */}
-				<path d={path} stroke={CATEGORY_COLORS[range.category]} strokeWidth={ringWidth} fill="none" opacity="0.2" />
-			</g>
-		);
+		return <path key={range.category} d={path} stroke={CATEGORY_COLORS[range.category]} strokeWidth={ringWidth} fill="none" />;
 	});
 
 	// Aktiver Gauge-Ring (zeigt Score)
@@ -111,11 +107,12 @@ export function SovereigntyGauge({ score, category, size = 200 }: SovereigntyGau
 			role="img"
 			aria-label={`Sovereignty Score: ${score}/100 (${category})`}
 		>
-			{/* Hintergrund-Segmente (alle Kategorien) */}
-			{segmentPaths}
-
-			{/* Runde Endkappe für den Gauge-Hintergrund bei 100 */}
-			<circle cx={endCap.x} cy={endCap.y} r={ringWidth / 2} fill={CATEGORY_COLORS.outstanding} opacity="0.2" />
+			{/* Hintergrund-Segmente inkl. runder Kappen */}
+			<g opacity="0.2">
+				{segmentPaths}
+				<circle cx={startCap.x} cy={startCap.y} r={ringWidth / 2} fill={CATEGORY_COLORS.insufficient} />
+				<circle cx={endCap.x} cy={endCap.y} r={ringWidth / 2} fill={CATEGORY_COLORS.outstanding} />
+			</g>
 
 			{/* Aktiver Fortschritts-Ring */}
 			<path
