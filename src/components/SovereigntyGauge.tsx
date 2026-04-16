@@ -138,11 +138,7 @@ export function SovereigntyGauge({ score, category, size = 200 }: SovereigntyGau
 			})}
 
 			{/* Abschluss-Markierung für 100 */}
-			{(() => {
-				const start = polarToCartesian(centerX, centerY, innerRadius - 2, fullScaleAngle);
-				const end = polarToCartesian(centerX, centerY, outerRadius + 6, fullScaleAngle);
-				return <line x1={start.x} y1={start.y} x2={end.x} y2={end.y} stroke="#999" strokeWidth="1" opacity="0.5" />;
-			})()}
+			<line x1={marker100Start.x} y1={marker100Start.y} x2={marker100End.x} y2={marker100End.y} stroke="#999" strokeWidth="1" opacity="0.5" />
 
 			{/* Nadel/Zeiger */}
 			<line
