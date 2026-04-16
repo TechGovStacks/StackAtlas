@@ -26,11 +26,10 @@ export function StackGalleryPage() {
 	const location = useLocation();
 	const selectedStackId = location.query.stack;
 
+	const stacksWithScores = useMemo(() => STACKS.map((stack) => ({ stack, avgScore: computeStackAvgScore(stack, ITEMS) })), []);
+
 	// Stacks absteigend nach Ø-Score sortieren
-	const rankedStacks = useMemo(
-		() => [...STACKS].map((stack) => ({ stack, avgScore: computeStackAvgScore(stack, ITEMS) })).sort((a, b) => b.avgScore - a.avgScore),
-		[],
-	);
+	const rankedStacks = useMemo(() => [...stacksWithScores].sort((a, b) => b.avgScore - a.avgScore), [stacksWithScores]);
 
 	useEffect(() => {
 		if (!selectedStackId) return;
