@@ -63,17 +63,15 @@ export function FilterBar({
 
 	const relationOptions = (() => {
 		if (!activeStackId || !activeStack) return [];
-		const roleCounts = items.reduce(
-			(acc, item) => {
-				const stackItem = activeStack.items.find((stackItemCandidate) => stackItemCandidate.itemId === item.id);
-				if (!stackItem) return acc;
+		const roleCounts = activeStack.items.reduce(
+			(acc, stackItem) => {
 				acc[stackItem.role] = (acc[stackItem.role] ?? 0) + 1;
 				return acc;
 			},
 			{} as Record<ParticipantRole, number>,
 		);
 		const roles: ParticipantRole[] = ['maintainer', 'contributor', 'funder', 'consumer'];
-		return roles.filter((role) => roleCounts[role] > 0).map((role) => ({ label: `${t(`stack.roles.${role}`)} (${roleCounts[role]})`, value: role }));
+		return roles.filter((role) => (roleCounts[role] ?? 0) > 0).map((role) => ({ label: `${t(`stack.roles.${role}`)} (${roleCounts[role]})`, value: role }));
 	})();
 
 	return (
