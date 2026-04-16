@@ -114,6 +114,9 @@ export function SovereigntyGauge({ score, category, size = 200 }: SovereigntyGau
 			{/* Hintergrund-Segmente (alle Kategorien) */}
 			{segmentPaths}
 
+			{/* Runde Endkappe für den Gauge-Hintergrund bei 100 */}
+			<circle cx={endCap.x} cy={endCap.y} r={ringWidth / 2} fill={CATEGORY_COLORS.outstanding} opacity="0.2" />
+
 			{/* Aktiver Fortschritts-Ring */}
 			<path
 				d={activePath}
@@ -126,9 +129,6 @@ export function SovereigntyGauge({ score, category, size = 200 }: SovereigntyGau
 					filter: `drop-shadow(0 0 4px ${color}40)`,
 				}}
 			/>
-
-			{/* Runde Endkappe für den Gauge-Hintergrund bei 100 */}
-			<circle cx={endCap.x} cy={endCap.y} r={ringWidth / 2} fill={CATEGORY_COLORS.outstanding} opacity="0.2" />
 
 			{/* Kategorie-Markierungs-Linien */}
 			{CATEGORY_RANGES.map((range) => {
