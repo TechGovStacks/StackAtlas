@@ -1,4 +1,4 @@
-import { Link } from 'preact-iso';
+import { RouterLink } from './RouterLink';
 import { useTranslation } from 'react-i18next';
 import { getCommitDisplay } from '../utils';
 
@@ -23,21 +23,21 @@ export function Footer() {
 						<a href="https://github.com/deleonio/accessible-d-stack-landscape/blob/main/docs/README.md" rel="noopener noreferrer" className="footer__link">
 							{t('footer.links.documentation')}
 						</a>
-						<Link href="/news" className="footer__link">
+						<RouterLink href="/news" className="footer__link">
 							{t('footer.links.news')}
-						</Link>
-						<Link href="/stacks" className="footer__link">
+						</RouterLink>
+						<RouterLink href="/stacks" className="footer__link">
 							{t('footer.links.stacks')}
-						</Link>
+						</RouterLink>
 						<a href="https://github.com/deleonio/accessible-d-stack-landscape" rel="noopener noreferrer" className="footer__link">
 							{t('footer.links.github')}
 						</a>
 						<a href="https://github.com/deleonio/accessible-d-stack-landscape/issues/new" rel="noopener noreferrer" className="footer__link">
 							{t('footer.links.community')}
 						</a>
-						<Link href="/settings" className="footer__link">
+						<RouterLink href="/settings" className="footer__link">
 							{t('footer.links.settings')}
-						</Link>
+						</RouterLink>
 					</nav>
 				</div>
 			</div>

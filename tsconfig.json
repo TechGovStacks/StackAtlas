@@ -10,9 +10,6 @@
 		"module": "ESNext",
 		"moduleResolution": "bundler",
 		"baseUrl": ".",
-		"paths": {
-			"preact-iso": ["src/lib/preact-iso.tsx"]
-		},
 		"ignoreDeprecations": "6.0",
 		"resolveJsonModule": true,
 		"isolatedModules": true,

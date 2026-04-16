@@ -1,4 +1,4 @@
-import { LocationProvider, Route, Router } from 'preact-iso';
+import { LocationProvider, Route, Router, useLocation } from 'preact-iso';
 import { Footer } from './components/Footer';
 import { Header } from './components/Header';
 import { PwaWrapper } from './components/PwaWrapper';
@@ -8,11 +8,12 @@ import { NewsPage } from './pages/NewsPage';
 import { SettingsPage } from './pages/SettingsPage';
 import { StackGalleryPage } from './pages/StackGalleryPage';
 
-function App() {
+function AppContent() {
+	const { path } = useLocation();
+
 	return (
-		<LocationProvider>
-			<div className="flex flex-col min-h-screen w-full">
-				<Header />
+		<div className="flex flex-col min-h-screen w-full">
+			<Header currentUrl={path} />
 				<Router>
 					<Route path="/" component={HomePage} />
 					<Route path="/settings" component={SettingsPage} />
@@ -27,7 +28,14 @@ function App() {
 				</Router>
 				<Footer />
 				<PwaWrapper />
-			</div>
+		</div>
+	);
+}
+
+function App() {
+	return (
+		<LocationProvider>
+			<AppContent />
 		</LocationProvider>
 	);
 }

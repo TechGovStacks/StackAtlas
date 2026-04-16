@@ -12,13 +12,13 @@ export function HomePage() {
 
 	// Bei jeder Änderung der URL-Query: ?stack=<id> lesen und Stack vorauswählen.
 	useEffect(() => {
-		const stackParam = new window.URLSearchParams(location.url.search).get('stack');
+		const stackParam = location.query.stack;
 		if (stackParam && STACKS.some((stack) => stack.id === stackParam)) {
 			setActiveStackId(stackParam);
 			return;
 		}
 		setActiveStackId(null);
-	}, [location.url.search]);
+	}, [location.query.stack]);
 
 	const [sortField, setSortField] = useState<SortField>('score');
 	const [sortDir, setSortDir] = useState<SortDir>('desc');
