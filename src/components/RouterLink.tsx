@@ -1,7 +1,7 @@
 import type { JSX } from 'preact';
 import { useLocation } from 'preact-iso';
 
-interface RouterLinkProps extends Omit<JSX.HTMLAttributes<HTMLAnchorElement>, 'href'> {
+interface RouterLinkProps extends Omit<JSX.HTMLAttributes<HTMLElement>, 'href'> {
 	href: string;
 }
 
@@ -11,7 +11,7 @@ export function RouterLink({ href, onClick, ...props }: RouterLinkProps) {
 	const normalizedHref = href.startsWith('/') ? href : `/${href.replace(/^\/?/, '')}`;
 	const hashHref = `#${normalizedHref}`;
 
-	const handleClick = (event: JSX.TargetedMouseEvent<HTMLAnchorElement>) => {
+	const handleClick = (event: JSX.TargetedMouseEvent<HTMLElement>) => {
 		onClick?.(event);
 		if (event.defaultPrevented) return;
 		if (event.button !== 0 || event.metaKey || event.ctrlKey || event.altKey || event.shiftKey) return;
@@ -21,5 +21,9 @@ export function RouterLink({ href, onClick, ...props }: RouterLinkProps) {
 		route(targetUrl.pathname + targetUrl.search + targetUrl.hash);
 	};
 
-	return <a {...props} href={hashHref} onClick={handleClick} />;
+	return (
+		<a {...props} href={hashHref} onClick={handleClick}>
+			{props.children}
+		</a>
+	);
 }
