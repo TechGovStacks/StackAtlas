@@ -36,12 +36,13 @@ export function HashLocationProvider({ children }: HashLocationProviderProps) {
 			setRoute(getHashRoute());
 		};
 
+		window.addEventListener('hashchange', onHashChange);
+
 		if (!window.location.hash) {
 			window.location.replace(`${window.location.pathname}${window.location.search}#/`);
-			return;
+			setRoute(getHashRoute());
 		}
 
-		window.addEventListener('hashchange', onHashChange);
 		return () => window.removeEventListener('hashchange', onHashChange);
 	}, []);
 
