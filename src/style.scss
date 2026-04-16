@@ -554,7 +554,7 @@ kol-select,
 }
 
 .filter-bar__inner:has(.filter-bar__select--sublayer) {
-	grid-template-areas: 'search' 'stack' 'layer' 'relation' 'sublayer' 'sort' 'toggle';
+	grid-template-areas: 'search' 'stack' 'layer' 'sublayer' 'relation' 'sort' 'toggle';
 }
 
 .filter-bar__inner:not(:has(.filter-bar__select--stack)):has(.filter-bar__select--sublayer) {
@@ -577,7 +577,7 @@ kol-select,
 	}
 
 	.filter-bar__inner:has(.filter-bar__select--sublayer) {
-		grid-template-areas: 'search search' 'stack  layer' 'relation relation' 'sublayer sublayer' 'sort   toggle';
+		grid-template-areas: 'search search' 'stack  layer' 'sublayer sublayer' 'relation relation' 'sort   toggle';
 	}
 
 	.filter-bar__inner:not(:has(.filter-bar__select--stack)):has(.filter-bar__select--sublayer) {
@@ -605,7 +605,7 @@ kol-select,
 
 	.filter-bar__inner:has(.filter-bar__select--sublayer) {
 		grid-template-columns: 2fr 1fr 1fr 1fr 1fr auto auto;
-		grid-template-areas: 'search stack layer relation sublayer sort toggle';
+		grid-template-areas: 'search stack layer sublayer relation sort toggle';
 	}
 
 	.filter-bar__inner:not(:has(.filter-bar__select--stack)):has(.filter-bar__select--sublayer) {

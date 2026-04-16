@@ -117,18 +117,6 @@ export function FilterBar({
 							onFilterChange({ ...filters, selectedLayer: value ? (value as string) : null, selectedSublayer: null }),
 					}}
 				/>
-				{activeStackId && (
-					<KolSingleSelect
-						className="filter-bar__select filter-bar__select--relation sort-select"
-						_label={t('search.relationLabel')}
-						_hideLabel
-						_options={[{ label: t('search.allRelations'), value: '' }, ...relationOptions]}
-						_value={filters.selectedRelation ?? ''}
-						_on={{
-							onChange: (_e: globalThis.Event, value: unknown) => onFilterChange({ ...filters, selectedRelation: value ? (value as ParticipantRole) : null }),
-						}}
-					/>
-				)}
 				{filters.selectedLayer && (
 					<KolSingleSelect
 						className="filter-bar__select filter-bar__select--sublayer sort-select"
@@ -139,6 +127,18 @@ export function FilterBar({
 						_disabled={sublayerOptions.length === 0}
 						_on={{
 							onChange: (_e: globalThis.Event, value: unknown) => onFilterChange({ ...filters, selectedSublayer: value ? (value as string) : null }),
+						}}
+					/>
+				)}
+				{activeStackId && (
+					<KolSingleSelect
+						className="filter-bar__select filter-bar__select--relation sort-select"
+						_label={t('search.relationLabel')}
+						_hideLabel
+						_options={[{ label: t('search.allRelations'), value: '' }, ...relationOptions]}
+						_value={filters.selectedRelation ?? ''}
+						_on={{
+							onChange: (_e: globalThis.Event, value: unknown) => onFilterChange({ ...filters, selectedRelation: value ? (value as ParticipantRole) : null }),
 						}}
 					/>
 				)}
