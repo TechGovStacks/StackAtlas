@@ -39,9 +39,6 @@ importers:
       preact:
         specifier: 10.29.1
         version: 10.29.1
-      preact-router:
-        specifier: 4.1.2
-        version: 4.1.2(preact@10.29.1)
       react-hook-form:
         specifier: 7.72.1
         version: 7.72.1(react@19.2.4)
@@ -3928,11 +3925,6 @@ packages:
   postcss@8.5.8:
     resolution: {integrity: sha512-OW/rX8O/jXnm82Ey1k44pObPtdblfiuWnrd8X7GJ7emImCOstunGbXUpp7HdBrFQX6rJzn3sPT397Wp5aCwCHg==}
     engines: {node: ^10 || ^12 || >=14}
-
-  preact-router@4.1.2:
-    resolution: {integrity: sha512-uICUaUFYh+XQ+6vZtQn1q+X6rSqwq+zorWOCLWPF5FAsQh3EJ+RsDQ9Ee+fjk545YWQHfUxhrBAaemfxEnMOUg==}
-    peerDependencies:
-      preact: '>=10'
 
   preact@10.29.1:
     resolution: {integrity: sha512-gQCLc/vWroE8lIpleXtdJhTFDogTdZG9AjMUpVkDf2iTCNwYNWA+u16dL41TqUDJO4gm2IgrcMv3uTpjd4Pwmg==}
@@ -9228,10 +9220,6 @@ snapshots:
       nanoid: 3.3.11
       picocolors: 1.1.1
       source-map-js: 1.2.1
-
-  preact-router@4.1.2(preact@10.29.1):
-    dependencies:
-      preact: 10.29.1
 
   preact@10.29.1: {}
 
