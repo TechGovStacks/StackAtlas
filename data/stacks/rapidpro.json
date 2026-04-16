@@ -1,0 +1,70 @@
+{
+	"id": "rapidpro",
+	"name": {
+		"de": "RapidPro Stack",
+		"en": "RapidPro Stack"
+	},
+	"description": {
+		"de": "UNICEF-getriebene Open-Source-Messaging- und Workflow-Plattform für Regierungen und humanitäre Programme.",
+		"en": "UNICEF-driven open-source messaging and workflow platform for governments and humanitarian programs."
+	},
+	"issuer": "UNICEF / Nyaruka",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-16",
+	"items": [
+		{
+			"itemId": "django",
+			"status": "recommended",
+			"role": "contributor",
+			"rationale": {
+				"de": "Django ist das zentrale Web-Framework der Plattform.",
+				"en": "Django is the platform's central web framework."
+			}
+		},
+		{
+			"itemId": "elasticsearch",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Elasticsearch unterstützt Suche und Analyse großer Nachrichtenvolumina.",
+				"en": "Elasticsearch supports search and analysis of large message volumes."
+			}
+		},
+		{
+			"itemId": "go",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Go-basierte Dienste ergänzen die Messaging-Verarbeitung.",
+				"en": "Go-based services complement messaging processing."
+			}
+		},
+		{
+			"itemId": "postgresql",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "PostgreSQL speichert Kernzustände von Kontakten, Flows und Events.",
+				"en": "PostgreSQL stores core state for contacts, flows and events."
+			}
+		},
+		{
+			"itemId": "react",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "React wird für Teile der interaktiven Editor-Oberflächen genutzt.",
+				"en": "React is used for parts of the interactive editor UI."
+			}
+		},
+		{
+			"itemId": "redis",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Redis dient als Queue-/Cache-Baustein im skalierbaren Nachrichtenbetrieb.",
+				"en": "Redis acts as a queue/cache building block in scalable messaging operations."
+			}
+		}
+	]
+}

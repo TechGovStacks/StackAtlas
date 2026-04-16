@@ -1,0 +1,61 @@
+{
+	"id": "wikimedia-production",
+	"name": {
+		"de": "Wikimedia Production Stack",
+		"en": "Wikimedia Production Stack"
+	},
+	"description": {
+		"de": "Produktionsnahe Betriebsarchitektur von Wikimedia mit Kubernetes, Observability und MediaWiki-nahen Diensten.",
+		"en": "Production-oriented Wikimedia operations architecture with Kubernetes, observability and MediaWiki-adjacent services."
+	},
+	"issuer": "Wikimedia Foundation",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-16",
+	"items": [
+		{
+			"itemId": "apache-kafka",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Kafka wird für Logging- und Event-Pipelines eingesetzt.",
+				"en": "Kafka is used for logging and event pipelines."
+			}
+		},
+		{
+			"itemId": "envoy-proxy",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Envoy übernimmt TLS- und Service-Mesh-nahe Proxy-Funktionen.",
+				"en": "Envoy provides TLS and service-mesh-style proxy capabilities."
+			}
+		},
+		{
+			"itemId": "helm",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Helm/Helmfile-Muster steuern den Rollout von Produktionsdiensten.",
+				"en": "Helm/Helmfile patterns control rollout of production services."
+			}
+		},
+		{
+			"itemId": "kubernetes",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Kubernetes ist zentrale Laufzeitumgebung für moderne MediaWiki-Workloads.",
+				"en": "Kubernetes is the central runtime for modern MediaWiki workloads."
+			}
+		},
+		{
+			"itemId": "prometheus",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Prometheus bildet den Kern des Metrik- und Monitoring-Stacks.",
+				"en": "Prometheus forms the core of metrics and monitoring."
+			}
+		}
+	]
+}

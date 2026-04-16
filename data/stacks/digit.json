@@ -1,0 +1,98 @@
+{
+	"id": "digit",
+	"name": {
+		"de": "DIGIT Stack",
+		"en": "DIGIT Stack"
+	},
+	"description": {
+		"de": "Offene DPI-Microservice-Plattform der eGovernments Foundation für kommunale und staatliche Dienste.",
+		"en": "Open DPI microservice platform by eGovernments Foundation for municipal and state services."
+	},
+	"country": "IN",
+	"issuer": "eGovernments Foundation",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-16",
+	"items": [
+		{
+			"itemId": "apache-kafka",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Kafka bildet die Event-Streaming-Schicht im DIGIT-Ökosystem.",
+				"en": "Kafka forms the event-streaming layer in the DIGIT ecosystem."
+			}
+		},
+		{
+			"itemId": "docker-swarm",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Containerisierung ist Grundlage der portablen Servicebereitstellung.",
+				"en": "Containerization is the basis for portable service deployment."
+			}
+		},
+		{
+			"itemId": "elasticsearch",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Elasticsearch wird für Suche und Analyse in Fachdiensten genutzt.",
+				"en": "Elasticsearch is used for search and analytics in domain services."
+			}
+		},
+		{
+			"itemId": "java",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Java ist die dominierende Sprache der Kern-Microservices.",
+				"en": "Java is the dominant language for core microservices."
+			}
+		},
+		{
+			"itemId": "jenkins",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Jenkins treibt Build-, Test- und Release-Pipelines.",
+				"en": "Jenkins drives build, test and release pipelines."
+			}
+		},
+		{
+			"itemId": "kubernetes",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Kubernetes ist Zielplattform für skalierbare DIGIT-Deployments.",
+				"en": "Kubernetes is the target platform for scalable DIGIT deployments."
+			}
+		},
+		{
+			"itemId": "postgresql",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "PostgreSQL ist Standarddatenspeicher für zahlreiche Module.",
+				"en": "PostgreSQL is the standard datastore for many modules."
+			}
+		},
+		{
+			"itemId": "spring-boot",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Spring Boot ist das zentrale Backend-Framework.",
+				"en": "Spring Boot is the core backend framework."
+			}
+		},
+		{
+			"itemId": "terraform",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Terraform wird für Infrastrukturbereitstellung und Umgebungsautomation genutzt.",
+				"en": "Terraform is used for infrastructure provisioning and environment automation."
+			}
+		}
+	]
+}

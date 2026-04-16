@@ -1,0 +1,62 @@
+{
+	"id": "ons-digital-landscape",
+	"name": {
+		"de": "ONS Digital Landscape",
+		"en": "ONS Digital Landscape"
+	},
+	"description": {
+		"de": "Offen publizierte organisationsweite Technologie-Landscape-Plattform des UK Office for National Statistics.",
+		"en": "Openly published organization-wide technology landscape platform by the UK Office for National Statistics."
+	},
+	"country": "GB",
+	"issuer": "Office for National Statistics (ONS)",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-16",
+	"items": [
+		{
+			"itemId": "docker-swarm",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Containerisierte App-Bausteine unterstützen reproduzierbare Deployments.",
+				"en": "Containerized app components support reproducible deployments."
+			}
+		},
+		{
+			"itemId": "github-actions",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "GitHub Actions ist Teil der öffentlich sichtbaren CI-Pipeline.",
+				"en": "GitHub Actions is part of the publicly visible CI pipeline."
+			}
+		},
+		{
+			"itemId": "python",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Python wird für Backend- und Datenverarbeitungsdienste eingesetzt.",
+				"en": "Python is used for backend and data-processing services."
+			}
+		},
+		{
+			"itemId": "react",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "React bildet die Frontend-Schicht der Landscape-Anwendung.",
+				"en": "React forms the frontend layer of the landscape application."
+			}
+		},
+		{
+			"itemId": "terraform",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Terraform unterstützt Infrastrukturmanagement im Cloud-Betrieb.",
+				"en": "Terraform supports infrastructure management for cloud operations."
+			}
+		}
+	]
+}

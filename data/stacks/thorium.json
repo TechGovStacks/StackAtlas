@@ -1,0 +1,62 @@
+{
+	"id": "thorium",
+	"name": {
+		"de": "CISA Thorium Stack",
+		"en": "CISA Thorium Stack"
+	},
+	"description": {
+		"de": "Offene Analyseplattform von CISA für automatisierte Malware-, Datei- und Forensikverarbeitung in Multi-Tenant-Umgebungen.",
+		"en": "Open CISA analysis platform for automated malware, file and forensic processing in multi-tenant environments."
+	},
+	"country": "US",
+	"issuer": "Cybersecurity and Infrastructure Security Agency (CISA)",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-16",
+	"items": [
+		{
+			"itemId": "elasticsearch",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Elastic-basierte Suche und Analyse ist Kern der Befundauswertung.",
+				"en": "Elastic-based search and analytics is core to result evaluation."
+			}
+		},
+		{
+			"itemId": "kubernetes",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Thorium wird als Kubernetes-native Plattform betrieben.",
+				"en": "Thorium is operated as a Kubernetes-native platform."
+			}
+		},
+		{
+			"itemId": "redis",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Redis unterstützt Queueing und kurzfristige Statushaltung.",
+				"en": "Redis supports queueing and short-lived state management."
+			}
+		},
+		{
+			"itemId": "scylla",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "ScyllaDB dient als persistenter Hochdurchsatz-Datenspeicher.",
+				"en": "ScyllaDB acts as the persistent high-throughput datastore."
+			}
+		},
+		{
+			"itemId": "traefik",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Traefik wird als Ingress- und Routing-Komponente genutzt.",
+				"en": "Traefik is used as ingress and routing component."
+			}
+		}
+	]
+}

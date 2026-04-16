@@ -1,0 +1,62 @@
+{
+	"id": "cloud-gov",
+	"name": {
+		"de": "cloud.gov Stack",
+		"en": "cloud.gov Stack"
+	},
+	"description": {
+		"de": "US-Bundes-PaaS von der GSA mit Cloud-Foundry-Betrieb auf AWS GovCloud und starkem Open-Source-Fokus.",
+		"en": "US federal PaaS by GSA operating Cloud Foundry on AWS GovCloud with a strong open-source focus."
+	},
+	"country": "US",
+	"issuer": "U.S. General Services Administration (GSA)",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-16",
+	"items": [
+		{
+			"itemId": "docker-swarm",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Containerisierte Workloads bilden die operative Basis der Plattform.",
+				"en": "Containerized workloads form the operational base of the platform."
+			}
+		},
+		{
+			"itemId": "elasticsearch",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "OpenSearch/Elasticsearch-Muster für Logs und Suchindizes.",
+				"en": "OpenSearch/Elasticsearch patterns are used for logs and search indexes."
+			}
+		},
+		{
+			"itemId": "kubernetes",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Cloud-native Betriebsmodell mit orchestrierten Plattformkomponenten.",
+				"en": "Cloud-native operations model with orchestrated platform components."
+			}
+		},
+		{
+			"itemId": "redis",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Redis wird als verwalteter Service-Baustein bereitgestellt.",
+				"en": "Redis is provided as a managed service building block."
+			}
+		},
+		{
+			"itemId": "transport-layer-security-tls",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "TLS-Absicherung ist zentral für den Behördeneinsatz.",
+				"en": "TLS protection is central for federal usage."
+			}
+		}
+	]
+}

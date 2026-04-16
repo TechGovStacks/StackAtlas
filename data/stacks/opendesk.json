@@ -1,0 +1,71 @@
+{
+	"id": "opendesk",
+	"name": {
+		"de": "openDesk Stack",
+		"en": "openDesk Stack"
+	},
+	"description": {
+		"de": "Souveräne Workplace-Suite für die deutsche Verwaltung mit Kubernetes-Betrieb, IAM-Föderation und modularen OSS-Diensten.",
+		"en": "Sovereign workplace suite for German public administration with Kubernetes operations, IAM federation and modular OSS services."
+	},
+	"country": "DE",
+	"issuer": "ZenDiS",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-16",
+	"items": [
+		{
+			"itemId": "gitlab",
+			"status": "recommended",
+			"role": "maintainer",
+			"rationale": {
+				"de": "openDesk wird offen über GitLab-Repositories entwickelt und veröffentlicht.",
+				"en": "openDesk is openly developed and released through GitLab repositories."
+			}
+		},
+		{
+			"itemId": "helm",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Helm ist zentral für die paketierte Bereitstellung der Service-Landschaft.",
+				"en": "Helm is central for packaged deployment of the service landscape."
+			}
+		},
+		{
+			"itemId": "keycloak",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Keycloak bildet die IAM- und SSO-Schicht für Föderation und Rollenmodelle.",
+				"en": "Keycloak forms the IAM and SSO layer for federation and role models."
+			}
+		},
+		{
+			"itemId": "kubernetes",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Kubernetes ist die empfohlene Laufzeit für den produktiven Betrieb.",
+				"en": "Kubernetes is the recommended runtime for production operations."
+			}
+		},
+		{
+			"itemId": "open-id-connect-oidc",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "OIDC unterstützt standardisierte Login- und Föderationsflüsse.",
+				"en": "OIDC supports standardized login and federation flows."
+			}
+		},
+		{
+			"itemId": "postgresql",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "PostgreSQL ist ein typischer Datenspeicher in den angebundenen Diensten.",
+				"en": "PostgreSQL is a common datastore among integrated services."
+			}
+		}
+	]
+}

@@ -1,7 +1,7 @@
 // GENERATED FILE - DO NOT EDIT MANUALLY
 // Generated from: data/layers/ + data/items/ + data/stacks/
 // Logo fallback via: src/data/logo-urls.json
-// Generated at: 2026-04-16T16:12:25.886Z
+// Generated at: 2026-04-16T16:17:15.365Z
 
 import type { Item, Layer, Stack } from '../types';
 
@@ -6329,6 +6329,209 @@ export const STACKS: Stack[] = [
 			]
 		},
 		{
+			"id": "cloud-gov",
+			"name": {
+				"de": "cloud.gov Stack",
+				"en": "cloud.gov Stack"
+			},
+			"description": {
+				"de": "US-Bundes-PaaS von der GSA mit Cloud-Foundry-Betrieb auf AWS GovCloud und starkem Open-Source-Fokus.",
+				"en": "US federal PaaS by GSA operating Cloud Foundry on AWS GovCloud with a strong open-source focus."
+			},
+			"country": "US",
+			"issuer": "U.S. General Services Administration (GSA)",
+			"version": "0.1.0",
+			"publishedAt": "2026-04-16",
+			"items": [
+				{
+					"itemId": "docker-swarm",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Containerisierte Workloads bilden die operative Basis der Plattform.",
+						"en": "Containerized workloads form the operational base of the platform."
+					}
+				},
+				{
+					"itemId": "elasticsearch",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "OpenSearch/Elasticsearch-Muster für Logs und Suchindizes.",
+						"en": "OpenSearch/Elasticsearch patterns are used for logs and search indexes."
+					}
+				},
+				{
+					"itemId": "kubernetes",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Cloud-native Betriebsmodell mit orchestrierten Plattformkomponenten.",
+						"en": "Cloud-native operations model with orchestrated platform components."
+					}
+				},
+				{
+					"itemId": "redis",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Redis wird als verwalteter Service-Baustein bereitgestellt.",
+						"en": "Redis is provided as a managed service building block."
+					}
+				},
+				{
+					"itemId": "transport-layer-security-tls",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "TLS-Absicherung ist zentral für den Behördeneinsatz.",
+						"en": "TLS protection is central for federal usage."
+					}
+				}
+			]
+		},
+		{
+			"id": "digit",
+			"name": {
+				"de": "DIGIT Stack",
+				"en": "DIGIT Stack"
+			},
+			"description": {
+				"de": "Offene DPI-Microservice-Plattform der eGovernments Foundation für kommunale und staatliche Dienste.",
+				"en": "Open DPI microservice platform by eGovernments Foundation for municipal and state services."
+			},
+			"country": "IN",
+			"issuer": "eGovernments Foundation",
+			"version": "0.1.0",
+			"publishedAt": "2026-04-16",
+			"items": [
+				{
+					"itemId": "apache-kafka",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Kafka bildet die Event-Streaming-Schicht im DIGIT-Ökosystem.",
+						"en": "Kafka forms the event-streaming layer in the DIGIT ecosystem."
+					}
+				},
+				{
+					"itemId": "docker-swarm",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Containerisierung ist Grundlage der portablen Servicebereitstellung.",
+						"en": "Containerization is the basis for portable service deployment."
+					}
+				},
+				{
+					"itemId": "elasticsearch",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Elasticsearch wird für Suche und Analyse in Fachdiensten genutzt.",
+						"en": "Elasticsearch is used for search and analytics in domain services."
+					}
+				},
+				{
+					"itemId": "java",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Java ist die dominierende Sprache der Kern-Microservices.",
+						"en": "Java is the dominant language for core microservices."
+					}
+				},
+				{
+					"itemId": "jenkins",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Jenkins treibt Build-, Test- und Release-Pipelines.",
+						"en": "Jenkins drives build, test and release pipelines."
+					}
+				},
+				{
+					"itemId": "kubernetes",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Kubernetes ist Zielplattform für skalierbare DIGIT-Deployments.",
+						"en": "Kubernetes is the target platform for scalable DIGIT deployments."
+					}
+				},
+				{
+					"itemId": "postgresql",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "PostgreSQL ist Standarddatenspeicher für zahlreiche Module.",
+						"en": "PostgreSQL is the standard datastore for many modules."
+					}
+				},
+				{
+					"itemId": "spring-boot",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Spring Boot ist das zentrale Backend-Framework.",
+						"en": "Spring Boot is the core backend framework."
+					}
+				},
+				{
+					"itemId": "terraform",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Terraform wird für Infrastrukturbereitstellung und Umgebungsautomation genutzt.",
+						"en": "Terraform is used for infrastructure provisioning and environment automation."
+					}
+				}
+			]
+		},
+		{
+			"id": "ebsi",
+			"name": {
+				"de": "European Blockchain Services Infrastructure (EBSI)",
+				"en": "European Blockchain Services Infrastructure (EBSI)"
+			},
+			"description": {
+				"de": "Europäische, permissioned Blockchain-Infrastruktur mit APIs, Vertrauensdiensten und Governance für öffentliche Anwendungsfälle.",
+				"en": "European permissioned blockchain infrastructure with APIs, trust services and governance for public-sector use cases."
+			},
+			"issuer": "European Commission",
+			"version": "0.1.0",
+			"publishedAt": "2026-04-16",
+			"items": [
+				{
+					"itemId": "openapi",
+					"status": "recommended",
+					"role": "contributor",
+					"rationale": {
+						"de": "Öffentliche API-Schnittstellen werden dokumentiert und versioniert bereitgestellt.",
+						"en": "Public API interfaces are documented and published in versioned form."
+					}
+				},
+				{
+					"itemId": "open-id-connect-oidc",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "OIDC-Muster werden für Identitäts- und Zugriffsflüsse genutzt.",
+						"en": "OIDC patterns are used for identity and access flows."
+					}
+				},
+				{
+					"itemId": "transport-layer-security-tls",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "TLS ist Grundvoraussetzung für abgesicherte Knoten- und API-Kommunikation.",
+						"en": "TLS is a baseline requirement for secure node and API communication."
+					}
+				}
+			]
+		},
+		{
 			"id": "estonia",
 			"name": {
 				"de": "Estland Stack",
@@ -8139,6 +8342,209 @@ export const STACKS: Stack[] = [
 			]
 		},
 		{
+			"id": "ons-digital-landscape",
+			"name": {
+				"de": "ONS Digital Landscape",
+				"en": "ONS Digital Landscape"
+			},
+			"description": {
+				"de": "Offen publizierte organisationsweite Technologie-Landscape-Plattform des UK Office for National Statistics.",
+				"en": "Openly published organization-wide technology landscape platform by the UK Office for National Statistics."
+			},
+			"country": "GB",
+			"issuer": "Office for National Statistics (ONS)",
+			"version": "0.1.0",
+			"publishedAt": "2026-04-16",
+			"items": [
+				{
+					"itemId": "docker-swarm",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Containerisierte App-Bausteine unterstützen reproduzierbare Deployments.",
+						"en": "Containerized app components support reproducible deployments."
+					}
+				},
+				{
+					"itemId": "github-actions",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "GitHub Actions ist Teil der öffentlich sichtbaren CI-Pipeline.",
+						"en": "GitHub Actions is part of the publicly visible CI pipeline."
+					}
+				},
+				{
+					"itemId": "python",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Python wird für Backend- und Datenverarbeitungsdienste eingesetzt.",
+						"en": "Python is used for backend and data-processing services."
+					}
+				},
+				{
+					"itemId": "react",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "React bildet die Frontend-Schicht der Landscape-Anwendung.",
+						"en": "React forms the frontend layer of the landscape application."
+					}
+				},
+				{
+					"itemId": "terraform",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Terraform unterstützt Infrastrukturmanagement im Cloud-Betrieb.",
+						"en": "Terraform supports infrastructure management for cloud operations."
+					}
+				}
+			]
+		},
+		{
+			"id": "opendesk",
+			"name": {
+				"de": "openDesk Stack",
+				"en": "openDesk Stack"
+			},
+			"description": {
+				"de": "Souveräne Workplace-Suite für die deutsche Verwaltung mit Kubernetes-Betrieb, IAM-Föderation und modularen OSS-Diensten.",
+				"en": "Sovereign workplace suite for German public administration with Kubernetes operations, IAM federation and modular OSS services."
+			},
+			"country": "DE",
+			"issuer": "ZenDiS",
+			"version": "0.1.0",
+			"publishedAt": "2026-04-16",
+			"items": [
+				{
+					"itemId": "gitlab",
+					"status": "recommended",
+					"role": "maintainer",
+					"rationale": {
+						"de": "openDesk wird offen über GitLab-Repositories entwickelt und veröffentlicht.",
+						"en": "openDesk is openly developed and released through GitLab repositories."
+					}
+				},
+				{
+					"itemId": "helm",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Helm ist zentral für die paketierte Bereitstellung der Service-Landschaft.",
+						"en": "Helm is central for packaged deployment of the service landscape."
+					}
+				},
+				{
+					"itemId": "keycloak",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Keycloak bildet die IAM- und SSO-Schicht für Föderation und Rollenmodelle.",
+						"en": "Keycloak forms the IAM and SSO layer for federation and role models."
+					}
+				},
+				{
+					"itemId": "kubernetes",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Kubernetes ist die empfohlene Laufzeit für den produktiven Betrieb.",
+						"en": "Kubernetes is the recommended runtime for production operations."
+					}
+				},
+				{
+					"itemId": "open-id-connect-oidc",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "OIDC unterstützt standardisierte Login- und Föderationsflüsse.",
+						"en": "OIDC supports standardized login and federation flows."
+					}
+				},
+				{
+					"itemId": "postgresql",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "PostgreSQL ist ein typischer Datenspeicher in den angebundenen Diensten.",
+						"en": "PostgreSQL is a common datastore among integrated services."
+					}
+				}
+			]
+		},
+		{
+			"id": "rapidpro",
+			"name": {
+				"de": "RapidPro Stack",
+				"en": "RapidPro Stack"
+			},
+			"description": {
+				"de": "UNICEF-getriebene Open-Source-Messaging- und Workflow-Plattform für Regierungen und humanitäre Programme.",
+				"en": "UNICEF-driven open-source messaging and workflow platform for governments and humanitarian programs."
+			},
+			"issuer": "UNICEF / Nyaruka",
+			"version": "0.1.0",
+			"publishedAt": "2026-04-16",
+			"items": [
+				{
+					"itemId": "django",
+					"status": "recommended",
+					"role": "contributor",
+					"rationale": {
+						"de": "Django ist das zentrale Web-Framework der Plattform.",
+						"en": "Django is the platform's central web framework."
+					}
+				},
+				{
+					"itemId": "elasticsearch",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Elasticsearch unterstützt Suche und Analyse großer Nachrichtenvolumina.",
+						"en": "Elasticsearch supports search and analysis of large message volumes."
+					}
+				},
+				{
+					"itemId": "go",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Go-basierte Dienste ergänzen die Messaging-Verarbeitung.",
+						"en": "Go-based services complement messaging processing."
+					}
+				},
+				{
+					"itemId": "postgresql",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "PostgreSQL speichert Kernzustände von Kontakten, Flows und Events.",
+						"en": "PostgreSQL stores core state for contacts, flows and events."
+					}
+				},
+				{
+					"itemId": "react",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "React wird für Teile der interaktiven Editor-Oberflächen genutzt.",
+						"en": "React is used for parts of the interactive editor UI."
+					}
+				},
+				{
+					"itemId": "redis",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Redis dient als Queue-/Cache-Baustein im skalierbaren Nachrichtenbetrieb.",
+						"en": "Redis acts as a queue/cache building block in scalable messaging operations."
+					}
+				}
+			]
+		},
+		{
 			"id": "singapore",
 			"name": {
 				"de": "Singapur Stack (SGTS)",
@@ -8348,6 +8754,68 @@ export const STACKS: Stack[] = [
 					"rationale": {
 						"de": "TypeScript unterstützt moderne, wartbare Frontend-Implementierungen.",
 						"en": "TypeScript supports modern, maintainable frontend implementations."
+					}
+				}
+			]
+		},
+		{
+			"id": "thorium",
+			"name": {
+				"de": "CISA Thorium Stack",
+				"en": "CISA Thorium Stack"
+			},
+			"description": {
+				"de": "Offene Analyseplattform von CISA für automatisierte Malware-, Datei- und Forensikverarbeitung in Multi-Tenant-Umgebungen.",
+				"en": "Open CISA analysis platform for automated malware, file and forensic processing in multi-tenant environments."
+			},
+			"country": "US",
+			"issuer": "Cybersecurity and Infrastructure Security Agency (CISA)",
+			"version": "0.1.0",
+			"publishedAt": "2026-04-16",
+			"items": [
+				{
+					"itemId": "elasticsearch",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Elastic-basierte Suche und Analyse ist Kern der Befundauswertung.",
+						"en": "Elastic-based search and analytics is core to result evaluation."
+					}
+				},
+				{
+					"itemId": "kubernetes",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Thorium wird als Kubernetes-native Plattform betrieben.",
+						"en": "Thorium is operated as a Kubernetes-native platform."
+					}
+				},
+				{
+					"itemId": "redis",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Redis unterstützt Queueing und kurzfristige Statushaltung.",
+						"en": "Redis supports queueing and short-lived state management."
+					}
+				},
+				{
+					"itemId": "scylla",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "ScyllaDB dient als persistenter Hochdurchsatz-Datenspeicher.",
+						"en": "ScyllaDB acts as the persistent high-throughput datastore."
+					}
+				},
+				{
+					"itemId": "traefik",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Traefik wird als Ingress- und Routing-Komponente genutzt.",
+						"en": "Traefik is used as ingress and routing component."
 					}
 				}
 			]
@@ -8571,6 +9039,67 @@ export const STACKS: Stack[] = [
 					"rationale": {
 						"de": "Terraform unterstützt IaC in föderalen Multi-Cloud-Betriebsmodellen.",
 						"en": "Terraform supports IaC in federal multi-cloud operating models."
+					}
+				}
+			]
+		},
+		{
+			"id": "wikimedia-production",
+			"name": {
+				"de": "Wikimedia Production Stack",
+				"en": "Wikimedia Production Stack"
+			},
+			"description": {
+				"de": "Produktionsnahe Betriebsarchitektur von Wikimedia mit Kubernetes, Observability und MediaWiki-nahen Diensten.",
+				"en": "Production-oriented Wikimedia operations architecture with Kubernetes, observability and MediaWiki-adjacent services."
+			},
+			"issuer": "Wikimedia Foundation",
+			"version": "0.1.0",
+			"publishedAt": "2026-04-16",
+			"items": [
+				{
+					"itemId": "apache-kafka",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Kafka wird für Logging- und Event-Pipelines eingesetzt.",
+						"en": "Kafka is used for logging and event pipelines."
+					}
+				},
+				{
+					"itemId": "envoy-proxy",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Envoy übernimmt TLS- und Service-Mesh-nahe Proxy-Funktionen.",
+						"en": "Envoy provides TLS and service-mesh-style proxy capabilities."
+					}
+				},
+				{
+					"itemId": "helm",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Helm/Helmfile-Muster steuern den Rollout von Produktionsdiensten.",
+						"en": "Helm/Helmfile patterns control rollout of production services."
+					}
+				},
+				{
+					"itemId": "kubernetes",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Kubernetes ist zentrale Laufzeitumgebung für moderne MediaWiki-Workloads.",
+						"en": "Kubernetes is the central runtime for modern MediaWiki workloads."
+					}
+				},
+				{
+					"itemId": "prometheus",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Prometheus bildet den Kern des Metrik- und Monitoring-Stacks.",
+						"en": "Prometheus forms the core of metrics and monitoring."
 					}
 				}
 			]

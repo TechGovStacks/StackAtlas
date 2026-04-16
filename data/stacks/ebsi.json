@@ -1,0 +1,43 @@
+{
+	"id": "ebsi",
+	"name": {
+		"de": "European Blockchain Services Infrastructure (EBSI)",
+		"en": "European Blockchain Services Infrastructure (EBSI)"
+	},
+	"description": {
+		"de": "Europäische, permissioned Blockchain-Infrastruktur mit APIs, Vertrauensdiensten und Governance für öffentliche Anwendungsfälle.",
+		"en": "European permissioned blockchain infrastructure with APIs, trust services and governance for public-sector use cases."
+	},
+	"issuer": "European Commission",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-16",
+	"items": [
+		{
+			"itemId": "openapi",
+			"status": "recommended",
+			"role": "contributor",
+			"rationale": {
+				"de": "Öffentliche API-Schnittstellen werden dokumentiert und versioniert bereitgestellt.",
+				"en": "Public API interfaces are documented and published in versioned form."
+			}
+		},
+		{
+			"itemId": "open-id-connect-oidc",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "OIDC-Muster werden für Identitäts- und Zugriffsflüsse genutzt.",
+				"en": "OIDC patterns are used for identity and access flows."
+			}
+		},
+		{
+			"itemId": "transport-layer-security-tls",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "TLS ist Grundvoraussetzung für abgesicherte Knoten- und API-Kommunikation.",
+				"en": "TLS is a baseline requirement for secure node and API communication."
+			}
+		}
+	]
+}
