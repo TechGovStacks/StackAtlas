@@ -1,7 +1,7 @@
 import type { JSX } from 'preact';
 import { useLocation } from 'preact-iso';
 
-interface RouterLinkProps extends Omit<JSX.HTMLAttributes<HTMLElement>, 'href'> {
+interface RouterLinkProps extends Omit<JSX.HTMLAttributes<HTMLElement>, 'href' | 'ref'> {
 	href: string;
 }
 
