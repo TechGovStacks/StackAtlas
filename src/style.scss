@@ -1128,10 +1128,35 @@ kol-card.article-card,
 	margin: 0 0 var(--ds-space-2);
 }
 
-.drawer-score-total {
-	font-size: 2rem;
-	font-weight: 700;
-	margin-bottom: var(--ds-space-3);
+.drawer-score-category-label {
+	margin: 0 0 var(--ds-space-3);
+	font-size: var(--ds-text-sm);
+	font-weight: 600;
+	text-align: center;
+}
+
+.drawer-score-category-label--insufficient {
+	color: #d32f2f;
+}
+
+.drawer-score-category-label--minimal {
+	color: #f57c00;
+}
+
+.drawer-score-category-label--adequate {
+	color: #f9a825;
+}
+
+.drawer-score-category-label--good {
+	color: #7cb342;
+}
+
+.drawer-score-category-label--excellent {
+	color: #388e3c;
+}
+
+.drawer-score-category-label--outstanding {
+	color: #1b5e20;
 }
 
 .drawer-criteria-list {

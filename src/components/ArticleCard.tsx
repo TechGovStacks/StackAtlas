@@ -73,7 +73,6 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 	const selectedStackItem = stackItemMap?.get(selectedArticle.id) ?? (selectedArticle.id === article.id ? stackItem : undefined);
 	const selectedScoreResult = computeEffectiveSovereigntyScoreResult(selectedArticle.sovereigntyCriteria, selectedStackItem);
 	const selectedScore = selectedScoreResult.score;
-	const selectedScoreColor = selectedScoreResult.color;
 	const selectedScoreCategory = selectedScoreResult.category;
 	const selectedMaintainerBoosted = selectedScoreResult.maintainerBoosted;
 	const selectedOwnerCountry = selectedArticle.ownerCountry?.toUpperCase();
@@ -228,12 +227,9 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 								<div className="drawer-gauge-container">
 									<SovereigntyGauge score={selectedScore} category={selectedScoreCategory} size={200} />
 								</div>
-								<div className="drawer-score-total" style={{ color: selectedScoreColor }}>
-									{selectedScore}/100
-									<span className="drawer-score-category" style={{ marginLeft: '12px', fontSize: '0.8em' }}>
-										({t(`article.scoreCategories.${selectedScoreCategory}`)})
-									</span>
-								</div>
+								<p className={`drawer-score-category-label drawer-score-category-label--${selectedScoreCategory}`}>
+									({t(`article.scoreCategories.${selectedScoreCategory}`)})
+								</p>
 								{selectedMaintainerBoosted && (
 									<div className="drawer-maintainer-boost" role="note" aria-label={t('article.maintainerBoost.noteAria')}>
 										<p className="drawer-maintainer-boost__title">
