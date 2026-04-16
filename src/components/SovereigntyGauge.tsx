@@ -79,6 +79,8 @@ export function SovereigntyGauge({ score, category, size = 200 }: SovereigntyGau
 	const color = CATEGORY_COLORS[category];
 	const fullScaleAngle = 270;
 	const endCap = polarToCartesian(centerX, centerY, outerRadius, fullScaleAngle);
+	const marker100Start = polarToCartesian(centerX, centerY, innerRadius - 2, fullScaleAngle);
+	const marker100End = polarToCartesian(centerX, centerY, outerRadius + 6, fullScaleAngle);
 
 	// Gauge-Ring Segmente für alle Kategorien (Hintergrund)
 	const segmentPaths = CATEGORY_RANGES.map((range, idx) => {
