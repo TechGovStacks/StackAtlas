@@ -33,7 +33,13 @@ export type ItemDependency = {
 	targetItemId: string;
 	type: DependencyType;
 	scope?: DependencyScope;
-	reason?: LocalizableText;
+	reason?:
+		| string
+		| {
+				de: string;
+				en?: string;
+				fr?: string;
+		  };
 };
 
 // Hybrid Scoring Scale: 6 Categories + Numeric Score
