@@ -19,7 +19,6 @@ function AppContent() {
 				<Route path="/" component={StackGalleryPage} />
 				<Route path="/settings" component={SettingsPage} />
 				<Route path="/einstellungen" component={SettingsPage} />
-				<Route path="/govs" component={HomePage} />
 				<Route path="/deps" component={HomePage} />
 				<Route path="/news" component={NewsPage} />
 				<Route path="/neuigkeiten" component={NewsPage} />

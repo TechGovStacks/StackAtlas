@@ -17,7 +17,7 @@ export function Header({ currentUrl }: HeaderProps) {
 	const commitDisplay = getCommitDisplay();
 
 	const isStacksActive = currentUrl === '/' || currentUrl.startsWith('/stacks') || currentUrl.startsWith('/stacks-galerie');
-	const isGovsActive = currentUrl.startsWith('/govs') || currentUrl.startsWith('/deps');
+	const isGovsActive = currentUrl.startsWith('/deps');
 	const isSettingsActive = currentUrl.startsWith('/settings') || currentUrl.startsWith('/einstellungen');
 
 	return (
@@ -61,14 +61,14 @@ export function Header({ currentUrl }: HeaderProps) {
 						</a>
 						<nav className="header__main-nav" aria-label={t('header.mainNavigationAria')}>
 							<a
-								href="#/stacks"
+									href="#/"
 								className={`header__nav-link${isStacksActive ? ' header__nav-link--active' : ''}`}
 								aria-current={isStacksActive ? 'page' : undefined}
 							>
 								{t('header.nav.stacks')}
 							</a>
 							<a
-								href="#/govs"
+									href="#/deps"
 								className={`header__nav-link${isGovsActive ? ' header__nav-link--active' : ''}`}
 								aria-current={isGovsActive ? 'page' : undefined}
 							>
