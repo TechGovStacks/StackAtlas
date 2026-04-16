@@ -1,7 +1,7 @@
 // GENERATED FILE - DO NOT EDIT MANUALLY
 // Generated from: data/layers/ + data/items/ + data/stacks/
 // Logo fallback via: src/data/logo-urls.json
-// Generated at: 2026-04-14T11:49:52.012Z
+// Generated at: 2026-04-14T14:02:55.795Z
 
 import type { Item, Layer, Stack } from '../types';
 
@@ -6895,7 +6895,7 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "kern-ux-standard",
 					"status": "approved",
-					"role": "maintainer",
+					"role": "consumer",
 					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"
@@ -7237,7 +7237,7 @@ export const STACKS: Stack[] = [
 				{
 					"itemId": "public-ui-kolibri",
 					"status": "approved",
-					"role": "maintainer",
+					"role": "consumer",
 					"rationale": {
 						"de": "Integriert in den Deutschland Stack",
 						"en": "Integrated into Germany Stack"

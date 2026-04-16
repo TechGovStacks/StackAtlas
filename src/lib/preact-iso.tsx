@@ -31,7 +31,7 @@ export const LocationProvider: FunctionComponent<{ children: ComponentChildren }
 	const value = useMemo<LocationContextValue>(
 		() => ({
 			navigate: (href, replace = false) => {
-				const nextUrl = new window.URL(href, window.location.origin);
+				const nextUrl = new window.URL(href, window.location.href);
 				const nextPath = `${nextUrl.pathname}${nextUrl.search}${nextUrl.hash}`;
 				if (replace) {
 					window.history.replaceState(null, '', nextPath);
@@ -56,7 +56,7 @@ export const Router: FunctionComponent<{ children: ComponentChildren }> = ({ chi
 		throw new Error('Router must be used within a LocationProvider.');
 	}
 
-	const pathname = location.url.pathname;
+	const pathname = location.url.pathname.replace(/\/$/, '') || '/';
 	let fallback: RouteDefinition | null = null;
 
 	for (const child of toChildArray(children)) {
@@ -88,6 +88,8 @@ export const Link: FunctionComponent<LinkProps> = ({ href, onClick, ...props }) 
 		if (event.defaultPrevented) return;
 		if (!location) return;
 		if (event.button !== 0 || event.metaKey || event.ctrlKey || event.altKey || event.shiftKey) return;
+		const targetUrl = new window.URL(href, window.location.href);
+		if (targetUrl.origin !== window.location.origin) return;
 		event.preventDefault();
 		location.navigate(href);
 	};
