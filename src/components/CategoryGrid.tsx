@@ -11,6 +11,7 @@ import { StackStats } from './StackStats';
 interface CategoryGridProps {
 	layers: Layer[];
 	articles: Item[];
+	stackScoreItems?: Item[];
 	filters: FilterState;
 	onFilterChange: (filters: FilterState) => void;
 	totalCount: number;
@@ -26,6 +27,7 @@ const ITEMS_PER_PAGE = 12;
 export function CategoryGrid({
 	layers,
 	articles,
+	stackScoreItems,
 	filters,
 	onFilterChange,
 	totalCount,
@@ -64,7 +66,7 @@ export function CategoryGrid({
 
 	return (
 		<div id="main-content" className="category-container px-3 md:px-4 lg:px-5">
-			{activeStack && stackItemMap && <StackStats stack={activeStack} items={articles} stackItemMap={stackItemMap} />}
+			{activeStack && stackItemMap && <StackStats stack={activeStack} items={stackScoreItems ?? articles} stackItemMap={stackItemMap} />}
 
 			<p className="results-info" aria-live="polite" aria-atomic="true">
 				{filters.searchQuery || filters.selectedLayer || filters.selectedRelation ? (

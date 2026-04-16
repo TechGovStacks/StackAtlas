@@ -64,6 +64,7 @@ export function HomePage() {
 			<CategoryGrid
 				layers={LAYERS}
 				articles={filtered}
+				stackScoreItems={baseItems}
 				filters={filters}
 				onFilterChange={setFilters}
 				totalCount={baseItems.length}
