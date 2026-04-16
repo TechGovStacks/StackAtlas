@@ -81,7 +81,7 @@ export function FilterBar({
 
 	const innerClassName = [
 		'filter-bar__inner px-3 md:px-4 lg:px-5',
-		activeStackId ? 'filter-bar__inner--with-stack' : 'filter-bar__inner--without-stack',
+		activeStackId ? 'filter-bar__inner--with-relation' : 'filter-bar__inner--without-relation',
 		filters.selectedLayer ? 'filter-bar__inner--with-sublayer' : 'filter-bar__inner--without-sublayer',
 	].join(' ');
 
