@@ -71,7 +71,12 @@ export function FilterBar({
 			{} as Record<ParticipantRole, number>,
 		);
 		const roles: ParticipantRole[] = ['maintainer', 'contributor', 'funder', 'consumer'];
-		return roles.filter((role) => (roleCounts[role] ?? 0) > 0).map((role) => ({ label: `${t(`stack.roles.${role}`)} (${roleCounts[role]})`, value: role }));
+		return roles
+			.filter((role) => (roleCounts[role] ?? 0) > 0)
+			.map((role) => ({
+				label: `${t(`stack.roles.${role}`)} (${roleCounts[role]})`,
+				value: role,
+			}));
 	})();
 
 	return (
