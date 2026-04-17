@@ -18,9 +18,11 @@ const SPLASH_MIN_MS = 8500;
 const splashStart = performance.now();
 let splashDismissed = false;
 
+type KolibriLanguage = NonNullable<NonNullable<Parameters<typeof register>[2]>['translation']>['name'];
+
 function syncKoliBriLanguage(language: string): Promise<void[]> {
 	const normalizedLanguage = normalizeLanguage(language);
-	const kolibriLanguage = normalizedLanguage === 'en-gb' ? 'en' : normalizedLanguage;
+	const kolibriLanguage = normalizedLanguage.split('-')[0] as KolibriLanguage;
 	return register([KERN_V2, DEFAULT], defineCustomElements, { translation: { name: kolibriLanguage } });
 }
 
