@@ -1,10 +1,12 @@
 import mdx from '@mdx-js/rollup';
 import preact from '@preact/preset-vite';
 import UnoCSS from '@unocss/vite';
+import { readFileSync } from 'node:fs';
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
 const isPwaEnabled = process.env.VITE_ENABLE_PWA !== 'false';
+const { version: appVersion } = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf-8')) as { version: string };
 
 export default defineConfig({
 	base: './',
@@ -24,6 +26,7 @@ export default defineConfig({
 			manifest: {
 				name: 'StackAtlas',
 				short_name: 'StackAtlas',
+				version: appVersion,
 				description: 'Interaktive Technologie-Landkarte für ein barrierefreies digitales Ökosystem',
 				theme_color: '#003d82',
 				background_color: '#003d82',
@@ -53,6 +56,7 @@ export default defineConfig({
 				],
 			},
 			workbox: {
+				cacheId: `stackatlas-${appVersion}`,
 				maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
 				globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2,woff}'],
 				cleanupOutdatedCaches: true,
@@ -85,4 +89,7 @@ export default defineConfig({
 			},
 		}),
 	],
+	define: {
+		'import.meta.env.VITE_APP_VERSION': JSON.stringify(appVersion),
+	},
 });

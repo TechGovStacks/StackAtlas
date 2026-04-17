@@ -22,7 +22,8 @@
 			"label": "Language",
 			"hint": "Select display language",
 			"accessKey": "l"
-		}
+		},
+		"version": "Version"
 	},
 	"footer": {
 		"subtitle": "Rate and compare tech stacks worldwide by digital sovereignty",

@@ -22,7 +22,8 @@
 			"label": "Sprache",
 			"hint": "Anzeigesprache auswählen",
 			"accessKey": "l"
-		}
+		},
+		"version": "Version"
 	},
 	"footer": {
 		"subtitle": "Tech-Stacks weltweit nach digitaler Souveränität bewerten und vergleichen",

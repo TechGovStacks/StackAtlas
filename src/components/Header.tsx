@@ -1,7 +1,7 @@
 import { KolButton, KolDrawer } from '@public-ui/preact';
 import { useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
-import { getCommitDisplay } from '../utils';
+import { getAppVersion, getCommitDisplay } from '../utils';
 import { SettingsForm } from './SettingsForm';
 
 interface HeaderProps {
@@ -15,6 +15,7 @@ export function Header({ currentUrl }: HeaderProps) {
 	const baseUrl = import.meta.env.BASE_URL;
 	const brandUrl = import.meta.env.VITE_BRAND_URL ?? baseUrl;
 	const commitDisplay = getCommitDisplay();
+	const appVersion = getAppVersion();
 
 	const isStacksActive = currentUrl === '/' || currentUrl.startsWith('/stacks');
 	const isDepsActive = currentUrl.startsWith('/deps');
@@ -40,7 +41,8 @@ export function Header({ currentUrl }: HeaderProps) {
 						{t('header.officialProjectSetup')}
 					</div>
 					<span className="header__instance-meta">
-						{t('header.mvpLayoutAligned')} • {t('header.commit')}: <code className="header__instance-code">{commitDisplay}</code>
+						{t('header.mvpLayoutAligned')} • {t('header.version')}: <code className="header__instance-code">{appVersion}</code> • {t('header.commit')}:{' '}
+						<code className="header__instance-code">{commitDisplay}</code>
 					</span>
 				</div>
 

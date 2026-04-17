@@ -22,7 +22,8 @@
 			"label": "Langue",
 			"hint": "Sélectionner la langue d’affichage",
 			"accessKey": "l"
-		}
+		},
+		"version": "Version"
 	},
 	"footer": {
 		"subtitle": "Évaluer et comparer les stacks technologiques mondiaux selon leur souveraineté numérique",
