@@ -20,6 +20,22 @@ Die vollstaendige technische Referenz liegt in:
 - **`data/items/`** enthält alle Dependencies (technologische Abhängigkeiten) als einzelne JSON-Dateien
 - Jedes Item gehört zu genau einem Layer
 - Items haben Sovereignty-Criteria, die ihre Bewertung bestimmen
+- Optional können Items mit `dependencies` direkte technische Beziehungen zu anderen Items ausdrücken
+
+#### `dependencies`-Modell (in `item.schema.json`)
+
+Jeder Eintrag in `dependencies` beschreibt eine gerichtete Kante vom aktuellen Item zu einem Ziel-Item:
+
+- `targetItemId` (string, slug-pattern wie `id`) → referenziertes Item
+- `type` (`build | compiles-to | language | protocol | runtime`) → Art der Beziehung
+- `scope` (`required | optional | dev`) → Verbindlichkeit/Kontext der Beziehung
+- `reason` (`string` oder lokalisiertes Objekt mit `de`/`en`/`fr`) → kurze Begründung
+
+Beispiele:
+
+- `react -> javascript-ecma-script` (`type: "runtime"`, `scope: "required"`)
+- `typescript -> javascript-ecma-script` (`type: "compiles-to"`, `scope: "required"`)
+- `spring-boot -> java` (`type: "runtime"`, `scope: "required"`)
 
 ### Sovereign-Standards als Grundlagen
 

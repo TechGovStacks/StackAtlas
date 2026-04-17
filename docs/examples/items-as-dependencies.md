@@ -21,6 +21,43 @@ The StackAtlas data model uses a consistent hierarchy:
 └─────────────────────────────────────────────────────────┘
 ```
 
+## Dependency Field Model (`item.dependencies`)
+
+Items can reference other items via a typed dependency list:
+
+```json
+{
+  "id": "react",
+  "dependencies": [
+    {
+      "targetItemId": "javascript-ecma-script",
+      "type": "runtime",
+      "scope": "required",
+      "reason": {
+        "de": "React wird in einer JavaScript-Laufzeit ausgeführt.",
+        "en": "React executes in a JavaScript runtime."
+      }
+    }
+  ]
+}
+```
+
+Supported relation metadata:
+
+- `targetItemId`: slug of another item
+- `type`: `build | compiles-to | language | protocol | runtime`
+- `scope`: `required | optional | dev`
+- `reason`: localized text object or short plain string
+
+### Canonical Examples
+
+1. **`react -> javascript-ecma-script`**  
+   `type: "runtime"` (alternative modeling: `language`, if language affinity is the relevant angle)
+2. **`typescript -> javascript-ecma-script`**  
+   `type: "compiles-to"`
+3. **`spring-boot -> java`**  
+   `type: "runtime"`
+
 ---
 
 ## Example 1: Infrastructure/Building-Block Dependency

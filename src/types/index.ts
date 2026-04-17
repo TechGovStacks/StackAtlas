@@ -26,6 +26,17 @@ export type Layer = {
 
 export type Maturity = 'sandbox' | 'incubation' | 'graduated';
 export type OwnerType = 'independentConsortium' | 'corporation' | 'community' | 'oneManShow';
+export type DependencyType = 'build' | 'compiles-to' | 'language' | 'protocol' | 'runtime';
+export type DependencyScope = 'dev' | 'optional' | 'required';
+
+export type ItemDependency = {
+	targetItemId: string;
+	/** Technical dependency relation. */
+	type: DependencyType;
+	/** Whether the dependency is required, optional, or only needed in development. */
+	scope?: DependencyScope;
+	reason?: string | LocalizedText;
+};
 
 // Hybrid Scoring Scale: 6 Categories + Numeric Score
 export type SovereigntyScoreCategory =
@@ -93,6 +104,7 @@ export type Item = {
 	license?: string;
 	oss: boolean;
 	maturity?: Maturity;
+	dependencies?: ItemDependency[];
 	sovereigntyCriteria: SovereigntyCriteria;
 	sovereigntyScore?: number;
 	/** Computed from sovereigntyCriteria: category, color, percentile */

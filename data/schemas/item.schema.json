@@ -40,6 +40,48 @@
 				"fr": { "type": "string" }
 			}
 		},
+		"dependencies": {
+			"type": "array",
+			"description": "Optional technical dependencies to other items",
+			"items": {
+				"type": "object",
+				"required": ["targetItemId", "type"],
+				"additionalProperties": false,
+				"properties": {
+					"targetItemId": {
+						"type": "string",
+						"description": "Referenced item identifier (slug format: lowercase with hyphens)",
+						"pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$"
+					},
+					"type": {
+						"type": "string",
+						"description": "Technical relationship between source item and target item (optionality is expressed via scope)",
+						"enum": ["build", "compiles-to", "language", "protocol", "runtime"]
+					},
+					"scope": {
+						"type": "string",
+						"description": "Dependency optionality/relevance for operation/build lifecycle",
+						"enum": ["dev", "optional", "required"]
+					},
+					"reason": {
+						"description": "Short explanation of why the dependency exists",
+						"oneOf": [
+							{ "type": "string", "minLength": 1 },
+							{
+								"type": "object",
+								"required": ["de", "en"],
+								"additionalProperties": false,
+								"properties": {
+									"de": { "type": "string", "minLength": 1 },
+									"en": { "type": "string" },
+									"fr": { "type": "string" }
+								}
+							}
+						]
+					}
+				}
+			}
+		},
 		"homepage": {
 			"type": "string",
 			"description": "Official homepage or project URL",
