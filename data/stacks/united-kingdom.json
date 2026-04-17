@@ -139,5 +139,15 @@
 				"en": "Encrypted connections across all GOV.UK services."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "Government Digital Service",
+				"en": "Government Digital Service",
+				"fr": "Government Digital Service"
+			},
+			"url": "https://www.gov.uk/government/organisations/government-digital-service"
+		}
 	]
 }

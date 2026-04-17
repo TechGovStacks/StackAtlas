@@ -76,5 +76,15 @@
 				"en": "Terraform supports IaC in federal multi-cloud operating models."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "U.S. Digital Service",
+				"en": "U.S. Digital Service",
+				"fr": "U.S. Digital Service"
+			},
+			"url": "https://www.usds.gov/"
+		}
 	]
 }

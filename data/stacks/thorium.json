@@ -58,5 +58,15 @@
 				"en": "Traefik is used as ingress and routing component."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "CISA Thorium",
+				"en": "CISA Thorium",
+				"fr": "CISA Thorium"
+			},
+			"url": "https://www.cisa.gov/resources-tools/services/thorium"
+		}
 	]
 }

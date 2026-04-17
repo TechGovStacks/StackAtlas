@@ -163,6 +163,7 @@
 		"avgScoreAria": "Score moyen de souveraineté : {{score}} sur 100",
 		"scoreDistribution": "Distribution des scores par catégorie",
 		"keyMetrics": "Indicateurs clés",
+		"sourcesTitle": "Sources",
 		"exploreStack": "Explorer le stack dans le catalogue →",
 		"itemCount": "{{count}} entrées",
 		"recommended": "Recommandé",

@@ -139,5 +139,15 @@
 				"en": "Dashboards for SGTS observability."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "Singapore Government Tech Stack",
+				"en": "Singapore Government Tech Stack",
+				"fr": "Singapore Government Tech Stack"
+			},
+			"url": "https://www.tech.gov.sg/products-and-services/sgts"
+		}
 	]
 }

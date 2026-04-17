@@ -138,5 +138,15 @@
 				"en": "Data catalogue component in GovStack open-data setups."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "GovStack",
+				"en": "GovStack",
+				"fr": "GovStack"
+			},
+			"url": "https://www.govstack.global/"
+		}
 	]
 }

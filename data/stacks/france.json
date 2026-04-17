@@ -76,5 +76,15 @@
 				"en": "React is used for modular frontends in government portals."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "La Suite Numérique",
+				"en": "La Suite Numérique",
+				"fr": "La Suite Numérique"
+			},
+			"url": "https://lasuite.numerique.gouv.fr/"
+		}
 	]
 }

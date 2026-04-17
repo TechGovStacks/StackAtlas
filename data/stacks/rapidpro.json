@@ -66,5 +66,15 @@
 				"en": "Redis acts as a queue/cache building block in scalable messaging operations."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "RapidPro",
+				"en": "RapidPro",
+				"fr": "RapidPro"
+			},
+			"url": "https://www.rapidpro.io/"
+		}
 	]
 }

@@ -94,5 +94,15 @@
 				"en": "Terraform is used for infrastructure provisioning and environment automation."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "DIGIT",
+				"en": "DIGIT",
+				"fr": "DIGIT"
+			},
+			"url": "https://digit.org/"
+		}
 	]
 }

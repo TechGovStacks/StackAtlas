@@ -57,5 +57,15 @@
 				"en": "Prometheus forms the core of metrics and monitoring."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "Wikimedia Production Architecture",
+				"en": "Wikimedia Production Architecture",
+				"fr": "Architecture de production Wikimedia"
+			},
+			"url": "https://wikitech.wikimedia.org/wiki/Production_architecture"
+		}
 	]
 }

@@ -164,9 +164,15 @@ export type Stack = {
 	description?: LocalizableText;
 	country?: string;
 	issuer?: string;
+	sources?: StackSource[];
 	version: string;
 	publishedAt?: string;
 	items: StackItem[];
+};
+
+export type StackSource = {
+	label?: LocalizableText;
+	url: string;
 };
 
 // ---------------------------------------------------------------------------

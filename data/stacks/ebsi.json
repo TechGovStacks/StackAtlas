@@ -39,5 +39,15 @@
 				"en": "TLS is a baseline requirement for secure node and API communication."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "European Blockchain Services Infrastructure",
+				"en": "European Blockchain Services Infrastructure",
+				"fr": "European Blockchain Services Infrastructure"
+			},
+			"url": "https://ec.europa.eu/digital-building-blocks/sites/display/EBSI"
+		}
 	]
 }

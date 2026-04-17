@@ -55,6 +55,7 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank }: StackExp
 	const flag = countryToFlagEmoji(stack.country);
 	const localizedName = getLocalizedText(stack.name, i18n.language);
 	const localizedDescription = stack.description ? getLocalizedText(stack.description, i18n.language) : '';
+	const stackSources = stack.sources ?? [];
 
 	// Datumsformatierung memoizieren – stack.publishedAt und i18n.language sind stabil
 	const formattedDate = useMemo(
@@ -108,6 +109,23 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank }: StackExp
 				</div>
 
 				{localizedDescription && <p className="stack-expose__description">{localizedDescription}</p>}
+				{stackSources.length > 0 && (
+					<div className="stack-expose__sources">
+						<p className="stack-expose__sources-title">{t('stackGallery.sourcesTitle')}</p>
+						<ul className="stack-expose__sources-list">
+							{stackSources.map((source) => {
+								const sourceLabel = source.label ? getLocalizedText(source.label, i18n.language) : source.url;
+								return (
+									<li key={`${stack.id}-${source.url}`} className="stack-expose__sources-item">
+										<a href={source.url} target="_blank" rel="noopener noreferrer" className="stack-expose__source-link">
+											{sourceLabel}
+										</a>
+									</li>
+								);
+							})}
+						</ul>
+					</div>
+				)}
 			</div>
 
 			{/* ── Score-Sektion ─────────────────────────────────────────── */}

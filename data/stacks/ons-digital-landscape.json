@@ -58,5 +58,15 @@
 				"en": "Terraform supports infrastructure management for cloud operations."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "ONS Technology",
+				"en": "ONS Technology",
+				"fr": "ONS Technology"
+			},
+			"url": "https://technology.blog.gov.uk/"
+		}
 	]
 }

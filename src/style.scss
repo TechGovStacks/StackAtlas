@@ -1757,6 +1757,44 @@ kol-select {
 	width: 100%;
 }
 
+.stack-expose__sources {
+	width: 100%;
+}
+
+.stack-expose__sources-title {
+	font-size: var(--ds-text-xs);
+	font-weight: 600;
+	color: var(--ds-color-text-muted);
+	margin: 0 0 var(--ds-space-1);
+}
+
+.stack-expose__sources-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--ds-space-1) var(--ds-space-3);
+}
+
+.stack-expose__sources-item {
+	font-size: var(--ds-text-xs);
+}
+
+.stack-expose__source-link {
+	color: var(--ds-color-primary);
+	text-decoration: underline;
+
+	&:hover {
+		color: var(--ds-color-accent);
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--ds-color-accent);
+		outline-offset: 2px;
+	}
+}
+
 .stack-expose__meta-row {
 	display: flex;
 	flex-direction: column;

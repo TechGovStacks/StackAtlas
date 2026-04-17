@@ -1165,5 +1165,15 @@
 				"en": "Integrated into Germany Stack"
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "Deutschland-Stack Dokumentation",
+				"en": "Germany Stack documentation",
+				"fr": "Documentation Germany Stack"
+			},
+			"url": "https://github.com/deleonio/accessible-d-stack-landscape/blob/main/data/stacks/germany.json"
+		}
 	]
 }

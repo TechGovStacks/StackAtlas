@@ -76,5 +76,15 @@
 				"en": "TypeScript is the preferred language for frontend and platform clients."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "Canadian Digital Service",
+				"en": "Canadian Digital Service",
+				"fr": "Canadian Digital Service"
+			},
+			"url": "https://digital.canada.ca/"
+		}
 	]
 }

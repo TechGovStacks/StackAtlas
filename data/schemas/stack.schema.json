@@ -48,6 +48,32 @@
 			"type": "string",
 			"description": "ISO 8601 publication date (YYYY-MM-DD)"
 		},
+		"sources": {
+			"type": "array",
+			"description": "Reference sources for this stack definition",
+			"items": {
+				"type": "object",
+				"required": ["url"],
+				"additionalProperties": false,
+				"properties": {
+					"label": {
+						"type": "object",
+						"description": "Optional localized label for the source link",
+						"additionalProperties": false,
+						"properties": {
+							"de": { "type": "string" },
+							"en": { "type": "string" },
+							"fr": { "type": "string" }
+						}
+					},
+					"url": {
+						"type": "string",
+						"description": "URL to the source",
+						"format": "uri"
+					}
+				}
+			}
+		},
 		"items": {
 			"type": "array",
 			"description": "Items included in this stack with status and role-based sovereignty scoring",

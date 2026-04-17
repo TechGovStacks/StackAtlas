@@ -67,5 +67,15 @@
 				"en": "TypeScript supports modern, maintainable frontend implementations."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "eGovFrame",
+				"en": "eGovFrame",
+				"fr": "eGovFrame"
+			},
+			"url": "https://www.egovframe.go.kr/"
+		}
 	]
 }

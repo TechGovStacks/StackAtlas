@@ -67,5 +67,15 @@
 				"en": "TLS/MTLS is mandatory for secure data transport in CDR."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "Digital Transformation Agency",
+				"en": "Digital Transformation Agency",
+				"fr": "Digital Transformation Agency"
+			},
+			"url": "https://www.dta.gov.au/"
+		}
 	]
 }

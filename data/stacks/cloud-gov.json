@@ -58,5 +58,15 @@
 				"en": "TLS protection is central for federal usage."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "cloud.gov",
+				"en": "cloud.gov",
+				"fr": "cloud.gov"
+			},
+			"url": "https://cloud.gov/"
+		}
 	]
 }

@@ -138,5 +138,15 @@
 				"en": "Standard encryption for all EU API endpoints."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "EIRA (EU)",
+				"en": "EIRA (EU)",
+				"fr": "EIRA (UE)"
+			},
+			"url": "https://joinup.ec.europa.eu/collection/european-interoperability-reference-architecture-eira"
+		}
 	]
 }

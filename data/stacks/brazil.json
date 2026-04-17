@@ -94,5 +94,15 @@
 				"en": "React powers user interfaces in portals and signature services."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "Gov.br",
+				"en": "Gov.br",
+				"fr": "Gov.br"
+			},
+			"url": "https://www.gov.br/"
+		}
 	]
 }

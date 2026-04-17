@@ -139,5 +139,15 @@
 				"en": "Transport encryption of all India Stack endpoints."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "India Stack",
+				"en": "India Stack",
+				"fr": "India Stack"
+			},
+			"url": "https://indiastack.org/"
+		}
 	]
 }

@@ -130,5 +130,15 @@
 				"en": "Container orchestration in smaller setups."
 			}
 		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "X-Road",
+				"en": "X-Road",
+				"fr": "X-Road"
+			},
+			"url": "https://x-road.global/"
+		}
 	]
 }
