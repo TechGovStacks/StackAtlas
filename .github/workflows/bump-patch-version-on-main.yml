@@ -35,7 +35,7 @@ jobs:
         run: |
           set -euo pipefail
 
-          if [ -z "$(git status --porcelain package.json)" ]; then
+          if [ -z "$(git status --porcelain package.json package-lock.json)" ]; then
             echo "No version change detected."
             exit 0
           fi
@@ -45,6 +45,9 @@ jobs:
 
           NEW_VERSION="$(node -p "require('./package.json').version")"
           git add package.json
+          if [ -f package-lock.json ]; then
+            git add package-lock.json
+          fi
           git commit -m "chore(release): bump patch version to ${NEW_VERSION}"
           git pull --rebase origin main
           git push origin HEAD:main
