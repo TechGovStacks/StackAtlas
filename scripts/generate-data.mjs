@@ -69,6 +69,43 @@ function computeSovereigntyScore(criteria = {}) {
 	return baseScore + ownerScore;
 }
 
+function buildDependencyIndexes(rawItems) {
+	const dependencyGraph = {};
+	const reverseDependencies = {};
+
+	for (const item of rawItems) {
+		const sourceId = item.id;
+		if (!sourceId) continue;
+
+		const normalizedDependencies = (item.dependencies ?? []).map((dependency) => ({
+			targetItemId: dependency.targetItemId,
+			type: dependency.type,
+			scope: dependency.scope ?? 'required',
+		}));
+
+		dependencyGraph[sourceId] = normalizedDependencies;
+
+		for (const dependency of normalizedDependencies) {
+			const targetId = dependency.targetItemId;
+			if (!reverseDependencies[targetId]) reverseDependencies[targetId] = [];
+			reverseDependencies[targetId].push({
+				sourceItemId: sourceId,
+				type: dependency.type,
+				scope: dependency.scope,
+			});
+		}
+	}
+
+	for (const targetId of Object.keys(reverseDependencies)) {
+		reverseDependencies[targetId].sort((left, right) => left.sourceItemId.localeCompare(right.sourceItemId));
+	}
+
+	return {
+		dependencyGraph,
+		reverseDependencies,
+	};
+}
+
 // ---------------------------------------------------------------------------
 // Read all JSON files from a directory (ignores .gitkeep.json and _*)
 // ---------------------------------------------------------------------------
@@ -106,6 +143,7 @@ const items = rawItems.map((item) => ({
 	sovereigntyScore: computeSovereigntyScore(item.sovereigntyCriteria),
 }));
 
+const { dependencyGraph, reverseDependencies } = buildDependencyIndexes(items);
 const stacks = readJsonDir(join(DATA_DIR, 'stacks'));
 
 // ---------------------------------------------------------------------------
@@ -142,6 +180,10 @@ export const ITEMS: Item[] = RAW_ITEMS.map((item) => ({
 \t...item,
 \tlogo: withAssetBaseUrl(item.logo),
 }));
+
+export const DEPENDENCY_GRAPH = ${serialize(dependencyGraph)} as const;
+
+export const REVERSE_DEPENDENCIES = ${serialize(reverseDependencies)} as const;
 
 export const STACKS: Stack[] = ${serialize(stacks)};
 `;
