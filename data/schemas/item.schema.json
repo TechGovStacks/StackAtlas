@@ -55,12 +55,12 @@
 					},
 					"type": {
 						"type": "string",
-						"description": "Relationship type between source item and target item",
+						"description": "Technical relationship between source item and target item (optionality is expressed via scope)",
 						"enum": ["build", "compiles-to", "language", "protocol", "runtime"]
 					},
 					"scope": {
 						"type": "string",
-						"description": "Dependency relevance for operation/build lifecycle",
+						"description": "Dependency optionality/relevance for operation/build lifecycle",
 						"enum": ["dev", "optional", "required"]
 					},
 					"reason": {

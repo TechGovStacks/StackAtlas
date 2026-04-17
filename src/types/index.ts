@@ -31,7 +31,9 @@ export type DependencyScope = 'dev' | 'optional' | 'required';
 
 export type ItemDependency = {
 	targetItemId: string;
+	/** Technical dependency relation. */
 	type: DependencyType;
+	/** Whether the dependency is required, optional, or only needed in development. */
 	scope?: DependencyScope;
 	reason?: string | LocalizedText;
 };
