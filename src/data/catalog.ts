@@ -1,1 +1,1 @@
-export { ITEMS, LAYERS, STACKS } from './items.generated';
+export { DEPENDENCY_GRAPH, ITEMS, LAYERS, REVERSE_DEPENDENCIES, STACKS } from './items.generated';

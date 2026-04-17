@@ -12,6 +12,11 @@ import url from 'url';
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 const projectRoot = path.join(__dirname, '..');
+const itemDataDir = path.join(projectRoot, 'data/items');
+const itemSchemaFile = 'data/schemas/item.schema.json';
+
+const args = new Set(process.argv.slice(2));
+const cycleCheckEnabled = args.has('--check-cycles');
 
 const ajv = new Ajv({ allErrors: true });
 addFormats(ajv);
@@ -24,7 +29,7 @@ const validationMap = [
 		name: 'Layer',
 	},
 	{
-		schemaFile: 'data/schemas/item.schema.json',
+		schemaFile: itemSchemaFile,
 		dataDir: 'data/items',
 		name: 'Item',
 	},
@@ -38,6 +43,9 @@ const validationMap = [
 let totalFiles = 0;
 let validFiles = 0;
 let totalErrors = 0;
+let totalWarnings = 0;
+
+const semanticErrorMessages = [];
 
 console.log('🔍 JSON Schema Validation - Starting...\n');
 
@@ -121,11 +129,18 @@ for (const { schemaFile, dataDir, name } of validationMap) {
 	console.log(`\n   ✓ ${categoryValid}/${files.length} valid\n`);
 }
 
+runDependencySemanticChecks();
+
+if (cycleCheckEnabled) {
+	runCycleChecks();
+}
+
 // Summary
 console.log('\n📊 Summary');
 console.log('─'.repeat(40));
 console.log(`Total files:  ${totalFiles}`);
 console.log(`Valid:        ${validFiles}`);
+console.log(`Warnings:     ${totalWarnings}`);
 console.log(`Errors:       ${totalErrors}`);
 
 if (totalErrors === 0) {
@@ -134,4 +149,212 @@ if (totalErrors === 0) {
 } else {
 	console.log(`\n❌ Validation failed with ${totalErrors} error(s)`);
 	process.exit(1);
+}
+
+function getItemRecords() {
+	if (!fs.existsSync(itemDataDir)) {
+		semanticErrorMessages.push('Items directory not found: data/items');
+		return [];
+	}
+
+	return fs
+		.readdirSync(itemDataDir)
+		.filter((file) => file.endsWith('.json') && file !== '.gitkeep.json')
+		.sort()
+		.map((file) => {
+			const filePath = path.join(itemDataDir, file);
+			try {
+				const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+				return { file, data };
+			} catch (error) {
+				semanticErrorMessages.push(`${file}: invalid JSON (${error.message})`);
+				return null;
+			}
+		})
+		.filter(Boolean);
+}
+
+function runDependencySemanticChecks() {
+	console.log('🔗 Dependency semantic checks:');
+
+	const itemRecords = getItemRecords();
+	if (itemRecords.length === 0) {
+		totalWarnings++;
+		console.warn('   ⚠️  No item data available for dependency checks');
+		return;
+	}
+
+	const itemIdSet = new Set(itemRecords.map(({ data }) => data.id).filter(Boolean));
+	const edgeKeysByItem = new Map();
+
+	for (const { file, data: item } of itemRecords) {
+		const dependencies = Array.isArray(item.dependencies) ? item.dependencies : [];
+		const sourceId = item.id;
+
+		if (!sourceId) {
+			semanticErrorMessages.push(`${file}: missing item.id for dependency validation`);
+			continue;
+		}
+
+		if (!edgeKeysByItem.has(sourceId)) {
+			edgeKeysByItem.set(sourceId, new Set());
+		}
+
+		const seenEdges = edgeKeysByItem.get(sourceId);
+
+		for (const dependency of dependencies) {
+			const targetItemId = dependency?.targetItemId;
+			const type = dependency?.type;
+			const scope = dependency?.scope ?? 'required';
+			const edgeKey = `${targetItemId}::${type}::${scope}`;
+
+			if (!itemIdSet.has(targetItemId)) {
+				semanticErrorMessages.push(`${file}: dependency target '${targetItemId}' does not exist in data/items`);
+			}
+
+			if (sourceId === targetItemId) {
+				semanticErrorMessages.push(`${file}: self-dependency is not allowed (${sourceId} -> ${targetItemId})`);
+			}
+
+			if (seenEdges.has(edgeKey)) {
+				semanticErrorMessages.push(`${file}: duplicate dependency edge detected (${sourceId} -> ${targetItemId}, type=${type}, scope=${scope})`);
+			} else {
+				seenEdges.add(edgeKey);
+			}
+		}
+	}
+
+	for (const message of semanticErrorMessages) {
+		totalErrors++;
+		console.error(`   ❌ ${message}`);
+	}
+
+	if (semanticErrorMessages.length === 0) {
+		console.log('   ✅ Dependency semantics passed');
+	}
+
+	console.log('');
+}
+
+function runCycleChecks() {
+	console.log('🧭 Dependency cycle checks:');
+
+	const itemRecords = getItemRecords();
+	if (itemRecords.length === 0) {
+		totalWarnings++;
+		console.warn('   ⚠️  No item data available for cycle checks');
+		console.log('');
+		return;
+	}
+
+	const graph = new Map();
+	for (const { data: item } of itemRecords) {
+		if (!item?.id) continue;
+		const edges = (item.dependencies ?? [])
+			.filter((dependency) => typeof dependency?.targetItemId === 'string')
+			.map((dependency) => ({
+				to: dependency.targetItemId,
+				type: dependency.type,
+				scope: dependency.scope ?? 'required',
+			}));
+		graph.set(item.id, edges);
+	}
+
+	const detectedCycles = findCycles(graph);
+	if (detectedCycles.length === 0) {
+		console.log('   ✅ No cycles detected');
+		console.log('');
+		return;
+	}
+
+	for (const cycle of detectedCycles) {
+		const path = cycle.path.join(' -> ');
+		const severity = getCycleSeverity(cycle.edges);
+
+		if (severity === 'error') {
+			totalErrors++;
+			console.error(`   ❌ [ERROR] Cycle detected: ${path}`);
+		} else {
+			totalWarnings++;
+			console.warn(`   ⚠️  [WARN] Cycle detected: ${path}`);
+		}
+	}
+
+	console.log('');
+}
+
+function findCycles(graph) {
+	const states = new Map();
+	const stack = [];
+	const stackIndexByNode = new Map();
+	const seenCycleKeys = new Set();
+	const cycles = [];
+
+	for (const node of graph.keys()) {
+		if (states.get(node) === 2) continue;
+		dfs(node);
+	}
+
+	return cycles;
+
+	function dfs(node) {
+		states.set(node, 1);
+		stackIndexByNode.set(node, stack.length);
+		stack.push(node);
+
+		for (const edge of graph.get(node) ?? []) {
+			const next = edge.to;
+			if (!graph.has(next)) continue;
+
+			if (states.get(next) === 1) {
+				const cycleStartIndex = stackIndexByNode.get(next);
+				const cycleNodes = stack.slice(cycleStartIndex);
+				cycleNodes.push(next);
+
+				const cycleEdges = [];
+				for (let i = 0; i < cycleNodes.length - 1; i++) {
+					const from = cycleNodes[i];
+					const to = cycleNodes[i + 1];
+					const cycleEdge = (graph.get(from) ?? []).find((currentEdge) => currentEdge.to === to);
+					if (cycleEdge) cycleEdges.push(cycleEdge);
+				}
+
+				const cycleKey = normalizeCycleKey(cycleNodes);
+				if (!seenCycleKeys.has(cycleKey)) {
+					seenCycleKeys.add(cycleKey);
+					cycles.push({ path: cycleNodes, edges: cycleEdges });
+				}
+				continue;
+			}
+
+			if (!states.get(next)) {
+				dfs(next);
+			}
+		}
+
+		stack.pop();
+		stackIndexByNode.delete(node);
+		states.set(node, 2);
+	}
+}
+
+function normalizeCycleKey(cyclePath) {
+	const pathWithoutClosingNode = cyclePath.slice(0, -1);
+	if (pathWithoutClosingNode.length === 0) return '';
+
+	let best = null;
+	for (let i = 0; i < pathWithoutClosingNode.length; i++) {
+		const rotated = pathWithoutClosingNode.slice(i).concat(pathWithoutClosingNode.slice(0, i));
+		const key = rotated.join('->');
+		if (!best || key < best) best = key;
+	}
+
+	return best;
+}
+
+function getCycleSeverity(edges) {
+	const hardDependencyTypes = new Set(['build', 'compiles-to', 'runtime']);
+	const hasHardType = edges.some((edge) => hardDependencyTypes.has(edge.type));
+	const hasRequiredScope = edges.some((edge) => edge.scope === 'required');
+	return hasHardType || hasRequiredScope ? 'error' : 'warn';
 }
