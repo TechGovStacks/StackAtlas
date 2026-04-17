@@ -7,8 +7,7 @@ import i18next from 'i18next';
 import { render } from 'preact';
 import App from './App';
 import { i18nReady } from './i18n';
-import { FALLBACK_LANGUAGE, SUPPORTED_LANGUAGES } from './i18n/language';
-import { normalizeLanguageCode } from './utils/normalizeLanguageCode';
+import { normalizeLanguage } from './i18n/language';
 
 /**
  * Splash minimum display time (ms).
@@ -20,7 +19,7 @@ const splashStart = performance.now();
 let splashDismissed = false;
 
 function syncKoliBriLanguage(language: string): Promise<void[]> {
-	const normalizedLanguage = normalizeLanguageCode(language, SUPPORTED_LANGUAGES, FALLBACK_LANGUAGE);
+	const normalizedLanguage = normalizeLanguage(language);
 	return register([KERN_V2, DEFAULT], defineCustomElements, { translation: { name: normalizedLanguage } });
 }
 

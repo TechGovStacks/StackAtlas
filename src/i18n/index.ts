@@ -1,8 +1,7 @@
 import i18next from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import { initReactI18next } from 'react-i18next';
-import { normalizeLanguageCode } from '../utils/normalizeLanguageCode';
-import { FALLBACK_LANGUAGE, SUPPORTED_LANGUAGES } from './language';
+import { FALLBACK_LANGUAGE, normalizeLanguage, SUPPORTED_LANGUAGES } from './language';
 import deCommon from './locales/de/common.json';
 import enCommon from './locales/en/common.json';
 import frCommon from './locales/fr/common.json';
@@ -41,12 +40,12 @@ export const i18nReady = i18next
 		const lng = i18next.resolvedLanguage ?? i18next.language;
 
 		if (lng) {
-			document.documentElement.lang = normalizeLanguageCode(lng, SUPPORTED_LANGUAGES, FALLBACK_LANGUAGE);
+			document.documentElement.lang = normalizeLanguage(lng);
 		}
 	});
 
 i18next.on('languageChanged', (lng: string) => {
 	if (lng) {
-		document.documentElement.lang = normalizeLanguageCode(lng, SUPPORTED_LANGUAGES, FALLBACK_LANGUAGE);
+		document.documentElement.lang = normalizeLanguage(lng);
 	}
 });
