@@ -1,0 +1,274 @@
+{
+	"header": {
+		"skipToContent": "Skip to main content",
+		"instanceInfoAria": "Instance information",
+		"officialProjectSetup": "Measure & Compare Digital Sovereignty",
+		"mvpLayoutAligned": "Aligned with documentation requirements (MVP layout)",
+		"commit": "Commit",
+		"mainNavigationAria": "Main navigation",
+		"nav": {
+			"home": "Home",
+			"categories": "Categories",
+			"docs": "Docs",
+			"imprint": "Imprint",
+			"settings": "Settings",
+			"stacks": "Stacks",
+			"deps": "Deps"
+		},
+		"eyebrow": "Measure & Compare Digital Sovereignty",
+		"subtitle": "How sovereign is your tech stack? StackAtlas scores technologies and standards worldwide with a transparent sovereignty score from 0–100 – and reveals which dependencies threaten your digital independence.",
+		"languageSwitcher": {
+			"ariaLabel": "Switch language",
+			"label": "Language",
+			"hint": "Select display language",
+			"accessKey": "l"
+		},
+		"version": "Version"
+	},
+	"footer": {
+		"subtitle": "Rate and compare tech stacks worldwide by digital sovereignty",
+		"navigationAria": "Footer navigation",
+		"links": {
+			"github": "GitHub",
+			"community": "Community",
+			"documentation": "Documentation",
+			"settings": "Settings",
+			"news": "News",
+			"stacks": "Stacks",
+			"graphsBeta": "Graphs (Beta)"
+		},
+		"license": "License: EUPL-1.2",
+		"builtWith": "Built with",
+		"and": "and",
+		"buildCommitAria": "Build commit {{commit}}",
+		"buildCommitLabel": "Build commit:",
+		"buildInfoAria": "Build version {{version}} and commit {{commit}}",
+		"buildVersionLabel": "Build version:"
+	},
+	"search": {
+		"regionAria": "Search and filter",
+		"inputLabel": "Search",
+		"placeholder": "Search technology, standard or framework …",
+		"categoryLabel": "Layer",
+		"allCategories": "All layers",
+		"relationLabel": "Relation",
+		"allRelations": "All relations",
+		"dependencies": {
+			"directOnlyLabel": "Direct dependencies only",
+			"depthLabel": "Dependency depth",
+			"allDepths": "All depths",
+			"allTypes": "All dependency types",
+			"depth": {
+				"1": "Depth 1",
+				"2": "Depth 2",
+				"3": "Depth 3"
+			},
+			"typeLabel": "Dependency type",
+			"type": {
+				"build": "Build",
+				"compiles-to": "Compiles-to",
+				"language": "Language",
+				"protocol": "Protocol",
+				"runtime": "Runtime"
+			}
+		}
+	},
+	"category": {
+		"toolbarAria": "Filter layers",
+		"label": "Layer",
+		"all": "All",
+		"results": {
+			"filteredPrefix": "of",
+			"entries": "entries",
+			"inCategory": "in {{category}}",
+			"forQuery": "for “{{query}}”",
+			"withRelation": "with relation “{{relation}}”",
+			"totalTechnologiesAndStandards": "rated technologies & standards"
+		},
+		"paginationLabel": "Navigate through the articles"
+	},
+	"results": {
+		"noneFound": "No entries found",
+		"adjustFilters": "Please adjust your search or category filter."
+	},
+	"view": {
+		"toolbarAria": "View and sorting",
+		"viewToggle": "Tile / List",
+		"tile": "Tiles",
+		"list": "List",
+		"sort": {
+			"label": "Sort by",
+			"name": "Name",
+			"score": "Score",
+			"asc": "↑ Ascending",
+			"desc": "↓ Descending"
+		}
+	},
+	"article": {
+		"categoryAria": "Category: {{category}}",
+		"openDetails": "Score & Details →",
+		"featured": "Featured",
+		"detailsFor": "Details for {{name}}",
+		"categoryLabel": "Category: {{category}}",
+		"relatedTitle": "More entries in the same layer & stack",
+		"relatedTitleLayer": "All entries in the same layer",
+		"relatedSubtitleLayer": "No stack active – showing all {{count}} entries in this layer.",
+		"relatedSubtitleStack": "Filtered by stack – {{count}} entries in the same layer.",
+		"website": "Website ↗",
+		"repository": "Repository ↗",
+		"scoreTitle": "Sovereignty Score",
+		"scoreAria": "Sovereignty score: {{score}} of 100",
+		"sovereigntyScore": "Sovereignty Score (0–100)",
+		"criteria": {
+			"selfHostable": "Self-hostable (no third-party infrastructure required)",
+			"dataPortability": "Data exportable in open, non-proprietary formats",
+			"openSource": "Open Source (public source code)",
+			"openStandards": "Built on open, vendor-neutral standards",
+			"permissiveLicense": "Permissive or copyleft license (forkable)",
+			"hasAudit": "Security audit available",
+			"matureProject": "Mature project (graduated/stable)",
+			"noTelemetryByDefault": "No telemetry collected by default",
+			"euHeadquartered": "EU headquarters or registration",
+			"ownerType": "Owner model: {{owner}} (+{{points}})",
+			"ownerCountry": "Owner country: {{country}}"
+		},
+		"ownerType": {
+			"independentConsortium": "Independent consortium",
+			"corporation": "Corporation",
+			"community": "Community",
+			"oneManShow": "One-man show",
+			"unknown": "Not maintained"
+		},
+		"ownerCountry": {
+			"unknown": "Unknown"
+		},
+		"scoreCategories": {
+			"insufficient": "Insufficient",
+			"insufficientDescription": "Not recommended – significant sovereignty risks",
+			"minimal": "Minimal",
+			"minimalDescription": "Only under specific conditions",
+			"adequate": "Adequate",
+			"adequateDescription": "Acceptable, but improvement needed",
+			"good": "Good",
+			"goodDescription": "Recommended for most cases",
+			"excellent": "Excellent",
+			"excellentDescription": "Highly recommended – excellent sovereignty",
+			"outstanding": "Outstanding",
+			"outstandingDescription": "Gold standard – optimal sovereignty"
+		},
+		"maintainerBoost": {
+			"title": "Maintainer sovereignty applied",
+			"explanation": "Within the active stack your organisation maintains this item. You control source code, hosting, data formats, protocols and telemetry directly – any lack of public access is a deliberate security posture rather than a sovereignty gap. Context score: {{effectiveScore}}/100 (public score: {{rawScore}}/100).",
+			"boostedCriteriaLabel": "Satisfied by maintainer context",
+			"criterionMarker": "satisfied as maintainer",
+			"criterionTitle": "This criterion is not publicly satisfied, but it counts as satisfied from the maintainer's perspective because the maintaining organisation controls it directly.",
+			"markerTitle": "Maintainer context boost",
+			"badgeTitle": "Maintainer context active – public score: {{rawScore}}/100",
+			"scoreAria": "Sovereignty score (maintainer context): {{score}} of 100 – public score: {{rawScore}} of 100",
+			"noteAria": "Note about the maintainer context"
+		}
+	},
+	"pwa": {
+		"updateAvailable": "A new version of StackAtlas is available.",
+		"update": "Update now",
+		"dismiss": "Later"
+	},
+	"stack": {
+		"label": "Stack",
+		"all": "Without",
+		"selectorAria": "Select stack",
+		"rationale": "Rationale",
+		"stats": {
+			"version": "v{{version}}",
+			"items": "{{count}} items",
+			"avgScore": "Avg. sovereignty score"
+		},
+		"roles": {
+			"maintainer": "Maintainer",
+			"contributor": "Contributor",
+			"funder": "Funder",
+			"consumer": "Consumer"
+		}
+	},
+	"stackGallery": {
+		"title": "Stack Gallery",
+		"subtitle": "All rated tech stacks ranked by digital sovereignty score – best to lowest.",
+		"listAria": "Tech stacks ranked by sovereignty score",
+		"bestStack": "Top-ranked stack – gold placement",
+		"rankAria": "Rank {{rank}}",
+		"avgScore": "Avg. sovereignty score",
+		"avgScoreAria": "Average sovereignty score: {{score}} out of 100",
+		"scoreDistribution": "Score distribution by category",
+		"keyMetrics": "Key metrics",
+		"sourcesTitle": "Sources",
+		"exploreStack": "Explore stack in catalogue →",
+		"itemCount": "{{count}} items",
+		"recommended": "Recommended",
+		"approved": "Approved",
+		"deprecated": "Deprecated",
+		"metrics": {
+			"selfHostable": "Self-hostable",
+			"openSource": "Open source",
+			"euHQ": "EU headquartered",
+			"permissiveLicense": "Permissive license",
+			"audit": "Audited",
+			"ownerCountry": "Owner country",
+			"unknown": "Unknown",
+			"layerBreakdown": "Layer breakdown",
+			"roles": "Roles"
+		}
+	},
+	"pages": {
+		"imprint": {
+			"description": "This page provides legal notices and provider information for StackAtlas.",
+			"title": "Imprint"
+		},
+		"settings": {
+			"description": "Manage application settings and preferences for StackAtlas here.",
+			"title": "Settings"
+		},
+		"news": {
+			"title": "Rating Reports & Community News",
+			"description": "Add new dated MD/MDX files to `src/content/news/`. News posts can directly import additional report markdown files.",
+			"sectionAria": "List of published news posts",
+			"pushHint": "As soon as a new score is available, we publish an MDX post and can trigger push notifications from it.",
+			"metaDate": "Published on {{date}}",
+			"empty": "No news posts published yet.",
+			"focus": {
+				"openDataGovernance": "Focus: Open Data Governance",
+				"identityWalletInteroperability": "Focus: Identity Wallet Interoperability",
+				"reportTemplate": "Focus: Report Template"
+			}
+		}
+	},
+	"dependencies": {
+		"requiredByItem": "Requires",
+		"usedBy": "Used by",
+		"whyConnection": "Why this connection?",
+		"meta": "Type: {{type}} · Scope: {{scope}}",
+		"noReason": "No comment provided.",
+		"graph": {
+			"aria": "Dependency graph",
+			"title": "Dependency graph",
+			"empty": "No dependencies found for the current filter selection.",
+			"typeLegend": "Type",
+			"scopeLegend": "Scope",
+			"canvasAria": "Graph with {{count}} dependency edges",
+			"edgeAria": "Edge from {{source}} to {{target}}",
+			"whyConnection": "Why this connection?",
+			"edgeType": "Dependency type: {{type}}",
+			"edgeScope": "Scope: {{scope}}",
+			"noReason": "No source hint or comment available.",
+			"noEdgesForSelection": "No edges found for the current selection."
+		},
+		"scope": {
+			"required": "Required",
+			"optional": "Optional",
+			"dev": "Development"
+		},
+		"root": {
+			"label": "Dependency graph for",
+			"all": "All dependencies"
+		}
+	}
+}

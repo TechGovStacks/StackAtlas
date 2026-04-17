@@ -20,7 +20,8 @@ let splashDismissed = false;
 
 function syncKoliBriLanguage(language: string): Promise<void[]> {
 	const normalizedLanguage = normalizeLanguage(language);
-	return register([KERN_V2, DEFAULT], defineCustomElements, { translation: { name: normalizedLanguage } });
+	const kolibriLanguage = normalizedLanguage === 'en-gb' ? 'en' : normalizedLanguage;
+	return register([KERN_V2, DEFAULT], defineCustomElements, { translation: { name: kolibriLanguage } });
 }
 
 function dismissSplash(): void {
