@@ -1,6 +1,6 @@
 {
 	"name": "accessible-d-stack-landscape",
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"type": "module",
 	"packageManager": "pnpm@10.33.0",
 	"scripts": {
@@ -106,7 +106,9 @@
 	},
 	"knip": {
 		"ignoreIssues": {
-			"src/data/*.generated.ts": ["exports"]
+			"src/data/*.generated.ts": [
+				"exports"
+			]
 		}
 	},
 	"lint-staged": {
