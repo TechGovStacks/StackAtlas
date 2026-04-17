@@ -3,6 +3,7 @@ import { Footer } from './components/Footer';
 import { HashLocationProvider } from './components/HashLocationProvider';
 import { Header } from './components/Header';
 import { PwaWrapper } from './components/PwaWrapper';
+import { DependencyGraphPage } from './pages/DependencyGraphPage';
 import { HomePage } from './pages/HomePage';
 import { ImprintPage } from './pages/ImprintPage';
 import { NewsPage } from './pages/NewsPage';
@@ -20,6 +21,7 @@ function AppContent() {
 				<Route path="/settings" component={SettingsPage} />
 				<Route path="/einstellungen" component={SettingsPage} />
 				<Route path="/deps" component={HomePage} />
+				<Route path="/graphs" component={DependencyGraphPage} />
 				<Route path="/news" component={NewsPage} />
 				<Route path="/neuigkeiten" component={NewsPage} />
 				<Route path="/imprint" component={ImprintPage} />

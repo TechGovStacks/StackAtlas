@@ -1,7 +1,7 @@
 // GENERATED FILE - DO NOT EDIT MANUALLY
 // Generated from: data/layers/ + data/items/ + data/stacks/
 // Logo fallback via: src/data/logo-urls.json
-// Generated at: 2026-04-17T00:33:07.258Z
+// Generated at: 2026-04-17T18:38:56.796Z
 
 import type { Item, Layer, Stack } from '../types';
 
@@ -398,6 +398,26 @@ const RAW_ITEMS: Item[] = [
 				"lastDate": "2025-11-11",
 				"url": "https://angular.dev/overview"
 			},
+			"dependencies": [
+				{
+					"targetItemId": "javascript-ecma-script",
+					"type": "runtime",
+					"scope": "required",
+					"reason": {
+						"de": "Im Browser läuft Angular als JavaScript.",
+						"en": "Angular executes as JavaScript in the browser."
+					}
+				},
+				{
+					"targetItemId": "typescript",
+					"type": "language",
+					"scope": "required",
+					"reason": {
+						"de": "Angular-Projekte werden üblicherweise in TypeScript entwickelt.",
+						"en": "Angular projects are typically developed in TypeScript."
+					}
+				}
+			],
 			"sovereigntyScore": 83
 		},
 		{
@@ -2137,6 +2157,35 @@ const RAW_ITEMS: Item[] = [
 				"noTelemetryByDefault": false,
 				"ownerType": "corporation"
 			},
+			"dependencies": [
+				{
+					"targetItemId": "postgresql",
+					"type": "runtime",
+					"scope": "optional",
+					"reason": {
+						"de": "PostgreSQL kann als persistenter Grafana-Store genutzt werden.",
+						"en": "PostgreSQL can be used as a persistent Grafana store."
+					}
+				},
+				{
+					"targetItemId": "prometheus",
+					"type": "protocol",
+					"scope": "optional",
+					"reason": {
+						"de": "Prometheus ist eine häufig genutzte Datenquelle in Grafana.",
+						"en": "Prometheus is a commonly used data source in Grafana."
+					}
+				},
+				{
+					"targetItemId": "redis",
+					"type": "runtime",
+					"scope": "optional",
+					"reason": {
+						"de": "Redis kann für Caching und Session-Zwecke integriert werden.",
+						"en": "Redis can be integrated for caching and session-related use cases."
+					}
+				}
+			],
 			"logo": "assets/broken-logo.svg",
 			"sovereigntyScore": 78
 		},
@@ -2876,6 +2925,44 @@ const RAW_ITEMS: Item[] = [
 				"noTelemetryByDefault": true,
 				"ownerType": "community"
 			},
+			"dependencies": [
+				{
+					"targetItemId": "hypertext-transfer-protocol-http",
+					"type": "protocol",
+					"scope": "required",
+					"reason": {
+						"de": "Keycloak stellt HTTP(S)-Endpoints für Clients bereit.",
+						"en": "Keycloak exposes HTTP(S) endpoints for clients."
+					}
+				},
+				{
+					"targetItemId": "java",
+					"type": "runtime",
+					"scope": "required",
+					"reason": {
+						"de": "Keycloak läuft auf der JVM.",
+						"en": "Keycloak runs on the JVM."
+					}
+				},
+				{
+					"targetItemId": "open-authorization-oauth",
+					"type": "protocol",
+					"scope": "required",
+					"reason": {
+						"de": "OAuth ist Kernprotokoll für Autorisierung und Token-Flows.",
+						"en": "OAuth is a core protocol for authorization and token flows."
+					}
+				},
+				{
+					"targetItemId": "transport-layer-security-tls",
+					"type": "protocol",
+					"scope": "required",
+					"reason": {
+						"de": "TLS schützt Token-, Session- und Login-Kommunikation.",
+						"en": "TLS secures token, session, and login communication."
+					}
+				}
+			],
 			"logo": "assets/broken-logo.svg",
 			"sovereigntyScore": 92
 		},
@@ -2948,6 +3035,26 @@ const RAW_ITEMS: Item[] = [
 				"lastDate": "2025-11-11",
 				"url": "https://kubernetes.io/docs/home/"
 			},
+			"dependencies": [
+				{
+					"targetItemId": "hypertext-transfer-protocol-http",
+					"type": "protocol",
+					"scope": "required",
+					"reason": {
+						"de": "API-Aufrufe und Integrationen erfolgen über HTTP(S).",
+						"en": "API calls and integrations are performed over HTTP(S)."
+					}
+				},
+				{
+					"targetItemId": "transport-layer-security-tls",
+					"type": "protocol",
+					"scope": "required",
+					"reason": {
+						"de": "Die Kubernetes-API und Control-Plane-Kommunikation nutzt TLS.",
+						"en": "Kubernetes API and control-plane communication rely on TLS."
+					}
+				}
+			],
 			"sovereigntyScore": 95
 		},
 		{
@@ -5764,6 +5871,17 @@ const RAW_ITEMS: Item[] = [
 				"lastDate": "2025-11-11",
 				"url": "https://www.typescriptlang.org/docs/handbook/intro.html"
 			},
+			"dependencies": [
+				{
+					"targetItemId": "javascript-ecma-script",
+					"type": "compiles-to",
+					"scope": "required",
+					"reason": {
+						"de": "TypeScript wird zu JavaScript transpiliert.",
+						"en": "TypeScript transpiles to JavaScript."
+					}
+				}
+			],
 			"sovereigntyScore": 88
 		},
 		{

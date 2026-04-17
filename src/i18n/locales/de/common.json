@@ -33,7 +33,8 @@
 			"documentation": "Dokumentation",
 			"settings": "Einstellungen",
 			"news": "News",
-			"stacks": "Stacks"
+			"stacks": "Stacks",
+			"graphsBeta": "Graphen (Beta)"
 		},
 		"license": "Lizenz: EUPL-1.2",
 		"builtWith": "Built with",
@@ -48,7 +49,26 @@
 		"categoryLabel": "Schicht",
 		"allCategories": "Alle Schichten",
 		"relationLabel": "Relation",
-		"allRelations": "Alle Relationen"
+		"allRelations": "Alle Relationen",
+		"dependencies": {
+			"directOnlyLabel": "Nur direkte Abhängigkeiten",
+			"depthLabel": "Abhängigkeitstiefe",
+			"allDepths": "Alle Tiefen",
+			"allTypes": "Alle Dependency-Typen",
+			"depth": {
+				"1": "Tiefe 1",
+				"2": "Tiefe 2",
+				"3": "Tiefe 3"
+			},
+			"typeLabel": "Dependency-Typ",
+			"type": {
+				"build": "Build",
+				"compiles-to": "Compiles-to",
+				"language": "Sprache",
+				"protocol": "Protokoll",
+				"runtime": "Runtime"
+			}
+		}
 	},
 	"category": {
 		"toolbarAria": "Schichten filtern",
@@ -216,6 +236,36 @@
 				"identityWalletInteroperability": "Fokus: Identity Wallet Interoperability",
 				"reportTemplate": "Fokus: Report-Template"
 			}
+		}
+	},
+	"dependencies": {
+		"requiredByItem": "Benötigt",
+		"usedBy": "Wird verwendet von",
+		"whyConnection": "Warum diese Verbindung?",
+		"meta": "Typ: {{type}} · Scope: {{scope}}",
+		"noReason": "Kein Kommentar hinterlegt.",
+		"graph": {
+			"aria": "Abhängigkeitsgraph",
+			"title": "Abhängigkeitsgraph",
+			"empty": "Keine Abhängigkeiten für die aktuelle Filterauswahl gefunden.",
+			"typeLegend": "Typ",
+			"scopeLegend": "Scope",
+			"canvasAria": "Graph mit {{count}} Abhängigkeitskanten",
+			"edgeAria": "Kante von {{source}} nach {{target}}",
+			"whyConnection": "Warum diese Verbindung?",
+			"edgeType": "Dependency-Typ: {{type}}",
+			"edgeScope": "Scope: {{scope}}",
+			"noReason": "Kein Quellenhinweis oder Kommentar verfügbar.",
+			"noEdgesForSelection": "Für die aktuelle Auswahl wurden keine Kanten gefunden."
+		},
+		"scope": {
+			"required": "Erforderlich",
+			"optional": "Optional",
+			"dev": "Entwicklung"
+		},
+		"root": {
+			"label": "Dependency-Graph für",
+			"all": "Alle Dependencies"
 		}
 	}
 }

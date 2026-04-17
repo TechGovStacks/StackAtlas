@@ -2069,3 +2069,92 @@ kol-select {
 		transform: translateY(1px);
 	}
 }
+
+.dependency-graph__legend-item {
+	align-items: center;
+	border: 1px solid var(--kolibri-color-blue-20, #d1dbe8);
+	border-radius: 999px;
+	display: inline-flex;
+	font-size: 0.875rem;
+	gap: 0.5rem;
+	padding: 0.25rem 0.6rem;
+}
+
+.dependency-graph__legend-dot {
+	border-radius: 50%;
+	display: inline-block;
+	height: 0.75rem;
+	width: 0.75rem;
+}
+
+.dependency-graph__legend-caption {
+	color: var(--kolibri-color-grey-70, #4a5568);
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+.dependency-graph__meta-pill {
+	background: #f2f5f9;
+	border-radius: 999px;
+	font-size: 0.8rem;
+	padding: 0.15rem 0.5rem;
+}
+
+.dependency-graph__canvas-wrapper {
+	border: 1px solid #d8e0ea;
+	border-radius: 0.75rem;
+	overflow-x: auto;
+	padding: 0.5rem;
+}
+
+.dependency-graph__canvas {
+	min-height: 24rem;
+	min-width: 52rem;
+}
+
+.dependency-graph__edge-hitbox:focus-visible {
+	stroke: #ffbf47;
+	stroke-opacity: 0.75;
+	stroke-width: 20;
+}
+
+.dependency-graph__empty {
+	color: var(--kolibri-color-grey-70, #4a5568);
+	font-style: italic;
+}
+
+.dependency-graph__explanation {
+	background: #f8fbff;
+	border-left: 4px solid #0057a3;
+	border-radius: 0.5rem;
+	padding: 0.75rem;
+}
+
+.dependency-graph__explanation-title,
+.drawer-dependencies__title,
+.drawer-dependencies__reason-title {
+	font-weight: 700;
+	margin: 0 0 0.4rem;
+}
+
+.drawer-dependencies__section {
+	margin-top: 1rem;
+}
+
+.drawer-dependencies__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.drawer-dependencies__item + .drawer-dependencies__item {
+	margin-top: 0.3rem;
+}
+
+.drawer-dependencies__reason {
+	background: #f8fbff;
+	border-left: 4px solid #0057a3;
+	border-radius: 0.5rem;
+	margin-top: 0.75rem;
+	padding: 0.75rem;
+}

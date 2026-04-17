@@ -69,7 +69,12 @@ export function CategoryGrid({
 			{activeStack && stackItemMap && <StackStats stack={activeStack} items={stackScoreItems ?? articles} stackItemMap={stackItemMap} />}
 
 			<p className="results-info" aria-live="polite" aria-atomic="true">
-				{filters.searchQuery || filters.selectedLayer || filters.selectedRelation ? (
+				{filters.searchQuery ||
+				filters.selectedLayer ||
+				filters.selectedRelation ||
+				filters.onlyDirectDependencies ||
+				filters.dependencyDepth ||
+				filters.selectedDependencyType ? (
 					<>
 						<strong>{activeCount}</strong> {t('category.results.filteredPrefix')} {totalCount} {t('category.results.entries')}
 						{filters.selectedLayer && (

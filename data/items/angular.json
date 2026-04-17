@@ -30,5 +30,25 @@
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://angular.dev/overview"
-	}
+	},
+	"dependencies": [
+		{
+			"targetItemId": "javascript-ecma-script",
+			"type": "runtime",
+			"scope": "required",
+			"reason": {
+				"de": "Im Browser läuft Angular als JavaScript.",
+				"en": "Angular executes as JavaScript in the browser."
+			}
+		},
+		{
+			"targetItemId": "typescript",
+			"type": "language",
+			"scope": "required",
+			"reason": {
+				"de": "Angular-Projekte werden üblicherweise in TypeScript entwickelt.",
+				"en": "Angular projects are typically developed in TypeScript."
+			}
+		}
+	]
 }

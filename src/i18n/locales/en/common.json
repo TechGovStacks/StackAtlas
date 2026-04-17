@@ -33,7 +33,8 @@
 			"documentation": "Documentation",
 			"settings": "Settings",
 			"news": "News",
-			"stacks": "Stacks"
+			"stacks": "Stacks",
+			"graphsBeta": "Graphs (Beta)"
 		},
 		"license": "License: EUPL-1.2",
 		"builtWith": "Built with",
@@ -48,7 +49,26 @@
 		"categoryLabel": "Layer",
 		"allCategories": "All layers",
 		"relationLabel": "Relation",
-		"allRelations": "All relations"
+		"allRelations": "All relations",
+		"dependencies": {
+			"directOnlyLabel": "Direct dependencies only",
+			"depthLabel": "Dependency depth",
+			"allDepths": "All depths",
+			"allTypes": "All dependency types",
+			"depth": {
+				"1": "Depth 1",
+				"2": "Depth 2",
+				"3": "Depth 3"
+			},
+			"typeLabel": "Dependency type",
+			"type": {
+				"build": "Build",
+				"compiles-to": "Compiles-to",
+				"language": "Language",
+				"protocol": "Protocol",
+				"runtime": "Runtime"
+			}
+		}
 	},
 	"category": {
 		"toolbarAria": "Filter layers",
@@ -216,6 +236,36 @@
 				"identityWalletInteroperability": "Focus: Identity Wallet Interoperability",
 				"reportTemplate": "Focus: Report Template"
 			}
+		}
+	},
+	"dependencies": {
+		"requiredByItem": "Requires",
+		"usedBy": "Used by",
+		"whyConnection": "Why this connection?",
+		"meta": "Type: {{type}} · Scope: {{scope}}",
+		"noReason": "No comment provided.",
+		"graph": {
+			"aria": "Dependency graph",
+			"title": "Dependency graph",
+			"empty": "No dependencies found for the current filter selection.",
+			"typeLegend": "Type",
+			"scopeLegend": "Scope",
+			"canvasAria": "Graph with {{count}} dependency edges",
+			"edgeAria": "Edge from {{source}} to {{target}}",
+			"whyConnection": "Why this connection?",
+			"edgeType": "Dependency type: {{type}}",
+			"edgeScope": "Scope: {{scope}}",
+			"noReason": "No source hint or comment available.",
+			"noEdgesForSelection": "No edges found for the current selection."
+		},
+		"scope": {
+			"required": "Required",
+			"optional": "Optional",
+			"dev": "Development"
+		},
+		"root": {
+			"label": "Dependency graph for",
+			"all": "All dependencies"
 		}
 	}
 }

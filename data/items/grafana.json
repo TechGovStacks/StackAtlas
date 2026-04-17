@@ -9,7 +9,11 @@
 	},
 	"homepage": "https://grafana.com/oss/grafana/",
 	"license": "AGPL-3.0",
-	"tags": ["monitoring", "dashboards", "observability"],
+	"tags": [
+		"monitoring",
+		"dashboards",
+		"observability"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -23,5 +27,34 @@
 		"openStandards": true,
 		"noTelemetryByDefault": false,
 		"ownerType": "corporation"
-	}
+	},
+	"dependencies": [
+		{
+			"targetItemId": "postgresql",
+			"type": "runtime",
+			"scope": "optional",
+			"reason": {
+				"de": "PostgreSQL kann als persistenter Grafana-Store genutzt werden.",
+				"en": "PostgreSQL can be used as a persistent Grafana store."
+			}
+		},
+		{
+			"targetItemId": "prometheus",
+			"type": "protocol",
+			"scope": "optional",
+			"reason": {
+				"de": "Prometheus ist eine häufig genutzte Datenquelle in Grafana.",
+				"en": "Prometheus is a commonly used data source in Grafana."
+			}
+		},
+		{
+			"targetItemId": "redis",
+			"type": "runtime",
+			"scope": "optional",
+			"reason": {
+				"de": "Redis kann für Caching und Session-Zwecke integriert werden.",
+				"en": "Redis can be integrated for caching and session-related use cases."
+			}
+		}
+	]
 }

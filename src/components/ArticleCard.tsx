@@ -3,7 +3,7 @@ import { useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { ITEMS, LAYERS, STACKS } from '../data/catalog';
 import { Item, ParticipantRole, SovereigntyCriteria, StackItem } from '../types';
-import { getLocalizedText } from '../utils';
+import { buildDependencyGraph, getLocalizedText } from '../utils';
 import { computeEffectiveSovereigntyScoreResult, computeOwnerScore } from '../utils/sovereigntyScore';
 import { SovereigntyGauge } from './SovereigntyGauge';
 
@@ -38,6 +38,7 @@ const ROLE_COLORS: Record<ParticipantRole, string> = {
 	funder: '#e65100',
 	consumer: '#546e7a',
 };
+const CATALOG_DEPENDENCY_GRAPH = buildDependencyGraph(ITEMS);
 
 function countryToFlagEmoji(code?: string): string {
 	if (!code || code.length !== 2) return '';
@@ -48,6 +49,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 	const { i18n, t } = useTranslation();
 	const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 	const [selectedArticle, setSelectedArticle] = useState(article);
+	const [selectedDependencyId, setSelectedDependencyId] = useState<string | null>(null);
 	const [failedLogos, setFailedLogos] = useState<Set<string>>(new Set());
 	const localizedArticleName = getLocalizedText(article.name, i18n.language);
 	const localizedSelectedArticleName = getLocalizedText(selectedArticle.name, i18n.language);
@@ -62,6 +64,9 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 	const stacksContainingItem = useMemo(() => {
 		return STACKS.filter((stack) => stack.items.some((item) => item.itemId === selectedArticle.id));
 	}, [selectedArticle.id]);
+	const outgoingDependencies = CATALOG_DEPENDENCY_GRAPH.outgoingById.get(selectedArticle.id) ?? [];
+	const incomingDependencies = CATALOG_DEPENDENCY_GRAPH.incomingById.get(selectedArticle.id) ?? [];
+	const selectedDependency = [...outgoingDependencies, ...incomingDependencies].find((edge) => edge.id === selectedDependencyId) ?? null;
 
 	const scoreResult = computeEffectiveSovereigntyScoreResult(article.sovereigntyCriteria, stackItem);
 	const score = scoreResult.score;
@@ -116,6 +121,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 			_on={{
 				onClick: () => {
 					setSelectedArticle(article);
+					setSelectedDependencyId(null);
 					setIsDrawerOpen(true);
 				},
 			}}
@@ -301,6 +307,67 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 										<p>{getLocalizedText(stackItem.rationale, i18n.language)}</p>
 									</div>
 								)}
+								<div className="drawer-dependencies">
+									{outgoingDependencies.length > 0 && (
+										<div className="drawer-dependencies__section">
+											<p className="drawer-dependencies__title">{t('dependencies.requiredByItem')}</p>
+											<ul className="drawer-dependencies__list">
+												{outgoingDependencies.map((edge) => (
+													<li key={edge.id} className="drawer-dependencies__item">
+														<button type="button" className="drawer-related__link" onClick={() => setSelectedDependencyId(edge.id)}>
+															<span className="drawer-related__link-text">
+																{getLocalizedText(edge.target.name, i18n.language)} ({edge.dependency.type}/
+																{t(`dependencies.scope.${edge.dependency.scope ?? 'required'}`)})
+															</span>
+															<span className="drawer-related__link-icon" aria-hidden="true">
+																›
+															</span>
+														</button>
+													</li>
+												))}
+											</ul>
+										</div>
+									)}
+									{incomingDependencies.length > 0 && (
+										<div className="drawer-dependencies__section">
+											<p className="drawer-dependencies__title">{t('dependencies.usedBy')}</p>
+											<ul className="drawer-dependencies__list">
+												{incomingDependencies.map((edge) => (
+													<li key={edge.id} className="drawer-dependencies__item">
+														<button type="button" className="drawer-related__link" onClick={() => setSelectedDependencyId(edge.id)}>
+															<span className="drawer-related__link-text">
+																{getLocalizedText(edge.source.name, i18n.language)} ({edge.dependency.type}/
+																{t(`dependencies.scope.${edge.dependency.scope ?? 'required'}`)})
+															</span>
+															<span className="drawer-related__link-icon" aria-hidden="true">
+																›
+															</span>
+														</button>
+													</li>
+												))}
+											</ul>
+										</div>
+									)}
+									{selectedDependency && (
+										<div className="drawer-dependencies__reason">
+											<p className="drawer-dependencies__reason-title">{t('dependencies.whyConnection')}</p>
+											<p>
+												{getLocalizedText(selectedDependency.source.name, i18n.language)} → {getLocalizedText(selectedDependency.target.name, i18n.language)}
+											</p>
+											<p>
+												{t('dependencies.meta', {
+													type: selectedDependency.dependency.type,
+													scope: t(`dependencies.scope.${selectedDependency.dependency.scope ?? 'required'}`),
+												})}
+											</p>
+											<p>
+												{selectedDependency.dependency.reason
+													? getLocalizedText(selectedDependency.dependency.reason, i18n.language)
+													: t('dependencies.noReason')}
+											</p>
+										</div>
+									)}
+								</div>
 								{!stackItem && stacksContainingItem.length > 0 && (
 									<div className="drawer-stacks">
 										<p className="drawer-stacks__title">{t('header.nav.stacks')}</p>
@@ -331,7 +398,13 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 									<ul className="drawer-related__list">
 										{relatedArticles.map((relatedArticle) => (
 											<li key={relatedArticle.id} className="drawer-related__item">
-												<button className="drawer-related__link" onClick={() => setSelectedArticle(relatedArticle)}>
+												<button
+													className="drawer-related__link"
+													onClick={() => {
+														setSelectedArticle(relatedArticle);
+														setSelectedDependencyId(null);
+													}}
+												>
 													<span className="drawer-related__link-text">{getLocalizedText(relatedArticle.name, i18n.language)}</span>
 													<span className="drawer-related__link-icon" aria-hidden="true">
 														›

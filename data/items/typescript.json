@@ -30,5 +30,16 @@
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://www.typescriptlang.org/docs/handbook/intro.html"
-	}
+	},
+	"dependencies": [
+		{
+			"targetItemId": "javascript-ecma-script",
+			"type": "compiles-to",
+			"scope": "required",
+			"reason": {
+				"de": "TypeScript wird zu JavaScript transpiliert.",
+				"en": "TypeScript transpiles to JavaScript."
+			}
+		}
+	]
 }

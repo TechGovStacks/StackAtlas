@@ -60,6 +60,7 @@ export function HomePage() {
 				onSortDirToggle={() => setSortDir((d) => (d === 'asc' ? 'desc' : 'asc'))}
 				viewMode={viewMode}
 				onViewModeChange={setViewMode}
+				showDependencyControls={false}
 			/>
 			<CategoryGrid
 				layers={LAYERS}

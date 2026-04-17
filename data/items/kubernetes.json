@@ -30,5 +30,25 @@
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://kubernetes.io/docs/home/"
-	}
+	},
+	"dependencies": [
+		{
+			"targetItemId": "hypertext-transfer-protocol-http",
+			"type": "protocol",
+			"scope": "required",
+			"reason": {
+				"de": "API-Aufrufe und Integrationen erfolgen über HTTP(S).",
+				"en": "API calls and integrations are performed over HTTP(S)."
+			}
+		},
+		{
+			"targetItemId": "transport-layer-security-tls",
+			"type": "protocol",
+			"scope": "required",
+			"reason": {
+				"de": "Die Kubernetes-API und Control-Plane-Kommunikation nutzt TLS.",
+				"en": "Kubernetes API and control-plane communication rely on TLS."
+			}
+		}
+	]
 }
