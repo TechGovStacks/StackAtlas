@@ -999,6 +999,7 @@ kol-card.article-card,
 	position: fixed;
 	bottom: var(--ds-space-6);
 	left: 50%;
+	width: min(36rem, calc(100% - var(--ds-space-8)));
 	transform: translateX(-50%);
 	z-index: 10000;
 	display: flex;
@@ -1009,7 +1010,6 @@ kol-card.article-card,
 	border: 1px solid var(--ds-color-border);
 	border-radius: var(--ds-radius-lg);
 	box-shadow: 0 2px 8px rgb(0 0 0 / 8%);
-	max-width: calc(100% - var(--ds-space-8));
 	animation: slide-up 0.3s ease;
 }
 
@@ -1018,7 +1018,7 @@ kol-card.article-card,
 		flex-direction: column;
 		text-align: center;
 		padding: var(--ds-space-3) var(--ds-space-4);
-		max-width: calc(100% - var(--ds-space-4));
+		width: calc(100% - var(--ds-space-4));
 	}
 }
 
