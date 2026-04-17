@@ -2,10 +2,12 @@ import { register } from '@public-ui/components';
 import { defineCustomElements } from '@public-ui/components/loader';
 import { DEFAULT } from '@public-ui/theme-default';
 import { KERN_V2 } from '@public-ui/theme-kern';
+import i18next from 'i18next';
 
 import { render } from 'preact';
 import App from './App';
-import './i18n';
+import { i18nReady } from './i18n';
+import { normalizeLanguage } from './i18n/language';
 
 /**
  * Splash minimum display time (ms).
@@ -15,6 +17,11 @@ import './i18n';
 const SPLASH_MIN_MS = 8500;
 const splashStart = performance.now();
 let splashDismissed = false;
+
+function syncKoliBriLanguage(language: string): Promise<void[]> {
+	const normalizedLanguage = normalizeLanguage(language);
+	return register([KERN_V2, DEFAULT], defineCustomElements, { translation: { name: normalizedLanguage } });
+}
 
 function dismissSplash(): void {
 	if (splashDismissed) return;
@@ -63,9 +70,15 @@ document.addEventListener('keydown', (e: globalThis.KeyboardEvent) => {
 // Safety timeout to dismiss splash after max 10 seconds regardless
 setTimeout(dismissSplash, 10000);
 
+i18next.on('languageChanged', (language: string) => {
+	void syncKoliBriLanguage(language).catch((error: unknown) => {
+		console.warn('Unable to synchronize KoliBri translations:', error);
+	});
+});
+
 Promise.all([
 	Promise.race([
-		register([KERN_V2, DEFAULT], defineCustomElements, { translation: { name: 'de' } }),
+		i18nReady.then(() => syncKoliBriLanguage(i18next.resolvedLanguage ?? i18next.language ?? globalThis.navigator.language)),
 		new Promise<void>((_, reject) => setTimeout(() => reject(new Error('KoliBri registration timeout')), 3000)),
 	]),
 	new Promise<void>((resolve) => {
