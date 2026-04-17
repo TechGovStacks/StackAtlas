@@ -204,6 +204,12 @@ function runDependencySemanticChecks({ itemRecords, parseErrors }, statsRef) {
 		for (const dependency of dependencies) {
 			const targetItemId = dependency?.targetItemId;
 			const type = dependency?.type;
+
+			if (!targetItemId || !type) {
+				semanticErrors.push(`${file}: dependency entry is missing targetItemId or type`);
+				continue;
+			}
+
 			const scope = dependency?.scope ?? 'required';
 			const edgeKey = `${targetItemId}::${type}::${scope}`;
 
