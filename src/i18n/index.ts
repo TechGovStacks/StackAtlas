@@ -4,7 +4,6 @@ import { initReactI18next } from 'react-i18next';
 import { FALLBACK_LANGUAGE, normalizeLanguage, SUPPORTED_LANGUAGES } from './language';
 import daCommon from './locales/da/common.json';
 import deCommon from './locales/de/common.json';
-import enGbCommon from './locales/en-gb/common.json';
 import enCommon from './locales/en/common.json';
 import esCommon from './locales/es/common.json';
 import frCommon from './locales/fr/common.json';
@@ -26,7 +25,6 @@ export const i18nReady = i18next
 			da: { common: daCommon },
 			de: { common: deCommon },
 			en: { common: enCommon },
-			'en-gb': { common: enGbCommon },
 			es: { common: esCommon },
 			fr: { common: frCommon },
 			it: { common: itCommon },

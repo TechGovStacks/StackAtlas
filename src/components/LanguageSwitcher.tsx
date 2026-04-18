@@ -5,7 +5,6 @@ const SUPPORTED_LANGUAGES = [
 	{ code: 'da', label: 'Dansk' },
 	{ code: 'de', label: 'Deutsch' },
 	{ code: 'en', label: 'English' },
-	{ code: 'en-gb', label: 'English (UK)' },
 	{ code: 'es', label: 'Español' },
 	{ code: 'fr', label: 'Français' },
 	{ code: 'it', label: 'Italiano' },
