@@ -12,7 +12,7 @@
 			"docs": "Dokumenter",
 			"imprint": "Avtrykk",
 			"settings": "Innstillinger",
-			"stacks": "Stabler",
+			"stacks": "Stacks",
 			"deps": "Deps"
 		},
 		"eyebrow": "Mål og sammenlign digital suverenitet",
@@ -34,7 +34,8 @@
 			"documentation": "Dokumentasjon",
 			"settings": "Innstillinger",
 			"news": "Nyheter",
-			"stacks": "Stabler"
+			"stacks": "Stacks",
+			"graphsBeta": "Graphs (Beta)"
 		},
 		"license": "Lisens: EUPL-1.2",
 		"builtWith": "Bygget med",

@@ -12,7 +12,7 @@
 			"docs": "Dokument",
 			"imprint": "Avtryck",
 			"settings": "Inställningar",
-			"stacks": "Stackar",
+			"stacks": "Stacks",
 			"deps": "Deps"
 		},
 		"eyebrow": "Mät och jämför digital suveränitet",
@@ -34,7 +34,8 @@
 			"documentation": "Dokumentation",
 			"settings": "Inställningar",
 			"news": "Nyheter",
-			"stacks": "Stackar"
+			"stacks": "Stacks",
+			"graphsBeta": "Graphs (Beta)"
 		},
 		"license": "Licens: EUPL-1.2",
 		"builtWith": "Byggd med",

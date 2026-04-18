@@ -12,8 +12,8 @@
 			"docs": "Documenti",
 			"imprint": "Impronta",
 			"settings": "Impostazioni",
-			"stacks": "Pile",
-			"deps": "Dipende"
+			"stacks": "Stacks",
+			"deps": "Deps"
 		},
 		"eyebrow": "Misurare e confrontare la sovranità digitale",
 		"subtitle": "Quanto è sovrano il tuo stack tecnologico? StackAtlas valuta le tecnologie e gli standard in tutto il mondo con un punteggio di sovranità trasparente compreso tra 0 e 100 e rivela quali dipendenze minacciano la tua indipendenza digitale.",
@@ -34,7 +34,8 @@
 			"documentation": "Documentazione",
 			"settings": "Impostazioni",
 			"news": "Notizia",
-			"stacks": "Pile"
+			"stacks": "Stacks",
+			"graphsBeta": "Graphs (Beta)"
 		},
 		"license": "Licenza: EUPL-1.2",
 		"builtWith": "Costruito con",
