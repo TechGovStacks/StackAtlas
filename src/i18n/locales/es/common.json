@@ -45,7 +45,9 @@
 		"categoryLabel": "Capa",
 		"allCategories": "Todas las capas",
 		"relationLabel": "Relación",
-		"allRelations": "Todas las relaciones"
+		"allRelations": "Todas las relaciones",
+		"sublayerLabel": "Subcapa",
+		"allSublayers": "Todas las subcapas"
 	},
 	"category": {
 		"toolbarAria": "Filtrar capas",
@@ -140,7 +142,8 @@
 			"badgeTitle": "Contexto de mantenedor activo – puntuación pública: {{rawScore}}/100",
 			"scoreAria": "Puntuación de soberanía (contexto de mantenimiento): {{score}} de 100 – puntuación pública: {{rawScore}} de 100",
 			"noteAria": "Nota sobre el contexto del mantenedor"
-		}
+		},
+		"sovereigntyGaugeAria": "Indicador de puntuación de soberanía: {{score}} de 100 ({{category}})"
 	},
 	"pwa": {
 		"updateAvailable": "Está disponible una nueva versión de StackAtlas.",

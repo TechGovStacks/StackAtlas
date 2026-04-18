@@ -64,7 +64,9 @@
 				"protocol": "Protocole",
 				"runtime": "Runtime"
 			}
-		}
+		},
+		"sublayerLabel": "Sous-couche",
+		"allSublayers": "Toutes les sous-couches"
 	},
 	"category": {
 		"toolbarAria": "Filtrer les couches",
@@ -145,7 +147,8 @@
 			"badgeTitle": "Contexte mainteneur actif – score public : {{rawScore}}/100",
 			"scoreAria": "Score de souveraineté (contexte mainteneur) : {{score}} sur 100 – score public : {{rawScore}} sur 100",
 			"noteAria": "Note sur le contexte mainteneur"
-		}
+		},
+		"sovereigntyGaugeAria": "Jauge du score de souveraineté : {{score}} sur 100 ({{category}})"
 	},
 	"pwa": {
 		"updateAvailable": "Une nouvelle version de StackAtlas est disponible.",

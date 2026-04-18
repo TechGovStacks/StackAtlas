@@ -45,7 +45,9 @@
 		"categoryLabel": "Lag",
 		"allCategories": "Alle lag",
 		"relationLabel": "Relation",
-		"allRelations": "Alle relationer"
+		"allRelations": "Alle relationer",
+		"sublayerLabel": "Underlag",
+		"allSublayers": "Alle underlag"
 	},
 	"category": {
 		"toolbarAria": "Filterlag",
@@ -140,7 +142,8 @@
 			"badgeTitle": "Vedligeholdelseskontekst aktiv – offentlig score: {{rawScore}}/100",
 			"scoreAria": "Suverænitetsscore (vedligeholdelseskontekst): {{score}} af 100 – offentlig score: {{rawScore}} af 100",
 			"noteAria": "Bemærk om vedligeholdelseskonteksten"
-		}
+		},
+		"sovereigntyGaugeAria": "Måler for suverænitetsscore: {{score}} ud af 100 ({{category}})"
 	},
 	"pwa": {
 		"updateAvailable": "En ny version af StackAtlas er tilgængelig.",

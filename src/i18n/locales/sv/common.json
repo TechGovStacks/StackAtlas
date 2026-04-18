@@ -45,7 +45,9 @@
 		"categoryLabel": "Lager",
 		"allCategories": "Alla lager",
 		"relationLabel": "Relation",
-		"allRelations": "Alla relationer"
+		"allRelations": "Alla relationer",
+		"sublayerLabel": "Underlager",
+		"allSublayers": "Alla underlager"
 	},
 	"category": {
 		"toolbarAria": "Filtrera lager",
@@ -140,7 +142,8 @@
 			"badgeTitle": "Underhållarkontext aktiv – offentlig poäng: {{rawScore}}/100",
 			"scoreAria": "Suveränitetspoäng (underhållskontext): {{score}} av 100 – offentlig poäng: {{rawScore}} av 100",
 			"noteAria": "Notera om underhållskontexten"
-		}
+		},
+		"sovereigntyGaugeAria": "Mätare för suveränitetspoäng: {{score}} av 100 ({{category}})"
 	},
 	"pwa": {
 		"updateAvailable": "En ny version av StackAtlas är tillgänglig.",

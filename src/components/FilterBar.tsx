@@ -137,9 +137,9 @@ export function FilterBar({
 				{filters.selectedLayer && (
 					<KolSingleSelect
 						className="filter-bar__select filter-bar__select--sublayer sort-select"
-						_label="Sublayer"
+						_label={t('search.sublayerLabel')}
 						_hideLabel
-						_options={[{ label: 'All Sublayers', value: '' }, ...sublayerOptions.map((sublayer) => ({ label: sublayer, value: sublayer }))]}
+						_options={[{ label: t('search.allSublayers'), value: '' }, ...sublayerOptions.map((sublayer) => ({ label: sublayer, value: sublayer }))]}
 						_value={filters.selectedSublayer ?? ''}
 						_disabled={sublayerOptions.length === 0}
 						_on={{

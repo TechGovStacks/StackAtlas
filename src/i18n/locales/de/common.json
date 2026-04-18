@@ -64,7 +64,9 @@
 				"protocol": "Protokoll",
 				"runtime": "Runtime"
 			}
-		}
+		},
+		"sublayerLabel": "Unterschicht",
+		"allSublayers": "Alle Unterschichten"
 	},
 	"category": {
 		"toolbarAria": "Schichten filtern",
@@ -159,7 +161,8 @@
 			"badgeTitle": "Maintainer-Kontext aktiv – öffentlich bewerteter Score: {{rawScore}}/100",
 			"scoreAria": "Souveränitäts-Score (Maintainer-Kontext): {{score}} von 100 – öffentlich bewerteter Score: {{rawScore}} von 100",
 			"noteAria": "Hinweis zum Maintainer-Kontext"
-		}
+		},
+		"sovereigntyGaugeAria": "Souveränitäts-Score-Anzeige: {{score}} von 100 ({{category}})"
 	},
 	"pwa": {
 		"updateAvailable": "Eine neue Version von StackAtlas ist verfügbar.",

@@ -4,6 +4,8 @@ type LanguageExpectations = {
 	htmlLang: string;
 	headerSubtitle: string;
 	searchRegionAria: string;
+	sovereigntyGaugeAriaPrefix: string;
+	allSublayersOption: string;
 	emptyStateTitle: string;
 	missingKeyFallback: string;
 };
@@ -13,6 +15,8 @@ const EXPECTED: Record<'de' | 'en' | 'fr', LanguageExpectations> = {
 		htmlLang: 'de',
 		headerSubtitle: 'Interaktive Übersicht von Technologien, Standards und Komponenten für die digitale Verwaltung.',
 		searchRegionAria: 'Suche und Filter',
+		sovereigntyGaugeAriaPrefix: 'Souveränitäts-Score-Anzeige:',
+		allSublayersOption: 'Alle Unterschichten',
 		emptyStateTitle: 'Keine Einträge gefunden',
 		missingKeyFallback: 'Übersetzung nicht verfügbar',
 	},
@@ -20,6 +24,8 @@ const EXPECTED: Record<'de' | 'en' | 'fr', LanguageExpectations> = {
 		htmlLang: 'en',
 		headerSubtitle: 'Interactive overview of technologies, standards and components for digital public administration.',
 		searchRegionAria: 'Search and filter',
+		sovereigntyGaugeAriaPrefix: 'Sovereignty score gauge:',
+		allSublayersOption: 'All Sublayers',
 		emptyStateTitle: 'No entries found',
 		missingKeyFallback: 'Übersetzung nicht verfügbar',
 	},
@@ -27,17 +33,37 @@ const EXPECTED: Record<'de' | 'en' | 'fr', LanguageExpectations> = {
 		htmlLang: 'fr',
 		headerSubtitle: 'Vue d’ensemble interactive des technologies, standards et composants pour l’administration numérique.',
 		searchRegionAria: 'Recherche et filtres',
+		sovereigntyGaugeAriaPrefix: 'Jauge du score de souveraineté :',
+		allSublayersOption: 'Toutes les sous-couches',
 		emptyStateTitle: 'Aucune entrée trouvée',
 		missingKeyFallback: 'Übersetzung nicht verfügbar',
 	},
 };
+
+async function expectLocalizedSublayerOption(page: Page, locale: 'de' | 'en' | 'fr') {
+	const expected = EXPECTED[locale];
+	const layerSelect = page.locator('kol-single-select.filter-bar__select--layer select').first();
+	await expect(layerSelect).toBeVisible();
+
+	// Trigger selected layer so sublayer select is rendered.
+	await layerSelect.selectOption({ index: 1 });
+
+	const sublayerAllOption = page.locator('kol-single-select.filter-bar__select--sublayer select option').first();
+	await expect(sublayerAllOption).toHaveText(expected.allSublayersOption);
+
+	if (locale !== 'en') {
+		await expect(sublayerAllOption).not.toHaveText('All Sublayers');
+	}
+}
 
 async function expectCoreTranslations(page: Page, locale: 'de' | 'en' | 'fr') {
 	const expected = EXPECTED[locale];
 
 	await expect(page.locator('html')).toHaveAttribute('lang', expected.htmlLang);
 	await expect(page.locator('.header__subtitle')).toHaveText(expected.headerSubtitle);
-	await expect(page.locator('.search-bar')).toHaveAttribute('aria-label', expected.searchRegionAria);
+	await expect(page.locator('.filter-bar')).toHaveAttribute('aria-label', expected.searchRegionAria);
+	await expect(page.locator('.sovereignty-gauge').first()).toHaveAttribute('aria-label', new RegExp(`^${expected.sovereigntyGaugeAriaPrefix}`));
+	await expectLocalizedSublayerOption(page, locale);
 
 	await page.locator('kol-input-text input').fill('zzzzzzzzzzzzzzzzzz');
 	await expect(page.locator('.empty-state__title')).toHaveText(expected.emptyStateTitle);

@@ -45,7 +45,9 @@
 		"categoryLabel": "Strato",
 		"allCategories": "Tutti gli strati",
 		"relationLabel": "Relazione",
-		"allRelations": "Tutte le relazioni"
+		"allRelations": "Tutte le relazioni",
+		"sublayerLabel": "Sottolivello",
+		"allSublayers": "Tutti i sottolivelli"
 	},
 	"category": {
 		"toolbarAria": "Filtra livelli",
@@ -140,7 +142,8 @@
 			"badgeTitle": "Contesto manutentore attivo – punteggio pubblico: {{rawScore}}/100",
 			"scoreAria": "Punteggio di sovranità (contesto del manutentore): {{score}} di 100 – punteggio pubblico: {{rawScore}} di 100",
 			"noteAria": "Nota sul contesto del manutentore"
-		}
+		},
+		"sovereigntyGaugeAria": "Indicatore del punteggio di sovranità: {{score}} su 100 ({{category}})"
 	},
 	"pwa": {
 		"updateAvailable": "È disponibile una nuova versione di StackAtlas.",

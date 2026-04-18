@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { SovereigntyScoreCategory } from '../types';
 
 interface SovereigntyGaugeProps {
@@ -68,6 +69,7 @@ function describeArc(x: number, y: number, radius: number, startAngle: number, e
 }
 
 export function SovereigntyGauge({ score, category, size = 200 }: SovereigntyGaugeProps) {
+	const { t } = useTranslation();
 	const radius = size / 2 - 30;
 	const innerRadius = radius - 12;
 	const outerRadius = radius - 4;
@@ -105,7 +107,7 @@ export function SovereigntyGauge({ score, category, size = 200 }: SovereigntyGau
 			viewBox={`0 0 ${size} ${size}`}
 			className="sovereignty-gauge"
 			role="img"
-			aria-label={`Sovereignty Score: ${score}/100 (${category})`}
+			aria-label={t('article.sovereigntyGaugeAria', { score, category: t(`article.scoreCategories.${category}`) })}
 		>
 			{/* Hintergrund-Segmente inkl. runder Kappen */}
 			<g opacity="0.2">
