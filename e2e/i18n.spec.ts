@@ -61,7 +61,7 @@ async function expectCoreTranslations(page: Page, locale: 'de' | 'en' | 'fr') {
 
 	await expect(page.locator('html')).toHaveAttribute('lang', expected.htmlLang);
 	await expect(page.locator('.header__subtitle')).toHaveText(expected.headerSubtitle);
-	await expect(page.locator('.filter-bar')).toHaveAttribute('aria-label', expected.searchRegionAria);
+	await expect(page.getByRole('region', { name: expected.searchRegionAria })).toBeVisible();
 	await expect(page.locator('.sovereignty-gauge').first()).toHaveAttribute('aria-label', new RegExp(`^${expected.sovereigntyGaugeAriaPrefix}`));
 	await expectLocalizedSublayerOption(page, locale);
 
@@ -137,5 +137,18 @@ test.describe('i18n language detection and fallbacks', () => {
 
 		expect(missingKeyValue).toBe(EXPECTED.de.missingKeyFallback);
 		expect(missingKeyValue).not.toContain('this_key_does_not_exist_anywhere');
+	});
+
+	test('filter region is present and localized in DE/EN/FR', async ({ page }) => {
+		await page.goto('/');
+
+		await changeLanguage(page, 'de');
+		await expect(page.getByRole('region', { name: EXPECTED.de.searchRegionAria })).toBeVisible();
+
+		await changeLanguage(page, 'en');
+		await expect(page.getByRole('region', { name: EXPECTED.en.searchRegionAria })).toBeVisible();
+
+		await changeLanguage(page, 'fr');
+		await expect(page.getByRole('region', { name: EXPECTED.fr.searchRegionAria })).toBeVisible();
 	});
 });
