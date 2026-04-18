@@ -14,9 +14,10 @@ export function SettingsForm() {
 		{ value: 'high-contrast', label: t('pages.settings.theme.highContrast') },
 	];
 
-	const handleThemeChange = (event: Event) => {
-		const target = event.target as HTMLSelectElement;
-		setTheme(target.value as ThemeValue);
+	const handleThemeChange = (_event: Event, value: unknown) => {
+		if (typeof value === 'string') {
+			setTheme(value as ThemeValue);
+		}
 	};
 
 	return (
