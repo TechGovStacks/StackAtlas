@@ -51,15 +51,12 @@ test.describe('Accessibility – axe-core', () => {
 		expect(results.violations).toEqual([]);
 	});
 
-	test('each route contains at most one #main-content landmark target', async ({ page }) => {
+	test('each route contains exactly one #main-content landmark target', async ({ page }) => {
 		const routes = ['#/', '#/deps', '#/graphs', '#/news', '#/settings', '#/imprint'];
 
 		for (const route of routes) {
 			await page.goto(`/${route}`);
-			await page.waitForLoadState('networkidle');
-
-			const mainContentCount = await page.locator('#main-content').count();
-			expect(mainContentCount).toBeLessThanOrEqual(1);
+			await expect(page.locator('#main-content')).toHaveCount(1);
 		}
 	});
 });
