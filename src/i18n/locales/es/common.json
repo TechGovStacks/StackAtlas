@@ -212,7 +212,14 @@
 		},
 		"settings": {
 			"description": "Administre la configuración y las preferencias de la aplicación StackAtlas aquí.",
-			"title": "Ajustes"
+			"title": "Ajustes",
+			"theme": {
+				"label": "Esquema de color",
+				"auto": "Automático (configuración del sistema)",
+				"light": "Claro",
+				"dark": "Oscuro",
+				"highContrast": "Alto contraste"
+			}
 		},
 		"news": {
 			"title": "Informes de calificación y noticias de la comunidad",

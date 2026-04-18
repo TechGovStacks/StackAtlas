@@ -12,6 +12,26 @@
 		<link rel="stylesheet" href="./assets/kolicons/style.css" />
 		<link rel="stylesheet" href="./assets/material-symbols-subset/style.css" />
 		<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
+		<!-- Theme initialization – must run before stylesheets to prevent FOUC (Flash of Unstyled Content) -->
+		<script>
+			(function () {
+				try {
+					const theme = localStorage.getItem('theme') || 'auto';
+					const html = document.documentElement;
+					let effectiveTheme = theme;
+
+					if (theme === 'auto') {
+						effectiveTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+					}
+
+					if (effectiveTheme !== 'light') {
+						html.setAttribute('data-theme', effectiveTheme);
+					}
+				} catch (e) {
+					console.error('Theme initialization failed:', e);
+				}
+			})();
+		</script>
 		<style>
 			/* ─── Splash / Intro Animation ──────────────────────────────────────── */
 

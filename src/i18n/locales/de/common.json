@@ -234,7 +234,14 @@
 		},
 		"settings": {
 			"description": "Verwalte hier anwendungsbezogene Einstellungen und Präferenzen für StackAtlas.",
-			"title": "Einstellungen"
+			"title": "Einstellungen",
+			"theme": {
+				"label": "Farbschema",
+				"auto": "Automatisch (Systemeinstellung)",
+				"light": "Hell",
+				"dark": "Dunkel",
+				"highContrast": "Hoher Kontrast"
+			}
 		},
 		"news": {
 			"title": "Rating-Reports & Community-News",

@@ -234,7 +234,14 @@
 		},
 		"settings": {
 			"description": "Manage application settings and preferences for StackAtlas here.",
-			"title": "Settings"
+			"title": "Settings",
+			"theme": {
+				"label": "Color scheme",
+				"auto": "Automatic (system setting)",
+				"light": "Light",
+				"dark": "Dark",
+				"highContrast": "High contrast"
+			}
 		},
 		"news": {
 			"title": "Rating Reports & Community News",

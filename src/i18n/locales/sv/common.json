@@ -212,7 +212,14 @@
 		},
 		"settings": {
 			"description": "Hantera programinställningar och preferenser för StackAtlas här.",
-			"title": "Inställningar"
+			"title": "Inställningar",
+			"theme": {
+				"label": "Färgschema",
+				"auto": "Automatisk (systeminställning)",
+				"light": "Ljus",
+				"dark": "Mörk",
+				"highContrast": "Högt kontrast"
+			}
 		},
 		"news": {
 			"title": "Betygsrapporter och communitynyheter",
