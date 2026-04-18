@@ -65,7 +65,7 @@ export function CategoryGrid({
 	void handleFilterChange;
 
 	return (
-		<div id="main-content" className="category-container px-3 md:px-4 lg:px-5">
+		<div id="category-results" className="category-container px-3 md:px-4 lg:px-5">
 			{activeStack && stackItemMap && <StackStats stack={activeStack} items={stackScoreItems ?? articles} stackItemMap={stackItemMap} />}
 
 			<p className="results-info" aria-live="polite" aria-atomic="true">
