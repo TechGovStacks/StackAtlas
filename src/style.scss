@@ -2114,15 +2114,31 @@ kol-select {
 	min-width: 52rem;
 }
 
-.dependency-graph__edge-hitbox:focus-visible {
-	stroke: #ffbf47;
-	stroke-opacity: 0.75;
-	stroke-width: 20;
-}
-
 .dependency-graph__empty {
 	color: var(--kolibri-color-grey-70, #4a5568);
 	font-style: italic;
+}
+
+.dependency-graph__edge-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.dependency-graph__edge-list-item {
+	margin: 0;
+}
+
+.dependency-graph__status {
+	border: 0;
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
 }
 
 .dependency-graph__explanation {
