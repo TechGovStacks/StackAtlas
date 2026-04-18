@@ -66,14 +66,14 @@ export function Header({ currentUrl }: HeaderProps) {
 								className={`header__nav-link${isStacksActive ? ' header__nav-link--active' : ''}`}
 								aria-current={isStacksActive ? 'page' : undefined}
 							>
-								{t('header.nav.stacks')}
+								Stacks
 							</a>
 							<a
 								href="#/deps"
 								className={`header__nav-link${isDepsActive ? ' header__nav-link--active' : ''}`}
 								aria-current={isDepsActive ? 'page' : undefined}
 							>
-								{t('header.nav.deps')}
+								Deps
 							</a>
 						</nav>
 						<div className="header__controls flex items-center gap-2 ml-auto">

@@ -11,9 +11,7 @@
 			"categories": "Kategorier",
 			"docs": "Dokumenter",
 			"imprint": "Avtrykk",
-			"settings": "Innstillinger",
-			"stacks": "Stabler",
-			"deps": "Deps"
+			"settings": "Innstillinger"
 		},
 		"eyebrow": "Mål og sammenlign digital suverenitet",
 		"subtitle": "Hvor suveren er teknologistabelen din? StackAtlas skårer teknologier og standarder over hele verden med en transparent suverenitetsscore fra 0–100 – og avslører hvilke avhengigheter som truer din digitale uavhengighet.",
@@ -29,12 +27,8 @@
 		"subtitle": "Vurder og sammenlign teknologistabler over hele verden etter digital suverenitet",
 		"navigationAria": "Bunntekstnavigering",
 		"links": {
-			"github": "GitHub",
-			"community": "Fellesskap",
 			"documentation": "Dokumentasjon",
-			"settings": "Innstillinger",
-			"news": "Nyheter",
-			"stacks": "Stabler"
+			"settings": "Innstillinger"
 		},
 		"license": "Lisens: EUPL-1.2",
 		"builtWith": "Bygget med",

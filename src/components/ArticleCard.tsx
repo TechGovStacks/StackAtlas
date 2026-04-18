@@ -370,7 +370,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 								</div>
 								{!stackItem && stacksContainingItem.length > 0 && (
 									<div className="drawer-stacks">
-										<p className="drawer-stacks__title">{t('header.nav.stacks')}</p>
+										<p className="drawer-stacks__title">Stacks</p>
 										<ul className="drawer-stacks__list">
 											{stacksContainingItem.map((stack) => (
 												<li key={stack.id} className="drawer-stacks__item">

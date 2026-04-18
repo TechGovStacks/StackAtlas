@@ -11,9 +11,7 @@
 			"categories": "Categorías",
 			"docs": "Documentos",
 			"imprint": "Imprimir",
-			"settings": "Ajustes",
-			"stacks": "pilas",
-			"deps": "departamentos"
+			"settings": "Ajustes"
 		},
 		"eyebrow": "Medir y comparar la soberanía digital",
 		"subtitle": "¿Qué tan soberano es su paquete tecnológico? StackAtlas califica tecnologías y estándares en todo el mundo con una puntuación de soberanía transparente de 0 a 100 y revela qué dependencias amenazan su independencia digital.",
@@ -29,12 +27,8 @@
 		"subtitle": "Califique y compare pilas de tecnología en todo el mundo según la soberanía digital",
 		"navigationAria": "Navegación de pie de página",
 		"links": {
-			"github": "GitHub",
-			"community": "Comunidad",
 			"documentation": "Documentación",
-			"settings": "Ajustes",
-			"news": "Noticias",
-			"stacks": "pilas"
+			"settings": "Ajustes"
 		},
 		"license": "Licencia: EUPL-1.2",
 		"builtWith": "Construido con",
