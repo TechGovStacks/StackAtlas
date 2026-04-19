@@ -1,7 +1,7 @@
 // GENERATED FILE - DO NOT EDIT MANUALLY
 // Generated from: data/layers/ + data/items/ + data/stacks/
 // Logo fallback via: src/data/logo-urls.json
-// Generated at: 2026-04-17T18:38:56.796Z
+// Generated at: 2026-04-19T02:36:24.487Z
 
 import type { Item, Layer, Stack } from '../types';
 
@@ -6205,7 +6205,18 @@ export const DEPENDENCY_GRAPH = {
 		"agent-user-interaction-protocol-ag-ui": [],
 		"android": [],
 		"angel-ml": [],
-		"angular": [],
+		"angular": [
+			{
+				"targetItemId": "javascript-ecma-script",
+				"type": "runtime",
+				"scope": "required"
+			},
+			{
+				"targetItemId": "typescript",
+				"type": "language",
+				"scope": "required"
+			}
+		],
 		"ansible": [],
 		"apache-airflow": [],
 		"apache-kafka": [],
@@ -6255,7 +6266,23 @@ export const DEPENDENCY_GRAPH = {
 		"gov-uk-one-login": [],
 		"gov-uk-pay": [],
 		"govstack-information-mediator": [],
-		"grafana": [],
+		"grafana": [
+			{
+				"targetItemId": "postgresql",
+				"type": "runtime",
+				"scope": "optional"
+			},
+			{
+				"targetItemId": "prometheus",
+				"type": "protocol",
+				"scope": "optional"
+			},
+			{
+				"targetItemId": "redis",
+				"type": "runtime",
+				"scope": "optional"
+			}
+		],
 		"graphql": [],
 		"haystack": [],
 		"hbase": [],
@@ -6276,9 +6303,41 @@ export const DEPENDENCY_GRAPH = {
 		"json-web-tokens-jwt": [],
 		"kerberos": [],
 		"kern-ux-standard": [],
-		"keycloak": [],
+		"keycloak": [
+			{
+				"targetItemId": "hypertext-transfer-protocol-http",
+				"type": "protocol",
+				"scope": "required"
+			},
+			{
+				"targetItemId": "java",
+				"type": "runtime",
+				"scope": "required"
+			},
+			{
+				"targetItemId": "open-authorization-oauth",
+				"type": "protocol",
+				"scope": "required"
+			},
+			{
+				"targetItemId": "transport-layer-security-tls",
+				"type": "protocol",
+				"scope": "required"
+			}
+		],
 		"kong": [],
-		"kubernetes": [],
+		"kubernetes": [
+			{
+				"targetItemId": "hypertext-transfer-protocol-http",
+				"type": "protocol",
+				"scope": "required"
+			},
+			{
+				"targetItemId": "transport-layer-security-tls",
+				"type": "protocol",
+				"scope": "required"
+			}
+		],
 		"langgraph": [],
 		"mariadb": [],
 		"markdown-md": [],
@@ -6358,7 +6417,13 @@ export const DEPENDENCY_GRAPH = {
 		"traefik": [],
 		"transmission-control-protocol-tcp": [],
 		"transport-layer-security-tls": [],
-		"typescript": [],
+		"typescript": [
+			{
+				"targetItemId": "javascript-ecma-script",
+				"type": "compiles-to",
+				"scope": "required"
+			}
+		],
 		"typo3": [],
 		"unified-payments-interface-upi": [],
 		"user-datagram-protocol-udp": [],
@@ -6370,7 +6435,86 @@ export const DEPENDENCY_GRAPH = {
 		"yaml-ain-t-markup-language": []
 	} as const;
 
-export const REVERSE_DEPENDENCIES = {} as const;
+export const REVERSE_DEPENDENCIES = {
+		"javascript-ecma-script": [
+			{
+				"sourceItemId": "angular",
+				"type": "runtime",
+				"scope": "required"
+			},
+			{
+				"sourceItemId": "typescript",
+				"type": "compiles-to",
+				"scope": "required"
+			}
+		],
+		"typescript": [
+			{
+				"sourceItemId": "angular",
+				"type": "language",
+				"scope": "required"
+			}
+		],
+		"postgresql": [
+			{
+				"sourceItemId": "grafana",
+				"type": "runtime",
+				"scope": "optional"
+			}
+		],
+		"prometheus": [
+			{
+				"sourceItemId": "grafana",
+				"type": "protocol",
+				"scope": "optional"
+			}
+		],
+		"redis": [
+			{
+				"sourceItemId": "grafana",
+				"type": "runtime",
+				"scope": "optional"
+			}
+		],
+		"hypertext-transfer-protocol-http": [
+			{
+				"sourceItemId": "keycloak",
+				"type": "protocol",
+				"scope": "required"
+			},
+			{
+				"sourceItemId": "kubernetes",
+				"type": "protocol",
+				"scope": "required"
+			}
+		],
+		"java": [
+			{
+				"sourceItemId": "keycloak",
+				"type": "runtime",
+				"scope": "required"
+			}
+		],
+		"open-authorization-oauth": [
+			{
+				"sourceItemId": "keycloak",
+				"type": "protocol",
+				"scope": "required"
+			}
+		],
+		"transport-layer-security-tls": [
+			{
+				"sourceItemId": "keycloak",
+				"type": "protocol",
+				"scope": "required"
+			},
+			{
+				"sourceItemId": "kubernetes",
+				"type": "protocol",
+				"scope": "required"
+			}
+		]
+	} as const;
 
 export const STACKS: Stack[] = [
 		{
@@ -7026,6 +7170,271 @@ export const STACKS: Stack[] = [
 						"fr": "X-Road"
 					},
 					"url": "https://x-road.global/"
+				}
+			]
+		},
+		{
+			"id": "eu-cloud-sovereignty-framework-1-2-1",
+			"name": {
+				"de": "EU Cloud Sovereignty Framework 1.2.1",
+				"en": "EU Cloud Sovereignty Framework 1.2.1"
+			},
+			"description": {
+				"de": "Referenz-Stack fuer SEAL-4-orientierte Cloud-Architekturen auf Basis des EU Cloud Sovereignty Frameworks 1.2.1.",
+				"en": "Reference stack for SEAL-4-oriented cloud architectures based on the EU Cloud Sovereignty Framework 1.2.1."
+			},
+			"country": "EU",
+			"issuer": "EU Cloud Sovereignty Framework Working Context",
+			"version": "1.2.1",
+			"publishedAt": "2025-10-01",
+			"items": [
+				{
+					"itemId": "advanced-encryption-standard",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Verschluesselungsgrundlage fuer Daten im Ruhezustand.",
+						"en": "Encryption baseline for data at rest."
+					}
+				},
+				{
+					"itemId": "ansible",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Automatisiertes Konfigurationsmanagement fuer portable Betriebsprozesse.",
+						"en": "Automated configuration management for portable operations."
+					}
+				},
+				{
+					"itemId": "apache-kafka",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Offenes Event-Streaming fuer entkoppelte Integrationsarchitekturen.",
+						"en": "Open event streaming for decoupled integration architectures."
+					}
+				},
+				{
+					"itemId": "envoy-proxy",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Open-Source API-Gateway und Proxy fuer serviceorientierte Kommunikation.",
+						"en": "Open-source API gateway and proxy for service-oriented communication."
+					}
+				},
+				{
+					"itemId": "fido2-webauthn",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Phishing-resistente MFA fuer IAM im Souveraenitaetskontext.",
+						"en": "Phishing-resistant MFA for IAM in sovereignty contexts."
+					}
+				},
+				{
+					"itemId": "flux",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "GitOps-basierte Auslieferung fuer reproduzierbare Deployments.",
+						"en": "GitOps-based delivery for reproducible deployments."
+					}
+				},
+				{
+					"itemId": "gitlab",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "EU-hostbare Versionsverwaltung und CI/CD-Steuerung.",
+						"en": "EU-hostable version control and CI/CD control plane."
+					}
+				},
+				{
+					"itemId": "grafana",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Visualisierung von Betriebs- und Compliance-Metriken.",
+						"en": "Visualization for operations and compliance metrics."
+					}
+				},
+				{
+					"itemId": "huggingface-transformers",
+					"status": "deprecated",
+					"role": "consumer",
+					"rationale": {
+						"de": "Nur als Uebergangsoption, falls Modelle vollstaendig EU-gehostet betrieben werden.",
+						"en": "Transition option only when models are operated in fully EU-hosted setups."
+					}
+				},
+				{
+					"itemId": "istio",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Service-Mesh fuer Zero-Trust- und mTLS-Betriebsmodelle.",
+						"en": "Service mesh for zero-trust and mTLS operating models."
+					}
+				},
+				{
+					"itemId": "jenkins",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Alternative CI/CD-Engine fuer selbstbetriebene Pipelines.",
+						"en": "Alternative CI/CD engine for self-hosted pipelines."
+					}
+				},
+				{
+					"itemId": "keycloak",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Open-Source-IAM fuer OIDC/OAuth2 und EU-konforme Zugriffskontrolle.",
+						"en": "Open-source IAM for OIDC/OAuth2 and EU-compliant access control."
+					}
+				},
+				{
+					"itemId": "kubernetes",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Portabler Orchestrierungsstandard fuer lock-in-arme Deployments.",
+						"en": "Portable orchestration standard for low lock-in deployments."
+					}
+				},
+				{
+					"itemId": "open-authorization-oauth",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Offener Autorisierungsstandard fuer interoperable APIs.",
+						"en": "Open authorization standard for interoperable APIs."
+					}
+				},
+				{
+					"itemId": "open-id-connect-oidc",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Offener Authentifizierungsstandard fuer Foederation und SSO.",
+						"en": "Open authentication standard for federation and SSO."
+					}
+				},
+				{
+					"itemId": "open-policy-agent",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Policy-as-Code fuer auditierbare Compliance-Entscheidungen.",
+						"en": "Policy-as-code for auditable compliance decisions."
+					}
+				},
+				{
+					"itemId": "openapi",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Offene API-Beschreibungen als Interoperabilitaetsgrundlage.",
+						"en": "Open API descriptions as interoperability baseline."
+					}
+				},
+				{
+					"itemId": "opentelemetry",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Offener Standard fuer Telemetrie und nachvollziehbare Observability.",
+						"en": "Open telemetry standard for traceable observability."
+					}
+				},
+				{
+					"itemId": "postgresql",
+					"status": "recommended",
+					"role": "consumer",
+					"rationale": {
+						"de": "Souveraene, quelloffene Datenbank fuer Kernsysteme.",
+						"en": "Sovereign open-source database for core systems."
+					}
+				},
+				{
+					"itemId": "prometheus",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Metrikstandard fuer Monitoring und SLO-Steuerung.",
+						"en": "Metrics standard for monitoring and SLO governance."
+					}
+				},
+				{
+					"itemId": "rabbitmq",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "AMQP-basierte Messaging-Alternative in offenen Architekturen.",
+						"en": "AMQP-based messaging alternative in open architectures."
+					}
+				},
+				{
+					"itemId": "redis",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Offener Cache fuer performante, selbst betriebene Plattformdienste.",
+						"en": "Open cache for high-performance self-operated platform services."
+					}
+				},
+				{
+					"itemId": "sovereign-cloud-stack",
+					"status": "recommended",
+					"role": "contributor",
+					"rationale": {
+						"de": "SCS als europaeischer Referenzrahmen fuer cloud-native Souveraenitaet.",
+						"en": "SCS as a European reference framework for cloud-native sovereignty."
+					}
+				},
+				{
+					"itemId": "terraform",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "IaC fuer reproduzierbare Infrastruktur ohne proprietaere Betriebswerkzeuge.",
+						"en": "IaC for reproducible infrastructure without proprietary operations tooling."
+					}
+				},
+				{
+					"itemId": "transport-layer-security-tls",
+					"status": "approved",
+					"role": "consumer",
+					"rationale": {
+						"de": "Mindeststandard fuer verschluesselte Transportkommunikation.",
+						"en": "Minimum standard for encrypted transport communication."
+					}
+				}
+			],
+			"sources": [
+				{
+					"label": {
+						"de": "GAIA-X",
+						"en": "GAIA-X"
+					},
+					"url": "https://gaia-x.eu/"
+				},
+				{
+					"label": {
+						"de": "CIGREF Trusted Cloud Referential",
+						"en": "CIGREF Trusted Cloud Referential"
+					},
+					"url": "https://www.cigref.fr/"
+				},
+				{
+					"label": {
+						"de": "CNCF Landscape",
+						"en": "CNCF Landscape"
+					},
+					"url": "https://landscape.cncf.io/"
 				}
 			]
 		},

@@ -16,7 +16,6 @@ Interaktive Vergleichsplattform fuer staatliche und organisationale Tech-Stacks 
 - `docs/README.md`
 - `docs/BUSSINESS_CASE.md`
 - `docs/ARC42.md`
-- `docs/TECH_STACK_CLOUD_SOVEREIGNTY_EU_FRAMEWORK_1_2_1.md`
 
 ## Lokale Entwicklung
 
@@ -27,13 +26,3 @@ pnpm lint
 pnpm test:e2e
 pnpm build
 ```
-
-## App-Stack
-
-- **Build & Tooling:** Vite, TypeScript, UnoCSS, SCSS
-- **Deployment:** GitHub Pages
-- **Framework:** Preact 10 (`jsxImportSource: preact`)
-- **Komponenten:** KoliBri (`@public-ui/components`, `@public-ui/preact`)
-- **PWA/Mobile:** `vite-plugin-pwa`, Capacitor (Android/iOS)
-- **Qualitaet:** ESLint, Stylelint, Prettier, Knip
-- **Testing:** Playwright (E2E + axe-core)
