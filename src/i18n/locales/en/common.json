@@ -95,7 +95,10 @@
 		"sort": {
 			"label": "Sort by",
 			"name": "Name",
-			"score": "Score",
+			"overall": "Overall Score",
+			"sovereignty": "Sovereignty",
+			"adoption": "Adoption",
+			"sovereignAdoption": "Sovereign Adoption",
 			"asc": "↑ Ascending",
 			"desc": "↓ Descending"
 		}

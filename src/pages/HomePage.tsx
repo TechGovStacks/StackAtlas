@@ -20,7 +20,7 @@ export function HomePage() {
 		setActiveStackId(null);
 	}, [location.query.stack]);
 
-	const [sortField, setSortField] = useState<SortField>('score');
+	const [sortField, setSortField] = useState<SortField>('overall');
 	const [sortDir, setSortDir] = useState<SortDir>('desc');
 	const [viewMode, setViewMode] = useState<ViewMode>('tile');
 

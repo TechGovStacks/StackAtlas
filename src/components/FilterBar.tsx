@@ -5,7 +5,7 @@ import { FilterState, Item, Layer, ParticipantRole, Stack } from '../types';
 import { getDependencyTypes, getLocalizedText } from '../utils';
 
 export type ViewMode = 'tile' | 'list';
-export type SortField = 'name' | 'score';
+export type SortField = 'name' | 'overall' | 'sovereignty' | 'adoption' | 'sovereignAdoption';
 export type SortDir = 'asc' | 'desc';
 
 interface FilterBarProps {
@@ -211,7 +211,10 @@ export function FilterBar({
 						_hideLabel
 						_options={[
 							{ label: t('view.sort.name'), value: 'name' },
-							{ label: t('view.sort.score'), value: 'score' },
+							{ label: t('view.sort.overall'), value: 'overall' },
+							{ label: t('view.sort.sovereignty'), value: 'sovereignty' },
+							{ label: t('view.sort.adoption'), value: 'adoption' },
+							{ label: t('view.sort.sovereignAdoption'), value: 'sovereignAdoption' },
 						]}
 						_value={sortField}
 						_on={{

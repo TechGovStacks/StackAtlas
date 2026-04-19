@@ -71,6 +71,9 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 	const scoreResult = computeEffectiveSovereigntyScoreResult(article.sovereigntyCriteria, stackItem);
 	const score = scoreResult.score;
 	const scoreColor = scoreResult.color;
+	const overallScore = article.adoption?.overallScore ?? 0;
+	const adoptionScore = article.adoption?.adoptionScore ?? 0;
+	const sovereignAdoptionScore = article.adoption?.sovereignAdoptionScore ?? 0;
 	// When the drawer is open and the active stack defines a role for the selected
 	// (drill-down) article, honour that role too; otherwise fall back to the
 	// outer stackItem context so navigation between related items keeps the
@@ -133,11 +136,43 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 	const cardScoreTitle = cardMaintainerBoosted
 		? `${cardScoreTitleBase} — ${t('article.maintainerBoost.badgeTitle', { rawScore: scoreResult.rawScore })}`
 		: cardScoreTitleBase;
+
+	// Determine category color for overall score
+	const getScoreColor = (scoreValue: number): string => {
+		if (scoreValue <= 30) return '#D32F2F';   // Rot
+		if (scoreValue <= 45) return '#F57C00';   // Orange
+		if (scoreValue <= 60) return '#F9A825';   // Gelb
+		if (scoreValue <= 75) return '#7CB342';   // Hellgrün
+		if (scoreValue <= 90) return '#388E3C';   // Grün
+		return '#1B5E20';                         // Dunkelgrün
+	};
+
+	const getScoreCategory = (scoreValue: number): string => {
+		if (scoreValue <= 30) return 'insufficient';
+		if (scoreValue <= 45) return 'minimal';
+		if (scoreValue <= 60) return 'adequate';
+		if (scoreValue <= 75) return 'good';
+		if (scoreValue <= 90) return 'excellent';
+		return 'outstanding';
+	};
+
+	const overallScoreColor = getScoreColor(overallScore);
+	const overallScoreCategory = getScoreCategory(overallScore);
+
 	const badges = (
 		<>
 			<span
+				className="card-score-badge"
+				style={{ background: overallScoreColor, color: '#fff' }}
+				title={`Overall Score: ${overallScore}/100`}
+				aria-label={`Overall Score: ${overallScore}/100`}
+			>
+				<span className="card-score-number">{overallScore}</span>
+				<span className="card-score-category">{t(`article.scoreCategories.${overallScoreCategory}`)}</span>
+			</span>
+			<span
 				className={`card-score-badge${cardMaintainerBoosted ? ' card-score-badge--maintainer-boosted' : ''}`}
-				style={{ background: scoreColor, color: '#fff' }}
+				style={{ background: scoreColor, color: '#fff', fontSize: '0.75em' }}
 				title={cardScoreTitle}
 				aria-label={
 					cardMaintainerBoosted ? t('article.maintainerBoost.scoreAria', { score, rawScore: scoreResult.rawScore }) : t('article.scoreAria', { score })
@@ -306,6 +341,35 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 										})}
 									</li>
 								</ul>
+								{selectedArticle.adoption && (
+									<div className="drawer-adoption-section">
+										<p className="drawer-adoption-title">Adoption & Ecosystem Metrics</p>
+										<div className="drawer-adoption-metrics">
+											<div className="adoption-metric">
+												<span className="adoption-metric__label">Overall Score:</span>
+												<span className="adoption-metric__value" style={{ color: getScoreColor(selectedArticle.adoption.overallScore) }}>
+													{selectedArticle.adoption.overallScore}/100
+												</span>
+											</div>
+											<div className="adoption-metric">
+												<span className="adoption-metric__label">Adoption:</span>
+												<span className="adoption-metric__value" style={{ color: getScoreColor(selectedArticle.adoption.adoptionScore) }}>
+													{selectedArticle.adoption.adoptionScore}/100
+												</span>
+											</div>
+											<div className="adoption-metric">
+												<span className="adoption-metric__label">Sovereign Adoption:</span>
+												<span className="adoption-metric__value" style={{ color: getScoreColor(selectedArticle.adoption.sovereignAdoptionScore) }}>
+													{selectedArticle.adoption.sovereignAdoptionScore}/100
+												</span>
+											</div>
+											<div className="adoption-metric">
+												<span className="adoption-metric__label">Used in Stacks:</span>
+												<span className="adoption-metric__value">{selectedArticle.adoption.usedInStacks.length}</span>
+											</div>
+										</div>
+									</div>
+								)}
 								{stackItem?.rationale && (
 									<div className="drawer-rationale">
 										<p className="drawer-rationale__title">{t('stack.rationale')}</p>

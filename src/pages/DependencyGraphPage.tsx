@@ -11,7 +11,7 @@ export function DependencyGraphPage() {
 	const { i18n, t } = useTranslation();
 	const [activeStackId, setActiveStackId] = useState<string | null>(null);
 	const [selectedRootItemId, setSelectedRootItemId] = useState<string | null>(null);
-	const [sortField, setSortField] = useState<SortField>('score');
+	const [sortField, setSortField] = useState<SortField>('overall');
 	const [sortDir, setSortDir] = useState<SortDir>('desc');
 	const [viewMode, setViewMode] = useState<ViewMode>('tile');
 

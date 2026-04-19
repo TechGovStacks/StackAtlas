@@ -43,11 +43,24 @@ export function CategoryGrid({
 	const sortedArticles = useMemo(
 		() =>
 			[...articles].sort((a, b) => {
-				const cmp =
-					sortField === 'name'
-						? getLocalizedText(a.name, i18n.language).localeCompare(getLocalizedText(b.name, i18n.language), i18n.language)
-						: computeEffectiveSovereigntyScore(a.sovereigntyCriteria, stackItemMap?.get(a.id)) -
-							computeEffectiveSovereigntyScore(b.sovereigntyCriteria, stackItemMap?.get(b.id));
+				let cmp = 0;
+
+				if (sortField === 'name') {
+					cmp = getLocalizedText(a.name, i18n.language).localeCompare(
+						getLocalizedText(b.name, i18n.language),
+						i18n.language,
+					);
+				} else if (sortField === 'overall') {
+					cmp = (b.adoption?.overallScore ?? 0) - (a.adoption?.overallScore ?? 0);
+				} else if (sortField === 'sovereignty') {
+					cmp = computeEffectiveSovereigntyScore(a.sovereigntyCriteria, stackItemMap?.get(a.id)) -
+						computeEffectiveSovereigntyScore(b.sovereigntyCriteria, stackItemMap?.get(b.id));
+				} else if (sortField === 'adoption') {
+					cmp = (b.adoption?.adoptionScore ?? 0) - (a.adoption?.adoptionScore ?? 0);
+				} else if (sortField === 'sovereignAdoption') {
+					cmp = (b.adoption?.sovereignAdoptionScore ?? 0) - (a.adoption?.sovereignAdoptionScore ?? 0);
+				}
+
 				return sortDir === 'asc' ? cmp : -cmp;
 			}),
 		[articles, sortField, sortDir, i18n.language, stackItemMap],

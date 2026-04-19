@@ -95,7 +95,10 @@
 		"sort": {
 			"label": "Sortieren nach",
 			"name": "Name",
-			"score": "Score",
+			"overall": "Gesamtscore",
+			"sovereignty": "Souveränität",
+			"adoption": "Verbreitung",
+			"sovereignAdoption": "Souveräne Verbreitung",
 			"asc": "↑ Aufsteigend",
 			"desc": "↓ Absteigend"
 		}
