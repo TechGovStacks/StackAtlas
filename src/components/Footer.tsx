@@ -53,10 +53,6 @@ export function Footer() {
 						<a href="https://public-ui.github.io/en/" rel="noopener noreferrer" className="footer__copy-link underline">
 							KoliBri
 						</a>
-						, {t('footer.and')}{' '}
-						<a href="https://designsystem.gov.de/" rel="noopener noreferrer" className="footer__copy-link underline">
-							KERN-UX
-						</a>
 					</p>
 					<p className="footer__build-info" aria-label={t('footer.buildInfoAria', { commit: commitDisplay, version: appVersion })}>
 						<span className="footer__build-label">{t('footer.buildVersionLabel')}</span> <code className="footer__build-code">{appVersion}</code> ·{' '}
