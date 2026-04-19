@@ -15,6 +15,7 @@ dist/
 public/assets/*
 !public/assets/broken-logo.svg
 src/data/articles.generated.ts
+src/data/items.generated.ts
 
 # Playwright
 playwright-report/
