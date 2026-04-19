@@ -1058,6 +1058,15 @@
 			}
 		},
 		{
+			"itemId": "sovereign-cloud-stack",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
 			"itemId": "spacy",
 			"status": "approved",
 			"role": "consumer",
