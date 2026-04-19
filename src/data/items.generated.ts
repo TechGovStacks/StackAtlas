@@ -1,7 +1,7 @@
 // GENERATED FILE - DO NOT EDIT MANUALLY
 // Generated from: data/layers/ + data/items/ + data/stacks/
 // Logo fallback via: src/data/logo-urls.json
-// Generated at: 2026-04-19T02:38:55.689Z
+// Generated at: 2026-04-19T02:44:22.540Z
 
 import type { Item, Layer, Stack } from '../types';
 
@@ -7174,7 +7174,7 @@ export const STACKS: Stack[] = [
 			]
 		},
 		{
-			"id": "eu-cloud-sovereignty-framework-1-2-1",
+			"id": "eu-cloud-sovereignty-framework",
 			"name": {
 				"de": "EU Cloud Sovereignty Framework",
 				"en": "EU Cloud Sovereignty Framework"
