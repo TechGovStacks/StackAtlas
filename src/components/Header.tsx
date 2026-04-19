@@ -1,4 +1,4 @@
-import { KolButton, KolDrawer } from '@public-ui/preact';
+import { KolAlert, KolButton, KolDrawer } from '@public-ui/preact';
 import { useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { getAppVersion, getCommitDisplay } from '../utils';
@@ -25,9 +25,7 @@ export function Header({ currentUrl }: HeaderProps) {
 			<a href="#main-content" className="skip-nav">
 				{t('header.skipToContent')}
 			</a>
-			<div className="header__beta-banner px-4 md:px-6 py-1.5 text-xs text-center" role="note" aria-live="polite">
-				{t('header.betaBanner')}
-			</div>
+			<KolAlert className="header__beta-banner" _label={t('header.betaBanner')} _level={0} _type="warning" _variant="msg" />
 			<header className="header w-full">
 				{/* Instance info strip – hidden on mobile */}
 				<div
