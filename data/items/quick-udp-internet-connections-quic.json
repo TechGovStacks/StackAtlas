@@ -29,5 +29,6 @@
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://github.com/quicwg"
-	}
+	},
+	"license": "MIT"
 }

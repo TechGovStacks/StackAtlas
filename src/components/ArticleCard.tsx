@@ -226,7 +226,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 											</a>
 										)}
 										{selectedArticle.license && (
-											<span className="drawer-link drawer-link--license" title={`License: ${selectedArticle.license}`}>
+											<span className="drawer-license-badge" title={`License: ${selectedArticle.license}`}>
 												{selectedArticle.license}
 											</span>
 										)}

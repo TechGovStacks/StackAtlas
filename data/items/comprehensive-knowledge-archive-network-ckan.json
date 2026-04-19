@@ -33,5 +33,6 @@
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://github.com/ckan/ckan"
-	}
+	},
+	"license": "AGPL-3.0"
 }

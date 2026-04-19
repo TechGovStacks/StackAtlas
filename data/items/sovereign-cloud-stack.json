@@ -8,7 +8,12 @@
 		"en": "The Sovereign Cloud Stack (SCS) is an open reference standard for sovereign cloud infrastructure (IaaS and KaaS), developed by the OSB Alliance. It defines flavour naming, storage classes and IAM standards and is a foundation of the Germany Stack."
 	},
 	"homepage": "https://scs.community/",
-	"tags": ["cloud", "sovereignty", "iaas", "germany"],
+	"tags": [
+		"cloud",
+		"sovereignty",
+		"iaas",
+		"germany"
+	],
 	"oss": true,
 	"maturity": "incubation",
 	"sovereigntyCriteria": {
@@ -22,5 +27,6 @@
 		"openStandards": true,
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
-	}
+	},
+	"license": "Apache-2.0"
 }

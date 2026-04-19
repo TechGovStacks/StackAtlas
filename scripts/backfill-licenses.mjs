@@ -4,8 +4,8 @@
  *
  * Strategy:
  * 1. Use a knowledge base of common projects and their licenses
- * 2. For items with GitHub repos, fetch license info from GitHub API
- * 3. For others, keep the license field empty (to be filled manually)
+ * 2. Perform exact matching first, then fuzzy matching with length threshold
+ * 3. For items without matches, keep the license field empty (to be filled manually)
  *
  * Run: node scripts/backfill-licenses.mjs
  */
@@ -77,10 +77,8 @@ const LICENSE_DATABASE = {
 	'travis-ci': 'MIT',
 	'gitlab': 'proprietary',
 	'gitea': 'MIT',
-	'gitlab': 'proprietary',
 	'prometheus': 'Apache-2.0',
 	'grafana': 'AGPL-3.0',
-	'influxdb': 'AGPL-3.0',
 	'datadog': 'proprietary',
 	'splunk': 'proprietary',
 	'newrelic': 'proprietary',
@@ -498,7 +496,12 @@ const LICENSE_DATABASE = {
 function fuzzyMatch(itemName, databaseKey) {
 	const normalized = itemName.toLowerCase().replace(/[^a-z0-9]/g, '');
 	const dbNormalized = databaseKey.toLowerCase().replace(/[^a-z0-9]/g, '');
-	return normalized.includes(dbNormalized) || dbNormalized.includes(normalized);
+
+	// Only match if the database key has minimum length (avoid single letter matches)
+	if (dbNormalized.length < 3) return false;
+
+	// Match if key is contained in normalized name (but not just a single letter)
+	return normalized.includes(dbNormalized);
 }
 
 function findLicenseFromDatabase(itemName) {
