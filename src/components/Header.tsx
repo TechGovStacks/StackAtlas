@@ -25,7 +25,9 @@ export function Header({ currentUrl }: HeaderProps) {
 			<a href="#main-content" className="skip-nav">
 				{t('header.skipToContent')}
 			</a>
-			<KolAlert className="header__beta-banner" _label={t('header.betaBanner')} _level={0} _type="warning" _variant="msg" />
+			<KolAlert className="header__beta-banner" _level={0} _type="info">
+				{t('header.betaBanner')}
+			</KolAlert>
 			<header className="header w-full">
 				{/* Instance info strip – hidden on mobile */}
 				<div
