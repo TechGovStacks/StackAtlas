@@ -10,8 +10,8 @@ test.describe('StackAtlas App', () => {
 		await expect(page.locator('header p')).toContainText('ecosystem');
 	});
 
-	test('renders search bar', async ({ page }) => {
-		await expect(page.getByRole('region', { name: /search|suche|recherche/i })).toBeVisible();
+	test('renders filter region', async ({ page }) => {
+		await expect(page.getByRole('region', { name: /search and filter|suche und filter|recherche et filtres/i })).toBeVisible();
 	});
 
 	test('renders article cards', async ({ page }) => {
@@ -64,7 +64,7 @@ test.describe('StackAtlas App', () => {
 	});
 
 	test('screenshot – filter region', async ({ page }) => {
-		const filterRegion = page.getByRole('region', { name: /search|suche|recherche/i });
+		const filterRegion = page.getByRole('region', { name: /search and filter|suche und filter|recherche et filtres/i });
 		await expect(filterRegion).toHaveScreenshot('search-bar.png');
 	});
 
