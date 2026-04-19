@@ -16,6 +16,7 @@ Interaktive Vergleichsplattform fuer staatliche und organisationale Tech-Stacks 
 - `docs/README.md`
 - `docs/BUSSINESS_CASE.md`
 - `docs/ARC42.md`
+- `docs/TECH_STACK_CLOUD_SOVEREIGNTY_EU_FRAMEWORK_1_2_1.md`
 
 ## Lokale Entwicklung
 

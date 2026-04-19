@@ -13,6 +13,7 @@ Dieses Dokument ist das Rahmendokument fuer die aktive Projektdokumentation.
 
 - `docs/BUSSINESS_CASE.md` fuer Vision, Nutzen, Zielbild und fachliche Spezifikation
 - `docs/ARC42.md` fuer technische Architektur, Datenmodell, Qualitaetsziele und Betrieb
+- `docs/TECH_STACK_CLOUD_SOVEREIGNTY_EU_FRAMEWORK_1_2_1.md` fuer Referenzarchitektur und Tech-Stack-Ableitung nach SEAL-/SOV-Modell
 
 ## Geltung
 
