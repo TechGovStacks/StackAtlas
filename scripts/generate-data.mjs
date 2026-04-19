@@ -13,6 +13,15 @@
 import { readFileSync, readdirSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
+import {
+	DIVERSITY_MAX_FACTOR,
+	DIVERSITY_MIN_FACTOR,
+	ROLE_WEIGHTS,
+	SIZE_DAMP_REFERENCE,
+	SOVEREIGNTY_THRESHOLD,
+	STATUS_WEIGHTS,
+	TRANSITIVE_WEIGHT,
+} from '../src/config/adoptionScoringWeights.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = join(ROOT, 'data');
@@ -71,28 +80,10 @@ function computeSovereigntyScore(criteria = {}) {
 
 // ---------------------------------------------------------------------------
 // Adoption Score Calculation (Stack Frequency)
-// IMPORTANT: keep these constants in sync with src/utils/adoptionScore.ts
-// (Cannot import .ts directly from this Node.js build script.)
+// Constants are imported from src/config/adoptionScoringWeights.mjs so this
+// build script and the runtime utility (src/utils/adoptionScore.ts) always
+// use identical weights without duplication.
 // ---------------------------------------------------------------------------
-
-const ROLE_WEIGHTS = {
-	maintainer: 1.0,
-	contributor: 0.8,
-	funder: 0.4,
-	consumer: 0.5,
-};
-
-const STATUS_WEIGHTS = {
-	recommended: 1.0,
-	approved: 0.7,
-	deprecated: 0.1,
-};
-
-const TRANSITIVE_WEIGHT = 0.3;
-const DIVERSITY_MIN_FACTOR = 0.6;
-const DIVERSITY_MAX_FACTOR = 0.4;
-const SOVEREIGNTY_THRESHOLD = 61;
-const SIZE_DAMP_REFERENCE = 20;
 
 function sizeDampening(stackSize) {
 	const normalized = Math.max(1, stackSize / SIZE_DAMP_REFERENCE);

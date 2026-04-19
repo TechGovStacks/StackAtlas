@@ -1,32 +1,13 @@
-import type { Item, ParticipantRole, StackItemStatus, Stack, AdoptionResult } from '../types/index.js';
-
-// Role weights: the influence of different participation types
-const ROLE_WEIGHTS: Record<ParticipantRole, number> = {
-	maintainer: 1.0,
-	contributor: 0.8,
-	funder: 0.4,
-	consumer: 0.5,
-};
-
-// Status weights: the significance of item status
-const STATUS_WEIGHTS: Record<StackItemStatus, number> = {
-	recommended: 1.0,
-	approved: 0.7,
-	deprecated: 0.1,
-};
-
-// Transitive dependency weight: items that are prerequisites get a fraction of coverage
-const TRANSITIVE_WEIGHT = 0.3;
-
-// Diversity influence: geographic spread multiplier between 0.6 and 1.0
-const DIVERSITY_MIN_FACTOR = 0.6;
-const DIVERSITY_MAX_FACTOR = 0.4; // 0.6 + 0.4 * diversity(0->1)
-
-// Sovereignty threshold for "sovereign adoption" score
-const SOVEREIGNTY_THRESHOLD = 61;
-
-// Stack item count for size dampening: log-normalize around 20 items
-const SIZE_DAMP_REFERENCE = 20;
+import type { Item, Stack, AdoptionResult } from '../types/index.js';
+import {
+	DIVERSITY_MAX_FACTOR,
+	DIVERSITY_MIN_FACTOR,
+	ROLE_WEIGHTS,
+	SIZE_DAMP_REFERENCE,
+	SOVEREIGNTY_THRESHOLD,
+	STATUS_WEIGHTS,
+	TRANSITIVE_WEIGHT,
+} from '../config/adoptionScoringWeights.mjs';
 
 /**
  * SIZE_DAMP: Normalize contribution by stack size.
