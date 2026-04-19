@@ -2,7 +2,7 @@ import { KolButton, KolCard, KolDrawer, KolImage } from '@public-ui/preact';
 import { useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { ITEMS, LAYERS, STACKS } from '../data/catalog';
-import { Item, ParticipantRole, SovereigntyCriteria, StackItem } from '../types';
+import { Item, ParticipantRole, SovereigntyCriteria, SovereigntyScoreCategory, StackItem } from '../types';
 import { buildDependencyGraph, getLocalizedText } from '../utils';
 import { computeEffectiveSovereigntyScoreResult, computeOwnerScore } from '../utils/sovereigntyScore';
 import { SovereigntyGauge } from './SovereigntyGauge';
@@ -147,7 +147,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 		return '#1B5E20';                         // Dunkelgrün
 	};
 
-	const getScoreCategory = (scoreValue: number): string => {
+	const getScoreCategory = (scoreValue: number): SovereigntyScoreCategory => {
 		if (scoreValue <= 30) return 'insufficient';
 		if (scoreValue <= 45) return 'minimal';
 		if (scoreValue <= 60) return 'adequate';
@@ -253,7 +253,10 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 								</div>
 								{selectedArticle.adoption && (
 									<div className="drawer-adoption-section">
-										<p className="drawer-adoption-title">Adoption & Ecosystem Metrics</p>
+										<p className="drawer-adoption-title">Overall Score</p>
+										<div className="drawer-gauge-container">
+											<SovereigntyGauge score={selectedArticle.adoption.overallScore} category={getScoreCategory(selectedArticle.adoption.overallScore)} size={160} />
+										</div>
 										<div className="drawer-adoption-metrics">
 											<div className="adoption-metric">
 												<span className="adoption-metric__label">Overall Score:</span>
@@ -280,6 +283,51 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 										</div>
 									</div>
 								)}
+								<div className="drawer-score-section">
+									<p className="drawer-score-title">{t('article.sovereigntyScore')}</p>
+									<div className="drawer-gauge-container">
+										<SovereigntyGauge score={selectedScore} category={selectedScoreCategory} size={160} />
+									</div>
+									{selectedMaintainerBoosted && (
+										<div className="drawer-maintainer-boost">
+											<p className="drawer-maintainer-boost__title">{t('article.maintainerBoost.title')}</p>
+											<p className="drawer-maintainer-boost__explanation">
+												{t('article.maintainerBoost.explanation', {
+													effectiveScore: selectedScore,
+													rawScore: selectedScoreResult.rawScore,
+												})}
+											</p>
+										</div>
+									)}
+									<div className="drawer-criteria">
+										{criteriaKeys.map((key) => {
+											const isSatisfied = selectedArticle.sovereigntyCriteria[key];
+											const isBoosted = selectedBoostedCriteria.has(key);
+											const iconClass = isSatisfied ? 'criteria-icon criteria-icon--satisfied' : 'criteria-icon criteria-icon--unsatisfied';
+											return (
+												<div key={key} className={`drawer-criteria__item${isSatisfied ? ' drawer-criteria__item--satisfied' : ''}`}>
+													<span className={iconClass} aria-hidden="true">
+														{isSatisfied ? '✓' : '○'}
+													</span>
+													<span className="drawer-criteria__label">
+														{t(`article.criteria.${key}`)}
+														{isBoosted && (
+															<span className="criteria-boosted-marker" title={t('article.maintainerBoost.criterionTitle')}>
+																[{t('article.maintainerBoost.criterionMarker')}]
+															</span>
+														)}
+													</span>
+												</div>
+											);
+										})}
+									</div>
+									{selectedOwnerCountry && (
+										<div className="drawer-owner-info">
+											<span className="drawer-owner-flag">{selectedOwnerCountryFlag}</span>
+											<span className="drawer-owner-country">{selectedOwnerCountry}</span>
+										</div>
+									)}
+								</div>
 								{stackItem?.rationale && (
 									<div className="drawer-rationale">
 										<p className="drawer-rationale__title">{t('stack.rationale')}</p>
