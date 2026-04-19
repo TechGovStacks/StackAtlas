@@ -45,6 +45,9 @@ importers:
       preact-iso:
         specifier: 2.11.1
         version: 2.11.1(preact-render-to-string@6.6.7(preact@10.29.1))(preact@10.29.1)
+      preact-render-to-string:
+        specifier: ^6.6.7
+        version: 6.6.7(preact@10.29.1)
       react-hook-form:
         specifier: 7.72.1
         version: 7.72.1(react@19.2.4)
