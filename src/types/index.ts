@@ -159,6 +159,14 @@ export type StackItem = {
 	alternatives?: string[];
 };
 
+export type StackParticipant = {
+	name: string;
+	role: ParticipantRole;
+	jurisdiction?: string;
+	url?: string;
+	since?: string;
+};
+
 export type Stack = {
 	id: string;
 	name: LocalizableText;
@@ -169,6 +177,7 @@ export type Stack = {
 	version: string;
 	publishedAt?: string;
 	items: StackItem[];
+	participants?: StackParticipant[];
 };
 
 export type StackSource = {

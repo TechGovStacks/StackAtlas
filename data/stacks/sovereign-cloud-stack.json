@@ -5,8 +5,8 @@
 		"en": "Sovereign Cloud Stack"
 	},
 	"description": {
-		"de": "Offener europaeischer Referenz-Stack fuer souveraene Cloud-Infrastruktur mit standardisierten IaaS-, KaaS- und IAM-Bausteinen.",
-		"en": "Open European reference stack for sovereign cloud infrastructure with standardized IaaS, KaaS, and IAM building blocks."
+		"de": "Offener europaeischer Referenz-Stack fuer souveraene Cloud-Infrastruktur mit standardisierten IaaS-, KaaS- und IAM-Bausteinen. Die Aufbauphase wurde von Juli 2021 bis Dezember 2024 durch BMWK-Foerderung unterstuetzt; seit 2025 erfolgt die Weiterentwicklung community-getrieben.",
+		"en": "Open European reference stack for sovereign cloud infrastructure with standardized IaaS, KaaS, and IAM building blocks. The initial build-up phase was supported by BMWK funding from July 2021 through December 2024; since 2025, development continues in a community-driven model."
 	},
 	"country": "EU",
 	"issuer": "Open Source Business Alliance (OSBA)",
@@ -75,6 +75,29 @@
 				"en": "SCS Community"
 			},
 			"url": "https://scs.community/"
+		}
+	],
+	"participants": [
+		{
+			"name": "Bundesministerium fuer Wirtschaft und Klimaschutz (BMWK)",
+			"role": "funder",
+			"jurisdiction": "DE",
+			"url": "https://www.bmwk.de/",
+			"since": "2021-07-01"
+		},
+		{
+			"name": "Open Source Business Alliance (OSBA)",
+			"role": "maintainer",
+			"jurisdiction": "DE",
+			"url": "https://www.osb-alliance.de/",
+			"since": "2021-07-01"
+		},
+		{
+			"name": "SCS Community",
+			"role": "contributor",
+			"jurisdiction": "EU",
+			"url": "https://scs.community/",
+			"since": "2025-01-01"
 		}
 	]
 }
