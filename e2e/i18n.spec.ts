@@ -61,7 +61,7 @@ async function expectCoreTranslations(page: Page, locale: 'de' | 'en' | 'fr') {
 
 	await expect(page.locator('html')).toHaveAttribute('lang', expected.htmlLang);
 	await expect(page.locator('.header__subtitle')).toHaveText(expected.headerSubtitle);
-	await expect(page.locator('.filter-bar')).toHaveAttribute('aria-label', expected.searchRegionAria);
+	await expect(page.getByRole('region', { name: expected.searchRegionAria })).toBeVisible();
 	await expect(page.locator('.sovereignty-gauge').first()).toHaveAttribute('aria-label', new RegExp(`^${expected.sovereigntyGaugeAriaPrefix}`));
 	await expectLocalizedSublayerOption(page, locale);
 
