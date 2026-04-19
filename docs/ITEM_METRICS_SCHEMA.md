@@ -627,3 +627,189 @@ Dieses System ermöglicht es:
 - **Flexible Aggregation:** Gewichtung nach Wichtigkeit
 - **Mehrdimensionale Analyse:** Items, Kategorien, Layer, Stacks
 - **Differenzierte Rollenmodelle:** Stack-Kontext mit Multiplikatoren
+
+---
+
+## Adoption Score (Stack-Häufigkeit)
+
+Der **Adoption Score** misst, wie oft ein Item tatsächlich in den kuratierten Stacks vorkommt und in welcher Form (Rolle, Status). Dies ist ein unabhängiges Signal für Ökosystem-Konvergenz, separate vom intrinsischen Sovereignty Score.
+
+### Berechnung
+
+#### 1. Direct Coverage (direkte Stack-Erscheinungen)
+```javascript
+directCoverage(item) = 
+  Σ über alle Stacks S, die item enthalten:
+      ROLE_W[stackItem.role] 
+      × STATUS_W[stackItem.status] 
+      × SIZE_DAMP(S)
+
+// Gewichte:
+ROLE_WEIGHTS = {
+  maintainer:  1.0,   // Höchste Priorat
+  contributor: 0.8,
+  consumer:    0.5,
+  funder:      0.4
+}
+
+STATUS_WEIGHTS = {
+  recommended: 1.0,
+  approved:    0.7,
+  deprecated:  0.1    // Niedrig, aber noch sichtbar
+}
+
+// Größen-Normalisierung: größere Stacks haben gedämpften Einfluss
+SIZE_DAMP(stack) = 1 / (1 + log10(max(1, stack.items.length / 20)))
+```
+
+#### 2. Transitive Coverage (indirekter Einfluss)
+```javascript
+transitiveCoverage(item) =
+  Σ über Abhängigkeiten X von item:
+      0.3 × directCoverage(X)  // γ = 0.3 (30% Gewicht)
+```
+
+Items, die als Voraussetzung für weit verbreitete Items dienen, erhalten indirekten Score-Kredit.
+
+#### 3. Geographic Diversity (Multiplikator)
+```javascript
+diversity(item) = 1 - Σ p_c²  // Simpson-Diversitäts-Index
+  wobei p_c = Anteil der Stacks aus Land c
+  Bereich: [0, 1] (0 = mono-kultur, 1 = perfekt diverse)
+
+rawAdoption = log1p(directCoverage + transitiveCoverage)
+            × (0.6 + 0.4 × diversity)
+```
+
+Die geografische Vielfalt wirkt als Multiplikator (0.6 bis 1.0): Items, die nur in einem Land vorkommen, erhalten weniger Kredit.
+
+#### 4. Normalisierung auf [0, 100]
+```javascript
+adoptionScore = round(100 × rawAdoption / max(rawAdoption über alle Items))
+```
+
+### Sovereign Adoption Score
+
+Zusätzlich gibt es einen **sovereignAdoptionScore**, der die gleiche Formel nutzt, aber nur auf Items/Stacks mit Sovereignty ≥ 61 ("good") angewendet wird.
+
+### AdoptionResult Datenstruktur
+
+```typescript
+export type AdoptionResult = {
+  adoptionScore: number;           // 0-100: allgemeine Adoption
+  sovereignAdoptionScore: number;  // 0-100: Adoption durch souveräne Stacks
+  overallScore: number;            // 0-100: kombinierter Score (siehe unten)
+  directCoverage: number;          // Gewichtete Summe der direkten Erscheinungen
+  transitiveCoverage: number;      // Indirekte Abhängigkeitskredit
+  diversity: number;               // Simpson-Index (0-1)
+  usedInStacks: string[];          // Stack-IDs, in denen dieses Item vorkommt
+};
+```
+
+### Beispiele
+
+**Beispiel 1: Ubiquitäres, nicht-souveränes Item (z.B. Microsoft Teams)**
+```
+- Vorkommt in: 12 Stacks (9× Deutschland, 3× international)
+- Rollen: 10× consumer, 2× funder
+- Status: 11× approved, 1× deprecated
+- Größen-Dämpfung: klein
+- Diversity: 0.4 (hauptsächlich DE)
+
+adoptionScore = 72/100 (hohe Häufigkeit)
+sovereignAdoptionScore = 5/100 (kaum in souveränen Stacks)
+→ Wichtiges Ökosystem-Signal, aber nicht souveränisch!
+```
+
+**Beispiel 2: Seltenes, hochsouveränes Item (z.B. Keycloak)**
+```
+- Vorkommt in: 5 Stacks (de, fr, at, nl, be)
+- Rollen: 3× maintainer, 1× contributor, 1× consumer
+- Status: 5× recommended
+- Größen-Dämpfung: normal
+- Diversity: 0.9 (europäisch diverse)
+
+adoptionScore = 45/100 (kleine Häufigkeit, aber gut verteilt)
+sovereignAdoptionScore = 40/100 (nur in guten/excellent Stacks)
+→ Spezialisiertes Werkzeug mit hoher Souveränität
+```
+
+---
+
+## Overall Score (Kombinierter Default-Score)
+
+Der **Overall Score** kombiniert alle drei Perspektiven für die Default-Sortierung und Anzeige:
+
+```javascript
+overallScore = round(
+  0.60 × sovereigntyScore           // Dominante Basis: intrinsische Qualität
+  + 0.25 × sovereignAdoptionScore   // Ökosystem-Signal (nur souveräne Stacks)
+  + 0.15 × adoptionScore            // Breitere Adoption
+)
+
+// Wertebereich: [0, 100], clamped
+```
+
+### Logik der Gewichte
+
+- **60% Sovereignty:** Primär-Metrik bleibt die intrinsische Bewertung
+- **25% Sovereign Adoption:** Ökosystem-Konvergenz unter Souveränen Items/Stacks
+- **15% General Adoption:** Breitere Verbreitung als Zusatz-Signal
+
+Diese Balance verhindert, dass ubiquitäre proprietäre Tools die Top-Rankings dominieren.
+
+### Beispiel-Kombinationen
+
+| Sovereignty | Sov. Adoption | Adoption | Overall | Interpretation |
+|-------------|--------------|----------|---------|-----------------|
+| 90          | 80           | 70       | 86      | Gold Standard: hochwertig + weit verbreitet |
+| 85          | 50           | 30       | 74      | Spezialisiert: hochwertig, aber nischig |
+| 65          | 40           | 85       | 65      | Pragmatisch: akzeptabel, aber verbreitet |
+| 40          | 5            | 95       | 45      | Problematisch: weit verbreitet, aber nicht souveränisch |
+
+---
+
+## Stack-Level Metrics
+
+Stacks bekommen aggregierte Durchschnitte aller ihrer Items:
+
+```typescript
+export type Stack = {
+  // ... standard fields ...
+  avgSovereigntyScore?: number;    // Ø Sovereignty über alle Items
+  avgAdoptionScore?: number;       // Ø Adoption über alle Items
+  avgOverallScore?: number;        // Ø Overall Score über alle Items
+};
+```
+
+### Berechnung
+
+```javascript
+for stack in stacks:
+  items = stack.items.map(si => getItem(si.itemId))
+  avgSovereigntyScore = average(item.sovereigntyScore)
+  avgAdoptionScore = average(item.adoption.adoptionScore)
+  avgOverallScore = average(item.adoption.overallScore)
+```
+
+Diese Metriken ermöglichen:
+- **Stacks mit hoher Souveränität identifizieren:** avgSovereigntyScore ≥ 75
+- **Reife Ökosysteme erkennen:** avgAdoptionScore ≥ 50 + hohe Diversity
+- **Default-Vergleich:** Overall Score als einheitliche Metrik
+
+---
+
+## Zusammenfassung (erweitert)
+
+Die **Hierarchy of Metrics** mit Adoption und Overall Score ermöglicht:
+
+✓ **Intrinsische Bewertung** (Sovereignty: Item-Qualität)
+✓ **Ökosystem-Signal** (Adoption: Stack-Konvergenz)
+✓ **Diversifizierte Perspektiven** (Overall Score: kombinierte Aussage)
+✓ **Transparente Rankings** (alle drei Scores sichtbar, separately sortierbar)
+✓ **Kontextualisierte Defaults** (Overall Score: ausgewogene Gewichtung)
+
+Diese Kombination zeigt:
+- Was technisch gut ist (Sovereignty)
+- Was tatsächlich gemeinsam genutzt wird (Adoption)
+- Was insgesamt für digitale Souveränität empfohlen wird (Overall)

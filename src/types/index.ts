@@ -59,6 +59,23 @@ export type SovereigntyScoreResult = {
 	percentileInCategory: number;
 };
 
+export type AdoptionResult = {
+	/** Adoption score (0-100): stack frequency with role/status weighting */
+	adoptionScore: number;
+	/** Sovereign adoption score (0-100): adoption by sovereignly-rated items/stacks only */
+	sovereignAdoptionScore: number;
+	/** Overall score (0-100): combined 60% sovereignty + 25% sovereign adoption + 15% adoption */
+	overallScore: number;
+	/** Direct stack coverage: weighted sum of stack appearances */
+	directCoverage: number;
+	/** Transitive coverage: 0.3 * coverage of items depending on this one */
+	transitiveCoverage: number;
+	/** Geographic diversity (Simpson-Index 0-1): 1.0 = perfectly diverse */
+	diversity: number;
+	/** List of stack IDs where this item appears */
+	usedInStacks: string[];
+};
+
 export type SovereigntyCriteria = {
 	/** Open-source with publicly accessible source code (+15) */
 	openSource: boolean;
@@ -110,6 +127,8 @@ export type Item = {
 	sovereigntyScore?: number;
 	/** Computed from sovereigntyCriteria: category, color, percentile */
 	sovereigntyScoreResult?: SovereigntyScoreResult;
+	/** Adoption metrics: stack frequency, diversity, transitive coverage */
+	adoption?: AdoptionResult;
 	github?: {
 		repo?: string;
 		stars?: number;
@@ -178,6 +197,12 @@ export type Stack = {
 	publishedAt?: string;
 	items: StackItem[];
 	participants?: StackParticipant[];
+	/** Average sovereignty score of items in this stack (0-100) */
+	avgSovereigntyScore?: number;
+	/** Average adoption score of items in this stack (0-100) */
+	avgAdoptionScore?: number;
+	/** Average overall score of items in this stack (0-100) */
+	avgOverallScore?: number;
 };
 
 export type StackSource = {

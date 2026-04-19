@@ -592,6 +592,189 @@ E (Poor)
 
 ---
 
+---
+
+## Overall Score und Multi-Dimensionale Bewertung (2026-04)
+
+### Problem der reinen Sovereignty-Sortierung
+
+Der reine Sovereignty Score misst nur die **intrinsischen Qualitätsmerkmale** eines
+Items (Offenheit, Auditierung, Selbstbetriebbarkeit, etc.). Er antwortet auf die
+Frage: "Wie souveränisch IST dieses Werkzeug?"
+
+Diese Perspektive ist fundamental, aber **unvollständig** für praktische
+Entscheidungen:
+
+- Ein hochsouveränes Werkzeug, das niemand nutzt, ist ein akademisches
+  Mauerblümchen.
+- Ein weniger souveränes Werkzeug, das in 20 europäischen Stacks verbreitet ist,
+  signalisiert Ökosystem-Konvergenz und Netzwerkeffekte.
+- Ein proprietäres Werkzeug mit 95% globaler Marktdurchdringung ist zwar nicht
+  souveränisch, aber es zu ignorieren ist unrealistisch.
+
+### Adoption Score (Ökosystem-Signal)
+
+Das neue **Adoption Score** System (siehe `docs/ITEM_METRICS_SCHEMA.md`) gibt
+Antwort auf: "Wie weit verbreitet ist dieses Werkzeug TATSÄCHLICH in den Stacks?"
+
+- **Bereich:** 0-100, mit gleicher Hybrid-Skala wie Sovereignty
+- **Basis:** Stack-Häufigkeit, gewichtet nach Rolle (maintainer > contributor >
+  consumer) und Status (recommended > approved > deprecated)
+- **Faktor:** Größen-Normalisierung (große Stacks nicht übergewichtet) und
+  geografische Diversität (einzelnes Land nicht übergewichtet)
+- **Extra:** Transitive Coverage (Items, die von häufigen Items abhängen, bekommen
+  indirekten Kredit)
+
+### Sovereign Adoption Score
+
+Der **sovereignAdoptionScore** antwortet auf: "Wie verbreitet ist dieses Werkzeug
+unter SOUVERÄNEN Stacks/Items?" (nur Items/Stacks mit Sovereignty ≥ 61)
+
+Dies ist das kritischste Signal, um zu erkennen, ob ein Werkzeug tatsächlich in
+einem europäischen Souveränitäts-Ökosystem ankergrifft oder nur marginal.
+
+### Overall Score (Default-Ranking)
+
+Der neue **Overall Score** kombiniert alle drei Perspektiven mit bewussten
+Gewichtungen:
+
+```javascript
+overallScore = round(
+  0.60 * sovereigntyScore           // Primär: Qualität
+  + 0.25 * sovereignAdoptionScore   // Sekundär: Konvergenz unter Souveränen
+  + 0.15 * adoptionScore            // Tertiär: Breitere Ökosystem-Präsenz
+)
+```
+
+**Logik der Gewichte:**
+
+1. **60% Sovereignty:** Der Sovereignty Score bleibt dominant. Ein Item mit
+   exzellenter Souveränität (90) aber niedriger Adoption (20) erhält `0.6*90 +
+   0.25*20 + 0.15*20 = 62` — immer noch "gut" klassifiziert, weil die Qualität
+   zählt.
+
+2. **25% Sovereign Adoption:** Das zweite Gewicht adressiert das wichtigste
+   Ökosystem-Signal: werden hochwertige Items tatsächlich zusammen in europäischen
+   Stacks eingebaut? Dies zeigt echte Konvergenz.
+
+3. **15% General Adoption:** Das dritte Gewicht verhindert, dass breite
+   Verbreitung allein überbewertet wird. Ein Item, das überall aber nicht
+   souveränisch ist, erhält max `0.15*100 = 15` von diesen Punkten, kann also
+   nie ein Top-Ranker werden.
+
+### Gültigkeitsbereich der Hybrid-Skala
+
+Der Overall Score nutzt die gleiche 6-Kategorien-Skala wie der Sovereignty Score:
+
+```
+🔴 0-30   (Unzureichend)
+🟠 31-45  (Minimal)
+🟡 46-60  (Ausreichend)
+🟢 61-75  (Gut)
+🟢 76-90  (Sehr Gut)
+🟢 91-100 (Hervorragend)
+```
+
+Da alle drei Input-Komponenten auf [0, 100] normiert sind, bleibt die gewichtete
+Summe automatisch in [0, 100]:
+
+```
+Minimum: 0.60*0 + 0.25*0 + 0.15*0 = 0 ✓
+Maximum: 0.60*100 + 0.25*100 + 0.15*100 = 100 ✓
+→ Hybrid-Skala ist valide für Overall Score
+```
+
+### UI-Integration
+
+In der Benutzeroberfläche werden alle drei Scores angezeigt:
+
+**Pill-Ansicht auf Item-Cards:**
+```
+┌─────────────────────────────┐
+│ Nextcloud (Overall: 65)      │
+├─────────────────────────────┤
+│ 🟡 Overall: 65/100 (default) │
+│ 🟡 Sovereignty: 60/100        │
+│ 🟠 Sovereign Adoption: 50/100 │
+│ 🟢 General Adoption: 45/100   │
+└─────────────────────────────┘
+```
+
+**Sortierungs-Optionen (Dropdown):**
+- Default: "Overall Score" (kombiniert, 0.60/0.25/0.15)
+- "Sovereignty Score" (nur intrinsisch)
+- "Sovereign Adoption Score" (nur europäische Konvergenz)
+- "General Adoption Score" (nur Häufigkeit)
+- "Name A-Z"
+
+**Stack-Ø-Metriken:**
+```
+Germany Stack
+  avgOverallScore:          72/100  ← primär für Stack-Vergleich
+  avgSovereigntyScore:      70/100
+  avgAdoptionScore:         55/100
+  avgSovereignAdoptionScore: 65/100
+```
+
+### Praktische Beispiele
+
+**Fall 1: Linux Kernel**
+```
+Sovereignty Score:         92/100  (OSS, EU-relevant, Audit, Standards, mature)
+Sovereign Adoption Score:  78/100  (in 15+ souveränen Stacks)
+General Adoption Score:    98/100  (in 22/22 Stacks)
+───────────────────────────
+Overall Score:             89/100  (= 0.60*92 + 0.25*78 + 0.15*98)
+Category: Sehr Gut 🟢
+Interpretation: Universell empfohlen, hochwertig, breit verbreitet
+```
+
+**Fall 2: Keycloak**
+```
+Sovereignty Score:         85/100  (OSS, EU-centric, Audit, owned by community)
+Sovereign Adoption Score:  72/100  (in 8 souveränen Stacks)
+General Adoption Score:    45/100  (nur in 6/22 Stacks)
+───────────────────────────
+Overall Score:             75/100  (= 0.60*85 + 0.25*72 + 0.15*45)
+Category: Gut 🟢
+Interpretation: Spezialisiert auf Identity, hochwertig, mit europäischen Stacks konvergent
+```
+
+**Fall 3: GitHub Enterprise**
+```
+Sovereignty Score:         35/100  (proprietär, US-HQ, Limited audit)
+Sovereign Adoption Score:  22/100  (in 2 Stacks, meist deprecated)
+General Adoption Score:    78/100  (in 18/22 Stacks, aber oft consumer)
+───────────────────────────
+Overall Score:             42/100  (= 0.60*35 + 0.25*22 + 0.15*78)
+Category: Minimal 🟠
+Interpretation: Weit verbreitet, aber nicht souveränisch. Alternativen empfohlen.
+```
+
+### Sortierungs-Konsistenz
+
+**Wichtig:** Die Sortierung nach Overall Score unterscheidet sich von der nach
+Sovereignty Score allein, gibt aber keine "falschen" Ergebnisse:
+
+```
+Sortiert nach Sovereignty Score:
+  1. Linux Kernel (92) ← Höchste Qualität
+  2. Keycloak (85)
+  3. Nextcloud (60)
+  4. GitHub Enterprise (35)
+
+Sortiert nach Overall Score (DEFAULT):
+  1. Linux Kernel (89) ← Hochwertig + verbreitet
+  2. Keycloak (75) ← Spezial, aber souveränisch
+  3. Nextcloud (65) ← Breiter einsetzbar
+  4. GitHub Enterprise (42) ← Problematisch, Alternativen suchen
+```
+
+Beide Ordnungen sind logisch und nachvollziehbar — die erste optimiert auf
+Qualität, die zweite auf praktische Realisierbarkeit in echten Stacks.
+
+---
+
 ## Literatur & Referenzen
 
 - **Jost, J. T., et al. (2003):** "The Minimal Group Paradigm and its Cognitive Basis" - Zeigt optimale Kategorisierung bei 5-7 Gruppen

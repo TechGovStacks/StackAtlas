@@ -36,6 +36,8 @@
 		"report-dependency-health": "node scripts/report-dependency-health.mjs",
 		"start": "pnpm run dev",
 		"stylelint": "stylelint \"src/**/*.scss\"",
+		"test": "vitest",
+		"test:coverage": "vitest --coverage",
 		"test:e2e": "playwright test",
 		"test:e2e:ui": "playwright test --ui",
 		"test:e2e:update-snapshots": "playwright test --update-snapshots",
@@ -94,6 +96,7 @@
 		"unocss": "66.6.8",
 		"vite": "8.0.8",
 		"vite-plugin-pwa": "1.2.0",
+		"vitest": "^4.1.4",
 		"workbox-window": "7.4.0"
 	},
 	"pnpm": {
