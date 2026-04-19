@@ -22,13 +22,13 @@
 		"sovereignty"
 	],
 	"oss": true,
-	"maturity": "graduated",
+	"maturity": "incubation",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": true,
 		"hasAudit": false,
 		"permissiveLicense": true,
-		"matureProject": true,
+		"matureProject": false,
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,

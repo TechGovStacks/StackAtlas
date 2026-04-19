@@ -24,7 +24,7 @@
 		},
 		{
 			"itemId": "grafana",
-			"status": "approved",
+			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
 				"de": "Observability und Dashboards fuer den Cloud-Betrieb.",
@@ -33,7 +33,7 @@
 		},
 		{
 			"itemId": "keycloak",
-			"status": "approved",
+			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
 				"de": "Identitaets- und Zugriffsmanagement im IAM-Layer.",
@@ -51,7 +51,7 @@
 		},
 		{
 			"itemId": "prometheus",
-			"status": "approved",
+			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
 				"de": "Monitoring und Metriksammlung fuer Betriebs- und Gesundheitsdaten.",
@@ -60,7 +60,7 @@
 		},
 		{
 			"itemId": "terraform",
-			"status": "approved",
+			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
 				"de": "Infrastructure as Code fuer reproduzierbare Bereitstellung.",
