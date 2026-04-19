@@ -106,9 +106,9 @@ dokumentiert justierbar sind.
   benannte Konstanten.
 - `scripts/generate-data.mjs` — nach Aufbau von `REVERSE_DEPENDENCIES`
   `computeAdoptionScores` aufrufen, `overallScore` berechnen, Werte in die
-  generierten Items schreiben. Import via `tsx`/esbuild-Loader prüfen;
-  alternativ Spiegel-Datei `scripts/_adoptionScore.mjs` mit Snapshot-Test
-  zur Drift-Erkennung (analog zum heutigen Sovereignty-Doppel).
+  generierten Items schreiben. Import via tsx/esbuild-Loader sicherstellen,
+  um eine Single Source of Truth zu gewährleisten und Code-Duplikation
+  zu vermeiden.
 - `src/hooks/useStackMetrics.ts` — `avgAdoption`, `adoptionDistribution`,
   `avgOverall` lesen (keine Neuberechnung).
 - `src/utils/sovereigntyScore.ts` — **unverändert** (bewusste Entscheidung).
