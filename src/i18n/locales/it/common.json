@@ -144,7 +144,16 @@
 			"scoreAria": "Punteggio di sovranità (contesto del manutentore): {{score}} di 100 – punteggio pubblico: {{rawScore}} di 100",
 			"noteAria": "Nota sul contesto del manutentore"
 		},
-		"sovereigntyGaugeAria": "Indicatore del punteggio di sovranità: {{score}} su 100 ({{category}})"
+		"sovereigntyGaugeAria": "Indicatore del punteggio di sovranità: {{score}} su 100 ({{category}})",
+		"scoreOverview": {
+			"title": "Punteggio complessivo",
+			"calculation": "Calcolo del punteggio",
+			"sovereignty": "Sovranità",
+			"sovereignAdoption": "Adozione sovrana",
+			"adoption": "Adozione",
+			"total": "Punteggio complessivo",
+			"usedInStacks": "Usato in {{count}} stack"
+		}
 	},
 	"pwa": {
 		"updateAvailable": "È disponibile una nuova versione di StackAtlas.",

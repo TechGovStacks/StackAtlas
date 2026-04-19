@@ -144,7 +144,16 @@
 			"scoreAria": "Suveränitetspoäng (underhållskontext): {{score}} av 100 – offentlig poäng: {{rawScore}} av 100",
 			"noteAria": "Notera om underhållskontexten"
 		},
-		"sovereigntyGaugeAria": "Mätare för suveränitetspoäng: {{score}} av 100 ({{category}})"
+		"sovereigntyGaugeAria": "Mätare för suveränitetspoäng: {{score}} av 100 ({{category}})",
+		"scoreOverview": {
+			"title": "Totalpoäng",
+			"calculation": "Poängberäkning",
+			"sovereignty": "Suveränitet",
+			"sovereignAdoption": "Suverän adoption",
+			"adoption": "Adoption",
+			"total": "Totalpoäng",
+			"usedInStacks": "Används i {{count}} stacks"
+		}
 	},
 	"pwa": {
 		"updateAvailable": "En ny version av StackAtlas är tillgänglig.",

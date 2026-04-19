@@ -166,7 +166,16 @@
 			"scoreAria": "Souveränitäts-Score (Maintainer-Kontext): {{score}} von 100 – öffentlich bewerteter Score: {{rawScore}} von 100",
 			"noteAria": "Hinweis zum Maintainer-Kontext"
 		},
-		"sovereigntyGaugeAria": "Souveränitäts-Score-Anzeige: {{score}} von 100 ({{category}})"
+		"sovereigntyGaugeAria": "Souveränitäts-Score-Anzeige: {{score}} von 100 ({{category}})",
+		"scoreOverview": {
+			"title": "Gesamt-Score",
+			"calculation": "Score-Berechnung",
+			"sovereignty": "Souveränität",
+			"sovereignAdoption": "Souveräne Verbreitung",
+			"adoption": "Verbreitung",
+			"total": "Gesamt-Score",
+			"usedInStacks": "Genutzt in {{count}} Stacks"
+		}
 	},
 	"pwa": {
 		"updateAvailable": "Eine neue Version von StackAtlas ist verfügbar.",

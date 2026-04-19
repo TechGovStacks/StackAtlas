@@ -251,43 +251,60 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 										)}
 									</div>
 								</div>
-								{selectedArticle.adoption && (
-									<div className="drawer-adoption-section">
-										<p className="drawer-adoption-title">Overall Score</p>
-										<div className="drawer-gauge-container">
-											<SovereigntyGauge score={selectedArticle.adoption.overallScore} category={getScoreCategory(selectedArticle.adoption.overallScore)} size={160} />
-										</div>
-										<div className="drawer-adoption-metrics">
-											<div className="adoption-metric">
-												<span className="adoption-metric__label">Overall Score:</span>
-												<span className="adoption-metric__value" style={{ color: getScoreColor(selectedArticle.adoption.overallScore) }}>
-													{selectedArticle.adoption.overallScore}/100
-												</span>
-											</div>
-											<div className="adoption-metric">
-												<span className="adoption-metric__label">Adoption:</span>
-												<span className="adoption-metric__value" style={{ color: getScoreColor(selectedArticle.adoption.adoptionScore) }}>
-													{selectedArticle.adoption.adoptionScore}/100
-												</span>
-											</div>
-											<div className="adoption-metric">
-												<span className="adoption-metric__label">Sovereign Adoption:</span>
-												<span className="adoption-metric__value" style={{ color: getScoreColor(selectedArticle.adoption.sovereignAdoptionScore) }}>
-													{selectedArticle.adoption.sovereignAdoptionScore}/100
-												</span>
-											</div>
-											<div className="adoption-metric">
-												<span className="adoption-metric__label">Used in Stacks:</span>
-												<span className="adoption-metric__value">{selectedArticle.adoption.usedInStacks.length}</span>
-											</div>
-										</div>
-									</div>
-								)}
 								<div className="drawer-score-section">
-									<p className="drawer-score-title">{t('article.sovereigntyScore')}</p>
+									{/* ── Gesamt-Score (Gauge) ─────────────────────────────── */}
+									<p className="drawer-score-title">{t('article.scoreOverview.title')}</p>
 									<div className="drawer-gauge-container">
-										<SovereigntyGauge score={selectedScore} category={selectedScoreCategory} size={160} />
+										<SovereigntyGauge
+											score={selectedArticle.adoption?.overallScore ?? 0}
+											category={getScoreCategory(selectedArticle.adoption?.overallScore ?? 0)}
+											size={160}
+										/>
 									</div>
+
+									{/* ── Score-Herleitung ──────────────────────────────────── */}
+									{selectedArticle.adoption && (
+										<div className="score-breakdown">
+											<p className="score-breakdown__title">{t('article.scoreOverview.calculation')}</p>
+											<div className="score-breakdown__rows">
+												<div className="score-breakdown__row">
+													<span className="score-breakdown__label">{t('article.scoreOverview.sovereignty')}</span>
+													<span className="score-breakdown__score" style={{ color: getScoreColor(selectedScoreResult.rawScore) }}>
+														{selectedScoreResult.rawScore}/100
+													</span>
+													<span className="score-breakdown__weight">× 60%</span>
+													<span className="score-breakdown__pts">{(selectedScoreResult.rawScore * 0.6).toFixed(1)}</span>
+												</div>
+												<div className="score-breakdown__row">
+													<span className="score-breakdown__label">{t('article.scoreOverview.sovereignAdoption')}</span>
+													<span className="score-breakdown__score" style={{ color: getScoreColor(selectedArticle.adoption.sovereignAdoptionScore) }}>
+														{selectedArticle.adoption.sovereignAdoptionScore}/100
+													</span>
+													<span className="score-breakdown__weight">× 25%</span>
+													<span className="score-breakdown__pts">{(selectedArticle.adoption.sovereignAdoptionScore * 0.25).toFixed(1)}</span>
+												</div>
+												<div className="score-breakdown__row">
+													<span className="score-breakdown__label">{t('article.scoreOverview.adoption')}</span>
+													<span className="score-breakdown__score" style={{ color: getScoreColor(selectedArticle.adoption.adoptionScore) }}>
+														{selectedArticle.adoption.adoptionScore}/100
+													</span>
+													<span className="score-breakdown__weight">× 15%</span>
+													<span className="score-breakdown__pts">{(selectedArticle.adoption.adoptionScore * 0.15).toFixed(1)}</span>
+												</div>
+												<div className="score-breakdown__row score-breakdown__row--total">
+													<span className="score-breakdown__label">{t('article.scoreOverview.total')}</span>
+													<span className="score-breakdown__score score-breakdown__score--total" style={{ color: getScoreColor(selectedArticle.adoption.overallScore) }}>
+														{selectedArticle.adoption.overallScore}/100
+													</span>
+												</div>
+											</div>
+											<p className="score-breakdown__stacks">
+												{t('article.scoreOverview.usedInStacks', { count: selectedArticle.adoption.usedInStacks.length })}
+											</p>
+										</div>
+									)}
+
+									{/* ── Maintainer-Boost ──────────────────────────────────── */}
 									{selectedMaintainerBoosted && (
 										<div className="drawer-maintainer-boost">
 											<p className="drawer-maintainer-boost__title">{t('article.maintainerBoost.title')}</p>
@@ -299,6 +316,9 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 											</p>
 										</div>
 									)}
+
+									{/* ── Souveränitäts-Kriterien ───────────────────────────── */}
+									<p className="drawer-score-title">{t('article.sovereigntyScore')}</p>
 									<div className="drawer-criteria">
 										{criteriaKeys.map((key) => {
 											const isSatisfied = selectedArticle.sovereigntyCriteria[key];

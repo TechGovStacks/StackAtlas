@@ -144,7 +144,16 @@
 			"scoreAria": "Suverænitetsscore (vedligeholdelseskontekst): {{score}} af 100 – offentlig score: {{rawScore}} af 100",
 			"noteAria": "Bemærk om vedligeholdelseskonteksten"
 		},
-		"sovereigntyGaugeAria": "Måler for suverænitetsscore: {{score}} ud af 100 ({{category}})"
+		"sovereigntyGaugeAria": "Måler for suverænitetsscore: {{score}} ud af 100 ({{category}})",
+		"scoreOverview": {
+			"title": "Samlet score",
+			"calculation": "Score-beregning",
+			"sovereignty": "Suverænitet",
+			"sovereignAdoption": "Suveræn adoption",
+			"adoption": "Adoption",
+			"total": "Samlet score",
+			"usedInStacks": "Brugt i {{count}} stacks"
+		}
 	},
 	"pwa": {
 		"updateAvailable": "En ny version af StackAtlas er tilgængelig.",

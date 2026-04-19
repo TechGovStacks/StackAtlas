@@ -166,7 +166,16 @@
 			"scoreAria": "Sovereignty score (maintainer context): {{score}} of 100 – public score: {{rawScore}} of 100",
 			"noteAria": "Note about the maintainer context"
 		},
-		"sovereigntyGaugeAria": "Sovereignty score gauge: {{score}} of 100 ({{category}})"
+		"sovereigntyGaugeAria": "Sovereignty score gauge: {{score}} of 100 ({{category}})",
+		"scoreOverview": {
+			"title": "Overall Score",
+			"calculation": "Score Calculation",
+			"sovereignty": "Sovereignty",
+			"sovereignAdoption": "Sovereign Adoption",
+			"adoption": "Adoption",
+			"total": "Overall Score",
+			"usedInStacks": "Used in {{count}} stacks"
+		}
 	},
 	"pwa": {
 		"updateAvailable": "A new version of StackAtlas is available.",

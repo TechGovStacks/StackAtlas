@@ -2089,6 +2089,94 @@ kol-select {
 	}
 }
 
+/* ─────────────────────────────────────────────────────────────────────────────
+   Score-Herleitung / Score Breakdown
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.score-breakdown {
+	margin: var(--ds-space-3) 0;
+	padding: var(--ds-space-3);
+	background: var(--ds-color-bg);
+	border: 1px solid var(--ds-color-border-light);
+	border-radius: var(--ds-radius-md);
+}
+
+.score-breakdown__title {
+	font-size: var(--ds-text-xs);
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	color: var(--ds-color-text-muted);
+	margin: 0 0 var(--ds-space-3);
+}
+
+.score-breakdown__rows {
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+}
+
+.score-breakdown__row {
+	display: grid;
+	grid-template-columns: 1fr auto auto auto;
+	gap: var(--ds-space-2);
+	align-items: center;
+	font-size: var(--ds-text-sm);
+	padding: var(--ds-space-1) 0;
+	border-bottom: 1px solid var(--ds-color-border-light);
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.score-breakdown__row--total {
+	border-top: 2px solid var(--ds-color-border);
+	border-bottom: none;
+	margin-top: var(--ds-space-1);
+	padding-top: var(--ds-space-2);
+	font-weight: 700;
+}
+
+.score-breakdown__label {
+	color: var(--ds-color-text);
+	min-width: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.score-breakdown__score {
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
+	white-space: nowrap;
+}
+
+.score-breakdown__score--total {
+	font-size: var(--ds-text-base);
+}
+
+.score-breakdown__weight {
+	color: var(--ds-color-text-muted);
+	font-size: var(--ds-text-xs);
+	white-space: nowrap;
+}
+
+.score-breakdown__pts {
+	color: var(--ds-color-text-muted);
+	font-size: var(--ds-text-xs);
+	text-align: right;
+	white-space: nowrap;
+	font-variant-numeric: tabular-nums;
+	min-width: 2.8rem;
+}
+
+.score-breakdown__stacks {
+	margin: var(--ds-space-3) 0 0;
+	font-size: var(--ds-text-xs);
+	color: var(--ds-color-text-muted);
+}
+
 .dependency-graph__legend-item {
 	align-items: center;
 	border: 1px solid var(--kolibri-color-blue-20, #d1dbe8);
