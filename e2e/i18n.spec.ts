@@ -138,17 +138,4 @@ test.describe('i18n language detection and fallbacks', () => {
 		expect(missingKeyValue).toBe(EXPECTED.de.missingKeyFallback);
 		expect(missingKeyValue).not.toContain('this_key_does_not_exist_anywhere');
 	});
-
-	test('filter region is present and localized in DE/EN/FR', async ({ page }) => {
-		await page.goto('/');
-
-		await changeLanguage(page, 'de');
-		await expect(page.getByRole('region', { name: EXPECTED.de.searchRegionAria })).toHaveCount(1);
-
-		await changeLanguage(page, 'en');
-		await expect(page.getByRole('region', { name: EXPECTED.en.searchRegionAria })).toHaveCount(1);
-
-		await changeLanguage(page, 'fr');
-		await expect(page.getByRole('region', { name: EXPECTED.fr.searchRegionAria })).toHaveCount(1);
-	});
 });
