@@ -1038,8 +1038,7 @@ kol-card.article-card,
 	margin-bottom: var(--ds-space-2);
 }
 
-.drawer-related__list,
-.drawer-stacks__list {
+.drawer-list {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
