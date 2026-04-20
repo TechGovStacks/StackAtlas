@@ -9,7 +9,7 @@ Erstelle einen detaillierten Umsetzungsplan für das folgende Feature oder die f
 1. Erkunde die relevanten Teile der Codebase (Typen, Scoring-Logik, Schemata, Dokumentation).
 2. Analysiere Auswirkungen auf bestehende Architektur und Datenmodelle.
 3. Erstelle einen strukturierten Plan mit klaren Implementierungsschritten.
-4. Speichere den Plan unter `docs/plan/<slug>.md` (slug = kurzer Bezeichner der Aufgabe).
+4. Speichere den Plan unter `docs/plans/<slug>.md` (slug = kurzer Bezeichner der Aufgabe).
 
 ## Planstruktur (Pflichtabschnitte)
 
