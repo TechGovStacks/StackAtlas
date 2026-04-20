@@ -1043,6 +1043,17 @@ kol-card.article-card,
 	display: flex;
 	flex-direction: column;
 	gap: var(--ds-space-2);
+	margin: 0;
+	padding: 0;
+}
+
+.drawer-stacks__list {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: var(--ds-space-2);
+	margin: 0;
+	padding: 0;
 }
 
 .drawer-related__link {
