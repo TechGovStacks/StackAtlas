@@ -71,6 +71,31 @@
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
+   Light Mode (Explicit)
+   ───────────────────────────────────────────────────────────────────────── */
+
+[data-theme='light'] {
+	--ds-color-primary: #003d82;
+	--ds-color-primary-dark: #002d62;
+	--ds-color-primary-light: #1a56a0;
+	--ds-color-accent: #0070cb;
+	--ds-color-bg: #f6f7f8;
+	--ds-color-bg-white: #fff;
+	--ds-color-surface: #fff;
+	--ds-color-border: #d0d3d9;
+	--ds-color-border-light: #e8eaed;
+	--ds-color-text: #1d2129;
+	--ds-color-text-muted: #6b7280;
+	--ds-color-text-inverse: #fff;
+	--ds-cat-betrieb: #00883d;
+	--ds-cat-infrastruktur: #c5192d;
+	--ds-cat-plattform: #003d82;
+	--ds-cat-zugang: #f39c12;
+	--ds-shadow-card: 0 1px 3px rgb(0 0 0 / 8%), 0 1px 2px rgb(0 0 0 / 5%);
+	--ds-shadow-card-hover: 0 8px 16px rgb(0 0 0 / 10%);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
    Dark Mode
    ───────────────────────────────────────────────────────────────────────── */
 
