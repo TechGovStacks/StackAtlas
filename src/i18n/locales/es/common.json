@@ -231,7 +231,8 @@
 			"focus": {
 				"openDataGovernance": "Enfoque: Gobernanza de datos abiertos",
 				"identityWalletInteroperability": "Enfoque: Interoperabilidad de Identity Wallet",
-				"reportTemplate": "Enfoque: Plantilla de informe"
+				"reportTemplate": "Enfoque: Plantilla de informe",
+				"scoringExplained": "Enfoque: Explicación del scoring"
 			}
 		}
 	}

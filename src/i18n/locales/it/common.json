@@ -231,7 +231,8 @@
 			"focus": {
 				"openDataGovernance": "Focus: Governance dei dati aperti",
 				"identityWalletInteroperability": "Obiettivo: interoperabilità del portafoglio di identità",
-				"reportTemplate": "Obiettivo: modello di rapporto"
+				"reportTemplate": "Obiettivo: modello di rapporto",
+				"scoringExplained": "Focus: Spiegazione del punteggio"
 			}
 		}
 	}

@@ -253,7 +253,8 @@
 			"focus": {
 				"openDataGovernance": "Focus: Open Data Governance",
 				"identityWalletInteroperability": "Focus: Identity Wallet Interoperability",
-				"reportTemplate": "Focus: Report Template"
+				"reportTemplate": "Focus: Report Template",
+				"scoringExplained": "Focus: Scoring Explained"
 			}
 		}
 	},

@@ -231,7 +231,8 @@
 			"focus": {
 				"openDataGovernance": "Fokus: Open Data Governance",
 				"identityWalletInteroperability": "Fokus: Interoperabilitet for identitetslommebok",
-				"reportTemplate": "Fokus: Rapportmal"
+				"reportTemplate": "Fokus: Rapportmal",
+				"scoringExplained": "Fokus: Scoring forklart"
 			}
 		}
 	}
