@@ -1,4 +1,4 @@
-import { KolButton, KolCard, KolDrawer, KolImage } from '@public-ui/preact';
+import { KolAvatar, KolButton, KolCard, KolDrawer, KolImage } from '@public-ui/preact';
 import { useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { ITEMS, LAYERS, STACKS } from '../data/catalog';
@@ -85,24 +85,9 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 	const selectedBoostedCriteria = new Set<keyof Omit<SovereigntyCriteria, 'ownerType'>>(selectedScoreResult.boostedCriteria);
 	const criteriaKeys = (Object.keys(article.sovereigntyCriteria) as Array<keyof typeof article.sovereigntyCriteria>).filter((key) => key !== 'ownerType');
 
-	const getLogoFallbackLabel = (name: string) => {
-		const sanitized = name.trim();
-		if (!sanitized) return '?';
-		const words = sanitized.split(/\s+/).filter(Boolean);
-		if (words.length >= 2) {
-			return `${words[0][0] ?? ''}${words[1][0] ?? ''}`.toUpperCase();
-		}
-		return sanitized.slice(0, 2).toUpperCase();
-	};
-
 	const renderArticleLogo = (logo: string | undefined, localizedName: string, large = false) => {
-		const fallbackLabel = getLogoFallbackLabel(localizedName);
 		const fallbackClassName = large ? 'article-logo-placeholder article-logo-placeholder--drawer' : 'article-logo-placeholder';
-		const fallback = (
-			<div className={fallbackClassName} aria-label={localizedName} role="img">
-				{fallbackLabel}
-			</div>
-		);
+		const fallback = <KolAvatar className={fallbackClassName} _label={localizedName} />;
 
 		if (!logo) return fallback;
 
@@ -113,7 +98,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 
 		if (large) {
 			if (failedLogos.has(logo)) return fallback;
-			return <img src={src} alt={localizedName} loading="lazy" className="article-logo--drawer" onError={() => handleImageError()} />;
+			return <KolImage _src={src} _alt={localizedName} _loading="lazy" className="article-logo--drawer" _on={{ error: handleImageError }} />;
 		}
 
 		if (failedLogos.has(logo)) return fallback;

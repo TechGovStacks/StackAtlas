@@ -744,17 +744,8 @@ kol-card.article-card,
 .article-logo-placeholder {
 	width: 40px;
 	height: 40px;
-	border-radius: var(--ds-radius-sm);
 	flex-shrink: 0;
-	background: var(--ds-color-subtle);
-	color: var(--ds-color-text);
-	font-size: var(--ds-text-xs);
-	font-weight: 700;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	text-transform: uppercase;
-	border: 1px solid var(--ds-color-border);
+	display: block;
 }
 
 .card-content {
