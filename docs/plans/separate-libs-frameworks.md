@@ -155,15 +155,24 @@ Für jedes der 23 betroffenen Items in `data/items/*.json` wird der Wert
    - Frameworks: `frameworks` (DE/EN) oder `bibliotheken` (DE) / `libraries` (EN)
    - Node.js-Sublayer: `laufzeit` (DE) / `runtime` (EN) — oder als Folge-Task
      herauslösen.
-2. **Data-Migration** — für jedes Item in
-   `data/items/{angular,c,css,django,flutter,go,java,javascript-ecma-script,nextjs,nodejs,php,public-ui-kolibri,python,r,react,ruby-on-rails,rust,selenium,spring-boot,swift,tailwind-css,typescript,vuejs}.json`
-   das Feld `sublayer` setzen (Liste s. Abschnitt „Ziel-Zuordnung").
+2. **Data-Migration** — für **alle** Items, die aktuell den Sublayer
+   `entwicklung` tragen, den Wert gemäß Abschnitt „Ziel-Zuordnung" setzen.
+   Betroffene Dateien dynamisch ermitteln (statt hartkodierter Liste), um
+   Items abzudecken, die nach Erstellung dieses Plans hinzugekommen sind:
+   ```bash
+   grep -l '"sublayer": "entwicklung"' data/items/*.json
+   ```
+   Die Referenzliste im Abschnitt „Ziel-Zuordnung" dient als Soll-Abgleich;
+   ein Item-Neuzugang mit `sublayer: "entwicklung"` muss im Review explizit
+   einem der neuen Sublayer zugeordnet werden.
 3. **Validierung ausführen** — `pnpm validate-schemas` (via
    `scripts/validate-schemas.mjs`), muss grün bleiben.
 4. **i18n-Labels ergänzen** — in jedem
    `src/i18n/locales/<code>/common.json` einen neuen Block
    `search.sublayers.<slug>` anlegen, initial gepflegt:
-   - `sprachen` → „Programmiersprachen" / „Programming Languages"
+   - `sprachen` → „Sprachen" / „Languages" (bewusst allgemein gehalten, da
+     CSS als Stylesheet-Sprache enthalten ist und keine Programmiersprache
+     im engeren Sinn ist)
    - `frameworks` → „Frameworks & Bibliotheken" / „Frameworks & Libraries"
    - Bestands-Slugs (`integration`, `daten`, `sicherheit`, `ki`,
      `inbetriebnahme`, `transport`, `verteilung`, `lowcode`, `anschluss`,
@@ -193,8 +202,8 @@ Für jedes der 23 betroffenen Items in `data/items/*.json` wird der Wert
 9. **Dokumentation aktualisieren** (s. Abschnitt „Dokumentations-Updates").
 10. **Tests anpassen / ergänzen**:
     - `e2e/i18n.spec.ts:48-55` verifiziert den Sublayer-Filter — ergänzen
-      durch Assertion, dass Labels „Programmiersprachen" / „Frameworks &
-      Bibliotheken" im lokalisierten Modus erscheinen.
+      durch Assertion, dass Labels „Sprachen" / „Frameworks & Bibliotheken"
+      im lokalisierten Modus erscheinen.
     - Unit-Test (neu) in `src/utils/__tests__/` oder ein Daten-Test in
       `scripts/`, der sicherstellt, dass **kein** Item mehr
       `sublayer === "entwicklung"` trägt.
@@ -206,8 +215,12 @@ Für jedes der 23 betroffenen Items in `data/items/*.json` wird der Wert
     - `pnpm build`
 12. **Review & Merge** — kleine, isolierte PR: nur Datenänderung +
     i18n-Labels + FilterBar-Anpassung + Doku.
-13. **Cleanup nach Merge** — diese Plandatei (`docs/plans/separate-libs-frameworks.md`)
-    aus dem Repo entfernen.
+13. **Dokumentation archivieren** — diese Plandatei nach erfolgreichem Merge
+    nach `docs/archive/plans/separate-libs-frameworks.md` verschieben
+    (statt löschen), um die Entscheidungshistorie für spätere Beiträge zu
+    erhalten. Dies entspricht dem im Repo bereits etablierten Muster von
+    `docs/archive/` (z. B. `docs/archive/consolidated/`,
+    `docs/archive/architecture/`).
 
 ## Dokumentations-Updates
 
