@@ -94,10 +94,7 @@
 	--ds-shadow-card-hover: 0 8px 16px rgb(0 0 0 / 10%);
 }
 
-/* ─────────────────────────────────────────────────────────────────────────
-   Dark Mode
-   ───────────────────────────────────────────────────────────────────────── */
-
+/* Dark Mode (disabled - to be reconsidered)
 [data-theme='dark'] {
 	--ds-color-primary: #4a9bff;
 	--ds-color-primary-dark: #6ab4ff;
@@ -118,8 +115,10 @@
 	--ds-shadow-card: 0 1px 3px rgb(0 0 0 / 40%), 0 1px 2px rgb(0 0 0 / 30%);
 	--ds-shadow-card-hover: 0 8px 16px rgb(0 0 0 / 60%);
 }
+*/
 
 @media (prefers-color-scheme: dark) {
+	/* Disabled - to be reconsidered
 	:root {
 		--ds-color-primary: #4a9bff;
 		--ds-color-primary-dark: #6ab4ff;
@@ -140,6 +139,7 @@
 		--ds-shadow-card: 0 1px 3px rgb(0 0 0 / 40%), 0 1px 2px rgb(0 0 0 / 30%);
 		--ds-shadow-card-hover: 0 8px 16px rgb(0 0 0 / 60%);
 	}
+	*/
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
