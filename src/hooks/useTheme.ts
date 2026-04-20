@@ -9,6 +9,16 @@ export function useTheme() {
 		const stored = (typeof window !== 'undefined' ? localStorage?.getItem('theme') : null) as ThemeValue | null;
 		const initialTheme = stored || 'auto';
 		setThemeState(initialTheme);
+
+		// Apply the theme to the document
+		if (typeof document !== 'undefined') {
+			const html = document.documentElement;
+			if (initialTheme === 'auto') {
+				html.removeAttribute('data-theme');
+			} else {
+				html.setAttribute('data-theme', initialTheme);
+			}
+		}
 	}, []);
 
 	const setTheme = (newTheme: ThemeValue) => {

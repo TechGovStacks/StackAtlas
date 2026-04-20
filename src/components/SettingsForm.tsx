@@ -24,18 +24,16 @@ export function SettingsForm() {
 		<div className="settings-form space-y-6">
 			<p className="text-sm text-gray-600">{t('pages.settings.description')}</p>
 
-			<fieldset className="settings-form__theme-group space-y-2">
-				<legend className="text-sm font-semibold">{t('pages.settings.theme.label')}</legend>
+			<div className="settings-form__theme-group space-y-2">
 				<KolSingleSelect
 					_label={t('pages.settings.theme.label')}
-					_hideLabel
 					_options={themeOptions}
 					_value={theme}
 					_on={{
 						onChange: handleThemeChange,
 					}}
 				/>
-			</fieldset>
+			</div>
 
 			<LanguageSwitcher />
 		</div>
