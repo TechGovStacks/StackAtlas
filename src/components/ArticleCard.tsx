@@ -393,7 +393,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 								{!stackItem && stacksContainingItem.length > 0 && (
 									<div className="drawer-stacks">
 										<p className="drawer-stacks__title">Stacks</p>
-										<ul className="drawer-stacks__list drawer-list">
+										<ul className="drawer-stacks__list">
 											{stacksContainingItem.map((stack) => (
 												<li key={stack.id} className="drawer-stacks__item">
 													<a href={`#/stacks?stack=${stack.id}`} className="drawer-related__link" onClick={() => setIsDrawerOpen(false)}>
@@ -417,7 +417,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 											? t('article.relatedSubtitleStack', { count: relatedArticles.length })
 											: t('article.relatedSubtitleLayer', { count: relatedArticles.length })}
 									</p>
-									<ul className="drawer-related__list drawer-list">
+									<ul className="drawer-related__list">
 										{relatedArticles.map((relatedArticle) => (
 											<li key={relatedArticle.id} className="drawer-related__item">
 												<button
