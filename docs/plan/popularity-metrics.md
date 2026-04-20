@@ -58,6 +58,7 @@ Fehlende externe Signale führen zu Lücken:
   "type": "object",
   "description": "Optional external popularity signals for scoring (manually curated)",
   "additionalProperties": false,
+  "required": ["updatedAt"],
   "properties": {
     "updatedAt": {
       "type": "string",
@@ -88,7 +89,7 @@ Fehlende externe Signale führen zu Lücken:
 }
 ```
 
-**Hinweis zu `github.stars`:** Das bestehende Feld `github.stars` bleibt für Rückwärtskompatibilität erhalten. `popularityMetrics.githubStars` ist die neue, für Scoring genutzte Quelle. Ein Migrations-Hinweis in der Doku erklärt den Unterschied.
+**Hinweis zu `github.stars`:** Das bestehende Feld `github.stars` wird als **deprecated** markiert (`@deprecated` in Schema-Description und TypeScript-Typ). Es bleibt aus Rückwärtskompatibilität lesbar, fließt aber **nicht** ins Scoring ein. `popularityMetrics.githubStars` ist die alleinige Source of Truth für Scoring-Zwecke. Das Build-Skript priorisiert `popularityMetrics.githubStars` und ignoriert `github.stars` bei der Score-Berechnung. Ein Migrations-Skript (Phase 4) überträgt bestehende `github.stars`-Werte nach `popularityMetrics.githubStars`.
 
 ### 3.2 Neuer Typ `PopularityMetrics`
 
@@ -96,8 +97,8 @@ Fehlende externe Signale führen zu Lücken:
 
 ```typescript
 export type PopularityMetrics = {
-  /** ISO 8601 date when metrics were last updated */
-  updatedAt?: string;
+  /** ISO 8601 date when metrics were last updated — required for ageFactor calculation */
+  updatedAt: string;
   /** GitHub star count */
   githubStars?: number;
   /** npm weekly download count */
@@ -192,7 +193,7 @@ function computeRawPopularityScore(metrics: PopularityMetrics): number {
   // Primär: Maximum des stärksten Signals
   // Sekundär: kleiner Bonus für Multisignal-Präsenz (cross-platform)
   const maxSignal = Math.max(...signals);
-  const multiPlatformBonus = Math.min(0.1, (signals.length - 1) * 0.05);
+  const multiPlatformBonus = Math.max(0, Math.min(0.1, (signals.filter(s => s > 0).length - 1) * 0.05));
   
   return Math.min(1.0, maxSignal + multiPlatformBonus);
 }
