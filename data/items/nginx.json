@@ -33,5 +33,10 @@
 		"lastDate": "2025-11-11",
 		"url": "https://nginx.org/en/docs/index.html"
 	},
-	"license": "BSD-2-Clause"
+	"license": "BSD-2-Clause",
+	"popularityMetrics": {
+		"updatedAt": "2026-04-20",
+		"githubStars": 23500,
+		"dockerWeeklyPulls": 8500000
+	}
 }

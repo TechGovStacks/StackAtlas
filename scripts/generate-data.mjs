@@ -16,12 +16,15 @@ import { fileURLToPath } from 'url';
 import {
 	DIVERSITY_MAX_FACTOR,
 	DIVERSITY_MIN_FACTOR,
+	POPULARITY_ADOPTION_BLEND,
+	POPULARITY_ADOPTION_WEIGHT,
 	ROLE_WEIGHTS,
 	SIZE_DAMP_REFERENCE,
 	SOVEREIGNTY_THRESHOLD,
 	STATUS_WEIGHTS,
 	TRANSITIVE_WEIGHT,
 } from '../src/config/adoptionScoringWeights.mjs';
+import { computePopularityScore } from '../src/config/popularityScore.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = join(ROOT, 'data');
@@ -132,10 +135,7 @@ function computeDirectCoverage(itemId, stacks, itemSovereigntyScore) {
 		const contribution = roleWeight * statusWeight * sizeWeight;
 		directCoverage += contribution;
 
-		if (
-			itemSovereigntyScore !== undefined &&
-			itemSovereigntyScore >= SOVEREIGNTY_THRESHOLD
-		) {
+		if (itemSovereigntyScore !== undefined && itemSovereigntyScore >= SOVEREIGNTY_THRESHOLD) {
 			sovereignCoverage += contribution;
 		}
 	}
@@ -152,11 +152,7 @@ function computeTransitiveCoverage(itemId, reverseDeps, stacks, itemMap) {
 		const dependent = itemMap[dependentId];
 		if (!dependent) continue;
 
-		const { coverage, sovereignCoverage } = computeDirectCoverage(
-			dependentId,
-			stacks,
-			dependent.sovereigntyScore
-		);
+		const { coverage, sovereignCoverage } = computeDirectCoverage(dependentId, stacks, dependent.sovereigntyScore);
 
 		transitiveCoverage += TRANSITIVE_WEIGHT * coverage;
 		sovereignTransitiveCoverage += TRANSITIVE_WEIGHT * sovereignCoverage;
@@ -167,8 +163,7 @@ function computeTransitiveCoverage(itemId, reverseDeps, stacks, itemMap) {
 
 function computeRawAdoptionScore(directCoverage, transitiveCoverage, diversity) {
 	const totalCoverage = directCoverage + transitiveCoverage;
-	const withDiversity =
-		Math.log1p(totalCoverage) * (DIVERSITY_MIN_FACTOR + DIVERSITY_MAX_FACTOR * diversity);
+	const withDiversity = Math.log1p(totalCoverage) * (DIVERSITY_MIN_FACTOR + DIVERSITY_MAX_FACTOR * diversity);
 	return withDiversity;
 }
 
@@ -183,17 +178,11 @@ function computeAdoptionScores(items, stacks, reverseDeps) {
 
 	for (const item of items) {
 		const diversity = computeDiversity(stacks, item.id);
-		const { coverage: directCov, sovereignCoverage: directSovCov, stackIds } =
-			computeDirectCoverage(item.id, stacks, item.sovereigntyScore);
-		const { coverage: transitiveCov, sovereignCoverage: transitiveSovCov } =
-			computeTransitiveCoverage(item.id, reverseDeps, stacks, itemMap);
+		const { coverage: directCov, sovereignCoverage: directSovCov, stackIds } = computeDirectCoverage(item.id, stacks, item.sovereigntyScore);
+		const { coverage: transitiveCov, sovereignCoverage: transitiveSovCov } = computeTransitiveCoverage(item.id, reverseDeps, stacks, itemMap);
 
 		const adoption = computeRawAdoptionScore(directCov, transitiveCov, diversity);
-		const sovereignAdoption = computeRawAdoptionScore(
-			directSovCov,
-			transitiveSovCov,
-			diversity
-		);
+		const sovereignAdoption = computeRawAdoptionScore(directSovCov, transitiveSovCov, diversity);
 
 		rawScores[item.id] = {
 			adoption,
@@ -224,9 +213,7 @@ function computeAdoptionScores(items, stacks, reverseDeps) {
 		if (!raw) continue;
 
 		const adoptionScore = Math.round((100 * raw.adoption) / maxAdoption);
-		const sovereignAdoptionScore = Math.round(
-			(100 * raw.sovereignAdoption) / maxSovereignAdoption
-		);
+		const sovereignAdoptionScore = Math.round((100 * raw.sovereignAdoption) / maxSovereignAdoption);
 
 		results[item.id] = {
 			adoptionScore,
@@ -247,10 +234,14 @@ function computeOverallScore(sovereigntyScore, adoption) {
 	const SOVEREIGN_ADOPTION_WEIGHT = 0.25;
 	const ADOPTION_WEIGHT = 0.15;
 
-	const combined =
-		SOVEREIGNTY_WEIGHT * sovereigntyScore +
-		SOVEREIGN_ADOPTION_WEIGHT * adoption.sovereignAdoptionScore +
-		ADOPTION_WEIGHT * adoption.adoptionScore;
+	let adoptionScoreToUse = adoption.adoptionScore;
+
+	// If popularity score is available, blend it with adoption score
+	if (adoption.popularityScore !== undefined) {
+		adoptionScoreToUse = POPULARITY_ADOPTION_WEIGHT * adoption.adoptionScore + POPULARITY_ADOPTION_BLEND * adoption.popularityScore;
+	}
+
+	const combined = SOVEREIGNTY_WEIGHT * sovereigntyScore + SOVEREIGN_ADOPTION_WEIGHT * adoption.sovereignAdoptionScore + ADOPTION_WEIGHT * adoptionScoreToUse;
 
 	return Math.round(Math.max(0, Math.min(100, combined)));
 }
@@ -339,6 +330,11 @@ const adoptionScores = computeAdoptionScores(items, stacks, reverseDependencies)
 for (const item of items) {
 	const adoption = adoptionScores[item.id];
 	if (adoption) {
+		// Compute popularity score if metrics are available
+		if (item.popularityMetrics) {
+			adoption.popularityScore = computePopularityScore(item.popularityMetrics);
+		}
+
 		item.adoption = adoption;
 		item.adoption.overallScore = computeOverallScore(item.sovereigntyScore, adoption);
 	}

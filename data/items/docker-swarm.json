@@ -31,5 +31,10 @@
 		"lastDate": "2025-11-11",
 		"url": "https://docs.docker.com/engine/swarm/"
 	},
-	"license": "Apache-2.0"
+	"license": "Apache-2.0",
+	"popularityMetrics": {
+		"updatedAt": "2026-04-20",
+		"githubStars": 9200,
+		"dockerWeeklyPulls": 12500000
+	}
 }

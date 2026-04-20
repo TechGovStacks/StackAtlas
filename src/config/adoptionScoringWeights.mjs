@@ -37,3 +37,19 @@ export const SOVEREIGNTY_THRESHOLD = 61;
 
 /** Reference stack size for log-based size dampening */
 export const SIZE_DAMP_REFERENCE = 20;
+
+/**
+ * Popularity blending weights: how much external popularity signals contribute
+ * to the adoption score segment of the overall score.
+ */
+export const POPULARITY_ADOPTION_BLEND = 0.3; // 30% Popularity in Adoption-Blending
+export const POPULARITY_ADOPTION_WEIGHT = 0.7; // 70% bisheriger Adoption Score
+
+/**
+ * Platform-specific reference values for log-normalization.
+ * These represent the "very popular" threshold for each platform.
+ */
+export const POPULARITY_REF_GITHUB_STARS = 50_000;
+export const POPULARITY_REF_NPM_WEEKLY = 5_000_000;
+export const POPULARITY_REF_DOCKER_WEEKLY = 1_000_000;
+export const POPULARITY_REF_PYPI_WEEKLY = 5_000_000;

@@ -199,6 +199,39 @@
 					"format": "uri"
 				}
 			}
+		},
+		"popularityMetrics": {
+			"type": "object",
+			"description": "Optional external popularity signals for scoring (manually curated)",
+			"additionalProperties": false,
+			"required": ["updatedAt"],
+			"properties": {
+				"updatedAt": {
+					"type": "string",
+					"description": "ISO 8601 date when metrics were last updated (YYYY-MM-DD)",
+					"format": "date"
+				},
+				"githubStars": {
+					"type": "integer",
+					"description": "GitHub star count at time of updatedAt",
+					"minimum": 0
+				},
+				"npmWeeklyDownloads": {
+					"type": "integer",
+					"description": "npm weekly download count at time of updatedAt",
+					"minimum": 0
+				},
+				"dockerWeeklyPulls": {
+					"type": "integer",
+					"description": "Docker Hub weekly pull count at time of updatedAt",
+					"minimum": 0
+				},
+				"pypiWeeklyDownloads": {
+					"type": "integer",
+					"description": "PyPI weekly download count at time of updatedAt",
+					"minimum": 0
+				}
+			}
 		}
 	}
 }

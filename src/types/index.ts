@@ -59,6 +59,19 @@ export type SovereigntyScoreResult = {
 	percentileInCategory: number;
 };
 
+export type PopularityMetrics = {
+	/** ISO 8601 date when metrics were last updated — required for ageFactor calculation */
+	updatedAt: string;
+	/** GitHub star count */
+	githubStars?: number;
+	/** npm weekly download count */
+	npmWeeklyDownloads?: number;
+	/** Docker Hub weekly pull count */
+	dockerWeeklyPulls?: number;
+	/** PyPI weekly download count */
+	pypiWeeklyDownloads?: number;
+};
+
 export type AdoptionResult = {
 	/** Adoption score (0-100): stack frequency with role/status weighting */
 	adoptionScore: number;
@@ -74,6 +87,8 @@ export type AdoptionResult = {
 	diversity: number;
 	/** List of stack IDs where this item appears */
 	usedInStacks: string[];
+	/** Popularity score (0-100): normalized log-scale from external signals. Undefined if no data. */
+	popularityScore?: number;
 };
 
 export type SovereigntyCriteria = {
@@ -137,6 +152,7 @@ export type Item = {
 		lastDate?: string;
 		url?: string;
 	};
+	popularityMetrics?: PopularityMetrics;
 };
 
 // ---------------------------------------------------------------------------

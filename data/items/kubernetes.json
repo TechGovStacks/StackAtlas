@@ -51,5 +51,9 @@
 			}
 		}
 	],
-	"license": "Apache-2.0"
+	"license": "Apache-2.0",
+	"popularityMetrics": {
+		"updatedAt": "2026-04-20",
+		"githubStars": 113000
+	}
 }

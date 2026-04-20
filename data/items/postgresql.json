@@ -29,5 +29,10 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"license": "PostgreSQL"
+	"license": "PostgreSQL",
+	"popularityMetrics": {
+		"updatedAt": "2026-04-20",
+		"githubStars": 24000,
+		"dockerWeeklyPulls": 5200000
+	}
 }
