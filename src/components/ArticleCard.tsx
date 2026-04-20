@@ -1,4 +1,4 @@
-import { KolButton, KolCard, KolDrawer, KolImage } from '@public-ui/preact';
+import { KolAvatar, KolButton, KolCard, KolDrawer, KolImage } from '@public-ui/preact';
 import { useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { ITEMS, LAYERS, STACKS } from '../data/catalog';
@@ -84,22 +84,22 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 	const criteriaKeys = (Object.keys(article.sovereigntyCriteria) as Array<keyof typeof article.sovereigntyCriteria>).filter((key) => key !== 'ownerType');
 
 	const renderArticleLogo = (logo: string | undefined, localizedName: string, large = false) => {
-		if (!logo) {
-			return null;
-		}
+		const fallbackClassName = large ? 'article-logo-placeholder article-logo-placeholder--drawer' : 'article-logo-placeholder';
+		const fallback = <KolAvatar className={fallbackClassName} _label={localizedName} />;
 
-		const src = failedLogos.has(logo) ? 'assets/broken-logo.svg' : logo;
+		if (!logo || failedLogos.has(logo)) return fallback;
+
 		const handleImageError = () => {
 			setFailedLogos((prev) => new Set([...prev, logo]));
 		};
 
 		if (large) {
-			return <img src={src} alt={localizedName} loading="lazy" className="article-logo--drawer" onError={() => handleImageError()} />;
+			return <KolImage _src={logo} _alt={localizedName} _loading="lazy" className="article-logo--drawer" _on={{ error: handleImageError }} />;
 		}
 
 		return (
 			<KolImage
-				_src={src}
+				_src={logo}
 				_alt={localizedName}
 				_loading="lazy"
 				className="article-logo"
@@ -196,7 +196,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 					onClose: () => setIsDrawerOpen(false),
 				}}
 			>
-				<div className="drawer-content">
+				<div className="article-drawer-content">
 					<KolCard _label={localizedSelectedArticleName} className="drawer-card">
 						<div className="drawer-details">
 							<div className="drawer-headline">
