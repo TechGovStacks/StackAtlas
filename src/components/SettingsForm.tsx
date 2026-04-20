@@ -24,6 +24,8 @@ export function SettingsForm() {
 		<div className="settings-form space-y-6">
 			<p className="text-sm text-gray-600">{t('pages.settings.description')}</p>
 
+			<LanguageSwitcher />
+
 			<div className="settings-form__theme-group space-y-2">
 				<KolSingleSelect
 					_label={t('pages.settings.theme.label')}
@@ -34,8 +36,6 @@ export function SettingsForm() {
 					}}
 				/>
 			</div>
-
-			<LanguageSwitcher />
 		</div>
 	);
 }

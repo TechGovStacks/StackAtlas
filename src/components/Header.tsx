@@ -112,7 +112,7 @@ export function Header({ currentUrl }: HeaderProps) {
 							<KolButton
 								ref={settingsTriggerRef}
 								className="header__lang-trigger"
-								_label={t('header.languageSwitcher.label')}
+								_label={t('pages.settings.title')}
 								_hideLabel
 								_icons={{ left: 'kolicon kolicon-cogwheel' }}
 								_variant="ghost"
