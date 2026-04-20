@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 import type { PopularityMetrics } from '../../types';
 import { ageFactor, computePopularityScore, computeRawPopularityScore, normalizeSignal } from '../popularityScore';
 
@@ -85,31 +85,32 @@ describe('popularityScore', () => {
 
 	describe('ageFactor', () => {
 		it('returns 1.0 for recent data (≤6 months)', () => {
-			const sixMonthsAgo = new Date();
-			sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 5);
-			const isoDate = sixMonthsAgo.toISOString().split('T')[0];
-			expect(ageFactor(isoDate)).toBe(1.0);
+			// Mock current time to 2026-04-20
+			vi.setSystemTime(new Date('2026-04-20'));
+			// 5 months ago from 2026-04-20 = 2025-11-20
+			expect(ageFactor('2025-11-20')).toBe(1.0);
+			vi.useRealTimers();
 		});
 
 		it('returns 0.9 for 9-month-old data', () => {
-			const nineMonthsAgo = new Date();
-			nineMonthsAgo.setMonth(nineMonthsAgo.getMonth() - 9);
-			const isoDate = nineMonthsAgo.toISOString().split('T')[0];
-			expect(ageFactor(isoDate)).toBe(0.9);
+			vi.setSystemTime(new Date('2026-04-20'));
+			// 9 months ago from 2026-04-20 = 2025-07-20
+			expect(ageFactor('2025-07-20')).toBe(0.9);
+			vi.useRealTimers();
 		});
 
 		it('returns 0.7 for 18-month-old data', () => {
-			const eighteenMonthsAgo = new Date();
-			eighteenMonthsAgo.setMonth(eighteenMonthsAgo.getMonth() - 18);
-			const isoDate = eighteenMonthsAgo.toISOString().split('T')[0];
-			expect(ageFactor(isoDate)).toBe(0.7);
+			vi.setSystemTime(new Date('2026-04-20'));
+			// 18 months ago from 2026-04-20 = 2024-10-20
+			expect(ageFactor('2024-10-20')).toBe(0.7);
+			vi.useRealTimers();
 		});
 
 		it('returns 0.5 for very old data (>24 months)', () => {
-			const veryOld = new Date();
-			veryOld.setFullYear(veryOld.getFullYear() - 3);
-			const isoDate = veryOld.toISOString().split('T')[0];
-			expect(ageFactor(isoDate)).toBe(0.5);
+			vi.setSystemTime(new Date('2026-04-20'));
+			// 36 months ago from 2026-04-20 = 2023-04-20
+			expect(ageFactor('2023-04-20')).toBe(0.5);
+			vi.useRealTimers();
 		});
 
 		it('returns 0.8 for undefined date', () => {
