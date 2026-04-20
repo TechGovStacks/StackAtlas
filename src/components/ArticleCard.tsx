@@ -294,7 +294,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 
 									{/* ── Souveränitäts-Kriterien ───────────────────────────── */}
 									<p className="drawer-score-title">{t('article.sovereigntyScore')}</p>
-									<ul className="drawer-criteria" aria-label={t('article.sovereigntyScore')}>
+									<ul className="drawer-criteria">
 										{criteriaKeys.map((key) => {
 											const isSatisfied = selectedArticle.sovereigntyCriteria[key];
 											const isBoosted = selectedBoostedCriteria.has(key);
