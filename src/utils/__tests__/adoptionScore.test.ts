@@ -1,6 +1,6 @@
-import { describe, it, expect } from 'vitest';
+import { describe, expect, it } from 'vitest';
+import type { Item, SovereigntyCriteria, Stack } from '../../types/index.js';
 import { computeAdoptionScores } from '../adoptionScore.js';
-import type { Item, Stack, SovereigntyCriteria } from '../../types/index.js';
 
 const DEFAULT_CRITERIA: SovereigntyCriteria = {
 	openSource: false,
@@ -259,9 +259,7 @@ describe('computeAdoptionScores', () => {
 			id: 'stack1',
 			name: { de: 'Stack 1', en: 'Stack 1' },
 			version: '1.0',
-			items: [
-				{ itemId: 'depends_on_upstream', status: 'recommended', role: 'maintainer' },
-			],
+			items: [{ itemId: 'depends_on_upstream', status: 'recommended', role: 'maintainer' }],
 		};
 
 		const result = computeAdoptionScores(items, [stack]);

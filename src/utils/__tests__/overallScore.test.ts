@@ -1,6 +1,6 @@
-import { describe, it, expect } from 'vitest';
-import { computeOverallScore, enrichAdoptionWithOverallScore } from '../overallScore.js';
+import { describe, expect, it } from 'vitest';
 import type { AdoptionResult } from '../../types/index.js';
+import { computeOverallScore, enrichAdoptionWithOverallScore } from '../overallScore.js';
 
 describe('computeOverallScore', () => {
 	it('computes weighted sum of 60% sovereignty + 25% sovereign adoption + 15% adoption', () => {

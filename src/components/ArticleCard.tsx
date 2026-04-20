@@ -3,8 +3,8 @@ import { useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { ITEMS, LAYERS, STACKS } from '../data/catalog';
 import { Item, ParticipantRole, SovereigntyCriteria, StackItem } from '../types';
-import { ADOPTION_WEIGHT, SOVEREIGN_ADOPTION_WEIGHT, SOVEREIGNTY_WEIGHT } from '../utils/overallScore';
 import { buildDependencyGraph, getLocalizedText } from '../utils';
+import { ADOPTION_WEIGHT, SOVEREIGN_ADOPTION_WEIGHT, SOVEREIGNTY_WEIGHT } from '../utils/overallScore';
 import { computeEffectiveSovereigntyScoreResult, getScoreCategory, getScoreCategoryColor } from '../utils/sovereigntyScore';
 import { SovereigntyGauge } from './SovereigntyGauge';
 
@@ -81,9 +81,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 	const selectedOwnerCountry = selectedArticle.ownerCountry?.toUpperCase();
 	const selectedOwnerCountryFlag = countryToFlagEmoji(selectedOwnerCountry);
 	const selectedBoostedCriteria = new Set<keyof Omit<SovereigntyCriteria, 'ownerType'>>(selectedScoreResult.boostedCriteria);
-	const criteriaKeys = (Object.keys(article.sovereigntyCriteria) as Array<keyof typeof article.sovereigntyCriteria>).filter(
-		(key) => key !== 'ownerType',
-	);
+	const criteriaKeys = (Object.keys(article.sovereigntyCriteria) as Array<keyof typeof article.sovereigntyCriteria>).filter((key) => key !== 'ownerType');
 
 	const renderArticleLogo = (logo: string | undefined, localizedName: string, large = false) => {
 		if (!logo) {
@@ -253,7 +251,9 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 														{selectedArticle.adoption.sovereignAdoptionScore}/100
 													</span>
 													<span className="score-breakdown__weight">× {(SOVEREIGN_ADOPTION_WEIGHT * 100).toFixed(0)}%</span>
-													<span className="score-breakdown__pts">{(selectedArticle.adoption.sovereignAdoptionScore * SOVEREIGN_ADOPTION_WEIGHT).toFixed(1)}</span>
+													<span className="score-breakdown__pts">
+														{(selectedArticle.adoption.sovereignAdoptionScore * SOVEREIGN_ADOPTION_WEIGHT).toFixed(1)}
+													</span>
 												</div>
 												<div className="score-breakdown__row">
 													<span className="score-breakdown__label">{t('article.scoreOverview.adoption')}</span>
@@ -265,7 +265,10 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 												</div>
 												<div className="score-breakdown__row score-breakdown__row--total">
 													<span className="score-breakdown__label">{t('article.scoreOverview.total')}</span>
-													<span className="score-breakdown__score score-breakdown__score--total" style={{ color: getScoreCategoryColor(selectedArticle.adoption.overallScore) }}>
+													<span
+														className="score-breakdown__score score-breakdown__score--total"
+														style={{ color: getScoreCategoryColor(selectedArticle.adoption.overallScore) }}
+													>
 														{selectedArticle.adoption.overallScore}/100
 													</span>
 												</div>

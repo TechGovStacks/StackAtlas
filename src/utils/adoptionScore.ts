@@ -1,4 +1,3 @@
-import type { Item, Stack, AdoptionResult } from '../types/index.js';
 import {
 	DIVERSITY_MAX_FACTOR,
 	DIVERSITY_MIN_FACTOR,
@@ -8,6 +7,7 @@ import {
 	STATUS_WEIGHTS,
 	TRANSITIVE_WEIGHT,
 } from '../config/adoptionScoringWeights.mjs';
+import type { AdoptionResult, Item, Stack } from '../types/index.js';
 
 /**
  * SIZE_DAMP: Normalize contribution by stack size.
@@ -77,7 +77,7 @@ function buildReverseDependencyMap(items: Item[]): Map<string, string[]> {
 function computeDirectCoverage(
 	itemId: string,
 	stacks: Stack[],
-	itemSovereigntyScore: number | undefined
+	itemSovereigntyScore: number | undefined,
 ): { coverage: number; sovereignCoverage: number; stackIds: string[] } {
 	let directCoverage = 0;
 	let sovereignCoverage = 0;
@@ -97,10 +97,7 @@ function computeDirectCoverage(
 		directCoverage += contribution;
 
 		// Sovereign adoption: only if stack is sovereignly-rated AND item ≥ 61
-		if (
-			itemSovereigntyScore !== undefined &&
-			itemSovereigntyScore >= SOVEREIGNTY_THRESHOLD
-		) {
+		if (itemSovereigntyScore !== undefined && itemSovereigntyScore >= SOVEREIGNTY_THRESHOLD) {
 			sovereignCoverage += contribution;
 		}
 	}
@@ -142,14 +139,9 @@ function computeTransitiveCoverage(
 /**
  * Compute adoption score (0-100) with all weightings, log dampening, and diversity.
  */
-function computeRawAdoptionScore(
-	directCoverage: number,
-	transitiveCoverage: number,
-	diversity: number
-): number {
+function computeRawAdoptionScore(directCoverage: number, transitiveCoverage: number, diversity: number): number {
 	const totalCoverage = directCoverage + transitiveCoverage;
-	const withDiversity =
-		Math.log1p(totalCoverage) * (DIVERSITY_MIN_FACTOR + DIVERSITY_MAX_FACTOR * diversity);
+	const withDiversity = Math.log1p(totalCoverage) * (DIVERSITY_MIN_FACTOR + DIVERSITY_MAX_FACTOR * diversity);
 	return withDiversity;
 }
 
@@ -157,11 +149,7 @@ function computeRawAdoptionScore(
  * Main export: compute adoption scores for all items.
  * Returns a map of itemId → AdoptionResult.
  */
-export function computeAdoptionScores(
-	items: Item[],
-	stacks: Stack[],
-	reverseDeps?: Map<string, string[]>
-): Map<string, AdoptionResult> {
+export function computeAdoptionScores(items: Item[], stacks: Stack[], reverseDeps?: Map<string, string[]>): Map<string, AdoptionResult> {
 	const reverseMap = reverseDeps || buildReverseDependencyMap(items);
 
 	// Pre-pass: compute direct coverage and geographic diversity for every item
@@ -190,15 +178,10 @@ export function computeAdoptionScores(
 
 	for (const item of items) {
 		const { coverage: directCov, sovereignCoverage: directSovCov, stackIds, diversity } = itemCache.get(item.id)!;
-		const { coverage: transitiveCov, sovereignCoverage: transitiveSovCov } =
-			computeTransitiveCoverage(item.id, reverseMap, itemCache);
+		const { coverage: transitiveCov, sovereignCoverage: transitiveSovCov } = computeTransitiveCoverage(item.id, reverseMap, itemCache);
 
 		const adoption = computeRawAdoptionScore(directCov, transitiveCov, diversity);
-		const sovereignAdoption = computeRawAdoptionScore(
-			directSovCov,
-			transitiveSovCov,
-			diversity
-		);
+		const sovereignAdoption = computeRawAdoptionScore(directSovCov, transitiveSovCov, diversity);
 
 		rawScores.set(item.id, {
 			adoption,
@@ -229,9 +212,7 @@ export function computeAdoptionScores(
 		if (!raw) continue;
 
 		const adoptionScore = Math.round((100 * raw.adoption) / maxAdoption);
-		const sovereignAdoptionScore = Math.round(
-			(100 * raw.sovereignAdoption) / maxSovereignAdoption
-		);
+		const sovereignAdoptionScore = Math.round((100 * raw.sovereignAdoption) / maxSovereignAdoption);
 
 		results.set(item.id, {
 			adoptionScore,

@@ -14,14 +14,9 @@ export const ADOPTION_WEIGHT = 0.15;
  * All inputs are expected to be normalized to [0, 100].
  * Result is clamped to [0, 100].
  */
-export function computeOverallScore(
-	sovereigntyScore: number,
-	adoption: AdoptionResult
-): number {
+export function computeOverallScore(sovereigntyScore: number, adoption: AdoptionResult): number {
 	const combined =
-		SOVEREIGNTY_WEIGHT * sovereigntyScore +
-		SOVEREIGN_ADOPTION_WEIGHT * adoption.sovereignAdoptionScore +
-		ADOPTION_WEIGHT * adoption.adoptionScore;
+		SOVEREIGNTY_WEIGHT * sovereigntyScore + SOVEREIGN_ADOPTION_WEIGHT * adoption.sovereignAdoptionScore + ADOPTION_WEIGHT * adoption.adoptionScore;
 
 	return Math.round(Math.max(0, Math.min(100, combined)));
 }
@@ -29,10 +24,7 @@ export function computeOverallScore(
 /**
  * Update adoption result with computed overall score.
  */
-export function enrichAdoptionWithOverallScore(
-	adoption: AdoptionResult,
-	sovereigntyScore: number
-): AdoptionResult {
+export function enrichAdoptionWithOverallScore(adoption: AdoptionResult, sovereigntyScore: number): AdoptionResult {
 	return {
 		...adoption,
 		overallScore: computeOverallScore(sovereigntyScore, adoption),

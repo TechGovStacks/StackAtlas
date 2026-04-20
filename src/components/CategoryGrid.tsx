@@ -46,14 +46,12 @@ export function CategoryGrid({
 				let cmp = 0;
 
 				if (sortField === 'name') {
-					cmp = getLocalizedText(a.name, i18n.language).localeCompare(
-						getLocalizedText(b.name, i18n.language),
-						i18n.language,
-					);
+					cmp = getLocalizedText(a.name, i18n.language).localeCompare(getLocalizedText(b.name, i18n.language), i18n.language);
 				} else if (sortField === 'overall') {
 					cmp = (b.adoption?.overallScore ?? 0) - (a.adoption?.overallScore ?? 0);
 				} else if (sortField === 'sovereignty') {
-					cmp = computeEffectiveSovereigntyScore(a.sovereigntyCriteria, stackItemMap?.get(a.id)) -
+					cmp =
+						computeEffectiveSovereigntyScore(a.sovereigntyCriteria, stackItemMap?.get(a.id)) -
 						computeEffectiveSovereigntyScore(b.sovereigntyCriteria, stackItemMap?.get(b.id));
 				} else if (sortField === 'adoption') {
 					cmp = (b.adoption?.adoptionScore ?? 0) - (a.adoption?.adoptionScore ?? 0);
