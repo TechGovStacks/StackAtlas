@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { ageFactor, computePopularityScore, computeRawPopularityScore, normalizeSignal } from '../popularityScore';
 import type { PopularityMetrics } from '../../types';
+import { ageFactor, computePopularityScore, computeRawPopularityScore, normalizeSignal } from '../popularityScore';
 
 describe('popularityScore', () => {
 	describe('normalizeSignal', () => {

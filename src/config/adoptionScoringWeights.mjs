@@ -42,8 +42,8 @@ export const SIZE_DAMP_REFERENCE = 20;
  * Popularity blending weights: how much external popularity signals contribute
  * to the adoption score segment of the overall score.
  */
-export const POPULARITY_ADOPTION_BLEND = 0.3;    // 30% Popularity in Adoption-Blending
-export const POPULARITY_ADOPTION_WEIGHT = 0.7;   // 70% bisheriger Adoption Score
+export const POPULARITY_ADOPTION_BLEND = 0.3; // 30% Popularity in Adoption-Blending
+export const POPULARITY_ADOPTION_WEIGHT = 0.7; // 70% bisheriger Adoption Score
 
 /**
  * Platform-specific reference values for log-normalization.

@@ -23,15 +23,10 @@ export function computeOverallScore(sovereigntyScore: number, adoption: Adoption
 
 	// If popularity score is available, blend it with adoption score
 	if (adoption.popularityScore !== undefined) {
-		adoptionScoreToUse =
-			POPULARITY_ADOPTION_WEIGHT * adoption.adoptionScore +
-			POPULARITY_ADOPTION_BLEND * adoption.popularityScore;
+		adoptionScoreToUse = POPULARITY_ADOPTION_WEIGHT * adoption.adoptionScore + POPULARITY_ADOPTION_BLEND * adoption.popularityScore;
 	}
 
-	const combined =
-		SOVEREIGNTY_WEIGHT * sovereigntyScore +
-		SOVEREIGN_ADOPTION_WEIGHT * adoption.sovereignAdoptionScore +
-		ADOPTION_WEIGHT * adoptionScoreToUse;
+	const combined = SOVEREIGNTY_WEIGHT * sovereigntyScore + SOVEREIGN_ADOPTION_WEIGHT * adoption.sovereignAdoptionScore + ADOPTION_WEIGHT * adoptionScoreToUse;
 
 	return Math.round(Math.max(0, Math.min(100, combined)));
 }

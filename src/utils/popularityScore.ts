@@ -40,10 +40,7 @@ function computeRawPopularityScore(metrics: PopularityMetrics): number {
 	if (signals.length === 0) return 0;
 
 	const maxSignal = Math.max(...signals);
-	const multiPlatformBonus = Math.max(
-		0,
-		Math.min(0.1, (signals.filter((s) => s > 0).length - 1) * 0.05),
-	);
+	const multiPlatformBonus = Math.max(0, Math.min(0.1, (signals.filter((s) => s > 0).length - 1) * 0.05));
 
 	return Math.min(1.0, maxSignal + multiPlatformBonus);
 }
@@ -78,4 +75,4 @@ export function computePopularityScore(metrics: PopularityMetrics): number {
 }
 
 // Export for testing
-export { normalizeSignal, computeRawPopularityScore, ageFactor };
+export { ageFactor, computeRawPopularityScore, normalizeSignal };
