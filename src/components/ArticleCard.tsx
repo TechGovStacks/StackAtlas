@@ -89,23 +89,19 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 		const fallbackClassName = large ? 'article-logo-placeholder article-logo-placeholder--drawer' : 'article-logo-placeholder';
 		const fallback = <KolAvatar className={fallbackClassName} _label={localizedName} />;
 
-		if (!logo) return fallback;
+		if (!logo || failedLogos.has(logo)) return fallback;
 
-		const src = failedLogos.has(logo) ? 'assets/broken-logo.svg' : logo;
 		const handleImageError = () => {
 			setFailedLogos((prev) => new Set([...prev, logo]));
 		};
 
 		if (large) {
-			if (failedLogos.has(logo)) return fallback;
-			return <KolImage _src={src} _alt={localizedName} _loading="lazy" className="article-logo--drawer" _on={{ error: handleImageError }} />;
+			return <KolImage _src={logo} _alt={localizedName} _loading="lazy" className="article-logo--drawer" _on={{ error: handleImageError }} />;
 		}
-
-		if (failedLogos.has(logo)) return fallback;
 
 		return (
 			<KolImage
-				_src={src}
+				_src={logo}
 				_alt={localizedName}
 				_loading="lazy"
 				className="article-logo"
