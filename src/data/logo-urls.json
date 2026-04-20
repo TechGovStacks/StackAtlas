@@ -1,4 +1,10 @@
 {
+	"Aadhaar": {
+		"url": "https://commons.wikimedia.org/wiki/Special:FilePath/Aadhaar.svg",
+		"source": "wikidata",
+		"verified": true,
+		"accessed": "2026-04-20"
+	},
 	"Advanced Encryption Standard": {
 		"url": "https://commons.wikimedia.org/wiki/Special:FilePath/AES_(Rijndael)_Round_Function.png",
 		"source": "csv",
@@ -77,6 +83,12 @@
 		"verified": true,
 		"accessed": "2026-04-06"
 	},
+	"BundID": {
+		"url": "https://commons.wikimedia.org/wiki/Special:FilePath/BundID_logo_(2023).svg",
+		"source": "wikidata",
+		"verified": true,
+		"accessed": "2026-04-20"
+	},
 	"C++": {
 		"url": "https://cdn.simpleicons.org/cplusplus",
 		"source": "simple-icons",
@@ -137,6 +149,12 @@
 		"verified": false,
 		"accessed": "2026-04-06"
 	},
+	"DigiLocker": {
+		"url": "https://commons.wikimedia.org/wiki/Special:FilePath/DigiLocker.svg",
+		"source": "wikidata",
+		"verified": true,
+		"accessed": "2026-04-20"
+	},
 	"Docker Swarm": {
 		"url": "https://cdn.simpleicons.org/docker",
 		"source": "simple-icons",
@@ -154,6 +172,12 @@
 		"source": null,
 		"verified": false,
 		"accessed": "2026-04-06"
+	},
+	"Elasticsearch": {
+		"url": "https://cdn.simpleicons.org/elasticsearch",
+		"source": "simple-icons",
+		"verified": true,
+		"accessed": "2026-04-20"
 	},
 	"Elliptic Curve Integrated Encryption Scheme": {
 		"url": null,
@@ -238,6 +262,12 @@
 		"source": "simple-icons",
 		"verified": true,
 		"accessed": "2026-04-06"
+	},
+	"GOV.UK One Login": {
+		"url": "https://cdn.simpleicons.org/govuk",
+		"source": "simple-icons",
+		"verified": true,
+		"accessed": "2026-04-20"
 	},
 	"GraphQL": {
 		"url": "https://cdn.simpleicons.org/graphql",
@@ -447,7 +477,7 @@
 		"url": "https://cdn.simpleicons.org/neo4j",
 		"source": "simple-icons",
 		"verified": true,
-		"accessed": "2026-04-06"
+		"accessed": "2026-04-20"
 	},
 	"NextJS": {
 		"url": "https://cdn.simpleicons.org/nextdotjs",
@@ -713,11 +743,29 @@
 		"verified": true,
 		"accessed": "2026-04-06"
 	},
+	"Tailwind CSS": {
+		"url": "https://cdn.simpleicons.org/tailwindcss",
+		"source": "simple-icons",
+		"verified": true,
+		"accessed": "2026-04-20"
+	},
+	"Temporal": {
+		"url": "https://cdn.simpleicons.org/temporal",
+		"source": "simple-icons",
+		"verified": true,
+		"accessed": "2026-04-20"
+	},
 	"TensorFlow": {
 		"url": "https://cdn.simpleicons.org/tensorflow",
 		"source": "simple-icons",
 		"verified": true,
 		"accessed": "2026-04-06"
+	},
+	"Terraform": {
+		"url": "https://cdn.simpleicons.org/terraform",
+		"source": "simple-icons",
+		"verified": true,
+		"accessed": "2026-04-20"
 	},
 	"Traefik": {
 		"url": "https://raw.githubusercontent.com/traefik/traefik/master/docs/content/assets/img/traefik.logo.png",
@@ -742,6 +790,12 @@
 		"source": "simple-icons",
 		"verified": true,
 		"accessed": "2026-04-06"
+	},
+	"Unified Payments Interface (UPI)": {
+		"url": "https://commons.wikimedia.org/wiki/Special:FilePath/UPI-Logo-vector.svg",
+		"source": "wikidata",
+		"verified": true,
+		"accessed": "2026-04-20"
 	},
 	"User Datagram Protocol (UDP)": {
 		"url": null,
