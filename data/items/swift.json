@@ -2,7 +2,7 @@
 	"id": "swift",
 	"name": "Swift",
 	"layer": "building-blocks",
-	"sublayer": "entwicklung",
+	"sublayer": "sprachen",
 	"description": {
 		"de": "Swift dient für die Entwicklung von Apps für Apple-Geräte.",
 		"en": ""

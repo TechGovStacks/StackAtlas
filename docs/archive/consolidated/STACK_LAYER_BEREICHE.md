@@ -39,7 +39,8 @@ Detailreferenz fuer Layer- und Sublayer-Zuordnung. Terminologie ist mit `data/RE
 - `lowcode`
 
 ### Building Blocks
-- `entwicklung`
+- `sprachen`
+- `frameworks`
 - `inbetriebnahme`
 - `sicherheit`
 

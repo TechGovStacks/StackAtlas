@@ -48,7 +48,23 @@
 		"relationLabel": "Relación",
 		"allRelations": "Todas las relaciones",
 		"sublayerLabel": "Subcapa",
-		"allSublayers": "Todas las subcapas"
+		"allSublayers": "Todas las subcapas",
+		"sublayers": {
+			"integration": "Integración",
+			"daten": "Datos",
+			"sicherheit": "Seguridad",
+			"ki": "IA",
+			"inbetriebnahme": "Operación",
+			"transport": "Transporte",
+			"verteilung": "Distribución",
+			"lowcode": "Low-code",
+			"anschluss": "Conectividad",
+			"browser": "Navegador",
+			"native-apps": "Apps nativas",
+			"sprachen": "Lenguajes",
+			"frameworks": "Frameworks y bibliotecas",
+			"laufzeit": "Runtime"
+		}
 	},
 	"category": {
 		"toolbarAria": "Filtrar capas",

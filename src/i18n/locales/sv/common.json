@@ -48,7 +48,23 @@
 		"relationLabel": "Relation",
 		"allRelations": "Alla relationer",
 		"sublayerLabel": "Underlager",
-		"allSublayers": "Alla underlager"
+		"allSublayers": "Alla underlager",
+		"sublayers": {
+			"integration": "Integration",
+			"daten": "Data",
+			"sicherheit": "Säkerhet",
+			"ki": "AI",
+			"inbetriebnahme": "Drift",
+			"transport": "Transport",
+			"verteilung": "Distribution",
+			"lowcode": "Low-code",
+			"anschluss": "Anslutning",
+			"browser": "Webbläsare",
+			"native-apps": "Native-appar",
+			"sprachen": "Språk",
+			"frameworks": "Ramverk och bibliotek",
+			"laufzeit": "Körtid"
+		}
 	},
 	"category": {
 		"toolbarAria": "Filtrera lager",

@@ -67,7 +67,23 @@
 			}
 		},
 		"sublayerLabel": "Sous-couche",
-		"allSublayers": "Toutes les sous-couches"
+		"allSublayers": "Toutes les sous-couches",
+		"sublayers": {
+			"integration": "Intégration",
+			"daten": "Données",
+			"sicherheit": "Sécurité",
+			"ki": "IA",
+			"inbetriebnahme": "Exploitation",
+			"transport": "Transport",
+			"verteilung": "Distribution",
+			"lowcode": "Low-code",
+			"anschluss": "Connectivité",
+			"browser": "Navigateur",
+			"native-apps": "Applications natives",
+			"sprachen": "Langages",
+			"frameworks": "Frameworks et bibliothèques",
+			"laufzeit": "Runtime"
+		}
 	},
 	"category": {
 		"toolbarAria": "Filtrer les couches",

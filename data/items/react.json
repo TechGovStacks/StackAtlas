@@ -2,7 +2,7 @@
 	"id": "react",
 	"name": "React",
 	"layer": "building-blocks",
-	"sublayer": "entwicklung",
+	"sublayer": "frameworks",
 	"description": {
 		"de": "Mit React können Sie Benutzeroberflächen aus einzelnen Teilen, sogenannten Komponenten, erstellen. Kombinieren Sie diese dann zu ganzen Webseiten und Apps.",
 		"en": ""

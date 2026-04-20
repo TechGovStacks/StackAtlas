@@ -2,7 +2,7 @@
 	"id": "flutter",
 	"name": "Flutter",
 	"layer": "building-blocks",
-	"sublayer": "entwicklung",
+	"sublayer": "frameworks",
 	"description": {
 		"de": "Flutter ist ein Open-Source-UI-Toolkit zum Erstellen nativ kompilierter Anwendungen für Mobil-, Web-, Desktop- und eingebettete Geräte aus einer einzigen Codebasis.",
 		"en": ""

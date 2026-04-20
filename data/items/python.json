@@ -2,7 +2,7 @@
 	"id": "python",
 	"name": "Python",
 	"layer": "building-blocks",
-	"sublayer": "entwicklung",
+	"sublayer": "sprachen",
 	"description": {
 		"de": "Python ist eine Programmiersprache zur Webentwicklung und für Prototyping.",
 		"en": ""

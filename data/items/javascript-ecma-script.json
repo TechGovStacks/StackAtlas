@@ -2,7 +2,7 @@
 	"id": "javascript-ecma-script",
 	"name": "JavaScript (ECMA Script)",
 	"layer": "building-blocks",
-	"sublayer": "entwicklung",
+	"sublayer": "sprachen",
 	"description": {
 		"de": "JavaScript wird primär für die Entwicklung von dynamischen Webseiten verwendet.",
 		"en": ""

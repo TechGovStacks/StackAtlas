@@ -48,7 +48,23 @@
 		"relationLabel": "Relazione",
 		"allRelations": "Tutte le relazioni",
 		"sublayerLabel": "Sottolivello",
-		"allSublayers": "Tutti i sottolivelli"
+		"allSublayers": "Tutti i sottolivelli",
+		"sublayers": {
+			"integration": "Integrazione",
+			"daten": "Dati",
+			"sicherheit": "Sicurezza",
+			"ki": "IA",
+			"inbetriebnahme": "Operatività",
+			"transport": "Trasporto",
+			"verteilung": "Distribuzione",
+			"lowcode": "Low-code",
+			"anschluss": "Connettività",
+			"browser": "Browser",
+			"native-apps": "App native",
+			"sprachen": "Linguaggi",
+			"frameworks": "Framework e librerie",
+			"laufzeit": "Runtime"
+		}
 	},
 	"category": {
 		"toolbarAria": "Filtra livelli",

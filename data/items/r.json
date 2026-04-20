@@ -2,7 +2,7 @@
 	"id": "r",
 	"name": "R",
 	"layer": "building-blocks",
-	"sublayer": "entwicklung",
+	"sublayer": "sprachen",
 	"description": {
 		"de": "R ist eine Programmiersprache Analyse, Bereinigung, Modellierung und Visualisierung von Daten.",
 		"en": ""

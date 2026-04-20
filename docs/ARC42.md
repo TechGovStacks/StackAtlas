@@ -81,6 +81,11 @@ Empfohlene Zusatzfelder:
 - `tags`
 - `audit`
 
+Aktuelle Sublayer-Konvention (Auszug):
+
+- `building-blocks`: `sprachen`, `frameworks`, `inbetriebnahme`, `sicherheit`
+- `platform`: u. a. `daten`, `integration`, `ki`, `lowcode`, `laufzeit`
+
 Pflichtfelder fuer Stack-Definition:
 
 - `id`

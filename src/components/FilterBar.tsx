@@ -60,9 +60,10 @@ export function FilterBar({
 	const sublayerOptions = (() => {
 		if (!filters.selectedLayer) return [];
 		const layerItems = items.filter((item) => item.layer === filters.selectedLayer);
-		const sublayers = new Set(layerItems.map((item) => item.sublayer).filter(Boolean));
+		const sublayers = new Set(layerItems.map((item) => item.sublayer).filter((sublayer): sublayer is string => Boolean(sublayer)));
 		return Array.from(sublayers).sort();
 	})();
+	const sublayerLabel = (slug: string) => t(`search.sublayers.${slug}`, { defaultValue: slug });
 
 	const relationOptions = (() => {
 		if (!activeStackId || !activeStack) return [];
@@ -139,7 +140,10 @@ export function FilterBar({
 						className="filter-bar__select filter-bar__select--sublayer sort-select"
 						_label={t('search.sublayerLabel')}
 						_hideLabel
-						_options={[{ label: t('search.allSublayers'), value: '' }, ...sublayerOptions.map((sublayer) => ({ label: sublayer, value: sublayer }))]}
+						_options={[
+							{ label: t('search.allSublayers'), value: '' },
+							...sublayerOptions.map((sublayer) => ({ label: sublayerLabel(sublayer), value: sublayer })),
+						]}
 						_value={filters.selectedSublayer ?? ''}
 						_disabled={sublayerOptions.length === 0}
 						_on={{

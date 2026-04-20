@@ -67,7 +67,23 @@
 			}
 		},
 		"sublayerLabel": "Sublayer",
-		"allSublayers": "All Sublayers"
+		"allSublayers": "All Sublayers",
+		"sublayers": {
+			"integration": "Integration",
+			"daten": "Data",
+			"sicherheit": "Security",
+			"ki": "AI",
+			"inbetriebnahme": "Operations",
+			"transport": "Transport",
+			"verteilung": "Distribution",
+			"lowcode": "Low-code",
+			"anschluss": "Connectivity",
+			"browser": "Browser",
+			"native-apps": "Native Apps",
+			"sprachen": "Languages",
+			"frameworks": "Frameworks & Libraries",
+			"laufzeit": "Runtime"
+		}
 	},
 	"category": {
 		"toolbarAria": "Filter layers",

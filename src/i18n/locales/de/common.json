@@ -67,7 +67,23 @@
 			}
 		},
 		"sublayerLabel": "Unterschicht",
-		"allSublayers": "Alle Unterschichten"
+		"allSublayers": "Alle Unterschichten",
+		"sublayers": {
+			"integration": "Integration",
+			"daten": "Daten",
+			"sicherheit": "Sicherheit",
+			"ki": "KI",
+			"inbetriebnahme": "Inbetriebnahme",
+			"transport": "Transport",
+			"verteilung": "Verteilung",
+			"lowcode": "Low-Code",
+			"anschluss": "Anschluss",
+			"browser": "Browser",
+			"native-apps": "Native Apps",
+			"sprachen": "Sprachen",
+			"frameworks": "Frameworks & Bibliotheken",
+			"laufzeit": "Laufzeit"
+		}
 	},
 	"category": {
 		"toolbarAria": "Schichten filtern",

@@ -48,7 +48,23 @@
 		"relationLabel": "Forhold",
 		"allRelations": "Alle relasjoner",
 		"sublayerLabel": "Underlag",
-		"allSublayers": "Alle underlag"
+		"allSublayers": "Alle underlag",
+		"sublayers": {
+			"integration": "Integrasjon",
+			"daten": "Data",
+			"sicherheit": "Sikkerhet",
+			"ki": "KI",
+			"inbetriebnahme": "Drift",
+			"transport": "Transport",
+			"verteilung": "Distribusjon",
+			"lowcode": "Lavkode",
+			"anschluss": "Tilkobling",
+			"browser": "Nettleser",
+			"native-apps": "Nativapper",
+			"sprachen": "Språk",
+			"frameworks": "Rammeverk og biblioteker",
+			"laufzeit": "Kjøretid"
+		}
 	},
 	"category": {
 		"toolbarAria": "Filterlag",

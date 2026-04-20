@@ -2,7 +2,7 @@
 	"id": "php",
 	"name": "PHP",
 	"layer": "building-blocks",
-	"sublayer": "entwicklung",
+	"sublayer": "sprachen",
 	"description": {
 		"de": "PHP dient der serverseitigen Entwicklung von dynamischen Webseiten und Anwendungen.",
 		"en": ""

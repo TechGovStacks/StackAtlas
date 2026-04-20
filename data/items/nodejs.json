@@ -2,7 +2,7 @@
 	"id": "nodejs",
 	"name": "Node.js",
 	"layer": "platform",
-	"sublayer": "entwicklung",
+	"sublayer": "laufzeit",
 	"description": {
 		"de": "Node.js ist eine quelloffene JavaScript-Laufzeitumgebung. Sie wird in vielen Verwaltungs-Backends für schnelle, ereignisgetriebene APIs und für Frontend-Build-Tooling eingesetzt.",
 		"en": "Node.js is an open-source JavaScript runtime. It is used in many public-administration backends for fast event-driven APIs and for frontend build tooling."

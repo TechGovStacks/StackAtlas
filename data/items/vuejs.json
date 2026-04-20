@@ -2,7 +2,7 @@
 	"id": "vuejs",
 	"name": "Vue.js",
 	"layer": "building-blocks",
-	"sublayer": "entwicklung",
+	"sublayer": "frameworks",
 	"description": {
 		"de": "Vue.js ist ein progressives JavaScript-Framework für die Erstellung von Benutzeroberflächen. Es ermöglicht die deklarative Entwicklung von interaktiven Web-Anwendungen mit reaktiven Datenmodellen.",
 		"en": "Vue.js is a progressive JavaScript framework for building user interfaces. It enables declarative development of interactive web applications with reactive data models."

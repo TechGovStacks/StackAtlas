@@ -52,5 +52,8 @@ Beispiele:
 ## Schnellcheck
 
 - Layer-IDs: `infrastructure`, `platform`, `building-blocks`, `applications`, `sovereign-standards`
+- Typische Sublayer:
+  - `building-blocks`: `sprachen`, `frameworks`, `inbetriebnahme`, `sicherheit`
+  - `platform`: `daten`, `integration`, `ki`, `lowcode`, `laufzeit`
 - Validierung: `pnpm validate-schemas`
 - Kernschemas: `data/schemas/layer.schema.json`, `data/schemas/item.schema.json`, `data/schemas/stack.schema.json`

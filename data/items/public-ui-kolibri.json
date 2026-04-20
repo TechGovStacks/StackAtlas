@@ -2,7 +2,7 @@
 	"id": "public-ui-kolibri",
 	"name": "KoliBri - Public-UI",
 	"layer": "building-blocks",
-	"sublayer": "entwicklung",
+	"sublayer": "frameworks",
 	"description": {
 		"de": "Public UI KoliBri ist eine Komponentenbibliothek für die Entwicklung barrierefreier Weboberflächen. Sie bietet vorgefertigte, zugängliche UI-Komponenten nach WCAG-Standards und ermöglicht die schnelle Entwicklung von Government-Anwendungen mit hohen Anforderungen an Accessibility.",
 		"en": "Public UI KoliBri is a component library for developing accessible web interfaces. It provides pre-built, accessible UI components that comply with WCAG standards and enables rapid development of government applications with high accessibility requirements."

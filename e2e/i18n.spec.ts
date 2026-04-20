@@ -6,6 +6,8 @@ type LanguageExpectations = {
 	searchRegionAria: string;
 	sovereigntyGaugeAriaPrefix: string;
 	allSublayersOption: string;
+	languagesSublayerLabel: string;
+	frameworksSublayerLabel: string;
 	emptyStateTitle: string;
 	missingKeyFallback: string;
 };
@@ -17,6 +19,8 @@ const EXPECTED: Record<'de' | 'en' | 'fr', LanguageExpectations> = {
 		searchRegionAria: 'Suche und Filter',
 		sovereigntyGaugeAriaPrefix: 'Souveränitäts-Score-Anzeige:',
 		allSublayersOption: 'Alle Unterschichten',
+		languagesSublayerLabel: 'Sprachen',
+		frameworksSublayerLabel: 'Frameworks & Bibliotheken',
 		emptyStateTitle: 'Keine Einträge gefunden',
 		missingKeyFallback: 'Übersetzung nicht verfügbar',
 	},
@@ -26,6 +30,8 @@ const EXPECTED: Record<'de' | 'en' | 'fr', LanguageExpectations> = {
 		searchRegionAria: 'Search and filter',
 		sovereigntyGaugeAriaPrefix: 'Sovereignty score gauge:',
 		allSublayersOption: 'All Sublayers',
+		languagesSublayerLabel: 'Languages',
+		frameworksSublayerLabel: 'Frameworks & Libraries',
 		emptyStateTitle: 'No entries found',
 		missingKeyFallback: 'Übersetzung nicht verfügbar',
 	},
@@ -35,6 +41,8 @@ const EXPECTED: Record<'de' | 'en' | 'fr', LanguageExpectations> = {
 		searchRegionAria: 'Recherche et filtres',
 		sovereigntyGaugeAriaPrefix: 'Jauge du score de souveraineté :',
 		allSublayersOption: 'Toutes les sous-couches',
+		languagesSublayerLabel: 'Langages',
+		frameworksSublayerLabel: 'Frameworks et bibliothèques',
 		emptyStateTitle: 'Aucune entrée trouvée',
 		missingKeyFallback: 'Übersetzung nicht verfügbar',
 	},
@@ -46,10 +54,14 @@ async function expectLocalizedSublayerOption(page: Page, locale: 'de' | 'en' | '
 	await expect(layerSelect).toBeVisible();
 
 	// Trigger selected layer so sublayer select is rendered.
-	await layerSelect.selectOption({ index: 1 });
+	await layerSelect.selectOption('building-blocks');
 
 	const sublayerAllOption = page.locator('kol-single-select.filter-bar__select--sublayer select option').first();
 	await expect(sublayerAllOption).toHaveText(expected.allSublayersOption);
+	await expect(page.locator('kol-single-select.filter-bar__select--sublayer select option')).toContainText([
+		expected.languagesSublayerLabel,
+		expected.frameworksSublayerLabel,
+	]);
 
 	if (locale !== 'en') {
 		await expect(sublayerAllOption).not.toHaveText('All Sublayers');

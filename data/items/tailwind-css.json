@@ -2,7 +2,7 @@
 	"id": "tailwind-css",
 	"name": "Tailwind CSS",
 	"layer": "building-blocks",
-	"sublayer": "entwicklung",
+	"sublayer": "frameworks",
 	"description": {
 		"de": "Tailwind CSS ist ein Utility-First-CSS-Framework. Es ermöglicht schnelle, konsistente Styling-Workflows ohne komponentengetriebene CSS-Pflege und wird in vielen modernen Verwaltungs-UIs verwendet.",
 		"en": "Tailwind CSS is a utility-first CSS framework. It enables fast, consistent styling workflows without component-driven CSS maintenance and is used in many modern public-administration UIs."

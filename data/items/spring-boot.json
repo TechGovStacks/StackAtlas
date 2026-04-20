@@ -2,7 +2,7 @@
 	"id": "spring-boot",
 	"name": "Spring Boot",
 	"layer": "building-blocks",
-	"sublayer": "entwicklung",
+	"sublayer": "frameworks",
 	"description": {
 		"de": "Spring Boot ist ein Java-Framework für die schnelle Entwicklung produktionsreifer Microservices. Es ist De-facto-Standard für Backend-Services in zahlreichen GovTech-Stacks – darunter FIT-Connect, BundID, GovStack, India Stack (UPI) und MOSIP.",
 		"en": "Spring Boot is a Java framework for rapidly building production-ready microservices. It is the de-facto standard for backend services in many GovTech stacks, including FIT-Connect, BundID, GovStack, India Stack (UPI) and MOSIP."

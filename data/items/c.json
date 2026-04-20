@@ -2,7 +2,7 @@
 	"id": "c",
 	"name": "C++",
 	"layer": "building-blocks",
-	"sublayer": "entwicklung",
+	"sublayer": "sprachen",
 	"description": {
 		"de": "C++ ist eine objektorientierte Programmiersprache für die Entwicklung von Systemsoftware.",
 		"en": ""

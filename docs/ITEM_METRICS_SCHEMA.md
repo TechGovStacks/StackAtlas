@@ -244,6 +244,8 @@ Sublayer aggregieren nicht nur die Item-Scores, sondern haben auch **eigene Crit
 
 ### Sublayer-Score Berechnung
 
+Beispiel fuer aktuelle Sublayer-Gruppen in `building-blocks`: `sprachen`, `frameworks`, `inbetriebnahme`, `sicherheit`.
+
 ```javascript
 // Basis-Score: Eigene Criteria
 sublayerBaseScore = (completeness ? 20 : 0)
