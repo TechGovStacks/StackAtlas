@@ -5,6 +5,8 @@ export const metadata = {
 		'MySQL ist technisch souverän (88 Punkte), aber in nur einem einzigen Stack vertreten. Da 40 % des Overall Score aus der Adoption stammen, fällt das Ergebnis entsprechend aus.',
 };
 
+import ScoringTables from '../reports/postgresql-vs-mysql-scoring.md';
+
 # Warum hat MySQL Server nur 55 Punkte — und PostgreSQL deutlich mehr?
 
 > **Kurzfazit:** Der Unterschied liegt nicht hauptsächlich im Sovereignty Score, sondern in der Adoption: PostgreSQL ist in 14 Stacks vertreten, MySQL Server nur in einem.
@@ -13,65 +15,11 @@ Wer die Landscape-Rangliste zum ersten Mal sieht, wundert sich oft: Beide Datenb
 
 ---
 
-## 1. Der Overall Score — drei Komponenten, eine Zahl
-
-Der Overall Score setzt sich aus drei gewichteten Anteilen zusammen:
-
-| Komponente | Gewicht | Beschreibung |
-| :--- | ---: | :--- |
-| Sovereignty Score | 60 % | Wie souverän ist das Tool? |
-| Sovereign Adoption Score | 25 % | In wie vielen souveränen Stacks wird es genutzt? |
-| Adoption Score (+ Popularity) | 15 % | Allgemeine Stack-Nutzung und externe Signale |
+<ScoringTables />
 
 ---
 
-## 2. Sovereignty Score — beide gut, kleiner Unterschied
-
-Beide Datenbanken erfüllen fast alle Souveränitätskriterien. Der entscheidende Unterschied:
-
-| Kriterium | PostgreSQL | MySQL Server |
-| :--- | :---: | :---: |
-| Self-hostable | ✅ +20 | ✅ +20 |
-| Data Portability | ✅ +15 | ✅ +15 |
-| Open Source | ✅ +15 | ✅ +15 |
-| Open Standards | ✅ +10 | ✅ +10 |
-| Permissive License | ✅ +10 | ✅ +10 |
-| Has Audit | ❌ +0 | ✅ +5 |
-| Mature Project | ✅ +5 | ✅ +5 |
-| No Telemetry by Default | ✅ +5 | ✅ +5 |
-| EU Headquartered | ❌ +0 | ❌ +0 |
-| Owner Type | independentConsortium **+10** | corporation (Oracle) **+3** |
-| **Gesamt** | **90** | **88** |
-
-PostgreSQL wird von einem unabhängigen Konsortium betrieben (+10), MySQL gehört Oracle (+3). Das macht 7 Punkte Unterschied — relevant, aber nicht die Hauptursache des Score-Abstands.
-
----
-
-## 3. Adoption — der eigentliche Treiber
-
-Hier liegt der entscheidende Unterschied:
-
-| | PostgreSQL | MySQL Server |
-| :--- | :---: | :---: |
-| Anzahl Stacks | **14** | **1** |
-| Beispiel-Stacks | EU, Deutschland, UK, Frankreich, Indien, Brasilien, Estland … | Deutschland |
-
-Die Adoption wird auf 0–100 normalisiert (relativ zum bestplatzierten Item). PostgreSQL erhält dadurch einen hohen Adoption Score — MySQL einen sehr niedrigen.
-
----
-
-## 4. Popularity Metrics — nur PostgreSQL
-
-PostgreSQL hat hinterlegte Popularity-Daten:
-
-- **24.000 GitHub Stars**
-- **5,2 Mio. Docker Pulls/Woche**
-
-MySQL Server hat keine eingetragenen Popularity Metrics. Dieser Anteil fließt für MySQL daher mit 0 ein.
-
----
-
-## 5. Die Rechnung
+## Die Rechnung
 
 ```
 MySQL Overall Score:
@@ -87,7 +35,7 @@ PostgreSQL Overall Score:
 
 ---
 
-## 6. Fazit & Handlungsoptionen
+## Fazit & Handlungsoptionen
 
 Der Score von 55 ist kein Urteil über die technische Qualität von MySQL — es ist eine Messung der tatsächlichen Verbreitung in den dokumentierten Gov-Stacks.
 
@@ -97,7 +45,7 @@ Wer MySQL in seinem Stack nutzt, sollte es dort eintragen. Jede weitere Stack-Au
 
 ---
 
-## Anhang: Glossar
+## Glossar
 
 - **Sovereignty Score:** Bewertet, wie stark Nutzer:innen und Betreiber unabhängig von Dritten bleiben können (0–100).
 - **Adoption Score:** Normalisierter Wert für die Stack-Abdeckung — wie viele dokumentierte Gov-Stacks nutzen dieses Tool?
