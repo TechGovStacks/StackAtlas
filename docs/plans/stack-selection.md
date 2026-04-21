@@ -124,11 +124,23 @@ Jedes Item wird auf einer Skala von **0 bis 5** bewertet.
 
 **Gewicht:** 15 %
 
+**Bewertungsanker (0/3/5):**
+
+* **0:** Kein klar abgegrenztes Pattern oder nur Einzelfalllösung ohne übertragbaren Architekturbezug.
+* **3:** Pattern ist dokumentiert und in mindestens zwei produktiven Referenzen im Zielkontext nachweisbar.
+* **5:** Pattern ist organisationsübergreifend etabliert, mit klaren Schnittstellen und reproduzierbarer Umsetzung in mehreren Domänen.
+
 ### 5.2 Dimension 2: Offenheit und Standardisierungsgrad
 
 **Frage:** Ist das Item ein offener, dokumentierter, nachvollziehbarer Standard?
 
 **Gewicht:** 20 %
+
+**Bewertungsanker (0/3/5):**
+
+* **0:** Spezifikation ist proprietär, nicht öffentlich zugänglich oder nur herstellerspezifisch beschrieben.
+* **3:** Öffentliche Spezifikation liegt vor, ist versioniert und ohne diskriminierende Zugangshürden nutzbar.
+* **5:** Offene Spezifikation unter neutraler Governance mit transparentem Change-Prozess und veröffentlichten Konformitätskriterien.
 
 ### 5.3 Dimension 3: Steuerbarkeit
 
@@ -136,11 +148,23 @@ Jedes Item wird auf einer Skala von **0 bis 5** bewertet.
 
 **Gewicht:** 15 %
 
+**Bewertungsanker (0/3/5):**
+
+* **0:** Kritische Entscheidungen, Roadmap oder Betrieb sind ausschließlich durch einen Anbieter kontrolliert.
+* **3:** Eigene Governance ist definiert (Rollen, Verantwortlichkeiten, Betriebsmodell) und kann unabhängig vom Hersteller umgesetzt werden.
+* **5:** Steuerung ist vertraglich und technisch abgesichert, inklusive eigener Entscheidungsrechte für Architektur, Betrieb und Weiterentwicklung.
+
 ### 5.4 Dimension 4: Austauschbarkeit
 
 **Frage:** Kann die Implementierung ersetzt werden, ohne das Pattern oder die Schnittstellen zu zerstören?
 
 **Gewicht:** 10 %
+
+**Bewertungsanker (0/3/5):**
+
+* **0:** Austausch führt zu Schnittstellenbruch, Datenverlust oder umfassender Neuimplementierung.
+* **3:** Definierte Standardschnittstellen und Datenexporte ermöglichen einen Anbieterwechsel mit planbarem Migrationsaufwand.
+* **5:** Definierter Exit-Pfad mit dokumentierter Migrationsstrategie, getesteten Übergabeformaten und mindestens einer validierten Alternative.
 
 ### 5.5 Dimension 5: Reifegrad
 
@@ -148,11 +172,23 @@ Jedes Item wird auf einer Skala von **0 bis 5** bewertet.
 
 **Gewicht:** 10 %
 
+**Bewertungsanker (0/3/5):**
+
+* **0:** Frühes Experiment ohne belastbare Produktionsnachweise, Supportmodell oder stabile Versionierung.
+* **3:** Mindestens zwei produktive Referenzen mit dokumentierten Betriebskennzahlen und geregeltem Release-/Patch-Prozess.
+* **5:** Langjährig produktiv bewährt, mit nachweisbarer Skalierung, Sicherheitsupdates und verlässlichem Support-/Wartungsmodell.
+
 ### 5.6 Dimension 6: Interoperabilität
 
 **Frage:** Fördert das Item Zusammenspiel zwischen Organisationen, Systemen und Anbietern?
 
 **Gewicht:** 10 %
+
+**Bewertungsanker (0/3/5):**
+
+* **0:** Proprietäre Schnittstellen verhindern standardkonforme Anbindung durch Dritte.
+* **3:** Interoperabilität ist über dokumentierte Standardschnittstellen inklusive Authentisierung, Datenformaten und Fehlersemantik nachweisbar.
+* **5:** Mehranbieter-Betrieb ist produktiv belegt (mindestens zwei unabhängige Implementierungen), inklusive erfolgreicher Konformitäts- oder Interop-Tests.
 
 ### 5.7 Dimension 7: Souveränität
 
@@ -160,11 +196,23 @@ Jedes Item wird auf einer Skala von **0 bis 5** bewertet.
 
 **Gewicht:** 10 %
 
+**Bewertungsanker (0/3/5):**
+
+* **0:** Lock-in durch exklusive Dienste, proprietäre Datenhaltung oder nicht übertragbare Betriebsartefakte.
+* **3:** Beschaffung ist wettbewerblich möglich und Betriebs-/Datenverantwortung kann in eigener oder beauftragter Hoheit verbleiben.
+* **5:** Vollständige Portabilität von Daten, Konfiguration und Betrieb; mehrere austauschbare Anbieter und dokumentierte Exit-Optionen sind verfügbar.
+
 ### 5.8 Dimension 8: Betriebs- und Governance-Fähigkeit
 
 **Frage:** Lässt sich das Item in Betrieb, Compliance, Security und Ausschreibung sauber verankern?
 
 **Gewicht:** 10 %
+
+**Bewertungsanker (0/3/5):**
+
+* **0:** Keine belastbaren Vorgaben für Betrieb, Sicherheitsmaßnahmen, Compliance oder Vergabe.
+* **3:** Betriebs- und Sicherheitsanforderungen sind dokumentiert (z. B. Monitoring, IAM, Logging, Patchmanagement) und auditierbar umsetzbar.
+* **5:** End-to-End-Governance ist definiert und nachweislich wirksam, inkl. Compliance-Nachweisen, SLA-Modell und ausschreibungsfähigen Leistungsbeschreibungen.
 
 ---
 
