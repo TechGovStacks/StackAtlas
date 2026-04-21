@@ -20,9 +20,38 @@ let splashDismissed = false;
 
 type KolibriLanguage = NonNullable<NonNullable<Parameters<typeof register>[2]>['translation']>['name'];
 
-function syncKoliBriLanguage(language: string): Promise<void[]> {
+const KOLIBRI_FALLBACK_LANGUAGE: KolibriLanguage = 'en';
+const APP_TO_KOLIBRI_LANGUAGE: Readonly<Record<string, KolibriLanguage>> = {
+	da: KOLIBRI_FALLBACK_LANGUAGE,
+	de: 'de',
+	en: KOLIBRI_FALLBACK_LANGUAGE,
+	es: KOLIBRI_FALLBACK_LANGUAGE,
+	fr: KOLIBRI_FALLBACK_LANGUAGE,
+	it: KOLIBRI_FALLBACK_LANGUAGE,
+	no: KOLIBRI_FALLBACK_LANGUAGE,
+	sv: KOLIBRI_FALLBACK_LANGUAGE,
+};
+const warnedKolibriFallbackLanguages = new Set<string>();
+
+function mapAppLanguageToKolibriLanguage(language: string): KolibriLanguage {
 	const normalizedLanguage = normalizeLanguage(language);
-	const kolibriLanguage = normalizedLanguage.split('-')[0] as KolibriLanguage;
+	const appLanguage = normalizedLanguage.split('-')[0];
+	const kolibriLanguage = APP_TO_KOLIBRI_LANGUAGE[appLanguage] ?? KOLIBRI_FALLBACK_LANGUAGE;
+
+	if (kolibriLanguage === KOLIBRI_FALLBACK_LANGUAGE && appLanguage !== KOLIBRI_FALLBACK_LANGUAGE) {
+		if (!warnedKolibriFallbackLanguages.has(appLanguage)) {
+			warnedKolibriFallbackLanguages.add(appLanguage);
+			console.warn(
+				`KoliBri locale fallback active: app language "${language}" (normalized to "${appLanguage}") is not natively supported. Using "${KOLIBRI_FALLBACK_LANGUAGE}" for KoliBri translations.`,
+			);
+		}
+	}
+
+	return kolibriLanguage;
+}
+
+function syncKoliBriLanguage(language: string): Promise<void[]> {
+	const kolibriLanguage = mapAppLanguageToKolibriLanguage(language);
 	return register([KERN_V2, DEFAULT], defineCustomElements, { translation: { name: kolibriLanguage } });
 }
 
