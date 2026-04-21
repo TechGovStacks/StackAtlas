@@ -238,16 +238,17 @@
 			}
 		},
 		"news": {
-			"title": "Rapporti sulle valutazioni e notizie sulla community",
-			"description": "Aggiungi nuovi file MD/MDX datati a `src/content/news/`. I post di notizie possono importare direttamente file di ribasso dei rapporti aggiuntivi.",
+			"title": "Notizie della community",
+			"description": "Qui condividiamo approfondimenti sulle decisioni di punteggio, nuove aggiunte agli stack e sviluppi sulla sovranità digitale in Europa.",
 			"sectionAria": "Elenco dei post di notizie pubblicati",
-			"pushHint": "Non appena è disponibile un nuovo punteggio, pubblichiamo un post MDX e possiamo attivare notifiche push da esso.",
+			"pushHint": "Resta aggiornato — nuovi articoli appaiono qui quando cambiano score o stack.",
 			"metaDate": "Pubblicato il {{date}}",
 			"empty": "Nessun post di notizie ancora pubblicato.",
 			"focus": {
 				"openDataGovernance": "Focus: Governance dei dati aperti",
 				"identityWalletInteroperability": "Obiettivo: interoperabilità del portafoglio di identità",
-				"reportTemplate": "Obiettivo: modello di rapporto"
+				"reportTemplate": "Obiettivo: modello di rapporto",
+				"scoringExplained": "Focus: Spiegazione del punteggio"
 			}
 		}
 	}

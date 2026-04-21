@@ -260,16 +260,17 @@
 			}
 		},
 		"news": {
-			"title": "Rating Reports & Community News",
-			"description": "Add new dated MD/MDX files to `src/content/news/`. News posts can directly import additional report markdown files.",
+			"title": "Community News",
+			"description": "Here we share insights into scoring decisions, new stack additions, and developments in digital sovereignty across Europe.",
 			"sectionAria": "List of published news posts",
-			"pushHint": "As soon as a new score is available, we publish an MDX post and can trigger push notifications from it.",
+			"pushHint": "Stay up to date — new posts appear here whenever scores or stacks change.",
 			"metaDate": "Published on {{date}}",
 			"empty": "No news posts published yet.",
 			"focus": {
 				"openDataGovernance": "Focus: Open Data Governance",
 				"identityWalletInteroperability": "Focus: Identity Wallet Interoperability",
-				"reportTemplate": "Focus: Report Template"
+				"reportTemplate": "Focus: Report Template",
+				"scoringExplained": "Focus: Scoring Explained"
 			}
 		}
 	},

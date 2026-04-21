@@ -2,6 +2,8 @@ import mdx from '@mdx-js/rollup';
 import preact from '@preact/preset-vite';
 import UnoCSS from '@unocss/vite';
 import { readFileSync } from 'node:fs';
+import remarkFrontmatter from 'remark-frontmatter';
+import remarkMdxFrontmatter from 'remark-mdx-frontmatter';
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
@@ -17,7 +19,9 @@ export default defineConfig({
 		emptyOutDir: true,
 	},
 	plugins: [
-		mdx(),
+		mdx({
+			remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter],
+		}),
 		preact(),
 		UnoCSS(),
 		VitePWA({

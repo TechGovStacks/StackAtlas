@@ -243,16 +243,17 @@
 			}
 		},
 		"news": {
-			"title": "Rapports de notation & actualités communauté",
-			"description": "Ajoutez simplement de nouveaux fichiers MD/MDX datés dans `src/content/news/`. Les posts peuvent importer directement d’autres rapports markdown.",
+			"title": "Actualités communauté",
+			"description": "Nous partageons ici des éclairages sur les décisions de notation, les nouveaux stacks et les évolutions de la souveraineté numérique en Europe.",
 			"sectionAria": "Liste des actualités publiées",
-			"pushHint": "Dès qu’un nouveau score est disponible, nous publions un post MDX et pouvons envoyer des notifications push associées.",
+			"pushHint": "Restez informé — de nouveaux articles apparaissent ici dès que des scores ou des stacks évoluent.",
 			"metaDate": "Publié le {{date}}",
 			"empty": "Aucune actualité publiée pour le moment.",
 			"focus": {
 				"openDataGovernance": "Focus : Open Data Governance",
 				"identityWalletInteroperability": "Focus : Identity Wallet Interoperability",
-				"reportTemplate": "Focus : Modèle de rapport"
+				"reportTemplate": "Focus : Modèle de rapport",
+				"scoringExplained": "Focus : Explication du scoring"
 			}
 		}
 	},

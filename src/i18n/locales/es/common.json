@@ -238,16 +238,17 @@
 			}
 		},
 		"news": {
-			"title": "Informes de calificación y noticias de la comunidad",
-			"description": "Agregue nuevos archivos MD/MDX con fecha a `src/content/news/`. Las publicaciones de noticias pueden importar directamente archivos de rebajas de informes adicionales.",
+			"title": "Noticias de la comunidad",
+			"description": "Aquí compartimos perspectivas sobre decisiones de puntuación, nuevas incorporaciones a stacks y desarrollos en soberanía digital en Europa.",
 			"sectionAria": "Lista de publicaciones de noticias publicadas",
-			"pushHint": "Tan pronto como haya una nueva puntuación disponible, publicamos una publicación MDX y podemos activar notificaciones automáticas a partir de ella.",
+			"pushHint": "Mantente al día — aquí aparecen nuevas publicaciones cuando cambian scores o stacks.",
 			"metaDate": "Publicado el {{date}}",
 			"empty": "Aún no hay publicaciones de noticias publicadas.",
 			"focus": {
 				"openDataGovernance": "Enfoque: Gobernanza de datos abiertos",
 				"identityWalletInteroperability": "Enfoque: Interoperabilidad de Identity Wallet",
-				"reportTemplate": "Enfoque: Plantilla de informe"
+				"reportTemplate": "Enfoque: Plantilla de informe",
+				"scoringExplained": "Enfoque: Explicación del scoring"
 			}
 		}
 	}

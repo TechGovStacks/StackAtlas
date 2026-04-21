@@ -238,16 +238,17 @@
 			}
 		},
 		"news": {
-			"title": "Rangeringsrapporter og fellesskapsnyheter",
-			"description": "Legg til nye daterte MD/MDX-filer til `src/content/news/`. Nyhetsinnlegg kan direkte importere ytterligere rapportavmerkingsfiler.",
+			"title": "Fellesskapsnyheter",
+			"description": "Her deler vi innsikt i scoringsbeslutninger, nye stack-tillegg og utvikling innen digital suverenitet i Europa.",
 			"sectionAria": "Liste over publiserte nyhetsinnlegg",
-			"pushHint": "Så snart en ny score er tilgjengelig, publiserer vi et MDX-innlegg og kan utløse push-varsler fra det.",
+			"pushHint": "Hold deg oppdatert — nye innlegg vises her når scorer eller stacks endres.",
 			"metaDate": "Publisert {{date}}",
 			"empty": "Ingen nyhetsinnlegg publisert ennå.",
 			"focus": {
 				"openDataGovernance": "Fokus: Open Data Governance",
 				"identityWalletInteroperability": "Fokus: Interoperabilitet for identitetslommebok",
-				"reportTemplate": "Fokus: Rapportmal"
+				"reportTemplate": "Fokus: Rapportmal",
+				"scoringExplained": "Fokus: Scoring forklart"
 			}
 		}
 	}
