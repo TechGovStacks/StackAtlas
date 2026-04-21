@@ -7,7 +7,6 @@ import i18next from 'i18next';
 import { render } from 'preact';
 import App from './App';
 import { i18nReady } from './i18n';
-import { normalizeLanguage } from './i18n/language';
 import { LanguageCode } from './types';
 
 /**
@@ -23,26 +22,26 @@ type KolibriLanguage = NonNullable<NonNullable<Parameters<typeof register>[2]>['
 
 const KOLIBRI_FALLBACK_LANGUAGE: KolibriLanguage = 'en';
 const APP_TO_KOLIBRI_LANGUAGE: Readonly<Record<LanguageCode, KolibriLanguage>> = {
-	da: KOLIBRI_FALLBACK_LANGUAGE,
+	da: 'da',
 	de: 'de',
-	en: KOLIBRI_FALLBACK_LANGUAGE,
-	es: KOLIBRI_FALLBACK_LANGUAGE,
-	fr: KOLIBRI_FALLBACK_LANGUAGE,
-	it: KOLIBRI_FALLBACK_LANGUAGE,
-	no: KOLIBRI_FALLBACK_LANGUAGE,
-	sv: KOLIBRI_FALLBACK_LANGUAGE,
+	en: 'en',
+	es: 'es',
+	fr: 'fr',
+	it: 'it',
+	no: 'no',
+	sv: 'sv',
 };
 const warnedKolibriFallbackLanguages = new Set<string>();
 
 function mapAppLanguageToKolibriLanguage(language: string): KolibriLanguage {
-	const appLanguage = normalizeLanguage(language);
-	const kolibriLanguage = APP_TO_KOLIBRI_LANGUAGE[appLanguage];
+	const normalizedLanguage = language.toLowerCase().split('-')[0];
+	const kolibriLanguage = APP_TO_KOLIBRI_LANGUAGE[normalizedLanguage as LanguageCode] ?? KOLIBRI_FALLBACK_LANGUAGE;
 
-	if (kolibriLanguage === KOLIBRI_FALLBACK_LANGUAGE && appLanguage !== KOLIBRI_FALLBACK_LANGUAGE) {
-		if (!warnedKolibriFallbackLanguages.has(appLanguage)) {
-			warnedKolibriFallbackLanguages.add(appLanguage);
+	if (kolibriLanguage === KOLIBRI_FALLBACK_LANGUAGE && normalizedLanguage !== KOLIBRI_FALLBACK_LANGUAGE) {
+		if (!warnedKolibriFallbackLanguages.has(normalizedLanguage)) {
+			warnedKolibriFallbackLanguages.add(normalizedLanguage);
 			console.warn(
-				`KoliBri locale fallback active: app language "${language}" (normalized to "${appLanguage}") is not natively supported. Using "${KOLIBRI_FALLBACK_LANGUAGE}" for KoliBri translations.`,
+				`KoliBri locale fallback active: app language "${normalizedLanguage}" is not natively supported. Using "${KOLIBRI_FALLBACK_LANGUAGE}" for KoliBri translations.`,
 			);
 		}
 	}
