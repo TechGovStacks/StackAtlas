@@ -101,15 +101,11 @@ _Nicht anwendbar für dieses Feature_
   justify-content: center;
   z-index: 9998; // Unter Splash (9999), über normalem Content
   animation: fade-in 0.2s ease;
-  
-  &.beta-modal--hidden {
-    display: none;
-  }
 }
 
 .beta-modal {
   background: var(--ds-color-bg-white);
-  border-radius: 8px;
+  border-radius: var(--ds-radius-lg);
   padding: var(--ds-space-4);
   max-width: 480px;
   width: 90vw;
@@ -121,14 +117,14 @@ _Nicht anwendbar für dieses Feature_
   font-size: var(--ds-text-lg);
   font-weight: 700;
   margin-bottom: var(--ds-space-2);
-  color: var(--ds-color-text-default);
+  color: var(--ds-color-text);
 }
 
 .beta-modal__description {
   font-size: var(--ds-text-sm);
   line-height: 1.6;
   margin-bottom: var(--ds-space-3);
-  color: var(--ds-color-text-secondary);
+  color: var(--ds-color-text-muted);
 }
 
 .beta-modal__actions {
@@ -160,7 +156,7 @@ _Nicht anwendbar für dieses Feature_
 // Dark mode & reduced motion support
 @media (prefers-color-scheme: dark) {
   .beta-modal {
-    background: var(--ds-color-bg-white-dark);
+    background: var(--ds-color-bg-white);
   }
 }
 
@@ -196,6 +192,8 @@ Füge folgende Keys hinzu (unter `header` oder als eigene Top-Level Section):
 
 Logik:
 ```typescript
+import { useState } from 'preact/hooks';
+
 const [showBetaModal, setShowBetaModal] = useState(true);
 
 const handleBetaModalClose = () => {
