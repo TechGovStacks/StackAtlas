@@ -257,6 +257,60 @@
 				"light": "Hell",
 				"dark": "Dunkel",
 				"highContrast": "Hoher Kontrast"
+			},
+			"stackSelection": {
+				"title": "Stack-Selection-Test",
+				"description": "Hier kannst du die Bewertung aus dem Plan direkt ausprobieren. Alle Eingaben werden lokal berechnet und zeigen sofort Entscheidungsklasse und Kernstack-Eignung.",
+				"dimensions": "Dimensionen (0–5)",
+				"config": "Konfiguration",
+				"itemClass": "Item-Klasse",
+				"lifecycle": "Lifecycle-Status",
+				"reset": "Auf Standardwerte zurücksetzen",
+				"hardExclusions": "Hard Exclusions",
+				"result": "Ergebnis",
+				"resultDecision": "Entscheidungsklasse",
+				"resultPoints": "Punkte",
+				"resultWeighted": "Gewichteter Score",
+				"resultThreshold": "Threshold verletzt",
+				"resultHardExclusion": "Hard Exclusion verletzt",
+				"resultCore": "Für Kernstack geeignet",
+				"dimensionLabels": {
+					"austauschbarkeit": "Austauschbarkeit",
+					"betriebsGovernanceFaehigkeit": "Betriebs-/Governance-Fähigkeit",
+					"interoperabilitaet": "Interoperabilität",
+					"offenheitStandardisierung": "Offenheit & Standardisierung",
+					"patternFit": "Pattern-Fit",
+					"reifegrad": "Reifegrad",
+					"steuerbarkeit": "Steuerbarkeit",
+					"souveraenitaet": "Souveränität"
+				},
+				"hardExclusionLabels": {
+					"geringeAustauschbarkeit": "Geringe Austauschbarkeit",
+					"keinDokumentierterStandard": "Kein dokumentierter Standard",
+					"keinKlaresPattern": "Kein klares Pattern",
+					"keinMehrwertGegenueberBestand": "Kein Mehrwert gegenüber Bestand",
+					"nichtOperationalisierbar": "Nicht operationalisierbar",
+					"nurHypeToolMode": "Nur Hype-Tool-Modus",
+					"starkeHerstellerCloudBindung": "Starke Hersteller-/Cloud-Bindung",
+					"ueberschneidungOhneZusatznutzen": "Überschneidung ohne Zusatznutzen",
+					"unreiferInstabilerReifegrad": "Unreifer/instabiler Reifegrad"
+				},
+				"yes": "Ja",
+				"no": "Nein",
+				"itemClassOptions": {
+					"architekturPattern": "Architektur-Pattern",
+					"beobachtungskandidat": "Beobachtungskandidat",
+					"offenerStandard": "Offener Standard",
+					"produktPlattformFramework": "Produkt/Plattform/Framework",
+					"referenzimplementierung": "Referenzimplementierung"
+				},
+				"lifecycleOptions": {
+					"deprecated": "Deprecated",
+					"kandidat": "Kandidat",
+					"kernstack": "Kernstack",
+					"referenz": "Referenz",
+					"sunset": "Sunset"
+				}
 			}
 		},
 		"news": {

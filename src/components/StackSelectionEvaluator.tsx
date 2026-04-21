@@ -110,11 +110,20 @@ export function StackSelectionEvaluator() {
 						<KolSingleSelect
 							_label={t('pages.settings.stackSelection.itemClass', 'Item-Klasse')}
 							_options={[
-								{ label: 'Architektur-Pattern', value: 'architekturPattern' },
-								{ label: 'Beobachtungskandidat', value: 'beobachtungskandidat' },
-								{ label: 'Offener Standard', value: 'offenerStandard' },
-								{ label: 'Produkt/Plattform/Framework', value: 'produktPlattformFramework' },
-								{ label: 'Referenzimplementierung', value: 'referenzimplementierung' },
+								{ label: t('pages.settings.stackSelection.itemClassOptions.architekturPattern', 'Architektur-Pattern'), value: 'architekturPattern' },
+								{
+									label: t('pages.settings.stackSelection.itemClassOptions.beobachtungskandidat', 'Beobachtungskandidat'),
+									value: 'beobachtungskandidat',
+								},
+								{ label: t('pages.settings.stackSelection.itemClassOptions.offenerStandard', 'Offener Standard'), value: 'offenerStandard' },
+								{
+									label: t('pages.settings.stackSelection.itemClassOptions.produktPlattformFramework', 'Produkt/Plattform/Framework'),
+									value: 'produktPlattformFramework',
+								},
+								{
+									label: t('pages.settings.stackSelection.itemClassOptions.referenzimplementierung', 'Referenzimplementierung'),
+									value: 'referenzimplementierung',
+								},
 							]}
 							_value={input.itemClass}
 							_on={{
@@ -132,11 +141,11 @@ export function StackSelectionEvaluator() {
 						<KolSingleSelect
 							_label={t('pages.settings.stackSelection.lifecycle', 'Lifecycle-Status')}
 							_options={[
-								{ label: 'Deprecated', value: 'deprecated' },
-								{ label: 'Kandidat', value: 'kandidat' },
-								{ label: 'Kernstack', value: 'kernstack' },
-								{ label: 'Referenz', value: 'referenz' },
-								{ label: 'Sunset', value: 'sunset' },
+								{ label: t('pages.settings.stackSelection.lifecycleOptions.deprecated', 'Deprecated'), value: 'deprecated' },
+								{ label: t('pages.settings.stackSelection.lifecycleOptions.kandidat', 'Kandidat'), value: 'kandidat' },
+								{ label: t('pages.settings.stackSelection.lifecycleOptions.kernstack', 'Kernstack'), value: 'kernstack' },
+								{ label: t('pages.settings.stackSelection.lifecycleOptions.referenz', 'Referenz'), value: 'referenz' },
+								{ label: t('pages.settings.stackSelection.lifecycleOptions.sunset', 'Sunset'), value: 'sunset' },
 							]}
 							_value={input.lifecycleStatus}
 							_on={{
@@ -187,13 +196,16 @@ export function StackSelectionEvaluator() {
 						<strong>{t('pages.settings.stackSelection.resultWeighted', 'Gewichteter Score')}:</strong> {result.weightedScore}
 					</p>
 					<p className="stack-selection-evaluator__result-line">
-						<strong>{t('pages.settings.stackSelection.resultThreshold', 'Threshold verletzt')}:</strong> {result.thresholdFailed ? 'Ja' : 'Nein'}
+						<strong>{t('pages.settings.stackSelection.resultThreshold', 'Threshold verletzt')}:</strong>{' '}
+						{result.thresholdFailed ? t('pages.settings.stackSelection.yes', 'Ja') : t('pages.settings.stackSelection.no', 'Nein')}
 					</p>
 					<p className="stack-selection-evaluator__result-line">
-						<strong>{t('pages.settings.stackSelection.resultHardExclusion', 'Hard Exclusion verletzt')}:</strong> {result.hardExclusionFailed ? 'Ja' : 'Nein'}
+						<strong>{t('pages.settings.stackSelection.resultHardExclusion', 'Hard Exclusion verletzt')}:</strong>{' '}
+						{result.hardExclusionFailed ? t('pages.settings.stackSelection.yes', 'Ja') : t('pages.settings.stackSelection.no', 'Nein')}
 					</p>
 					<p className="stack-selection-evaluator__result-line">
-						<strong>{t('pages.settings.stackSelection.resultCore', 'Für Kernstack geeignet')}:</strong> {result.isEligibleForCore ? 'Ja' : 'Nein'}
+						<strong>{t('pages.settings.stackSelection.resultCore', 'Für Kernstack geeignet')}:</strong>{' '}
+						{result.isEligibleForCore ? t('pages.settings.stackSelection.yes', 'Ja') : t('pages.settings.stackSelection.no', 'Nein')}
 					</p>
 				</div>
 			</KolCard>
