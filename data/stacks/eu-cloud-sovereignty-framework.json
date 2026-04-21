@@ -212,6 +212,15 @@
 			}
 		},
 		{
+			"itemId": "es3-standard",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "ES³ erweitert das EU CSF um eine KI-Dimension, hoehere Detailtiefe (3 Ebenen pro Dimension) und richtet sich an Industrie und Mittelstand als komplementaerer Zertifizierungsrahmen.",
+				"en": "ES³ extends the EU CSF with an AI dimension, higher granularity (3 levels per dimension), and targets industry and SMEs as a complementary certification framework."
+			}
+		},
+		{
 			"itemId": "sovereign-cloud-stack",
 			"status": "recommended",
 			"role": "contributor",

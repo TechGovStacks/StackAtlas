@@ -1,0 +1,36 @@
+{
+	"id": "es3-standard",
+	"name": "European Sovereign Stack Standard (ES³)",
+	"layer": "sovereign-standards",
+	"sublayer": "zertifizierung",
+	"ownerCountry": "DE",
+	"description": {
+		"de": "Der European Sovereign Stack Standard (ES³) ist ein messbarer Bewertungsrahmen fuer digitale Souveraenitaet von Cloud- und IT-Diensten, entwickelt von Schwarz Digits. Er definiert neun Dimensionen (strategische Souveraenitaet, Recht/Jurisdiktion, Daten & KI, operative Unabhaengigkeit, Lieferkette, Technologie, Sicherheit & Compliance, oekologische Nachhaltigkeit und KI) mit jeweils drei Bewertungsebenen und vier kumulativen Reifestufen (Basic, Initial, Advanced, Future-Proof). Ergebnisse werden unabhaengig durch die Wirtschaftspruefungsgesellschaft BDO verifiziert. Partner-Services koennen Souveraenitaets-Badges erhalten. ES³ positioniert sich als Erweiterung des EU Cloud Sovereignty Framework und richtet sich an Industrie, Mittelstand und regulierte Branchen.",
+		"en": "The European Sovereign Stack Standard (ES³) is a measurable assessment framework for the digital sovereignty of cloud and IT services, developed by Schwarz Digits. It defines nine dimensions (strategic sovereignty, legal/jurisdiction, data & AI, operational independence, supply chain, technology, security & compliance, ecological sustainability, and AI), each with three evaluation levels and four cumulative maturity stages (Basic, Initial, Advanced, Future-Proof). Results are independently verified by BDO auditors. Partner services can receive sovereignty badges. ES³ positions itself as an extension of the EU Cloud Sovereignty Framework and targets industry, SMEs, and regulated sectors."
+	},
+	"homepage": "https://schwarz-digits.de/en/digitale-souveraenitaet",
+	"tags": [
+		"certification",
+		"cloud",
+		"compliance",
+		"europe",
+		"framework",
+		"germany",
+		"sovereignty",
+		"standard"
+	],
+	"oss": false,
+	"maturity": "incubation",
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": true,
+		"hasAudit": true,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	}
+}
