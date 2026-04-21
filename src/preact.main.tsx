@@ -7,6 +7,7 @@ import i18next from 'i18next';
 import { render } from 'preact';
 import App from './App';
 import { i18nReady } from './i18n';
+import { normalizeLanguage } from './i18n/language';
 import { LanguageCode } from './types';
 
 /**
@@ -34,8 +35,8 @@ const APP_TO_KOLIBRI_LANGUAGE: Readonly<Record<LanguageCode, KolibriLanguage>> =
 const warnedKolibriFallbackLanguages = new Set<string>();
 
 function mapAppLanguageToKolibriLanguage(language: string): KolibriLanguage {
-	const normalizedLanguage = language.toLowerCase().split('-')[0];
-	const kolibriLanguage = APP_TO_KOLIBRI_LANGUAGE[normalizedLanguage as LanguageCode] ?? KOLIBRI_FALLBACK_LANGUAGE;
+	const normalizedLanguage = normalizeLanguage(language);
+	const kolibriLanguage = APP_TO_KOLIBRI_LANGUAGE[normalizedLanguage] ?? KOLIBRI_FALLBACK_LANGUAGE;
 
 	if (kolibriLanguage === KOLIBRI_FALLBACK_LANGUAGE && normalizedLanguage !== KOLIBRI_FALLBACK_LANGUAGE) {
 		if (!warnedKolibriFallbackLanguages.has(normalizedLanguage)) {

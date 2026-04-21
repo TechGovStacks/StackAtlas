@@ -1,5 +1,6 @@
 import { KolSingleSelect } from '@public-ui/preact';
 import { useTranslation } from 'react-i18next';
+import { normalizeLanguage } from '../i18n/language';
 
 const SUPPORTED_LANGUAGES = [
 	{ code: 'da', label: 'Dansk' },
@@ -15,7 +16,7 @@ const SUPPORTED_LANGUAGES = [
 export function LanguageSwitcher() {
 	const { i18n, t } = useTranslation();
 
-	const activeLanguage = i18n.resolvedLanguage ?? i18n.language ?? '';
+	const activeLanguage = normalizeLanguage(i18n.resolvedLanguage ?? i18n.language);
 	const languageOptions = SUPPORTED_LANGUAGES.map(({ code, label }) => ({
 		label,
 		value: code,
@@ -31,7 +32,7 @@ export function LanguageSwitcher() {
 				_on={{
 					onChange: (_event: globalThis.Event, value: unknown) => {
 						if (typeof value === 'string') {
-							void i18n.changeLanguage(value);
+							void i18n.changeLanguage(normalizeLanguage(value));
 						}
 					},
 				}}
