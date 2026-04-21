@@ -321,7 +321,10 @@
 				"selectionContextFilled": "Stack und Item ausgewählt",
 				"selectionContextEmpty": "Kein Stack/Item ausgewählt",
 				"stackRole": "Stack-Rolle",
-				"stackStatus": "Stack-Status"
+				"stackStatus": "Stack-Status",
+				"savedAt": "Gespeichert am",
+				"loadSaved": "Gespeichertes Assessment laden",
+				"loadSuccess": "Gespeichertes Assessment geladen."
 			}
 		},
 		"news": {

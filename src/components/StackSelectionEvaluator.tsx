@@ -66,6 +66,7 @@ export function StackSelectionEvaluator() {
 	const [input, setInput] = useState<StackSelectionAssessmentInput>(DEFAULT_INPUT);
 	const [selectedStackId, setSelectedStackId] = useState<string>('');
 	const [selectedItemId, setSelectedItemId] = useState<string>('');
+	const [savedSelection, setSavedSelection] = useState<LinkedAssessment | null>(null);
 	const [saveMessage, setSaveMessage] = useState<string>('');
 
 	const result = useMemo(() => computeStackSelectionAssessment(input), [input]);
@@ -139,6 +140,22 @@ export function StackSelectionEvaluator() {
 		}
 	}, [availableItemIds, selectedItemId, selectedStackId]);
 
+	useEffect(() => {
+		if (!selectedStackId || !selectedItemId || typeof window === 'undefined') {
+			setSavedSelection(null);
+			return;
+		}
+
+		try {
+			const existingRaw = localStorage.getItem(STACK_ITEM_ASSESSMENTS_STORAGE_KEY);
+			const existing = existingRaw ? (JSON.parse(existingRaw) as Record<string, LinkedAssessment>) : {};
+			const storageKey = `${selectedStackId}:${selectedItemId}`;
+			setSavedSelection(existing[storageKey] ?? null);
+		} catch {
+			setSavedSelection(null);
+		}
+	}, [selectedItemId, selectedStackId]);
+
 	const updateDimension = (key: StackSelectionDimensionKey, rawValue: unknown) => {
 		const parsedValue = typeof rawValue === 'number' ? rawValue : Number(rawValue);
 		if (!Number.isFinite(parsedValue)) {
@@ -192,10 +209,19 @@ export function StackSelectionEvaluator() {
 			const existing = existingRaw ? (JSON.parse(existingRaw) as Record<string, LinkedAssessment>) : {};
 			existing[storageKey] = payload;
 			localStorage.setItem(STACK_ITEM_ASSESSMENTS_STORAGE_KEY, JSON.stringify(existing));
+			setSavedSelection(payload);
 			setSaveMessage(t('pages.settings.stackSelection.saveSuccess', 'Assessment für Stack/Item lokal gespeichert.'));
 		} catch {
 			setSaveMessage(t('pages.settings.stackSelection.saveError', 'Assessment konnte nicht gespeichert werden.'));
 		}
+	};
+
+	const applySavedAssessment = () => {
+		if (!savedSelection) {
+			return;
+		}
+		setInput(savedSelection.input);
+		setSaveMessage(t('pages.settings.stackSelection.loadSuccess', 'Gespeichertes Assessment geladen.'));
 	};
 
 	return (
@@ -373,6 +399,18 @@ export function StackSelectionEvaluator() {
 						/>
 					</div>
 					{saveMessage && <p className="stack-selection-evaluator__result-line mt-2">{saveMessage}</p>}
+					{savedSelection && (
+						<div className="mt-3">
+							<p className="stack-selection-evaluator__result-line">
+								<strong>{t('pages.settings.stackSelection.savedAt', 'Gespeichert am')}:</strong> {new Date(savedSelection.savedAt).toLocaleString()}
+							</p>
+							<KolButton
+								_label={t('pages.settings.stackSelection.loadSaved', 'Gespeichertes Assessment laden')}
+								_variant="secondary"
+								_on={{ onClick: applySavedAssessment }}
+							/>
+						</div>
+					)}
 				</div>
 			</KolCard>
 		</section>

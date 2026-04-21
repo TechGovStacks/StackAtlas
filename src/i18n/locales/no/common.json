@@ -299,7 +299,10 @@
 				"selectionContextFilled": "Stack and item selected",
 				"selectionContextEmpty": "No stack/item selected",
 				"stackRole": "Stack role",
-				"stackStatus": "Stack status"
+				"stackStatus": "Stack status",
+				"savedAt": "Saved at",
+				"loadSaved": "Load saved assessment",
+				"loadSuccess": "Saved assessment loaded."
 			}
 		},
 		"news": {
