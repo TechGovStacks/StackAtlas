@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { useTheme, type ThemeValue } from '../hooks/useTheme';
 import { AutoSingleSelect as KolSingleSelect } from './AutoSingleSelect';
@@ -6,6 +7,12 @@ import { LanguageSwitcher } from './LanguageSwitcher';
 export function SettingsForm() {
 	const { t } = useTranslation();
 	const { theme, setTheme } = useTheme();
+	const [displayTheme, setDisplayTheme] = useState<string>(theme);
+
+	// Keep display value in sync when theme changes externally (e.g. loaded from localStorage)
+	useEffect(() => {
+		setDisplayTheme(theme);
+	}, [theme]);
 
 	const themeOptions = [
 		{ value: 'auto', label: t('pages.settings.theme.auto') },
@@ -15,9 +22,9 @@ export function SettingsForm() {
 	];
 
 	const handleThemeChange = (_event: Event, value: unknown) => {
-		if (typeof value === 'string') {
-			setTheme(value as ThemeValue);
-		}
+		const newTheme = typeof value === 'string' ? value : '';
+		setDisplayTheme(newTheme);
+		if (newTheme) setTheme(newTheme as ThemeValue);
 	};
 
 	return (
@@ -30,7 +37,7 @@ export function SettingsForm() {
 				<KolSingleSelect
 					_label={t('pages.settings.theme.label')}
 					_options={themeOptions}
-					_value={theme}
+					_value={displayTheme}
 					_on={{
 						onChange: handleThemeChange,
 					}}
