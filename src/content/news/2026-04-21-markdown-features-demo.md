@@ -19,10 +19,15 @@ Normaler Fließtext mit **fettem Text**, _kursivem Text_, ~~durchgestrichenem Te
 ## Überschriften
 
 # H1 — Haupttitel
+
 ## H2 — Abschnittstitel
+
 ### H3 — Unterabschnitt
+
 #### H4 — Detailbereich
+
 ##### H5 — Hinweis
+
 ###### H6 — Kleinstgliederung
 
 ---
@@ -72,13 +77,13 @@ Tabellen funktionieren direkt im Artikel — kein separater Import nötig.
 
 ### Status-Tabelle mit Emojis
 
-| Komponente    | Status        | Version | Notizen                   |
-| :------------ | :------------ | :------ | :------------------------ |
-| API v2        | ✅ Stabil     | 2.1.0   | Produktiv, vollständig    |
-| Mobile App    | ⚠️ Beta       | 0.9.0   | Betatest läuft            |
-| Web UI        | ✅ Stabil     | 3.2.1   | Voll funktional           |
-| CLI Tool      | ⚠️ Beta       | 1.0.0   | Feedback erwünscht        |
-| Dokumentation | ✅ Aktuell    | 2026    | Komplett aktualisiert     |
+| Komponente    | Status     | Version | Notizen                |
+| :------------ | :--------- | :------ | :--------------------- |
+| API v2        | ✅ Stabil  | 2.1.0   | Produktiv, vollständig |
+| Mobile App    | ⚠️ Beta    | 0.9.0   | Betatest läuft         |
+| Web UI        | ✅ Stabil  | 3.2.1   | Voll funktional        |
+| CLI Tool      | ⚠️ Beta    | 1.0.0   | Feedback erwünscht     |
+| Dokumentation | ✅ Aktuell | 2026    | Komplett aktualisiert  |
 
 ---
 
@@ -100,12 +105,12 @@ pnpm dev
 
 ```typescript
 type NewsModule = {
-  default: ComponentType;
-  metadata?: {
-    focus: string | undefined;
-    title?: string;
-    summary?: string;
-  };
+	default: ComponentType;
+	metadata?: {
+		focus: string | undefined;
+		title?: string;
+		summary?: string;
+	};
 };
 ```
 
@@ -138,7 +143,7 @@ summary: Kurze Zusammenfassung für die Übersicht.
 ### Links
 
 - [Externer Link](https://example.org)
-- [Link mit Titel](https://example.org "Titeltext beim Hover")
+- [Link mit Titel](https://example.org 'Titeltext beim Hover')
 
 ### Bild (extern)
 
