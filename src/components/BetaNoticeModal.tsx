@@ -18,8 +18,9 @@ export function BetaNoticeModal({ isOpen, onClose }: BetaNoticeModalProps) {
 			closeButtonRef.current?.focus();
 		}, 50);
 
-		const handleKeyDown = (e: KeyboardEvent) => {
-			if (e.key === 'Escape') onClose();
+		const handleKeyDown = (e: Event) => {
+			const keyboardEvent = e as unknown as { key?: string };
+			if (keyboardEvent.key === 'Escape') onClose();
 		};
 		document.addEventListener('keydown', handleKeyDown);
 
@@ -33,12 +34,13 @@ export function BetaNoticeModal({ isOpen, onClose }: BetaNoticeModalProps) {
 
 	return (
 		<div
-			role="dialog"
-			aria-modal="true"
-			aria-label={t('betaNotice.title')}
+			role="presentation"
 			className="beta-modal-overlay"
-			onClick={(e: MouseEvent) => {
-				if (e.target === e.currentTarget) onClose();
+			onClick={(e) => {
+				if ((e.target as HTMLElement) === e.currentTarget) onClose();
+			}}
+			onKeyDown={(e) => {
+				if (e.key === 'Escape' && (e.target as HTMLElement) === e.currentTarget) onClose();
 			}}
 		>
 			<KolCard _label={t('betaNotice.title')} className="beta-modal-card">
