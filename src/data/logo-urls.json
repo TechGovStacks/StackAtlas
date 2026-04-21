@@ -336,10 +336,10 @@
 		"accessed": "2026-04-06"
 	},
 	"Java": {
-		"url": null,
-		"source": null,
-		"verified": false,
-		"accessed": "2026-04-06"
+		"url": "https://commons.wikimedia.org/wiki/Special:FilePath/Java-Logo.svg",
+		"source": "wikimedia-commons",
+		"verified": true,
+		"accessed": "2026-04-21"
 	},
 	"JavaScript (ECMA Script)": {
 		"url": "https://cdn.simpleicons.org/javascript",
@@ -496,6 +496,12 @@
 		"source": "simple-icons",
 		"verified": true,
 		"accessed": "2026-04-06"
+	},
+	"Node.js": {
+		"url": "https://cdn.simpleicons.org/nodedotjs",
+		"source": "simple-icons",
+		"verified": true,
+		"accessed": "2026-04-21"
 	},
 	"Nomad": {
 		"url": "https://cdn.simpleicons.org/nomad",
@@ -702,10 +708,10 @@
 		"accessed": "2026-04-06"
 	},
 	"Selenium": {
-		"url": "https://cdn.simpleicons.org/selenium",
-		"source": "simple-icons",
+		"url": "https://commons.wikimedia.org/wiki/Special:FilePath/Selenium_Logo.svg",
+		"source": "wikimedia-commons",
 		"verified": true,
-		"accessed": "2026-04-06"
+		"accessed": "2026-04-21"
 	},
 	"Session Initiation Protocol (SIP)": {
 		"url": "https://cdn.simpleicons.org/session",
@@ -736,6 +742,12 @@
 		"source": "simple-icons",
 		"verified": true,
 		"accessed": "2026-04-06"
+	},
+	"Spring Boot": {
+		"url": "https://commons.wikimedia.org/wiki/Special:FilePath/Spring_Boot.svg",
+		"source": "wikimedia-commons",
+		"verified": true,
+		"accessed": "2026-04-21"
 	},
 	"Swift": {
 		"url": "https://cdn.simpleicons.org/swift",
