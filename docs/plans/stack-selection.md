@@ -319,6 +319,26 @@ Damit Produkte nicht versehentlich so hoch scoren wie offene Standards, gilt zus
 | Produkt / Framework / Tool | Optionale Referenztechnologie |
 | Beobachtungskandidat       | Beobachtung / Pilotierung     |
 
+### 10.1 Pflichtfeld im Bewertungsbogen: Delta zum bestehenden Stack
+
+Zur objektiveren Prüfung der Ausschlusskriterien aus **Abschnitt 3** (insbesondere „kein relevanter Mehrwert gegenüber bereits vorhandenen Bausteinen“ sowie „überschneidet sich vollständig mit bestehendem Stack-Item ohne Zusatznutzen“) ist im Bewertungsbogen ein Pflichtfeld zu ergänzen:
+
+* **Delta zum bestehenden Stack (Pflichtfeld)**
+
+Dieses Feld muss strukturiert beantwortet werden:
+
+* **Welche Lücke schließt das Item?**
+* **Warum ist kein bestehendes Item ausreichend?**
+* **Welche messbaren Verbesserungen werden erwartet?** (z. B. Integrationsaufwand, Betriebskosten, Compliance-Risiko)
+
+Zusätzlich ist eine kurze Evidenzliste verpflichtend beizulegen:
+
+* **PoC-Ergebnis** (inkl. Rahmenbedingungen und Kernerkenntnis)
+* **Referenzarchitektur** (inkl. Einordnung im Zielbild und Schnittstellen)
+* **Kostenvergleich** (mindestens grober Vergleich Bestand vs. vorgeschlagenes Item)
+
+Ohne belastbares „Delta zum bestehenden Stack“ und Evidenzliste ist die Ausschlussprüfung nach Abschnitt 3 als **nicht bestanden** zu werten.
+
 ---
 
 ## 11. Pflicht-Metadaten pro Item
@@ -380,6 +400,14 @@ Jedes vorgeschlagene Item muss mit diesen Feldern eingereicht werden:
 * Nutzen:
 * Risiken:
 * Empfehlung:
+* Delta zum bestehenden Stack (Pflichtfeld):
+  * Welche Lücke schließt das Item?
+  * Warum ist kein bestehendes Item ausreichend?
+  * Welche messbaren Verbesserungen werden erwartet (z. B. Integrationsaufwand, Betriebskosten, Compliance-Risiko)?
+* Evidenzliste (Pflichtanhang):
+  * PoC-Ergebnis
+  * Referenzarchitektur
+  * Kostenvergleich
 
 ---
 
