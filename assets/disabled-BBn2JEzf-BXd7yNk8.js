@@ -1,0 +1,1 @@
+import{at as e,v as t}from"./index-G8af0_gG-xSNoIDQl.js";var n=(n,r)=>{e(n,`_disabled`,r,{hooks:{afterPatch:e=>{!0===e&&t()}}})};export{n as t};
