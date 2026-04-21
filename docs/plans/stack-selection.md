@@ -247,7 +247,22 @@ Gesamtscore =
 
 ---
 
-## 8. Zusatzregel: Typabhängige Obergrenze
+## 8. Mindestschwellen
+
+Zusätzlich zum Gesamtscore gelten harte Untergrenzen in kritischen Dimensionen:
+
+* Offenheit/Standardisierung **>= 3**
+* Steuerbarkeit **>= 3**
+* Souveränität **>= 3**
+* Betriebs-/Governance-Fähigkeit **>= 3**
+
+### 8.1 Regel bei Unterschreitung
+
+Wird eine dieser Mindestschwellen unterschritten, ist als maximale Entscheidungsklasse nur **„Beobachtung / Pilotierung“** zulässig – unabhängig vom erreichten Gesamtscore.
+
+---
+
+## 9. Zusatzregel: Typabhängige Obergrenze
 
 Damit Produkte nicht versehentlich so hoch scoren wie offene Standards, gilt zusätzlich eine Obergrenze je Klasse.
 
@@ -261,7 +276,7 @@ Damit Produkte nicht versehentlich so hoch scoren wie offene Standards, gilt zus
 
 ---
 
-## 9. Pflicht-Metadaten pro Item
+## 10. Pflicht-Metadaten pro Item
 
 Jedes vorgeschlagene Item muss mit diesen Feldern eingereicht werden:
 
@@ -280,7 +295,7 @@ Jedes vorgeschlagene Item muss mit diesen Feldern eingereicht werden:
 
 ---
 
-## 10. Bewertungsbogen
+## 11. Bewertungsbogen
 
 ### Vorlage
 
@@ -323,7 +338,7 @@ Jedes vorgeschlagene Item muss mit diesen Feldern eingereicht werden:
 
 ---
 
-## 11. Kurzregel für Gremien
+## 12. Kurzregel für Gremien
 
 Für jedes neue Item müssen nacheinander diese Fragen beantwortet werden:
 
@@ -338,6 +353,6 @@ Wenn diese Fragen nicht sauber beantwortbar sind, gehört das Item nicht in den 
 
 ---
 
-## 12. Executive Summary
+## 13. Executive Summary
 
 **In den Kernstack kommen nur Items, die ein relevantes Pattern tragen, offen standardisiert, steuerbar, austauschbar, reif und governance-fähig sind.**
