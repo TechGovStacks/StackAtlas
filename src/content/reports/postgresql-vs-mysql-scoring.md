@@ -1,10 +1,10 @@
 ## Overall Score — drei Komponenten, eine Zahl
 
-| Komponente                    | Gewicht | Beschreibung                                     |
-| :---------------------------- | ------: | :----------------------------------------------- |
-| Sovereignty Score             |    60 % | Wie souverän ist das Tool?                       |
+| Komponente                    | Gewicht | Beschreibung                                                       |
+| :---------------------------- | ------: | :----------------------------------------------------------------- |
+| Sovereignty Score             |    60 % | Wie souverän ist das Tool?                                         |
 | Sovereign Adoption Score      |    25 % | Stack-Abdeckung — nur für Tools mit eigenem Sovereignty Score ≥ 61 |
-| Adoption Score (+ Popularity) |    15 % | Allgemeine Stack-Nutzung und externe Signale     |
+| Adoption Score (+ Popularity) |    15 % | Allgemeine Stack-Nutzung und externe Signale                       |
 
 ---
 
