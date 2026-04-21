@@ -20,17 +20,21 @@ Wer die Landscape-Rangliste zum ersten Mal sieht, wundert sich oft: Beide Datenb
 
 ## Die Rechnung
 
-```
-MySQL Overall Score:
-= 0,60 × 88  +  0,25 × (≈0)  +  0,15 × (≈0)
-= 52,8 + ~1,5 + ~0,7
-≈ 55
+**MySQL Server** ist nur in 1 Stack vertreten und hat keine Popularity Metrics hinterlegt:
 
-PostgreSQL Overall Score:
-= 0,60 × 90  +  0,25 × (hoch)  +  0,15 × (hoch + Popularity)
-= 54 + signifikant
->> 55
-```
+- Sovereignty: 60 % × 88 = **52,8 Punkte**
+- Sovereign Adoption: 25 % × ≈5 = **≈1,3 Punkte** (fast keine Stack-Abdeckung)
+- Adoption: 15 % × ≈5 = **≈0,8 Punkte**
+- **Overall ≈ 55**
+
+**PostgreSQL** ist in 14 Stacks vertreten und hat Popularity Metrics (24k Stars, 5,2 Mio. Docker Pulls/Woche):
+
+- Sovereignty: 60 % × 90 = **54 Punkte**
+- Sovereign Adoption: 25 % × ≈90 = **≈22 Punkte** (breite, internationale Stack-Abdeckung)
+- Adoption + Popularity: 15 % × ≈95 = **≈14 Punkte**
+- **Overall ≈ 90**
+
+Der Sovereignty-Anteil allein (54 vs. 53) erklärt also kaum etwas. Die 35 Punkte Abstand kommen fast vollständig aus Adoption und Popularity.
 
 ---
 
