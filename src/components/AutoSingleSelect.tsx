@@ -23,12 +23,16 @@ export function AutoSingleSelect(props: KolSingleSelectProps) {
 
 	// Refs so the focusout handler always sees the latest props without re-registering
 	const valueRef = useRef(_value);
-	valueRef.current = _value;
 	const optionsRef = useRef(_options);
-	optionsRef.current = _options;
 	const onChangeRef = useRef(_on?.onChange);
-	onChangeRef.current = _on?.onChange;
 	const wrapperRef = useRef<HTMLDivElement>(null);
+
+	// Keep refs current after every render (must not write .current during render)
+	useEffect(() => {
+		valueRef.current = _value;
+		optionsRef.current = _options;
+		onChangeRef.current = _on?.onChange;
+	});
 
 	useEffect(() => {
 		const wrapper = wrapperRef.current;
