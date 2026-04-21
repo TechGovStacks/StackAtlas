@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { SettingsForm } from '../components/SettingsForm';
+import { StackSelectionEvaluator } from '../components/StackSelectionEvaluator';
 import { useRouteAnnouncement } from '../hooks/useRouteAnnouncement';
 
 export function SettingsPage() {
@@ -12,6 +13,7 @@ export function SettingsPage() {
 				{t('pages.settings.title')}
 			</h1>
 			<SettingsForm />
+			<StackSelectionEvaluator />
 		</main>
 	);
 }

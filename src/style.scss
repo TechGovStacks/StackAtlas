@@ -2453,6 +2453,15 @@ kol-select {
 	padding: 0.75rem;
 }
 
+.stack-selection-evaluator__intro {
+	color: var(--ds-color-text-subtle);
+}
+
+.stack-selection-evaluator__result-line {
+	color: var(--ds-color-text);
+	margin: 0 0 var(--ds-space-2) 0;
+}
+
 /* ─────────────────────────────────────────────────────────────────────────
    Screen-reader only content
    ───────────────────────────────────────────────────────────────────────── */
