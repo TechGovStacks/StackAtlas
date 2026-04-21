@@ -59,6 +59,57 @@ export type SovereigntyScoreResult = {
 	percentileInCategory: number;
 };
 
+export type StackSelectionItemClass =
+	| 'architekturPattern'
+	| 'beobachtungskandidat'
+	| 'offenerStandard'
+	| 'produktPlattformFramework'
+	| 'referenzimplementierung';
+
+export type StackSelectionDecisionClass = 'beobachtungPilotierung' | 'kernstack' | 'nichtAufnehmen' | 'optionaleReferenztechnologie' | 'referenzstack';
+
+export type StackSelectionLifecycleStatus = 'deprecated' | 'kandidat' | 'kernstack' | 'referenz' | 'sunset';
+
+export type StackSelectionDimensionKey =
+	| 'austauschbarkeit'
+	| 'betriebsGovernanceFaehigkeit'
+	| 'interoperabilitaet'
+	| 'offenheitStandardisierung'
+	| 'patternFit'
+	| 'reifegrad'
+	| 'steuerbarkeit'
+	| 'souveraenitaet';
+
+export type StackSelectionDimensions = Record<StackSelectionDimensionKey, number>;
+
+export type StackSelectionHardExclusion = {
+	geringeAustauschbarkeit: boolean;
+	keinDokumentierterStandard: boolean;
+	keinKlaresPattern: boolean;
+	keinMehrwertGegenueberBestand: boolean;
+	nichtOperationalisierbar: boolean;
+	nurHypeToolMode: boolean;
+	starkeHerstellerCloudBindung: boolean;
+	ueberschneidungOhneZusatznutzen: boolean;
+	unreiferInstabilerReifegrad: boolean;
+};
+
+export type StackSelectionAssessmentInput = {
+	dimensions: StackSelectionDimensions;
+	hardExclusion: StackSelectionHardExclusion;
+	itemClass: StackSelectionItemClass;
+	lifecycleStatus: StackSelectionLifecycleStatus;
+};
+
+export type StackSelectionAssessmentResult = {
+	decisionClass: StackSelectionDecisionClass;
+	governanceStatus: StackSelectionLifecycleStatus;
+	hardExclusionFailed: boolean;
+	isEligibleForCore: boolean;
+	points: number;
+	thresholdFailed: boolean;
+	weightedScore: number;
+};
 export type PopularityMetrics = {
 	/** ISO 8601 date when metrics were last updated — required for ageFactor calculation */
 	updatedAt: string;

@@ -14,3 +14,5 @@ export {
 } from './sovereigntyScore';
 
 export { buildDependencyGraph, collectDependencyNeighborhood, getDependencyTypes, getFilteredEdges, hasDependencyWithinDepth } from './dependencies';
+
+export { STACK_SELECTION_WEIGHTS, computeStackSelectionAssessment, getDecisionClassByPoints } from './stackSelectionScore';
