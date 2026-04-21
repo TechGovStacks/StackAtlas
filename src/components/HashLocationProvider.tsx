@@ -6,6 +6,21 @@ interface HashLocationProviderProps {
 	children: ComponentChildren;
 }
 
+const ROUTE_ALIASES: Readonly<Record<string, string>> = {
+	'/einstellungen': '/settings',
+	'/impressum': '/imprint',
+	'/neuigkeiten': '/news',
+	'/stacks-galerie': '/stacks',
+};
+
+function canonicalizeRoute(input: string): string {
+	const normalizedRoute = normalizeRoute(input);
+	const url = new window.URL(normalizedRoute, window.location.origin);
+	const normalizedPath = url.pathname.replace(/\/+$/g, '') || '/';
+	const canonicalPath = ROUTE_ALIASES[normalizedPath] ?? normalizedPath;
+	return `${canonicalPath}${url.search}`;
+}
+
 function normalizeRoute(input: string): string {
 	let route = input.replace(/^#/, '');
 	if (!route) route = '/';
@@ -14,7 +29,7 @@ function normalizeRoute(input: string): string {
 }
 
 function getHashRoute(): string {
-	return normalizeRoute(window.location.hash);
+	return canonicalizeRoute(window.location.hash);
 }
 
 function parseRoute(route: string) {
@@ -33,7 +48,12 @@ export function HashLocationProvider({ children }: HashLocationProviderProps) {
 
 	useEffect(() => {
 		const onHashChange = () => {
-			setRoute(getHashRoute());
+			const canonicalRoute = getHashRoute();
+			const nextHash = `#${canonicalRoute}`;
+			if (window.location.hash !== nextHash) {
+				window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}${nextHash}`);
+			}
+			setRoute(canonicalRoute);
 		};
 
 		window.addEventListener('hashchange', onHashChange);
@@ -41,6 +61,8 @@ export function HashLocationProvider({ children }: HashLocationProviderProps) {
 		if (!window.location.hash) {
 			window.location.replace(`${window.location.pathname}${window.location.search}#/`);
 			setRoute(getHashRoute());
+		} else {
+			onHashChange();
 		}
 
 		return () => window.removeEventListener('hashchange', onHashChange);
@@ -51,7 +73,7 @@ export function HashLocationProvider({ children }: HashLocationProviderProps) {
 		return {
 			...parsed,
 			route: (nextUrl: string, replace?: boolean) => {
-				const nextRoute = normalizeRoute(nextUrl);
+				const nextRoute = canonicalizeRoute(nextUrl);
 				wasPushRef.current = !replace;
 				const nextHash = `#${nextRoute}`;
 				if (replace) {

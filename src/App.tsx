@@ -21,15 +21,11 @@ function AppContent() {
 			<Router>
 				<Route path="/" component={StackGalleryPage} />
 				<Route path="/settings" component={SettingsPage} />
-				<Route path="/einstellungen" component={SettingsPage} />
 				<Route path="/deps" component={HomePage} />
 				<Route path="/graphs" component={DependencyGraphPage} />
 				<Route path="/news" component={NewsPage} />
-				<Route path="/neuigkeiten" component={NewsPage} />
 				<Route path="/imprint" component={ImprintPage} />
-				<Route path="/impressum" component={ImprintPage} />
 				<Route path="/stacks" component={StackGalleryPage} />
-				<Route path="/stacks-galerie" component={StackGalleryPage} />
 				<Route default component={StackGalleryPage} />
 			</Router>
 			<Footer />
