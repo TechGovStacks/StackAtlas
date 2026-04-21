@@ -27,13 +27,13 @@ Keine Änderungen an Typen, Schemas oder JSON-Feldern notwendig. Die Props der n
 
 ### Trigger-Bedingung
 
-Auto-Select wird auf `onBlur` ausgelöst, wenn gilt:
+Auto-Select wird auf `focusout` ausgelöst, wenn der aktuelle Wert **keiner verfügbaren Option entspricht**:
 
 ```
-currentValue === undefined || currentValue === null
+!options.some(o => o.value === currentValue)
 ```
 
-**Hinweis:** Ein leerer String `''` gilt als gültige Auswahl (entspricht der "Alle"-Option in Filterselects) und löst kein Auto-Select aus.
+**Vorteil gegenüber `null`/`undefined`-Prüfung:** Deckt auch `''` ab, wenn kein leerer Eintrag in den Optionen vorhanden ist, sowie ungültige Werte die von außen gesetzt werden.
 
 ### Erste wählbare Option
 
@@ -46,16 +46,16 @@ Falls keine nicht-deaktivierte Option existiert: keine Aktion.
 ### Ablauf
 
 ```
-onFocusLeave(event):
-  if (_value !== undefined && _value !== null) → return (bereits gewählt)
-  firstOption = _options.find(o => !o.disabled)
+onFocusOut(event):
+  if (options.some(o => o.value === _value)) → return (gültiger Wert vorhanden)
+  firstOption = options.find(o => !o.disabled)
   if (!firstOption) → return
   call _on.onChange(syntheticEvent, firstOption.value)
 ```
 
 ### Blur-Erkennung
 
-`KolSingleSelect` von `@public-ui/preact` kapselt die native `<select>`-Logik in einem Shadow DOM. Zum Abfangen des Blur-Ereignisses wird die Wrapper-Komponente ein natives `onBlur`-Event auf einem umschließenden `<div>` verwenden (Event bubbling / `focusout`). Alternativ, falls `_on.onBlur` von `KolSingleSelect` unterstützt wird (zu prüfen anhand der @public-ui 4.1.2 Typdefinitionen), wird dies direkt genutzt.
+`KolSingleSelect` von `@public-ui/preact` kapselt die native `<select>`-Logik in einem Shadow DOM. Das native `blur`-Event bubbelt nicht — daher wird `focusout` verwendet (bubbelt im DOM nach oben). Strategie A nutzt `_on.onBlur` falls von @public-ui unterstützt; Strategie B verwendet `onFocusOut` auf dem äußeren `<div>`.
 
 ## Implementierungsschritte
 
@@ -79,8 +79,8 @@ export function AutoSingleSelect(props: KolSingleSelectProps) {
   const { _on, _value, _options, ...rest } = props;
 
   const handleBlur = () => {
-    if (_value !== undefined && _value !== null) return;
     const options = Array.isArray(_options) ? _options : [];
+    if (options.some((o) => o.value === _value)) return;
     const first = options.find((o) => !o.disabled);
     if (!first || !_on?.onChange) return;
     _on.onChange(new Event('change'), first.value);
@@ -100,7 +100,7 @@ Falls `_on.onBlur` nicht unterstützt wird (Strategie B):
 
 ```tsx
 return (
-  <div onBlur={handleBlur}>
+  <div onFocusOut={handleBlur}>
     <KolSingleSelect {...rest} _value={_value} _options={_options} _on={_on} />
   </div>
 );
@@ -175,11 +175,10 @@ Keine externen Dokumentationsänderungen notwendig. Die neue Komponente `AutoSin
 |--------|-------------------|------------|
 | `_on.onBlur` nicht in @public-ui 4.1.2 typisiert | Mittel | Strategie B (div-Wrapper) als Fallback |
 | Shadow DOM blockiert `focusout`-Bubbling beim div-Wrapper | Niedrig | `onFocusOut` statt `onBlur` auf div; testen mit `composed: true` |
-| Unerwartete Auto-Selects bei bestehenden Selects mit `_value=""` | Niedrig | Explizite Prüfung `!== null && !== undefined` statt falsy-Check |
+| Unerwartete Auto-Selects bei Selects mit `_value=""` | Kein Risiko | Options-Existenz-Prüfung (`some`) deckt `''` korrekt ab — nur auto-select wenn `''` nicht in Optionen |
 | TypeScript-Fehler durch inkompatible Props | Niedrig | Typen von `KolSingleSelect` direkt über `ComponentProps` ableiten |
 
 ## Offene Fragen
 
 1. **Unterstützt `KolSingleSelect._on` einen `onBlur`-Handler** in Version 4.1.2? → Nach `pnpm install` in Typdefinitionen prüfen.
-2. **Soll der leere String `''` als "nicht ausgewählt" behandelt werden?** Aktueller Plan: `''` gilt als gültige Auswahl (Nicht-Ziel). Falls doch gewünscht, müsste die Trigger-Bedingung auf `!_value` (falsy) erweitert werden — aber dann würden alle Filter-Selects im Default-Zustand ("Alle") beim Blur-out die erste Option neu setzen, was zu unerwünschten UI-Flackern führen könnte.
-3. **Verhalten bei `_disabled`-Selects:** Soll Auto-Select auch für deaktivierte Selects gelten? Empfehlung: Nein — bei disabled kein onBlur möglich.
+2. **Verhalten bei `_disabled`-Selects:** Soll Auto-Select auch für deaktivierte Selects gelten? Empfehlung: Nein — bei disabled kein `focusout` möglich.
