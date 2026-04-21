@@ -8,7 +8,6 @@
 		"en": "Spring Boot is a Java framework for rapidly building production-ready microservices. It is the de-facto standard for backend services in many GovTech stacks, including FIT-Connect, BundID, GovStack, India Stack (UPI) and MOSIP."
 	},
 	"homepage": "https://spring.io/projects/spring-boot",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Spring_Boot.svg",
 	"license": "Apache-2.0",
 	"tags": ["java", "framework", "microservices"],
 	"oss": true,
