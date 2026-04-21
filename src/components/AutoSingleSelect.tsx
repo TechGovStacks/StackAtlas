@@ -1,5 +1,6 @@
 import { KolSingleSelect } from '@public-ui/preact';
 import type { ComponentProps } from 'preact';
+import { useEffect, useRef } from 'preact/hooks';
 
 type KolSingleSelectProps = ComponentProps<typeof KolSingleSelect>;
 type Option = { label: string | number; value: unknown; disabled?: boolean };
@@ -20,24 +21,41 @@ function flattenOptions(options: unknown): Option[] {
 export function AutoSingleSelect(props: KolSingleSelectProps) {
 	const { _on, _value, _options, ...rest } = props;
 
-	const handleBlur = (event: Event) => {
-		_on?.onBlur?.(event);
-		const flat = flattenOptions(_options);
-		if (flat.some((o) => o.value === _value)) return;
-		const first = flat.find((o) => !o.disabled);
-		if (!first || !_on?.onChange) return;
-		_on.onChange(new Event('change'), first.value);
-	};
+	// Refs so the focusout handler always sees the latest props without re-registering
+	const valueRef = useRef(_value);
+	valueRef.current = _value;
+	const optionsRef = useRef(_options);
+	optionsRef.current = _options;
+	const onChangeRef = useRef(_on?.onChange);
+	onChangeRef.current = _on?.onChange;
+	const wrapperRef = useRef<HTMLDivElement>(null);
+
+	useEffect(() => {
+		const wrapper = wrapperRef.current;
+		if (!wrapper) return;
+
+		const handleFocusOut = () => {
+			// Wait one microtask so focus settles on its new target
+			setTimeout(() => {
+				if (!wrapper.isConnected) return;
+				// :focus-within crosses Shadow DOM — true while clear-button still has focus
+				if (wrapper.matches(':focus-within')) return;
+				const flat = flattenOptions(optionsRef.current);
+				if (flat.some((o) => o.value === valueRef.current)) return;
+				const first = flat.find((o) => !o.disabled);
+				if (!first || !onChangeRef.current) return;
+				onChangeRef.current(new Event('change'), first.value);
+			}, 0);
+		};
+
+		wrapper.addEventListener('focusout', handleFocusOut);
+		return () => wrapper.removeEventListener('focusout', handleFocusOut);
+	}, []);
 
 	return (
-		<KolSingleSelect
-			{...rest}
-			_value={_value}
-			_options={_options}
-			_on={{
-				..._on,
-				onBlur: handleBlur,
-			}}
-		/>
+		// display:contents removes the div from layout so the CSS Grid in FilterBar is unaffected
+		<div ref={wrapperRef} style={{ display: 'contents' }}>
+			<KolSingleSelect {...rest} _value={_value} _options={_options} _on={_on} />
+		</div>
 	);
 }
