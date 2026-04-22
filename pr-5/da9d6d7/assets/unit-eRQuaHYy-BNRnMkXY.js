@@ -1,1 +1,0 @@
-import{a as e,n as t,o as n}from"./normalizers-DnkJhVYZ-VdW8FsZe.js";var r=t(`max`,100,e,e=>e>0),i=t(`unit`,`%`,n,e=>e.length>0);export{i as n,r as t};
