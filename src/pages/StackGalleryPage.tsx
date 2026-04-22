@@ -188,9 +188,22 @@ export function StackGalleryPage() {
 					);
 				})}
 			</ol>
+			<section className="stack-gallery__create-section" aria-label={t('stackGallery.custom.createSectionTitle')}>
+				<h2 className="stack-gallery__custom-title">{t('stackGallery.custom.createSectionTitle')}</h2>
+				<p className="stack-gallery__subtitle">{t('stackGallery.custom.createSectionIntro')}</p>
+				<div className="flex items-end gap-2">
+					<KolInputText
+						_label={t('stackGallery.custom.name')}
+						_value={newStackName}
+						_on={{ onInput: (_event: Event, value: unknown) => setNewStackName(typeof value === 'string' ? value : '') }}
+					/>
+					<KolButton _label={t('stackGallery.custom.save')} _on={{ onClick: createStack }} />
+				</div>
+				{createMessage && <p className="mt-2">{createMessage}</p>}
+			</section>
+
 			{customRankedStacks.length > 0 && (
 				<section className="stack-gallery__custom-section" aria-label={t('stackGallery.custom.manageAria')}>
-					<h2 className="stack-gallery__custom-title">{t('stackGallery.custom.manageAria')}</h2>
 					<ol className="stack-gallery__list" aria-label={t('stackGallery.custom.manageAria')}>
 						{customRankedStacks.map(({ stack }, index) => {
 							const editable = isLocalStack(stack);
@@ -215,20 +228,6 @@ export function StackGalleryPage() {
 					</ol>
 				</section>
 			)}
-
-			<section className="stack-gallery__create-section" aria-label={t('stackGallery.custom.createSectionTitle')}>
-				<h2 className="stack-gallery__custom-title">{t('stackGallery.custom.createSectionTitle')}</h2>
-				<p className="stack-gallery__subtitle">{t('stackGallery.custom.createSectionIntro')}</p>
-				<div className="flex items-end gap-2">
-					<KolInputText
-						_label={t('stackGallery.custom.name')}
-						_value={newStackName}
-						_on={{ onInput: (_event: Event, value: unknown) => setNewStackName(typeof value === 'string' ? value : '') }}
-					/>
-					<KolButton _label={t('stackGallery.custom.save')} _on={{ onClick: createStack }} />
-				</div>
-				{createMessage && <p className="mt-2">{createMessage}</p>}
-			</section>
 
 			<KolDrawer
 				_label={t('stackGallery.custom.manageAria')}
