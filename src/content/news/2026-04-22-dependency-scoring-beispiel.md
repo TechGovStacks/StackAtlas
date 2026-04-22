@@ -1,118 +1,110 @@
 ---
 focus: scoringExplained
-title: Wie entsteht der Score einer Dependency? Ein nachvollziehbares Beispiel mit FastAPI
-summary: Anhand von FastAPI wird Schritt für Schritt gezeigt, wie Sovereignty, Sovereign Adoption und Adoption zum Overall Score kombiniert werden.
+title: Wie entsteht der Score einer Dependency? Rechenbeispiel mit PostgreSQL
+summary: Dieser Beitrag zeigt mit echten Katalogwerten von PostgreSQL, wie Sovereignty, Sovereign Adoption, Adoption und Popularity zum Overall Score führen.
 ---
 
-# Wie entsteht der Score einer Dependency? Ein nachvollziehbares Beispiel mit FastAPI
+# Wie entsteht der Score einer Dependency? Rechenbeispiel mit PostgreSQL
 
-> **Kurzfazit:** Der Overall Score ist eine gewichtete Summe aus drei Teilwerten. Bei FastAPI erklärt vor allem die breite Stack-Adoption den hohen Endwert.
+> **Kurzfazit:** Der Overall Score ist keine Blackbox. Mit den gespeicherten Teilwerten lässt sich die Rechnung exakt nachvollziehen.
 
-Viele fragen sich: **Wie genau kommt eine einzelne Dependency auf ihren finalen Score?**
+In den Kommentaren kam der Wunsch auf, das Scoring mit **realen** Werten aus dem Katalog zu erklären (statt mit hypothetischen Annahmen).
 
-Damit das transparent bleibt, rechnen wir ein konkretes Beispiel vollständig durch. Als Beispiel nehmen wir **FastAPI** (ein Building-Block-Framework), weil sich daran alle drei Score-Komponenten gut zeigen lassen.
-
----
-
-## 1) Die Formel für den Overall Score
-
-| Komponente               | Gewicht | Bedeutung                                                                  |
-| :----------------------- | ------: | :------------------------------------------------------------------------- |
-| Sovereignty Score        |    60 % | Wie souverän ist das Tool selbst?                                          |
-| Sovereign Adoption Score |    25 % | Wie weit ist es in souveränen Stacks verbreitet? (nur bei Sovereignty ≥61) |
-| Adoption Score           |    15 % | Allgemeine Stack-Verbreitung inkl. Popularity-Signale                      |
-
-**Formel:**
-
-`Overall = 0,60 × Sovereignty + 0,25 × Sovereign Adoption + 0,15 × Adoption`
+Deshalb rechnen wir hier Schritt für Schritt mit **PostgreSQL** durch — inklusive Popularity-Blending, wie es im Code umgesetzt ist.
 
 ---
 
-## 2) Beispiel-Dependency: FastAPI
+## 1) Die verbindliche Formel im Projekt
 
-### 2.1 Sovereignty Score (0–100)
+| Komponente               | Gewicht | Bedeutung                                     |
+| :----------------------- | ------: | :-------------------------------------------- |
+| Sovereignty Score        |    60 % | Intrinsische Souveränität des Items           |
+| Sovereign Adoption Score |    25 % | Adoption nur im souveränen Kontext            |
+| Adoption-Anteil          |    15 % | Adoption Score, ggf. mit Popularity geblendet |
 
-Für FastAPI sind die relevanten Kriterien erfüllt (vereinfachte Darstellung):
+Die Implementierung berechnet:
 
-| Kriterium             | Punkte |
-| :-------------------- | -----: |
-| selfHostable          |    +20 |
-| openSource            |    +15 |
-| dataPortability       |    +15 |
-| permissiveLicense     |    +10 |
-| openStandards         |    +10 |
-| matureProject         |     +5 |
-| noTelemetryByDefault  |     +5 |
-| ownerType (community) |     +8 |
-| euHeadquartered       |     +0 |
-| hasAudit              |     +0 |
-| **Summe**             | **88** |
+`Overall = 0,60 × Sovereignty + 0,25 × SovereignAdoption + 0,15 × AdoptionToUse`
 
-➡️ **Sovereignty Score = 88**
+Falls `popularityScore` vorhanden ist:
 
-Da der Wert über 61 liegt, wird FastAPI auch für den **Sovereign Adoption Score** berücksichtigt.
+`AdoptionToUse = 0,70 × adoptionScore + 0,30 × popularityScore`
 
 ---
 
-### 2.2 Sovereign Adoption Score (0–100)
+## 2) Konkrete Eingabewerte für PostgreSQL
 
-Angenommen FastAPI ist in vielen dokumentierten öffentlichen Stacks enthalten (z. B. DE, EU, UK, IN, BR ...), relativ nahe am meistgenutzten Item.
+Aus dem aktuellen Datensatz für `postgresql`:
 
-➡️ **Sovereign Adoption Score = 84**
+- `sovereigntyScore = 90`
+- `adoption.adoptionScore = 91`
+- `adoption.sovereignAdoptionScore = 91`
+- `adoption.popularityScore = 100`
+- `adoption.overallScore = 91` (gespeicherter Endwert)
 
----
+Zusätzlich zur Einordnung:
 
-### 2.3 Adoption Score inkl. Popularity (0–100)
-
-Zusätzlich wirken allgemeine Verbreitungssignale mit hinein (z. B. aktive Nutzung über mehrere Stacks, Open-Source-Reichweite).
-
-➡️ **Adoption Score = 86**
-
----
-
-## 3) Konkrete Rechnung
-
-Jetzt setzen wir alles in die Formel ein:
-
-- `0,60 × 88 = 52,8`
-- `0,25 × 84 = 21,0`
-- `0,15 × 86 = 12,9`
-
-**Overall = 52,8 + 21,0 + 12,9 = 86,7**
-
-➡️ **Finaler Score: rund 87 Punkte**
+- Nutzung in **15 Stacks** (`usedInStacks`)
+- `directCoverage = 5.4926`
+- `transitiveCoverage = 0.3493`
+- `diversity = 0.8711`
 
 ---
 
-## 4) Warum ist das anschaulich wichtig?
+## 3) Schritt-für-Schritt-Rechnung
 
-Man sieht direkt:
+### Schritt A: Adoption mit Popularity blenden
 
-1. **Sovereignty bleibt der stärkste Hebel** (60 % Gewicht).
-2. **Adoption entscheidet über die Differenz im Ranking**, wenn mehrere Tools technisch ähnlich souverän sind.
-3. Ein Tool mit guter Technik, aber kaum Stack-Präsenz, kann deutlich niedriger landen.
+`AdoptionToUse = 0,70 × 91 + 0,30 × 100`
+
+`AdoptionToUse = 63,7 + 30 = 93,7`
+
+### Schritt B: Gewichtet in die Overall-Formel einsetzen
+
+- `0,60 × 90 = 54,00`
+- `0,25 × 91 = 22,75`
+- `0,15 × 93,7 = 14,055`
+
+`Summe = 54,00 + 22,75 + 14,055 = 90,805`
+
+### Schritt C: Runden
+
+Im Code wird auf ganze Punkte gerundet:
+
+`Math.round(90,805) = 91`
+
+➡️ **Finaler Overall Score = 91**
+
+Dieser Wert entspricht exakt dem gespeicherten Katalogwert.
 
 ---
 
-## 5) Mini-Vergleich: Was würde den Score drücken?
+## 4) Warum dieses Beispiel hilfreich ist
 
-Wenn dieselbe Dependency nur in sehr wenigen Stacks vertreten wäre (z. B. Sovereign Adoption 20, Adoption 25), dann ergäbe sich trotz gleicher technischer Qualität:
+Damit ist transparent:
 
-- `0,60 × 88 = 52,8`
-- `0,25 × 20 = 5,0`
-- `0,15 × 25 = 3,75`
+1. **Sovereignty dominiert** weiterhin (60 % Gewicht).
+2. **Adoption bleibt relevant** über Sovereign Adoption (25 %) und Adoption-Anteil (15 %).
+3. **Popularity wirkt nur innerhalb des 15%-Anteils** und kann den Endwert fein justieren, aber nicht dominieren.
 
-**Overall = 61,55**
+---
 
-Das zeigt: Nicht nur die Architektur des Tools zählt, sondern auch die nachweisbare Nutzung in realen, souveränen Zielumgebungen.
+## 5) Mini-Gegenprobe (ohne Popularity)
+
+Würde man testweise _kein_ Popularity-Blending verwenden, wäre der dritte Term:
+
+- `0,15 × 91 = 13,65` statt `14,055`
+
+Dann ergäbe sich:
+
+`54,00 + 22,75 + 13,65 = 90,40 → gerundet 90`
+
+Man sieht: Popularity hebt PostgreSQL hier um **+1 Punkt** im Overall Score (von 90 auf 91).
 
 ---
 
 ## Fazit
 
-Mit einem einzelnen Beispiel wird das Scoring sofort nachvollziehbar: **Der Overall Score ist keine Blackbox**, sondern eine klare Gewichtung aus Souveränität und Adoption.
+Das Dependency-Scoring ist reproduzierbar und auditierbar: Mit den gespeicherten Teilwerten kann jede:r den Overall Score selbst nachrechnen.
 
-Wer den Score einer Dependency verbessern will, braucht daher zwei Dinge:
-
-- technisch souveräne Eigenschaften,
-- und dokumentierte Nutzung in möglichst vielen relevanten Stacks.
+Genau so sollte Scoring dokumentiert sein — **präzise, nachvollziehbar, datenbasiert**.
