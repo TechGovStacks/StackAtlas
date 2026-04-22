@@ -65,7 +65,15 @@ export function StackGalleryPage() {
 	);
 
 	const stacksWithScores = useMemo(() => allStacks.map((stack) => ({ stack, avgScore: computeStackAvgScore(stack, ITEMS) })), [allStacks]);
-	const rankedStacks = useMemo(() => [...stacksWithScores].sort((a, b) => b.avgScore - a.avgScore), [stacksWithScores]);
+	const rankedStacks = useMemo(() => {
+		const language = i18n.resolvedLanguage ?? i18n.language ?? 'de';
+		const customStacks = stacksWithScores
+			.filter(({ stack }) => isLocalStack(stack))
+			.sort((a, b) => getLocalizedText(a.stack.name, language).localeCompare(getLocalizedText(b.stack.name, language), language));
+		const builtInStacks = stacksWithScores.filter(({ stack }) => !isLocalStack(stack)).sort((a, b) => b.avgScore - a.avgScore);
+
+		return [...customStacks, ...builtInStacks];
+	}, [i18n.language, i18n.resolvedLanguage, stacksWithScores]);
 
 	useEffect(() => {
 		if (!selectedStackId) return;
