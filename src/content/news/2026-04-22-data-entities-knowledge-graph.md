@@ -1,12 +1,12 @@
 ---
 focus: dataEntities
 title: Das Datenmodell von StackAtlas – Entitäten und ihre Relationen
-summary: Das D-Stack Landscape basiert auf einem klar strukturierten Datenmodell mit fünf zentralen Entitäten – Layer, Item, ItemDependency, Stack und StackItem – die miteinander verknüpft sind und das Fundament für Scoring und Analyse bilden.
+summary: StackAtlas basiert auf einem klar strukturierten Datenmodell mit fünf zentralen Entitäten – Layer, Item, ItemDependency, Stack und StackItem – die miteinander verknüpft sind und das Fundament für Scoring und Analyse bilden.
 ---
 
 # Das Datenmodell von StackAtlas – Entitäten und ihre Relationen
 
-> **Kurzfazit:** Fünf Kern-Entitäten (Layer, Item, ItemDependency, Stack, StackItem) bilden das vollständige Wissensmodell, auf dem alle Bewertungen, Vergleiche und Visualisierungen aufbauen.
+> **Kurzfazit:** Drei Kern-Entitäten (Layer, Item, Stack) und ein Abhängigkeitsgraph bilden das vollständige Wissensmodell, auf dem alle Bewertungen, Vergleiche und Visualisierungen aufbauen.
 
 StackAtlas ist mehr als eine Liste von Technologien – es ist ein strukturiertes Wissensgraph-Modell, das Technologie-Einträge, Schichtenarchitektur, Länder-Stacks und Abhängigkeiten miteinander verknüpft. Dieser Beitrag erläutert die fünf zentralen Entitäten des Datenmodells und zeigt, wie sie zusammenwirken.
 
