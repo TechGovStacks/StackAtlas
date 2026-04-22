@@ -279,82 +279,93 @@ export function StackGalleryPage() {
 			>
 				{stackInDrawer && localStackInDrawer && (
 					<div className="p-4 flex flex-col gap-3" aria-label={t('stackGallery.custom.manageAria')}>
-						<div className="grid gap-2 md:grid-cols-[minmax(0,1fr)_auto] md:items-end">
-							<div className="w-full min-w-0">
-								<KolInputText
-									_label={t('stackGallery.custom.rename')}
-									_value={renameValues[stackInDrawer.id] ?? localStackInDrawer.name}
-									_on={{
-										onInput: (_event: Event, value: unknown) =>
-											setRenameValues((prev) => ({ ...prev, [stackInDrawer.id]: typeof value === 'string' ? value : '' })),
-									}}
-								/>
+						<section className="stack-gallery__drawer-section">
+							<h3 className="stack-gallery__drawer-section-title">{t('stackGallery.custom.renameSave')}</h3>
+							<div className="grid gap-2 md:grid-cols-[minmax(0,1fr)_auto] md:items-end">
+								<div className="w-full min-w-0">
+									<KolInputText
+										_label={t('stackGallery.custom.rename')}
+										_value={renameValues[stackInDrawer.id] ?? localStackInDrawer.name}
+										_on={{
+											onInput: (_event: Event, value: unknown) =>
+												setRenameValues((prev) => ({ ...prev, [stackInDrawer.id]: typeof value === 'string' ? value : '' })),
+										}}
+									/>
+								</div>
+								<div className="w-full md:w-auto md:shrink-0">
+									<KolButton _label={t('stackGallery.custom.renameSave')} _variant="secondary" _on={{ onClick: () => renameStack(stackInDrawer.id) }} />
+								</div>
 							</div>
+						</section>
+
+						<section className="stack-gallery__drawer-section">
+							<h3 className="stack-gallery__drawer-section-title">{t('stackGallery.custom.addDep')}</h3>
+							<div className="grid gap-2 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_auto] md:items-end">
+								<div className="w-full min-w-0">
+									<KolSingleSelect
+										_label={t('stackGallery.custom.item')}
+										_options={itemOptions}
+										_value={selectedItemByStack[stackInDrawer.id] ?? ''}
+										_on={{
+											onChange: (_event: Event, value: unknown) =>
+												setSelectedItemByStack((prev) => ({ ...prev, [stackInDrawer.id]: typeof value === 'string' ? value : '' })),
+										}}
+									/>
+								</div>
+								<div className="w-full min-w-0">
+									<KolSingleSelect
+										_label={t('stackGallery.custom.relation')}
+										_options={relationOptions}
+										_value={selectedRelationByStack[stackInDrawer.id] ?? 'consumer'}
+										_on={{
+											onChange: (_event: Event, value: unknown) =>
+												setSelectedRelationByStack((prev) => ({ ...prev, [stackInDrawer.id]: typeof value === 'string' ? value : 'consumer' })),
+										}}
+									/>
+								</div>
+								<div className="w-full md:w-auto md:shrink-0">
+									<KolButton
+										_label={t('stackGallery.custom.addDep')}
+										_variant="secondary"
+										_disabled={
+											!(selectedItemByStack[stackInDrawer.id] ?? '') ||
+											new Set(stackInDrawer.items.map((item) => item.itemId)).has(selectedItemByStack[stackInDrawer.id] ?? '')
+										}
+										_on={{
+											onClick: () =>
+												addItemToLocalStack(
+													stackInDrawer.id,
+													selectedItemByStack[stackInDrawer.id] ?? '',
+													(selectedRelationByStack[stackInDrawer.id] ?? 'consumer') as 'consumer' | 'contributor' | 'funder' | 'maintainer',
+												),
+										}}
+									/>
+								</div>
+							</div>
+							{selectedItems(stackInDrawer).length > 0 && (
+								<ul className="flex flex-col gap-1" aria-label={t('stackGallery.custom.selectedAria')}>
+									{selectedItems(stackInDrawer).map((item) => (
+										<li key={`${stackInDrawer.id}-${item.id}`} className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
+											<span className="min-w-0 break-words md:flex-1">{getLocalizedText(item.name, i18n.language)}</span>
+											<div className="w-full md:w-auto md:shrink-0">
+												<KolButton
+													_label={t('stackGallery.custom.removeDep')}
+													_variant="normal"
+													_on={{ onClick: () => removeItemFromLocalStack(stackInDrawer.id, item.id) }}
+												/>
+											</div>
+										</li>
+									))}
+								</ul>
+							)}
+						</section>
+
+						<section className="stack-gallery__drawer-section">
+							<h3 className="stack-gallery__drawer-section-title">{t('stackGallery.custom.delete')}</h3>
 							<div className="w-full md:w-auto md:shrink-0">
-								<KolButton _label={t('stackGallery.custom.renameSave')} _variant="secondary" _on={{ onClick: () => renameStack(stackInDrawer.id) }} />
+								<KolButton _label={t('stackGallery.custom.delete')} _variant="normal" _on={{ onClick: () => setStackIdPendingDelete(stackInDrawer.id) }} />
 							</div>
-						</div>
-						<div className="grid gap-2 md:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_auto] md:items-end">
-							<div className="w-full min-w-0">
-								<KolSingleSelect
-									_label={t('stackGallery.custom.item')}
-									_options={itemOptions}
-									_value={selectedItemByStack[stackInDrawer.id] ?? ''}
-									_on={{
-										onChange: (_event: Event, value: unknown) =>
-											setSelectedItemByStack((prev) => ({ ...prev, [stackInDrawer.id]: typeof value === 'string' ? value : '' })),
-									}}
-								/>
-							</div>
-							<div className="w-full min-w-0">
-								<KolSingleSelect
-									_label={t('stackGallery.custom.relation')}
-									_options={relationOptions}
-									_value={selectedRelationByStack[stackInDrawer.id] ?? 'consumer'}
-									_on={{
-										onChange: (_event: Event, value: unknown) =>
-											setSelectedRelationByStack((prev) => ({ ...prev, [stackInDrawer.id]: typeof value === 'string' ? value : 'consumer' })),
-									}}
-								/>
-							</div>
-							<div className="w-full md:w-auto md:shrink-0">
-								<KolButton
-									_label={t('stackGallery.custom.addDep')}
-									_variant="secondary"
-									_disabled={
-										!(selectedItemByStack[stackInDrawer.id] ?? '') ||
-										new Set(stackInDrawer.items.map((item) => item.itemId)).has(selectedItemByStack[stackInDrawer.id] ?? '')
-									}
-									_on={{
-										onClick: () =>
-											addItemToLocalStack(
-												stackInDrawer.id,
-												selectedItemByStack[stackInDrawer.id] ?? '',
-												(selectedRelationByStack[stackInDrawer.id] ?? 'consumer') as 'consumer' | 'contributor' | 'funder' | 'maintainer',
-											),
-									}}
-								/>
-							</div>
-						</div>
-						{selectedItems(stackInDrawer).length > 0 && (
-							<ul className="flex flex-col gap-1" aria-label={t('stackGallery.custom.selectedAria')}>
-								{selectedItems(stackInDrawer).map((item) => (
-									<li key={`${stackInDrawer.id}-${item.id}`} className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
-										<span className="min-w-0 break-words md:flex-1">{getLocalizedText(item.name, i18n.language)}</span>
-										<div className="w-full md:w-auto md:shrink-0">
-											<KolButton
-												_label={t('stackGallery.custom.removeDep')}
-												_variant="normal"
-												_on={{ onClick: () => removeItemFromLocalStack(stackInDrawer.id, item.id) }}
-											/>
-										</div>
-									</li>
-								))}
-							</ul>
-						)}
-						<div className="w-full md:w-auto md:shrink-0">
-							<KolButton _label={t('stackGallery.custom.delete')} _variant="normal" _on={{ onClick: () => setStackIdPendingDelete(stackInDrawer.id) }} />
-						</div>
+						</section>
 					</div>
 				)}
 			</KolDrawer>
