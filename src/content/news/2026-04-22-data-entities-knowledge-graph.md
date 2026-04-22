@@ -1,14 +1,14 @@
 ---
 focus: dataEntities
-title: Das Datenmodell des D-Stack Landscape – Entitäten und ihre Relationen
-summary: Das D-Stack Landscape basiert auf einem klar strukturierten Datenmodell mit drei zentralen Entitäten – Layer, Item und Stack – die miteinander verknüpft sind und das Fundament für Scoring und Analyse bilden.
+title: Das Datenmodell von StackAtlas – Entitäten und ihre Relationen
+summary: StackAtlas basiert auf einem klar strukturierten Datenmodell mit drei zentralen Entitäten – Layer, Item und Stack – die miteinander verknüpft sind und das Fundament für Scoring und Analyse bilden.
 ---
 
-# Das Datenmodell des D-Stack Landscape – Entitäten und ihre Relationen
+# Das Datenmodell von StackAtlas – Entitäten und ihre Relationen
 
 > **Kurzfazit:** Drei Kern-Entitäten (Layer, Item, Stack) und ein Abhängigkeitsgraph bilden das vollständige Wissensmodell, auf dem alle Bewertungen, Vergleiche und Visualisierungen aufbauen.
 
-Das D-Stack Landscape ist mehr als eine Liste von Technologien – es ist ein strukturiertes Wissensgraph-Modell, das Technologie-Einträge, Schichtenarchitektur, Länder-Stacks und Abhängigkeiten miteinander verknüpft. Dieser Beitrag erläutert die fünf zentralen Entitäten des Datenmodells und zeigt, wie sie zusammenwirken.
+StackAtlas ist mehr als eine Liste von Technologien – es ist ein strukturiertes Wissensgraph-Modell, das Technologie-Einträge, Schichtenarchitektur, Länder-Stacks und Abhängigkeiten miteinander verknüpft. Dieser Beitrag erläutert die fünf zentralen Entitäten des Datenmodells und zeigt, wie sie zusammenwirken.
 
 ---
 
@@ -150,7 +150,7 @@ Layer ──(1:n)──► Item ──(1:n)──► ItemDependency ──► It
 
 ## Fazit
 
-Das Datenmodell des D-Stack Landscape ist bewusst flach gehalten – JSON-Dateien statt Datenbank – aber durch JSON-Schema-Validierung typsicher und durch den in-memory Abhängigkeitsgraphen hochflexibel auswertbar. Die klare Trennung von Layer, Item, Dependency und Stack ermöglicht sowohl detaillierte Einzelansichten als auch aggregierte Landes- und Schichtenvergleiche.
+Das Datenmodell von StackAtlas ist bewusst flach gehalten – JSON-Dateien statt Datenbank – aber durch JSON-Schema-Validierung typsicher und durch den in-memory Abhängigkeitsgraphen hochflexibel auswertbar. Die klare Trennung von Layer, Item, Dependency und Stack ermöglicht sowohl detaillierte Einzelansichten als auch aggregierte Landes- und Schichtenvergleiche.
 
 > "Wer die Entitäten versteht, versteht das Scoring – und wer das Scoring versteht, kann informierte Entscheidungen für souveräne digitale Infrastruktur treffen."
 
@@ -159,7 +159,7 @@ Das Datenmodell des D-Stack Landscape ist bewusst flach gehalten – JSON-Dateie
 ## Glossar
 
 - **Layer**: Technologie-Architekturschicht (Infrastructure bis Sovereign Standards)
-- **Item**: Einzelne Technologie, Framework oder Standard im Landscape
+- **Item**: Einzelne Technologie, Framework oder Standard in StackAtlas
 - **ItemDependency**: Gerichtete Abhängigkeit zwischen zwei Items (z. B. runtime, protocol)
 - **Stack**: Nationales oder organisationales Technologie-Portfolio
 - **StackItem**: Verbindungsentität zwischen Stack und Item mit Rolle und Status
