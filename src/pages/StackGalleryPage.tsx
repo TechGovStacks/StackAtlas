@@ -1,4 +1,4 @@
-import { KolButton, KolDialog, KolDrawer, KolInputText } from '@public-ui/preact';
+import { KolAlert, KolButton, KolDialog, KolDrawer, KolInputText } from '@public-ui/preact';
 import type { ComponentChildren } from 'preact';
 import { useLocation } from 'preact-iso';
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
@@ -86,14 +86,52 @@ export function StackGalleryPage() {
 	);
 
 	const stacksWithScores = useMemo(() => allStacks.map((stack) => ({ stack, avgScore: computeStackAvgScore(stack, ITEMS) })), [allStacks]);
-	const { builtInRankedStacks, customRankedStacks } = useMemo(() => {
+	const { builtInEntries, customRankedStacks, globalRankByStackId } = useMemo(() => {
 		const language = i18n.resolvedLanguage ?? i18n.language ?? 'de';
+		const sortedByOverallRank = [...stacksWithScores].sort((a, b) => b.avgScore - a.avgScore);
+		const globalRankMap = new Map(sortedByOverallRank.map(({ stack }, index) => [stack.id, index + 1]));
 		const customStacks = stacksWithScores
 			.filter(({ stack }) => isLocalStack(stack))
 			.sort((a, b) => getLocalizedText(a.stack.name, language).localeCompare(getLocalizedText(b.stack.name, language), language));
-		const builtInStacks = stacksWithScores.filter(({ stack }) => !isLocalStack(stack)).sort((a, b) => b.avgScore - a.avgScore);
+		const entries: Array<{ kind: 'stack'; rank: number; stack: Stack } | { kind: 'custom-note'; names: string[]; rankStart: number; rankEnd: number }> = [];
+		let pendingCustomNames: string[] = [];
+		let pendingRankStart: number | null = null;
+		let pendingRankEnd: number | null = null;
 
-		return { builtInRankedStacks: builtInStacks, customRankedStacks: customStacks };
+		for (const { stack } of sortedByOverallRank) {
+			const rank = globalRankMap.get(stack.id) ?? 0;
+			if (isLocalStack(stack)) {
+				pendingCustomNames.push(getLocalizedText(stack.name, language));
+				pendingRankStart ??= rank;
+				pendingRankEnd = rank;
+				continue;
+			}
+
+			if (pendingCustomNames.length > 0 && pendingRankStart && pendingRankEnd) {
+				entries.push({
+					kind: 'custom-note',
+					names: pendingCustomNames,
+					rankStart: pendingRankStart,
+					rankEnd: pendingRankEnd,
+				});
+				pendingCustomNames = [];
+				pendingRankStart = null;
+				pendingRankEnd = null;
+			}
+
+			entries.push({ kind: 'stack', rank, stack });
+		}
+
+		if (pendingCustomNames.length > 0 && pendingRankStart && pendingRankEnd) {
+			entries.push({
+				kind: 'custom-note',
+				names: pendingCustomNames,
+				rankStart: pendingRankStart,
+				rankEnd: pendingRankEnd,
+			});
+		}
+
+		return { builtInEntries: entries, customRankedStacks: customStacks, globalRankByStackId: globalRankMap };
 	}, [i18n.language, i18n.resolvedLanguage, stacksWithScores]);
 
 	useEffect(() => {
@@ -168,22 +206,21 @@ export function StackGalleryPage() {
 			</div>
 
 			<ol className="stack-gallery__list" aria-label={t('stackGallery.listAria')}>
-				{builtInRankedStacks.map(({ stack }, index) => {
-					const editable = isLocalStack(stack);
+				{builtInEntries.map((entry) => {
+					if (entry.kind === 'custom-note') {
+						const rankLabel = entry.rankStart === entry.rankEnd ? `#${entry.rankStart}` : `#${entry.rankStart}–#${entry.rankEnd}`;
+						return (
+							<li key={`custom-note-${entry.rankStart}-${entry.rankEnd}`} className="stack-gallery__item">
+								<KolAlert _label={rankLabel} _level={1} _variant="card" _type="info">
+									<p>{`Hier wäre ${entry.names.length > 1 ? 'die Custom Stacks' : 'der Custom Stack'} ${entry.names.join(', ')}.`}</p>
+								</KolAlert>
+							</li>
+						);
+					}
 
 					return (
-						<li key={stack.id} className="stack-gallery__item" id={`stack-${stack.id}`}>
-							<StackExposeWithMetrics stack={stack} isTop={index === 0} rank={index + 1}>
-								{editable && (
-									<KolButton
-										_label={t('stackGallery.custom.manageAria')}
-										_hideLabel
-										_icons={{ left: 'kolicon kolicon-cogwheel' }}
-										_variant="ghost"
-										_on={{ onClick: () => setStackIdInDrawer(stack.id) }}
-									/>
-								)}
-							</StackExposeWithMetrics>
+						<li key={entry.stack.id} className="stack-gallery__item" id={`stack-${entry.stack.id}`}>
+							<StackExposeWithMetrics stack={entry.stack} isTop={entry.rank === 1} rank={entry.rank} />
 						</li>
 					);
 				})}
@@ -205,9 +242,9 @@ export function StackGalleryPage() {
 			{customRankedStacks.length > 0 && (
 				<section className="stack-gallery__custom-section" aria-label={t('stackGallery.custom.manageAria')}>
 					<ol className="stack-gallery__list" aria-label={t('stackGallery.custom.manageAria')}>
-						{customRankedStacks.map(({ stack }, index) => {
+						{customRankedStacks.map(({ stack }) => {
 							const editable = isLocalStack(stack);
-							const rank = builtInRankedStacks.length + index + 1;
+							const rank = globalRankByStackId.get(stack.id) ?? 0;
 
 							return (
 								<li key={stack.id} className="stack-gallery__item" id={`stack-${stack.id}`}>
