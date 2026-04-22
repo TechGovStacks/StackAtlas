@@ -91,7 +91,7 @@
 		"list": "Lista",
 		"sort": {
 			"label": "Ordenar por",
-			"name": "Nombre",
+			"name": "Nombre del stack",
 			"score": "Puntaje",
 			"asc": "↑ Ascendente",
 			"desc": "↓ Descendente"
@@ -194,7 +194,7 @@
 		}
 	},
 	"stackGallery": {
-		"title": "Galería de pilas",
+		"title": "Stacks",
 		"subtitle": "Todas las pilas de tecnología clasificadas clasificadas según su puntuación de soberanía digital, de mejor a menor.",
 		"listAria": "Pilas de tecnología clasificadas por puntuación de soberanía",
 		"bestStack": "Pila mejor clasificada: ubicación en oro",
@@ -219,6 +219,27 @@
 			"unknown": "Desconocido",
 			"layerBreakdown": "Desglose de capas",
 			"roles": "Roles"
+		},
+		"custom": {
+			"addDep": "Añadir dep",
+			"delete": "Eliminar stack",
+			"deleteConfirmAccept": "Sí, eliminar",
+			"deleteConfirmCancel": "Cancelar",
+			"deleteConfirmMessage": "¿Realmente deseas eliminar el stack '{{name}}'?",
+			"deleteConfirmTitle": "Confirmar eliminación",
+			"item": "Seleccionar dep",
+			"relation": "Relación",
+			"manageAria": "Gestionar stacks personalizados",
+			"name": "Nombre del stack",
+			"nameTaken": "El nombre ya existe o no es válido.",
+			"removeDep": "Quitar dep",
+			"rename": "Renombrar stack",
+			"renameSave": "Guardar nombre",
+			"save": "Crear stack",
+			"saved": "Stack guardado.",
+			"selectedAria": "Deps seleccionadas",
+			"createSectionTitle": "Create custom stack",
+			"createSectionIntro": "Create a new custom stack here. It will be saved locally in your browser."
 		}
 	},
 	"pages": {
@@ -290,7 +311,7 @@
 					"sunset": "Sunset"
 				},
 				"stack": "Stack",
-				"item": "Item",
+				"item": "Seleccionar dep",
 				"saveSelection": "Save assessment for selected stack/item",
 				"saveHint": "Please select stack and item before saving.",
 				"saveSuccess": "Assessment saved locally for stack/item.",

@@ -10,13 +10,8 @@ import { i18nReady } from './i18n';
 import { normalizeLanguage } from './i18n/language';
 import { LanguageCode } from './types';
 
-/**
- * Splash minimum display time (ms).
- * Derived from CSS timing: layer-3 (0s) + layer-4 (1.2s) + sovereign (2.4s) + sov-duration (1.5s) + 1s hold
- * + title-delay (6.5s) + title-fade (0.8s) + hold (~1.2s) = ~8.5s
- */
-const SPLASH_MIN_MS = 8500;
-const splashStart = performance.now();
+const SPLASH_FALLBACK_MS = 9000;
+const SPLASH_REDUCED_MOTION_MS = 1200;
 let splashDismissed = false;
 
 type KolibriLanguage = NonNullable<NonNullable<Parameters<typeof register>[2]>['translation']>['name'];
@@ -81,26 +76,46 @@ function dismissSplash(): void {
 	setTimeout(cleanup, 600);
 }
 
-let renderApp: (() => void) | null = null;
+function waitForSplashCompletion(): Promise<void> {
+	return new Promise<void>((resolve) => {
+		const splash = document.getElementById('splash');
+		if (!splash) {
+			resolve();
+			return;
+		}
 
-// Register click and keyboard handlers FIRST
-document.addEventListener('click', (e) => {
-	const splash = document.getElementById('splash');
-	if (splash?.contains(e.target as HTMLElement)) {
-		dismissSplash();
-		renderApp?.();
-	}
-});
+		const title = splash.querySelector('.splash__title');
+		const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+		let done = false;
 
-document.addEventListener('keydown', (e: globalThis.KeyboardEvent) => {
-	if (e.key === 'Escape') {
-		dismissSplash();
-		renderApp?.();
-	}
-});
+		const finish = () => {
+			if (done) {
+				return;
+			}
+			done = true;
+			splash.removeEventListener('click', finish);
+			document.removeEventListener('keydown', onKeydown);
+			title?.removeEventListener('animationend', finish);
+			window.clearTimeout(fallbackTimer);
+			resolve();
+		};
 
-// Safety timeout to dismiss splash after max 10 seconds regardless
-setTimeout(dismissSplash, 10000);
+		const onKeydown = (event: globalThis.KeyboardEvent) => {
+			if (event.key === 'Escape') {
+				finish();
+			}
+		};
+
+		splash.addEventListener('click', finish);
+		document.addEventListener('keydown', onKeydown);
+
+		if (!prefersReducedMotion) {
+			title?.addEventListener('animationend', finish);
+		}
+
+		const fallbackTimer = window.setTimeout(finish, prefersReducedMotion ? SPLASH_REDUCED_MOTION_MS : SPLASH_FALLBACK_MS);
+	});
+}
 
 i18next.on('languageChanged', (language: string) => {
 	void syncKoliBriLanguage(language).catch((error: unknown) => {
@@ -113,25 +128,17 @@ Promise.all([
 		i18nReady.then(() => syncKoliBriLanguage(i18next.resolvedLanguage ?? i18next.language ?? globalThis.navigator.language)),
 		new Promise<void>((_, reject) => setTimeout(() => reject(new Error('KoliBri registration timeout')), 3000)),
 	]),
-	new Promise<void>((resolve) => {
-		renderApp = resolve;
-		setTimeout(resolve, SPLASH_MIN_MS);
-	}),
+	waitForSplashCompletion(),
 ])
 	.then(() => {
-		renderApp = null;
 		const htmlElement: HTMLElement | null = document.querySelector<HTMLDivElement>('div#app');
 		if (htmlElement instanceof HTMLElement) {
 			render(<App />, htmlElement);
 		}
-
-		const elapsed = performance.now() - splashStart;
-		const remaining = Math.max(0, SPLASH_MIN_MS - elapsed);
-		setTimeout(dismissSplash, remaining);
+		dismissSplash();
 	})
 	.catch((error) => {
 		console.error('Error during app initialization:', error);
-		// Force splash to disappear even if there's an error
 		dismissSplash();
 		const htmlElement: HTMLElement | null = document.querySelector<HTMLDivElement>('div#app');
 		if (htmlElement instanceof HTMLElement) {

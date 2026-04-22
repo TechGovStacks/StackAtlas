@@ -91,7 +91,7 @@
 		"list": "Lista",
 		"sort": {
 			"label": "Ordina per",
-			"name": "Nome",
+			"name": "Nome stack",
 			"score": "Punto",
 			"asc": "↑ Crescente",
 			"desc": "↓ Discendente"
@@ -194,7 +194,7 @@
 		}
 	},
 	"stackGallery": {
-		"title": "Galleria dello stack",
+		"title": "Stacks",
 		"subtitle": "Tutti gli stack tecnologici classificati in base al punteggio di sovranità digitale: dal migliore al più basso.",
 		"listAria": "Stack tecnologici classificati in base al punteggio di sovranità",
 		"bestStack": "Stack in cima alla classifica: posizionamento oro",
@@ -219,6 +219,27 @@
 			"unknown": "Sconosciuto",
 			"layerBreakdown": "Rottura degli strati",
 			"roles": "Ruoli"
+		},
+		"custom": {
+			"addDep": "Aggiungi dep",
+			"delete": "Elimina stack",
+			"deleteConfirmAccept": "Sì, elimina",
+			"deleteConfirmCancel": "Annulla",
+			"deleteConfirmMessage": "Vuoi davvero eliminare lo stack '{{name}}'?",
+			"deleteConfirmTitle": "Conferma eliminazione",
+			"item": "Seleziona dep",
+			"relation": "Relazione",
+			"manageAria": "Gestisci stack personalizzati",
+			"name": "Nome stack",
+			"nameTaken": "Il nome esiste già o non è valido.",
+			"removeDep": "Rimuovi dep",
+			"rename": "Rinomina stack",
+			"renameSave": "Salva nome",
+			"save": "Crea stack",
+			"saved": "Stack salvato.",
+			"selectedAria": "Deps selezionate",
+			"createSectionTitle": "Create custom stack",
+			"createSectionIntro": "Create a new custom stack here. It will be saved locally in your browser."
 		}
 	},
 	"pages": {
@@ -290,7 +311,7 @@
 					"sunset": "Sunset"
 				},
 				"stack": "Stack",
-				"item": "Item",
+				"item": "Seleziona dep",
 				"saveSelection": "Save assessment for selected stack/item",
 				"saveHint": "Please select stack and item before saving.",
 				"saveSuccess": "Assessment saved locally for stack/item.",

@@ -110,7 +110,7 @@
 		"list": "Liste",
 		"sort": {
 			"label": "Trier par",
-			"name": "Nom",
+			"name": "Nom du stack",
 			"score": "Score",
 			"asc": "↑ Croissant",
 			"desc": "↓ Décroissant"
@@ -199,7 +199,7 @@
 		}
 	},
 	"stackGallery": {
-		"title": "Galerie de stacks",
+		"title": "Stacks",
 		"subtitle": "Tous les stacks technologiques évalués classés par score de souveraineté numérique – du meilleur au moins bon.",
 		"listAria": "Classement des stacks technologiques par score de souveraineté",
 		"bestStack": "Meilleur stack – classement or",
@@ -224,6 +224,27 @@
 			"unknown": "Inconnu",
 			"layerBreakdown": "Répartition par couche",
 			"roles": "Rôles"
+		},
+		"custom": {
+			"addDep": "Ajouter une dépendance",
+			"delete": "Supprimer le stack",
+			"deleteConfirmAccept": "Oui, supprimer",
+			"deleteConfirmCancel": "Annuler",
+			"deleteConfirmMessage": "Voulez-vous vraiment supprimer le stack '{{name}}' ?",
+			"deleteConfirmTitle": "Confirmer la suppression",
+			"item": "Sélectionner une dépendance",
+			"relation": "Relation",
+			"manageAria": "Gérer les stacks personnalisés",
+			"name": "Nom du stack",
+			"nameTaken": "Le nom existe déjà ou est invalide.",
+			"removeDep": "Retirer la dépendance",
+			"rename": "Renommer le stack",
+			"renameSave": "Enregistrer le nom",
+			"save": "Créer le stack",
+			"saved": "Stack enregistré.",
+			"selectedAria": "Dépendances sélectionnées",
+			"createSectionTitle": "Create custom stack",
+			"createSectionIntro": "Create a new custom stack here. It will be saved locally in your browser."
 		}
 	},
 	"pages": {
@@ -295,7 +316,7 @@
 					"sunset": "Sunset"
 				},
 				"stack": "Stack",
-				"item": "Item",
+				"item": "Sélectionner une dépendance",
 				"saveSelection": "Save assessment for selected stack/item",
 				"saveHint": "Please select stack and item before saving.",
 				"saveSuccess": "Assessment saved locally for stack/item.",

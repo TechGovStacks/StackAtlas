@@ -1,3 +1,4 @@
+import { ComponentChildren } from 'preact';
 import { useMemo } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { StackMetrics } from '../hooks/useStackMetrics';
@@ -6,6 +7,7 @@ import { getLocalizedText } from '../utils';
 import { SovereigntyGauge } from './SovereigntyGauge';
 
 interface StackExposeProps {
+	children?: ComponentChildren;
 	stack: Stack;
 	metrics: StackMetrics;
 	allLayers: Layer[];
@@ -50,7 +52,7 @@ function countryToFlagEmoji(code?: string): string {
 	return [...code.toUpperCase()].map((c) => String.fromCodePoint(0x1f1e6 + c.charCodeAt(0) - 65)).join('');
 }
 
-export function StackExpose({ stack, metrics, allLayers, isTop, rank }: StackExposeProps) {
+export function StackExpose({ stack, metrics, allLayers, isTop, rank, children }: StackExposeProps) {
 	const { t, i18n } = useTranslation();
 	const flag = countryToFlagEmoji(stack.country);
 	const localizedName = getLocalizedText(stack.name, i18n.language);
@@ -94,6 +96,8 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank }: StackExp
 							)}
 						</h2>
 					</div>
+
+					{children && <div className="stack-expose__header-action">{children}</div>}
 				</div>
 
 				<div className="stack-expose__meta-row">

@@ -91,7 +91,7 @@
 		"list": "Liste",
 		"sort": {
 			"label": "Sorter etter",
-			"name": "Navn",
+			"name": "Stack-navn",
 			"score": "Score",
 			"asc": "↑ Stigende",
 			"desc": "↓ Synkende"
@@ -194,7 +194,7 @@
 		}
 	},
 	"stackGallery": {
-		"title": "Stack Gallery",
+		"title": "Stacks",
 		"subtitle": "Alle vurderte teknologistabler rangert etter digital suverenitetspoeng – best til lavest.",
 		"listAria": "Tekniske stabler rangert etter suverenitetspoeng",
 		"bestStack": "Topprangert stabel – gullplassering",
@@ -219,6 +219,27 @@
 			"unknown": "Ukjent",
 			"layerBreakdown": "Lagnedbrytning",
 			"roles": "Roller"
+		},
+		"custom": {
+			"addDep": "Legg til dep",
+			"delete": "Slett stack",
+			"deleteConfirmAccept": "Ja, slett",
+			"deleteConfirmCancel": "Avbryt",
+			"deleteConfirmMessage": "Vil du virkelig slette stacken '{{name}}'?",
+			"deleteConfirmTitle": "Bekreft sletting",
+			"item": "Velg dep",
+			"relation": "Relasjon",
+			"manageAria": "Administrer egne stacks",
+			"name": "Stack-navn",
+			"nameTaken": "Navnet finnes allerede eller er ugyldig.",
+			"removeDep": "Fjern dep",
+			"rename": "Gi nytt navn til stack",
+			"renameSave": "Lagre navn",
+			"save": "Opprett stack",
+			"saved": "Stack lagret.",
+			"selectedAria": "Valgte deps",
+			"createSectionTitle": "Create custom stack",
+			"createSectionIntro": "Create a new custom stack here. It will be saved locally in your browser."
 		}
 	},
 	"pages": {
@@ -290,7 +311,7 @@
 					"sunset": "Sunset"
 				},
 				"stack": "Stack",
-				"item": "Item",
+				"item": "Velg dep",
 				"saveSelection": "Save assessment for selected stack/item",
 				"saveHint": "Please select stack and item before saving.",
 				"saveSuccess": "Assessment saved locally for stack/item.",

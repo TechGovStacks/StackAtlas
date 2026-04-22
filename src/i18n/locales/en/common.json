@@ -110,7 +110,7 @@
 		"list": "List",
 		"sort": {
 			"label": "Sort by",
-			"name": "Name",
+			"name": "Stack name",
 			"overall": "Overall Score",
 			"sovereignty": "Sovereignty",
 			"adoption": "Adoption",
@@ -216,7 +216,7 @@
 		}
 	},
 	"stackGallery": {
-		"title": "Stack Gallery",
+		"title": "Stacks",
 		"subtitle": "All rated tech stacks ranked by digital sovereignty score – best to lowest.",
 		"listAria": "Tech stacks ranked by sovereignty score",
 		"bestStack": "Top-ranked stack – gold placement",
@@ -241,6 +241,27 @@
 			"unknown": "Unknown",
 			"layerBreakdown": "Layer breakdown",
 			"roles": "Roles"
+		},
+		"custom": {
+			"addDep": "Add dep",
+			"delete": "Delete stack",
+			"deleteConfirmAccept": "Yes, delete",
+			"deleteConfirmCancel": "Cancel",
+			"deleteConfirmMessage": "Do you really want to delete the stack '{{name}}'?",
+			"deleteConfirmTitle": "Confirm deletion",
+			"item": "Select dep",
+			"relation": "Relation",
+			"manageAria": "Manage custom stacks",
+			"name": "Stack name",
+			"nameTaken": "Name already exists or is invalid.",
+			"removeDep": "Remove dep",
+			"rename": "Rename stack",
+			"renameSave": "Save name",
+			"save": "Create stack",
+			"saved": "Stack saved.",
+			"selectedAria": "Selected deps",
+			"createSectionTitle": "Create custom stack",
+			"createSectionIntro": "Create a new custom stack here. It will be saved locally in your browser."
 		}
 	},
 	"pages": {
@@ -312,7 +333,7 @@
 					"sunset": "Sunset"
 				},
 				"stack": "Stack",
-				"item": "Item",
+				"item": "Select dep",
 				"saveSelection": "Save assessment for selected stack/item",
 				"saveHint": "Please select stack and item before saving.",
 				"saveSuccess": "Assessment saved locally for stack/item.",

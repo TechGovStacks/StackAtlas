@@ -110,7 +110,7 @@
 		"list": "Liste",
 		"sort": {
 			"label": "Sortieren nach",
-			"name": "Name",
+			"name": "Stack-Name",
 			"overall": "Gesamtscore",
 			"sovereignty": "Souveränität",
 			"adoption": "Verbreitung",
@@ -216,7 +216,7 @@
 		}
 	},
 	"stackGallery": {
-		"title": "Stack-Galerie",
+		"title": "Stacks",
 		"subtitle": "Alle bewerteten Tech-Stacks absteigend nach digitalem Souveränitäts-Score – vom besten zum schlechtesten.",
 		"listAria": "Rangliste der Tech-Stacks nach Souveränitäts-Score",
 		"bestStack": "Bester Stack – Gold-Platzierung",
@@ -241,6 +241,27 @@
 			"unknown": "Unbekannt",
 			"layerBreakdown": "Layer-Verteilung",
 			"roles": "Rollen"
+		},
+		"custom": {
+			"addDep": "Dep hinzufügen",
+			"delete": "Stack löschen",
+			"deleteConfirmAccept": "Ja, löschen",
+			"deleteConfirmCancel": "Abbrechen",
+			"deleteConfirmMessage": "Möchtest du den Stack '{{name}}' wirklich löschen?",
+			"deleteConfirmTitle": "Löschen bestätigen",
+			"item": "Dep auswählen",
+			"relation": "Relation",
+			"manageAria": "Eigene Stacks verwalten",
+			"name": "Stack-Name",
+			"nameTaken": "Name bereits vergeben oder ungültig.",
+			"removeDep": "Dep entfernen",
+			"rename": "Name",
+			"renameSave": "Umbenennen",
+			"save": "Stack anlegen",
+			"saved": "Stack gespeichert.",
+			"selectedAria": "Ausgewählte Deps",
+			"createSectionTitle": "Custom Stack anlegen",
+			"createSectionIntro": "Lege hier einen neuen Custom Stack an. Er wird lokal in deinem Browser gespeichert."
 		}
 	},
 	"pages": {
@@ -312,7 +333,7 @@
 					"sunset": "Sunset"
 				},
 				"stack": "Stack",
-				"item": "Item",
+				"item": "Dep auswählen",
 				"saveSelection": "Assessment für ausgewählten Stack/Item speichern",
 				"saveHint": "Bitte Stack und Item auswählen, um zu speichern.",
 				"saveSuccess": "Assessment für Stack/Item lokal gespeichert.",

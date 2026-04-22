@@ -5,6 +5,7 @@ import { CategoryGrid } from '../components/CategoryGrid';
 import { FilterBar, SortDir, SortField, ViewMode } from '../components/FilterBar';
 import { ITEMS, LAYERS, STACKS } from '../data/catalog';
 import { useFilters } from '../hooks/useFilters';
+import { useLocalStacks } from '../hooks/useLocalStacks';
 import { useRouteAnnouncement } from '../hooks/useRouteAnnouncement';
 import { StackItem } from '../types';
 
@@ -14,21 +15,24 @@ export function HomePage() {
 	const location = useLocation();
 	useRouteAnnouncement({ pageTitle: t('stack.label') || 'Stacks' });
 
+	const { allStacks: localStacks } = useLocalStacks(ITEMS);
+	const allStacks = useMemo(() => [...STACKS, ...localStacks], [localStacks]);
+
 	// Bei jeder Änderung der URL-Query: ?stack=<id> lesen und Stack vorauswählen.
 	useEffect(() => {
 		const stackParam = location.query.stack;
-		if (stackParam && STACKS.some((stack) => stack.id === stackParam)) {
+		if (stackParam && allStacks.some((stack) => stack.id === stackParam)) {
 			setActiveStackId(stackParam);
 			return;
 		}
 		setActiveStackId(null);
-	}, [location.query.stack]);
+	}, [allStacks, location.query.stack]);
 
 	const [sortField, setSortField] = useState<SortField>('overall');
 	const [sortDir, setSortDir] = useState<SortDir>('desc');
 	const [viewMode, setViewMode] = useState<ViewMode>('tile');
 
-	const activeStack = useMemo(() => STACKS.find((s) => s.id === activeStackId) ?? null, [activeStackId]);
+	const activeStack = useMemo(() => allStacks.find((s) => s.id === activeStackId) ?? null, [activeStackId, allStacks]);
 
 	const stackItemMap = useMemo<Map<string, StackItem>>(() => {
 		if (!activeStack) return new Map();
@@ -57,7 +61,7 @@ export function HomePage() {
 				filters={filters}
 				onFilterChange={setFilters}
 				layers={LAYERS}
-				stacks={STACKS}
+				stacks={allStacks}
 				activeStackId={activeStackId}
 				onStackChange={setActiveStackId}
 				items={baseItems}

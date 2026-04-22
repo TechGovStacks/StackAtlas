@@ -91,7 +91,7 @@
 		"list": "Lista",
 		"sort": {
 			"label": "Sortera efter",
-			"name": "Namn",
+			"name": "Stacknamn",
 			"score": "Göra",
 			"asc": "↑ Stigande",
 			"desc": "↓ Fallande"
@@ -194,7 +194,7 @@
 		}
 	},
 	"stackGallery": {
-		"title": "Stack Gallery",
+		"title": "Stacks",
 		"subtitle": "Alla rankade teknikstackar rankas efter digital suveränitetspoäng – bäst till lägst.",
 		"listAria": "Teknikstackar rankade efter suveränitetspoäng",
 		"bestStack": "Högst rankad stack – guldplacering",
@@ -219,6 +219,27 @@
 			"unknown": "Okänd",
 			"layerBreakdown": "Lageruppdelning",
 			"roles": "Roller"
+		},
+		"custom": {
+			"addDep": "Lägg till dep",
+			"delete": "Ta bort stack",
+			"deleteConfirmAccept": "Ja, ta bort",
+			"deleteConfirmCancel": "Avbryt",
+			"deleteConfirmMessage": "Vill du verkligen ta bort stacken '{{name}}'?",
+			"deleteConfirmTitle": "Bekräfta borttagning",
+			"item": "Välj dep",
+			"relation": "Relation",
+			"manageAria": "Hantera egna stacks",
+			"name": "Stacknamn",
+			"nameTaken": "Namnet finns redan eller är ogiltigt.",
+			"removeDep": "Ta bort dep",
+			"rename": "Byt namn på stack",
+			"renameSave": "Spara namn",
+			"save": "Skapa stack",
+			"saved": "Stack sparad.",
+			"selectedAria": "Valda deps",
+			"createSectionTitle": "Create custom stack",
+			"createSectionIntro": "Create a new custom stack here. It will be saved locally in your browser."
 		}
 	},
 	"pages": {
@@ -290,7 +311,7 @@
 					"sunset": "Sunset"
 				},
 				"stack": "Stack",
-				"item": "Item",
+				"item": "Välj dep",
 				"saveSelection": "Save assessment for selected stack/item",
 				"saveHint": "Please select stack and item before saving.",
 				"saveSuccess": "Assessment saved locally for stack/item.",

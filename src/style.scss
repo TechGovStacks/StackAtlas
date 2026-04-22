@@ -1932,6 +1932,32 @@ kol-select {
 	gap: var(--ds-space-6);
 }
 
+.stack-gallery__custom-section {
+	margin-top: var(--ds-space-8);
+	border-top: 1px solid var(--ds-color-border);
+	padding-top: var(--ds-space-6);
+}
+
+.stack-gallery__create-section {
+	margin-top: var(--ds-space-8);
+	border-top: 1px solid var(--ds-color-border);
+	padding-top: var(--ds-space-6);
+}
+
+.stack-gallery__custom-title {
+	margin: 0 0 var(--ds-space-4);
+	font-size: var(--ds-text-lg);
+	color: var(--ds-color-text-muted);
+}
+
+.stack-gallery__custom-note {
+	margin: 0;
+	padding: var(--ds-space-2) 0;
+	text-align: center;
+	color: var(--ds-color-text-muted);
+	font-size: var(--ds-text-sm);
+}
+
 /* ─────────────────────────────────────────────────────────────────────────────
    Stack Exposé – einzelne Karte
    ───────────────────────────────────────────────────────────────────────────── */
@@ -2001,6 +2027,12 @@ kol-select {
 .stack-expose__title-group {
 	flex: 1;
 	min-width: 0;
+}
+
+.stack-expose__header-action {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
 }
 
 .stack-expose__name {
