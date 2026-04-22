@@ -33,10 +33,7 @@ jobs:
       - run: pnpm i
 
       - name: Build
-        run: |
-          SHORT_SHA="${VITE_COMMIT_SHA:0:7}"
-          export VITE_BASE_PATH="/${{ github.event.repository.name }}/${SLUG}/${SHORT_SHA}/"
-          pnpm build
+        run: pnpm build
         env:
           VITE_COMMIT_SHA: ${{ github.event.pull_request.head.sha }}
           VITE_ENABLE_PWA: 'false'
@@ -44,7 +41,7 @@ jobs:
       - uses: actions/upload-artifact@v7
         with:
           name: dist-${{ env.SLUG }}-${{ github.event.pull_request.head.sha }}
-          path: dist
+          path: dist/
 
   deploy:
     needs: build
@@ -55,7 +52,7 @@ jobs:
       - uses: actions/download-artifact@v8
         with:
           name: dist-${{ env.SLUG }}-${{ github.event.pull_request.head.sha }}
-          path: downloaded-dist
+          path: dist/
 
       - name: Publish Preview to gh-pages subfolder
         id: deploy
@@ -83,23 +80,10 @@ jobs:
 
           cd gh-pages
 
-          SOURCE_DIST="../downloaded-dist"
-          if [ -f "${SOURCE_DIST}/index.html" ]; then
-            DIST_ROOT="${SOURCE_DIST}"
-          elif [ -f "${SOURCE_DIST}/dist/index.html" ]; then
-            DIST_ROOT="${SOURCE_DIST}/dist"
-          else
-            echo "Could not find built index.html in downloaded artifact" >&2
-            find "${SOURCE_DIST}" -maxdepth 3 -type f | head -n 50
-            exit 1
-          fi
-
-          test -d "${DIST_ROOT}/assets" || { echo "Missing assets directory in ${DIST_ROOT}" >&2; exit 1; }
-
           # Commit-spezifischen Unterordner des PRs ersetzen
           rm -rf "${DEPLOY_PATH}"
           mkdir -p "${DEPLOY_PATH}"
-          cp -a "${DIST_ROOT}/." "${DEPLOY_PATH}/"
+          cp -a ../dist/. "${DEPLOY_PATH}/"
           touch .nojekyll
 
           git config user.name "github-actions[bot]"

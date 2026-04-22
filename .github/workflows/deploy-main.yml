@@ -30,14 +30,13 @@ jobs:
       - name: Build
         run: pnpm build
         env:
-          VITE_BASE_PATH: /${{ github.event.repository.name }}/
           VITE_COMMIT_SHA: ${{ github.sha }}
           VITE_ENABLE_PWA: 'true'
 
       - uses: actions/upload-artifact@v7
         with:
           name: dist-main
-          path: dist
+          path: dist/
 
   deploy:
     needs: build
@@ -48,7 +47,7 @@ jobs:
       - uses: actions/download-artifact@v8
         with:
           name: dist-main
-          path: downloaded-dist
+          path: dist/
 
       - name: Publish to gh-pages root
         env:
@@ -85,20 +84,7 @@ jobs:
             rmdir .pr-backup
           fi
 
-          SOURCE_DIST="../downloaded-dist"
-          if [ -f "${SOURCE_DIST}/index.html" ]; then
-            DIST_ROOT="${SOURCE_DIST}"
-          elif [ -f "${SOURCE_DIST}/dist/index.html" ]; then
-            DIST_ROOT="${SOURCE_DIST}/dist"
-          else
-            echo "Could not find built index.html in downloaded artifact" >&2
-            find "${SOURCE_DIST}" -maxdepth 3 -type f | head -n 50
-            exit 1
-          fi
-
-          test -d "${DIST_ROOT}/assets" || { echo "Missing assets directory in ${DIST_ROOT}" >&2; exit 1; }
-
-          cp -a "${DIST_ROOT}/." ./
+          cp -a ../dist/. ./
           touch .nojekyll
 
           git config user.name "github-actions[bot]"
