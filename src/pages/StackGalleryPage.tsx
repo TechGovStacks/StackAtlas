@@ -187,15 +187,13 @@ export function StackGalleryPage() {
 						<li key={stack.id} className="stack-gallery__item" id={`stack-${stack.id}`}>
 							<StackExposeWithMetrics stack={stack} isTop={index === 0} rank={index + 1}>
 								{editable && (
-									<div className="mt-4 flex justify-end">
-										<KolButton
-											_label={t('stackGallery.custom.manageAria')}
-											_hideLabel
-											_icons={{ left: 'kolicon kolicon-cogwheel' }}
-											_variant="ghost"
-											_on={{ onClick: () => setStackIdInDrawer(stack.id) }}
-										/>
-									</div>
+									<KolButton
+										_label={t('stackGallery.custom.manageAria')}
+										_hideLabel
+										_icons={{ left: 'kolicon kolicon-cogwheel' }}
+										_variant="ghost"
+										_on={{ onClick: () => setStackIdInDrawer(stack.id) }}
+									/>
 								)}
 							</StackExposeWithMetrics>
 						</li>

@@ -96,6 +96,8 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank, children }
 							)}
 						</h2>
 					</div>
+
+					{children && <div className="stack-expose__header-action">{children}</div>}
 				</div>
 
 				<div className="stack-expose__meta-row">
@@ -269,8 +271,6 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank, children }
 					{t('stackGallery.exploreStack')}
 				</a>
 			</div>
-
-			{children && <div className="stack-expose__custom-controls">{children}</div>}
 		</article>
 	);
 }

@@ -2003,6 +2003,12 @@ kol-select {
 	min-width: 0;
 }
 
+.stack-expose__header-action {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+}
+
 .stack-expose__name {
 	font-size: var(--ds-text-xl);
 	font-weight: 700;
