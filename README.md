@@ -9,7 +9,7 @@ source_of_truth: docs/README.md
 
 Interaktive Vergleichsplattform fuer staatliche und organisationale Tech-Stacks mit Fokus auf digitale Souveraenitaet.
 
-**Live:** [Projekt-Demo auf GitHub Pages](https://deleonio.github.io/accessible-d-stack-landscape/)
+**Live:** [Projekt-Demo auf GitHub Pages](https://techgovstacks.github.io/StackAtlas/)
 
 ## Doku (ein Einstieg)
 

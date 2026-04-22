@@ -20,7 +20,7 @@ export function Footer() {
 
 					{/* Links navigation */}
 					<nav className="footer__nav-section flex flex-wrap gap-4 md:gap-6 text-sm" aria-label={t('footer.navigationAria')}>
-						<a href="https://github.com/deleonio/accessible-d-stack-landscape/blob/main/docs/README.md" rel="noopener noreferrer" className="footer__link">
+						<a href="https://github.com/TechGovStacks/StackAtlas/blob/main/docs/README.md" rel="noopener noreferrer" className="footer__link">
 							{t('footer.links.documentation')}
 						</a>
 						<a href="#/news" className="footer__link">
@@ -32,10 +32,10 @@ export function Footer() {
 						<a href="#/graphs" className="footer__link">
 							Graphs
 						</a>
-						<a href="https://github.com/deleonio/accessible-d-stack-landscape" rel="noopener noreferrer" className="footer__link">
+						<a href="https://github.com/TechGovStacks/StackAtlas" rel="noopener noreferrer" className="footer__link">
 							GitHub
 						</a>
-						<a href="https://github.com/deleonio/accessible-d-stack-landscape/issues/new" rel="noopener noreferrer" className="footer__link">
+						<a href="https://github.com/TechGovStacks/StackAtlas/issues/new" rel="noopener noreferrer" className="footer__link">
 							Community
 						</a>
 						<a href="#/settings" className="footer__link">
