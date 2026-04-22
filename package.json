@@ -84,7 +84,7 @@
 		"eslint-plugin-react-hooks": "7.1.1",
 		"gray-matter": "4.0.3",
 		"husky": "9.1.7",
-		"knip": "6.6.0",
+		"knip": "6.6.1",
 		"lint-staged": "16.4.0",
 		"markdown-it": "14.1.1",
 		"markdown-it-task-lists": "^2.1.1",
