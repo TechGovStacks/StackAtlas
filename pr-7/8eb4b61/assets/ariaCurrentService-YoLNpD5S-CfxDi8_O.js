@@ -1,0 +1,1 @@
+var e,t=[],n=(n,r=!0)=>(r&&typeof e==`string`&&n(e),t.push(n),()=>{let e=t.indexOf(n);e>=0&&t.splice(e,1)});export{n as t};
