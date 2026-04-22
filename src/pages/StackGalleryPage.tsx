@@ -229,12 +229,16 @@ export function StackGalleryPage() {
 				<h2 className="stack-gallery__custom-title">{t('stackGallery.custom.createSectionTitle')}</h2>
 				<p className="stack-gallery__subtitle">{t('stackGallery.custom.createSectionIntro')}</p>
 				<div className="flex flex-col gap-2 md:flex-row md:items-end">
-					<KolInputText
-						_label={t('stackGallery.custom.name')}
-						_value={newStackName}
-						_on={{ onInput: (_event: Event, value: unknown) => setNewStackName(typeof value === 'string' ? value : '') }}
-					/>
-					<KolButton _label={t('stackGallery.custom.save')} _on={{ onClick: createStack }} className="w-full md:w-auto" />
+					<div className="w-full md:flex-1">
+						<KolInputText
+							_label={t('stackGallery.custom.name')}
+							_value={newStackName}
+							_on={{ onInput: (_event: Event, value: unknown) => setNewStackName(typeof value === 'string' ? value : '') }}
+						/>
+					</div>
+					<div className="w-full md:w-auto">
+						<KolButton _label={t('stackGallery.custom.save')} _on={{ onClick: createStack }} />
+					</div>
 				</div>
 				{createMessage && <p className="mt-2">{createMessage}</p>}
 			</section>
@@ -276,79 +280,81 @@ export function StackGalleryPage() {
 				{stackInDrawer && localStackInDrawer && (
 					<div className="p-4 flex flex-col gap-3" aria-label={t('stackGallery.custom.manageAria')}>
 						<div className="flex flex-col gap-2 md:flex-row md:items-end">
-							<KolInputText
-								_label={t('stackGallery.custom.rename')}
-								_value={renameValues[stackInDrawer.id] ?? localStackInDrawer.name}
-								_on={{
-									onInput: (_event: Event, value: unknown) =>
-										setRenameValues((prev) => ({ ...prev, [stackInDrawer.id]: typeof value === 'string' ? value : '' })),
-								}}
-							/>
-							<KolButton
-								_label={t('stackGallery.custom.renameSave')}
-								_variant="secondary"
-								_on={{ onClick: () => renameStack(stackInDrawer.id) }}
-								className="w-full md:w-auto"
-							/>
+							<div className="w-full md:flex-1">
+								<KolInputText
+									_label={t('stackGallery.custom.rename')}
+									_value={renameValues[stackInDrawer.id] ?? localStackInDrawer.name}
+									_on={{
+										onInput: (_event: Event, value: unknown) =>
+											setRenameValues((prev) => ({ ...prev, [stackInDrawer.id]: typeof value === 'string' ? value : '' })),
+									}}
+								/>
+							</div>
+							<div className="w-full md:w-auto">
+								<KolButton _label={t('stackGallery.custom.renameSave')} _variant="secondary" _on={{ onClick: () => renameStack(stackInDrawer.id) }} />
+							</div>
 						</div>
 						<div className="flex flex-col gap-2 md:flex-row md:items-end">
-							<KolSingleSelect
-								_label={t('stackGallery.custom.item')}
-								_options={itemOptions}
-								_value={selectedItemByStack[stackInDrawer.id] ?? ''}
-								_on={{
-									onChange: (_event: Event, value: unknown) =>
-										setSelectedItemByStack((prev) => ({ ...prev, [stackInDrawer.id]: typeof value === 'string' ? value : '' })),
-								}}
-							/>
-							<KolSingleSelect
-								_label={t('stackGallery.custom.relation')}
-								_options={relationOptions}
-								_value={selectedRelationByStack[stackInDrawer.id] ?? 'consumer'}
-								_on={{
-									onChange: (_event: Event, value: unknown) =>
-										setSelectedRelationByStack((prev) => ({ ...prev, [stackInDrawer.id]: typeof value === 'string' ? value : 'consumer' })),
-								}}
-							/>
-							<KolButton
-								_label={t('stackGallery.custom.addDep')}
-								_variant="secondary"
-								className="w-full md:w-auto"
-								_disabled={
-									!(selectedItemByStack[stackInDrawer.id] ?? '') ||
-									new Set(stackInDrawer.items.map((item) => item.itemId)).has(selectedItemByStack[stackInDrawer.id] ?? '')
-								}
-								_on={{
-									onClick: () =>
-										addItemToLocalStack(
-											stackInDrawer.id,
-											selectedItemByStack[stackInDrawer.id] ?? '',
-											(selectedRelationByStack[stackInDrawer.id] ?? 'consumer') as 'consumer' | 'contributor' | 'funder' | 'maintainer',
-										),
-								}}
-							/>
+							<div className="w-full md:flex-1">
+								<KolSingleSelect
+									_label={t('stackGallery.custom.item')}
+									_options={itemOptions}
+									_value={selectedItemByStack[stackInDrawer.id] ?? ''}
+									_on={{
+										onChange: (_event: Event, value: unknown) =>
+											setSelectedItemByStack((prev) => ({ ...prev, [stackInDrawer.id]: typeof value === 'string' ? value : '' })),
+									}}
+								/>
+							</div>
+							<div className="w-full md:flex-1">
+								<KolSingleSelect
+									_label={t('stackGallery.custom.relation')}
+									_options={relationOptions}
+									_value={selectedRelationByStack[stackInDrawer.id] ?? 'consumer'}
+									_on={{
+										onChange: (_event: Event, value: unknown) =>
+											setSelectedRelationByStack((prev) => ({ ...prev, [stackInDrawer.id]: typeof value === 'string' ? value : 'consumer' })),
+									}}
+								/>
+							</div>
+							<div className="w-full md:w-auto">
+								<KolButton
+									_label={t('stackGallery.custom.addDep')}
+									_variant="secondary"
+									_disabled={
+										!(selectedItemByStack[stackInDrawer.id] ?? '') ||
+										new Set(stackInDrawer.items.map((item) => item.itemId)).has(selectedItemByStack[stackInDrawer.id] ?? '')
+									}
+									_on={{
+										onClick: () =>
+											addItemToLocalStack(
+												stackInDrawer.id,
+												selectedItemByStack[stackInDrawer.id] ?? '',
+												(selectedRelationByStack[stackInDrawer.id] ?? 'consumer') as 'consumer' | 'contributor' | 'funder' | 'maintainer',
+											),
+									}}
+								/>
+							</div>
 						</div>
 						{selectedItems(stackInDrawer).length > 0 && (
 							<ul className="flex flex-col gap-1" aria-label={t('stackGallery.custom.selectedAria')}>
 								{selectedItems(stackInDrawer).map((item) => (
 									<li key={`${stackInDrawer.id}-${item.id}`} className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
 										<span>{getLocalizedText(item.name, i18n.language)}</span>
-										<KolButton
-											_label={t('stackGallery.custom.removeDep')}
-											_variant="normal"
-											className="w-full md:w-auto"
-											_on={{ onClick: () => removeItemFromLocalStack(stackInDrawer.id, item.id) }}
-										/>
+										<div className="w-full md:w-auto">
+											<KolButton
+												_label={t('stackGallery.custom.removeDep')}
+												_variant="normal"
+												_on={{ onClick: () => removeItemFromLocalStack(stackInDrawer.id, item.id) }}
+											/>
+										</div>
 									</li>
 								))}
 							</ul>
 						)}
-						<KolButton
-							_label={t('stackGallery.custom.delete')}
-							_variant="normal"
-							_on={{ onClick: () => setStackIdPendingDelete(stackInDrawer.id) }}
-							className="w-full md:w-auto"
-						/>
+						<div className="w-full md:w-auto">
+							<KolButton _label={t('stackGallery.custom.delete')} _variant="normal" _on={{ onClick: () => setStackIdPendingDelete(stackInDrawer.id) }} />
+						</div>
 					</div>
 				)}
 			</KolDrawer>
