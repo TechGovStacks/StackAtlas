@@ -1,7 +1,7 @@
-import { KolButton, KolInputText, KolModal } from '@public-ui/preact';
+import { KolButton, KolDialog, KolInputText } from '@public-ui/preact';
 import type { ComponentChildren } from 'preact';
 import { useLocation } from 'preact-iso';
-import { useEffect, useMemo, useState } from 'preact/hooks';
+import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { AutoSingleSelect as KolSingleSelect } from '../components/AutoSingleSelect';
 import { StackExpose } from '../components/StackExpose';
@@ -18,6 +18,11 @@ interface StackExposeWithMetricsProps {
 	isTop: boolean;
 	rank: number;
 }
+
+type DialogHandle = HTMLElement & {
+	closeModal: () => Promise<void>;
+	openModal: () => Promise<void>;
+};
 
 function StackExposeWithMetrics({ stack, isTop, rank, children }: StackExposeWithMetricsProps) {
 	const metrics = useStackMetrics(stack, ITEMS, LAYERS);
@@ -51,6 +56,7 @@ export function StackGalleryPage() {
 	const [selectedItemByStack, setSelectedItemByStack] = useState<Record<string, string>>({});
 	const [selectedRelationByStack, setSelectedRelationByStack] = useState<Record<string, string>>({});
 	const [stackIdPendingDelete, setStackIdPendingDelete] = useState<string | null>(null);
+	const deleteDialogRef = useRef<DialogHandle | null>(null);
 
 	useRouteAnnouncement({ pageTitle: t('stackGallery.title') || 'Stacks' });
 
@@ -100,6 +106,18 @@ export function StackGalleryPage() {
 			target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
 		});
 	}, [selectedStackId]);
+
+	useEffect(() => {
+		const dialog = deleteDialogRef.current;
+		if (!dialog) return;
+
+		if (stackIdPendingDelete) {
+			void dialog.openModal();
+			return;
+		}
+
+		void dialog.closeModal();
+	}, [stackIdPendingDelete]);
 
 	const createStack = () => {
 		const created = createLocalStack(newStackName);
@@ -231,11 +249,7 @@ export function StackGalleryPage() {
 				})}
 			</ol>
 
-			<KolModal
-				_open={Boolean(stackIdPendingDelete)}
-				_label={t('stackGallery.custom.deleteConfirmTitle')}
-				_on={{ onClose: () => setStackIdPendingDelete(null) }}
-			>
+			<KolDialog ref={deleteDialogRef} _label={t('stackGallery.custom.deleteConfirmTitle')} _on={{ onClose: () => setStackIdPendingDelete(null) }}>
 				<div className="p-4 flex flex-col gap-3">
 					<p>
 						{t('stackGallery.custom.deleteConfirmMessage', {
@@ -247,7 +261,7 @@ export function StackGalleryPage() {
 						<KolButton _label={t('stackGallery.custom.deleteConfirmAccept')} _variant="normal" _on={{ onClick: confirmDeleteStack }} />
 					</div>
 				</div>
-			</KolModal>
+			</KolDialog>
 		</main>
 	);
 }
