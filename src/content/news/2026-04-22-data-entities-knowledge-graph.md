@@ -1,7 +1,7 @@
 ---
 focus: dataEntities
 title: Das Datenmodell von StackAtlas – Entitäten und ihre Relationen
-summary: StackAtlas basiert auf einem klar strukturierten Datenmodell mit drei zentralen Entitäten – Layer, Item und Stack – die miteinander verknüpft sind und das Fundament für Scoring und Analyse bilden.
+summary: StackAtlas basiert auf einem klar strukturierten Datenmodell mit fünf zentralen Entitäten – Layer, Item, ItemDependency, Stack und StackItem – die miteinander verknüpft sind und das Fundament für Scoring und Analyse bilden.
 ---
 
 # Das Datenmodell von StackAtlas – Entitäten und ihre Relationen
@@ -14,13 +14,13 @@ StackAtlas ist mehr als eine Liste von Technologien – es ist ein strukturierte
 
 ## Die fünf Entitäten im Überblick
 
-| Entität | Anzahl Instanzen | Zweck |
-| :------- | :------: | :------- |
-| **Layer** | 5 | Technologie-Schichten (Infrastruktur bis Normen) |
-| **Item** | 171 | Einzelne Technologien, Frameworks, Protokolle |
-| **ItemDependency** | variabel | Gerichtete Abhängigkeiten zwischen Items |
-| **Stack** | 24 | Länderspezifische oder organisationale Tech-Stacks |
-| **StackItem** | variabel | Zuordnung eines Items zu einem Stack inkl. Rolle |
+| Entität            | Anzahl Instanzen | Zweck                                              |
+| :----------------- | :--------------: | :------------------------------------------------- |
+| **Layer**          |        5         | Technologie-Schichten (Infrastruktur bis Normen)   |
+| **Item**           |       171        | Einzelne Technologien, Frameworks, Protokolle      |
+| **ItemDependency** |     variabel     | Gerichtete Abhängigkeiten zwischen Items           |
+| **Stack**          |        24        | Länderspezifische oder organisationale Tech-Stacks |
+| **StackItem**      |     variabel     | Zuordnung eines Items zu einem Stack inkl. Rolle   |
 
 ---
 
@@ -28,15 +28,15 @@ StackAtlas ist mehr als eine Liste von Technologien – es ist ein strukturierte
 
 Jedes Item ist genau einer der fünf **Layer** zugeordnet. Die Schichten bilden eine logische Hierarchie von der physischen Infrastruktur bis zu übergreifenden Normen:
 
-| Reihenfolge | Layer | Farbe | Beispiele |
-| :---: | :------- | :------: | :------- |
-| 1 | **Infrastructure** | #c5192d | Netzwerke, TLS, Kryptographie |
-| 2 | **Platform** | #1a56a0 | Cloud-Dienste, Container-Orchestrierung, KI-Frameworks |
-| 3 | **Building Blocks** | #00883d | APIs, Bibliotheken, SDKs |
-| 4 | **Applications** | #f39c12 | E-Government-Anwendungen, End-User-Software |
-| 5 | **Sovereign Standards** | #e8e8e8 | Interoperabilitätsnormen, Datenschutzstandards |
+| Reihenfolge | Layer                   |  Farbe  | Beispiele                                              |
+| :---------: | :---------------------- | :-----: | :----------------------------------------------------- |
+|      1      | **Infrastructure**      | #c5192d | Netzwerke, TLS, Kryptographie                          |
+|      2      | **Platform**            | #1a56a0 | Cloud-Dienste, Container-Orchestrierung, KI-Frameworks |
+|      3      | **Building Blocks**     | #00883d | APIs, Bibliotheken, SDKs                               |
+|      4      | **Applications**        | #f39c12 | E-Government-Anwendungen, End-User-Software            |
+|      5      | **Sovereign Standards** | #e8e8e8 | Interoperabilitätsnormen, Datenschutzstandards         |
 
-Jede Layer besitzt ein `weight`-Feld (0–5), das beeinflusst, wie stark Items dieser Schicht in aggregierten Bewertungen gewichtet werden.
+Jeder Layer besitzt ein `weight`-Feld (0–5), das beeinflusst, wie stark Items dieser Schicht in aggregierten Bewertungen gewichtet werden.
 
 ---
 
@@ -46,32 +46,32 @@ Jede Layer besitzt ein `weight`-Feld (0–5), das beeinflusst, wie stark Items d
 
 ### Kern-Felder
 
-| Feld | Typ | Bedeutung |
-| :------- | :------: | :------- |
-| `id` | string (slug) | Eindeutiger Bezeichner, z. B. `react`, `kubernetes` |
-| `name` | string | Offizieller Name der Technologie |
-| `layer` | string | Zugehörige Architekturschicht (Pflichtfeld) |
-| `sublayer` | string | Unterkategorie, z. B. `sicherheit`, `integration` |
-| `oss` | boolean | Ist das Projekt Open Source? |
-| `license` | string | Lizenzbezeichner, z. B. `MIT`, `Apache-2.0` |
-| `ownerCountry` | string | ISO-3166-Ländercode des Eigentümers |
+| Feld           |      Typ      | Bedeutung                                           |
+| :------------- | :-----------: | :-------------------------------------------------- |
+| `id`           | string (slug) | Eindeutiger Bezeichner, z. B. `react`, `kubernetes` |
+| `name`         |    string     | Offizieller Name der Technologie                    |
+| `layer`        |    string     | Zugehörige Architekturschicht (Pflichtfeld)         |
+| `sublayer`     |    string     | Unterkategorie, z. B. `sicherheit`, `integration`   |
+| `oss`          |    boolean    | Ist das Projekt Open Source?                        |
+| `license`      |    string     | Lizenzbezeichner, z. B. `MIT`, `Apache-2.0`         |
+| `ownerCountry` |    string     | ISO-3166-Ländercode des Eigentümers                 |
 
 ### Souveränitätskriterien (`sovereigntyCriteria`)
 
 Jedes Item wird anhand von **9 binären Kriterien** bewertet, die zu einem Souveränitätsscore (0–100) aggregiert werden:
 
-| Kriterium | Punkte | Bedeutung |
-| :------- | :------: | :------- |
-| `selfHostable` | +20 | Kann selbst gehostet werden |
-| `openSource` | +15 | Quellcode öffentlich verfügbar |
-| `dataPortability` | +15 | Daten können exportiert/migriert werden |
-| `permissiveLicense` | +10 | Freizügige Open-Source-Lizenz |
-| `openStandards` | +10 | Basiert auf offenen Standards |
-| `euHeadquartered` | +5 | Hauptsitz in der EU |
-| `hasAudit` | +5 | Unabhängiges Sicherheitsaudit vorhanden |
-| `matureProject` | +5 | Reifes, stabiles Projekt |
-| `noTelemetryByDefault` | +5 | Keine Telemetrie ohne explizite Zustimmung |
-| `ownerType` | 0–10 | Art des Eigentümers (Konsortium, Community, etc.) |
+| Kriterium              | Punkte | Bedeutung                                         |
+| :--------------------- | :----: | :------------------------------------------------ |
+| `selfHostable`         |  +20   | Kann selbst gehostet werden                       |
+| `openSource`           |  +15   | Quellcode öffentlich verfügbar                    |
+| `dataPortability`      |  +15   | Daten können exportiert/migriert werden           |
+| `permissiveLicense`    |  +10   | Freizügige Open-Source-Lizenz                     |
+| `openStandards`        |  +10   | Basiert auf offenen Standards                     |
+| `euHeadquartered`      |   +5   | Hauptsitz in der EU                               |
+| `hasAudit`             |   +5   | Unabhängiges Sicherheitsaudit vorhanden           |
+| `matureProject`        |   +5   | Reifes, stabiles Projekt                          |
+| `noTelemetryByDefault` |   +5   | Keine Telemetrie ohne explizite Zustimmung        |
+| `ownerType`            |  0–10  | Art des Eigentümers (Konsortium, Community, etc.) |
 
 Der resultierende Score wird in Kategorien eingeteilt: `insufficient` → `minimal` → `adequate` → `good` → `excellent` → `outstanding`.
 
@@ -83,21 +83,21 @@ Items können **gerichtete Abhängigkeiten** zu anderen Items definieren. Diese 
 
 ### Abhängigkeitstypen
 
-| Typ | Beispiel |
-| :------- | :------- |
-| `runtime` | Django → Python |
-| `language` | Angular → TypeScript |
-| `protocol` | Kubernetes → HTTP, TLS |
+| Typ           | Beispiel                |
+| :------------ | :---------------------- |
+| `runtime`     | Django → Python         |
+| `language`    | Angular → TypeScript    |
+| `protocol`    | Kubernetes → HTTP, TLS  |
 | `compiles-to` | TypeScript → JavaScript |
-| `build` | Webpack → JavaScript |
+| `build`       | Webpack → JavaScript    |
 
 ### Scope-Angaben
 
-| Scope | Bedeutung |
-| :------- | :------- |
-| `required` | Zwingend notwendig |
-| `optional` | Kann weggelassen werden |
-| `dev` | Nur zur Entwicklungszeit benötigt |
+| Scope      | Bedeutung                         |
+| :--------- | :-------------------------------- |
+| `required` | Zwingend notwendig                |
+| `optional` | Kann weggelassen werden           |
+| `dev`      | Nur zur Entwicklungszeit benötigt |
 
 Der in-memory **DependencyGraph** indiziert alle Kanten nach Quell- und Ziel-ID und ermöglicht sowohl direkte als auch transitive Auflösung bis zu einer konfigurierbaren Tiefe (1–3 Hops).
 
@@ -109,13 +109,13 @@ Der in-memory **DependencyGraph** indiziert alle Kanten nach Quell- und Ziel-ID 
 
 ### Stack-Felder
 
-| Feld | Typ | Bedeutung |
-| :------- | :------: | :------- |
-| `country` | string | ISO-Ländercode, z. B. `DE`, `FR`, `EU` |
-| `issuer` | string | Herausgebende Organisation |
-| `publishedAt` | string | Veröffentlichungsdatum (ISO 8601) |
-| `items` | StackItem[] | Zugeordnete Technologien mit Rolle und Status |
-| `participants` | StackParticipant[] | Beteiligte Organisationen |
+| Feld           |        Typ         | Bedeutung                                     |
+| :------------- | :----------------: | :-------------------------------------------- |
+| `country`      |       string       | ISO-Ländercode, z. B. `DE`, `FR`, `EU`        |
+| `issuer`       |       string       | Herausgebende Organisation                    |
+| `publishedAt`  |       string       | Veröffentlichungsdatum (ISO 8601)             |
+| `items`        |    StackItem[]     | Zugeordnete Technologien mit Rolle und Status |
+| `participants` | StackParticipant[] | Beteiligte Organisationen                     |
 
 ---
 
@@ -123,12 +123,12 @@ Der in-memory **DependencyGraph** indiziert alle Kanten nach Quell- und Ziel-ID 
 
 **StackItems** sind die Verbindungsentität zwischen Stack und Item. Sie tragen neben der Referenz auch Metadaten zur Rolle und zum Status:
 
-| Feld | Werte | Einfluss auf Score |
-| :------- | :------: | :------- |
-| `status` | `recommended` / `approved` / `deprecated` | Statusgewichtung |
-| `role` | `maintainer` / `contributor` / `funder` / `consumer` | Score-Multiplikator |
+| Feld     |                        Werte                         | Einfluss auf Score  |
+| :------- | :--------------------------------------------------: | :------------------ |
+| `status` |      `recommended` / `approved` / `deprecated`       | Statusgewichtung    |
+| `role`   | `maintainer` / `contributor` / `funder` / `consumer` | Score-Multiplikator |
 
-Der **Rollen-Multiplikator** skaliert den Souveränitätsbeitrag: Ein Stack, der eine Technologie aktiv *maintaint*, profitiert stärker (1,0×) als einer, der sie nur *konsumiert* (0,25×).
+Der **Rollen-Multiplikator** skaliert den Souveränitätsbeitrag: Ein Stack, der eine Technologie aktiv _pflegt_, profitiert stärker (1,0×) als einer, der sie nur _konsumiert_ (0,25×).
 
 ---
 
