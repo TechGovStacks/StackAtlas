@@ -8,7 +8,7 @@
 		"en": "Keycloak is an open-source identity and access management solution. It provides single sign-on, OpenID Connect, OAuth2, SAML, user and role management as well as federation and is the de-facto IAM standard in many public administrations."
 	},
 	"homepage": "https://www.keycloak.org/",
-	"logo": "https://raw.githubusercontent.com/keycloak/keycloak/main/js/apps/admin-ui/public/logo.svg",
+	"logo": "https://cdn.simpleicons.org/keycloak",
 	"tags": [
 		"iam",
 		"sso",
