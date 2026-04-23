@@ -26,16 +26,6 @@ Dieses Dokument ist das Rahmendokument fuer die aktive Projektdokumentation.
 3. Repo- und Verzeichnis-Kontext: `README.md` im Root und `data/README.md`
 4. Exemplarische Erklärung des Dependency-Modells: `docs/examples/items-as-dependencies.md`
 
-## Styling-Entscheidung (verbindlich)
-
-Fuer die Frontend-Styles gilt eine **pragmatische Mischform**:
-
-- Layout darf sowohl ueber UnoCSS-Utilities in `className` als auch ueber SCSS in `src/style.scss` umgesetzt werden.
-- KoliBri bleibt Standard fuer UI-Komponenten; native/custom Alternativen nur wenn KoliBri keine passende Komponente bietet.
-- `kol-*` Overrides sind nur als dokumentierte Host-CSS-Variablen (`--kol-*`) zulaessig.
-- Nicht zulaessig sind Eingriffe in interne KoliBri-Strukturen (Shadow-DOM-Hacks oder vergleichbare Workarounds).
-- Doppelte globale `kol-*` Override-Bloecke sind zu vermeiden und zentral zusammenzufassen.
-
 ## Governance-Hinweis zu Foundations
 
 Bei der Einordnung von Open-Source- und Standardisierungs-Foundationen sollte beruecksichtigt werden, dass hinter formaler Neutralitaet haeufig starke Konzerninteressen und Finanzierungsabhaengigkeiten stehen koennen. Als Kontextquelle: [Heise-Einordnung](https://www.heise.de/blog/Open-Source-ist-nicht-das-Problem-sondern-sein-Missbrauch-durch-Konzerne-11244125.html).
