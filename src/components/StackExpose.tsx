@@ -1,4 +1,5 @@
 import { KolBadge } from '@public-ui/preact';
+import { KolLinkButton } from '@public-ui/preact';
 import { ComponentChildren } from 'preact';
 import { useMemo } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
@@ -278,9 +279,7 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank, children }
 
 			{/* ── CTA-Button ────────────────────────────────────────────── */}
 			<div className="stack-expose__cta">
-				<a href={`#/deps?stack=${stack.id}`} className="stack-expose__explore-link">
-					{t('stackGallery.exploreStack')}
-				</a>
+				<KolLinkButton _label={t('stackGallery.exploreStack')} _href={`#/deps?stack=${stack.id}`} _variant="primary" className="stack-expose__explore-link" />
 			</div>
 		</article>
 	);

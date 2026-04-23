@@ -1132,56 +1132,8 @@ kol-badge.stack-expose__status-badge {
 }
 
 .drawer-related__link {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	width: 100%;
-	padding: var(--ds-space-2) var(--ds-space-3);
-	background: var(--ds-color-bg);
-	border: 1px solid var(--ds-color-border-light);
-	border-radius: var(--ds-radius-md);
-	color: var(--ds-color-text);
-	font-size: var(--ds-text-sm);
-	font-family: var(--ds-font-body);
-	cursor: pointer;
-	transition:
-		background 0.18s ease,
-		border-color 0.18s ease,
-		color 0.18s ease;
-	text-align: left;
-}
-
-.drawer-related__link:hover,
-.drawer-related__link:focus {
-	background: var(--ds-color-border-light);
-	border-color: var(--ds-color-primary);
-	color: var(--ds-color-primary);
-	outline: none;
-}
-
-.drawer-related__link:focus-visible {
-	outline: 2px solid var(--ds-color-primary);
-	outline-offset: 2px;
-}
-
-.drawer-related__link-text {
-	flex: 1;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-}
-
-.drawer-related__link-icon {
-	flex-shrink: 0;
-	margin-left: var(--ds-space-2);
-	font-size: 1.25rem;
-	font-weight: 300;
-	transition: transform 0.18s ease;
-}
-
-.drawer-related__link:hover .drawer-related__link-icon,
-.drawer-related__link:focus .drawer-related__link-icon {
-	transform: translateX(4px);
+	max-width: 100%;
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
@@ -1701,41 +1653,7 @@ kol-select {
 }
 
 .drawer-link {
-	display: inline-flex;
-	align-items: center;
-	padding: 4px 12px;
-	border-radius: var(--ds-radius-sm);
-	font-size: var(--ds-text-sm);
-	font-weight: 600;
-	text-decoration: none;
-	border: 1px solid var(--ds-color-primary);
-	color: var(--ds-color-primary);
-	transition:
-		background 0.15s ease,
-		color 0.15s ease;
-}
-
-.drawer-link:hover,
-.drawer-link:focus-visible {
-	background: var(--ds-color-primary);
-	color: #fff;
-	outline: none;
-}
-
-.drawer-link:focus-visible {
-	outline: 2px solid var(--ds-color-primary);
-	outline-offset: 2px;
-}
-
-.drawer-link--github {
-	border-color: #24292f;
-	color: #24292f;
-}
-
-.drawer-link--github:hover,
-.drawer-link--github:focus-visible {
-	background: #24292f;
-	color: #fff;
+	display: inline-block;
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
@@ -2266,32 +2184,7 @@ kol-select {
 }
 
 .stack-expose__explore-link {
-	display: inline-flex;
-	align-items: center;
-	gap: var(--ds-space-1);
-	padding: var(--ds-space-2) var(--ds-space-4);
-	background: var(--ds-color-primary);
-	color: #fff;
-	border-radius: var(--ds-radius-md);
-	font-size: var(--ds-text-sm);
-	font-weight: 600;
-	text-decoration: none;
-	transition:
-		background 150ms ease,
-		transform 100ms ease;
-
-	&:hover {
-		background: var(--ds-color-accent);
-	}
-
-	&:focus-visible {
-		outline: 3px solid var(--ds-color-accent);
-		outline-offset: 2px;
-	}
-
-	&:active {
-		transform: translateY(1px);
-	}
+	display: inline-block;
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────

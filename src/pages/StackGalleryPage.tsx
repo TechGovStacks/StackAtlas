@@ -11,6 +11,7 @@ import { useRouteAnnouncement } from '../hooks/useRouteAnnouncement';
 import { computeStackAvgScore, useStackMetrics } from '../hooks/useStackMetrics';
 import { Item, Stack } from '../types';
 import { getLocalizedText } from '../utils';
+import { computeEffectiveSovereigntyScore } from '../utils/sovereigntyScore';
 
 interface StackExposeWithMetricsProps {
 	children?: ComponentChildren;
@@ -67,9 +68,9 @@ export function StackGalleryPage() {
 	const itemOptions = useMemo(
 		() =>
 			ITEMS.map((item) => {
-				const score = item.adoption?.overallScore ?? 0;
+				const baseScore = item.sovereigntyScore ?? computeEffectiveSovereigntyScore(item.sovereigntyCriteria);
 				return {
-					label: `${getLocalizedText(item.name, i18n.language)} (${score})`,
+					label: `${getLocalizedText(item.name, i18n.language)} (${baseScore})`,
 					value: item.id,
 				};
 			}),
@@ -345,12 +346,14 @@ export function StackGalleryPage() {
 							{selectedItems(stackInDrawer).length > 0 && (
 								<ul className="flex flex-col gap-1" aria-label={t('stackGallery.custom.selectedAria')}>
 									{selectedItems(stackInDrawer).map((item) => (
-										<li key={`${stackInDrawer.id}-${item.id}`} className="flex flex-col gap-2 md:flex-row md:items-start md:justify-between">
-											<span className="min-w-0 break-words md:flex-1">{getLocalizedText(item.name, i18n.language)}</span>
-											<div className="w-full md:w-auto md:shrink-0">
+										<li key={`${stackInDrawer.id}-${item.id}`} className="flex items-start justify-between gap-2">
+											<span className="min-w-0 break-words flex-1">{getLocalizedText(item.name, i18n.language)}</span>
+											<div className="shrink-0">
 												<KolButton
 													_label={t('stackGallery.custom.removeDep')}
-													_variant="normal"
+													_hideLabel
+													_icons={{ left: 'icon icon-delete' }}
+													_variant="danger"
 													_on={{ onClick: () => removeItemFromLocalStack(stackInDrawer.id, item.id) }}
 												/>
 											</div>
@@ -363,7 +366,12 @@ export function StackGalleryPage() {
 						<section className="stack-gallery__drawer-section">
 							<h3 className="stack-gallery__drawer-section-title">{t('stackGallery.custom.delete')}</h3>
 							<div className="w-full md:w-auto md:shrink-0">
-								<KolButton _label={t('stackGallery.custom.delete')} _variant="normal" _on={{ onClick: () => setStackIdPendingDelete(stackInDrawer.id) }} />
+								<KolButton
+									_label={t('stackGallery.custom.delete')}
+									_icons={{ left: 'icon icon-delete' }}
+									_variant="danger"
+									_on={{ onClick: () => setStackIdPendingDelete(stackInDrawer.id) }}
+								/>
 							</div>
 						</section>
 					</div>
