@@ -1,1 +1,0 @@
-import{ot as e}from"./index-B7tv7olz-Ce5wDlmq.js";var t=(t,n)=>{e(t,`_hasCloser`,n)};export{t};
