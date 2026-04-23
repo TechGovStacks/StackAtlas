@@ -28,9 +28,9 @@ Dieses Dokument ist das Rahmendokument fuer die aktive Projektdokumentation.
 
 ## Dependency-Versionierung (Source of Truth)
 
-- Fuer `package.json` gelten ausschliesslich **exakte Versionen** (z. B. `2.1.1`).
-- Bereichsangaben und Praefixe wie `^`, `~`, `>`, `<`, `>=`, `<=` oder kombinierten Ranges sind nicht erlaubt.
-- Diese Regel ist die alleinige projektdokumentierte Quelle fuer die Dependency-Versionierungs-Policy.
+- Für `package.json` gelten ausschließlich **exakte Versionen** (z. B. `2.1.1`).
+- Bereichsangaben und Präfixe wie `^`, `~`, `>`, `<`, `>=`, `<=` oder kombinierte Ranges sind nicht erlaubt.
+- Diese Regel ist die alleinige projektdokumentierte Quelle für die Dependency-Versionierungs-Policy.
 
 ## Governance-Hinweis zu Foundations
 
