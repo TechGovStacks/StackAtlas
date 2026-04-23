@@ -1,4 +1,3 @@
-import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'uno.css'; // https://github.com/antfu/unocss
 
 // App style

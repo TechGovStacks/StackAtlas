@@ -28,6 +28,7 @@
 		"mobile:build": "pnpm build && cap sync",
 		"postinstall": "npm-run-all2 postinstall:*",
 		"postinstall:components": "cpy \"node_modules/@public-ui/components/assets/**/*\" public/assets --dot",
+		"postinstall:theme-default": "cpy \"node_modules/@public-ui/theme-default/assets/**/*\" public/assets --dot",
 		"postinstall:generate": "pnpm run prebuild",
 		"postinstall:theme-kern": "cpy \"node_modules/@public-ui/theme-kern/assets/**/*\" public/assets --dot",
 		"prebuild": "node scripts/generate-data.mjs && node scripts/generate-icons.mjs",
@@ -49,7 +50,6 @@
 	},
 	"dependencies": {
 		"@capacitor/core": "8.3.1",
-		"@fortawesome/fontawesome-free": "7.2.0",
 		"@hookform/resolvers": "5.2.2",
 		"@public-ui/components": "4.1.3",
 		"@public-ui/preact": "4.1.3",
