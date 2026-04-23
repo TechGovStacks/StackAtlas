@@ -88,7 +88,7 @@
 		"knip": "6.6.1",
 		"lint-staged": "16.4.0",
 		"markdown-it": "14.1.1",
-		"markdown-it-task-lists": "^2.1.1",
+		"markdown-it-task-lists": "2.1.1",
 		"npm-check-updates": "21.0.3",
 		"npm-run-all2": "8.0.4",
 		"prettier": "3.8.3",
