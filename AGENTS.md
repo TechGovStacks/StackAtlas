@@ -289,7 +289,7 @@ This approach eliminates duplication and keeps styling intent clear.
 
 ## Pre-commit Checklist
 
-1. `pnpm lint` – Run all linters
+1. `pnpm lint:ts` – Type check
 2. `pnpm lint:eslint` – ESLint
 3. `pnpm lint:stylelint` – SCSS lint
 4. `pnpm format` – Formatting check
