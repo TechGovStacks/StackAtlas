@@ -1694,41 +1694,7 @@ kol-select {
 }
 
 .drawer-link {
-	display: inline-flex;
-	align-items: center;
-	padding: 4px 12px;
-	border-radius: var(--ds-radius-sm);
-	font-size: var(--ds-text-sm);
-	font-weight: 600;
-	text-decoration: none;
-	border: 1px solid var(--ds-color-primary);
-	color: var(--ds-color-primary);
-	transition:
-		background 0.15s ease,
-		color 0.15s ease;
-}
-
-.drawer-link:hover,
-.drawer-link:focus-visible {
-	background: var(--ds-color-primary);
-	color: #fff;
-	outline: none;
-}
-
-.drawer-link:focus-visible {
-	outline: 2px solid var(--ds-color-primary);
-	outline-offset: 2px;
-}
-
-.drawer-link--github {
-	border-color: #24292f;
-	color: #24292f;
-}
-
-.drawer-link--github:hover,
-.drawer-link--github:focus-visible {
-	background: #24292f;
-	color: #fff;
+	display: inline-block;
 }
 
 .drawer-license-badge {

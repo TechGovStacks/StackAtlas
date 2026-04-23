@@ -205,14 +205,22 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 									<p className="drawer-category">{t('article.categoryLabel', { category: categoryName })}</p>
 									<div className="drawer-links">
 										{selectedArticle.homepage && (
-											<a href={selectedArticle.homepage} target="_blank" rel="noopener noreferrer" className="drawer-link">
-												{t('article.website')}
-											</a>
+											<KolLinkButton
+												_label={t('article.website')}
+												_href={selectedArticle.homepage}
+												_target="_blank"
+												_variant="secondary"
+												className="drawer-link"
+											/>
 										)}
 										{selectedArticle.github?.repo && (
-											<a href={selectedArticle.github.repo} target="_blank" rel="noopener noreferrer" className="drawer-link drawer-link--github">
-												{t('article.repository')}
-											</a>
+											<KolLinkButton
+												_label={t('article.repository')}
+												_href={selectedArticle.github.repo}
+												_target="_blank"
+												_variant="secondary"
+												className="drawer-link"
+											/>
 										)}
 										{selectedArticle.license && (
 											<span className="drawer-license-badge" title={`License: ${selectedArticle.license}`}>
