@@ -352,7 +352,7 @@ export function StackGalleryPage() {
 												<KolButton
 													_label={t('stackGallery.custom.removeDep')}
 													_hideLabel
-													_icons={{ left: 'icon icon-delete' }}
+													_icons={{ left: 'fa-solid fa-trash-can' }}
 													_variant="danger"
 													_on={{ onClick: () => removeItemFromLocalStack(stackInDrawer.id, item.id) }}
 												/>
@@ -368,7 +368,7 @@ export function StackGalleryPage() {
 							<div className="w-full md:w-auto md:shrink-0">
 								<KolButton
 									_label={t('stackGallery.custom.delete')}
-									_icons={{ left: 'icon icon-delete' }}
+									_icons={{ left: 'fa-solid fa-trash-can' }}
 									_variant="danger"
 									_on={{ onClick: () => setStackIdPendingDelete(stackInDrawer.id) }}
 								/>
