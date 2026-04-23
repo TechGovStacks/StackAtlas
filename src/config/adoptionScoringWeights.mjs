@@ -59,6 +59,14 @@ export const HIGH_SOVEREIGNTY_THRESHOLD = 80;
 /** Minimum adoption score for high-sovereignty items with non-zero adoption */
 export const HIGH_SOVEREIGNTY_SOFT_FLOOR_SCORE = 50;
 
+/** Context floor for maintainer role in active stack views */
+export const MAINTAINER_CONTEXT_MIN_ADOPTION = 80;
+export const MAINTAINER_CONTEXT_MIN_SOVEREIGN_ADOPTION = 80;
+
+/** Context floor for contributor role in active stack views */
+export const CONTRIBUTOR_CONTEXT_MIN_ADOPTION = 55;
+export const CONTRIBUTOR_CONTEXT_MIN_SOVEREIGN_ADOPTION = 50;
+
 /**
  * Popularity blending weights: how much external popularity signals contribute
  * to the adoption score segment of the overall score.

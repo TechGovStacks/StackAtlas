@@ -1,14 +1,17 @@
-import { POPULARITY_ADOPTION_BLEND, POPULARITY_ADOPTION_WEIGHT } from '../config/adoptionScoringWeights.mjs';
+import {
+	CONTRIBUTOR_CONTEXT_MIN_ADOPTION,
+	CONTRIBUTOR_CONTEXT_MIN_SOVEREIGN_ADOPTION,
+	MAINTAINER_CONTEXT_MIN_ADOPTION,
+	MAINTAINER_CONTEXT_MIN_SOVEREIGN_ADOPTION,
+	POPULARITY_ADOPTION_BLEND,
+	POPULARITY_ADOPTION_WEIGHT,
+} from '../config/adoptionScoringWeights.mjs';
 import type { AdoptionResult, StackItem } from '../types/index.js';
 
 // Overall score weights (exported so UI can display the derivation without hardcoding)
 export const SOVEREIGNTY_WEIGHT = 0.6;
 export const SOVEREIGN_ADOPTION_WEIGHT = 0.25;
 export const ADOPTION_WEIGHT = 0.15;
-const MAINTAINER_MIN_ADOPTION = 80;
-const MAINTAINER_MIN_SOVEREIGN_ADOPTION = 80;
-const CONTRIBUTOR_MIN_ADOPTION = 55;
-const CONTRIBUTOR_MIN_SOVEREIGN_ADOPTION = 50;
 
 /**
  * Compute overall score as a weighted combination of:
@@ -43,16 +46,16 @@ export function withStackRoleAdoptionContext(adoption: AdoptionResult, stackItem
 	if (stackItem.role === 'maintainer') {
 		return {
 			...adoption,
-			adoptionScore: Math.max(adoption.adoptionScore, MAINTAINER_MIN_ADOPTION),
-			sovereignAdoptionScore: Math.max(adoption.sovereignAdoptionScore, MAINTAINER_MIN_SOVEREIGN_ADOPTION),
+			adoptionScore: Math.max(adoption.adoptionScore, MAINTAINER_CONTEXT_MIN_ADOPTION),
+			sovereignAdoptionScore: Math.max(adoption.sovereignAdoptionScore, MAINTAINER_CONTEXT_MIN_SOVEREIGN_ADOPTION),
 		};
 	}
 
 	if (stackItem.role === 'contributor') {
 		return {
 			...adoption,
-			adoptionScore: Math.max(adoption.adoptionScore, CONTRIBUTOR_MIN_ADOPTION),
-			sovereignAdoptionScore: Math.max(adoption.sovereignAdoptionScore, CONTRIBUTOR_MIN_SOVEREIGN_ADOPTION),
+			adoptionScore: Math.max(adoption.adoptionScore, CONTRIBUTOR_CONTEXT_MIN_ADOPTION),
+			sovereignAdoptionScore: Math.max(adoption.sovereignAdoptionScore, CONTRIBUTOR_CONTEXT_MIN_SOVEREIGN_ADOPTION),
 		};
 	}
 
