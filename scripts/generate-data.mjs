@@ -14,8 +14,15 @@ import { readFileSync, readdirSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 import {
+	ADOPTION_NORMALIZATION_ANCHOR,
+	ADOPTION_NORMALIZATION_PERCENTILE,
+	CONTRIBUTOR_LOW_COVERAGE_BOOST,
 	DIVERSITY_MAX_FACTOR,
 	DIVERSITY_MIN_FACTOR,
+	HIGH_SOVEREIGNTY_SOFT_FLOOR_SCORE,
+	HIGH_SOVEREIGNTY_THRESHOLD,
+	LOW_COVERAGE_THRESHOLD,
+	MAINTAINER_LOW_COVERAGE_BOOST,
 	POPULARITY_ADOPTION_BLEND,
 	POPULARITY_ADOPTION_WEIGHT,
 	ROLE_WEIGHTS,
@@ -93,6 +100,18 @@ function sizeDampening(stackSize) {
 	return 1 / (1 + Math.log10(normalized));
 }
 
+function getLowCoverageRoleBoost(role) {
+	if (role === 'maintainer') {
+		return MAINTAINER_LOW_COVERAGE_BOOST;
+	}
+
+	if (role === 'contributor') {
+		return CONTRIBUTOR_LOW_COVERAGE_BOOST;
+	}
+
+	return 0;
+}
+
 function computeDiversity(stacks, itemId) {
 	const countryFreq = {};
 	let totalCount = 0;
@@ -132,7 +151,11 @@ function computeDirectCoverage(itemId, stacks, itemSovereigntyScore) {
 		const statusWeight = STATUS_WEIGHTS[stackItem.status];
 		const sizeWeight = sizeDampening(stack.items.length);
 
-		const contribution = roleWeight * statusWeight * sizeWeight;
+		let contribution = roleWeight * statusWeight * sizeWeight;
+		if (directCoverage < LOW_COVERAGE_THRESHOLD) {
+			contribution *= 1 + getLowCoverageRoleBoost(stackItem.role);
+		}
+
 		directCoverage += contribution;
 
 		if (itemSovereigntyScore !== undefined && itemSovereigntyScore >= SOVEREIGNTY_THRESHOLD) {
@@ -167,6 +190,19 @@ function computeRawAdoptionScore(directCoverage, transitiveCoverage, diversity) 
 	return withDiversity;
 }
 
+function computePercentile(values, percentile) {
+	if (values.length === 0) return 0;
+	const sorted = [...values].sort((a, b) => a - b);
+	const clampedPercentile = Math.max(0, Math.min(1, percentile));
+	const index = Math.ceil(clampedPercentile * sorted.length) - 1;
+	return sorted[Math.max(0, Math.min(sorted.length - 1, index))];
+}
+
+function normalizeRawScore(raw, denominator) {
+	if (denominator <= 0) return 0;
+	return Math.round(Math.max(0, Math.min(100, (100 * raw) / denominator)));
+}
+
 function computeAdoptionScores(items, stacks, reverseDeps) {
 	const itemMap = {};
 	for (const item of items) {
@@ -194,17 +230,15 @@ function computeAdoptionScores(items, stacks, reverseDeps) {
 		};
 	}
 
-	// Second pass: normalize to [0, 100]
-	let maxAdoption = 0;
-	let maxSovereignAdoption = 0;
+	// Second pass: normalize to [0, 100] using percentile anchors
+	const adoptionRawValues = Object.values(rawScores).map((raw) => raw.adoption);
+	const sovereignAdoptionRawValues = Object.values(rawScores).map((raw) => raw.sovereignAdoption);
 
-	for (const raw of Object.values(rawScores)) {
-		maxAdoption = Math.max(maxAdoption, raw.adoption);
-		maxSovereignAdoption = Math.max(maxSovereignAdoption, raw.sovereignAdoption);
-	}
-
-	if (maxAdoption === 0) maxAdoption = 1;
-	if (maxSovereignAdoption === 0) maxSovereignAdoption = 1;
+	const adoptionDenominator = Math.max(computePercentile(adoptionRawValues, ADOPTION_NORMALIZATION_PERCENTILE), ADOPTION_NORMALIZATION_ANCHOR);
+	const sovereignAdoptionDenominator = Math.max(
+		computePercentile(sovereignAdoptionRawValues, ADOPTION_NORMALIZATION_PERCENTILE),
+		ADOPTION_NORMALIZATION_ANCHOR,
+	);
 
 	const results = {};
 
@@ -212,13 +246,17 @@ function computeAdoptionScores(items, stacks, reverseDeps) {
 		const raw = rawScores[item.id];
 		if (!raw) continue;
 
-		const adoptionScore = Math.round((100 * raw.adoption) / maxAdoption);
-		const sovereignAdoptionScore = Math.round((100 * raw.sovereignAdoption) / maxSovereignAdoption);
+		let adoptionScore = normalizeRawScore(raw.adoption, adoptionDenominator);
+		const sovereignAdoptionScore = normalizeRawScore(raw.sovereignAdoption, sovereignAdoptionDenominator);
+
+		if (item.sovereigntyScore !== undefined && item.sovereigntyScore >= HIGH_SOVEREIGNTY_THRESHOLD && raw.adoption > 0) {
+			adoptionScore = Math.max(adoptionScore, HIGH_SOVEREIGNTY_SOFT_FLOOR_SCORE);
+		}
 
 		results[item.id] = {
 			adoptionScore,
 			sovereignAdoptionScore,
-			overallScore: 0, // Will be computed in next step
+			overallScore: 0,
 			directCoverage: raw.direct,
 			transitiveCoverage: raw.transitive,
 			diversity: raw.diversity,

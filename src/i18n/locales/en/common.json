@@ -190,7 +190,10 @@
 			"sovereignAdoption": "Sovereign Adoption",
 			"adoption": "Adoption",
 			"total": "Overall Score",
-			"usedInStacks": "Used in {{count}} stacks"
+			"usedInStacks": "Used in {{count}} stacks",
+			"directCoverage": "Direct coverage",
+			"transitiveCoverage": "Transitive coverage",
+			"diversity": "Geographic diversity"
 		}
 	},
 	"pwa": {

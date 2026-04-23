@@ -168,7 +168,10 @@
 			"sovereignAdoption": "Suveren adopsjon",
 			"adoption": "Adopsjon",
 			"total": "Totalpoeng",
-			"usedInStacks": "Brukt i {{count}} stacks"
+			"usedInStacks": "Brukt i {{count}} stacks",
+			"directCoverage": "Direct coverage",
+			"transitiveCoverage": "Transitive coverage",
+			"diversity": "Geographic diversity"
 		}
 	},
 	"pwa": {

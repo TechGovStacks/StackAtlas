@@ -288,6 +288,15 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 											<p className="score-breakdown__stacks">
 												{t('article.scoreOverview.usedInStacks', { count: selectedArticle.adoption.usedInStacks.length })}
 											</p>
+											<p className="score-breakdown__stacks">
+												{t('article.scoreOverview.directCoverage')}: {selectedArticle.adoption.directCoverage.toFixed(2)}
+											</p>
+											<p className="score-breakdown__stacks">
+												{t('article.scoreOverview.transitiveCoverage')}: {selectedArticle.adoption.transitiveCoverage.toFixed(2)}
+											</p>
+											<p className="score-breakdown__stacks">
+												{t('article.scoreOverview.diversity')}: {(selectedArticle.adoption.diversity * 100).toFixed(0)}%
+											</p>
 										</div>
 									)}
 
