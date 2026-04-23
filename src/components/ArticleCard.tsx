@@ -4,7 +4,13 @@ import { useTranslation } from 'react-i18next';
 import { ITEMS, LAYERS, STACKS } from '../data/catalog';
 import { Item, ParticipantRole, SovereigntyCriteria, StackItem } from '../types';
 import { buildDependencyGraph, getLocalizedText } from '../utils';
-import { ADOPTION_WEIGHT, SOVEREIGN_ADOPTION_WEIGHT, SOVEREIGNTY_WEIGHT } from '../utils/overallScore';
+import {
+	ADOPTION_WEIGHT,
+	computeContextualOverallScore,
+	SOVEREIGN_ADOPTION_WEIGHT,
+	SOVEREIGNTY_WEIGHT,
+	withStackRoleAdoptionContext,
+} from '../utils/overallScore';
 import { computeEffectiveSovereigntyScoreResult, getScoreCategory, getScoreCategoryColor } from '../utils/sovereigntyScore';
 import { SovereigntyGauge } from './SovereigntyGauge';
 
@@ -69,7 +75,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 	const incomingDependencies = CATALOG_DEPENDENCY_GRAPH.incomingById.get(selectedArticle.id) ?? [];
 	const selectedDependency = [...outgoingDependencies, ...incomingDependencies].find((edge) => edge.id === selectedDependencyId) ?? null;
 
-	const overallScore = article.adoption?.overallScore ?? 0;
+	const overallScore = article.adoption ? computeContextualOverallScore(article.sovereigntyScore ?? 0, article.adoption, stackItem) : 0;
 	// When the drawer is open and the active stack defines a role for the selected
 	// (drill-down) article, honour that role too; otherwise fall back to the
 	// outer stackItem context so navigation between related items keeps the
@@ -77,6 +83,10 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 	const selectedStackItem = stackItemMap?.get(selectedArticle.id) ?? (selectedArticle.id === article.id ? stackItem : undefined);
 	const selectedScoreResult = computeEffectiveSovereigntyScoreResult(selectedArticle.sovereigntyCriteria, selectedStackItem);
 	const selectedScore = selectedScoreResult.score;
+	const selectedAdoption = selectedArticle.adoption ? withStackRoleAdoptionContext(selectedArticle.adoption, selectedStackItem) : undefined;
+	const selectedOverallScore = selectedArticle.adoption
+		? computeContextualOverallScore(selectedScoreResult.rawScore, selectedArticle.adoption, selectedStackItem)
+		: 0;
 	const selectedMaintainerBoosted = selectedScoreResult.maintainerBoosted;
 	const selectedOwnerCountry = selectedArticle.ownerCountry?.toUpperCase();
 	const selectedOwnerCountryFlag = countryToFlagEmoji(selectedOwnerCountry);
@@ -237,15 +247,11 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 									{/* ── Gesamt-Score (Gauge) ─────────────────────────────── */}
 									<p className="drawer-score-title">{t('article.scoreOverview.title')}</p>
 									<div className="drawer-gauge-container">
-										<SovereigntyGauge
-											score={selectedArticle.adoption?.overallScore ?? 0}
-											category={getScoreCategory(selectedArticle.adoption?.overallScore ?? 0)}
-											size={160}
-										/>
+										<SovereigntyGauge score={selectedOverallScore} category={getScoreCategory(selectedOverallScore)} size={160} />
 									</div>
 
 									{/* ── Score-Herleitung ──────────────────────────────────── */}
-									{selectedArticle.adoption && (
+									{selectedAdoption && (
 										<div className="score-breakdown">
 											<p className="score-breakdown__title">{t('article.scoreOverview.calculation')}</p>
 											<div className="score-breakdown__rows">
@@ -259,43 +265,36 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 												</div>
 												<div className="score-breakdown__row">
 													<span className="score-breakdown__label">{t('article.scoreOverview.sovereignAdoption')}</span>
-													<span className="score-breakdown__score" style={{ color: getScoreCategoryColor(selectedArticle.adoption.sovereignAdoptionScore) }}>
-														{selectedArticle.adoption.sovereignAdoptionScore}/100
+													<span className="score-breakdown__score" style={{ color: getScoreCategoryColor(selectedAdoption.sovereignAdoptionScore) }}>
+														{selectedAdoption.sovereignAdoptionScore}/100
 													</span>
 													<span className="score-breakdown__weight">× {(SOVEREIGN_ADOPTION_WEIGHT * 100).toFixed(0)}%</span>
-													<span className="score-breakdown__pts">
-														{(selectedArticle.adoption.sovereignAdoptionScore * SOVEREIGN_ADOPTION_WEIGHT).toFixed(1)}
-													</span>
+													<span className="score-breakdown__pts">{(selectedAdoption.sovereignAdoptionScore * SOVEREIGN_ADOPTION_WEIGHT).toFixed(1)}</span>
 												</div>
 												<div className="score-breakdown__row">
 													<span className="score-breakdown__label">{t('article.scoreOverview.adoption')}</span>
-													<span className="score-breakdown__score" style={{ color: getScoreCategoryColor(selectedArticle.adoption.adoptionScore) }}>
-														{selectedArticle.adoption.adoptionScore}/100
+													<span className="score-breakdown__score" style={{ color: getScoreCategoryColor(selectedAdoption.adoptionScore) }}>
+														{selectedAdoption.adoptionScore}/100
 													</span>
 													<span className="score-breakdown__weight">× {(ADOPTION_WEIGHT * 100).toFixed(0)}%</span>
-													<span className="score-breakdown__pts">{(selectedArticle.adoption.adoptionScore * ADOPTION_WEIGHT).toFixed(1)}</span>
+													<span className="score-breakdown__pts">{(selectedAdoption.adoptionScore * ADOPTION_WEIGHT).toFixed(1)}</span>
 												</div>
 												<div className="score-breakdown__row score-breakdown__row--total">
 													<span className="score-breakdown__label">{t('article.scoreOverview.total')}</span>
-													<span
-														className="score-breakdown__score score-breakdown__score--total"
-														style={{ color: getScoreCategoryColor(selectedArticle.adoption.overallScore) }}
-													>
-														{selectedArticle.adoption.overallScore}/100
+													<span className="score-breakdown__score score-breakdown__score--total" style={{ color: getScoreCategoryColor(selectedOverallScore) }}>
+														{selectedOverallScore}/100
 													</span>
 												</div>
 											</div>
+											<p className="score-breakdown__stacks">{t('article.scoreOverview.usedInStacks', { count: selectedAdoption.usedInStacks.length })}</p>
 											<p className="score-breakdown__stacks">
-												{t('article.scoreOverview.usedInStacks', { count: selectedArticle.adoption.usedInStacks.length })}
+												{t('article.scoreOverview.directCoverage')}: {selectedAdoption.directCoverage.toFixed(2)}
 											</p>
 											<p className="score-breakdown__stacks">
-												{t('article.scoreOverview.directCoverage')}: {selectedArticle.adoption.directCoverage.toFixed(2)}
+												{t('article.scoreOverview.transitiveCoverage')}: {selectedAdoption.transitiveCoverage.toFixed(2)}
 											</p>
 											<p className="score-breakdown__stacks">
-												{t('article.scoreOverview.transitiveCoverage')}: {selectedArticle.adoption.transitiveCoverage.toFixed(2)}
-											</p>
-											<p className="score-breakdown__stacks">
-												{t('article.scoreOverview.diversity')}: {(selectedArticle.adoption.diversity * 100).toFixed(0)}%
+												{t('article.scoreOverview.diversity')}: {(selectedAdoption.diversity * 100).toFixed(0)}%
 											</p>
 										</div>
 									)}

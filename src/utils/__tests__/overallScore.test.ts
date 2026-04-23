@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import type { AdoptionResult } from '../../types/index.js';
-import { computeOverallScore, enrichAdoptionWithOverallScore } from '../overallScore.js';
+import type { AdoptionResult, StackItem } from '../../types/index.js';
+import { computeContextualOverallScore, computeOverallScore, enrichAdoptionWithOverallScore, withStackRoleAdoptionContext } from '../overallScore.js';
 
 describe('computeOverallScore', () => {
 	it('computes weighted sum of 60% sovereignty + 25% sovereign adoption + 15% adoption', () => {
@@ -149,5 +149,74 @@ describe('enrichAdoptionWithOverallScore', () => {
 		expect(enriched.transitiveCoverage).toBe(adoption.transitiveCoverage);
 		expect(enriched.diversity).toBe(adoption.diversity);
 		expect(enriched.usedInStacks).toEqual(adoption.usedInStacks);
+	});
+});
+
+describe('withStackRoleAdoptionContext', () => {
+	const baseAdoption: AdoptionResult = {
+		adoptionScore: 0,
+		sovereignAdoptionScore: 0,
+		overallScore: 0,
+		directCoverage: 0,
+		transitiveCoverage: 0,
+		diversity: 0,
+		usedInStacks: [],
+	};
+
+	it('applies a strong floor for maintainer relationships', () => {
+		const stackItem: StackItem = {
+			itemId: 'item1',
+			role: 'maintainer',
+			status: 'approved',
+		};
+		const contextual = withStackRoleAdoptionContext(baseAdoption, stackItem);
+		expect(contextual.adoptionScore).toBeGreaterThanOrEqual(80);
+		expect(contextual.sovereignAdoptionScore).toBeGreaterThanOrEqual(80);
+	});
+
+	it('applies a moderate floor for contributor relationships', () => {
+		const stackItem: StackItem = {
+			itemId: 'item1',
+			role: 'contributor',
+			status: 'approved',
+		};
+		const contextual = withStackRoleAdoptionContext(baseAdoption, stackItem);
+		expect(contextual.adoptionScore).toBeGreaterThanOrEqual(55);
+		expect(contextual.sovereignAdoptionScore).toBeGreaterThanOrEqual(50);
+	});
+
+	it('does not apply floors for deprecated items', () => {
+		const stackItem: StackItem = {
+			itemId: 'item1',
+			role: 'maintainer',
+			status: 'deprecated',
+		};
+		const contextual = withStackRoleAdoptionContext(baseAdoption, stackItem);
+		expect(contextual.adoptionScore).toBe(0);
+		expect(contextual.sovereignAdoptionScore).toBe(0);
+	});
+});
+
+describe('computeContextualOverallScore', () => {
+	it('lifts overall score for maintainer context compared to raw overall score', () => {
+		const baseAdoption: AdoptionResult = {
+			adoptionScore: 0,
+			sovereignAdoptionScore: 0,
+			overallScore: 0,
+			directCoverage: 0,
+			transitiveCoverage: 0,
+			diversity: 0,
+			usedInStacks: [],
+		};
+		const stackItem: StackItem = {
+			itemId: 'item1',
+			role: 'maintainer',
+			status: 'approved',
+		};
+		const raw = computeOverallScore(100, baseAdoption);
+		const contextual = computeContextualOverallScore(100, baseAdoption, stackItem);
+		expect(raw).toBe(60);
+		expect(contextual).toBeGreaterThan(raw);
+		expect(contextual).toBeGreaterThanOrEqual(90);
 	});
 });

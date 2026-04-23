@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { FilterState, Item, Layer, Stack, StackItem } from '../types';
 import { getLocalizedText } from '../utils';
+import { computeContextualOverallScore } from '../utils/overallScore';
 import { computeEffectiveSovereigntyScore } from '../utils/sovereigntyScore';
 import { ArticleCard } from './ArticleCard';
 import { SortDir, SortField, ViewMode } from './FilterBar';
@@ -61,7 +62,21 @@ export function CategoryGrid({
 				if (sortField === 'name') {
 					cmp = getLocalizedText(a.name, i18n.language).localeCompare(getLocalizedText(b.name, i18n.language), i18n.language);
 				} else if (sortField === 'overall') {
-					cmp = (b.adoption?.overallScore ?? 0) - (a.adoption?.overallScore ?? 0);
+					const aScore = a.adoption
+						? computeContextualOverallScore(
+								computeEffectiveSovereigntyScore(a.sovereigntyCriteria, stackItemMap?.get(a.id)),
+								a.adoption,
+								stackItemMap?.get(a.id),
+							)
+						: 0;
+					const bScore = b.adoption
+						? computeContextualOverallScore(
+								computeEffectiveSovereigntyScore(b.sovereigntyCriteria, stackItemMap?.get(b.id)),
+								b.adoption,
+								stackItemMap?.get(b.id),
+							)
+						: 0;
+					cmp = bScore - aScore;
 				} else if (sortField === 'sovereignty') {
 					cmp =
 						computeEffectiveSovereigntyScore(a.sovereigntyCriteria, stackItemMap?.get(a.id)) -
