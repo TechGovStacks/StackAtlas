@@ -1536,23 +1536,6 @@ kol-badge.stack-expose__status-badge {
 	min-width: 0;
 }
 
-// Transparent background for all KoliBri form fields
-kol-single-select,
-kol-input-text,
-kol-input-checkbox,
-kol-select {
-	--kol-color-background: transparent;
-	--kol-color-input-background: transparent;
-}
-
-// Transparent sort select – host-level override
-.sort-select {
-	--kol-color-background: transparent;
-	--kol-color-input-background: transparent;
-
-	background: transparent;
-}
-
 /* ─────────────────────────────────────────────────────────────────────────────
    Articles List & Card (List View)
    ───────────────────────────────────────────────────────────────────────────── */

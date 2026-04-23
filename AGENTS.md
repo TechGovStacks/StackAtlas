@@ -118,17 +118,18 @@ mcp_kolibri-mcp_fetch(url: "https://kolibri.digital/<component>")
 
 Only fall back to custom HTML/CSS if KoliBri provably has no solution.
 
-### Styling Implication
+### Styling Implication (verbindliche Entscheidung)
 
-KoliBri components come with **built-in styling** that follows accessibility and design standards. This means:
+Für dieses Repository gilt **pragmatische Mischform (b)**:
 
-- **Reuse MaxiM**: Use as many KoliBri components as possible to minimize custom CSS work
-- **App-Specific Styling Focus**: Component-specific styling in `src/style.scss` should focus primarily on **responsive page layout** – positioning components on the page, media queries, spacing, and responsive grid adjustments
-- **Component Styling**: Do NOT override KoliBri component internals (buttons, inputs, etc.). Each component is pre-styled for consistency and accessibility
-- **Global Tokens**: Leverage CSS custom properties (`--ds-*` tokens) in `style.scss` for theming and layout adjustments instead of adding custom component styles
-- **Minimal Custom CSS**: The less custom CSS needed, the better. If you find yourself writing many page-specific styles, consider if a KoliBri component can solve it
+- **KoliBri First** bleibt verpflichtend: Komponenten werden weiterhin primär aus `@public-ui/preact` genutzt.
+- **Layout-Regeln** dürfen sowohl in UnoCSS-Utilities (`className`) als auch in `src/style.scss` liegen, wenn es die Lesbarkeit verbessert oder komplexe responsive Grid-/Area-Layouts betrifft.
+- **KoliBri-Overrides** sind **nur als Host-Variablen-Overrides** erlaubt (z. B. `--kol-color-*` auf `kol-*` Hosts), wenn sie Design-Tokens oder visuelle Konsistenz herstellen.
+- **Nicht erlaubt** sind tiefe Eingriffe in KoliBri-Internals (Shadow-DOM-Umgehungen, strukturelle Manipulationen, component-internal CSS-Hacks).
+- **Global Tokens bevorzugen**: Overrides immer zuerst über `--ds-*` und dokumentierte `--kol-*` Variablen lösen.
+- **Einmalige Definitionen**: Wiederholte globale `kol-*` Override-Blöcke vermeiden und zentral halten.
 
-Example: A technology list should use `KolCard` (pre-styled) with UnoCSS/SCSS for grid layout and spacing, not custom card HTML.
+Beispiel: Ein Technologie-Listing nutzt `KolCard`; app-spezifisches Layout kann über UnoCSS und/oder SCSS erfolgen, interne Card-Styles werden nicht gehackt.
 
 ## Coding Conventions
 
@@ -168,9 +169,9 @@ All custom components get **BEM-named classes** with full styling in `src/style.
 </header>
 ```
 
-#### 2. **Layout Utilities (UnoCSS Only)**
+#### 2. **Layout Utilities (UnoCSS Preferred, SCSS Allowed)**
 
-Only these layout/responsive utilities appear in `className`:
+Bevorzugt werden diese layout/responsiven Utilities in `className`:
 
 - `flex`, `grid`, `gap`, `items-center`, `justify-between` (layout)
 - `w-full`, `max-w-6xl`, `px-4`, `md:px-6` (sizing, spacing)
@@ -178,7 +179,7 @@ Only these layout/responsive utilities appear in `className`:
 - `md:`, `lg:`, `sm:` (responsive breakpoints)
 - Width, height, margin, padding utilities
 
-**Never** use UnoCSS for component styling (gradients, colors, borders, shadows via utilities).
+Komponenten-Visuals (Farben, Borders, Schatten, Typografie) bleiben primär in SCSS/BEM.
 
 #### 3. **No Inline Styles**
 
@@ -202,9 +203,9 @@ Only these layout/responsive utilities appear in `className`:
 | ------------------------- | -------- | ------------ | ------------------------------------------------------------------- |
 | Colors, borders, shadows  | SCSS BEM | `style.scss` | `.header { background-color: var(--ds-color-primary); }`            |
 | Typography, font-size     | SCSS BEM | `style.scss` | `.header__title { font-weight: bold; font-size: 1.25rem; }`         |
-| Layout, flex/grid, gaps   | UnoCSS   | `className`  | `className="flex gap-4 md:gap-6"`                                   |
-| Responsive sizing         | UnoCSS   | `className`  | `className="w-full md:max-w-6xl px-4 md:px-6"`                      |
-| Responsive layout changes | UnoCSS   | `className`  | `className="flex flex-col md:flex-row items-start md:items-center"` |
+| Layout, flex/grid, gaps   | UnoCSS/SCSS | `className` + `style.scss` | `className="flex gap-4 md:gap-6"` oder `.filter-bar__inner { display:grid; }` |
+| Responsive sizing         | UnoCSS/SCSS | `className` + `style.scss` | `className="w-full md:max-w-6xl px-4 md:px-6"` oder media queries in SCSS |
+| Responsive layout changes | UnoCSS/SCSS | `className` + `style.scss` | `className="flex flex-col md:flex-row"` oder `grid-template-areas` in SCSS |
 
 This approach eliminates duplication and keeps styling intent clear.
 
@@ -213,9 +214,9 @@ This approach eliminates duplication and keeps styling intent clear.
 - **Flat BEM selectors** at the root level (do not nest BEM modifiers)
 - **Contextual nesting** only when a modifier changes element behavior
 - **Never** use `$root` variables or `@at-root` – use direct descendant selectors
-- **No inline margin/padding for responsive layout** – use UnoCSS utilities in className
+- **No inline margin/padding for responsive layout** – use UnoCSS utilities or SCSS classes, but never inline styles
 - **Rely on SCSS variables** for internal calculations (colors, spacing vars)
-- **Layout properties stay out of SCSS** (no flex, grid, gap, etc. in component CSS)
+- **Layout properties in SCSS are allowed** where this reduces complexity (e.g., responsive grid areas)
 
 ### BEM + UnoCSS Example
 
