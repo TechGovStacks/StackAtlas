@@ -47,7 +47,7 @@ function mapAppLanguageToKolibriLanguage(language: string): KolibriLanguage {
 
 function syncKoliBriLanguage(language: string): Promise<void[]> {
 	const kolibriLanguage = mapAppLanguageToKolibriLanguage(language);
-	return register([KERN_V2, DEFAULT], defineCustomElements, { translation: { name: kolibriLanguage } });
+	return register([DEFAULT, KERN_V2], defineCustomElements, { translation: { name: kolibriLanguage } });
 }
 
 function dismissSplash(): void {
