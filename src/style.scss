@@ -444,32 +444,6 @@ main {
 	border-bottom: 1px solid rgb(255 255 255 / 12%);
 }
 
-.footer__brand-row {
-	width: 100%;
-}
-
-.footer__github-corner {
-	background-color: rgb(255 255 255 / 10%);
-	border: 1px solid rgb(255 255 255 / 20%);
-	border-radius: var(--ds-radius-sm);
-	color: var(--ds-color-text-inverse);
-	display: inline-flex;
-	font-size: var(--ds-text-xs);
-	font-weight: 600;
-	padding: var(--ds-space-2) var(--ds-space-3);
-	text-decoration: none;
-	transition: background-color 150ms ease-in-out;
-
-	&:hover {
-		background-color: rgb(255 255 255 / 18%);
-	}
-
-	&:focus-visible {
-		outline: 2px solid var(--ds-color-accent);
-		outline-offset: 2px;
-	}
-}
-
 .footer__brand {
 	display: flex;
 	flex-direction: column;
@@ -495,6 +469,10 @@ main {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+.footer__github-cta {
+	font-size: var(--ds-text-xs);
 }
 
 .footer__link {
