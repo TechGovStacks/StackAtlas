@@ -1,4 +1,4 @@
-import { KolAvatar, KolButton, KolCard, KolDrawer, KolImage } from '@public-ui/preact';
+import { KolAvatar, KolBadge, KolButton, KolCard, KolDrawer, KolImage } from '@public-ui/preact';
 import { useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { ITEMS, LAYERS, STACKS } from '../data/catalog';
@@ -131,19 +131,20 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 
 	const badges = (
 		<>
-			<span
+			<KolBadge
 				className="card-score-badge"
-				style={{ background: overallScoreColor, color: '#fff' }}
+				_color={overallScoreColor}
+				_label={`${overallScore} ${t(`article.scoreCategories.${overallScoreCategory}`)}`}
 				title={`${t('article.scoreOverview.total')}: ${overallScore}/100`}
 				aria-label={`${t('article.scoreOverview.total')}: ${overallScore}/100`}
-			>
-				<span className="card-score-number">{overallScore}</span>
-				<span className="card-score-category">{t(`article.scoreCategories.${overallScoreCategory}`)}</span>
-			</span>
+			/>
 			{stackItem && (
-				<span className="card-role-badge" style={{ background: ROLE_COLORS[stackItem.role], color: '#fff' }} title={t(`stack.roles.${stackItem.role}`)}>
-					{t(`stack.roles.${stackItem.role}`)}
-				</span>
+				<KolBadge
+					className="card-role-badge"
+					_color={ROLE_COLORS[stackItem.role]}
+					_label={t(`stack.roles.${stackItem.role}`)}
+					title={t(`stack.roles.${stackItem.role}`)}
+				/>
 			)}
 		</>
 	);
@@ -215,9 +216,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 											</a>
 										)}
 										{selectedArticle.license && (
-											<span className="drawer-license-badge" title={`License: ${selectedArticle.license}`}>
-												{selectedArticle.license}
-											</span>
+											<KolBadge className="drawer-license-badge" _label={selectedArticle.license} title={`License: ${selectedArticle.license}`} />
 										)}
 									</div>
 								</div>

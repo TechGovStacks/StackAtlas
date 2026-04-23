@@ -1,3 +1,4 @@
+import { KolBadge } from '@public-ui/preact';
 import { ComponentChildren } from 'preact';
 import { useMemo } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
@@ -89,11 +90,7 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank, children }
 								</span>
 							)}
 							{localizedName}
-							{isTop && (
-								<span className="stack-expose__best-badge" aria-label={t('stackGallery.bestStack')}>
-									<span aria-hidden="true"> ★</span>
-								</span>
-							)}
+							{isTop && <KolBadge className="stack-expose__best-badge" _label={`★ ${t('stackGallery.bestStack')}`} aria-label={t('stackGallery.bestStack')} />}
 						</h2>
 					</div>
 
@@ -218,9 +215,12 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank, children }
 				<h3 className="stack-expose__section-title">{t('stackGallery.metrics.roles')}</h3>
 				<div className="stack-expose__roles">
 					{PARTICIPANT_ROLES.filter((role) => metrics.roleCounts[role] > 0).map((role) => (
-						<span key={role} className="stack-expose__role-badge" style={{ background: ROLE_COLORS[role], color: '#fff' }}>
-							{metrics.roleCounts[role]} {t(`stack.roles.${role}`)}
-						</span>
+						<KolBadge
+							key={role}
+							className="stack-expose__role-badge"
+							_color={ROLE_COLORS[role]}
+							_label={`${metrics.roleCounts[role]} ${t(`stack.roles.${role}`)}`}
+						/>
 					))}
 				</div>
 			</div>
@@ -249,19 +249,22 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank, children }
 			{/* ── Status-Zeile ──────────────────────────────────────────── */}
 			<div className="stack-expose__statuses">
 				{metrics.statusCounts.recommended > 0 && (
-					<span className="stack-expose__status-badge stack-expose__status-badge--recommended">
-						{metrics.statusCounts.recommended} {t('stackGallery.recommended')}
-					</span>
+					<KolBadge
+						className="stack-expose__status-badge stack-expose__status-badge--recommended"
+						_label={`${metrics.statusCounts.recommended} ${t('stackGallery.recommended')}`}
+					/>
 				)}
 				{metrics.statusCounts.approved > 0 && (
-					<span className="stack-expose__status-badge stack-expose__status-badge--approved">
-						{metrics.statusCounts.approved} {t('stackGallery.approved')}
-					</span>
+					<KolBadge
+						className="stack-expose__status-badge stack-expose__status-badge--approved"
+						_label={`${metrics.statusCounts.approved} ${t('stackGallery.approved')}`}
+					/>
 				)}
 				{metrics.statusCounts.deprecated > 0 && (
-					<span className="stack-expose__status-badge stack-expose__status-badge--deprecated">
-						{metrics.statusCounts.deprecated} {t('stackGallery.deprecated')}
-					</span>
+					<KolBadge
+						className="stack-expose__status-badge stack-expose__status-badge--deprecated"
+						_label={`${metrics.statusCounts.deprecated} ${t('stackGallery.deprecated')}`}
+					/>
 				)}
 			</div>
 
