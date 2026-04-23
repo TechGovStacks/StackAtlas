@@ -1958,6 +1958,23 @@ kol-select {
 	font-size: var(--ds-text-sm);
 }
 
+.stack-gallery__drawer-section {
+	border-top: 1px solid var(--ds-color-border);
+	padding-top: var(--ds-space-3);
+}
+
+.stack-gallery__drawer-section:first-child {
+	border-top: none;
+	padding-top: 0;
+}
+
+.stack-gallery__drawer-section-title {
+	margin: 0 0 var(--ds-space-2);
+	font-size: var(--ds-text-base);
+	font-weight: 600;
+	color: var(--ds-color-text);
+}
+
 /* ─────────────────────────────────────────────────────────────────────────────
    Stack Exposé – einzelne Karte
    ───────────────────────────────────────────────────────────────────────────── */
