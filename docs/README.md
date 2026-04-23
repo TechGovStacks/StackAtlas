@@ -26,7 +26,6 @@ Dieses Dokument ist das Rahmendokument fuer die aktive Projektdokumentation.
 3. Repo- und Verzeichnis-Kontext: `README.md` im Root und `data/README.md`
 4. Exemplarische Erklärung des Dependency-Modells: `docs/examples/items-as-dependencies.md`
 
-
 ## Dependency-Versionierung (Source of Truth)
 
 - Fuer `package.json` gelten ausschliesslich **exakte Versionen** (z. B. `2.1.1`).
