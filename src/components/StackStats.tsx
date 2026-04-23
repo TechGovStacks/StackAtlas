@@ -1,3 +1,4 @@
+import { KolBadge } from '@public-ui/preact';
 import { useTranslation } from 'react-i18next';
 import { Item, ParticipantRole, Stack, StackItem } from '../types';
 import { getLocalizedText } from '../utils';
@@ -59,9 +60,7 @@ export function StackStats({ stack, items, stackItemMap }: StackStatsProps) {
 				{roles
 					.filter((role) => roleCounts[role])
 					.map((role) => (
-						<span key={role} className="stack-stats__role-badge" style={{ background: ROLE_COLORS[role], color: '#fff' }}>
-							{roleCounts[role]} {t(`stack.roles.${role}`)}
-						</span>
+						<KolBadge key={role} className="stack-stats__role-badge" _color={ROLE_COLORS[role]} _label={`${roleCounts[role]} ${t(`stack.roles.${role}`)}`} />
 					))}
 			</div>
 		</div>
