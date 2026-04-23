@@ -1,5 +1,4 @@
-import { KolAvatar, KolBadge, KolButton, KolCard, KolDrawer, KolImage } from '@public-ui/preact';
-import { KolAvatar, KolButton, KolCard, KolDrawer, KolImage, KolLinkButton } from '@public-ui/preact';
+import { KolAvatar, KolBadge, KolButton, KolCard, KolDrawer, KolImage, KolLinkButton } from '@public-ui/preact';
 import { useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { ITEMS, LAYERS, STACKS } from '../data/catalog';

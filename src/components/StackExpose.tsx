@@ -1,5 +1,4 @@
-import { KolBadge } from '@public-ui/preact';
-import { KolLinkButton } from '@public-ui/preact';
+import { KolBadge, KolLinkButton } from '@public-ui/preact';
 import { ComponentChildren } from 'preact';
 import { useMemo } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
