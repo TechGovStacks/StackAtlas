@@ -85,7 +85,7 @@ export function Header({ currentUrl }: HeaderProps) {
 							rel="noopener noreferrer"
 						>
 							<span className="header__brand-mark inline-flex w-6 h-6 flex-shrink-0">
-								<KolImage _src={`${baseUrl}favicon.svg`} _alt="" _width={24} _height={24} _loading="eager" />
+								<KolImage className="block w-6 h-6" _src={`${baseUrl}favicon.svg`} _alt="" _loading="eager" />
 							</span>
 							<span>StackAtlas</span>
 						</a>
