@@ -11,6 +11,7 @@ import { useRouteAnnouncement } from '../hooks/useRouteAnnouncement';
 import { computeStackAvgScore, useStackMetrics } from '../hooks/useStackMetrics';
 import { Item, Stack } from '../types';
 import { getLocalizedText } from '../utils';
+import { computeEffectiveSovereigntyScore } from '../utils/sovereigntyScore';
 
 interface StackExposeWithMetricsProps {
 	children?: ComponentChildren;
@@ -67,9 +68,9 @@ export function StackGalleryPage() {
 	const itemOptions = useMemo(
 		() =>
 			ITEMS.map((item) => {
-				const score = item.adoption?.overallScore ?? 0;
+				const baseScore = item.sovereigntyScore ?? computeEffectiveSovereigntyScore(item.sovereigntyCriteria);
 				return {
-					label: `${getLocalizedText(item.name, i18n.language)} (${score})`,
+					label: `${getLocalizedText(item.name, i18n.language)} (${baseScore})`,
 					value: item.id,
 				};
 			}),
