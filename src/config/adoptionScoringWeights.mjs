@@ -38,6 +38,27 @@ export const SOVEREIGNTY_THRESHOLD = 61;
 /** Reference stack size for log-based size dampening */
 export const SIZE_DAMP_REFERENCE = 20;
 
+/** Low-coverage threshold: below this direct coverage we apply role-sensitive lift */
+export const LOW_COVERAGE_THRESHOLD = 1.2;
+
+/** Extra lift for maintainer roles under low direct coverage */
+export const MAINTAINER_LOW_COVERAGE_BOOST = 0.2;
+
+/** Extra lift for contributor roles under low direct coverage */
+export const CONTRIBUTOR_LOW_COVERAGE_BOOST = 0.05;
+
+/** Percentile anchor for robust normalization (0..1) */
+export const ADOPTION_NORMALIZATION_PERCENTILE = 0.95;
+
+/** Minimum denominator anchor to avoid over-compression */
+export const ADOPTION_NORMALIZATION_ANCHOR = 0.45;
+
+/** Sovereignty threshold where soft floor can apply */
+export const HIGH_SOVEREIGNTY_THRESHOLD = 80;
+
+/** Minimum adoption score for high-sovereignty items with non-zero adoption */
+export const HIGH_SOVEREIGNTY_SOFT_FLOOR_SCORE = 50;
+
 /**
  * Popularity blending weights: how much external popularity signals contribute
  * to the adoption score segment of the overall score.

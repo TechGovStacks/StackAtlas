@@ -1,13 +1,20 @@
 import {
+	ADOPTION_NORMALIZATION_ANCHOR,
+	ADOPTION_NORMALIZATION_PERCENTILE,
+	CONTRIBUTOR_LOW_COVERAGE_BOOST,
 	DIVERSITY_MAX_FACTOR,
 	DIVERSITY_MIN_FACTOR,
+	HIGH_SOVEREIGNTY_SOFT_FLOOR_SCORE,
+	HIGH_SOVEREIGNTY_THRESHOLD,
+	LOW_COVERAGE_THRESHOLD,
+	MAINTAINER_LOW_COVERAGE_BOOST,
 	ROLE_WEIGHTS,
 	SIZE_DAMP_REFERENCE,
 	SOVEREIGNTY_THRESHOLD,
 	STATUS_WEIGHTS,
 	TRANSITIVE_WEIGHT,
 } from '../config/adoptionScoringWeights.mjs';
-import type { AdoptionResult, Item, Stack } from '../types/index.js';
+import type { AdoptionResult, Item, ParticipantRole, Stack } from '../types/index.js';
 
 /**
  * SIZE_DAMP: Normalize contribution by stack size.
@@ -17,6 +24,18 @@ import type { AdoptionResult, Item, Stack } from '../types/index.js';
 function sizedampening(stackSize: number): number {
 	const normalized = Math.max(1, stackSize / SIZE_DAMP_REFERENCE);
 	return 1 / (1 + Math.log10(normalized));
+}
+
+function getLowCoverageRoleBoost(role: ParticipantRole): number {
+	if (role === 'maintainer') {
+		return MAINTAINER_LOW_COVERAGE_BOOST;
+	}
+
+	if (role === 'contributor') {
+		return CONTRIBUTOR_LOW_COVERAGE_BOOST;
+	}
+
+	return 0;
 }
 
 /**
@@ -73,6 +92,9 @@ function buildReverseDependencyMap(items: Item[]): Map<string, string[]> {
 /**
  * Compute direct stack coverage: sum of (role weight × status weight × size dampening)
  * across all stacks where this item appears.
+ *
+ * In low-coverage situations, maintainer/contributor receive a calibrated boost to
+ * reflect intentional ownership and influence.
  */
 function computeDirectCoverage(
 	itemId: string,
@@ -93,10 +115,15 @@ function computeDirectCoverage(
 		const statusWeight = STATUS_WEIGHTS[stackItem.status];
 		const sizeWeight = sizedampening(stack.items.length);
 
-		const contribution = roleWeight * statusWeight * sizeWeight;
+		let contribution = roleWeight * statusWeight * sizeWeight;
+		if (directCoverage < LOW_COVERAGE_THRESHOLD) {
+			const lowCoverageBoost = getLowCoverageRoleBoost(stackItem.role);
+			contribution *= 1 + lowCoverageBoost;
+		}
+
 		directCoverage += contribution;
 
-		// Sovereign adoption: only if stack is sovereignly-rated AND item ≥ 61
+		// Sovereign adoption: only if stack is sovereignly-rated AND item ≥ threshold
 		if (itemSovereigntyScore !== undefined && itemSovereigntyScore >= SOVEREIGNTY_THRESHOLD) {
 			sovereignCoverage += contribution;
 		}
@@ -143,6 +170,19 @@ function computeRawAdoptionScore(directCoverage: number, transitiveCoverage: num
 	const totalCoverage = directCoverage + transitiveCoverage;
 	const withDiversity = Math.log1p(totalCoverage) * (DIVERSITY_MIN_FACTOR + DIVERSITY_MAX_FACTOR * diversity);
 	return withDiversity;
+}
+
+function computePercentile(values: number[], percentile: number): number {
+	if (values.length === 0) return 0;
+	const sorted = [...values].sort((a, b) => a - b);
+	const clampedPercentile = Math.max(0, Math.min(1, percentile));
+	const index = Math.ceil(clampedPercentile * sorted.length) - 1;
+	return sorted[Math.max(0, Math.min(sorted.length - 1, index))];
+}
+
+function normalizeRawScore(raw: number, denominator: number): number {
+	if (denominator <= 0) return 0;
+	return Math.round(Math.max(0, Math.min(100, (100 * raw) / denominator)));
 }
 
 /**
@@ -193,17 +233,15 @@ export function computeAdoptionScores(items: Item[], stacks: Stack[], reverseDep
 		});
 	}
 
-	// Second pass: normalize to [0, 100]
-	let maxAdoption = 0;
-	let maxSovereignAdoption = 0;
+	// Second pass: normalize to [0, 100] using percentile anchors for robustness
+	const adoptionRawValues = Array.from(rawScores.values()).map((entry) => entry.adoption);
+	const sovereignAdoptionRawValues = Array.from(rawScores.values()).map((entry) => entry.sovereignAdoption);
 
-	for (const { adoption, sovereignAdoption } of rawScores.values()) {
-		maxAdoption = Math.max(maxAdoption, adoption);
-		maxSovereignAdoption = Math.max(maxSovereignAdoption, sovereignAdoption);
-	}
-
-	if (maxAdoption === 0) maxAdoption = 1;
-	if (maxSovereignAdoption === 0) maxSovereignAdoption = 1;
+	const adoptionDenominator = Math.max(computePercentile(adoptionRawValues, ADOPTION_NORMALIZATION_PERCENTILE), ADOPTION_NORMALIZATION_ANCHOR);
+	const sovereignAdoptionDenominator = Math.max(
+		computePercentile(sovereignAdoptionRawValues, ADOPTION_NORMALIZATION_PERCENTILE),
+		ADOPTION_NORMALIZATION_ANCHOR,
+	);
 
 	const results = new Map<string, AdoptionResult>();
 
@@ -211,8 +249,12 @@ export function computeAdoptionScores(items: Item[], stacks: Stack[], reverseDep
 		const raw = rawScores.get(item.id);
 		if (!raw) continue;
 
-		const adoptionScore = Math.round((100 * raw.adoption) / maxAdoption);
-		const sovereignAdoptionScore = Math.round((100 * raw.sovereignAdoption) / maxSovereignAdoption);
+		let adoptionScore = normalizeRawScore(raw.adoption, adoptionDenominator);
+		const sovereignAdoptionScore = normalizeRawScore(raw.sovereignAdoption, sovereignAdoptionDenominator);
+
+		if (item.sovereigntyScore !== undefined && item.sovereigntyScore >= HIGH_SOVEREIGNTY_THRESHOLD && raw.adoption > 0) {
+			adoptionScore = Math.max(adoptionScore, HIGH_SOVEREIGNTY_SOFT_FLOOR_SCORE);
+		}
 
 		results.set(item.id, {
 			adoptionScore,
