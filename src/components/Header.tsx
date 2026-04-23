@@ -1,4 +1,4 @@
-import { KolButton, KolDrawer } from '@public-ui/preact';
+import { KolButton, KolDrawer, KolImage } from '@public-ui/preact';
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { getAppVersion, getCommitDisplay } from '../utils';
@@ -85,7 +85,7 @@ export function Header({ currentUrl }: HeaderProps) {
 							rel="noopener noreferrer"
 						>
 							<span className="header__brand-mark inline-flex w-6 h-6 flex-shrink-0">
-								<img src={`${baseUrl}favicon.svg`} alt="" width="24" height="24" loading="eager" decoding="async" />
+								<KolImage className="block w-6 h-6" _src={`${baseUrl}favicon.svg`} _alt="" _loading="eager" />
 							</span>
 							<span>StackAtlas</span>
 						</a>
