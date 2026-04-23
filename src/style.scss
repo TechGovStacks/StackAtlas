@@ -985,7 +985,16 @@ kol-card.article-card,
 .card-header {
 	display: flex;
 	align-items: flex-start;
+	flex-wrap: wrap;
 	gap: var(--ds-space-3);
+}
+
+.card-badges {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--ds-space-2);
+	align-items: center;
+	margin-left: auto;
 }
 
 .card-category-dot {
@@ -1044,6 +1053,17 @@ kol-card.article-card,
 	flex-shrink: 0;
 	margin-left: auto;
 	gap: 2px;
+}
+
+kol-badge.card-score-badge,
+kol-badge.card-role-badge,
+kol-badge.drawer-license-badge,
+kol-badge.stack-stats__role-badge,
+kol-badge.stack-expose__best-badge,
+kol-badge.stack-expose__role-badge,
+kol-badge.stack-expose__status-badge {
+	display: inline-flex;
+	inline-size: fit-content;
 }
 
 .card-score-number {
@@ -1705,6 +1725,7 @@ kol-select {
 
 .card-list-badges {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	gap: var(--ds-space-2);
 	flex-shrink: 0;
@@ -2323,6 +2344,7 @@ kol-select {
 .stack-expose__statuses {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: center;
 	gap: var(--ds-space-2);
 	margin-bottom: var(--ds-space-6);
 }

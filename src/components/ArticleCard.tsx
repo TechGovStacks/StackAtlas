@@ -130,7 +130,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 	const overallScoreCategory = getScoreCategory(overallScore);
 
 	const badges = (
-		<>
+		<div className="card-badges">
 			<KolBadge
 				className="card-score-badge"
 				_color={overallScoreColor}
@@ -146,7 +146,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 					title={t(`stack.roles.${stackItem.role}`)}
 				/>
 			)}
-		</>
+		</div>
 	);
 
 	return (
