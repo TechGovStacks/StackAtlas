@@ -1,7 +1,7 @@
 ---
 focus: scoringExplained
-title: Scoring-Update: Adoption-Kalibrierung jetzt in Doku, Konzeption und UI sichtbar
-summary: Das optimierte Adoption-Scoring ist jetzt konsistent dokumentiert und im Stack-Kontext sichtbar – inklusive robuster Normalisierung, Low-Coverage-Rollenlift und Maintainer/Contributor-Kontext im Overall-Score.
+title: 'Scoring-Update: Adoption-Kalibrierung jetzt in Doku, Konzeption und UI sichtbar'
+summary: 'Das optimierte Adoption-Scoring ist jetzt konsistent dokumentiert und im Stack-Kontext sichtbar – inklusive robuster Normalisierung, Low-Coverage-Rollenlift und Maintainer/Contributor-Kontext im Overall-Score.'
 ---
 
 # Scoring-Update: Adoption-Kalibrierung jetzt durchgängig umgesetzt
