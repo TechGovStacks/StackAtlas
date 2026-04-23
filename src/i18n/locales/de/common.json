@@ -29,7 +29,9 @@
 		"navigationAria": "Footer-Navigation",
 		"links": {
 			"documentation": "Dokumentation",
-			"settings": "Einstellungen"
+			"settings": "Einstellungen",
+			"issues": "Issue melden",
+			"githubCta": "Auf GitHub mitmachen ↗"
 		},
 		"license": "Lizenz: EUPL-1.2",
 		"builtWith": "Built with",

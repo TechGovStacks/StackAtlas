@@ -29,7 +29,9 @@
 		"navigationAria": "Navigation du pied de page",
 		"links": {
 			"documentation": "Documentation",
-			"settings": "Paramètres"
+			"settings": "Paramètres",
+			"issues": "Signaler un problème",
+			"githubCta": "Contribuer sur GitHub ↗"
 		},
 		"license": "Licence : EUPL-1.2",
 		"builtWith": "Built with",

@@ -29,7 +29,9 @@
 		"navigationAria": "Bunntekstnavigering",
 		"links": {
 			"documentation": "Dokumentasjon",
-			"settings": "Innstillinger"
+			"settings": "Innstillinger",
+			"issues": "Rapporter sak",
+			"githubCta": "Bidra på GitHub ↗"
 		},
 		"license": "Lisens: EUPL-1.2",
 		"builtWith": "Bygget med",

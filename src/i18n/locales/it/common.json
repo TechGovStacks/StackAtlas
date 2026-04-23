@@ -29,7 +29,9 @@
 		"navigationAria": "Navigazione nel piè di pagina",
 		"links": {
 			"documentation": "Documentazione",
-			"settings": "Impostazioni"
+			"settings": "Impostazioni",
+			"issues": "Segnala issue",
+			"githubCta": "Contribuisci su GitHub ↗"
 		},
 		"license": "Licenza: EUPL-1.2",
 		"builtWith": "Costruito con",
