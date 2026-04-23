@@ -87,10 +87,23 @@ export default defineConfig({
 				cacheId: 'stackatlas',
 				maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
 				globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2,woff}'],
+				navigateFallback: 'index.html',
 				cleanupOutdatedCaches: true,
 				skipWaiting: false,
 				clientsClaim: true,
 				runtimeCaching: [
+					{
+						urlPattern: ({ request }) => request.mode === 'navigate',
+						handler: 'NetworkFirst',
+						options: {
+							cacheName: 'pages-cache',
+							networkTimeoutSeconds: 3,
+							expiration: {
+								maxEntries: 20,
+								maxAgeSeconds: 60 * 60 * 24 * 30,
+							},
+						},
+					},
 					{
 						urlPattern: /^https:\/\/fonts\./,
 						handler: 'CacheFirst',
