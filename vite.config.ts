@@ -33,7 +33,8 @@ function markdownItPlugin(): Plugin {
 	};
 }
 
-const isPwaEnabled = process.env.VITE_ENABLE_PWA !== 'false';
+const isProduction = process.env.NODE_ENV === 'production';
+const isPwaEnabled = isProduction ? true : process.env.VITE_ENABLE_PWA !== 'false';
 const { version: appVersion } = JSON.parse(readFileSync(new URL('./package.json', import.meta.url), 'utf-8')) as { version: string };
 
 export default defineConfig({
@@ -88,9 +89,21 @@ export default defineConfig({
 				maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
 				globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2,woff}'],
 				cleanupOutdatedCaches: true,
+				navigateFallback: 'offline.html',
 				skipWaiting: false,
 				clientsClaim: true,
 				runtimeCaching: [
+					{
+						urlPattern: /^https:\/\/cdn\.simpleicons\.org\//,
+						handler: 'CacheFirst',
+						options: {
+							cacheName: 'logo-cache',
+							expiration: {
+								maxEntries: 200,
+								maxAgeSeconds: 60 * 60 * 24 * 30,
+							},
+						},
+					},
 					{
 						urlPattern: /^https:\/\/fonts\./,
 						handler: 'CacheFirst',
@@ -103,12 +116,34 @@ export default defineConfig({
 						},
 					},
 					{
-						urlPattern: /^https:\/\/cdn\.simpleicons\.org\//,
+						urlPattern: /^https:\/\/raw\.githubusercontent\.com\//,
 						handler: 'CacheFirst',
 						options: {
-							cacheName: 'logo-cache',
+							cacheName: 'external-logos-cache',
 							expiration: {
-								maxEntries: 200,
+								maxEntries: 400,
+								maxAgeSeconds: 60 * 60 * 24 * 30,
+							},
+						},
+					},
+					{
+						urlPattern: /^https:\/\/upload\.wikimedia\.org\//,
+						handler: 'CacheFirst',
+						options: {
+							cacheName: 'external-logos-cache',
+							expiration: {
+								maxEntries: 400,
+								maxAgeSeconds: 60 * 60 * 24 * 30,
+							},
+						},
+					},
+					{
+						urlPattern: /^https:\/\/www\.wikimedia\.org\//,
+						handler: 'CacheFirst',
+						options: {
+							cacheName: 'external-logos-cache',
+							expiration: {
+								maxEntries: 400,
 								maxAgeSeconds: 60 * 60 * 24 * 30,
 							},
 						},

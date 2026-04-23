@@ -30,6 +30,20 @@ test.describe('StackAtlas App', () => {
 		await expect(page.locator('footer p')).toContainText('StackAtlas');
 	});
 
+	test('keeps core UI available after going offline', async ({ page, context }) => {
+		await expect(page.locator('h1')).toHaveText('StackAtlas');
+		await expect(page.locator('.article-card').first()).toBeVisible();
+
+		await context.setOffline(true);
+		await page.reload();
+
+		await expect(page.locator('h1')).toHaveText('StackAtlas');
+		await expect(page.locator('.article-card').first()).toBeVisible();
+		await expect(page.locator('footer')).toBeVisible();
+
+		await context.setOffline(false);
+	});
+
 	test('screenshot – full page on load', async ({ page }) => {
 		await expect(page.locator('.article-card').first()).toBeVisible();
 		await expect(page).toHaveScreenshot('full-page.png', { fullPage: true });
