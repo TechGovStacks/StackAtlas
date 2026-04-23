@@ -1,4 +1,4 @@
-import { KolAvatar, KolButton, KolCard, KolDrawer, KolImage } from '@public-ui/preact';
+import { KolAvatar, KolButton, KolCard, KolDrawer, KolImage, KolLinkButton } from '@public-ui/preact';
 import { useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { ITEMS, LAYERS, STACKS } from '../data/catalog';
@@ -205,14 +205,22 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 									<p className="drawer-category">{t('article.categoryLabel', { category: categoryName })}</p>
 									<div className="drawer-links">
 										{selectedArticle.homepage && (
-											<a href={selectedArticle.homepage} target="_blank" rel="noopener noreferrer" className="drawer-link">
-												{t('article.website')}
-											</a>
+											<KolLinkButton
+												_label={t('article.website')}
+												_href={selectedArticle.homepage}
+												_target="_blank"
+												_variant="secondary"
+												className="drawer-link"
+											/>
 										)}
 										{selectedArticle.github?.repo && (
-											<a href={selectedArticle.github.repo} target="_blank" rel="noopener noreferrer" className="drawer-link drawer-link--github">
-												{t('article.repository')}
-											</a>
+											<KolLinkButton
+												_label={t('article.repository')}
+												_href={selectedArticle.github.repo}
+												_target="_blank"
+												_variant="secondary"
+												className="drawer-link"
+											/>
 										)}
 										{selectedArticle.license && (
 											<span className="drawer-license-badge" title={`License: ${selectedArticle.license}`}>
@@ -336,15 +344,12 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 											<ul className="drawer-dependencies__list">
 												{outgoingDependencies.map((edge) => (
 													<li key={edge.id} className="drawer-dependencies__item">
-														<button type="button" className="drawer-related__link" onClick={() => setSelectedDependencyId(edge.id)}>
-															<span className="drawer-related__link-text">
-																{getLocalizedText(edge.target.name, i18n.language)} ({edge.dependency.type}/
-																{t(`dependencies.scope.${edge.dependency.scope ?? 'required'}`)})
-															</span>
-															<span className="drawer-related__link-icon" aria-hidden="true">
-																›
-															</span>
-														</button>
+														<KolButton
+															_label={`${getLocalizedText(edge.target.name, i18n.language)} (${edge.dependency.type}/${t(`dependencies.scope.${edge.dependency.scope ?? 'required'}`)})`}
+															_variant="secondary"
+															className="drawer-related__link"
+															_on={{ onClick: () => setSelectedDependencyId(edge.id) }}
+														/>
 													</li>
 												))}
 											</ul>
@@ -356,15 +361,12 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 											<ul className="drawer-dependencies__list">
 												{incomingDependencies.map((edge) => (
 													<li key={edge.id} className="drawer-dependencies__item">
-														<button type="button" className="drawer-related__link" onClick={() => setSelectedDependencyId(edge.id)}>
-															<span className="drawer-related__link-text">
-																{getLocalizedText(edge.source.name, i18n.language)} ({edge.dependency.type}/
-																{t(`dependencies.scope.${edge.dependency.scope ?? 'required'}`)})
-															</span>
-															<span className="drawer-related__link-icon" aria-hidden="true">
-																›
-															</span>
-														</button>
+														<KolButton
+															_label={`${getLocalizedText(edge.source.name, i18n.language)} (${edge.dependency.type}/${t(`dependencies.scope.${edge.dependency.scope ?? 'required'}`)})`}
+															_variant="secondary"
+															className="drawer-related__link"
+															_on={{ onClick: () => setSelectedDependencyId(edge.id) }}
+														/>
 													</li>
 												))}
 											</ul>
@@ -396,12 +398,13 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 										<ul className="drawer-stacks__list">
 											{stacksContainingItem.map((stack) => (
 												<li key={stack.id} className="drawer-stacks__item">
-													<a href={`#/stacks?stack=${stack.id}`} className="drawer-related__link" onClick={() => setIsDrawerOpen(false)}>
-														<span className="drawer-related__link-text">{getLocalizedText(stack.name, i18n.language)}</span>
-														<span className="drawer-related__link-icon" aria-hidden="true">
-															›
-														</span>
-													</a>
+													<KolLinkButton
+														_label={getLocalizedText(stack.name, i18n.language)}
+														_href={`#/stacks?stack=${stack.id}`}
+														_variant="secondary"
+														className="drawer-related__link"
+														_on={{ onClick: () => setIsDrawerOpen(false) }}
+													/>
 												</li>
 											))}
 										</ul>
@@ -420,18 +423,17 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 									<ul className="drawer-related__list">
 										{relatedArticles.map((relatedArticle) => (
 											<li key={relatedArticle.id} className="drawer-related__item">
-												<button
+												<KolButton
+													_label={getLocalizedText(relatedArticle.name, i18n.language)}
+													_variant="secondary"
 													className="drawer-related__link"
-													onClick={() => {
-														setSelectedArticle(relatedArticle);
-														setSelectedDependencyId(null);
+													_on={{
+														onClick: () => {
+															setSelectedArticle(relatedArticle);
+															setSelectedDependencyId(null);
+														},
 													}}
-												>
-													<span className="drawer-related__link-text">{getLocalizedText(relatedArticle.name, i18n.language)}</span>
-													<span className="drawer-related__link-icon" aria-hidden="true">
-														›
-													</span>
-												</button>
+												/>
 											</li>
 										))}
 									</ul>
