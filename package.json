@@ -19,6 +19,7 @@
 		"fetch-logos:dry-run": "node scripts/fetch-external-logos.mjs --dry-run",
 		"fetch-logos:update": "node scripts/fetch-external-logos.mjs --update",
 		"format": "prettier --check src",
+		"format:write": "prettier --write src",
 		"lint": "npm-run-all2 --parallel lint:*",
 		"lint:eslint": "eslint src",
 		"lint:knip": "knip",
