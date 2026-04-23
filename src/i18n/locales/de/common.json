@@ -190,7 +190,10 @@
 			"sovereignAdoption": "Souveräne Verbreitung",
 			"adoption": "Verbreitung",
 			"total": "Gesamt-Score",
-			"usedInStacks": "Genutzt in {{count}} Stacks"
+			"usedInStacks": "Genutzt in {{count}} Stacks",
+			"directCoverage": "Direkte Coverage",
+			"transitiveCoverage": "Transitive Coverage",
+			"diversity": "Geografische Diversität"
 		}
 	},
 	"pwa": {

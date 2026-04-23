@@ -268,4 +268,102 @@ describe('computeAdoptionScores', () => {
 		const upstreamScore = result.get('upstream')?.adoptionScore ?? 0;
 		expect(upstreamScore).toBeGreaterThan(0);
 	});
+
+	it('gives contributor a neutral-to-positive lift against consumer in low-coverage cases', () => {
+		const items: Item[] = [
+			{
+				id: 'item_contributor',
+				name: { de: 'Item contributor', en: 'Item contributor' },
+				layer: 'infrastructure',
+				description: { de: '', en: '' },
+				tags: [],
+				oss: true,
+				sovereigntyCriteria: DEFAULT_CRITERIA,
+				sovereigntyScore: 70,
+			},
+			{
+				id: 'item_consumer',
+				name: { de: 'Item consumer', en: 'Item consumer' },
+				layer: 'infrastructure',
+				description: { de: '', en: '' },
+				tags: [],
+				oss: true,
+				sovereigntyCriteria: DEFAULT_CRITERIA,
+				sovereigntyScore: 70,
+			},
+		];
+
+		const stack: Stack = {
+			id: 'stack-low-coverage',
+			name: { de: 'Stack low', en: 'Stack low' },
+			version: '1.0',
+			items: [
+				{ itemId: 'item_contributor', status: 'approved', role: 'contributor' },
+				{ itemId: 'item_consumer', status: 'approved', role: 'consumer' },
+			],
+		};
+
+		const result = computeAdoptionScores(items, [stack]);
+		const contributorScore = result.get('item_contributor')?.adoptionScore ?? 0;
+		const consumerScore = result.get('item_consumer')?.adoptionScore ?? 0;
+
+		expect(contributorScore).toBeGreaterThanOrEqual(consumerScore);
+	});
+
+	it('applies a soft floor for high-sovereignty items with non-zero adoption', () => {
+		const items: Item[] = [
+			{
+				id: 'high_sovereignty_low_usage',
+				name: { de: 'High sovereignty', en: 'High sovereignty' },
+				layer: 'infrastructure',
+				description: { de: '', en: '' },
+				tags: [],
+				oss: true,
+				sovereigntyCriteria: DEFAULT_CRITERIA,
+				sovereigntyScore: 90,
+			},
+			{
+				id: 'dominant_item',
+				name: { de: 'Dominant', en: 'Dominant' },
+				layer: 'infrastructure',
+				description: { de: '', en: '' },
+				tags: [],
+				oss: true,
+				sovereigntyCriteria: DEFAULT_CRITERIA,
+				sovereigntyScore: 90,
+			},
+		];
+
+		const stacks: Stack[] = [
+			{
+				id: 'stack-small',
+				name: { de: 'Small', en: 'Small' },
+				version: '1.0',
+				items: [{ itemId: 'high_sovereignty_low_usage', status: 'approved', role: 'consumer' }],
+			},
+			{
+				id: 'stack-big-1',
+				name: { de: 'Big 1', en: 'Big 1' },
+				version: '1.0',
+				items: [{ itemId: 'dominant_item', status: 'recommended', role: 'maintainer' }],
+			},
+			{
+				id: 'stack-big-2',
+				name: { de: 'Big 2', en: 'Big 2' },
+				version: '1.0',
+				items: [{ itemId: 'dominant_item', status: 'recommended', role: 'maintainer' }],
+			},
+			{
+				id: 'stack-big-3',
+				name: { de: 'Big 3', en: 'Big 3' },
+				version: '1.0',
+				items: [{ itemId: 'dominant_item', status: 'recommended', role: 'maintainer' }],
+			},
+		];
+
+		const result = computeAdoptionScores(items, stacks);
+		const lowUsageScore = result.get('high_sovereignty_low_usage')?.adoptionScore ?? 0;
+
+		expect(lowUsageScore).toBeGreaterThanOrEqual(50);
+	});
 });

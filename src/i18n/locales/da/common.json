@@ -168,7 +168,10 @@
 			"sovereignAdoption": "Suveræn adoption",
 			"adoption": "Adoption",
 			"total": "Samlet score",
-			"usedInStacks": "Brugt i {{count}} stacks"
+			"usedInStacks": "Brugt i {{count}} stacks",
+			"directCoverage": "Direct coverage",
+			"transitiveCoverage": "Transitive coverage",
+			"diversity": "Geographic diversity"
 		}
 	},
 	"pwa": {

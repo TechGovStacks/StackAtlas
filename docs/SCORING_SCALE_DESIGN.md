@@ -646,6 +646,23 @@ overallScore = round(
 )
 ```
 
+#### Update 2026-04: robuste Adoption + Stack-Kontext
+
+Die Adoption-Komponente wird inzwischen robust normalisiert (Perzentil-Anchor statt reiner Max-Norm) und im unteren Bereich durch Low-Coverage-Rollenlift plus Soft-Floor entschärft.
+
+Für die UI-Darstellung im **aktiven Stack-Kontext** wird zusätzlich ein kontextualisierter Overall berechnet:
+
+```javascript
+contextualOverall = computeOverallScore(
+  effectiveSovereigntyScore,
+  withStackRoleAdoptionContext(adoption, stackItem)
+)
+```
+
+Damit wird bei `maintainer`/`contributor` sichtbar, dass bewusste Verantwortung
+und Einflussnahme positiv gewertet werden, während globale Rankings weiterhin auf
+den globalen Kennzahlen basieren.
+
 **Logik der Gewichte:**
 
 1. **60% Sovereignty:** Der Sovereignty Score bleibt dominant. Ein Item mit

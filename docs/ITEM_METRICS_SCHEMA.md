@@ -685,9 +685,25 @@ rawAdoption = log1p(directCoverage + transitiveCoverage)
 
 Die geografische Vielfalt wirkt als Multiplikator (0.6 bis 1.0): Items, die nur in einem Land vorkommen, erhalten weniger Kredit.
 
-#### 4. Normalisierung auf [0, 100]
+#### 4. Robuste Normalisierung auf [0, 100]
 ```javascript
-adoptionScore = round(100 × rawAdoption / max(rawAdoption über alle Items))
+// outlier-resistent:
+denom = max(p95(rawAdoption über alle Items), ADOPTION_NORMALIZATION_ANCHOR)
+adoptionScore = round(100 × rawAdoption / denom)
+adoptionScore = clamp(adoptionScore, 0, 100)
+```
+
+#### 5. Low-Coverage-Rollenlift + Soft Floor
+```javascript
+// bei niedriger direkter Coverage wird Intentionalität aufgewertet:
+if (directCoverage < LOW_COVERAGE_THRESHOLD) {
+  contribution *= 1 + ROLE_LOW_COVERAGE_BOOST[role]
+}
+
+// high-sovereignty items mit non-zero Adoption fallen nicht unverhältnismäßig tief:
+if (sovereigntyScore >= HIGH_SOVEREIGNTY_THRESHOLD && rawAdoption > 0) {
+  adoptionScore = max(adoptionScore, HIGH_SOVEREIGNTY_SOFT_FLOOR_SCORE)
+}
 ```
 
 ### Sovereign Adoption Score
@@ -759,6 +775,19 @@ overallScore = round(
 - **15% General Adoption:** Breitere Verbreitung als Zusatz-Signal
 
 Diese Balance verhindert, dass ubiquitäre proprietäre Tools die Top-Rankings dominieren.
+
+### Stack-Kontext (Maintainer/Contributor)
+
+Zusätzlich zur globalen Kennzahl gibt es in der UI einen **kontextbezogenen Overall-Score**:
+
+```javascript
+contextualAdoption = withStackRoleAdoptionContext(adoption, stackItem.role, stackItem.status)
+contextualOverall = computeOverallScore(effectiveSovereigntyScore, contextualAdoption)
+```
+
+- `maintainer` und `contributor` erhalten im aktiven Stack-Kontext Mindestwerte auf Adoption-/Sovereign-Adoption-Signale.
+- `deprecated`-Beziehungen erhalten **keinen** Kontext-Boost.
+- Ziel: Ownership/Einfluss sichtbar machen, ohne das globale Ranking zu verfälschen.
 
 ### Beispiel-Kombinationen
 
