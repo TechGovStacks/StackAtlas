@@ -1,0 +1,1 @@
+import{ot as e,y as t}from"./index-B7tv7olz-Cz4pURA1.js";var n=(n,r)=>{e(n,`_disabled`,r,{hooks:{afterPatch:e=>{!0===e&&t()}}})};export{n as t};
