@@ -26,6 +26,13 @@ Dieses Dokument ist das Rahmendokument fuer die aktive Projektdokumentation.
 3. Repo- und Verzeichnis-Kontext: `README.md` im Root und `data/README.md`
 4. Exemplarische Erklärung des Dependency-Modells: `docs/examples/items-as-dependencies.md`
 
+
+## Dependency-Versionierung (Source of Truth)
+
+- Fuer `package.json` gelten ausschliesslich **exakte Versionen** (z. B. `2.1.1`).
+- Bereichsangaben und Praefixe wie `^`, `~`, `>`, `<`, `>=`, `<=` oder kombinierten Ranges sind nicht erlaubt.
+- Diese Regel ist die alleinige projektdokumentierte Quelle fuer die Dependency-Versionierungs-Policy.
+
 ## Governance-Hinweis zu Foundations
 
 Bei der Einordnung von Open-Source- und Standardisierungs-Foundationen sollte beruecksichtigt werden, dass hinter formaler Neutralitaet haeufig starke Konzerninteressen und Finanzierungsabhaengigkeiten stehen koennen. Als Kontextquelle: [Heise-Einordnung](https://www.heise.de/blog/Open-Source-ist-nicht-das-Problem-sondern-sein-Missbrauch-durch-Konzerne-11244125.html).
