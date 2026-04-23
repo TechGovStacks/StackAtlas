@@ -27,7 +27,7 @@ Wir haben das Adoption-Scoring konsolidiert und in **Doku, Konzeption und UI** n
 
 Damit vermeiden wir das Missverständnis:
 
-> „Wenn ein Item (z. B. KoliBri) selten global vorkommt, sollte man es besser nicht nutzen.“
+> „Wenn ein Item selten global vorkommt, sollte man es besser nicht nutzen.“
 
 Genau dieses Signal wollten wir entschärfen: geringe globale Häufigkeit bleibt informativ, aber **Ownership und bewusste Investition** werden im Stack-Kontext klar positiv berücksichtigt.
 
