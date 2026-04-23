@@ -742,21 +742,6 @@ main {
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
-   KoliBri Form Field Overrides
-   ───────────────────────────────────────────────────────────────────────────── */
-
-kol-single-select,
-kol-input-text,
-kol-input-checkbox,
-kol-select,
-.sort-select {
-	--kol-color-background: transparent;
-	--kol-color-input-background: transparent;
-
-	background: transparent;
-}
-
-/* ─────────────────────────────────────────────────────────────────────────────
    Filter Bar (responsive grid layout)
    ───────────────────────────────────────────────────────────────────────────── */
 
