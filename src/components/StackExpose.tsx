@@ -22,6 +22,11 @@ const ROLE_COLORS: Record<ParticipantRole, string> = {
 	funder: '#e65100',
 	consumer: '#546e7a',
 };
+const STATUS_COLORS = {
+	recommended: '#1565c0',
+	approved: '#2e7d32',
+	deprecated: '#c62828',
+} as const;
 
 const SCORE_CATEGORIES: SovereigntyScoreCategory[] = ['insufficient', 'minimal', 'adequate', 'good', 'excellent', 'outstanding'];
 
@@ -90,7 +95,7 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank, children }
 								</span>
 							)}
 							{localizedName}
-							{isTop && <KolBadge className="stack-expose__best-badge" _label={`★ ${t('stackGallery.bestStack')}`} aria-label={t('stackGallery.bestStack')} />}
+							{isTop && <KolBadge className="stack-expose__best-badge" _label="★" aria-label={t('stackGallery.bestStack')} />}
 						</h2>
 					</div>
 
@@ -251,18 +256,21 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank, children }
 				{metrics.statusCounts.recommended > 0 && (
 					<KolBadge
 						className="stack-expose__status-badge stack-expose__status-badge--recommended"
+						_color={STATUS_COLORS.recommended}
 						_label={`${metrics.statusCounts.recommended} ${t('stackGallery.recommended')}`}
 					/>
 				)}
 				{metrics.statusCounts.approved > 0 && (
 					<KolBadge
 						className="stack-expose__status-badge stack-expose__status-badge--approved"
+						_color={STATUS_COLORS.approved}
 						_label={`${metrics.statusCounts.approved} ${t('stackGallery.approved')}`}
 					/>
 				)}
 				{metrics.statusCounts.deprecated > 0 && (
 					<KolBadge
 						className="stack-expose__status-badge stack-expose__status-badge--deprecated"
+						_color={STATUS_COLORS.deprecated}
 						_label={`${metrics.statusCounts.deprecated} ${t('stackGallery.deprecated')}`}
 					/>
 				)}

@@ -134,7 +134,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 			<KolBadge
 				className="card-score-badge"
 				_color={overallScoreColor}
-				_label={`${overallScore} ${t(`article.scoreCategories.${overallScoreCategory}`)}`}
+				_label={`${overallScore} · ${t(`article.scoreCategories.${overallScoreCategory}`)}`}
 				title={`${t('article.scoreOverview.total')}: ${overallScore}/100`}
 				aria-label={`${t('article.scoreOverview.total')}: ${overallScore}/100`}
 			/>
@@ -216,7 +216,12 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 											</a>
 										)}
 										{selectedArticle.license && (
-											<KolBadge className="drawer-license-badge" _label={selectedArticle.license} title={`License: ${selectedArticle.license}`} />
+											<KolBadge
+												className="drawer-license-badge"
+												_color="#f5f5f5"
+												_label={selectedArticle.license}
+												title={`License: ${selectedArticle.license}`}
+											/>
 										)}
 									</div>
 								</div>
