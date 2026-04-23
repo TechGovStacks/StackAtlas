@@ -1,4 +1,4 @@
-import { KolButton } from '@public-ui/preact';
+import { KolAlert, KolButton } from '@public-ui/preact';
 import { useTranslation } from 'react-i18next';
 import { useRegisterSW } from 'virtual:pwa-register/preact';
 
@@ -33,12 +33,12 @@ export function PwaUpdatePrompt() {
 	if (!needRefresh) return null;
 
 	return (
-		<div className="pwa-update-prompt" role="alert" aria-live="assertive">
+		<KolAlert className="pwa-update-prompt" _alert _label={t('pwa.updateAvailable')} _level={0} _type="warning" _variant="msg">
 			<p className="pwa-update-prompt__text">{t('pwa.updateAvailable')}</p>
 			<div className="pwa-update-prompt__actions">
 				<KolButton _label={t('pwa.update')} _variant="primary" _on={{ onClick: () => updateServiceWorker(true) }} />
 				<KolButton _label={t('pwa.dismiss')} _variant="tertiary" _on={{ onClick: close }} />
 			</div>
-		</div>
+		</KolAlert>
 	);
 }
