@@ -1,6 +1,6 @@
 {
-	"id": "public-ui-kolibri",
-	"name": "KoliBri - Public-UI",
+	"id": "kolibri",
+	"name": "KoliBri (Public-UI)",
 	"layer": "building-blocks",
 	"sublayer": "frameworks",
 	"description": {
@@ -9,13 +9,7 @@
 	},
 	"homepage": "https://public-ui.github.io/",
 	"logo": "https://public-ui.github.io/logo.svg",
-	"tags": [
-		"webframework",
-		"user-interface",
-		"components",
-		"accessibility",
-		"wcag"
-	],
+	"tags": ["webframework", "user-interface", "components", "accessibility", "wcag"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
