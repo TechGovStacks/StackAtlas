@@ -3,7 +3,6 @@
 	"name": "Advanced Encryption Standard",
 	"layer": "building-blocks",
 	"sublayer": "sicherheit",
-	"groupKey": "symmetric-encryption",
 	"description": {
 		"de": "AES verschlüsselt Daten symmetrisch. Ver- und Entschlüsselung erfolgt mit dem gleichen Schlüssel.",
 		"en": ""

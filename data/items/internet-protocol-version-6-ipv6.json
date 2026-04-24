@@ -3,7 +3,6 @@
 	"name": "Internet Protocol Version 6 (IPv6)",
 	"layer": "infrastructure",
 	"sublayer": "transport",
-	"groupKey": "network-layer-protocol",
 	"description": {
 		"de": "IPv6 dient der Adressierung in der Vermittlung. IP selbst stellt keine Verbindung her.",
 		"en": ""

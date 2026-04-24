@@ -3,7 +3,6 @@
 	"name": "MLflow",
 	"layer": "platform",
 	"sublayer": "ki",
-	"groupKey": "ml-experiment-tracking",
 	"description": {
 		"de": "MLflow ist eine Open-Source-Plattform für das Management des gesamten Machine Learning-Lifecycles, die von Databricks entwickelt wurde und Experiment-Tracking, Modellverpackung, Deployment und eine zentrale Modellregistrierung vereint. Die Plattform ermöglicht es Data Scientists und ML-Engineers, Experimente zu verfolgen, Parameter und Metriken zu protokollieren, Modelle zu versionieren und sie konsistent über verschiedene Umgebungen hinweg zu deployen. MLflow unterstützt alle gängigen ML-Frameworks und Sprachen (Python, R, Java) sowie GenAI-Anwendungen mit LLM-Tracing und Prompt-Management.",
 		"en": ""

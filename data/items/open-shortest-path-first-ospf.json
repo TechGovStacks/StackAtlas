@@ -3,7 +3,6 @@
 	"name": "Open Shortest Path First (OSPF)",
 	"layer": "infrastructure",
 	"sublayer": "verteilung",
-	"groupKey": "interior-routing-protocol",
 	"description": {
 		"de": "OSPF ist ein Link-State-Routing-Protokoll, das in IP-Netzwerken zur automatischen Berechnung der optimalen Routen zwischen Netzwerkknoten verwendet wird. Es ermöglicht Routern, dynamisch die kürzesten Pfade durch ein Netzwerk zu finden und sich automatisch an Netzwerkänderungen anzupassen. OSPF arbeitet hierarchisch mit Areas und eignet sich besonders für große Unternehmensnetzwerke.",
 		"en": ""

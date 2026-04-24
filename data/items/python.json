@@ -3,7 +3,6 @@
 	"name": "Python",
 	"layer": "building-blocks",
 	"sublayer": "sprachen",
-	"groupKey": "general-purpose-language",
 	"description": {
 		"de": "Python ist eine Programmiersprache zur Webentwicklung und für Prototyping.",
 		"en": ""

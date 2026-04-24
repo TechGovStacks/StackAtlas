@@ -3,7 +3,6 @@
 	"name": "Prometheus",
 	"layer": "platform",
 	"sublayer": "inbetriebnahme",
-	"groupKey": "metrics-monitoring",
 	"description": {
 		"de": "Prometheus ist ein quelloffenes Monitoring- und Alerting-System aus dem CNCF-Ökosystem. Es sammelt Metriken über ein Pull-Modell, speichert Zeitreihen und ist Standardwerkzeug für Cloud-Native-Observability.",
 		"en": "Prometheus is an open-source monitoring and alerting system from the CNCF ecosystem. It scrapes metrics, stores time-series data and is the standard tool for cloud-native observability."

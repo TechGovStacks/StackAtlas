@@ -3,7 +3,6 @@
 	"name": "HuggingFace Transformers",
 	"layer": "platform",
 	"sublayer": "ki",
-	"groupKey": "ml-model-hub",
 	"description": {
 		"de": "HuggingFace Transformers ist eine Open-Source-Bibliothek für state-of-the-art Machine Learning Modelle in Text-, Vision-, Audio- und multimodalen Anwendungen. Die Bibliothek fungiert als zentrales Model-Definition-Framework, das nahtlose Kompatibilität zwischen verschiedenen Deep Learning Frameworks wie PyTorch, TensorFlow und JAX bietet. Transformers demokratisiert den Zugang zu über 1 Million vortrainierten Modellen auf dem Hugging Face Hub und ermöglicht sowohl Inferenz als auch Training mit einer einheitlichen API.",
 		"en": ""

@@ -3,7 +3,6 @@
 	"name": "Ethernet",
 	"layer": "infrastructure",
 	"sublayer": "anschluss",
-	"groupKey": "wired-access",
 	"description": {
 		"de": "Mit Ethernet können kabelgebunden in kleiner bis mittlerer Reichweite Endgeräte vernetzt werden. Die IEEE standardisiert die Technologie mit IEEE 802.3 ff. Die Konfiguration erfolgt zumeist automatisch über das Betriebssystem. Wi-Fi dient als Kennzeichen für zertifizierte Produkte zur Sicherstellung von Interoperabilität.",
 		"en": ""

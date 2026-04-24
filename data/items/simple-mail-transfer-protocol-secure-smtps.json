@@ -3,7 +3,6 @@
 	"name": "Simple Mail Transfer Protocol Secure (SMTPS)",
 	"layer": "infrastructure",
 	"sublayer": "transport",
-	"groupKey": "email-protocol",
 	"description": {
 		"de": "SMTPS dient dem sicheren Austausch von E-Mails.",
 		"en": ""

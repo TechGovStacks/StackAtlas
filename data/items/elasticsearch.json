@@ -3,7 +3,6 @@
 	"name": "Elasticsearch",
 	"layer": "platform",
 	"sublayer": "daten",
-	"groupKey": "search-engine",
 	"description": {
 		"de": "Elasticsearch ist eine verteilte Such- und Analyse-Engine, die im Zentrum des ELK-Stacks (Elasticsearch, Logstash, Kibana) steht. Sie wird in Verwaltungs-IT für Volltextsuche, Log-Aggregation und SIEM-Anwendungen verwendet.",
 		"en": "Elasticsearch is a distributed search and analytics engine at the heart of the ELK stack (Elasticsearch, Logstash, Kibana). It is used in public administration IT for full-text search, log aggregation and SIEM use cases."

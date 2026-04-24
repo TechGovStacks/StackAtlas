@@ -3,7 +3,6 @@
 	"name": "Sovereign Cloud Stack",
 	"layer": "sovereign-standards",
 	"sublayer": "inbetriebnahme",
-	"groupKey": "sovereign-cloud-standard",
 	"ownerCountry": "DE",
 	"description": {
 		"de": "Der Sovereign Cloud Stack (SCS) ist ein offener, modularer Referenz-Stack fuer souveraene Cloud-Infrastrukturen in Europa. Als OSBA-Projekt kombiniert SCS offene Standards und Referenzimplementierungen fuer IaaS, KaaS und IAM (u. a. OpenStack, Kubernetes und Keycloak), um Portabilitaet, Interoperabilitaet und rechtliche Kontrolle ueber Daten zu sichern.",

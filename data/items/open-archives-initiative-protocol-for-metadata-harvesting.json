@@ -3,7 +3,6 @@
 	"name": "Open Archives Initiative Protocol for Metadata Harvesting",
 	"layer": "platform",
 	"sublayer": "daten",
-	"groupKey": "metadata-harvesting-protocol",
 	"description": {
 		"de": "OAI-PMH ist ein leichtgewichtiges Protokoll für Metadaten.",
 		"en": ""

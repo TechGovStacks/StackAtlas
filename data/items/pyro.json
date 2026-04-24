@@ -3,7 +3,6 @@
 	"name": "Pyro",
 	"layer": "platform",
 	"sublayer": "ki",
-	"groupKey": "probabilistic-ml",
 	"description": {
 		"de": "Pyro ist eine universelle probabilistische Programmiersprache (PPL) basierend auf PyTorch, die tiefes probabilistisches Modellieren für AI-Forschung ermöglicht. Sie vereint moderne Deep Learning-Ansätze mit Bayesianischer Modellierung und bietet flexible, skalierbare Inferenzalgorithmen.",
 		"en": ""

@@ -3,7 +3,6 @@
 	"name": "Markdown (MD)",
 	"layer": "platform",
 	"sublayer": "daten",
-	"groupKey": "markup-language",
 	"description": {
 		"de": "MD ist ein Datenformat für den Datenaustausch.",
 		"en": ""

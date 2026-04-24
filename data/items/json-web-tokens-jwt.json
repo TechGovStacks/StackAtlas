@@ -3,7 +3,6 @@
 	"name": "JSON Web Tokens (JWT)",
 	"layer": "infrastructure",
 	"sublayer": "transport",
-	"groupKey": "token-format",
 	"description": {
 		"de": "Ermöglicht sichere Übertragung von strukturierten Informationen zwischen Parteien als selbstverifizierende JSON-Objekte. Fungiert als kompakter, URL-sicherer Token-Standard für Authentifizierung, Autorisierung und sichere Datenübertragung ohne zentrale Session-Speicherung.",
 		"en": ""

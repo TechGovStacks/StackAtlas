@@ -3,7 +3,6 @@
 	"name": "Internet Message Access Protocol Secure (IMAPS)",
 	"layer": "infrastructure",
 	"sublayer": "transport",
-	"groupKey": "email-protocol",
 	"description": {
 		"de": "IMAPS dient dem sicheren Zugriff auf E-Mails auf Mailservern. Die E-Mails verbleiben dabei auf dem Mailserver.",
 		"en": ""

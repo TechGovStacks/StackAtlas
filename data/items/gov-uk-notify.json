@@ -3,7 +3,6 @@
 	"name": "GOV.UK Notify",
 	"layer": "applications",
 	"sublayer": "integration",
-	"groupKey": "government-notification-service",
 	"description": {
 		"de": "GOV.UK Notify ist ein hochskalierbarer Benachrichtigungsdienst des britischen Government Digital Service. Er versendet E-Mails, SMS und Briefe für Behördenleistungen und reduziert telefonische Statusabfragen erheblich.",
 		"en": "GOV.UK Notify is a highly scalable notification service from the UK's Government Digital Service. It sends emails, SMS messages and letters for public services and significantly reduces phone-based status enquiries."

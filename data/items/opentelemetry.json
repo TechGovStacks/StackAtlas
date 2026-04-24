@@ -3,7 +3,6 @@
 	"name": "OpenTelemetry",
 	"layer": "platform",
 	"sublayer": "inbetriebnahme",
-	"groupKey": "observability-standard",
 	"description": {
 		"de": "OpenTelemetry ist ein CNCF-Projekt für herstellerunabhängige Instrumentierung von Logs, Metriken und Traces. Es definiert offene Standards und SDKs für Distributed Tracing in verteilten Verwaltungssystemen.",
 		"en": "OpenTelemetry is a CNCF project for vendor-neutral instrumentation of logs, metrics and traces. It defines open standards and SDKs for distributed tracing in distributed public-administration systems."

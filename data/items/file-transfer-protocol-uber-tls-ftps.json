@@ -3,7 +3,6 @@
 	"name": "File Transfer Protocol über TLS (FTPS)",
 	"layer": "infrastructure",
 	"sublayer": "transport",
-	"groupKey": "file-transfer-protocol",
 	"description": {
 		"de": "FTPS dient der über TLS gesicherten Übertragung von Dateien. Es wurde entwickelt, um Dateien zuverlässig zu übertragen, Verzeichnisse zu verwalten (z.B. anlegen, löschen, navigieren) und den Zugriff auf entfernte Dateisysteme zu ermöglichen.",
 		"en": ""

@@ -3,7 +3,6 @@
 	"name": "Data Catalog Vocabulary (DCAT)",
 	"layer": "platform",
 	"sublayer": "daten",
-	"groupKey": "data-catalog-standard",
 	"description": {
 		"de": "DCAT dient der Beschreibung von Daten in Datenkatalogen.",
 		"en": ""
