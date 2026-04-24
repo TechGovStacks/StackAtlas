@@ -1,0 +1,1 @@
+import{dt as e}from"./index-D4WIHGSi.js";var t=(t,n)=>{e(t,`_rows`,n,{min:1})};export{t};
