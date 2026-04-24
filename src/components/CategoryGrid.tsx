@@ -54,42 +54,55 @@ export function CategoryGrid({
 		filters.selectedDependencyType,
 	]);
 
+	// Default AdoptionResult with all fields zeroed (except usedInStacks)
+	const defaultAdoptionResult = {
+		adoptionScore: 0,
+		sovereignAdoptionScore: 0,
+		overallScore: 0,
+		directCoverage: 0,
+		transitiveCoverage: 0,
+		diversity: 0,
+		usedInStacks: [],
+	};
+
+	// Precompute scores for all articles
+	const precomputedScores = useMemo(() => {
+		return articles.map((article) => {
+			const stackItem = stackItemMap?.get(article.id);
+			const sovereigntyScore = computeEffectiveSovereigntyScore(article.sovereigntyCriteria, stackItem);
+			const adoption = article.adoption ?? defaultAdoptionResult;
+			const contextualOverallScore = computeContextualOverallScore(sovereigntyScore, adoption, stackItem);
+			return {
+				...article,
+				_precomputed: {
+					sovereigntyScore,
+					contextualOverallScore,
+					adoption,
+				},
+			};
+		});
+	}, [articles, stackItemMap]);
+
 	const sortedArticles = useMemo(
 		() =>
-			[...articles].sort((a, b) => {
+			[...precomputedScores].sort((a, b) => {
 				let cmp = 0;
 
 				if (sortField === 'name') {
 					cmp = getLocalizedText(a.name, i18n.language).localeCompare(getLocalizedText(b.name, i18n.language), i18n.language);
 				} else if (sortField === 'overall') {
-					const aScore = a.adoption
-						? computeContextualOverallScore(
-								computeEffectiveSovereigntyScore(a.sovereigntyCriteria, stackItemMap?.get(a.id)),
-								a.adoption,
-								stackItemMap?.get(a.id),
-							)
-						: 0;
-					const bScore = b.adoption
-						? computeContextualOverallScore(
-								computeEffectiveSovereigntyScore(b.sovereigntyCriteria, stackItemMap?.get(b.id)),
-								b.adoption,
-								stackItemMap?.get(b.id),
-							)
-						: 0;
-					cmp = aScore - bScore;
+					cmp = a._precomputed.contextualOverallScore - b._precomputed.contextualOverallScore;
 				} else if (sortField === 'sovereignty') {
-					cmp =
-						computeEffectiveSovereigntyScore(a.sovereigntyCriteria, stackItemMap?.get(a.id)) -
-						computeEffectiveSovereigntyScore(b.sovereigntyCriteria, stackItemMap?.get(b.id));
+					cmp = a._precomputed.sovereigntyScore - b._precomputed.sovereigntyScore;
 				} else if (sortField === 'adoption') {
-					cmp = (a.adoption?.adoptionScore ?? 0) - (b.adoption?.adoptionScore ?? 0);
+					cmp = (a._precomputed.adoption.adoptionScore ?? 0) - (b._precomputed.adoption.adoptionScore ?? 0);
 				} else if (sortField === 'sovereignAdoption') {
-					cmp = (a.adoption?.sovereignAdoptionScore ?? 0) - (b.adoption?.sovereignAdoptionScore ?? 0);
+					cmp = (a._precomputed.adoption.sovereignAdoptionScore ?? 0) - (b._precomputed.adoption.sovereignAdoptionScore ?? 0);
 				}
 
 				return sortDir === 'asc' ? cmp : -cmp;
 			}),
-		[articles, sortField, sortDir, i18n.language, stackItemMap],
+		[precomputedScores, sortField, sortDir, i18n.language],
 	);
 
 	const activeCount = articles.length;
