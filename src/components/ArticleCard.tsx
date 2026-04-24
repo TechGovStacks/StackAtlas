@@ -183,7 +183,11 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 							{badges}
 						</div>
 						<p className="card-description">{getLocalizedText(article.description, i18n.language)}</p>
-						{coverageHintInline && <KolAlert className="article-coverage-hint" _label={coverageHintInline} _level={0} _type="info" _variant="msg" />}
+						{coverageHintInline && (
+							<KolAlert className="article-coverage-hint" _level={0} _type="info" _variant="msg">
+								{coverageHintInline}
+							</KolAlert>
+						)}
 						<div className="card-action">{openButton}</div>
 					</div>
 				</KolCard>
@@ -201,7 +205,11 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 					<div className="card-list-body">
 						<p className="card-list-name">{localizedArticleName}</p>
 						<p className="card-description card-description--truncate">{getLocalizedText(article.description, i18n.language)}</p>
-						{coverageHintInline && <KolAlert className="article-coverage-hint" _label={coverageHintInline} _level={0} _type="info" _variant="msg" />}
+						{coverageHintInline && (
+							<KolAlert className="article-coverage-hint" _level={0} _type="info" _variant="msg">
+								{coverageHintInline}
+							</KolAlert>
+						)}
 					</div>
 					<div className="card-list-badges">{badges}</div>
 					<div className="card-action">{openButton}</div>
