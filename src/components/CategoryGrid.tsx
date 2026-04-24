@@ -76,15 +76,15 @@ export function CategoryGrid({
 								stackItemMap?.get(b.id),
 							)
 						: 0;
-					cmp = bScore - aScore;
+					cmp = aScore - bScore;
 				} else if (sortField === 'sovereignty') {
 					cmp =
 						computeEffectiveSovereigntyScore(a.sovereigntyCriteria, stackItemMap?.get(a.id)) -
 						computeEffectiveSovereigntyScore(b.sovereigntyCriteria, stackItemMap?.get(b.id));
 				} else if (sortField === 'adoption') {
-					cmp = (b.adoption?.adoptionScore ?? 0) - (a.adoption?.adoptionScore ?? 0);
+					cmp = (a.adoption?.adoptionScore ?? 0) - (b.adoption?.adoptionScore ?? 0);
 				} else if (sortField === 'sovereignAdoption') {
-					cmp = (b.adoption?.sovereignAdoptionScore ?? 0) - (a.adoption?.sovereignAdoptionScore ?? 0);
+					cmp = (a.adoption?.sovereignAdoptionScore ?? 0) - (b.adoption?.sovereignAdoptionScore ?? 0);
 				}
 
 				return sortDir === 'asc' ? cmp : -cmp;
