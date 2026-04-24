@@ -27,18 +27,18 @@ Items can reference other items via a typed dependency list:
 
 ```json
 {
-  "id": "react",
-  "dependencies": [
-    {
-      "targetItemId": "javascript-ecma-script",
-      "type": "runtime",
-      "scope": "required",
-      "reason": {
-        "de": "React wird in einer JavaScript-Laufzeit ausgeführt.",
-        "en": "React executes in a JavaScript runtime."
-      }
-    }
-  ]
+	"id": "react",
+	"dependencies": [
+		{
+			"targetItemId": "javascript-ecma-script",
+			"type": "runtime",
+			"scope": "required",
+			"reason": {
+				"de": "React wird in einer JavaScript-Laufzeit ausgeführt.",
+				"en": "React executes in a JavaScript runtime."
+			}
+		}
+	]
 }
 ```
 
@@ -65,31 +65,33 @@ Supported relation metadata:
 ### Item: Advanced Encryption Standard (AES)
 
 **Data Structure:**
+
 ```json
 {
-  "id": "advanced-encryption-standard",
-  "name": "Advanced Encryption Standard",
-  "layer": "building-blocks",
-  "sublayer": "sicherheit",
-  "description": {
-    "de": "AES verschlüsselt Daten symmetrisch...",
-    "en": "..."
-  },
-  "sovereigntyCriteria": {
-    "openSource": true,
-    "euHeadquartered": false,
-    "hasAudit": true,
-    "permissiveLicense": true,
-    "matureProject": true,
-    "selfHostable": true,
-    "dataPortability": true,
-    "openStandards": true,
-    "noTelemetryByDefault": true
-  }
+	"id": "advanced-encryption-standard",
+	"name": "Advanced Encryption Standard",
+	"layer": "building-blocks",
+	"sublayer": "sicherheit",
+	"description": {
+		"de": "AES verschlüsselt Daten symmetrisch...",
+		"en": "..."
+	},
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	}
 }
 ```
 
 **Analysis:**
+
 - **Layer:** `building-blocks` — This is an operational dependency, not a foundational standard
 - **Type:** A cryptographic standard (symmetric encryption)
 - **Sovereignty Score:** High (excellent) — meets most sovereignty criteria
@@ -99,17 +101,18 @@ Supported relation metadata:
 
 ```json
 {
-  "itemId": "advanced-encryption-standard",
-  "status": "approved",
-  "role": "consumer",
-  "rationale": {
-    "de": "Integriert in den Deutschland Stack",
-    "en": "Integrated into Germany Stack"
-  }
+	"itemId": "advanced-encryption-standard",
+	"status": "approved",
+	"role": "consumer",
+	"rationale": {
+		"de": "Integriert in den Deutschland Stack",
+		"en": "Integrated into Germany Stack"
+	}
 }
 ```
 
 **Interpretation:**
+
 - Germany Stack **depends on** Advanced Encryption Standard
 - Germany Stack's **role is `consumer`**: It uses AES but doesn't maintain or contribute to the standard
 - The standard is already mature and well-established — Germany doesn't need to be a maintainer
@@ -121,31 +124,33 @@ Supported relation metadata:
 ### Item: Contour
 
 **Data Structure:**
+
 ```json
 {
-  "id": "contour",
-  "name": "Contour",
-  "layer": "platform",
-  "sublayer": "integration",
-  "description": {
-    "de": "Contour ist ein Open-Source Ingress Controller...",
-    "en": "..."
-  },
-  "sovereigntyCriteria": {
-    "openSource": true,
-    "euHeadquartered": false,
-    "hasAudit": true,
-    "permissiveLicense": true,
-    "matureProject": true,
-    "selfHostable": true,
-    "dataPortability": true,
-    "openStandards": true,
-    "noTelemetryByDefault": true
-  }
+	"id": "contour",
+	"name": "Contour",
+	"layer": "platform",
+	"sublayer": "integration",
+	"description": {
+		"de": "Contour ist ein Open-Source Ingress Controller...",
+		"en": "..."
+	},
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	}
 }
 ```
 
 **Analysis:**
+
 - **Layer:** `platform` — A middleware/platform component
 - **Type:** Kubernetes Ingress Controller
 - **Sovereignty Score:** High (excellent)
@@ -158,27 +163,29 @@ Supported relation metadata:
 ### Hypothetical Item: Open Interoperability Standard
 
 **Concept:**
+
 ```json
 {
-  "id": "open-interop-standard",
-  "name": "Open Interoperability Standard",
-  "layer": "sovereign-standards",
-  "description": {
-    "de": "Übergreifender Standard für offene Interoperabilität zwischen Systemen...",
-    "en": "Cross-cutting standard for open interoperability between systems..."
-  },
-  "sovereigntyCriteria": {
-    "openSource": true,
-    "euHeadquartered": true,
-    "hasAudit": true,
-    "permissiveLicense": true,
-    "matureProject": true,
-    "openStandards": true
-  }
+	"id": "open-interop-standard",
+	"name": "Open Interoperability Standard",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Übergreifender Standard für offene Interoperabilität zwischen Systemen...",
+		"en": "Cross-cutting standard for open interoperability between systems..."
+	},
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"openStandards": true
+	}
 }
 ```
 
 **Analysis:**
+
 - **Layer:** `sovereign-standards` — This **is a foundational standard**
 - **Type:** An open, vendor-neutral principle/standard (not a specific tool)
 - **Significance:** Items in this layer are the bedrock that stacks are built upon
@@ -190,17 +197,18 @@ Supported relation metadata:
 
 ```json
 {
-  "itemId": "open-interop-standard",
-  "status": "recommended",
-  "role": "maintainer",
-  "rationale": {
-    "de": "Deutschland committet sich zur Entwicklung und Wartung dieses offenen Standards.",
-    "en": "Germany commits to developing and maintaining this open standard."
-  }
+	"itemId": "open-interop-standard",
+	"status": "recommended",
+	"role": "maintainer",
+	"rationale": {
+		"de": "Deutschland committet sich zur Entwicklung und Wartung dieses offenen Standards.",
+		"en": "Germany commits to developing and maintaining this open standard."
+	}
 }
 ```
 
 **Interpretation:**
+
 - Germany Stack **actively maintains** the Open Interoperability Standard
 - Germany commits resources and expertise to its development
 - This is a **responsibility commitment** — not just usage
@@ -209,12 +217,12 @@ Supported relation metadata:
 
 ## Stack Roles Explained
 
-| Role | Meaning | Commitment Level |
-|------|---------|------------------|
-| **maintainer** | Actively develops and maintains the item/standard | Highest |
-| **contributor** | Actively contributes to development/improvement | High |
-| **funder** | Provides financial or resource support | Medium |
-| **consumer** | Uses the item but does not actively develop | Low |
+| Role            | Meaning                                           | Commitment Level |
+| --------------- | ------------------------------------------------- | ---------------- |
+| **maintainer**  | Actively develops and maintains the item/standard | Highest          |
+| **contributor** | Actively contributes to development/improvement   | High             |
+| **funder**      | Provides financial or resource support            | Medium           |
+| **consumer**    | Uses the item but does not actively develop       | Low              |
 
 ---
 
@@ -254,16 +262,19 @@ Sovereign-Standards (Foundational Standards)
 ## Why This Matters
 
 ### For Policy Makers
+
 - **Visibility:** See exactly which standards a stack commits to
 - **Responsibility:** Know which governmental bodies maintain each standard
 - **Consolidation:** Identify shared standards across stacks
 
 ### For Architects
+
 - **Dependencies:** Understand all technical dependencies in a stack
 - **Interoperability:** See which standards enable system communication
 - **Sovereignty:** Ensure the stack is built on sovereign-friendly technologies
 
 ### For Governance
+
 - **Accountability:** Track who maintains each standard
 - **Consistency:** Identify where stacks diverge and could consolidate
 - **Standards Evolution:** Understand the maturity and maintenance status of each dependency
@@ -272,6 +283,6 @@ Sovereign-Standards (Foundational Standards)
 
 ## Related Documentation
 
-- **Conceptual Model:** See `docs/BUSSINESS_CASE.md` → "Fachliches Modell" section
+- **Conceptual Model:** See `docs/BUSINESS_CASE.md` → "Fachliches Modell" section
 - **Technical Architecture:** See `docs/ARC42.md` → "Items als Dependencies" section
 - **Navigation:** See `docs/README.md` for the full documentation framework

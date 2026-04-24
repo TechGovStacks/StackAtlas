@@ -128,6 +128,7 @@ Layer-Struktur:
 ```
 
 **Sovereign-Standards als echte Standards:**
+
 - Nur Items im Layer `sovereign-standards` sind **echte Standards**: Offene Standards, Interoperabilitätsprinzipien, Datenschutz- und Regulierungsanforderungen
 - Sie sind **Grundlagen**, auf denen Stacks aufgebaut sind
 - Ein Stack zeigt seine Verantwortung für Standards durch die Rolle:
@@ -150,7 +151,7 @@ Ein Stack ist eine Verantwortungserklärung: Durch die Auswahl einer Rolle für 
 ### Dokumentation
 
 - `docs/README.md` ist das Rahmendokument.
-- `docs/BUSSINESS_CASE.md` beschreibt Produkt, Nutzen und fachliches Modell.
+- `docs/BUSINESS_CASE.md` beschreibt Produkt, Nutzen und fachliches Modell.
 - `docs/ARC42.md` beschreibt die technische Architektur.
 - `docs/archive/` enthaelt nur historische, nicht normative Inhalte.
 

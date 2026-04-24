@@ -50,7 +50,7 @@ export default defineConfig({
 		UnoCSS(),
 		VitePWA({
 			registerType: isPwaEnabled ? 'prompt' : undefined,
-			includeAssets: isPwaEnabled ? ['favicon.ico', 'icons/*.png', 'assets/**/*'] : [],
+			includeAssets: isPwaEnabled ? ['favicon.ico', 'icons/*.png', 'assets/**/*', 'logos/*.svg'] : [],
 			manifest: {
 				name: 'StackAtlas',
 				short_name: 'StackAtlas',

@@ -11,7 +11,7 @@ intrinsischen Eigenschaften (9 Kriterien + Owner-Bonus, Summe 0–100, siehe
 Konvergenz ein starkes Signal dafür ist, dass ein Baustein Teil einer
 gemeinsamen, souveränen Grundinfrastruktur geworden ist.
 
-Wunsch: *"häufige Relation ⇒ besserer Score"*. Ziel des Plans ist, dieses
+Wunsch: _"häufige Relation ⇒ besserer Score"_. Ziel des Plans ist, dieses
 Signal sauber ins Metrik-System zu bringen, **ohne** den Sovereignty-Score
 zu verwässern.
 
@@ -102,7 +102,7 @@ dokumentiert justierbar sind.
   `computeAdoptionScores(items, stacks, reverseDeps)` →
   `Map<itemId, AdoptionResult>`. Konstanten zentral.
 - `src/utils/overallScore.ts` **(neu)** — `computeOverallScore({ sovereignty,
-  sovereignAdoption, adoption })`; Gewichte (0.60 / 0.25 / 0.15) als
+sovereignAdoption, adoption })`; Gewichte (0.60 / 0.25 / 0.15) als
   benannte Konstanten.
 - `scripts/generate-data.mjs` — nach Aufbau von `REVERSE_DEPENDENCIES`
   `computeAdoptionScores` aufrufen, `overallScore` berechnen, Werte in die
@@ -122,16 +122,16 @@ dokumentiert justierbar sind.
 
 - `docs/ITEM_METRICS_SCHEMA.md` — Abschnitte `adoption`, `sovereignAdoption`,
   `overall` (Felder, Formel, Wertebereich, Beziehung zum Sovereignty-Score).
-- `docs/SCORING_SCALE_DESIGN.md` — neue Abschnitte *"Adoption Score
-  (unabhängige Metrik)"* und *"Overall Score (Default-Ranking)"*. Nachweis,
+- `docs/SCORING_SCALE_DESIGN.md` — neue Abschnitte _"Adoption Score
+  (unabhängige Metrik)"_ und _"Overall Score (Default-Ranking)"_. Nachweis,
   dass die 6-Kategorien-Skala für `overallScore` gültig bleibt (alle
   Summanden sind auf 0–100 normiert).
 - `docs/SCORING_REFACTORING_PLAN.md` — Entscheidung "Single Source of Truth
   in `adoptionScore.ts`" dokumentieren; Snapshot-Test erwähnen.
-- `docs/ARC42.md` §6 *Querschnittliche Konzepte* — Unterabschnitt
-  *"Netzwerkeffekte / Stack-Konvergenz"*.
+- `docs/ARC42.md` §6 _Querschnittliche Konzepte_ — Unterabschnitt
+  _"Netzwerkeffekte / Stack-Konvergenz"_.
 - `docs/README.md` — Einzeiler im Metrik-Überblick.
-- `docs/BUSSINESS_CASE.md` — kurzer Absatz zur neuen Sichtbarkeit von
+- `docs/BUSINESS_CASE.md` — kurzer Absatz zur neuen Sichtbarkeit von
   Ökosystem-Konvergenz.
 - `scripts/report-dependency-health.mjs` — neue Sektionen "Top 10 Adoption"
   und "Top 10 Sovereign Adoption".
