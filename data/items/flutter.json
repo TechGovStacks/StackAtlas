@@ -30,5 +30,6 @@
 		"lastDate": "2025-11-11",
 		"url": "https://docs.flutter.dev/"
 	},
-	"license": "BSD-3-Clause"
+	"license": "BSD-3-Clause",
+	"groupKey": "cross-platform-ui-framework"
 }
