@@ -1,408 +1,409 @@
 {
-	"header": {
-		"skipToContent": "Direkt zum Inhalt springen",
-		"instanceInfoAria": "Instanz-Informationen",
-		"officialProjectSetup": "Digitale Souveränität messen & vergleichen",
-		"mvpLayoutAligned": "Ausgerichtet an den Doku-Vorgaben (MVP Layout)",
-		"commit": "Commit",
-		"mainNavigationAria": "Hauptnavigation",
-		"nav": {
-			"home": "Home",
-			"categories": "Kategorien",
-			"docs": "Docs",
-			"imprint": "Impressum",
-			"settings": "Einstellungen"
-		},
-		"eyebrow": "Digitale Souveränität messen & vergleichen",
-		"subtitle": "Wie souverän ist dein Tech-Stack? StackAtlas bewertet Technologien und Standards weltweit mit einem transparenten Souveränitäts-Score von 0–100 – und zeigt, welche Abhängigkeiten deine digitale Unabhängigkeit gefährden.",
-		"languageSwitcher": {
-			"ariaLabel": "Sprache wechseln",
-			"label": "Sprache",
-			"hint": "Anzeigesprache auswählen",
-			"accessKey": "l"
-		},
-		"version": "Version",
-		"betaBanner": "Beta-Version – Inhalte können sich noch ändern."
-	},
-	"footer": {
-		"subtitle": "Tech-Stacks weltweit nach digitaler Souveränität bewerten und vergleichen",
-		"navigationAria": "Footer-Navigation",
-		"links": {
-			"documentation": "Dokumentation",
-			"settings": "Einstellungen"
-		},
-		"license": "Lizenz: EUPL-1.2",
-		"builtWith": "Built with",
-		"and": "and",
-		"buildCommitAria": "Build Commit {{commit}}",
-		"buildCommitLabel": "Build-Commit:",
-		"buildInfoAria": "Build Version {{version}} und Commit {{commit}}",
-		"buildVersionLabel": "Build-Version:"
-	},
-	"search": {
-		"regionAria": "Suche und Filter",
-		"inputLabel": "Suche",
-		"placeholder": "Technologie, Standard oder Framework suchen …",
-		"categoryLabel": "Schicht",
-		"allCategories": "Alle Schichten",
-		"relationLabel": "Relation",
-		"allRelations": "Alle Relationen",
-		"dependencies": {
-			"directOnlyLabel": "Nur direkte Abhängigkeiten",
-			"depthLabel": "Abhängigkeitstiefe",
-			"allDepths": "Alle Tiefen",
-			"allTypes": "Alle Dependency-Typen",
-			"depth": {
-				"1": "Tiefe 1",
-				"2": "Tiefe 2",
-				"3": "Tiefe 3"
-			},
-			"typeLabel": "Dependency-Typ",
-			"type": {
-				"build": "Build",
-				"compiles-to": "Compiles-to",
-				"language": "Sprache",
-				"protocol": "Protokoll",
-				"runtime": "Runtime"
-			}
-		},
-		"sublayerLabel": "Unterschicht",
-		"allSublayers": "Alle Unterschichten",
-		"sublayers": {
-			"integration": "Integration",
-			"daten": "Daten",
-			"sicherheit": "Sicherheit",
-			"ki": "KI",
-			"inbetriebnahme": "Inbetriebnahme",
-			"transport": "Transport",
-			"verteilung": "Verteilung",
-			"lowcode": "Low-Code",
-			"anschluss": "Anschluss",
-			"browser": "Browser",
-			"native-apps": "Native Apps",
-			"sprachen": "Sprachen",
-			"frameworks": "Frameworks & Bibliotheken",
-			"laufzeit": "Laufzeit"
-		}
-	},
-	"category": {
-		"toolbarAria": "Schichten filtern",
-		"label": "Schicht",
-		"all": "Alle",
-		"results": {
-			"filteredPrefix": "von",
-			"entries": "Einträgen",
-			"inCategory": "in {{category}}",
-			"forQuery": "für „{{query}}“",
-			"withRelation": "mit Relation „{{relation}}“",
-			"totalTechnologiesAndStandards": "bewertete Technologien & Standards"
-		},
-		"paginationLabel": "Navigiere durch die Artikel"
-	},
-	"results": {
-		"noneFound": "Keine Einträge gefunden",
-		"adjustFilters": "Bitte passen Sie Ihre Suche oder den Kategoriefilter an."
-	},
-	"view": {
-		"toolbarAria": "Ansicht und Sortierung",
-		"viewToggle": "Kachel / Liste",
-		"tile": "Kacheln",
-		"list": "Liste",
-		"sort": {
-			"label": "Sortieren nach",
-			"name": "Stack-Name",
-			"overall": "Gesamtscore",
-			"sovereignty": "Souveränität",
-			"adoption": "Verbreitung",
-			"sovereignAdoption": "Souveräne Verbreitung",
-			"asc": "↑ Aufsteigend",
-			"desc": "↓ Absteigend"
-		}
-	},
-	"article": {
-		"categoryAria": "Kategorie: {{category}}",
-		"openDetails": "Score & Details →",
-		"featured": "Empfohlen",
-		"detailsFor": "Details zu {{name}}",
-		"categoryLabel": "Kategorie: {{category}}",
-		"relatedTitle": "Weitere Einträge im gleichen Layer & Stack",
-		"relatedTitleLayer": "Alle Einträge im gleichen Layer",
-		"relatedSubtitleLayer": "Kein Stack aktiv – alle {{count}} Einträge im Layer werden angezeigt.",
-		"relatedSubtitleStack": "Gefiltert auf Stack – {{count}} Einträge im gleichen Layer.",
-		"website": "Produktseite ↗",
-		"repository": "Repository ↗",
-		"scoreTitle": "Souveränitäts-Score",
-		"scoreAria": "Souveränitäts-Score: {{score}} von 100",
-		"sovereigntyScore": "Souveränitäts-Score (0–100)",
-		"criteria": {
-			"selfHostable": "Selbst betreibbar (kein Zwang zu fremder Infrastruktur)",
-			"dataPortability": "Datenexport in offenen Formaten möglich",
-			"openSource": "Open Source (öffentlicher Quellcode)",
-			"openStandards": "Setzt auf offene, herstellerneutrale Standards",
-			"permissiveLicense": "Permissive oder Copyleft-Lizenz (forkbar)",
-			"hasAudit": "Sicherheitsaudit vorhanden",
-			"matureProject": "Reifes Projekt (graduiert/stabil)",
-			"noTelemetryByDefault": "Keine Telemetrie im Auslieferungszustand",
-			"euHeadquartered": "EU-Hauptsitz oder Registrierung",
-			"ownerType": "Owner-Modell: {{owner}} (+{{points}})",
-			"ownerCountry": "Owner-Land: {{country}}"
-		},
-		"ownerType": {
-			"independentConsortium": "Unabhängiges Konsortium",
-			"corporation": "Konzern",
-			"community": "Community",
-			"oneManShow": "One-Man-Show",
-			"unknown": "Nicht gepflegt"
-		},
-		"ownerCountry": {
-			"unknown": "Unbekannt"
-		},
-		"scoreCategories": {
-			"insufficient": "Unzureichend",
-			"insufficientDescription": "Nicht empfohlen – erhebliche Souveränitätsrisiken",
-			"minimal": "Minimal",
-			"minimalDescription": "Nur unter bestimmten Bedingungen",
-			"adequate": "Ausreichend",
-			"adequateDescription": "Akzeptabel, aber Verbesserung nötig",
-			"good": "Gut",
-			"goodDescription": "Empfohlen für die meisten Fälle",
-			"excellent": "Ausgezeichnet",
-			"excellentDescription": "Sehr empfohlen – hervorragende Souveränität",
-			"outstanding": "Hervorragend",
-			"outstandingDescription": "Gold-Standard – optimale Souveränität"
-		},
-		"maintainerBoost": {
-			"title": "Maintainer-Souveränität aktiv",
-			"explanation": "Im aktiven Stack ist deine Organisation Maintainer dieses Eintrags. Du kontrollierst Quellcode, Betrieb, Datenformate, Protokolle und Telemetrie selbst – fehlende öffentliche Zugänglichkeit ist aus dieser Perspektive eine bewusste Sicherheitsmaßnahme, kein Souveränitätsmangel. Kontext-Score: {{effectiveScore}}/100 (öffentlich bewerteter Score: {{rawScore}}/100).",
-			"boostedCriteriaLabel": "Durch Maintainer-Kontext erfüllt",
-			"criterionMarker": "als Maintainer erfüllt",
-			"criterionTitle": "Dieses Kriterium ist öffentlich nicht erfüllt, gilt aus Maintainer-Sicht aber als erfüllt, weil die Maintainer-Organisation es selbst kontrolliert.",
-			"markerTitle": "Maintainer-Kontext-Boost",
-			"badgeTitle": "Maintainer-Kontext aktiv – öffentlich bewerteter Score: {{rawScore}}/100",
-			"scoreAria": "Souveränitäts-Score (Maintainer-Kontext): {{score}} von 100 – öffentlich bewerteter Score: {{rawScore}} von 100",
-			"noteAria": "Hinweis zum Maintainer-Kontext"
-		},
-		"sovereigntyGaugeAria": "Souveränitäts-Score-Anzeige: {{score}} von 100 ({{category}})",
-		"scoreOverview": {
-			"title": "Gesamt-Score",
-			"calculation": "Score-Berechnung",
-			"sovereignty": "Souveränität",
-			"sovereignAdoption": "Souveräne Verbreitung",
-			"adoption": "Verbreitung",
-			"total": "Gesamt-Score",
-			"usedInStacks": "Genutzt in {{count}} Stacks",
-			"directCoverage": "Direkte Coverage",
-			"transitiveCoverage": "Transitive Coverage",
-			"diversity": "Geografische Diversität"
-		},
-		"coverageHint": {
-			"inline": "Evtl. durch {{item}} im Stack abgedeckt."
-		}
-	},
-	"pwa": {
-		"updateAvailable": "Eine neue Version von StackAtlas ist verfügbar.",
-		"update": "Jetzt aktualisieren",
-		"dismiss": "Später"
-	},
-	"stack": {
-		"label": "Stack",
-		"all": "Ohne",
-		"selectorAria": "Stack auswählen",
-		"rationale": "Begründung",
-		"stats": {
-			"version": "v{{version}}",
-			"items": "{{count}} Einträge",
-			"avgScore": "Ø Souveränitätswert"
-		},
-		"roles": {
-			"maintainer": "Maintainer",
-			"contributor": "Contributor",
-			"funder": "Förderer",
-			"consumer": "Nutzer"
-		}
-	},
-	"stackGallery": {
-		"title": "Stacks",
-		"subtitle": "Alle bewerteten Tech-Stacks absteigend nach digitalem Souveränitäts-Score – vom besten zum schlechtesten.",
-		"listAria": "Rangliste der Tech-Stacks nach Souveränitäts-Score",
-		"bestStack": "Bester Stack – Gold-Platzierung",
-		"rankAria": "Rang {{rank}}",
-		"avgScore": "Ø Souveränitätsscore",
-		"avgScoreAria": "Durchschnittlicher Souveränitätsscore: {{score}} von 100",
-		"scoreDistribution": "Score-Verteilung nach Kategorie",
-		"keyMetrics": "Schlüssel-Metriken",
-		"sourcesTitle": "Quellen",
-		"exploreStack": "Stack im Katalog erkunden →",
-		"itemCount": "{{count}} Einträge",
-		"recommended": "Empfohlen",
-		"approved": "Zugelassen",
-		"deprecated": "Veraltet",
-		"metrics": {
-			"selfHostable": "Selbst betreibbar",
-			"openSource": "Open Source",
-			"euHQ": "EU-Hauptsitz",
-			"permissiveLicense": "Permissive Lizenz",
-			"audit": "Mit Audit",
-			"ownerCountry": "Land des Eigentümers",
-			"unknown": "Unbekannt",
-			"layerBreakdown": "Layer-Verteilung",
-			"roles": "Rollen"
-		},
-		"custom": {
-			"addDep": "Dep hinzufügen",
-			"delete": "Stack löschen",
-			"deleteConfirmAccept": "Ja, löschen",
-			"deleteConfirmCancel": "Abbrechen",
-			"deleteConfirmMessage": "Möchtest du den Stack '{{name}}' wirklich löschen?",
-			"deleteConfirmTitle": "Löschen bestätigen",
-			"item": "Dep auswählen",
-			"relation": "Relation",
-			"manageAria": "Eigene Stacks verwalten",
-			"name": "Stack-Name",
-			"nameTaken": "Name bereits vergeben oder ungültig.",
-			"removeDep": "Dep entfernen",
-			"rename": "Name",
-			"renameSave": "Umbenennen",
-			"save": "Stack anlegen",
-			"saved": "Stack gespeichert.",
-			"selectedAria": "Ausgewählte Deps",
-			"createSectionTitle": "Custom Stack anlegen",
-			"createSectionIntro": "Lege hier einen neuen Custom Stack an. Er wird lokal in deinem Browser gespeichert."
-		}
-	},
-	"pages": {
-		"imprint": {
-			"description": "Diese Seite enthält rechtliche Hinweise und Anbieterinformationen für StackAtlas.",
-			"title": "Impressum"
-		},
-		"settings": {
-			"description": "Verwalte hier anwendungsbezogene Einstellungen und Präferenzen für StackAtlas.",
-			"title": "Einstellungen",
-			"theme": {
-				"label": "Farbschema",
-				"auto": "Automatisch (Systemeinstellung)",
-				"light": "Hell",
-				"dark": "Dunkel",
-				"highContrast": "Hoher Kontrast"
-			},
-			"stackSelection": {
-				"title": "Stack-Selection-Test",
-				"description": "Hier kannst du die Bewertung aus dem Plan direkt ausprobieren. Alle Eingaben werden lokal berechnet und zeigen sofort Entscheidungsklasse und Kernstack-Eignung.",
-				"dimensions": "Dimensionen (0–5)",
-				"config": "Konfiguration",
-				"itemClass": "Item-Klasse",
-				"lifecycle": "Lifecycle-Status",
-				"reset": "Auf Standardwerte zurücksetzen",
-				"hardExclusions": "Hard Exclusions",
-				"result": "Ergebnis",
-				"resultDecision": "Entscheidungsklasse",
-				"resultPoints": "Punkte",
-				"resultWeighted": "Gewichteter Score",
-				"resultThreshold": "Threshold verletzt",
-				"resultHardExclusion": "Hard Exclusion verletzt",
-				"resultCore": "Für Kernstack geeignet",
-				"dimensionLabels": {
-					"austauschbarkeit": "Austauschbarkeit",
-					"betriebsGovernanceFaehigkeit": "Betriebs-/Governance-Fähigkeit",
-					"interoperabilitaet": "Interoperabilität",
-					"offenheitStandardisierung": "Offenheit & Standardisierung",
-					"patternFit": "Pattern-Fit",
-					"reifegrad": "Reifegrad",
-					"steuerbarkeit": "Steuerbarkeit",
-					"souveraenitaet": "Souveränität"
-				},
-				"hardExclusionLabels": {
-					"geringeAustauschbarkeit": "Geringe Austauschbarkeit",
-					"keinDokumentierterStandard": "Kein dokumentierter Standard",
-					"keinKlaresPattern": "Kein klares Pattern",
-					"keinMehrwertGegenueberBestand": "Kein Mehrwert gegenüber Bestand",
-					"nichtOperationalisierbar": "Nicht operationalisierbar",
-					"nurHypeToolMode": "Nur Hype-Tool-Modus",
-					"starkeHerstellerCloudBindung": "Starke Hersteller-/Cloud-Bindung",
-					"ueberschneidungOhneZusatznutzen": "Überschneidung ohne Zusatznutzen",
-					"unreiferInstabilerReifegrad": "Unreifer/instabiler Reifegrad"
-				},
-				"yes": "Ja",
-				"no": "Nein",
-				"itemClassOptions": {
-					"architekturPattern": "Architektur-Pattern",
-					"beobachtungskandidat": "Beobachtungskandidat",
-					"offenerStandard": "Offener Standard",
-					"produktPlattformFramework": "Produkt/Plattform/Framework",
-					"referenzimplementierung": "Referenzimplementierung"
-				},
-				"lifecycleOptions": {
-					"deprecated": "Deprecated",
-					"kandidat": "Kandidat",
-					"kernstack": "Kernstack",
-					"referenz": "Referenz",
-					"sunset": "Sunset"
-				},
-				"stack": "Stack",
-				"item": "Dep auswählen",
-				"saveSelection": "Assessment für ausgewählten Stack/Item speichern",
-				"saveHint": "Bitte Stack und Item auswählen, um zu speichern.",
-				"saveSuccess": "Assessment für Stack/Item lokal gespeichert.",
-				"saveError": "Assessment konnte nicht gespeichert werden.",
-				"selectionContext": "Auswahlkontext",
-				"selectionContextFilled": "Stack und Item ausgewählt",
-				"selectionContextEmpty": "Kein Stack/Item ausgewählt",
-				"stackRole": "Stack-Rolle",
-				"stackStatus": "Stack-Status",
-				"savedAt": "Gespeichert am",
-				"loadSaved": "Gespeichertes Assessment laden",
-				"loadSuccess": "Gespeichertes Assessment geladen."
-			}
-		},
-		"news": {
-			"title": "Community-News",
-			"description": "Hier teilen wir Einblicke in Scoring-Entscheidungen, neue Stack-Aufnahmen und Entwicklungen rund um digitale Souveränität in Europa.",
-			"sectionAria": "Liste der veröffentlichten News",
-			"pushHint": "Bleib auf dem Laufenden — neue Beiträge erscheinen hier, sobald sich Scores oder Stacks verändern.",
-			"metaDate": "Veröffentlicht am {{date}}",
-			"empty": "Noch keine News veröffentlicht.",
-			"focus": {
-				"openDataGovernance": "Fokus: Open Data Governance",
-				"identityWalletInteroperability": "Fokus: Identity Wallet Interoperability",
-				"reportTemplate": "Fokus: Report-Template",
-				"scoringExplained": "Fokus: Scoring erklärt",
-				"dataEntities": "Fokus: Datenmodell & Entitäten"
-			}
-		}
-	},
-	"dependencies": {
-		"requiredByItem": "Benötigt",
-		"usedBy": "Wird verwendet von",
-		"whyConnection": "Warum diese Verbindung?",
-		"meta": "Typ: {{type}} · Scope: {{scope}}",
-		"noReason": "Kein Kommentar hinterlegt.",
-		"graph": {
-			"aria": "Abhängigkeitsgraph",
-			"title": "Abhängigkeitsgraph",
-			"empty": "Keine Abhängigkeiten für die aktuelle Filterauswahl gefunden.",
-			"typeLegend": "Typ",
-			"scopeLegend": "Scope",
-			"canvasAria": "Graph mit {{count}} Abhängigkeitskanten",
-			"edgeAria": "Kante von {{source}} nach {{target}}",
-			"whyConnection": "Warum diese Verbindung?",
-			"edgeType": "Dependency-Typ: {{type}}",
-			"edgeScope": "Scope: {{scope}}",
-			"noReason": "Kein Quellenhinweis oder Kommentar verfügbar.",
-			"noEdgesForSelection": "Für die aktuelle Auswahl wurden keine Kanten gefunden."
-		},
-		"scope": {
-			"required": "Erforderlich",
-			"optional": "Optional",
-			"dev": "Entwicklung"
-		},
-		"root": {
-			"label": "Dependency-Graph für",
-			"all": "Alle Dependencies"
-		}
-	},
-	"betaNotice": {
-		"title": "Beta-Version",
-		"description": "StackAtlas befindet sich in der Beta-Phase. Die Grundfunktionen sind vorhanden und werden permanent optimiert und erweitert. Auch die Datenbasis wird laufend verbessert. Alle Interessierten können gerne über GitHub am Projekt mitarbeiten!",
-		"closeButton": "Verstanden"
-	}
+  "header": {
+    "skipToContent": "Direkt zum Inhalt springen",
+    "instanceInfoAria": "Instanz-Informationen",
+    "officialProjectSetup": "Digitale Souveränität messen & vergleichen",
+    "mvpLayoutAligned": "Ausgerichtet an den Doku-Vorgaben (MVP Layout)",
+    "commit": "Commit",
+    "mainNavigationAria": "Hauptnavigation",
+    "nav": {
+      "home": "Home",
+      "categories": "Kategorien",
+      "docs": "Docs",
+      "imprint": "Impressum",
+      "settings": "Einstellungen"
+    },
+    "eyebrow": "Digitale Souveränität messen & vergleichen",
+    "subtitle": "Wie souverän ist dein Tech-Stack? StackAtlas bewertet Technologien und Standards weltweit mit einem transparenten Souveränitäts-Score von 0–100 – und zeigt, welche Abhängigkeiten deine digitale Unabhängigkeit gefährden.",
+    "languageSwitcher": {
+      "ariaLabel": "Sprache wechseln",
+      "label": "Sprache",
+      "hint": "Anzeigesprache auswählen",
+      "accessKey": "l"
+    },
+    "version": "Version",
+    "betaBanner": "Beta-Version – Inhalte können sich noch ändern."
+  },
+  "footer": {
+    "subtitle": "Tech-Stacks weltweit nach digitaler Souveränität bewerten und vergleichen",
+    "navigationAria": "Footer-Navigation",
+    "links": {
+      "documentation": "Dokumentation",
+      "settings": "Einstellungen"
+    },
+    "license": "Lizenz: EUPL-1.2",
+    "builtWith": "Built with",
+    "and": "and",
+    "buildCommitAria": "Build Commit {{commit}}",
+    "buildCommitLabel": "Build-Commit:",
+    "buildInfoAria": "Build Version {{version}} und Commit {{commit}}",
+    "buildVersionLabel": "Build-Version:"
+  },
+  "search": {
+    "regionAria": "Suche und Filter",
+    "inputLabel": "Suche",
+    "placeholder": "Technologie, Standard oder Framework suchen …",
+    "categoryLabel": "Schicht",
+    "allCategories": "Alle Schichten",
+    "relationLabel": "Relation",
+    "allRelations": "Alle Relationen",
+    "dependencies": {
+      "directOnlyLabel": "Nur direkte Abhängigkeiten",
+      "depthLabel": "Abhängigkeitstiefe",
+      "allDepths": "Alle Tiefen",
+      "allTypes": "Alle Dependency-Typen",
+      "depth": {
+        "1": "Tiefe 1",
+        "2": "Tiefe 2",
+        "3": "Tiefe 3"
+      },
+      "typeLabel": "Dependency-Typ",
+      "type": {
+        "build": "Build",
+        "compiles-to": "Compiles-to",
+        "language": "Sprache",
+        "protocol": "Protokoll",
+        "runtime": "Runtime"
+      }
+    },
+    "sublayerLabel": "Unterschicht",
+    "allSublayers": "Alle Unterschichten",
+    "sublayers": {
+      "integration": "Integration",
+      "daten": "Daten",
+      "sicherheit": "Sicherheit",
+      "ki": "KI",
+      "inbetriebnahme": "Inbetriebnahme",
+      "transport": "Transport",
+      "verteilung": "Verteilung",
+      "lowcode": "Low-Code",
+      "anschluss": "Anschluss",
+      "browser": "Browser",
+      "native-apps": "Native Apps",
+      "sprachen": "Sprachen",
+      "frameworks": "Frameworks & Bibliotheken",
+      "laufzeit": "Laufzeit"
+    }
+  },
+  "category": {
+    "toolbarAria": "Schichten filtern",
+    "label": "Schicht",
+    "all": "Alle",
+    "results": {
+      "filteredPrefix": "von",
+      "entries": "Einträgen",
+      "inCategory": "in {{category}}",
+      "forQuery": "für „{{query}}“",
+      "withRelation": "mit Relation „{{relation}}“",
+      "totalTechnologiesAndStandards": "bewertete Technologien & Standards"
+    },
+    "paginationLabel": "Navigiere durch die Artikel"
+  },
+  "results": {
+    "noneFound": "Keine Einträge gefunden",
+    "adjustFilters": "Bitte passen Sie Ihre Suche oder den Kategoriefilter an."
+  },
+  "view": {
+    "toolbarAria": "Ansicht und Sortierung",
+    "viewToggle": "Kachel / Liste",
+    "tile": "Kacheln",
+    "list": "Liste",
+    "sort": {
+      "label": "Sortieren nach",
+      "name": "Stack-Name",
+      "overall": "Gesamtscore",
+      "sovereignty": "Souveränität",
+      "adoption": "Verbreitung",
+      "sovereignAdoption": "Souveräne Verbreitung",
+      "asc": "↑ Aufsteigend",
+      "desc": "↓ Absteigend"
+    }
+  },
+  "article": {
+    "categoryAria": "Kategorie: {{category}}",
+    "openDetails": "Score & Details →",
+    "featured": "Empfohlen",
+    "detailsFor": "Details zu {{name}}",
+    "categoryLabel": "Kategorie: {{category}}",
+    "relatedTitle": "Weitere Einträge im gleichen Layer & Stack",
+    "relatedTitleLayer": "Alle Einträge im gleichen Layer",
+    "relatedSubtitleLayer": "Kein Stack aktiv – alle {{count}} Einträge im Layer werden angezeigt.",
+    "relatedSubtitleStack": "Gefiltert auf Stack – {{count}} Einträge im gleichen Layer.",
+    "website": "Produktseite ↗",
+    "repository": "Repository ↗",
+    "scoreTitle": "Souveränitäts-Score",
+    "scoreAria": "Souveränitäts-Score: {{score}} von 100",
+    "sovereigntyScore": "Souveränitäts-Score (0–100)",
+    "criteria": {
+      "selfHostable": "Selbst betreibbar (kein Zwang zu fremder Infrastruktur)",
+      "dataPortability": "Datenexport in offenen Formaten möglich",
+      "openSource": "Open Source (öffentlicher Quellcode)",
+      "openStandards": "Setzt auf offene, herstellerneutrale Standards",
+      "permissiveLicense": "Permissive oder Copyleft-Lizenz (forkbar)",
+      "hasAudit": "Sicherheitsaudit vorhanden",
+      "matureProject": "Reifes Projekt (graduiert/stabil)",
+      "noTelemetryByDefault": "Keine Telemetrie im Auslieferungszustand",
+      "euHeadquartered": "EU-Hauptsitz oder Registrierung",
+      "ownerType": "Owner-Modell: {{owner}} (+{{points}})",
+      "ownerCountry": "Owner-Land: {{country}}"
+    },
+    "ownerType": {
+      "independentConsortium": "Unabhängiges Konsortium",
+      "corporation": "Konzern",
+      "community": "Community",
+      "oneManShow": "One-Man-Show",
+      "unknown": "Nicht gepflegt"
+    },
+    "ownerCountry": {
+      "unknown": "Unbekannt"
+    },
+    "scoreCategories": {
+      "insufficient": "Unzureichend",
+      "insufficientDescription": "Nicht empfohlen – erhebliche Souveränitätsrisiken",
+      "minimal": "Minimal",
+      "minimalDescription": "Nur unter bestimmten Bedingungen",
+      "adequate": "Ausreichend",
+      "adequateDescription": "Akzeptabel, aber Verbesserung nötig",
+      "good": "Gut",
+      "goodDescription": "Empfohlen für die meisten Fälle",
+      "excellent": "Ausgezeichnet",
+      "excellentDescription": "Sehr empfohlen – hervorragende Souveränität",
+      "outstanding": "Hervorragend",
+      "outstandingDescription": "Gold-Standard – optimale Souveränität"
+    },
+    "maintainerBoost": {
+      "title": "Maintainer-Souveränität aktiv",
+      "explanation": "Im aktiven Stack ist deine Organisation Maintainer dieses Eintrags. Du kontrollierst Quellcode, Betrieb, Datenformate, Protokolle und Telemetrie selbst – fehlende öffentliche Zugänglichkeit ist aus dieser Perspektive eine bewusste Sicherheitsmaßnahme, kein Souveränitätsmangel. Kontext-Score: {{effectiveScore}}/100 (öffentlich bewerteter Score: {{rawScore}}/100).",
+      "boostedCriteriaLabel": "Durch Maintainer-Kontext erfüllt",
+      "criterionMarker": "als Maintainer erfüllt",
+      "criterionTitle": "Dieses Kriterium ist öffentlich nicht erfüllt, gilt aus Maintainer-Sicht aber als erfüllt, weil die Maintainer-Organisation es selbst kontrolliert.",
+      "markerTitle": "Maintainer-Kontext-Boost",
+      "badgeTitle": "Maintainer-Kontext aktiv – öffentlich bewerteter Score: {{rawScore}}/100",
+      "scoreAria": "Souveränitäts-Score (Maintainer-Kontext): {{score}} von 100 – öffentlich bewerteter Score: {{rawScore}} von 100",
+      "noteAria": "Hinweis zum Maintainer-Kontext"
+    },
+    "sovereigntyGaugeAria": "Souveränitäts-Score-Anzeige: {{score}} von 100 ({{category}})",
+    "scoreOverview": {
+      "title": "Gesamt-Score",
+      "calculation": "Score-Berechnung",
+      "sovereignty": "Souveränität",
+      "sovereignAdoption": "Souveräne Verbreitung",
+      "adoption": "Verbreitung",
+      "total": "Gesamt-Score",
+      "usedInStacks": "Genutzt in {{count}} Stacks",
+      "directCoverage": "Direkte Coverage",
+      "transitiveCoverage": "Transitive Coverage",
+      "diversity": "Geografische Diversität"
+    },
+    "coverageHint": {
+      "inline": "Evtl. durch {{item}} im Stack abgedeckt."
+    }
+  },
+  "pwa": {
+    "updateAvailable": "Eine neue Version von StackAtlas ist verfügbar.",
+    "update": "Jetzt aktualisieren",
+    "dismiss": "Später"
+  },
+  "stack": {
+    "label": "Stack",
+    "all": "Ohne",
+    "selectorAria": "Stack auswählen",
+    "rationale": "Begründung",
+    "stats": {
+      "version": "v{{version}}",
+      "items": "{{count}} Einträge",
+      "avgScore": "Ø Souveränitätswert"
+    },
+    "roles": {
+      "maintainer": "Maintainer",
+      "contributor": "Contributor",
+      "funder": "Förderer",
+      "consumer": "Nutzer"
+    }
+  },
+  "stackGallery": {
+    "title": "Stacks",
+    "subtitle": "Alle bewerteten Tech-Stacks absteigend nach digitalem Souveränitäts-Score – vom besten zum schlechtesten.",
+    "listAria": "Rangliste der Tech-Stacks nach Souveränitäts-Score",
+    "bestStack": "Bester Stack – Gold-Platzierung",
+    "rankAria": "Rang {{rank}}",
+    "avgScore": "Ø Souveränitätsscore",
+    "avgScoreAria": "Durchschnittlicher Souveränitätsscore: {{score}} von 100",
+    "scoreDistribution": "Score-Verteilung nach Kategorie",
+    "keyMetrics": "Schlüssel-Metriken",
+    "sourcesTitle": "Quellen",
+    "exploreStack": "Stack im Katalog erkunden →",
+    "itemCount": "{{count}} Einträge",
+    "recommended": "Empfohlen",
+    "approved": "Zugelassen",
+    "deprecated": "Veraltet",
+    "metrics": {
+      "selfHostable": "Selbst betreibbar",
+      "openSource": "Open Source",
+      "euHQ": "EU-Hauptsitz",
+      "permissiveLicense": "Permissive Lizenz",
+      "audit": "Mit Audit",
+      "ownerCountry": "Land des Eigentümers",
+      "unknown": "Unbekannt",
+      "layerBreakdown": "Layer-Verteilung",
+      "roles": "Rollen"
+    },
+    "custom": {
+      "addDep": "Dep hinzufügen",
+      "delete": "Stack löschen",
+      "deleteConfirmAccept": "Ja, löschen",
+      "deleteConfirmCancel": "Abbrechen",
+      "deleteConfirmMessage": "Möchtest du den Stack '{{name}}' wirklich löschen?",
+      "deleteConfirmTitle": "Löschen bestätigen",
+      "item": "Dep auswählen",
+      "relation": "Relation",
+      "manageAria": "Eigene Stacks verwalten",
+      "name": "Stack-Name",
+      "nameTaken": "Name bereits vergeben oder ungültig.",
+      "removeDep": "Dep entfernen",
+      "rename": "Name",
+      "renameSave": "Umbenennen",
+      "save": "Stack anlegen",
+      "saved": "Stack gespeichert.",
+      "selectedAria": "Ausgewählte Deps",
+      "createSectionTitle": "Custom Stack anlegen",
+      "createSectionIntro": "Lege hier einen neuen Custom Stack an. Er wird lokal in deinem Browser gespeichert."
+    }
+  },
+  "pages": {
+    "imprint": {
+      "description": "Diese Seite enthält rechtliche Hinweise und Anbieterinformationen für StackAtlas.",
+      "title": "Impressum"
+    },
+    "settings": {
+      "description": "Verwalte hier anwendungsbezogene Einstellungen und Präferenzen für StackAtlas.",
+      "title": "Einstellungen",
+      "theme": {
+        "label": "Farbschema",
+        "auto": "Automatisch (Systemeinstellung)",
+        "light": "Hell",
+        "dark": "Dunkel",
+        "highContrast": "Hoher Kontrast"
+      },
+      "stackSelection": {
+        "title": "Stack-Selection-Test",
+        "description": "Hier kannst du die Bewertung aus dem Plan direkt ausprobieren. Alle Eingaben werden lokal berechnet und zeigen sofort Entscheidungsklasse und Kernstack-Eignung.",
+        "dimensions": "Dimensionen (0–5)",
+        "config": "Konfiguration",
+        "itemClass": "Item-Klasse",
+        "lifecycle": "Lifecycle-Status",
+        "reset": "Auf Standardwerte zurücksetzen",
+        "hardExclusions": "Hard Exclusions",
+        "result": "Ergebnis",
+        "resultDecision": "Entscheidungsklasse",
+        "resultPoints": "Punkte",
+        "resultWeighted": "Gewichteter Score",
+        "resultThreshold": "Threshold verletzt",
+        "resultHardExclusion": "Hard Exclusion verletzt",
+        "resultCore": "Für Kernstack geeignet",
+        "dimensionLabels": {
+          "austauschbarkeit": "Austauschbarkeit",
+          "betriebsGovernanceFaehigkeit": "Betriebs-/Governance-Fähigkeit",
+          "interoperabilitaet": "Interoperabilität",
+          "offenheitStandardisierung": "Offenheit & Standardisierung",
+          "patternFit": "Pattern-Fit",
+          "reifegrad": "Reifegrad",
+          "steuerbarkeit": "Steuerbarkeit",
+          "souveraenitaet": "Souveränität"
+        },
+        "hardExclusionLabels": {
+          "geringeAustauschbarkeit": "Geringe Austauschbarkeit",
+          "keinDokumentierterStandard": "Kein dokumentierter Standard",
+          "keinKlaresPattern": "Kein klares Pattern",
+          "keinMehrwertGegenueberBestand": "Kein Mehrwert gegenüber Bestand",
+          "nichtOperationalisierbar": "Nicht operationalisierbar",
+          "nurHypeToolMode": "Nur Hype-Tool-Modus",
+          "starkeHerstellerCloudBindung": "Starke Hersteller-/Cloud-Bindung",
+          "ueberschneidungOhneZusatznutzen": "Überschneidung ohne Zusatznutzen",
+          "unreiferInstabilerReifegrad": "Unreifer/instabiler Reifegrad"
+        },
+        "yes": "Ja",
+        "no": "Nein",
+        "itemClassOptions": {
+          "architekturPattern": "Architektur-Pattern",
+          "beobachtungskandidat": "Beobachtungskandidat",
+          "offenerStandard": "Offener Standard",
+          "produktPlattformFramework": "Produkt/Plattform/Framework",
+          "referenzimplementierung": "Referenzimplementierung"
+        },
+        "lifecycleOptions": {
+          "deprecated": "Deprecated",
+          "kandidat": "Kandidat",
+          "kernstack": "Kernstack",
+          "referenz": "Referenz",
+          "sunset": "Sunset"
+        },
+        "stack": "Stack",
+        "item": "Dep auswählen",
+        "saveSelection": "Assessment für ausgewählten Stack/Item speichern",
+        "saveHint": "Bitte Stack und Item auswählen, um zu speichern.",
+        "saveSuccess": "Assessment für Stack/Item lokal gespeichert.",
+        "saveError": "Assessment konnte nicht gespeichert werden.",
+        "selectionContext": "Auswahlkontext",
+        "selectionContextFilled": "Stack und Item ausgewählt",
+        "selectionContextEmpty": "Kein Stack/Item ausgewählt",
+        "stackRole": "Stack-Rolle",
+        "stackStatus": "Stack-Status",
+        "savedAt": "Gespeichert am",
+        "loadSaved": "Gespeichertes Assessment laden",
+        "loadSuccess": "Gespeichertes Assessment geladen."
+      }
+    },
+    "news": {
+      "title": "Community-News",
+      "description": "Hier teilen wir Einblicke in Scoring-Entscheidungen, neue Stack-Aufnahmen und Entwicklungen rund um digitale Souveränität in Europa.",
+      "sectionAria": "Liste der veröffentlichten News",
+      "pushHint": "Bleib auf dem Laufenden — neue Beiträge erscheinen hier, sobald sich Scores oder Stacks verändern.",
+      "metaDate": "Veröffentlicht am {{date}}",
+      "empty": "Noch keine News veröffentlicht.",
+      "focus": {
+        "openDataGovernance": "Fokus: Open Data Governance",
+        "identityWalletInteroperability": "Fokus: Identity Wallet Interoperability",
+        "reportTemplate": "Fokus: Report-Template",
+        "scoringExplained": "Fokus: Scoring erklärt",
+        "dataEntities": "Fokus: Datenmodell & Entitäten",
+        "groupComparison": "Fokus: Vergleichsgruppen"
+      }
+    }
+  },
+  "dependencies": {
+    "requiredByItem": "Benötigt",
+    "usedBy": "Wird verwendet von",
+    "whyConnection": "Warum diese Verbindung?",
+    "meta": "Typ: {{type}} · Scope: {{scope}}",
+    "noReason": "Kein Kommentar hinterlegt.",
+    "graph": {
+      "aria": "Abhängigkeitsgraph",
+      "title": "Abhängigkeitsgraph",
+      "empty": "Keine Abhängigkeiten für die aktuelle Filterauswahl gefunden.",
+      "typeLegend": "Typ",
+      "scopeLegend": "Scope",
+      "canvasAria": "Graph mit {{count}} Abhängigkeitskanten",
+      "edgeAria": "Kante von {{source}} nach {{target}}",
+      "whyConnection": "Warum diese Verbindung?",
+      "edgeType": "Dependency-Typ: {{type}}",
+      "edgeScope": "Scope: {{scope}}",
+      "noReason": "Kein Quellenhinweis oder Kommentar verfügbar.",
+      "noEdgesForSelection": "Für die aktuelle Auswahl wurden keine Kanten gefunden."
+    },
+    "scope": {
+      "required": "Erforderlich",
+      "optional": "Optional",
+      "dev": "Entwicklung"
+    },
+    "root": {
+      "label": "Dependency-Graph für",
+      "all": "Alle Dependencies"
+    }
+  },
+  "betaNotice": {
+    "title": "Beta-Version",
+    "description": "StackAtlas befindet sich in der Beta-Phase. Die Grundfunktionen sind vorhanden und werden permanent optimiert und erweitert. Auch die Datenbasis wird laufend verbessert. Alle Interessierten können gerne über GitHub am Projekt mitarbeiten!",
+    "closeButton": "Verstanden"
+  }
 }

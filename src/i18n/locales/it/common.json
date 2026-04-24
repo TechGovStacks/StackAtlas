@@ -1,353 +1,354 @@
 {
-	"header": {
-		"skipToContent": "Passa al contenuto principale",
-		"instanceInfoAria": "Informazioni sull'istanza",
-		"officialProjectSetup": "Misurare e confrontare la sovranità digitale",
-		"mvpLayoutAligned": "Allineato ai requisiti della documentazione (layout MVP)",
-		"commit": "Impegnarsi",
-		"mainNavigationAria": "Navigazione principale",
-		"nav": {
-			"home": "Casa",
-			"categories": "Categorie",
-			"docs": "Documenti",
-			"imprint": "Impronta",
-			"settings": "Impostazioni"
-		},
-		"eyebrow": "Misurare e confrontare la sovranità digitale",
-		"subtitle": "Quanto è sovrano il tuo stack tecnologico? StackAtlas valuta le tecnologie e gli standard in tutto il mondo con un punteggio di sovranità trasparente compreso tra 0 e 100 e rivela quali dipendenze minacciano la tua indipendenza digitale.",
-		"languageSwitcher": {
-			"ariaLabel": "Cambia lingua",
-			"label": "Lingua",
-			"hint": "Seleziona la lingua di visualizzazione",
-			"accessKey": "l"
-		},
-		"version": "Versione",
-		"betaBanner": "Versione beta: i contenuti potrebbero ancora cambiare."
-	},
-	"footer": {
-		"subtitle": "Valuta e confronta gli stack tecnologici in tutto il mondo in base alla sovranità digitale",
-		"navigationAria": "Navigazione nel piè di pagina",
-		"links": {
-			"documentation": "Documentazione",
-			"settings": "Impostazioni"
-		},
-		"license": "Licenza: EUPL-1.2",
-		"builtWith": "Costruito con",
-		"and": "E",
-		"buildCommitAria": "Crea commit {{commit}}",
-		"buildCommitLabel": "Compila commit:",
-		"buildInfoAria": "Crea la versione {{version}} ed esegui il commit di {{commit}}",
-		"buildVersionLabel": "Versione di creazione:"
-	},
-	"search": {
-		"regionAria": "Cerca e filtra",
-		"inputLabel": "Ricerca",
-		"placeholder": "Cerca tecnologia, standard o framework...",
-		"categoryLabel": "Strato",
-		"allCategories": "Tutti gli strati",
-		"relationLabel": "Relazione",
-		"allRelations": "Tutte le relazioni",
-		"sublayerLabel": "Sottolivello",
-		"allSublayers": "Tutti i sottolivelli",
-		"sublayers": {
-			"integration": "Integrazione",
-			"daten": "Dati",
-			"sicherheit": "Sicurezza",
-			"ki": "IA",
-			"inbetriebnahme": "Operatività",
-			"transport": "Trasporto",
-			"verteilung": "Distribuzione",
-			"lowcode": "Low-code",
-			"anschluss": "Connettività",
-			"browser": "Browser",
-			"native-apps": "App native",
-			"sprachen": "Linguaggi",
-			"frameworks": "Framework e librerie",
-			"laufzeit": "Tempo di esecuzione"
-		}
-	},
-	"category": {
-		"toolbarAria": "Filtra livelli",
-		"label": "Strato",
-		"all": "Tutto",
-		"results": {
-			"filteredPrefix": "Di",
-			"entries": "voci",
-			"inCategory": "in {{category}}",
-			"forQuery": "per “{{query}}”",
-			"withRelation": "con la relazione “{{relation}}”",
-			"totalTechnologiesAndStandards": "tecnologie e standard valutati"
-		},
-		"paginationLabel": "Naviga tra gli articoli"
-	},
-	"results": {
-		"noneFound": "Nessuna voce trovata",
-		"adjustFilters": "Modifica la ricerca o il filtro della categoria."
-	},
-	"view": {
-		"toolbarAria": "Visualizza e ordina",
-		"viewToggle": "Riquadro/Elenco",
-		"tile": "Piastrelle",
-		"list": "Lista",
-		"sort": {
-			"label": "Ordina per",
-			"name": "Nome stack",
-			"score": "Punto",
-			"asc": "↑ Crescente",
-			"desc": "↓ Discendente"
-		}
-	},
-	"article": {
-		"categoryAria": "Categoria: {{category}}",
-		"openDetails": "Punteggio e dettagli →",
-		"featured": "In primo piano",
-		"detailsFor": "Dettagli per {{name}}",
-		"categoryLabel": "Categoria: {{category}}",
-		"relatedTitle": "Più voci nello stesso livello e pila",
-		"relatedTitleLayer": "Tutte le voci nello stesso livello",
-		"relatedSubtitleLayer": "Nessuno stack attivo: vengono visualizzate tutte le {{count}} voci in questo livello.",
-		"relatedSubtitleStack": "Filtrato per stack: {{count}} voci nello stesso livello.",
-		"website": "Sito web ↗",
-		"repository": "Deposito ↗",
-		"scoreTitle": "Punteggio di sovranità",
-		"scoreAria": "Punteggio di sovranità: {{score}} di 100",
-		"sovereigntyScore": "Punteggio di sovranità (0-100)",
-		"criteria": {
-			"selfHostable": "Auto-ospitabile (non è richiesta alcuna infrastruttura di terze parti)",
-			"dataPortability": "Dati esportabili in formati aperti e non proprietari",
-			"openSource": "Open Source (codice sorgente pubblico)",
-			"openStandards": "Basato su standard aperti e indipendenti dal fornitore",
-			"permissiveLicense": "Licenza permissiva o copyleft (diramabile)",
-			"hasAudit": "Controllo di sicurezza disponibile",
-			"matureProject": "Progetto maturo (laurea/stabile)",
-			"noTelemetryByDefault": "Nessuna telemetria raccolta per impostazione predefinita",
-			"euHeadquartered": "Sede o registrazione UE",
-			"ownerType": "Modello proprietario: {{owner}} (+{{points}})",
-			"ownerCountry": "Paese del proprietario: {{country}}"
-		},
-		"ownerType": {
-			"independentConsortium": "Consorzio indipendente",
-			"corporation": "Società",
-			"community": "Comunità",
-			"oneManShow": "Spettacolo personale",
-			"unknown": "Non mantenuto"
-		},
-		"ownerCountry": {
-			"unknown": "Sconosciuto"
-		},
-		"scoreCategories": {
-			"insufficient": "Insufficiente",
-			"insufficientDescription": "Non raccomandato: rischi significativi per la sovranità",
-			"minimal": "Minimo",
-			"minimalDescription": "Solo a condizioni specifiche",
-			"adequate": "Adeguato",
-			"adequateDescription": "Accettabile, ma sono necessari miglioramenti",
-			"good": "Bene",
-			"goodDescription": "Consigliato per la maggior parte dei casi",
-			"excellent": "Eccellente",
-			"excellentDescription": "Altamente raccomandato – eccellente sovranità",
-			"outstanding": "Eccezionale",
-			"outstandingDescription": "Gold standard: sovranità ottimale"
-		},
-		"maintainerBoost": {
-			"title": "È stata applicata la sovranità del manutentore",
-			"explanation": "All'interno dello stack attivo la tua organizzazione mantiene questo elemento. Sei tu che controlli direttamente il codice sorgente, l'hosting, i formati dei dati, i protocolli e la telemetria: qualsiasi mancanza di accesso pubblico è una posizione di sicurezza deliberata piuttosto che una lacuna di sovranità. Punteggio contestuale: {{effectiveScore}}/100 (punteggio pubblico: {{rawScore}}/100).",
-			"boostedCriteriaLabel": "Soddisfatto dal contesto del manutentore",
-			"criterionMarker": "soddisfatto come manutentore",
-			"criterionTitle": "Questo criterio non è soddisfatto pubblicamente, ma conta come soddisfatto dal punto di vista del manutentore perché l'organizzazione manutentrice lo controlla direttamente.",
-			"markerTitle": "Aumento del contesto del manutentore",
-			"badgeTitle": "Contesto manutentore attivo – punteggio pubblico: {{rawScore}}/100",
-			"scoreAria": "Punteggio di sovranità (contesto del manutentore): {{score}} di 100 – punteggio pubblico: {{rawScore}} di 100",
-			"noteAria": "Nota sul contesto del manutentore"
-		},
-		"sovereigntyGaugeAria": "Indicatore del punteggio di sovranità: {{score}} su 100 ({{category}})",
-		"scoreOverview": {
-			"title": "Punteggio complessivo",
-			"calculation": "Calcolo del punteggio",
-			"sovereignty": "Sovranità",
-			"sovereignAdoption": "Adozione sovrana",
-			"adoption": "Adozione",
-			"total": "Punteggio complessivo",
-			"usedInStacks": "Usato in {{count}} stack",
-			"directCoverage": "Direct coverage",
-			"transitiveCoverage": "Transitive coverage",
-			"diversity": "Geographic diversity"
-		}
-	},
-	"pwa": {
-		"updateAvailable": "È disponibile una nuova versione di StackAtlas.",
-		"update": "Aggiorna ora",
-		"dismiss": "Dopo"
-	},
-	"stack": {
-		"label": "Pila",
-		"all": "Senza",
-		"selectorAria": "Seleziona pila",
-		"rationale": "Motivazione",
-		"stats": {
-			"version": "v{{version}}",
-			"items": "{{count}} articoli",
-			"avgScore": "Media punteggio di sovranità"
-		},
-		"roles": {
-			"maintainer": "Manutentore",
-			"contributor": "Collaboratore",
-			"funder": "Finanziatore",
-			"consumer": "Consumatore"
-		}
-	},
-	"stackGallery": {
-		"title": "Stacks",
-		"subtitle": "Tutti gli stack tecnologici classificati in base al punteggio di sovranità digitale: dal migliore al più basso.",
-		"listAria": "Stack tecnologici classificati in base al punteggio di sovranità",
-		"bestStack": "Stack in cima alla classifica: posizionamento oro",
-		"rankAria": "Classifica {{rank}}",
-		"avgScore": "Media punteggio di sovranità",
-		"avgScoreAria": "Punteggio medio di sovranità: {{score}} su 100",
-		"scoreDistribution": "Distribuzione del punteggio per categoria",
-		"keyMetrics": "Metriche chiave",
-		"sourcesTitle": "Fonti",
-		"exploreStack": "Esplora lo stack nel catalogo →",
-		"itemCount": "{{count}} articoli",
-		"recommended": "Raccomandato",
-		"approved": "Approvato",
-		"deprecated": "Deprecato",
-		"metrics": {
-			"selfHostable": "Auto-ospitale",
-			"openSource": "Fonte aperta",
-			"euHQ": "Con sede nell'UE",
-			"permissiveLicense": "Licenza permissiva",
-			"audit": "Controllato",
-			"ownerCountry": "Paese proprietario",
-			"unknown": "Sconosciuto",
-			"layerBreakdown": "Rottura degli strati",
-			"roles": "Ruoli"
-		},
-		"custom": {
-			"addDep": "Aggiungi dep",
-			"delete": "Elimina stack",
-			"deleteConfirmAccept": "Sì, elimina",
-			"deleteConfirmCancel": "Annulla",
-			"deleteConfirmMessage": "Vuoi davvero eliminare lo stack '{{name}}'?",
-			"deleteConfirmTitle": "Conferma eliminazione",
-			"item": "Seleziona dep",
-			"relation": "Relazione",
-			"manageAria": "Gestisci stack personalizzati",
-			"name": "Nome stack",
-			"nameTaken": "Il nome esiste già o non è valido.",
-			"removeDep": "Rimuovi dep",
-			"rename": "Rinomina stack",
-			"renameSave": "Salva nome",
-			"save": "Crea stack",
-			"saved": "Stack salvato.",
-			"selectedAria": "Deps selezionate",
-			"createSectionTitle": "Create custom stack",
-			"createSectionIntro": "Create a new custom stack here. It will be saved locally in your browser."
-		}
-	},
-	"pages": {
-		"imprint": {
-			"description": "Questa pagina fornisce avvisi legali e informazioni sul fornitore di StackAtlas.",
-			"title": "Impronta"
-		},
-		"settings": {
-			"description": "Gestisci le impostazioni e le preferenze dell'applicazione per StackAtlas qui.",
-			"title": "Impostazioni",
-			"theme": {
-				"label": "Schema colore",
-				"auto": "Automatico (impostazione sistema)",
-				"light": "Chiaro",
-				"dark": "Scuro",
-				"highContrast": "Contrasto elevato"
-			},
-			"stackSelection": {
-				"title": "Stack selection test",
-				"description": "Try the plan-based assessment directly. All inputs are calculated locally and immediately show decision class and core-stack eligibility.",
-				"dimensions": "Dimensions (0–5)",
-				"config": "Configuration",
-				"itemClass": "Item class",
-				"lifecycle": "Lifecycle status",
-				"reset": "Reset to defaults",
-				"hardExclusions": "Hard exclusions",
-				"result": "Result",
-				"resultDecision": "Decision class",
-				"resultPoints": "Points",
-				"resultWeighted": "Weighted score",
-				"resultThreshold": "Threshold failed",
-				"resultHardExclusion": "Hard exclusion failed",
-				"resultCore": "Eligible for core stack",
-				"dimensionLabels": {
-					"austauschbarkeit": "Replaceability",
-					"betriebsGovernanceFaehigkeit": "Operational/governance capability",
-					"interoperabilitaet": "Interoperability",
-					"offenheitStandardisierung": "Openness & standardization",
-					"patternFit": "Pattern fit",
-					"reifegrad": "Maturity",
-					"steuerbarkeit": "Controllability",
-					"souveraenitaet": "Sovereignty"
-				},
-				"hardExclusionLabels": {
-					"geringeAustauschbarkeit": "Low replaceability",
-					"keinDokumentierterStandard": "No documented standard",
-					"keinKlaresPattern": "No clear pattern",
-					"keinMehrwertGegenueberBestand": "No added value over current stack",
-					"nichtOperationalisierbar": "Not operationalizable",
-					"nurHypeToolMode": "Hype-tool mode only",
-					"starkeHerstellerCloudBindung": "Strong vendor/cloud lock-in",
-					"ueberschneidungOhneZusatznutzen": "Overlap without additional value",
-					"unreiferInstabilerReifegrad": "Immature/unstable maturity"
-				},
-				"yes": "Yes",
-				"no": "No",
-				"itemClassOptions": {
-					"architekturPattern": "Architecture pattern",
-					"beobachtungskandidat": "Observation candidate",
-					"offenerStandard": "Open standard",
-					"produktPlattformFramework": "Product/platform/framework",
-					"referenzimplementierung": "Reference implementation"
-				},
-				"lifecycleOptions": {
-					"deprecated": "Deprecated",
-					"kandidat": "Candidate",
-					"kernstack": "Core stack",
-					"referenz": "Reference",
-					"sunset": "Sunset"
-				},
-				"stack": "Stack",
-				"item": "Seleziona dep",
-				"saveSelection": "Save assessment for selected stack/item",
-				"saveHint": "Please select stack and item before saving.",
-				"saveSuccess": "Assessment saved locally for stack/item.",
-				"saveError": "Assessment could not be saved.",
-				"selectionContext": "Selection context",
-				"selectionContextFilled": "Stack and item selected",
-				"selectionContextEmpty": "No stack/item selected",
-				"stackRole": "Stack role",
-				"stackStatus": "Stack status",
-				"savedAt": "Saved at",
-				"loadSaved": "Load saved assessment",
-				"loadSuccess": "Saved assessment loaded."
-			}
-		},
-		"news": {
-			"title": "Notizie della community",
-			"description": "Qui condividiamo approfondimenti sulle decisioni di punteggio, nuove aggiunte agli stack e sviluppi sulla sovranità digitale in Europa.",
-			"sectionAria": "Elenco dei post di notizie pubblicati",
-			"pushHint": "Resta aggiornato — nuovi articoli appaiono qui quando cambiano score o stack.",
-			"metaDate": "Pubblicato il {{date}}",
-			"empty": "Nessun post di notizie ancora pubblicato.",
-			"focus": {
-				"openDataGovernance": "Focus: Governance dei dati aperti",
-				"identityWalletInteroperability": "Obiettivo: interoperabilità del portafoglio di identità",
-				"reportTemplate": "Obiettivo: modello di rapporto",
-				"scoringExplained": "Focus: Spiegazione del punteggio",
-				"dataEntities": "Focus: Modello dati ed entità"
-			}
-		}
-	},
-	"betaNotice": {
-		"title": "Versione beta",
-		"description": "StackAtlas è in versione beta. Le funzionalità di base sono disponibili e vengono continuamente ottimizzate ed ampliate. Anche la base dati viene costantemente migliorata. Tutti gli interessati sono invitati a contribuire al progetto tramite GitHub!",
-		"closeButton": "Capito"
-	}
+  "header": {
+    "skipToContent": "Passa al contenuto principale",
+    "instanceInfoAria": "Informazioni sull'istanza",
+    "officialProjectSetup": "Misurare e confrontare la sovranità digitale",
+    "mvpLayoutAligned": "Allineato ai requisiti della documentazione (layout MVP)",
+    "commit": "Impegnarsi",
+    "mainNavigationAria": "Navigazione principale",
+    "nav": {
+      "home": "Casa",
+      "categories": "Categorie",
+      "docs": "Documenti",
+      "imprint": "Impronta",
+      "settings": "Impostazioni"
+    },
+    "eyebrow": "Misurare e confrontare la sovranità digitale",
+    "subtitle": "Quanto è sovrano il tuo stack tecnologico? StackAtlas valuta le tecnologie e gli standard in tutto il mondo con un punteggio di sovranità trasparente compreso tra 0 e 100 e rivela quali dipendenze minacciano la tua indipendenza digitale.",
+    "languageSwitcher": {
+      "ariaLabel": "Cambia lingua",
+      "label": "Lingua",
+      "hint": "Seleziona la lingua di visualizzazione",
+      "accessKey": "l"
+    },
+    "version": "Versione",
+    "betaBanner": "Versione beta: i contenuti potrebbero ancora cambiare."
+  },
+  "footer": {
+    "subtitle": "Valuta e confronta gli stack tecnologici in tutto il mondo in base alla sovranità digitale",
+    "navigationAria": "Navigazione nel piè di pagina",
+    "links": {
+      "documentation": "Documentazione",
+      "settings": "Impostazioni"
+    },
+    "license": "Licenza: EUPL-1.2",
+    "builtWith": "Costruito con",
+    "and": "E",
+    "buildCommitAria": "Crea commit {{commit}}",
+    "buildCommitLabel": "Compila commit:",
+    "buildInfoAria": "Crea la versione {{version}} ed esegui il commit di {{commit}}",
+    "buildVersionLabel": "Versione di creazione:"
+  },
+  "search": {
+    "regionAria": "Cerca e filtra",
+    "inputLabel": "Ricerca",
+    "placeholder": "Cerca tecnologia, standard o framework...",
+    "categoryLabel": "Strato",
+    "allCategories": "Tutti gli strati",
+    "relationLabel": "Relazione",
+    "allRelations": "Tutte le relazioni",
+    "sublayerLabel": "Sottolivello",
+    "allSublayers": "Tutti i sottolivelli",
+    "sublayers": {
+      "integration": "Integrazione",
+      "daten": "Dati",
+      "sicherheit": "Sicurezza",
+      "ki": "IA",
+      "inbetriebnahme": "Operatività",
+      "transport": "Trasporto",
+      "verteilung": "Distribuzione",
+      "lowcode": "Low-code",
+      "anschluss": "Connettività",
+      "browser": "Browser",
+      "native-apps": "App native",
+      "sprachen": "Linguaggi",
+      "frameworks": "Framework e librerie",
+      "laufzeit": "Tempo di esecuzione"
+    }
+  },
+  "category": {
+    "toolbarAria": "Filtra livelli",
+    "label": "Strato",
+    "all": "Tutto",
+    "results": {
+      "filteredPrefix": "Di",
+      "entries": "voci",
+      "inCategory": "in {{category}}",
+      "forQuery": "per “{{query}}”",
+      "withRelation": "con la relazione “{{relation}}”",
+      "totalTechnologiesAndStandards": "tecnologie e standard valutati"
+    },
+    "paginationLabel": "Naviga tra gli articoli"
+  },
+  "results": {
+    "noneFound": "Nessuna voce trovata",
+    "adjustFilters": "Modifica la ricerca o il filtro della categoria."
+  },
+  "view": {
+    "toolbarAria": "Visualizza e ordina",
+    "viewToggle": "Riquadro/Elenco",
+    "tile": "Piastrelle",
+    "list": "Lista",
+    "sort": {
+      "label": "Ordina per",
+      "name": "Nome stack",
+      "score": "Punto",
+      "asc": "↑ Crescente",
+      "desc": "↓ Discendente"
+    }
+  },
+  "article": {
+    "categoryAria": "Categoria: {{category}}",
+    "openDetails": "Punteggio e dettagli →",
+    "featured": "In primo piano",
+    "detailsFor": "Dettagli per {{name}}",
+    "categoryLabel": "Categoria: {{category}}",
+    "relatedTitle": "Più voci nello stesso livello e pila",
+    "relatedTitleLayer": "Tutte le voci nello stesso livello",
+    "relatedSubtitleLayer": "Nessuno stack attivo: vengono visualizzate tutte le {{count}} voci in questo livello.",
+    "relatedSubtitleStack": "Filtrato per stack: {{count}} voci nello stesso livello.",
+    "website": "Sito web ↗",
+    "repository": "Deposito ↗",
+    "scoreTitle": "Punteggio di sovranità",
+    "scoreAria": "Punteggio di sovranità: {{score}} di 100",
+    "sovereigntyScore": "Punteggio di sovranità (0-100)",
+    "criteria": {
+      "selfHostable": "Auto-ospitabile (non è richiesta alcuna infrastruttura di terze parti)",
+      "dataPortability": "Dati esportabili in formati aperti e non proprietari",
+      "openSource": "Open Source (codice sorgente pubblico)",
+      "openStandards": "Basato su standard aperti e indipendenti dal fornitore",
+      "permissiveLicense": "Licenza permissiva o copyleft (diramabile)",
+      "hasAudit": "Controllo di sicurezza disponibile",
+      "matureProject": "Progetto maturo (laurea/stabile)",
+      "noTelemetryByDefault": "Nessuna telemetria raccolta per impostazione predefinita",
+      "euHeadquartered": "Sede o registrazione UE",
+      "ownerType": "Modello proprietario: {{owner}} (+{{points}})",
+      "ownerCountry": "Paese del proprietario: {{country}}"
+    },
+    "ownerType": {
+      "independentConsortium": "Consorzio indipendente",
+      "corporation": "Società",
+      "community": "Comunità",
+      "oneManShow": "Spettacolo personale",
+      "unknown": "Non mantenuto"
+    },
+    "ownerCountry": {
+      "unknown": "Sconosciuto"
+    },
+    "scoreCategories": {
+      "insufficient": "Insufficiente",
+      "insufficientDescription": "Non raccomandato: rischi significativi per la sovranità",
+      "minimal": "Minimo",
+      "minimalDescription": "Solo a condizioni specifiche",
+      "adequate": "Adeguato",
+      "adequateDescription": "Accettabile, ma sono necessari miglioramenti",
+      "good": "Bene",
+      "goodDescription": "Consigliato per la maggior parte dei casi",
+      "excellent": "Eccellente",
+      "excellentDescription": "Altamente raccomandato – eccellente sovranità",
+      "outstanding": "Eccezionale",
+      "outstandingDescription": "Gold standard: sovranità ottimale"
+    },
+    "maintainerBoost": {
+      "title": "È stata applicata la sovranità del manutentore",
+      "explanation": "All'interno dello stack attivo la tua organizzazione mantiene questo elemento. Sei tu che controlli direttamente il codice sorgente, l'hosting, i formati dei dati, i protocolli e la telemetria: qualsiasi mancanza di accesso pubblico è una posizione di sicurezza deliberata piuttosto che una lacuna di sovranità. Punteggio contestuale: {{effectiveScore}}/100 (punteggio pubblico: {{rawScore}}/100).",
+      "boostedCriteriaLabel": "Soddisfatto dal contesto del manutentore",
+      "criterionMarker": "soddisfatto come manutentore",
+      "criterionTitle": "Questo criterio non è soddisfatto pubblicamente, ma conta come soddisfatto dal punto di vista del manutentore perché l'organizzazione manutentrice lo controlla direttamente.",
+      "markerTitle": "Aumento del contesto del manutentore",
+      "badgeTitle": "Contesto manutentore attivo – punteggio pubblico: {{rawScore}}/100",
+      "scoreAria": "Punteggio di sovranità (contesto del manutentore): {{score}} di 100 – punteggio pubblico: {{rawScore}} di 100",
+      "noteAria": "Nota sul contesto del manutentore"
+    },
+    "sovereigntyGaugeAria": "Indicatore del punteggio di sovranità: {{score}} su 100 ({{category}})",
+    "scoreOverview": {
+      "title": "Punteggio complessivo",
+      "calculation": "Calcolo del punteggio",
+      "sovereignty": "Sovranità",
+      "sovereignAdoption": "Adozione sovrana",
+      "adoption": "Adozione",
+      "total": "Punteggio complessivo",
+      "usedInStacks": "Usato in {{count}} stack",
+      "directCoverage": "Direct coverage",
+      "transitiveCoverage": "Transitive coverage",
+      "diversity": "Geographic diversity"
+    }
+  },
+  "pwa": {
+    "updateAvailable": "È disponibile una nuova versione di StackAtlas.",
+    "update": "Aggiorna ora",
+    "dismiss": "Dopo"
+  },
+  "stack": {
+    "label": "Pila",
+    "all": "Senza",
+    "selectorAria": "Seleziona pila",
+    "rationale": "Motivazione",
+    "stats": {
+      "version": "v{{version}}",
+      "items": "{{count}} articoli",
+      "avgScore": "Media punteggio di sovranità"
+    },
+    "roles": {
+      "maintainer": "Manutentore",
+      "contributor": "Collaboratore",
+      "funder": "Finanziatore",
+      "consumer": "Consumatore"
+    }
+  },
+  "stackGallery": {
+    "title": "Stacks",
+    "subtitle": "Tutti gli stack tecnologici classificati in base al punteggio di sovranità digitale: dal migliore al più basso.",
+    "listAria": "Stack tecnologici classificati in base al punteggio di sovranità",
+    "bestStack": "Stack in cima alla classifica: posizionamento oro",
+    "rankAria": "Classifica {{rank}}",
+    "avgScore": "Media punteggio di sovranità",
+    "avgScoreAria": "Punteggio medio di sovranità: {{score}} su 100",
+    "scoreDistribution": "Distribuzione del punteggio per categoria",
+    "keyMetrics": "Metriche chiave",
+    "sourcesTitle": "Fonti",
+    "exploreStack": "Esplora lo stack nel catalogo →",
+    "itemCount": "{{count}} articoli",
+    "recommended": "Raccomandato",
+    "approved": "Approvato",
+    "deprecated": "Deprecato",
+    "metrics": {
+      "selfHostable": "Auto-ospitale",
+      "openSource": "Fonte aperta",
+      "euHQ": "Con sede nell'UE",
+      "permissiveLicense": "Licenza permissiva",
+      "audit": "Controllato",
+      "ownerCountry": "Paese proprietario",
+      "unknown": "Sconosciuto",
+      "layerBreakdown": "Rottura degli strati",
+      "roles": "Ruoli"
+    },
+    "custom": {
+      "addDep": "Aggiungi dep",
+      "delete": "Elimina stack",
+      "deleteConfirmAccept": "Sì, elimina",
+      "deleteConfirmCancel": "Annulla",
+      "deleteConfirmMessage": "Vuoi davvero eliminare lo stack '{{name}}'?",
+      "deleteConfirmTitle": "Conferma eliminazione",
+      "item": "Seleziona dep",
+      "relation": "Relazione",
+      "manageAria": "Gestisci stack personalizzati",
+      "name": "Nome stack",
+      "nameTaken": "Il nome esiste già o non è valido.",
+      "removeDep": "Rimuovi dep",
+      "rename": "Rinomina stack",
+      "renameSave": "Salva nome",
+      "save": "Crea stack",
+      "saved": "Stack salvato.",
+      "selectedAria": "Deps selezionate",
+      "createSectionTitle": "Create custom stack",
+      "createSectionIntro": "Create a new custom stack here. It will be saved locally in your browser."
+    }
+  },
+  "pages": {
+    "imprint": {
+      "description": "Questa pagina fornisce avvisi legali e informazioni sul fornitore di StackAtlas.",
+      "title": "Impronta"
+    },
+    "settings": {
+      "description": "Gestisci le impostazioni e le preferenze dell'applicazione per StackAtlas qui.",
+      "title": "Impostazioni",
+      "theme": {
+        "label": "Schema colore",
+        "auto": "Automatico (impostazione sistema)",
+        "light": "Chiaro",
+        "dark": "Scuro",
+        "highContrast": "Contrasto elevato"
+      },
+      "stackSelection": {
+        "title": "Stack selection test",
+        "description": "Try the plan-based assessment directly. All inputs are calculated locally and immediately show decision class and core-stack eligibility.",
+        "dimensions": "Dimensions (0–5)",
+        "config": "Configuration",
+        "itemClass": "Item class",
+        "lifecycle": "Lifecycle status",
+        "reset": "Reset to defaults",
+        "hardExclusions": "Hard exclusions",
+        "result": "Result",
+        "resultDecision": "Decision class",
+        "resultPoints": "Points",
+        "resultWeighted": "Weighted score",
+        "resultThreshold": "Threshold failed",
+        "resultHardExclusion": "Hard exclusion failed",
+        "resultCore": "Eligible for core stack",
+        "dimensionLabels": {
+          "austauschbarkeit": "Replaceability",
+          "betriebsGovernanceFaehigkeit": "Operational/governance capability",
+          "interoperabilitaet": "Interoperability",
+          "offenheitStandardisierung": "Openness & standardization",
+          "patternFit": "Pattern fit",
+          "reifegrad": "Maturity",
+          "steuerbarkeit": "Controllability",
+          "souveraenitaet": "Sovereignty"
+        },
+        "hardExclusionLabels": {
+          "geringeAustauschbarkeit": "Low replaceability",
+          "keinDokumentierterStandard": "No documented standard",
+          "keinKlaresPattern": "No clear pattern",
+          "keinMehrwertGegenueberBestand": "No added value over current stack",
+          "nichtOperationalisierbar": "Not operationalizable",
+          "nurHypeToolMode": "Hype-tool mode only",
+          "starkeHerstellerCloudBindung": "Strong vendor/cloud lock-in",
+          "ueberschneidungOhneZusatznutzen": "Overlap without additional value",
+          "unreiferInstabilerReifegrad": "Immature/unstable maturity"
+        },
+        "yes": "Yes",
+        "no": "No",
+        "itemClassOptions": {
+          "architekturPattern": "Architecture pattern",
+          "beobachtungskandidat": "Observation candidate",
+          "offenerStandard": "Open standard",
+          "produktPlattformFramework": "Product/platform/framework",
+          "referenzimplementierung": "Reference implementation"
+        },
+        "lifecycleOptions": {
+          "deprecated": "Deprecated",
+          "kandidat": "Candidate",
+          "kernstack": "Core stack",
+          "referenz": "Reference",
+          "sunset": "Sunset"
+        },
+        "stack": "Stack",
+        "item": "Seleziona dep",
+        "saveSelection": "Save assessment for selected stack/item",
+        "saveHint": "Please select stack and item before saving.",
+        "saveSuccess": "Assessment saved locally for stack/item.",
+        "saveError": "Assessment could not be saved.",
+        "selectionContext": "Selection context",
+        "selectionContextFilled": "Stack and item selected",
+        "selectionContextEmpty": "No stack/item selected",
+        "stackRole": "Stack role",
+        "stackStatus": "Stack status",
+        "savedAt": "Saved at",
+        "loadSaved": "Load saved assessment",
+        "loadSuccess": "Saved assessment loaded."
+      }
+    },
+    "news": {
+      "title": "Notizie della community",
+      "description": "Qui condividiamo approfondimenti sulle decisioni di punteggio, nuove aggiunte agli stack e sviluppi sulla sovranità digitale in Europa.",
+      "sectionAria": "Elenco dei post di notizie pubblicati",
+      "pushHint": "Resta aggiornato — nuovi articoli appaiono qui quando cambiano score o stack.",
+      "metaDate": "Pubblicato il {{date}}",
+      "empty": "Nessun post di notizie ancora pubblicato.",
+      "focus": {
+        "openDataGovernance": "Focus: Governance dei dati aperti",
+        "identityWalletInteroperability": "Obiettivo: interoperabilità del portafoglio di identità",
+        "reportTemplate": "Obiettivo: modello di rapporto",
+        "scoringExplained": "Focus: Spiegazione del punteggio",
+        "dataEntities": "Focus: Modello dati ed entità",
+        "groupComparison": "Focus: Gruppi di confronto"
+      }
+    }
+  },
+  "betaNotice": {
+    "title": "Versione beta",
+    "description": "StackAtlas è in versione beta. Le funzionalità di base sono disponibili e vengono continuamente ottimizzate ed ampliate. Anche la base dati viene costantemente migliorata. Tutti gli interessati sono invitati a contribuire al progetto tramite GitHub!",
+    "closeButton": "Capito"
+  }
 }
