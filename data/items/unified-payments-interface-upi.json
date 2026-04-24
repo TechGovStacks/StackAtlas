@@ -3,12 +3,17 @@
 	"name": "Unified Payments Interface (UPI)",
 	"layer": "applications",
 	"sublayer": "integration",
+	"groupKey": "government-payment-service",
 	"description": {
 		"de": "Das Unified Payments Interface (UPI) ist Indiens Echtzeit-Mobilzahlungssystem, betrieben von der NPCI. Es bildet die Zahlungsschicht des India Stack und verarbeitet inzwischen mehrere Milliarden Transaktionen pro Monat.",
 		"en": "The Unified Payments Interface (UPI) is India's real-time mobile payment system, operated by the NPCI. It forms the payments layer of the India Stack and processes billions of transactions per month."
 	},
 	"homepage": "https://www.npci.org.in/what-we-do/upi/product-overview",
-	"tags": ["egovernment", "payments", "india"],
+	"tags": [
+		"egovernment",
+		"payments",
+		"india"
+	],
 	"oss": false,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

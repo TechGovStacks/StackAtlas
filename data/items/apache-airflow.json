@@ -9,7 +9,11 @@
 	},
 	"homepage": "https://airflow.apache.org/",
 	"license": "Apache-2.0",
-	"tags": ["etl", "pipelines", "data"],
+	"tags": [
+		"etl",
+		"pipelines",
+		"data"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

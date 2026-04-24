@@ -3,6 +3,7 @@
 	"name": "Angular",
 	"layer": "building-blocks",
 	"sublayer": "frameworks",
+	"groupKey": "component-framework",
 	"description": {
 		"de": "Angular ist ein Webframework, das Entwicklern die Erstellung schneller und zuverlässiger Anwendungen ermöglicht.",
 		"en": ""

@@ -3,6 +3,7 @@
 	"name": "TypeScript",
 	"layer": "building-blocks",
 	"sublayer": "sprachen",
+	"groupKey": "web-scripting-language",
 	"description": {
 		"de": "TypeScript ist eine Programmiersprache die JavaScript um statische Typisierung erweitert.",
 		"en": ""

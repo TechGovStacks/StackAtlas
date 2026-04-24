@@ -3,6 +3,7 @@
 	"name": "Transmission Control Protocol (TCP)",
 	"layer": "infrastructure",
 	"sublayer": "transport",
+	"groupKey": "transport-protocol",
 	"description": {
 		"de": "TCP ist in Verbindung mit IP Kern für die Funktionsfähigkeit des Internet. Die Datenübertragung erfolgt durch Zerlegung in einzelne Pakete inklusive der Sicherstellung der Übermittlung.",
 		"en": ""

@@ -3,6 +3,7 @@
 	"name": "Rancher",
 	"layer": "platform",
 	"sublayer": "integration",
+	"groupKey": "k8s-management-ui",
 	"description": {
 		"de": "Rancher ist eine Open-Source-Plattform zur Verwaltung und Bereitstellung mehrerer Kubernetes-Cluster und Container-Anwendungen. Es bietet eine einfache Benutzeroberfläche.",
 		"en": ""

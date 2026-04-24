@@ -3,6 +3,7 @@
 	"name": "Nomad",
 	"layer": "platform",
 	"sublayer": "integration",
+	"groupKey": "container-orchestration",
 	"description": {
 		"de": "Nomad ist ein Open-Source-System zur Orchestrierung von Anwendungen und deren Workloads auf hybriden Umgebungen. Es ist eine flexible Lösung, die für ihre Einfachheit und Benutzerfreundlichkeit bekannt ist, da sie eine einzelne Binärdatei zur Installation und Konfiguration bietet.",
 		"en": ""

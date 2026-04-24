@@ -3,6 +3,7 @@
 	"name": "n8n",
 	"layer": "platform",
 	"sublayer": "lowcode",
+	"groupKey": "workflow-automation",
 	"description": {
 		"de": "n8n ist eine flexible Automatisierungsplattform mit 400+ Integrationen, die visuelles Bauen und Code kombiniert und Self-Hosting erlaubt.",
 		"en": ""

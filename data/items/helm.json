@@ -10,7 +10,11 @@
 	"homepage": "https://helm.sh/",
 	"logo": "https://cdn.simpleicons.org/helm",
 	"license": "Apache-2.0",
-	"tags": ["kubernetes", "package-manager", "deployment"],
+	"tags": [
+		"kubernetes",
+		"package-manager",
+		"deployment"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

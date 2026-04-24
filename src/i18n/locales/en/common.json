@@ -194,6 +194,9 @@
 			"directCoverage": "Direct coverage",
 			"transitiveCoverage": "Transitive coverage",
 			"diversity": "Geographic diversity"
+		},
+		"coverageHint": {
+			"inline": "Possibly already covered by {{item}} in this stack."
 		}
 	},
 	"pwa": {
@@ -363,7 +366,8 @@
 				"identityWalletInteroperability": "Focus: Identity Wallet Interoperability",
 				"reportTemplate": "Focus: Report Template",
 				"scoringExplained": "Focus: Scoring Explained",
-				"dataEntities": "Focus: Data Model & Entities"
+				"dataEntities": "Focus: Data Model & Entities",
+				"groupComparison": "Focus: Comparison Groups"
 			}
 		}
 	},

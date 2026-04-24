@@ -3,13 +3,18 @@
 	"name": "Ruby on Rails",
 	"layer": "building-blocks",
 	"sublayer": "frameworks",
+	"groupKey": "web-framework",
 	"description": {
 		"de": "Ruby on Rails ist ein Webframework für die Programmiersprache Ruby. Es prägte das britische GOV.UK-Ökosystem (GOV.UK Plattformen) und die US-amerikanische Login.gov-Plattform und ist auf schnelle Entwicklung und Konventionen vor Konfiguration ausgerichtet.",
 		"en": "Ruby on Rails is a web framework for the Ruby programming language. It shaped the UK's GOV.UK ecosystem (GOV.UK platforms) and the US Login.gov platform and is centred on rapid development and convention over configuration."
 	},
 	"homepage": "https://rubyonrails.org/",
 	"license": "MIT",
-	"tags": ["ruby", "framework", "web"],
+	"tags": [
+		"ruby",
+		"framework",
+		"web"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

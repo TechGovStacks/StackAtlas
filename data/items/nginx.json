@@ -3,6 +3,7 @@
 	"name": "NGINX",
 	"layer": "platform",
 	"sublayer": "integration",
+	"groupKey": "k8s-ingress-controller",
 	"description": {
 		"de": "NGINX ein Open-Source-Webserver der auch als Reverse-Proxy, HTTP-Cache und Load-Balancer eingesetzt wird. Er ist bekannt für seine hohe Leistung bei der Verarbeitung vieler gleichzeitiger Anfragen, seine Effizienz bei geringer Speichernutzung und seine Flexibilität.",
 		"en": ""

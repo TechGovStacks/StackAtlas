@@ -3,6 +3,7 @@
 	"name": "Comprehensive Knowledge Archive Network (CKAN)",
 	"layer": "platform",
 	"sublayer": "daten",
+	"groupKey": "open-data-portal",
 	"description": {
 		"de": "CKAN ist ein Werkzeug für Open Data Portale zur Katalogisierung, Veröffentlichung, Suche und Bereitstellung von Daten.",
 		"en": ""

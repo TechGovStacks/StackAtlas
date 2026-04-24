@@ -3,6 +3,7 @@
 	"name": "GovStack Information Mediator",
 	"layer": "building-blocks",
 	"sublayer": "integration",
+	"groupKey": "gov-integration-platform",
 	"description": {
 		"de": "Der Information Mediator ist der zentrale Building Block der GovStack-Initiative für sicheren, asynchronen Datenaustausch zwischen Behörden. Er kombiniert einen X-Road Security Server mit ActiveMQ Artemis und stellt API-Gateway-, Routing- und Event-Mesh-Funktionen bereit.",
 		"en": "The Information Mediator is the GovStack initiative's central building block for secure asynchronous data exchange between public authorities. It combines an X-Road Security Server with ActiveMQ Artemis and provides API gateway, routing and event-mesh capabilities."

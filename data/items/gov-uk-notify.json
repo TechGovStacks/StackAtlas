@@ -9,7 +9,11 @@
 	},
 	"homepage": "https://www.notifications.service.gov.uk/",
 	"license": "MIT",
-	"tags": ["egovernment", "notification", "uk"],
+	"tags": [
+		"egovernment",
+		"notification",
+		"uk"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

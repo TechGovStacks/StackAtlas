@@ -3,6 +3,7 @@
 	"name": "Angel-ML",
 	"layer": "platform",
 	"sublayer": "ki",
+	"groupKey": "ml-framework",
 	"description": {
 		"de": "Angel-ML ist eine hochperformante verteilte Machine Learning-Plattform, die auf der Parameter Server-Philosophie basiert und von Tencent entwickelt wurde. Das System ist speziell für Big Data-Szenarien optimiert und bietet eine Full-Stack-Lösung für Feature Engineering, Modelltraining, Parameter-Tuning und Model Serving. Angel unterstützt verschiedene ML-Algorithmen wie statistische Verfahren, neuronale Netze und Graph Computing und ist das erste chinesische Open-Source-Projekt, das von der Linux Foundation AI graduiert wurde.",
 		"en": ""

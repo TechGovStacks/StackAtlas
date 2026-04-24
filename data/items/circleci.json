@@ -3,6 +3,7 @@
 	"name": "circleCI",
 	"layer": "building-blocks",
 	"sublayer": "inbetriebnahme",
+	"groupKey": "ci-cd",
 	"description": {
 		"de": "CircleCI ist eine CI/CD-Plattform zur Automatisierung des Softwareentwicklungsprozesses. Für mobile Entwickler bietet CircleCI robuste Umgebungen zum Erstellen, Testen und Bereitstellen von iOS- und Android-Apps.",
 		"en": ""

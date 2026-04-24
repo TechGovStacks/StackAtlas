@@ -2,7 +2,7 @@ import { KolPagination } from '@public-ui/preact';
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { FilterState, Item, Layer, Stack, StackItem } from '../types';
-import { getLocalizedText } from '../utils';
+import { computeSublayerCoverageHints, getLocalizedText } from '../utils';
 import { computeContextualOverallScore } from '../utils/overallScore';
 import { computeEffectiveSovereigntyScore } from '../utils/sovereigntyScore';
 import { ArticleCard } from './ArticleCard';
@@ -104,6 +104,15 @@ export function CategoryGrid({
 	const startIdx = (currentPage - 1) * ITEMS_PER_PAGE;
 	const paginatedArticles = sortedArticles.slice(startIdx, startIdx + ITEMS_PER_PAGE);
 
+	const coverageHintsByItemId = useMemo(() => {
+		if (!activeStack || !stackItemMap) {
+			return new Map();
+		}
+
+		const sourceItems = stackScoreItems ?? articles;
+		return computeSublayerCoverageHints(sourceItems, stackItemMap);
+	}, [activeStack, articles, stackItemMap, stackScoreItems]);
+
 	return (
 		<div id="category-results" className="category-container px-3 md:px-4 lg:px-5">
 			{activeStack && stackItemMap && <StackStats stack={activeStack} items={stackScoreItems ?? articles} stackItemMap={stackItemMap} />}
@@ -157,6 +166,7 @@ export function CategoryGrid({
 									stackItem={stackItemMap?.get(article.id)}
 									stackItemMap={activeStack ? stackItemMap : undefined}
 									viewMode={viewMode}
+									coverageHint={coverageHintsByItemId.get(article.id)}
 								/>
 							</li>
 						))}

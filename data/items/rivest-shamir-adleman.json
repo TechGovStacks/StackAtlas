@@ -3,6 +3,7 @@
 	"name": "Rivest–Shamir–Adleman",
 	"layer": "building-blocks",
 	"sublayer": "sicherheit",
+	"groupKey": "asymmetric-encryption",
 	"description": {
 		"de": "RSA ist ein asymmetrisches kryptographisches Verfahren für das Verschlüsseln und Signieren auf Basis des Faktorisierungsproblems. Es wird eine Schlüssellänge von mindestens 3000 empfohlen.",
 		"en": ""

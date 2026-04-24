@@ -3,6 +3,7 @@
 	"name": "Budibase",
 	"layer": "platform",
 	"sublayer": "lowcode",
+	"groupKey": "low-code-app-builder",
 	"description": {
 		"de": "Budibase ermöglicht das schnelle Erstellen interner Business-Apps, mit vorgefertigten Komponenten und breiter Datenquellenunterstützung.",
 		"en": ""

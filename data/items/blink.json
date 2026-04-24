@@ -3,6 +3,7 @@
 	"name": "Blink",
 	"layer": "applications",
 	"sublayer": "browser",
+	"groupKey": "browser-engine",
 	"description": {
 		"de": "Blink ist eine Browser-Engine zum Rendern von Webseiten. Es wird insbesondere von Google für Chrome, Microsoft für Edge und Opera genutzt.",
 		"en": ""

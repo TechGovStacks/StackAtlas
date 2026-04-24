@@ -3,6 +3,7 @@
 	"name": "Segment Routing (SR)",
 	"layer": "infrastructure",
 	"sublayer": "verteilung",
+	"groupKey": "traffic-engineering",
 	"description": {
 		"de": "Segment Routing ist eine Technologie zur Vereinfachung des Routens von Daten. Zur Optimierung werden Pfadinformationen im Header gespeichert.",
 		"en": ""

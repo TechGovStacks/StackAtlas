@@ -3,6 +3,7 @@
 	"name": "PromptFlow",
 	"layer": "platform",
 	"sublayer": "ki",
+	"groupKey": "llm-framework",
 	"description": {
 		"de": "PromptFlow ist ein Framework von Entwicklungswerkzeugen für KI-Anwendungen von der Ideenfindung bis zum Monitoring.",
 		"en": ""

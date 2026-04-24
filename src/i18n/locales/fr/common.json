@@ -346,7 +346,8 @@
 				"identityWalletInteroperability": "Focus : Identity Wallet Interoperability",
 				"reportTemplate": "Focus : Modèle de rapport",
 				"scoringExplained": "Focus : Explication du scoring",
-				"dataEntities": "Focus : Modèle de données & entités"
+				"dataEntities": "Focus : Modèle de données & entités",
+				"groupComparison": "Focus: Groupes de comparaison"
 			}
 		}
 	},

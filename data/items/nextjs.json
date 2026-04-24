@@ -3,6 +3,7 @@
 	"name": "NextJS",
 	"layer": "building-blocks",
 	"sublayer": "frameworks",
+	"groupKey": "server-side-rendering",
 	"description": {
 		"de": "Next.js ist ein React-Framework zum Erstellen von Full-Stack-Webanwendungen. Sie verwenden React-Komponenten zum Erstellen von Benutzeroberflächen und Next.js für zusätzliche Funktionen und Optimierungen.",
 		"en": ""

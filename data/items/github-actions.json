@@ -3,6 +3,7 @@
 	"name": "GitHub Actions",
 	"layer": "building-blocks",
 	"sublayer": "inbetriebnahme",
+	"groupKey": "ci-cd",
 	"description": {
 		"de": "GitHub Actions können Entwicklungsprozesse automatisieren und anpassen (CI/CD).",
 		"en": ""

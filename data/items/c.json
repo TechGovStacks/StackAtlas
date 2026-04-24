@@ -3,6 +3,7 @@
 	"name": "C++",
 	"layer": "building-blocks",
 	"sublayer": "sprachen",
+	"groupKey": "systems-language",
 	"description": {
 		"de": "C++ ist eine objektorientierte Programmiersprache für die Entwicklung von Systemsoftware.",
 		"en": ""

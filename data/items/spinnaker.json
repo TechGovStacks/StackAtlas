@@ -3,6 +3,7 @@
 	"name": "Spinnaker",
 	"layer": "building-blocks",
 	"sublayer": "inbetriebnahme",
+	"groupKey": "ci-cd",
 	"description": {
 		"de": "Spinnaker ist eine quelloffene Continuous-Delivery-(CD)-Plattform. Sie konzentriert sich auf die schnelle und sichere Bereitstellung von Softwareänderungen.",
 		"en": ""

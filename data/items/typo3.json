@@ -3,13 +3,18 @@
 	"name": "TYPO3",
 	"layer": "applications",
 	"sublayer": "lowcode",
+	"groupKey": "cms",
 	"description": {
 		"de": "TYPO3 ist ein in Europa entwickeltes Open-Source-Enterprise-CMS, das in vielen deutschsprachigen Behörden- und Hochschulportalen eingesetzt wird. Es bietet feingranulare Rechte und Mehrsprachigkeit.",
 		"en": "TYPO3 is an enterprise open-source CMS developed in Europe and used by many German-speaking public-administration and higher-education portals. It offers fine-grained permissions and multilingual capabilities."
 	},
 	"homepage": "https://typo3.org/",
 	"license": "GPL-2.0-or-later",
-	"tags": ["cms", "egovernment", "europe"],
+	"tags": [
+		"cms",
+		"egovernment",
+		"europe"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

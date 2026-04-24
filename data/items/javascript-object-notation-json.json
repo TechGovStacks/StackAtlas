@@ -3,6 +3,7 @@
 	"name": "JavaScript Object Notation (JSON)",
 	"layer": "platform",
 	"sublayer": "daten",
+	"groupKey": "data-serialization-format",
 	"description": {
 		"de": "JSON ist ein Datenformat für den Datenaustausch.",
 		"en": ""

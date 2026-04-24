@@ -3,6 +3,7 @@
 	"name": "general-purpose Remote Procedure Calls",
 	"layer": "platform",
 	"sublayer": "integration",
+	"groupKey": "api-style",
 	"description": {
 		"de": "gRPC ist ein leistungsstarkes, quelloffenes Framework, das effiziente Kommunikation zwischen verteilten Diensten ermöglicht. Es nutzt HTTP/2 und Protocol Buffers für schnelle, typsichere Datenübertragung und bietet Funktionen wie bidirektionales Streaming und Authentifizierung. Damit vereinfacht gRPC die Entwicklung von skalierbaren Microservices-Architekturen und verbessert im Vergleich zu REST die Leistung deutlich.",
 		"en": ""

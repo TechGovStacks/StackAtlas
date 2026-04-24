@@ -9,7 +9,11 @@
 	},
 	"homepage": "https://nodejs.org/",
 	"license": "MIT",
-	"tags": ["javascript", "runtime", "backend"],
+	"tags": [
+		"javascript",
+		"runtime",
+		"backend"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

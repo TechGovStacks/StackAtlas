@@ -3,6 +3,7 @@
 	"name": "MySQL Server",
 	"layer": "platform",
 	"sublayer": "daten",
+	"groupKey": "sql-db",
 	"description": {
 		"de": "MySQL ist ein relationales Datenbankmanagementsystem für die Organisation von strukturierten Daten in Tabellen.",
 		"en": ""

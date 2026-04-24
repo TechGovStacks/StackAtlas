@@ -341,7 +341,8 @@
 				"identityWalletInteroperability": "Enfoque: Interoperabilidad de Identity Wallet",
 				"reportTemplate": "Enfoque: Plantilla de informe",
 				"scoringExplained": "Enfoque: Explicación del scoring",
-				"dataEntities": "Enfoque: Modelo de datos y entidades"
+				"dataEntities": "Enfoque: Modelo de datos y entidades",
+				"groupComparison": "Foco: Grupos de comparación"
 			}
 		}
 	},

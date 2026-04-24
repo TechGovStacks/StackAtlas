@@ -3,6 +3,7 @@
 	"name": "Quick UDP Internet Connections (QUIC)",
 	"layer": "infrastructure",
 	"sublayer": "transport",
+	"groupKey": "transport-protocol",
 	"description": {
 		"de": "QUIC ist ein verbindungsorientiertes, performantes und verschlüsseltes Protokoll für die Datenübertragung.",
 		"en": ""

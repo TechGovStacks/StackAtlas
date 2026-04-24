@@ -3,12 +3,18 @@
 	"name": "X-Road",
 	"layer": "building-blocks",
 	"sublayer": "integration",
+	"groupKey": "gov-integration-platform",
 	"description": {
 		"de": "X-Road ist eine in Estland entwickelte Open-Source-Plattform für den sicheren, dezentralen Datenaustausch zwischen Behörden- und privaten Informationssystemen. Daten werden direkt zwischen Konsument und Provider ausgetauscht; ein Security Server kapselt Authentifizierung, Verschlüsselung, Signatur und Zeitstempel.",
 		"en": "X-Road is an open-source data exchange layer originally developed in Estonia. It enables secure, decentralised, point-to-point exchange between public and private information systems; a Security Server encapsulates authentication, encryption, signing and time-stamping."
 	},
 	"homepage": "https://x-road.global/",
-	"tags": ["egovernment", "integration", "interoperability", "estonia"],
+	"tags": [
+		"egovernment",
+		"integration",
+		"interoperability",
+		"estonia"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

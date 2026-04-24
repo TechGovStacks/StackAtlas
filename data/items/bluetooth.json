@@ -3,6 +3,7 @@
 	"name": "Bluetooth",
 	"layer": "infrastructure",
 	"sublayer": "anschluss",
+	"groupKey": "short-range-wireless",
 	"description": {
 		"de": "Bluetooth ermöglicht eine Ad-hoc oder Punkt-zu-Punkt Funk-Verbindung. Die Verbindung von zwei Geräten erfolgt über die Aktivierung zwischen den Geräte (Koppeln/ Pairing). Bluetooth bietet in der Variante LE ergänzende Funktionen zu Broadcast, Mesh und Geräteposition.",
 		"en": ""

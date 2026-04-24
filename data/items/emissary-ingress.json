@@ -3,6 +3,7 @@
 	"name": "Emissary Ingress",
 	"layer": "platform",
 	"sublayer": "integration",
+	"groupKey": "k8s-ingress-controller",
 	"description": {
 		"de": "Ingress ist ein Open-Source-API-Gateway und Kubernetes-Ingress-Controller, der auf Envoy Proxy basiert und als zentraler Einstiegspunkt für den Datenverkehr zu Diensten in einem Kubernetes-Cluster fungiert. Er ermöglicht Entwicklern, den Datenverkehr zu ihren Anwendungen selbstständig über Kubernetes Custom Resource Definitions (CRDs) zu verwalten und bietet Funktionen wie Traffic-Management, Authentifizierung, Autorisierung, Rate Limiting und Observability.",
 		"en": ""

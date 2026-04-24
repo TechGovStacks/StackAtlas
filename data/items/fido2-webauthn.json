@@ -8,7 +8,11 @@
 		"en": "FIDO2 and WebAuthn are open standards for passwordless and hardware-token authentication. They enable secure sign-in via smartphones, security keys and biometric sensors and form a foundation for modern, phishing-resistant identity systems."
 	},
 	"homepage": "https://fidoalliance.org/fido2/",
-	"tags": ["authentication", "passwordless", "security"],
+	"tags": [
+		"authentication",
+		"passwordless",
+		"security"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -3,13 +3,17 @@
 	"name": "WordPress",
 	"layer": "applications",
 	"sublayer": "lowcode",
+	"groupKey": "cms",
 	"description": {
 		"de": "WordPress ist ein weit verbreitetes Open-Source-CMS für Websites und Blogs. Es wird in vielen Verwaltungs-Webauftritten und Informationsportalen eingesetzt.",
 		"en": "WordPress is a widely used open-source CMS for websites and blogs. It is deployed by many public-administration websites and information portals."
 	},
 	"homepage": "https://wordpress.org/",
 	"license": "GPL-2.0-or-later",
-	"tags": ["cms", "blogging"],
+	"tags": [
+		"cms",
+		"blogging"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

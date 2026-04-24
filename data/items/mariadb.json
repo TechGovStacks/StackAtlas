@@ -3,6 +3,7 @@
 	"name": "MariaDB",
 	"layer": "platform",
 	"sublayer": "daten",
+	"groupKey": "sql-db",
 	"description": {
 		"de": "MariaDB ist ein relationales Datenbankmanagementsystem für die Organisation von strukturierten Daten in Tabellen.",
 		"en": ""

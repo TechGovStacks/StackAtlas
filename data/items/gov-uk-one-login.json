@@ -3,13 +3,19 @@
 	"name": "GOV.UK One Login",
 	"layer": "applications",
 	"sublayer": "sicherheit",
+	"groupKey": "national-digital-id-platform",
 	"description": {
 		"de": "GOV.UK One Login ist das zentrale britische Identitätssystem. Es löst die fragmentierte Landschaft lokaler Behördenkonten ab und stellt digitale Berechtigungsnachweise für Bürgerinnen und Bürger bereit.",
 		"en": "GOV.UK One Login is the UK's centralised identity system. It replaces the fragmented landscape of local agency accounts and provides digital credentials for citizens."
 	},
 	"homepage": "https://www.sign-in.service.gov.uk/",
 	"license": "MIT",
-	"tags": ["egovernment", "identity", "uk", "sso"],
+	"tags": [
+		"egovernment",
+		"identity",
+		"uk",
+		"sso"
+	],
 	"oss": true,
 	"maturity": "incubation",
 	"sovereigntyCriteria": {
