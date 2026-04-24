@@ -196,8 +196,7 @@
 			"diversity": "Geografische Diversität"
 		},
 		"coverageHint": {
-			"label": "Potenziell im Stack abgedeckt",
-			"message": "Diese Dependency könnte ggf. bereits durch {{item}} (höherer Souveränitäts-Score: {{bestScore}} statt {{currentScore}}) abgedeckt sein."
+			"inline": "Evtl. durch {{item}} im Stack abgedeckt."
 		}
 	},
 	"pwa": {

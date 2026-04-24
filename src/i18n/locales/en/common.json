@@ -196,8 +196,7 @@
 			"diversity": "Geographic diversity"
 		},
 		"coverageHint": {
-			"label": "Potentially covered in stack",
-			"message": "This dependency may already be covered by {{item}} (higher sovereignty score: {{bestScore}} vs {{currentScore}})."
+			"inline": "Possibly already covered by {{item}} in this stack."
 		}
 	},
 	"pwa": {

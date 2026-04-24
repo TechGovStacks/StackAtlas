@@ -95,11 +95,9 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 	const selectedBoostedCriteria = new Set<keyof Omit<SovereigntyCriteria, 'ownerType'>>(selectedScoreResult.boostedCriteria);
 	const criteriaKeys = (Object.keys(article.sovereigntyCriteria) as Array<keyof typeof article.sovereigntyCriteria>).filter((key) => key !== 'ownerType');
 
-	const coverageHintMessage = coverageHint
-		? t('article.coverageHint.message', {
+	const coverageHintInline = coverageHint
+		? t('article.coverageHint.inline', {
 				item: getLocalizedText(coverageHint.betterItemName, i18n.language),
-				bestScore: coverageHint.betterScore,
-				currentScore: coverageHint.currentScore,
 			})
 		: null;
 
@@ -185,11 +183,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 							{badges}
 						</div>
 						<p className="card-description">{getLocalizedText(article.description, i18n.language)}</p>
-						{coverageHintMessage && (
-							<KolAlert className="article-coverage-hint" _label={t('article.coverageHint.label')} _level={0} _type="warning">
-								{coverageHintMessage}
-							</KolAlert>
-						)}
+						{coverageHintInline && <KolAlert className="article-coverage-hint" _label={coverageHintInline} _level={0} _type="info" _variant="msg" />}
 						<div className="card-action">{openButton}</div>
 					</div>
 				</KolCard>
@@ -207,11 +201,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 					<div className="card-list-body">
 						<p className="card-list-name">{localizedArticleName}</p>
 						<p className="card-description card-description--truncate">{getLocalizedText(article.description, i18n.language)}</p>
-						{coverageHintMessage && (
-							<KolAlert className="article-coverage-hint" _label={t('article.coverageHint.label')} _level={0} _type="warning">
-								{coverageHintMessage}
-							</KolAlert>
-						)}
+						{coverageHintInline && <KolAlert className="article-coverage-hint" _label={coverageHintInline} _level={0} _type="info" _variant="msg" />}
 					</div>
 					<div className="card-list-badges">{badges}</div>
 					<div className="card-action">{openButton}</div>
