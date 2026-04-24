@@ -9,6 +9,17 @@
 	},
 	"homepage": "https://public-ui.github.io/",
 	"logo": "https://public-ui.github.io/logo.svg",
+	"dependencies": [
+		{
+			"targetItemId": "kern-ux-standard",
+			"type": "protocol",
+			"scope": "required",
+			"reason": {
+				"de": "Die KERN-Theme-Variante von KoliBri richtet sich nach dem KERN UX Standard.",
+				"en": "KoliBri's KERN theme variant is aligned with the KERN UX standard."
+			}
+		}
+	],
 	"tags": [
 		"webframework",
 		"user-interface",

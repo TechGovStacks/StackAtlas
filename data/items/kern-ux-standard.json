@@ -1,0 +1,33 @@
+{
+	"id": "kern-ux-standard",
+	"name": "KERN UX Standard",
+	"layer": "sovereign-standards",
+	"sublayer": "designsysteme",
+	"ownerCountry": "DE",
+	"description": {
+		"de": "Der KERN UX Standard ist ein offener UX- und Designstandard für digitale Verwaltungsleistungen. Er definiert wiederverwendbare Gestaltungsvorgaben und Komponenten für konsistente, barrierefreie Oberflächen in der öffentlichen Verwaltung.",
+		"en": "The KERN UX standard is an open UX and design standard for digital public services. It defines reusable design guidelines and components for consistent, accessible interfaces in public administration."
+	},
+	"homepage": "https://www.kern-ux.de/",
+	"tags": [
+		"accessibility",
+		"design-system",
+		"government",
+		"interoperability",
+		"standard"
+	],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	}
+}

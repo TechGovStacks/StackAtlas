@@ -18,9 +18,6 @@ importers:
       '@hookform/resolvers':
         specifier: 5.2.2
         version: 5.2.2(react-hook-form@7.73.1(react@19.2.4))
-      '@kern-ux/native':
-        specifier: 2.5.0
-        version: 2.5.0
       '@public-ui/components':
         specifier: 4.1.3
         version: 4.1.3(adopted-style-sheets@1.1.9-rc.21)
@@ -1218,9 +1215,6 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
-
-  '@kern-ux/native@2.5.0':
-    resolution: {integrity: sha512-mKNasZH/zExMAqzEtFS+CjvZwn1AE/HsWe8bFN5sjxPM1F6p4f3eXA8HGZqQZQoUXgACPXNYq3DZGcsAt7wm6Q==}
 
   '@keyv/bigmap@1.3.1':
     resolution: {integrity: sha512-WbzE9sdmQtKy8vrNPa9BRnwZh5UF4s1KTmSK0KUVLo3eff5BlQNNWDnFOouNpKfPKDnms9xynJjsMYjMaT/aFQ==}
@@ -6007,8 +6001,6 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
-
-  '@kern-ux/native@2.5.0': {}
 
   '@keyv/bigmap@1.3.1(keyv@5.6.0)':
     dependencies:
