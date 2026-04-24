@@ -1,0 +1,1 @@
+import{f as e}from"./index-CT9k-wQG.js";var t=class{constructor(t){e(this,t)}};export{t as test_component};

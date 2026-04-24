@@ -1,1 +1,0 @@
-import{ft as e}from"./index-ZHEtE3n9.js";var t=(t,n)=>{e(t,`_customClass`,n,{defaultValue:``})};export{t};
