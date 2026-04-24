@@ -184,7 +184,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 						</div>
 						<p className="card-description">{getLocalizedText(article.description, i18n.language)}</p>
 						{coverageHintInline && (
-							<KolAlert className="article-coverage-hint" _level={0} _type="info" _variant="msg">
+							<KolAlert className="article-coverage-hint" _level={4} _type="info" _variant="msg">
 								{coverageHintInline}
 							</KolAlert>
 						)}
@@ -206,7 +206,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 						<p className="card-list-name">{localizedArticleName}</p>
 						<p className="card-description card-description--truncate">{getLocalizedText(article.description, i18n.language)}</p>
 						{coverageHintInline && (
-							<KolAlert className="article-coverage-hint" _level={0} _type="info" _variant="msg">
+							<KolAlert className="article-coverage-hint" _level={4} _type="info" _variant="msg">
 								{coverageHintInline}
 							</KolAlert>
 						)}

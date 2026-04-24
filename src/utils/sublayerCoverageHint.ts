@@ -10,15 +10,13 @@ export type SublayerCoverageHint = {
 
 type ScoredItem = {
 	id: string;
-	layer: string;
-	sublayer?: string;
-	groupKey?: string;
 	name: LocalizableText;
 	score: number;
 };
 
-function toGroupKey(layer: string, comparableGroup: string): string {
-	return `${layer}::${comparableGroup}`;
+function toGroupKey(layer: string, comparableGroup: string, isGroupKey: boolean): string {
+	const prefix = isGroupKey ? 'group' : 'sublayer';
+	return `${layer}::${prefix}::${comparableGroup}`;
 }
 
 export function computeSublayerCoverageHints(items: Item[], stackItemMap?: Map<string, StackItem>): Map<string, SublayerCoverageHint> {
@@ -31,14 +29,11 @@ export function computeSublayerCoverageHints(items: Item[], stackItemMap?: Map<s
 			continue;
 		}
 
-		const groupKey = toGroupKey(item.layer, comparableGroup);
+		const groupKey = toGroupKey(item.layer, comparableGroup, !!item.groupKey);
 		const groupItems = groupedItems.get(groupKey) ?? [];
 		groupItems.push({
 			id: item.id,
-			groupKey: item.groupKey,
-			layer: item.layer,
 			score: computeEffectiveSovereigntyScore(item.sovereigntyCriteria, stackItemMap?.get(item.id)),
-			sublayer: item.sublayer,
 			name: item.name,
 		});
 		groupedItems.set(groupKey, groupItems);
