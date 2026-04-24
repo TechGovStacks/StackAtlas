@@ -1,7 +1,7 @@
 import { useMemo } from 'preact/hooks';
 import { Item, Layer, ParticipantRole, SovereigntyScoreCategory, Stack, StackItem, StackItemStatus } from '../types';
-import { computeContextualOverallScore } from '../utils/overallScore';
-import { computeEffectiveSovereigntyScore, getScoreCategory, getScoreCategoryColor } from '../utils/sovereigntyScore';
+import { computeItemContextualOverallScore } from '../utils/overallScore';
+import { getScoreCategory, getScoreCategoryColor } from '../utils/sovereigntyScore';
 
 export interface StackMetrics {
 	avgScore: number;
@@ -24,11 +24,6 @@ export interface StackMetrics {
 	totalItems: number;
 }
 
-export function computeStackItemOverallScore(item: Item, stackItem?: StackItem): number {
-	if (!item.adoption) return 0;
-	return computeContextualOverallScore(computeEffectiveSovereigntyScore(item.sovereigntyCriteria, stackItem), item.adoption, stackItem);
-}
-
 /**
  * Berechnet den Durchschnitts-Overall-Score eines Stacks (Adoption-basiert).
  * Wird für Ranking und Sortierung in der Stack-Galerie genutzt.
@@ -37,7 +32,7 @@ export function computeStackAvgScore(stack: Stack, allItems: Item[]): number {
 	const stackItemMap = new Map<string, StackItem>(stack.items.map((si) => [si.itemId, si]));
 	const items = allItems.filter((item) => stackItemMap.has(item.id));
 	if (items.length === 0) return 0;
-	const scores = items.map((item) => computeStackItemOverallScore(item, stackItemMap.get(item.id)));
+	const scores = items.map((item) => computeItemContextualOverallScore(item, stackItemMap.get(item.id)));
 	return Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
 }
 
@@ -58,7 +53,7 @@ export function useStackMetrics(stack: Stack, allItems: Item[], allLayers?: Laye
 		const pct = (count: number) => (total > 0 ? Math.round((count / total) * 100) : 0);
 
 		// Overall Scores (für Ranking und Galerie)
-		const overallScores = items.map((item) => computeStackItemOverallScore(item, stackItemMap.get(item.id)));
+		const overallScores = items.map((item) => computeItemContextualOverallScore(item, stackItemMap.get(item.id)));
 		const avgScore = total > 0 ? Math.round(overallScores.reduce((a, b) => a + b, 0) / overallScores.length) : 0;
 
 		// Score-Verteilung nach Kategorie (basierend auf Overall Scores)

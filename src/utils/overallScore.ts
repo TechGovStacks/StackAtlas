@@ -6,7 +6,9 @@ import {
 	POPULARITY_ADOPTION_BLEND,
 	POPULARITY_ADOPTION_WEIGHT,
 } from '../config/adoptionScoringWeights.mjs';
+import { Item } from '../types';
 import type { AdoptionResult, StackItem } from '../types/index.js';
+import { computeEffectiveSovereigntyScore } from './sovereigntyScore';
 
 // Overall score weights (exported so UI can display the derivation without hardcoding)
 export const SOVEREIGNTY_WEIGHT = 0.6;
@@ -64,6 +66,11 @@ export function withStackRoleAdoptionContext(adoption: AdoptionResult, stackItem
 
 export function computeContextualOverallScore(sovereigntyScore: number, adoption: AdoptionResult, stackItem?: StackItem): number {
 	return computeOverallScore(sovereigntyScore, withStackRoleAdoptionContext(adoption, stackItem));
+}
+
+export function computeItemContextualOverallScore(item: Pick<Item, 'sovereigntyCriteria' | 'adoption'>, stackItem?: StackItem): number {
+	if (!item.adoption) return 0;
+	return computeContextualOverallScore(computeEffectiveSovereigntyScore(item.sovereigntyCriteria, stackItem), item.adoption, stackItem);
 }
 
 /**

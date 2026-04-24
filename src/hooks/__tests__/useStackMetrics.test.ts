@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { Item, Stack, StackItem } from '../../types';
-import { computeStackAvgScore, computeStackItemOverallScore } from '../useStackMetrics';
+import { computeItemContextualOverallScore } from '../../utils/overallScore';
+import { computeStackAvgScore } from '../useStackMetrics';
 
 const baseItem: Item = {
 	id: 'item-1',
@@ -32,13 +33,13 @@ const baseItem: Item = {
 	},
 };
 
-describe('computeStackItemOverallScore', () => {
+describe('computeItemContextualOverallScore', () => {
 	it('applies stack relation context', () => {
 		const maintainerStackItem: StackItem = { itemId: baseItem.id, role: 'maintainer', status: 'recommended' };
 		const consumerStackItem: StackItem = { itemId: baseItem.id, role: 'consumer', status: 'recommended' };
 
-		const maintainerScore = computeStackItemOverallScore(baseItem, maintainerStackItem);
-		const consumerScore = computeStackItemOverallScore(baseItem, consumerStackItem);
+		const maintainerScore = computeItemContextualOverallScore(baseItem, maintainerStackItem);
+		const consumerScore = computeItemContextualOverallScore(baseItem, consumerStackItem);
 
 		expect(maintainerScore).toBeGreaterThan(consumerScore);
 	});
