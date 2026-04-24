@@ -1,1 +1,0 @@
-import{E as e,lt as t}from"./index-D4WIHGSi.js";var n=(n,r)=>{t(n,`_disabled`,r,{hooks:{afterPatch:t=>{!0===t&&e()}}})};export{n as t};
