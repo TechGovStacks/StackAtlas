@@ -194,6 +194,10 @@
 			"directCoverage": "Direct coverage",
 			"transitiveCoverage": "Transitive coverage",
 			"diversity": "Geographic diversity"
+		},
+		"coverageHint": {
+			"label": "Potentially covered in stack",
+			"message": "This dependency may already be covered by {{item}} (higher sovereignty score: {{bestScore}} vs {{currentScore}})."
 		}
 	},
 	"pwa": {

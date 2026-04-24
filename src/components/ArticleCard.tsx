@@ -1,4 +1,4 @@
-import { KolAvatar, KolBadge, KolButton, KolCard, KolDrawer, KolImage, KolLinkButton } from '@public-ui/preact';
+import { KolAlert, KolAvatar, KolBadge, KolButton, KolCard, KolDrawer, KolImage, KolLinkButton } from '@public-ui/preact';
 import { useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { ITEMS, LAYERS, STACKS } from '../data/catalog';
@@ -12,6 +12,7 @@ import {
 	withStackRoleAdoptionContext,
 } from '../utils/overallScore';
 import { computeEffectiveSovereigntyScoreResult, getScoreCategory, getScoreCategoryColor } from '../utils/sovereigntyScore';
+import { SublayerCoverageHint } from '../utils/sublayerCoverageHint';
 import { SovereigntyGauge } from './SovereigntyGauge';
 
 type ViewMode = 'tile' | 'list';
@@ -37,6 +38,7 @@ interface ArticleCardProps {
 	/** Optional: Map of all stack items for context (used when displaying items within a stack context) */
 	stackItemMap?: Map<string, StackItem>;
 	viewMode?: ViewMode;
+	coverageHint?: SublayerCoverageHint;
 }
 
 const ROLE_COLORS: Record<ParticipantRole, string> = {
@@ -52,7 +54,7 @@ function countryToFlagEmoji(code?: string): string {
 	return [...code.toUpperCase()].map((c) => String.fromCodePoint(0x1f1e6 + c.charCodeAt(0) - 65)).join('');
 }
 
-export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile' }: ArticleCardProps) {
+export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile', coverageHint }: ArticleCardProps) {
 	const { i18n, t } = useTranslation();
 	const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 	const [selectedArticle, setSelectedArticle] = useState(article);
@@ -92,6 +94,14 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 	const selectedOwnerCountryFlag = countryToFlagEmoji(selectedOwnerCountry);
 	const selectedBoostedCriteria = new Set<keyof Omit<SovereigntyCriteria, 'ownerType'>>(selectedScoreResult.boostedCriteria);
 	const criteriaKeys = (Object.keys(article.sovereigntyCriteria) as Array<keyof typeof article.sovereigntyCriteria>).filter((key) => key !== 'ownerType');
+
+	const coverageHintMessage = coverageHint
+		? t('article.coverageHint.message', {
+				item: getLocalizedText(coverageHint.betterItemName, i18n.language),
+				bestScore: coverageHint.betterScore,
+				currentScore: coverageHint.currentScore,
+			})
+		: null;
 
 	const renderArticleLogo = (logo: string | undefined, localizedName: string, large = false) => {
 		const fallbackClassName = large ? 'article-logo-placeholder article-logo-placeholder--drawer' : 'article-logo-placeholder';
@@ -175,6 +185,11 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 							{badges}
 						</div>
 						<p className="card-description">{getLocalizedText(article.description, i18n.language)}</p>
+						{coverageHintMessage && (
+							<KolAlert className="article-coverage-hint" _label={t('article.coverageHint.label')} _level={0} _type="warning">
+								{coverageHintMessage}
+							</KolAlert>
+						)}
 						<div className="card-action">{openButton}</div>
 					</div>
 				</KolCard>
@@ -192,6 +207,11 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 					<div className="card-list-body">
 						<p className="card-list-name">{localizedArticleName}</p>
 						<p className="card-description card-description--truncate">{getLocalizedText(article.description, i18n.language)}</p>
+						{coverageHintMessage && (
+							<KolAlert className="article-coverage-hint" _label={t('article.coverageHint.label')} _level={0} _type="warning">
+								{coverageHintMessage}
+							</KolAlert>
+						)}
 					</div>
 					<div className="card-list-badges">{badges}</div>
 					<div className="card-action">{openButton}</div>
