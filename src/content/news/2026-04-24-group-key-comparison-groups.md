@@ -1,6 +1,6 @@
 ---
 focus: groupComparison
-title: "Neue Vergleichsgruppen: Warum Docker Swarm im Stack einen Hinweis auf Kubernetes auslöst"
+title: 'Neue Vergleichsgruppen: Warum Docker Swarm im Stack einen Hinweis auf Kubernetes auslöst'
 summary: Alle 171 Items des Katalogs sind jetzt nach Kernfunktion in 36 Vergleichsgruppen geordnet. Das ermöglicht gezielte Coverage-Hints — und zeigt am Beispiel eines fiktiven Stadtportals, wie der Mechanismus in der Praxis wirkt.
 ---
 
@@ -26,7 +26,7 @@ Das ist bewusst enger als ein Technologiebereich: Kafka und RabbitMQ sind beide 
 
 - Fundamentalstandards ohne Alternative (HTTP, TLS, DNS, TCP …)
 - Komplementärprotokolle (SMTPS sendet, IMAPS empfängt — keine Wahl)
-- Subtypbeziehungen (OSPF *ist* ein IGP, kein Konkurrent dazu)
+- Subtypbeziehungen (OSPF _ist_ ein IGP, kein Konkurrent dazu)
 - Singuläre Werkzeuge ohne Katalogpendant (Kafka, Istio, Helm, Grafana …)
 
 ---
@@ -35,14 +35,14 @@ Das ist bewusst enger als ein Technologiebereich: Kafka und RabbitMQ sind beide 
 
 Das fiktive **Stadtportal Musterstadt** hat einen definierten Stack mit folgenden Items:
 
-| Item | Funktion | groupKey |
-| :--- | :--- | :--- |
+| Item         | Funktion                 | groupKey                  |
+| :----------- | :----------------------- | :------------------------ |
 | Docker Swarm | Container-Orchestrierung | `container-orchestration` |
-| Jenkins | CI/CD-Pipeline | `ci-cd` |
-| Vue.js | Frontend-Framework | `component-framework` |
-| MongoDB | Dokumentendatenbank | `nosql-db` |
-| n8n | Workflow-Automatisierung | `workflow-automation` |
-| TYPO3 | Content-Management | `cms` |
+| Jenkins      | CI/CD-Pipeline           | `ci-cd`                   |
+| Vue.js       | Frontend-Framework       | `component-framework`     |
+| MongoDB      | Dokumentendatenbank      | `nosql-db`                |
+| n8n          | Workflow-Automatisierung | `workflow-automation`     |
+| TYPO3        | Content-Management       | `cms`                     |
 
 ### Was der Coverage-Hint-Mechanismus jetzt tut
 
@@ -50,35 +50,35 @@ Für jede Gruppe ermittelt das System das Item mit dem **höchsten Sovereignty-S
 
 #### Gruppe `container-orchestration`
 
-| Item | Sovereignty Score |
-| :--- | ---: |
-| **Kubernetes** | 78 |
-| Nomad | 65 |
-| **Docker Swarm** ← Stack | 52 |
+| Item                     | Sovereignty Score |
+| :----------------------- | ----------------: |
+| **Kubernetes**           |                78 |
+| Nomad                    |                65 |
+| **Docker Swarm** ← Stack |                52 |
 
 → Hinweis: _„Innerhalb der Gruppe Container-Orchestrierung erzielt Kubernetes einen höheren Sovereignty-Score als Docker Swarm."_
 
 #### Gruppe `ci-cd`
 
-| Item | Sovereignty Score |
-| :--- | ---: |
-| **GitLab** | 80 |
-| GitHub Actions | 48 |
-| **Jenkins** ← Stack | 72 |
-| CircleCI | 45 |
-| Spinnaker | 58 |
+| Item                | Sovereignty Score |
+| :------------------ | ----------------: |
+| **GitLab**          |                80 |
+| GitHub Actions      |                48 |
+| **Jenkins** ← Stack |                72 |
+| CircleCI            |                45 |
+| Spinnaker           |                58 |
 
 → Jenkins liegt nah am Gruppenbesten (GitLab). Der Hinweis erscheint, ist aber weniger dringlich.
 
 #### Gruppe `nosql-db`
 
-| Item | Sovereignty Score |
-| :--- | ---: |
-| **Cassandra** | 85 |
-| ScyllaDB | 82 |
-| **MongoDB** ← Stack | 42 |
-| HBase | 73 |
-| CouchDB | 78 |
+| Item                | Sovereignty Score |
+| :------------------ | ----------------: |
+| **Cassandra**       |                85 |
+| ScyllaDB            |                82 |
+| **MongoDB** ← Stack |                42 |
+| HBase               |                73 |
+| CouchDB             |                78 |
 
 → Hinweis: _„Cassandra erzielt in der Gruppe NoSQL-Datenbank einen deutlich höheren Sovereignty-Score als MongoDB (Oracle-Eigentümerschaft, kein permissives Lizenzmodell)."_
 
@@ -94,17 +94,17 @@ Folgende Items im Stack erhalten **keinen** Coverage-Hint, weil sie keinen `grou
 
 ## Die 36 Vergleichsgruppen im Überblick
 
-| Bereich | Gruppen |
-| :--- | :--- |
-| Daten | `sql-db` · `nosql-db` · `vector-db` · `data-serialization-format` · `open-data-portal` |
-| Integration | `container-orchestration` · `k8s-ingress-controller` · `k8s-management-ui` · `message-broker` · `api-style` |
-| Entwicklung | `component-framework` · `web-framework` · `server-side-rendering` · `systems-language` · `web-scripting-language` |
-| Betrieb | `ci-cd` · `infrastructure-as-code` · `workflow-orchestration` · `workflow-automation` |
-| KI/ML | `ml-framework` · `llm-framework` · `ai-agent-protocol` |
-| Sicherheit | `authentication-protocol` · `asymmetric-encryption` · `transport-protocol` |
+| Bereich     | Gruppen                                                                                                                |
+| :---------- | :--------------------------------------------------------------------------------------------------------------------- |
+| Daten       | `sql-db` · `nosql-db` · `vector-db` · `data-serialization-format` · `open-data-portal`                                 |
+| Integration | `container-orchestration` · `k8s-ingress-controller` · `k8s-management-ui` · `message-broker` · `api-style`            |
+| Entwicklung | `component-framework` · `web-framework` · `server-side-rendering` · `systems-language` · `web-scripting-language`      |
+| Betrieb     | `ci-cd` · `infrastructure-as-code` · `workflow-orchestration` · `workflow-automation`                                  |
+| KI/ML       | `ml-framework` · `llm-framework` · `ai-agent-protocol`                                                                 |
+| Sicherheit  | `authentication-protocol` · `asymmetric-encryption` · `transport-protocol`                                             |
 | Gov-Dienste | `national-digital-id-platform` · `gov-integration-platform` · `government-payment-service` · `digital-citizen-service` |
-| Anwendungen | `cms` · `browser-engine` · `mobile-os` · `low-code-app-builder` · `test-automation` |
-| Netzwerk | `traffic-engineering` · `short-range-wireless` |
+| Anwendungen | `cms` · `browser-engine` · `mobile-os` · `low-code-app-builder` · `test-automation`                                    |
+| Netzwerk    | `traffic-engineering` · `short-range-wireless`                                                                         |
 
 ---
 
