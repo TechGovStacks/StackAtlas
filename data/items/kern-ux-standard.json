@@ -15,7 +15,7 @@
 			"type": "runtime",
 			"scope": "required",
 			"reason": {
-				"de": "KERN nutzt KoliBri als Web Components, um eine KERN-Dev-Library anbieten zu koennen.",
+				"de": "KERN nutzt die KoliBri Web Components, um eine KERN-Dev-Library anzubieten.",
 				"en": "KERN uses KoliBri web components to provide a KERN developer library."
 			}
 		}
