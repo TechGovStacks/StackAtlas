@@ -3,6 +3,7 @@
 	"name": "Robot Framework",
 	"layer": "platform",
 	"sublayer": "ki",
+	"groupKey": "test-automation",
 	"description": {
 		"de": "Robot Framework ist ein Framework für Automatisierung von Tests und im Rahmen von Robot Process Automation. Genutzt wird eine prozedurale Skriptsprache.",
 		"en": ""

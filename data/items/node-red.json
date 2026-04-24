@@ -3,6 +3,7 @@
 	"name": "Node-RED",
 	"layer": "platform",
 	"sublayer": "lowcode",
+	"groupKey": "workflow-automation",
 	"description": {
 		"de": "Node-RED ist eine Open-Source-Software, die es ermöglicht, visuell Programmierflüsse zu erstellen. Diese Software wird häufig im Bereich der Internet der Dinge (IoT) und zur Automatisierung von Prozessen eingesetzt.",
 		"en": ""

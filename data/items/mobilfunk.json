@@ -3,6 +3,7 @@
 	"name": "Mobilfunk",
 	"layer": "infrastructure",
 	"sublayer": "anschluss",
+	"groupKey": "mobile-access",
 	"description": {
 		"de": "Der Mobilfunk wird zum Vernetzen von Mobilfunkgeräte (Smartphones) genutzt und erfolgt über die Verbindung zu Basisstationen zwecks weiterer Verteilung. Die Verbindung zum Netzwerk-Betreiber erfolgt über das Subscriber Identity Module (SIM).",
 		"en": ""

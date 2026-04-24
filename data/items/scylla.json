@@ -3,6 +3,7 @@
 	"name": "Scylla",
 	"layer": "platform",
 	"sublayer": "daten",
+	"groupKey": "nosql-db",
 	"description": {
 		"de": "Scylla ist eine spaltenorientierte NoSQL Datenbank.",
 		"en": ""

@@ -3,12 +3,18 @@
 	"name": "EUDI Wallet",
 	"layer": "sovereign-standards",
 	"sublayer": "sicherheit",
+	"groupKey": "digital-identity-wallet",
 	"description": {
 		"de": "Das European Digital Identity Wallet (EUDI) ist ein EU-weit harmonisiertes digitales Brieftaschen-Konzept. Das zugehörige Architecture and Reference Framework (ARF) definiert Spezifikationen, Protokolle und Standards für den Informationsaustausch zwischen Ausstellern, Wallets und Service-Providern.",
 		"en": "The European Digital Identity Wallet (EUDI) is an EU-wide harmonised digital wallet concept. Its Architecture and Reference Framework (ARF) defines the specifications, protocols and standards for information exchange between issuers, wallets and service providers."
 	},
 	"homepage": "https://github.com/eu-digital-identity-wallet",
-	"tags": ["identity", "wallet", "eidas", "eu"],
+	"tags": [
+		"identity",
+		"wallet",
+		"eidas",
+		"eu"
+	],
 	"oss": true,
 	"maturity": "incubation",
 	"sovereigntyCriteria": {

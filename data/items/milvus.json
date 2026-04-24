@@ -3,6 +3,7 @@
 	"name": "Milvus",
 	"layer": "platform",
 	"sublayer": "daten",
+	"groupKey": "vector-db",
 	"description": {
 		"de": "Milvus ist eine Vektor-Datenbank.",
 		"en": ""

@@ -3,6 +3,7 @@
 	"name": "Messaging Layer Security (MLS)",
 	"layer": "infrastructure",
 	"sublayer": "transport",
+	"groupKey": "group-messaging-security",
 	"description": {
 		"de": "MLS dient der Ende-zu-Ende-Verschlüsselung von Nachrichten in kleinen und großen Gruppen.",
 		"en": ""

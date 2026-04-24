@@ -3,6 +3,7 @@
 	"name": "Traefik",
 	"layer": "platform",
 	"sublayer": "integration",
+	"groupKey": "k8s-ingress-controller",
 	"description": {
 		"de": "Traefik ist ein moderner, Cloud-nativer Open-Source-Reverse-Proxy und Load Balancer. Er integriert sich dynamisch in bestehende Infrastrukturen wie Docker und Kubernetes, verwaltet eingehenden Traffic und leitet ihn an die richtigen Dienste weiter.",
 		"en": ""

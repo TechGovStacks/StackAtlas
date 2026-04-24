@@ -3,6 +3,7 @@
 	"name": "Appsmith",
 	"layer": "platform",
 	"sublayer": "lowcode",
+	"groupKey": "low-code-app-builder",
 	"description": {
 		"de": "Appsmith will die Erstellung individueller Admin-Panels und interner Apps mit vorgefertigten Widgets und Datenquellenanbindung beschleunigen.",
 		"en": ""

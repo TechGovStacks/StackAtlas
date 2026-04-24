@@ -3,6 +3,7 @@
 	"name": "Elliptic Curve Integrated Encryption Scheme",
 	"layer": "building-blocks",
 	"sublayer": "sicherheit",
+	"groupKey": "asymmetric-encryption",
 	"description": {
 		"de": "ECIES ist ein hybrides Verschlüsselungsverfahren unter Kombination von Diffie-Hellman und elliptischen Kurven.",
 		"en": ""

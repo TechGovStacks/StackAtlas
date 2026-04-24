@@ -3,6 +3,7 @@
 	"name": "Istio",
 	"layer": "platform",
 	"sublayer": "integration",
+	"groupKey": "service-mesh",
 	"description": {
 		"de": "Istio ist ein Open-Source Service Mesh zum Management von Microservices in containerisierten Umgebungen. Es erleichtert das Sichern, Verbinden und Überwachen verteilter Anwendungen, indem es Funktionen wie Lastenausgleich, Authentifizierung, Autorisierung, Traffic-Steuerung und detaillierte Einblicke in die Kommunikation zwischen Diensten bereitstellt.",
 		"en": ""

@@ -3,6 +3,7 @@
 	"name": "Simple Object Access Protocol",
 	"layer": "platform",
 	"sublayer": "integration",
+	"groupKey": "api-style",
 	"description": {
 		"de": "SOAP ist ein Protokoll, das den Austausch von strukturierten Informationen in verteilten und dezentralisierten Umgebungen ermöglicht. Es nutzt XML als Format für Anfragen und Antworten und arbeitet oft über HTTP, kann aber auch andere Protokolle nutzen. Der Hauptzweck von SOAP liegt in der Unterstützung von Interoperabilität und Sicherheit in komplexen Unternehmensanwendungen, wobei es strikt definierten Standards für Webservices folgt.",
 		"en": ""

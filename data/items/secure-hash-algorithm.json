@@ -3,6 +3,7 @@
 	"name": "Secure Hash Algorithm",
 	"layer": "building-blocks",
 	"sublayer": "sicherheit",
+	"groupKey": "hash-algorithm",
 	"description": {
 		"de": "SHA wandelt Daten in einen eindeutigen Prüfwert um. Der Prüfwert kann zu Sicherstellung der Integrität genutzt werden (digitaler Fingerabdruck).",
 		"en": ""

@@ -3,6 +3,7 @@
 	"name": "Border Gateway Protocol (BGP)",
 	"layer": "infrastructure",
 	"sublayer": "verteilung",
+	"groupKey": "exterior-routing-protocol",
 	"description": {
 		"de": "BGP ist ein entscheidendes Routing-Protokoll im Internet, das Netzwerke miteinander verbindet und dafür sorgt, dass Datenpakete ihren optimalen Weg durch verschiedene autonome Systeme finden. BGP ermöglicht es Internetdienstleistern (ISPs) und größeren Netzwerken, Routeninformationen effizient auszutauschen, um die Datenübertragung zu optimieren. Es spielt eine Schlüsselrolle bei der Aufrechterhaltung der Stabilität und Skalierbarkeit der globalen Internetinfrastruktur",
 		"en": ""

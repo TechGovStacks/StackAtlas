@@ -3,6 +3,7 @@
 	"name": "User Datagram Protocol (UDP)",
 	"layer": "infrastructure",
 	"sublayer": "transport",
+	"groupKey": "transport-protocol",
 	"description": {
 		"de": "UDP ist ein einfaches Datenübertragungsprotokoll ohne Zusatzfunktionen.",
 		"en": ""

@@ -3,6 +3,7 @@
 	"name": "Go",
 	"layer": "building-blocks",
 	"sublayer": "sprachen",
+	"groupKey": "systems-language",
 	"description": {
 		"de": "Go ist eine Programmiersprache für Cloud- und Netzwerkanwendungen.",
 		"en": ""

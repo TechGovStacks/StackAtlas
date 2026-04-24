@@ -3,6 +3,7 @@
 	"name": "Helm",
 	"layer": "platform",
 	"sublayer": "inbetriebnahme",
+	"groupKey": "k8s-package-manager",
 	"description": {
 		"de": "Helm ist der De-facto-Paketmanager für Kubernetes. Mit Helm-Charts werden komplexe Kubernetes-Anwendungen versioniert, geteilt und reproduzierbar deployt.",
 		"en": "Helm is the de-facto package manager for Kubernetes. Helm charts version, share and reproducibly deploy complex Kubernetes applications."
@@ -10,7 +11,11 @@
 	"homepage": "https://helm.sh/",
 	"logo": "https://cdn.simpleicons.org/helm",
 	"license": "Apache-2.0",
-	"tags": ["kubernetes", "package-manager", "deployment"],
+	"tags": [
+		"kubernetes",
+		"package-manager",
+		"deployment"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

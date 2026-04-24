@@ -3,6 +3,7 @@
 	"name": "Internal Gateway Protocols (IGP)",
 	"layer": "infrastructure",
 	"sublayer": "verteilung",
+	"groupKey": "interior-routing-protocol",
 	"description": {
 		"de": "IGP sind Routing-Protokolle, die für die automatische Weiterleitung von Datenpaketen innerhalb eines autonomen Systems verwendet werden. Sie ermöglichen es Routern, dynamisch die besten Pfade zu Zielnetzwerken zu ermitteln und sich automatisch an Netzwerkänderungen anzupassen. IGPs sind essentiell für die Funktionsfähigkeit moderner IP-Netzwerke in Unternehmen und Service-Provider-Umgebungen.",
 		"en": ""

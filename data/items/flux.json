@@ -3,6 +3,7 @@
 	"name": "flux",
 	"layer": "building-blocks",
 	"sublayer": "inbetriebnahme",
+	"groupKey": "gitops",
 	"description": {
 		"de": "Flux ist ein Werkzeug zur Synchronisation von Ressourcen (u.a. Git Repo) und einem Kubernetes Clusters.",
 		"en": ""

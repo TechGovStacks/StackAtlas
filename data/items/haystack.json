@@ -3,6 +3,7 @@
 	"name": "Haystack",
 	"layer": "platform",
 	"sublayer": "ki",
+	"groupKey": "llm-framework",
 	"description": {
 		"de": "Haystack ist Framework für die Entwicklung von KI-Anwendungen. Das Framework ermöglicht es Entwicklern, produktionsreife Systeme für Aufgaben wie Retrieval-Augmented Generation (RAG), Dokumentensuche und Frage-Antwort-Systeme zu erstellen.",
 		"en": ""

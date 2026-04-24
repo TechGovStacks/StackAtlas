@@ -3,6 +3,7 @@
 	"name": "Internet Protocol Security (IPSec)",
 	"layer": "infrastructure",
 	"sublayer": "verteilung",
+	"groupKey": "network-security-protocol",
 	"description": {
 		"de": "IPSec ist eine Protokoll-Suite, die Sicherheitsdienste für IP-basierte Netzwerkkommunikation bereitstellt. Es bietet Authentifizierung, Integrität und Vertraulichkeit auf der Netzwerkebene (Layer 3) des OSI-Modells. IPSec wird hauptsächlich für VPN-Verbindungen, sichere Site-to-Site-Kommunikation und End-to-End-Verschlüsselung verwendet.",
 		"en": ""

@@ -3,6 +3,7 @@
 	"name": "Module Lattice Based Key Encapsulation Mechanism",
 	"layer": "building-blocks",
 	"sublayer": "sicherheit",
+	"groupKey": "post-quantum-encryption",
 	"description": {
 		"de": "ML-KEM unterstützt bei der Generierung eines Schlüssels für symmetrische Verschlüsselungsverfahren. ML-KEM ist ein Post-Quanten-Algorithmus.",
 		"en": ""

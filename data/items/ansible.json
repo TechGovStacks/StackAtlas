@@ -3,13 +3,18 @@
 	"name": "Ansible",
 	"layer": "platform",
 	"sublayer": "inbetriebnahme",
+	"groupKey": "infrastructure-as-code",
 	"description": {
 		"de": "Ansible ist ein Open-Source-Werkzeug für Konfigurationsmanagement, Provisioning und Anwendungs-Deployment. Es nutzt deklarative YAML-Playbooks und benötigt keine Agenten auf den Zielsystemen.",
 		"en": "Ansible is an open-source tool for configuration management, provisioning and application deployment. It uses declarative YAML playbooks and requires no agents on the target systems."
 	},
 	"homepage": "https://www.ansible.com/",
 	"license": "GPL-3.0-or-later",
-	"tags": ["automation", "configuration", "iac"],
+	"tags": [
+		"automation",
+		"configuration",
+		"iac"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -3,6 +3,7 @@
 	"name": "OpenKruise",
 	"layer": "building-blocks",
 	"sublayer": "inbetriebnahme",
+	"groupKey": "k8s-workload-controller",
 	"description": {
 		"de": "OpenKruise ist eine Open-Source-Anwendungssuite, die Kubernetes um Funktionen für das Management von großen Anwendungen erweitert. Als ein Projekt der Cloud Native Computing Foundation (CNCF) bietet OpenKruise Funktionen für die Automatisierung von Deployment, Upgrades und Betrieb von Anwendungen.",
 		"en": ""

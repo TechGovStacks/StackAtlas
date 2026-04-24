@@ -3,12 +3,18 @@
 	"name": "BundID",
 	"layer": "applications",
 	"sublayer": "sicherheit",
+	"groupKey": "national-digital-id-platform",
 	"description": {
 		"de": "Die BundID ist das zentrale Bürgerkonto des Bundes für digitale Verwaltungsleistungen. Sie unterstützt eIDAS-konforme Vertrauensniveaus und integriert sich via SAML oder OpenID Connect in Webdienste, sodass Formulare automatisch vorausgefüllt werden können.",
 		"en": "BundID is Germany's federal citizen account for digital administrative services. It supports eIDAS-compliant assurance levels and integrates with web services via SAML or OpenID Connect so that forms can be pre-filled automatically."
 	},
 	"homepage": "https://id.bund.de/",
-	"tags": ["egovernment", "identity", "eidas", "germany"],
+	"tags": [
+		"egovernment",
+		"identity",
+		"eidas",
+		"germany"
+	],
 	"oss": false,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

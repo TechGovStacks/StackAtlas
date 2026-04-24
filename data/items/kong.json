@@ -3,6 +3,7 @@
 	"name": "Kong",
 	"layer": "platform",
 	"sublayer": "integration",
+	"groupKey": "api-gateway",
 	"description": {
 		"de": "Kong ist eine API-Management-Plattform für Microservices und Zugriffe auf Backend-Services. Es fungiert als Middleware. Kong ist eine Open-Source-Lösung, die auf NGINX basiert und für ihre Skalierbarkeit und Sicherheit bekannt ist.",
 		"en": ""

@@ -3,6 +3,7 @@
 	"name": "Agent Network Protocol",
 	"layer": "platform",
 	"sublayer": "ki",
+	"groupKey": "ai-agent-protocol",
 	"description": {
 		"de": "ANP ermöglicht sichere, dezentralisierte Kommunikation zwischen KI-Agenten über offene Internet-Infrastrukturen. Fungiert als standardisiertes Peer-to-Peer-Protokoll für agentengesteuerte Kollaborationen und etabliert ein \"HTTP für das Agent-Internet-Zeitalter\" durch interoperable Identitätsverwaltung und semantische Datenverknüpfung.",
 		"en": ""

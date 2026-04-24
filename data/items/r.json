@@ -3,6 +3,7 @@
 	"name": "R",
 	"layer": "building-blocks",
 	"sublayer": "sprachen",
+	"groupKey": "data-science-language",
 	"description": {
 		"de": "R ist eine Programmiersprache Analyse, Bereinigung, Modellierung und Visualisierung von Daten.",
 		"en": ""

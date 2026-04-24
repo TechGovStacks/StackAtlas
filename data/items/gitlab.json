@@ -3,6 +3,7 @@
 	"name": "GitLab",
 	"layer": "building-blocks",
 	"sublayer": "inbetriebnahme",
+	"groupKey": "ci-cd",
 	"description": {
 		"de": "GitLab ist eine Plattform für den gesamten DevSecOps-Lebenszyklus. GitLab bietet Funktionen für Versionskontrolle (basierend auf Git), Projektplanung, Continuous Integration/Continuous Deployment (CI/CD), Code-Überprüfung, Sicherheitsscans und Fehlerverfolgung in einer einzigen Umgebung.",
 		"en": ""

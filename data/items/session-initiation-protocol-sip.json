@@ -3,6 +3,7 @@
 	"name": "Session Initiation Protocol (SIP)",
 	"layer": "infrastructure",
 	"sublayer": "transport",
+	"groupKey": "communication-protocol",
 	"description": {
 		"de": "SIP ist ein Netzprotokoll zur Etablierung und Steuerung von Kommunikationssitzungen mit mehreren Teilnehmenden. SIP ist Grundlage für IP-Telefonie (Voice over IP).",
 		"en": ""

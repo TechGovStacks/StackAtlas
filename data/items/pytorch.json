@@ -3,6 +3,7 @@
 	"name": "PyTorch",
 	"layer": "platform",
 	"sublayer": "ki",
+	"groupKey": "ml-framework",
 	"description": {
 		"de": "PyTorch ist eine Bibliothek für maschinelles Lernen, Deep Learning und Natural Language Processing.",
 		"en": ""

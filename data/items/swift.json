@@ -3,6 +3,7 @@
 	"name": "Swift",
 	"layer": "building-blocks",
 	"sublayer": "sprachen",
+	"groupKey": "mobile-language",
 	"description": {
 		"de": "Swift dient für die Entwicklung von Apps für Apple-Geräte.",
 		"en": ""

@@ -3,6 +3,7 @@
 	"name": "OpenShift Origin (OKD)",
 	"layer": "platform",
 	"sublayer": "integration",
+	"groupKey": "container-orchestration-platform",
 	"description": {
 		"de": "OpenShift ist eine Kubernetes-basierte Plattform von Red Hat für die Entwicklung und Bereitstellung von Cloud-nativen Anwendungen, die eine einheitliche Basis für Hybrid-Cloud-, Multi-Cloud- und Edge-Umgebungen bietet und den gesamten Lebenszyklus von Anwendunen unterstützt. OKD ist die Community Version von OpenShift welche 2018 abgeleitet wurde.",
 		"en": ""

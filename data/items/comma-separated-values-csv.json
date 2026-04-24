@@ -3,6 +3,7 @@
 	"name": "Comma-Separated Values (CSV)",
 	"layer": "platform",
 	"sublayer": "daten",
+	"groupKey": "data-serialization-format",
 	"description": {
 		"de": "CSV ist ein Datenformat für den Datenaustausch.",
 		"en": ""

@@ -3,6 +3,7 @@
 	"name": "Hypertext Transfer Protocol (HTTP)",
 	"layer": "infrastructure",
 	"sublayer": "transport",
+	"groupKey": "application-protocol",
 	"description": {
 		"de": "HTTP wird verwendet um Ressoucen wie Webseiten, APIs, Formulare, Bilder oder Videos abzurufen und zu senden.",
 		"en": ""

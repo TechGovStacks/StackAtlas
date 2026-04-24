@@ -3,6 +3,7 @@
 	"name": "spaCy",
 	"layer": "platform",
 	"sublayer": "ki",
+	"groupKey": "nlp-library",
 	"description": {
 		"de": "spaCy ist eine Python-Bibliothek für Natural Language Processing. Sie bietet Informationsextraktion, Textanalyse und Vorverarbeitung für Deep Learning. Die Bibliothek bietet gebrauchsfertige Modelle sowie die Möglichkeit zum Training eigener Modelle.",
 		"en": ""

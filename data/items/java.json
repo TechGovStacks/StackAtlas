@@ -3,6 +3,7 @@
 	"name": "Java",
 	"layer": "building-blocks",
 	"sublayer": "sprachen",
+	"groupKey": "jvm-language",
 	"description": {
 		"de": "Java dient der plattformunabhängige Softwareentwicklung . Der Quellcode wird kompiliert und als Ergebnis im Java Runtime Environment ausgeführt.",
 		"en": ""

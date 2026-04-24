@@ -3,6 +3,7 @@
 	"name": "Domain Name System (DNS)",
 	"layer": "infrastructure",
 	"sublayer": "verteilung",
+	"groupKey": "name-resolution",
 	"description": {
 		"de": "Das DNS ist ein hierarchisches, dezentrales Namensauflösungssystem, das menschenlesbare Domainnamen in IP-Adressen übersetzt. DNS ist fundamental für das Funktionieren des modernen Internets und ermöglicht die Navigation zwischen verschiedenen Online-Diensten.",
 		"en": ""

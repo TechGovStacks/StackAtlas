@@ -3,6 +3,7 @@
 	"name": "Chroma",
 	"layer": "platform",
 	"sublayer": "daten",
+	"groupKey": "vector-db",
 	"description": {
 		"de": "Chroma ist eine Vektor-Datenbank.",
 		"en": ""

@@ -3,13 +3,18 @@
 	"name": "Apache Kafka",
 	"layer": "platform",
 	"sublayer": "integration",
+	"groupKey": "event-streaming",
 	"description": {
 		"de": "Apache Kafka ist eine verteilte Event-Streaming-Plattform für hochskalierbare, asynchrone Nachrichtenverarbeitung. Sie wird in vielen GovTech-Stacks für Echtzeit-Datenverteilung, Microservice-Integration und Event-Driven-Architekturen eingesetzt.",
 		"en": "Apache Kafka is a distributed event-streaming platform for highly scalable, asynchronous message processing. It is used in many GovTech stacks for real-time data distribution, microservice integration and event-driven architectures."
 	},
 	"homepage": "https://kafka.apache.org/",
 	"license": "Apache-2.0",
-	"tags": ["streaming", "events", "messaging"],
+	"tags": [
+		"streaming",
+		"events",
+		"messaging"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

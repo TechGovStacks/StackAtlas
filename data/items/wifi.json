@@ -3,6 +3,7 @@
 	"name": "WiFi",
 	"layer": "infrastructure",
 	"sublayer": "anschluss",
+	"groupKey": "short-range-wireless",
 	"description": {
 		"de": "Mit Wireless LAN können in kleiner bis mittlerer Reichweite Endgeräte vernetzt werden (Ad-hoc, via Basisstation/ Access Point oder als Mesh). Die IEEE standardisiert die Technologie mit IEEE 802.11 ff. Die Konfiguration erfolgt durch SSID und Passwort. Wi-Fi dient als Kennzeichen für zertifizierte Produkte zur Sicherstellung von Interoperabilität.",
 		"en": ""

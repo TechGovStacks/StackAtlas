@@ -3,13 +3,18 @@
 	"name": "Node.js",
 	"layer": "platform",
 	"sublayer": "laufzeit",
+	"groupKey": "js-runtime",
 	"description": {
 		"de": "Node.js ist eine quelloffene JavaScript-Laufzeitumgebung. Sie wird in vielen Verwaltungs-Backends für schnelle, ereignisgetriebene APIs und für Frontend-Build-Tooling eingesetzt.",
 		"en": "Node.js is an open-source JavaScript runtime. It is used in many public-administration backends for fast event-driven APIs and for frontend build tooling."
 	},
 	"homepage": "https://nodejs.org/",
 	"license": "MIT",
-	"tags": ["javascript", "runtime", "backend"],
+	"tags": [
+		"javascript",
+		"runtime",
+		"backend"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -3,6 +3,7 @@
 	"name": "Open Authorization (OAuth)",
 	"layer": "building-blocks",
 	"sublayer": "sicherheit",
+	"groupKey": "authorization-protocol",
 	"description": {
 		"de": "Ermöglicht sichere Autorisierung und delegierten Zugriff auf Ressourcen ohne Preisgabe von Benutzeranmeldedaten. Fungiert als standardisiertes Framework für die Berechtigung von Drittanbieter-Anwendungen zum Zugriff auf geschützte APIs und Benutzerdaten.",
 		"en": ""

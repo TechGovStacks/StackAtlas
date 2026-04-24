@@ -3,6 +3,7 @@
 	"name": "Axolotl",
 	"layer": "platform",
 	"sublayer": "ki",
+	"groupKey": "llm-fine-tuning",
 	"description": {
 		"de": "Axolotl ist ein Framework zum Feintuning von großen Sprachmodellen. Dafür können optimierte Workflows genutzt werden.",
 		"en": ""

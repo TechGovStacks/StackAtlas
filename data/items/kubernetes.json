@@ -3,6 +3,7 @@
 	"name": "Kubernetes",
 	"layer": "platform",
 	"sublayer": "integration",
+	"groupKey": "container-orchestration",
 	"description": {
 		"de": "Kubernetes ist eine Open-Source-Plattform zur Automatisierung der Bereitstellung, Skalierung und Verwaltung containerisierter Anwendungen. Das System orchestriert Container-Workloads über Cluster von Maschinen hinweg und bietet dabei umfangreiche APIs für Netzwerk-, Speicher- und Runtime-Integrationen. Kubernetes ist zum de-facto Standard für Container-Orchestrierung geworden und bildet das Fundament moderner Cloud-Native-Architekturen.",
 		"en": ""

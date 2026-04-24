@@ -3,6 +3,7 @@
 	"name": "Media Access Control (MAC)",
 	"layer": "infrastructure",
 	"sublayer": "verteilung",
+	"groupKey": "data-link-protocol",
 	"description": {
 		"de": "MAC ist eine Unterschicht der Sicherungsschicht (Layer 2) im OSI-Modell, die den Zugriff auf das Übertragungsmedium in Netzwerken regelt. MAC-Protokolle koordinieren, wie mehrere Geräte gemeinsam auf ein geteiltes Kommunikationsmedium zugreifen können, ohne sich gegenseitig zu stören. Jedes Netzwerkgerät erhält eine eindeutige MAC-Adresse zur Identifikation im lokalen Netzwerksegment.",
 		"en": ""

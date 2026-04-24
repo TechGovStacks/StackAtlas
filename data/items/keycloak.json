@@ -3,6 +3,7 @@
 	"name": "Keycloak",
 	"layer": "building-blocks",
 	"sublayer": "sicherheit",
+	"groupKey": "identity-provider",
 	"description": {
 		"de": "Keycloak ist eine Open-Source-Lösung für Identity- und Access-Management. Sie bietet Single Sign-On, OpenID Connect, OAuth2 und SAML, Benutzer- und Rollenverwaltung sowie Föderation und gilt als De-facto-Standard für IAM in vielen öffentlichen Verwaltungen.",
 		"en": "Keycloak is an open-source identity and access management solution. It provides single sign-on, OpenID Connect, OAuth2, SAML, user and role management as well as federation and is the de-facto IAM standard in many public administrations."

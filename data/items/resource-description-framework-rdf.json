@@ -3,6 +3,7 @@
 	"name": "Resource Description Framework (RDF)",
 	"layer": "platform",
 	"sublayer": "daten",
+	"groupKey": "semantic-data-standard",
 	"description": {
 		"de": "RDF ist ein Datenformat für den Datenaustausch.",
 		"en": ""

@@ -3,6 +3,7 @@
 	"name": "Transport Layer Security (TLS)",
 	"layer": "infrastructure",
 	"sublayer": "transport",
+	"groupKey": "channel-security-protocol",
 	"description": {
 		"de": "TLS dient der Verschlüsselung der Datenübertragung. TLS besteht aus dem Austausch von Schlüsseln, der Authentifizierung und der Realisierung der sicheren Datenübertragung.",
 		"en": ""

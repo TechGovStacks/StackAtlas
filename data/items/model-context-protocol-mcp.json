@@ -3,6 +3,7 @@
 	"name": "Model Context Protocol (MCP)",
 	"layer": "platform",
 	"sublayer": "ki",
+	"groupKey": "ai-agent-protocol",
 	"description": {
 		"de": "MCP ist ein offenes Protokoll, welches standardisiert wie Anwendungen Kontextinformationen an große Sprachmodelle liefert. MCP liefert einen standardisierten Weg um KI Modelle mit verschiedenen Datenquellen und -werkzeugen zu verbinden. MCP ermöglicht Agenten und komplexe Workflows auf Basis von großen Sprachmodellen zu bauen.",
 		"en": ""

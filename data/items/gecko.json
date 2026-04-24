@@ -3,6 +3,7 @@
 	"name": "Gecko",
 	"layer": "applications",
 	"sublayer": "browser",
+	"groupKey": "browser-engine",
 	"description": {
 		"de": "Gecko ist eine Browser-Engine zum Rendern von Webseiten. Es wird insbesondere von Mozilla für Firefox genutzt.",
 		"en": ""

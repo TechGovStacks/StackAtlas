@@ -3,6 +3,7 @@
 	"name": "Glasfaser",
 	"layer": "infrastructure",
 	"sublayer": "anschluss",
+	"groupKey": "fiber-access",
 	"description": {
 		"de": "Mit Glasfaser können Daten durch dünne Fasern in Lichtgeschwindigkeit übertragen werden. Im Kern werden Glasfaser für die Backbones genutzt aber zunehmend bis zum Endanschluss ausgebaut.",
 		"en": ""

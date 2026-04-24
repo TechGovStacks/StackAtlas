@@ -3,13 +3,18 @@
 	"name": "Drupal",
 	"layer": "applications",
 	"sublayer": "lowcode",
+	"groupKey": "cms",
 	"description": {
 		"de": "Drupal ist ein quelloffenes Content-Management-System mit hohen Sicherheits- und Barrierefreiheitsanforderungen. Es ist die bevorzugte Wahl für große, komplexe Behördenportale weltweit.",
 		"en": "Drupal is an open-source content-management system with strong security and accessibility requirements. It is the preferred choice for large, complex government portals worldwide."
 	},
 	"homepage": "https://www.drupal.org/",
 	"license": "GPL-2.0-or-later",
-	"tags": ["cms", "egovernment", "accessibility"],
+	"tags": [
+		"cms",
+		"egovernment",
+		"accessibility"
+	],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

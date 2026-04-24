@@ -3,6 +3,7 @@
 	"name": "Portainer",
 	"layer": "platform",
 	"sublayer": "integration",
+	"groupKey": "k8s-management-ui",
 	"description": {
 		"de": "Portainer ist eine benutzerfreundliche, webbasierte Management-Plattform für Container, die es ermöglicht, Docker- und Kubernetes-Umgebungen mit einer einfachen Oberfläche zu verwalten und zu überwachen.",
 		"en": ""

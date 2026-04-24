@@ -3,6 +3,7 @@
 	"name": "Neo4J",
 	"layer": "platform",
 	"sublayer": "daten",
+	"groupKey": "graph-db",
 	"description": {
 		"de": "Neo4j ist eine Graphdatenbank.",
 		"en": ""

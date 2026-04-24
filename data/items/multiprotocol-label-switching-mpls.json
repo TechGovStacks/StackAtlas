@@ -3,6 +3,7 @@
 	"name": "Multiprotocol Label Switching (MPLS)",
 	"layer": "infrastructure",
 	"sublayer": "verteilung",
+	"groupKey": "traffic-engineering",
 	"description": {
 		"de": "MPLS dient der Übertragung von Datenpaketen in einem verbindungslosen Netz. Das Verfahren zur Verteilung wird in großen Netzwerken eingesetzt.",
 		"en": ""

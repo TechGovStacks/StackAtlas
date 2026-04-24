@@ -3,6 +3,7 @@
 	"name": "Dynamic Host Configuration Protocol (DHCP)",
 	"layer": "infrastructure",
 	"sublayer": "verteilung",
+	"groupKey": "address-management",
 	"description": {
 		"de": "DHCP ermöglicht automatische Netzwerkkonfiguration durch dynamische Zuweisung von IP-Adressen und Netzwerkparametern an verbundene Geräte. Fungiert als zentraler Service für Plug-and-Play-Netzwerkkonnektivität und reduziert manuellen Administrationsaufwand in lokalen und Unternehmensnetzwerken.",
 		"en": ""

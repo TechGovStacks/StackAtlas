@@ -3,6 +3,7 @@
 	"name": "Joget",
 	"layer": "platform",
 	"sublayer": "lowcode",
+	"groupKey": "workflow-app-builder",
 	"description": {
 		"de": "Joget beschleunigt die Entwicklung und Automatisierung von Enterprise-Anwendungen mit visuellem Builder, Governance-Funktionen und neuen AI-Fähigkeiten in DX 9.",
 		"en": ""

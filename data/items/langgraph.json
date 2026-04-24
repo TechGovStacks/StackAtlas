@@ -3,6 +3,7 @@
 	"name": "LangGraph",
 	"layer": "platform",
 	"sublayer": "ki",
+	"groupKey": "llm-framework",
 	"description": {
 		"de": "LangGraph ist ein low-level Orchestrierungs-Framework für den Aufbau, die Verwaltung und das Deployment von langlebigen, zustandsbehafteten AI-Agenten und Multi-Agent-Workflows. Das Framework nutzt eine graph-basierte Architektur zur Modellierung komplexer Agent-Interaktionen, wobei Knoten (Nodes) die Agent-Logik enthalten und Kanten (Edges) den Kontrollfluss zwischen ihnen definieren. LangGraph ermöglicht sowohl vordefinierte Workflows als auch dynamische Agenten-Systeme mit Human-in-the-Loop-Funktionalitäten.",
 		"en": ""

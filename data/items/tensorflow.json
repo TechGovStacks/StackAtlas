@@ -3,6 +3,7 @@
 	"name": "TensorFlow",
 	"layer": "platform",
 	"sublayer": "ki",
+	"groupKey": "ml-framework",
 	"description": {
 		"de": "TensorFlow ist eine Bibliothek für maschinelles Lernen und Künstliche Intelligen. Es wird insbesondere für Training und Inferenz von neuronalen Netzen eingesetzt.",
 		"en": ""

@@ -3,6 +3,7 @@
 	"name": "Open Internet Exchange Point (IXP OIX-1)",
 	"layer": "infrastructure",
 	"sublayer": "verteilung",
+	"groupKey": "internet-exchange",
 	"description": {
 		"de": "IXP OIX-1 ist eine Zertifizierung für Internet-Knotenpunkte (IXPs) für die Sicherstellung verschiedener Standards zu Leistungsfähigkeit, Verfügbarkeit, Ausfallsicherheit und Datensicherheit. Ein IXP verbindet Internetdienstanbieter (ISPs) und Content-Netzwerke (CDNs) um den Datenverkehr zu optimieren.",
 		"en": ""

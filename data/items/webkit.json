@@ -3,6 +3,7 @@
 	"name": "WebKit",
 	"layer": "applications",
 	"sublayer": "browser",
+	"groupKey": "browser-engine",
 	"description": {
 		"de": "WebKit ist eine Browser-Engine zum Rendern von Webseiten. Es wird insbesondere von Apple für Safari genutzt.",
 		"en": ""

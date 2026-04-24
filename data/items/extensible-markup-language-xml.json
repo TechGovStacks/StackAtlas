@@ -3,6 +3,7 @@
 	"name": "Extensible Markup Language (XML)",
 	"layer": "platform",
 	"sublayer": "daten",
+	"groupKey": "data-serialization-format",
 	"description": {
 		"de": "XML ist ein Datenformat für den Datenaustausch.",
 		"en": ""

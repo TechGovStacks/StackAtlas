@@ -3,6 +3,7 @@
 	"name": "RAGFlow",
 	"layer": "platform",
 	"sublayer": "ki",
+	"groupKey": "rag-framework",
 	"description": {
 		"de": "RAGFlow wird als Engine für Retrieval-Augmented Generation (RAG) eingesetzt um Ergebnisse anhand von Kontext zu verbessern beziehungsweise die Wissensbasis zu erweitern.",
 		"en": ""

@@ -3,6 +3,7 @@
 	"name": "Agent-User Interaction Protocol (AG-UI)",
 	"layer": "platform",
 	"sublayer": "ki",
+	"groupKey": "ai-agent-protocol",
 	"description": {
 		"de": "AG-UI standardisiert Status, Ziel und Interaktion von KI-Agenten und deren Laufzeit gegenüber den Nutzenden.",
 		"en": ""

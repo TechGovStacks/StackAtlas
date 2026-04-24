@@ -3,6 +3,7 @@
 	"name": "Contour",
 	"layer": "platform",
 	"sublayer": "integration",
+	"groupKey": "k8s-ingress-controller",
 	"description": {
 		"de": "Contour ist ein Open-Source Ingress Controller für Kubernetes, der den Envoy Proxy und Lastenausgleich nutzt. Er fungiert als Steuerungsebene (Control Plane) für Envoy und ermöglicht dynamische Konfigurationsaktualisierungen sowie die Delegation von Ingress-Funktionen. Contour ist leichtgewichtig und bietet Funktionen wie TLS-Terminierung, HTTP zu HTTPS-Weiterleitung und verschiedene Lastausgleichsoptionen.",
 		"en": ""

@@ -3,6 +3,7 @@
 	"name": "SD-WAN Service Attributes and Service Framework (MEF)",
 	"layer": "infrastructure",
 	"sublayer": "verteilung",
+	"groupKey": "traffic-engineering",
 	"description": {
 		"de": "MEF definiert SD-WAN Services und Attribute. SD-WAN ist eine Technologie zur Verbindung weit entfernter Netzwerksegemente über verschiedene Anschlusstypen/ Medien.",
 		"en": ""

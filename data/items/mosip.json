@@ -3,13 +3,18 @@
 	"name": "MOSIP",
 	"layer": "applications",
 	"sublayer": "sicherheit",
+	"groupKey": "national-digital-id-platform",
 	"description": {
 		"de": "MOSIP (Modular Open Source Identity Platform) ist eine quelloffene Plattform für nationale digitale Identitäten. Sie wird in zahlreichen Schwellenländern als Basis für Bürgerregister und ID-Programme adaptiert.",
 		"en": "MOSIP (Modular Open Source Identity Platform) is an open-source platform for national digital identities. It is adopted in many emerging economies as a basis for civil registries and national ID programmes."
 	},
 	"homepage": "https://www.mosip.io/",
 	"license": "MPL-2.0",
-	"tags": ["egovernment", "identity", "open-source"],
+	"tags": [
+		"egovernment",
+		"identity",
+		"open-source"
+	],
 	"oss": true,
 	"maturity": "incubation",
 	"sovereigntyCriteria": {

@@ -3,6 +3,7 @@
 	"name": "NQdrant",
 	"layer": "platform",
 	"sublayer": "daten",
+	"groupKey": "vector-db",
 	"description": {
 		"de": "Qdrant ist eine container-basierte Vektor-Datenbank mit integrierter Ähnlichkeitssuche.",
 		"en": ""

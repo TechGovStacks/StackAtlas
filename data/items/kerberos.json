@@ -3,6 +3,7 @@
 	"name": "Kerberos",
 	"layer": "building-blocks",
 	"sublayer": "sicherheit",
+	"groupKey": "authentication-protocol",
 	"description": {
 		"de": "Ermöglicht sichere Netzwerk-Authentifizierung durch ein Ticket-basiertes System ohne Übertragung von Passwörtern über das Netzwerk. Fungiert als vertrauenswürdiger Drittanbieter (Key Distribution Center) für Single Sign-On in Enterprise-Umgebungen und stellt mutual Authentication zwischen Clients und Services sicher.",
 		"en": ""
