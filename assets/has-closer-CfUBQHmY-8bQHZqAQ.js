@@ -1,0 +1,1 @@
+import{lt as e}from"./index-CUmjwtrG.js";var t=(t,n)=>{e(t,`_hasCloser`,n)};export{t};
