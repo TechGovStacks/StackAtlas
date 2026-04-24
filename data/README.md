@@ -43,7 +43,7 @@ Das optionale Feld `groupKey` kennzeichnet Items, die **dieselbe Kernfunktion** 
 
 **Vergabekriterium:** `groupKey` wird nur gesetzt, wenn im Katalog **mindestens zwei Items** existieren, zwischen denen ein Stack tatsächlich wählen kann. Fundamentalstandards ohne Alternative (HTTP, TLS, DNS …) und singuläre Spezialwerkzeuge erhalten keinen `groupKey`.
 
-#### Alle 36 Vergleichsgruppen (Stand 2026-04-24)
+#### Alle 35 Vergleichsgruppen (Stand 2026-04-24)
 
 | groupKey | Items (Anzahl) | Typische Entscheidung |
 | :--- | :---: | :--- |
@@ -65,7 +65,6 @@ Das optionale Feld `groupKey` kennzeichnet Items, die **dieselbe Kernfunktion** 
 | `national-digital-id-platform` | 5 | MOSIP · BundID · Aadhaar · SingPass · GOV.UK One Login |
 | `cms` | 3 | Drupal · TYPO3 · WordPress |
 | `browser-engine` | 3 | Blink · Gecko · WebKit |
-| `mobile-os` | 2 | Android · iOS |
 | `systems-language` | 3 | C · Go · Rust |
 | `web-scripting-language` | 2 | JavaScript · TypeScript |
 | `api-style` | 4 | REST · GraphQL · SOAP · gRPC |
