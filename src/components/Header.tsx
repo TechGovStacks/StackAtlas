@@ -112,7 +112,7 @@ export function Header({ currentUrl }: HeaderProps) {
 								_label={t('pages.settings.title')}
 								_hideLabel
 								_icons={{ left: 'kolicon kolicon-cogwheel' }}
-								_variant="ghost"
+								_variant="secondary"
 								_on={{ onClick: () => setSettingsDrawerOpen(true) }}
 							/>
 						</div>

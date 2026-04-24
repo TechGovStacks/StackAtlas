@@ -1,3 +1,37 @@
+.footer__nav-section ul {
+	list-style: none !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+/* Remove border and background from footer nav ul */
+.footer__nav-section ul {
+	background: none !important;
+	border: none !important;
+	box-shadow: none !important;
+}
+
+/* Set background transparent for all KoliBri web components */
+kol-button,
+kol-card,
+kol-link,
+kol-modal,
+kol-tabs,
+kol-accordion,
+kol-link-button,
+kol-alert,
+kol-pagination,
+kol-progress,
+kol-tooltip,
+kol-spin,
+kol-image,
+kol-drawer,
+kol-input-text,
+kol-input-checkbox,
+kol-single-select {
+	background-color: transparent;
+}
+
 /* ─────────────────────────────────────────────────────────────────────────────
    CSS Variables (Design System Tokens)
    ───────────────────────────────────────────────────────────────────────────── */
@@ -374,10 +408,6 @@ main {
 	/* Layout handled in JSX */
 }
 
-.header__lang-trigger {
-	/* KoliBri component styling handled by component */
-}
-
 .header__drawer-content {
 	/* Container class for drawer content */
 }
@@ -489,6 +519,20 @@ main {
 		outline: 2px solid var(--ds-color-accent);
 		outline-offset: 2px;
 	}
+}
+
+.footer__link-btn,
+.footer__github-corner-btn {
+	--kol-color-background: transparent;
+
+	background: transparent;
+}
+
+.footer__link-btn::part(button),
+.footer__github-corner-btn::part(button),
+.footer__link-btn::part(link),
+.footer__github-corner-btn::part(link) {
+	background: transparent;
 }
 
 .footer__meta {
