@@ -2,7 +2,8 @@ import { KolBadge } from '@public-ui/preact';
 import { useTranslation } from 'react-i18next';
 import { Item, ParticipantRole, Stack, StackItem } from '../types';
 import { getLocalizedText } from '../utils';
-import { getScoreCategory, getScoreCategoryColor } from '../utils/sovereigntyScore';
+import { computeContextualOverallScore } from '../utils/overallScore';
+import { computeEffectiveSovereigntyScore, getScoreCategory, getScoreCategoryColor } from '../utils/sovereigntyScore';
 
 interface StackStatsProps {
 	stack: Stack;
@@ -21,7 +22,11 @@ export function StackStats({ stack, items, stackItemMap }: StackStatsProps) {
 	const { i18n, t } = useTranslation();
 
 	// Calculate average Overall Score from all items in this stack
-	const scores = items.map((item) => item.adoption?.overallScore ?? 0);
+	const scores = items.map((item) => {
+		const stackItem = stackItemMap.get(item.id);
+		if (!item.adoption) return 0;
+		return computeContextualOverallScore(computeEffectiveSovereigntyScore(item.sovereigntyCriteria, stackItem), item.adoption, stackItem);
+	});
 	const avgScore = scores.length > 0 ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length) : 0;
 	const avgColor = getScoreCategoryColor(avgScore);
 	const avgCategory = getScoreCategory(avgScore);
