@@ -9,6 +9,17 @@
 		"en": "The KERN UX standard is an open UX and design standard for digital public services. It defines reusable design guidelines and components for consistent, accessible interfaces in public administration."
 	},
 	"homepage": "https://www.kern-ux.de/",
+	"dependencies": [
+		{
+			"targetItemId": "public-ui-kolibri",
+			"type": "runtime",
+			"scope": "required",
+			"reason": {
+				"de": "KERN nutzt die KoliBri Web Components, um eine KERN-Dev-Library anzubieten.",
+				"en": "KERN uses KoliBri web components to provide a KERN developer library."
+			}
+		}
+	],
 	"tags": [
 		"accessibility",
 		"design-system",
