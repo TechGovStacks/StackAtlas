@@ -1,6 +1,6 @@
 {
 	"name": "accessible-d-stack-landscape",
-	"version": "0.0.62",
+	"version": "0.0.63",
 	"type": "module",
 	"scripts": {
 		"assign-owner-types": "node scripts/assign-owner-types.mjs",
