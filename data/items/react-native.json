@@ -1,0 +1,36 @@
+{
+	"id": "react-native",
+	"name": "React Native",
+	"layer": "building-blocks",
+	"sublayer": "frameworks",
+	"groupKey": "cross-platform-ui-framework",
+	"description": {
+		"de": "React Native ist ein Open-Source-Framework zur Entwicklung nativer iOS- und Android-Apps mit React und JavaScript/TypeScript aus einer gemeinsamen Codebasis.",
+		"en": ""
+	},
+	"homepage": "https://reactnative.dev/",
+	"tags": [
+		"mobile",
+		"cross-platform",
+		"user-interface"
+	],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
+	},
+	"audit": {
+		"lastDate": "2026-04-24",
+		"url": "https://reactnative.dev/docs/getting-started"
+	},
+	"license": "MIT"
+}
