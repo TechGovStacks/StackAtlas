@@ -3,6 +3,7 @@
 	"name": "CouchDB",
 	"layer": "platform",
 	"sublayer": "daten",
+	"groupKey": "nosql-db",
 	"description": {
 		"de": "CouchDB ist eine dokumentenorientierte NoSQL-Datenbank.",
 		"en": ""

@@ -15,10 +15,11 @@ const baseCriteria: SovereigntyCriteria = {
 	selfHostable: false,
 };
 
-function createItem(id: string, sublayer?: string, criteria: Partial<SovereigntyCriteria> = {}): Item {
+function createItem(id: string, sublayer?: string, criteria: Partial<SovereigntyCriteria> = {}, groupKey?: string): Item {
 	return {
 		id,
 		name: { de: id, en: id },
+		groupKey,
 		layer: 'platform',
 		sublayer,
 		description: { de: id, en: id },
@@ -47,6 +48,17 @@ describe('computeSublayerCoverageHints', () => {
 
 	it('does not return hints on score ties', () => {
 		const items = [createItem('a', 'identity', { openSource: true }), createItem('b', 'identity', { openSource: true })];
+
+		const hints = computeSublayerCoverageHints(items);
+
+		expect(hints.size).toBe(0);
+	});
+
+	it('prefers groupKey over sublayer and only compares within the same groupKey', () => {
+		const items = [
+			createItem('react', 'frameworks', { openSource: true }, 'component-framework'),
+			createItem('nextjs', 'frameworks', { openSource: true, selfHostable: true }, 'server-side-rendering'),
+		];
 
 		const hints = computeSublayerCoverageHints(items);
 

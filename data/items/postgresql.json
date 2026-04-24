@@ -3,6 +3,7 @@
 	"name": "PostgreSQL",
 	"layer": "platform",
 	"sublayer": "daten",
+	"groupKey": "sql-db",
 	"description": {
 		"de": "PostgreSQL ist ein objektrelationales Datenbankmanagementsystem (ORDBMS), das für seine Einhaltung von SQL-Standards, seine Erweiterbarkeit und seine Zuverlässigkeit bekannt ist. Es wird häufig in Anwendungen eingesetzt, die komplexe Transaktionen und große Datenmengen verarbeiten.",
 		"en": ""

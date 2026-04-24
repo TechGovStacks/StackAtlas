@@ -3,6 +3,7 @@
 	"name": "Cassandra",
 	"layer": "platform",
 	"sublayer": "daten",
+	"groupKey": "nosql-db",
 	"description": {
 		"de": "Cassandra ist eine spaltenbasierte NoSQL-Datenbank.",
 		"en": ""

@@ -3,6 +3,7 @@
 	"name": "MongoDB",
 	"layer": "platform",
 	"sublayer": "daten",
+	"groupKey": "nosql-db",
 	"description": {
 		"de": "MongoDB ist eine dokumentenorientierte NoSQL-Datenbank.",
 		"en": ""

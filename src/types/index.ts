@@ -179,6 +179,7 @@ export type Item = {
 	/** The layer this item belongs to (infrastructure, platform, building-blocks, applications, sovereign-standards) */
 	layer: string;
 	sublayer?: string;
+	groupKey?: string;
 	/** ISO 3166-1 alpha-2 country code of the owner/maintainer organization (e.g. DE, FR, US) */
 	ownerCountry?: string;
 	description: LocalizableText;
