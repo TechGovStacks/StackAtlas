@@ -5,7 +5,7 @@ last_reviewed: 2026-04-09
 source_of_truth: docs/BUSINESS_CASE.md
 ---
 
-# Bussiness Case
+# Business Case
 
 ## Zielbild
 
