@@ -1,3 +1,4 @@
+import { KolLinkButton } from '@public-ui/preact';
 import { useTranslation } from 'react-i18next';
 import { getAppVersion, getCommitDisplay } from '../utils';
 
@@ -10,42 +11,51 @@ export function Footer() {
 	return (
 		<footer className="footer w-full border-t mt-auto">
 			<div className="footer__inner flex flex-col max-w-6xl mx-auto px-4 md:px-6 w-full">
-				{/* Navigation flex */}
-				<div className="footer__nav flex flex-col md:flex-row items-start md:items-center md:justify-between gap-8 py-8 md:py-12 border-b">
-					{/* Brand section */}
+				<div className="footer__nav flex flex-col gap-8 py-8 md:py-12 border-b">
 					<div className="footer__brand">
 						<p className="footer__title font-bold text-sm mb-2">StackAtlas</p>
 						<p className="footer__subtitle text-xs">{t('footer.subtitle')}</p>
 					</div>
 
-					{/* Links navigation */}
-					<nav className="footer__nav-section flex flex-wrap gap-4 md:gap-6 text-sm" aria-label={t('footer.navigationAria')}>
-						<a href="https://github.com/TechGovStacks/StackAtlas/blob/main/docs/README.md" rel="noopener noreferrer" className="footer__link">
-							{t('footer.links.documentation')}
-						</a>
-						<a href="#/news" className="footer__link">
-							News
-						</a>
-						<a href="#/stacks" className="footer__link">
-							Stacks
-						</a>
-						<a href="#/graphs" className="footer__link">
-							Graphs
-						</a>
-						<a href="https://github.com/TechGovStacks/StackAtlas" rel="noopener noreferrer" className="footer__link">
-							GitHub
-						</a>
-						<a href="https://github.com/TechGovStacks/StackAtlas/issues/new" rel="noopener noreferrer" className="footer__link">
-							Community
-						</a>
-						<a href="#/settings" className="footer__link">
-							{t('footer.links.settings')}
-						</a>
+					<nav className="footer__nav-section text-sm" aria-label={t('footer.navigationAria')}>
+						<ul className="flex flex-wrap items-center gap-4 md:gap-6 p-0 m-0 list-none">
+							<li className="mb-1">
+								<KolLinkButton
+									_label={t('footer.links.documentation')}
+									_href="https://github.com/TechGovStacks/StackAtlas/blob/main/docs/README.md"
+									_target="_blank"
+									className="footer__link-btn"
+								/>
+							</li>
+							<li className="mb-1">
+								<KolLinkButton _label="News" _href="#/news" className="footer__link-btn" />
+							</li>
+							<li className="mb-1">
+								<KolLinkButton _label="Graphs" _href="#/graphs" className="footer__link-btn" />
+							</li>
+							<li className="mb-1">
+								<KolLinkButton
+									_label="Issue melden"
+									_href="https://github.com/TechGovStacks/StackAtlas/issues/new"
+									_target="_blank"
+									className="footer__link-btn"
+								/>
+							</li>
+							<li className="mb-1">
+								<KolLinkButton
+									_label="Auf GitHub mitwirken"
+									_icons="fab fa-github"
+									_href="https://github.com/TechGovStacks/StackAtlas"
+									_target="_blank"
+									_hideLabel
+									className="footer__github-corner-btn"
+								/>
+							</li>
+						</ul>
 					</nav>
 				</div>
 			</div>
 
-			{/* Footer Abschlussleiste (volle Breite) */}
 			<div className="footer__meta py-3 px-4 md:px-6">
 				<div className="footer__meta-inner flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
 					<p className="footer__copy">

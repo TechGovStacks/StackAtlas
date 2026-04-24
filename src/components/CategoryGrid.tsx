@@ -164,7 +164,6 @@ export function CategoryGrid({
 					{activeCount > ITEMS_PER_PAGE && (
 						<KolPagination
 							className="my-4"
-							style={{ background: 'transparent' }}
 							_page={currentPage}
 							_max={activeCount}
 							_pageSize={ITEMS_PER_PAGE}
