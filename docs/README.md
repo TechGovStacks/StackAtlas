@@ -11,7 +11,7 @@ Dieses Dokument ist das Rahmendokument fuer die aktive Projektdokumentation.
 
 ## Aktive Dokumente
 
-- `docs/BUSSINESS_CASE.md` fuer Vision, Nutzen, Zielbild und fachliche Spezifikation
+- `docs/BUSINESS_CASE.md` fuer Vision, Nutzen, Zielbild und fachliche Spezifikation
 - `docs/ARC42.md` fuer technische Architektur, Datenmodell, Qualitaetsziele und Betrieb
 
 ## Geltung
@@ -21,7 +21,7 @@ Dieses Dokument ist das Rahmendokument fuer die aktive Projektdokumentation.
 
 ## Einstieg
 
-1. Produkt- und Strategiefragen: `docs/BUSSINESS_CASE.md`
+1. Produkt- und Strategiefragen: `docs/BUSINESS_CASE.md`
 2. Technische Umsetzung und Architektur: `docs/ARC42.md`
 3. Repo- und Verzeichnis-Kontext: `README.md` im Root und `data/README.md`
 4. Exemplarische Erklärung des Dependency-Modells: `docs/examples/items-as-dependencies.md`

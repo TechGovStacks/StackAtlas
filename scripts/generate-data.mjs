@@ -35,8 +35,8 @@ import { computePopularityScore } from '../src/config/popularityScore.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const DATA_DIR = join(ROOT, 'data');
-const LOGO_URLS_JSON = join(ROOT, 'src', 'data', 'logo-urls.json');
 const OUTPUT_TS = join(ROOT, 'src', 'data', 'items.generated.ts');
+const LOGO_DIR = join(ROOT, 'public', 'logos');
 const FALLBACK_LOGO = 'assets/broken-logo.svg';
 
 // User-Sovereignty Scoring v2 (2026-04)
@@ -65,20 +65,27 @@ const OWNER_WEIGHTS = {
 // Logo resolution (same logic as generate-articles.mjs)
 // ---------------------------------------------------------------------------
 
-let logoUrls = {};
-try {
-	logoUrls = JSON.parse(readFileSync(LOGO_URLS_JSON, 'utf-8'));
-} catch {
-	console.warn('⚠️  Could not load logo-urls.json, will use item logo field and fallback only');
+import { existsSync } from 'fs';
+
+function slugifyName(name) {
+	return (
+		name
+			.toLowerCase()
+			.normalize('NFKD')
+			.replace(/[\u0300-\u036f]/g, '')
+			.replace(/[^a-z0-9]+/g, '-')
+			.replace(/^-+|-+$/g, '') || 'logo'
+	);
 }
 
 function resolveLogo(item) {
-	const csvLogo = (item.logo || '').trim();
-	const name = typeof item.name === 'string' ? item.name : (item.name?.de ?? '');
-
-	if (csvLogo && /^https?:\/\//.test(csvLogo)) return csvLogo;
-	if (csvLogo) return '/' + csvLogo.replace(/^\/+/, '');
-	if (logoUrls[name]?.verified && logoUrls[name]?.url) return logoUrls[name].url;
+	// Nutze nur noch den Dateinamen aus /data/items/<id>.json
+	const id = item.id || (typeof item.name === 'string' ? item.name : (item.name?.de ?? ''));
+	const slug = slugifyName(id);
+	const logoPath = `logos/${slug}.svg`;
+	if (existsSync(join(LOGO_DIR, `${slug}.svg`))) {
+		return logoPath;
+	}
 	return FALLBACK_LOGO;
 }
 
@@ -438,21 +445,14 @@ const output = `// GENERATED FILE - DO NOT EDIT MANUALLY
 
 import type { Item, Layer, Stack } from '../types';
 
-const ASSET_BASE_URL = (import.meta.env.VITE_ASSET_BASE_URL ?? '').replace(/\\/+$/, '');
-
-function withAssetBaseUrl(logo?: string): string | undefined {
-\tif (!logo || /^https?:\\/\\//.test(logo)) return logo;
-\tconst normalizedPath = \`/\${logo.replace(/^\\/+/, '')}\`;
-\treturn ASSET_BASE_URL ? \`\${ASSET_BASE_URL}\${normalizedPath}\` : normalizedPath;
-}
 
 export const LAYERS: Layer[] = ${serialize(layers)};
 
 const RAW_ITEMS: Item[] = ${serialize(items)};
 
 export const ITEMS: Item[] = RAW_ITEMS.map((item) => ({
-\t...item,
-\tlogo: withAssetBaseUrl(item.logo),
+	...item,
+	logo: item.logo,
 }));
 
 export const DEPENDENCY_GRAPH = ${serialize(dependencyGraph)} as const;

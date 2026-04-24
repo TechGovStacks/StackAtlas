@@ -23,7 +23,7 @@ interface CategoryGridProps {
 	viewMode: ViewMode;
 }
 
-const ITEMS_PER_PAGE = 12;
+const ITEMS_PER_PAGE = 15;
 
 export function CategoryGrid({
 	layers,

@@ -2,7 +2,7 @@
 status: active
 owner: Product Strategy
 last_reviewed: 2026-04-09
-source_of_truth: docs/BUSSINESS_CASE.md
+source_of_truth: docs/BUSINESS_CASE.md
 ---
 
 # Bussiness Case
