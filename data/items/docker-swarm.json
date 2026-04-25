@@ -9,11 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.docker.com/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Docker_(container_engine)_logo.svg",
-	"tags": [
-		"orchestrierung",
-		"container"
-	],
+	"tags": ["orchestrierung", "container"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

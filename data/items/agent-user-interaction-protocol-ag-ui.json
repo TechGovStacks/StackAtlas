@@ -9,11 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://ag-ui.com",
-	"tags": [
-		"agent",
-		"agentische-ki",
-		"user-interface"
-	],
+	"tags": ["agent", "agentische-ki", "user-interface"],
 	"oss": true,
 	"maturity": "sandbox",
 	"sovereigntyCriteria": {

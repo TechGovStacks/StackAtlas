@@ -8,13 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.openapis.org/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/OpenAPI_Logo_Pantone.svg",
-	"tags": [
-		"rest",
-		"api",
-		"schnittstelle",
-		"rpc"
-	],
+	"tags": ["rest", "api", "schnittstelle", "rpc"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

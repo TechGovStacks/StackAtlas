@@ -9,9 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
-	"tags": [
-		"schnittstelle"
-	],
+	"tags": ["schnittstelle"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

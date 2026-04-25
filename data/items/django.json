@@ -10,11 +10,7 @@
 	},
 	"homepage": "https://www.djangoproject.com/",
 	"license": "BSD-3-Clause",
-	"tags": [
-		"python",
-		"framework",
-		"web"
-	],
+	"tags": ["python", "framework", "web"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

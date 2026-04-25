@@ -9,11 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://nextjs.org/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nextjs-logo.svg",
-	"tags": [
-		"rendering",
-		"user-interface"
-	],
+	"tags": ["rendering", "user-interface"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -9,12 +9,7 @@
 		"en": "FIT-Connect is the digital postal service of Germany's OZG ecosystem. A Submission API delivers applications securely, machine-readably and end-to-end encrypted between online services and the back-office systems of public authorities; an event log provides full traceability."
 	},
 	"homepage": "https://docs.fitko.de/fit-connect/",
-	"tags": [
-		"egovernment",
-		"integration",
-		"germany",
-		"ozg"
-	],
+	"tags": ["egovernment", "integration", "germany", "ozg"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -9,15 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.bluetooth.com/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bluetooth.svg",
-	"tags": [
-		"kurze-distanz",
-		"pairing",
-		"koppeln",
-		"drahtlos",
-		"funk",
-		"wpan"
-	],
+	"tags": ["kurze-distanz", "pairing", "koppeln", "drahtlos", "funk", "wpan"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

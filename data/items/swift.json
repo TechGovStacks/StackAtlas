@@ -8,12 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.swift.org/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Swift_logo_with_text.svg",
-	"tags": [
-		"multi-plattform",
-		"programmierung",
-		"sprache"
-	],
+	"tags": ["multi-plattform", "programmierung", "sprache"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

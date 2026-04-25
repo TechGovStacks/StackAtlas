@@ -8,14 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.joget.org/",
-	"logo": "https://raw.githubusercontent.com/jogetworkflow/jw-community/master/wflow-consoleweb/src/main/webapp/images/joget-logo.png",
-	"tags": [
-		"plugins",
-		"no-code-low-code",
-		"ai",
-		"workflow",
-		"java"
-	],
+	"tags": ["plugins", "no-code-low-code", "ai", "workflow", "java"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -9,11 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.w3.org/TR/soap/",
-	"tags": [
-		"api",
-		"xml",
-		"schnittstelle"
-	],
+	"tags": ["api", "xml", "schnittstelle"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

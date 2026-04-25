@@ -8,10 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc4217",
-	"tags": [
-		"datei",
-		"datenuebertragung"
-	],
+	"tags": ["datei", "datenuebertragung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

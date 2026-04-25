@@ -9,12 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://nodered.org/",
-	"logo": "https://nodered.org/images/node-red-icon.svg",
-	"tags": [
-		"no-code",
-		"javascript",
-		"low-code"
-	],
+	"tags": ["no-code", "javascript", "low-code"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -9,12 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://projectcontour.io/",
-	"logo": "https://projectcontour.io/img/contour.svg",
-	"tags": [
-		"controller",
-		"orchestrierung",
-		"ingress"
-	],
+	"tags": ["controller", "orchestrierung", "ingress"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

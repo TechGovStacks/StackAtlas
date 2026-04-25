@@ -9,12 +9,7 @@
 	},
 	"homepage": "https://www.openpolicyagent.org/",
 	"license": "Apache-2.0",
-	"tags": [
-		"policy",
-		"security",
-		"compliance",
-		"cncf"
-	],
+	"tags": ["policy", "security", "compliance", "cncf"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

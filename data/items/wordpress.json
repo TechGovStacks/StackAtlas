@@ -10,10 +10,7 @@
 	},
 	"homepage": "https://wordpress.org/",
 	"license": "GPL-2.0-or-later",
-	"tags": [
-		"cms",
-		"blogging"
-	],
+	"tags": ["cms", "blogging"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

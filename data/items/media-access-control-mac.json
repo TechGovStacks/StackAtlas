@@ -8,13 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/doc/rfc9724/",
-	"tags": [
-		"identifier",
-		"uuid",
-		"adresse",
-		"guid",
-		"oui"
-	],
+	"tags": ["identifier", "uuid", "adresse", "guid", "oui"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -8,11 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://axolotl.ai/",
-	"tags": [
-		"verarbeitung",
-		"training",
-		"feintuning"
-	],
+	"tags": ["verarbeitung", "training", "feintuning"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

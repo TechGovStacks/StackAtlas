@@ -10,12 +10,7 @@
 	},
 	"homepage": "https://www.sign-in.service.gov.uk/",
 	"license": "MIT",
-	"tags": [
-		"egovernment",
-		"identity",
-		"uk",
-		"sso"
-	],
+	"tags": ["egovernment", "identity", "uk", "sso"],
 	"oss": true,
 	"maturity": "incubation",
 	"sovereigntyCriteria": {

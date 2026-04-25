@@ -9,11 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://go.dev/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Go_Logo_Blue.svg",
-	"tags": [
-		"programmierung",
-		"sprache"
-	],
+	"tags": ["programmierung", "sprache"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

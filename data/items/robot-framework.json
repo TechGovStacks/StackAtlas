@@ -9,12 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://robotframework.org/",
-	"logo": "https://robotframework.org/img/RF_logo_vertical.svg",
-	"tags": [
-		"robot-process-automation",
-		"verarbeitung",
-		"rpa"
-	],
+	"tags": ["robot-process-automation", "verarbeitung", "rpa"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

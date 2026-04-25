@@ -9,11 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://ecma-international.org/publications-and-standards/standards/ecma-262/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Unofficial_JavaScript_logo_2.svg",
-	"tags": [
-		"programmierung",
-		"sprache"
-	],
+	"tags": ["programmierung", "sprache"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

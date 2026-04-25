@@ -8,10 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.itu.int/",
-	"tags": [
-		"gigabit",
-		"kabel"
-	],
+	"tags": ["gigabit", "kabel"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

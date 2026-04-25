@@ -9,10 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc7111",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Text-csv-icon.svg",
-	"tags": [
-		"datenformat"
-	],
+	"tags": ["datenformat"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

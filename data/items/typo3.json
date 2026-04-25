@@ -10,11 +10,7 @@
 	},
 	"homepage": "https://typo3.org/",
 	"license": "GPL-2.0-or-later",
-	"tags": [
-		"cms",
-		"egovernment",
-		"europe"
-	],
+	"tags": ["cms", "egovernment", "europe"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

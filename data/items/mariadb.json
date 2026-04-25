@@ -9,12 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://mariadb.org/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/MariaDB_Logo.svg",
-	"tags": [
-		"datenbank",
-		"sql",
-		"relational"
-	],
+	"tags": ["datenbank", "sql", "relational"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

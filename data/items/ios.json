@@ -8,12 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.apple.com/de/os/ios/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/IOS_2020_wordmark_black.svg",
-	"tags": [
-		"mobil",
-		"app",
-		"betriebssystem"
-	],
+	"tags": ["mobil", "app", "betriebssystem"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

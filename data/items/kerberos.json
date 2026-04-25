@@ -9,13 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc4120",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kerberos_(protocol)_Logo.svg",
-	"tags": [
-		"authentifizierung",
-		"token",
-		"zugriff",
-		"autorisierung"
-	],
+	"tags": ["authentifizierung", "token", "zugriff", "autorisierung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

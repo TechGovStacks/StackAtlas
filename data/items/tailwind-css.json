@@ -9,11 +9,7 @@
 	},
 	"homepage": "https://tailwindcss.com/",
 	"license": "MIT",
-	"tags": [
-		"css",
-		"frontend",
-		"framework"
-	],
+	"tags": ["css", "frontend", "framework"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

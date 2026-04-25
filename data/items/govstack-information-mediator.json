@@ -9,12 +9,7 @@
 		"en": "The Information Mediator is the GovStack initiative's central building block for secure asynchronous data exchange between public authorities. It combines an X-Road Security Server with ActiveMQ Artemis and provides API gateway, routing and event-mesh capabilities."
 	},
 	"homepage": "https://govstack.gitbook.io/bb-information-mediator",
-	"tags": [
-		"egovernment",
-		"integration",
-		"govstack",
-		"interoperability"
-	],
+	"tags": ["egovernment", "integration", "govstack", "interoperability"],
 	"oss": true,
 	"maturity": "incubation",
 	"sovereigntyCriteria": {

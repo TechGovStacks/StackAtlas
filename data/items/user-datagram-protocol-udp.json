@@ -9,10 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc768",
-	"tags": [
-		"datenuebertragung",
-		"echtzeit"
-	],
+	"tags": ["datenuebertragung", "echtzeit"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

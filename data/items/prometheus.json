@@ -9,12 +9,7 @@
 	},
 	"homepage": "https://prometheus.io/",
 	"license": "Apache-2.0",
-	"tags": [
-		"monitoring",
-		"metrics",
-		"observability",
-		"cncf"
-	],
+	"tags": ["monitoring", "metrics", "observability", "cncf"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

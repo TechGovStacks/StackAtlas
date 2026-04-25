@@ -9,11 +9,7 @@
 	},
 	"homepage": "https://redis.io/",
 	"license": "RSALv2",
-	"tags": [
-		"cache",
-		"in-memory",
-		"key-value"
-	],
+	"tags": ["cache", "in-memory", "key-value"],
 	"oss": false,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

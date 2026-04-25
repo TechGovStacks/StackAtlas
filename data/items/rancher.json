@@ -9,11 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.rancher.com/",
-	"logo": "https://www.rancher.com/assets/img/brand-guidelines/assets/logos/png/color/rancher-logo-horiz-color.png",
-	"tags": [
-		"orchestrierung",
-		"container"
-	],
+	"tags": ["orchestrierung", "container"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -8,10 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc8200",
-	"tags": [
-		"adresse",
-		"internet"
-	],
+	"tags": ["adresse", "internet"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

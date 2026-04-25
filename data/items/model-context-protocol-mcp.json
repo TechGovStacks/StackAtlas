@@ -9,12 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://modelcontextprotocol.io/",
-	"logo": "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/main/docs/assets/mcp-logo.svg",
-	"tags": [
-		"agent",
-		"agentische-ki",
-		"kontext"
-	],
+	"tags": ["agent", "agentische-ki", "kontext"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

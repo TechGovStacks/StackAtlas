@@ -8,12 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://oauth.net/2/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oauth_logo.svg",
-	"tags": [
-		"protokoll",
-		"zugriff",
-		"autorisierung"
-	],
+	"tags": ["protokoll", "zugriff", "autorisierung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -8,11 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.envoyproxy.io/",
-	"logo": "https://www.envoyproxy.io/img/envoy-logo.svg",
-	"tags": [
-		"proxy",
-		"orchestrierung"
-	],
+	"tags": ["proxy", "orchestrierung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

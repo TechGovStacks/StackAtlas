@@ -8,11 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/wg/ipsec/about/",
-	"tags": [
-		"ikev",
-		"netzwerk",
-		"sicherheit"
-	],
+	"tags": ["ikev", "netzwerk", "sicherheit"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -8,12 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://csrc.nist.gov/pubs/fips/203/final",
-	"tags": [
-		"schluessel",
-		"kryptografie",
-		"post-quanten-kryptografie",
-		"verschluesselung"
-	],
+	"tags": ["schluessel", "kryptografie", "post-quanten-kryptografie", "verschluesselung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

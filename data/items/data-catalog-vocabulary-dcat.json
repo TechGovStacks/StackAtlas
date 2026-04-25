@@ -8,10 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.w3.org/TR/vocab-dcat-3/",
-	"tags": [
-		"datenkatalog",
-		"open-data"
-	],
+	"tags": ["datenkatalog", "open-data"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

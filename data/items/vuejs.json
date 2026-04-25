@@ -9,13 +9,7 @@
 		"en": "Vue.js is a progressive JavaScript framework for building user interfaces. It enables declarative development of interactive web applications with reactive data models."
 	},
 	"homepage": "https://vuejs.org/",
-	"logo": "https://raw.githubusercontent.com/vuejs/art/master/logo.svg",
-	"tags": [
-		"webframework",
-		"user-interface",
-		"javascript",
-		"rendering"
-	],
+	"tags": ["webframework", "user-interface", "javascript", "rendering"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

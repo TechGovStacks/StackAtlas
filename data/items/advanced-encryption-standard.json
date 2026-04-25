@@ -8,12 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://csrc.nist.gov/projects/block-cipher-techniques",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/AES_(Rijndael)_Round_Function.png",
-	"tags": [
-		"schluessel",
-		"symmetrisch",
-		"verschluesselung"
-	],
+	"tags": ["schluessel", "symmetrisch", "verschluesselung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

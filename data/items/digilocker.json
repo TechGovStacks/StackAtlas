@@ -9,11 +9,7 @@
 		"en": "DigiLocker is India's national platform for secure document storage and paperless administration. It is operated by the Ministry of Electronics and Information Technology (MeitY) and, together with eSign, forms the data layer of the India Stack."
 	},
 	"homepage": "https://www.digilocker.gov.in/",
-	"tags": [
-		"egovernment",
-		"documents",
-		"india"
-	],
+	"tags": ["egovernment", "documents", "india"],
 	"oss": false,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

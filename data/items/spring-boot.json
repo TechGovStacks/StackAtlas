@@ -10,11 +10,7 @@
 	},
 	"homepage": "https://spring.io/projects/spring-boot",
 	"license": "Apache-2.0",
-	"tags": [
-		"java",
-		"framework",
-		"microservices"
-	],
+	"tags": ["java", "framework", "microservices"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

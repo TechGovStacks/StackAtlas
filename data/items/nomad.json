@@ -9,11 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://developer.hashicorp.com/nomad",
-	"logo": "https://www.datocms-assets.com/2885/1620155116-brandhcnomadprimaryattributedcolor.svg",
-	"tags": [
-		"orchestrierung",
-		"container"
-	],
+	"tags": ["orchestrierung", "container"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

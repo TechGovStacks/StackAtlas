@@ -9,13 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.piveau.de/",
-	"tags": [
-		"aggregation",
-		"datennutzung",
-		"bereitstellung",
-		"erfassung",
-		"datenkonvertierung"
-	],
+	"tags": ["aggregation", "datennutzung", "bereitstellung", "erfassung", "datenkonvertierung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

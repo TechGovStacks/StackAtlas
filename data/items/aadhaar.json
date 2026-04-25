@@ -9,12 +9,7 @@
 		"en": "Aadhaar is India's biometric identification system with over 1.4 billion enrolments, operated by the UIDAI. It enables real-time eKYC processes and forms the identity layer of the India Stack."
 	},
 	"homepage": "https://uidai.gov.in/",
-	"tags": [
-		"egovernment",
-		"identity",
-		"biometric",
-		"india"
-	],
+	"tags": ["egovernment", "identity", "biometric", "india"],
 	"oss": false,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

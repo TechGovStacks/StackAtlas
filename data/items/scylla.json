@@ -9,12 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.scylladb.com/",
-	"logo": "https://www.scylladb.com/wp-content/uploads/scylla-mascot-flathead.svg",
-	"tags": [
-		"nosql",
-		"datenbank",
-		"spalten"
-	],
+	"tags": ["nosql", "datenbank", "spalten"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -10,11 +10,7 @@
 	},
 	"homepage": "https://www.rabbitmq.com/",
 	"license": "MPL-2.0",
-	"tags": [
-		"messaging",
-		"queue",
-		"amqp"
-	],
+	"tags": ["messaging", "queue", "amqp"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

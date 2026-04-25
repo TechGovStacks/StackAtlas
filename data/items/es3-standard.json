@@ -9,16 +9,7 @@
 		"en": "The European Sovereign Stack Standard (ES³) is a measurable assessment framework for the digital sovereignty of cloud and IT services, developed by Schwarz Digits. It defines nine dimensions (strategic sovereignty, legal/jurisdiction, data, operational independence, supply chain, technology, security & compliance, ecological sustainability, and AI), each with three evaluation levels and four cumulative maturity stages (Basic, Initial, Advanced, Future-Proof). Results are independently verified by BDO auditors. Partner services can receive sovereignty badges. ES³ positions itself as an extension of the EU Cloud Sovereignty Framework and targets industry, SMEs, and regulated sectors."
 	},
 	"homepage": "https://schwarz-digits.de/en/digitale-souveraenitaet",
-	"tags": [
-		"certification",
-		"cloud",
-		"compliance",
-		"europe",
-		"framework",
-		"germany",
-		"sovereignty",
-		"standard"
-	],
+	"tags": ["certification", "cloud", "compliance", "europe", "framework", "germany", "sovereignty", "standard"],
 	"oss": false,
 	"maturity": "incubation",
 	"sovereigntyCriteria": {

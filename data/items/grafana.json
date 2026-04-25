@@ -9,11 +9,7 @@
 	},
 	"homepage": "https://grafana.com/oss/grafana/",
 	"license": "AGPL-3.0",
-	"tags": [
-		"monitoring",
-		"dashboards",
-		"observability"
-	],
+	"tags": ["monitoring", "dashboards", "observability"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

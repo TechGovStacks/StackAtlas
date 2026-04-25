@@ -8,12 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.oracle.com/java/",
-	"logo": "https://upload.wikimedia.org/wikipedia/de/e/e1/Java-Logo.svg",
-	"tags": [
-		"programmierung",
-		"plattformunabhaengig",
-		"sprache"
-	],
+	"tags": ["programmierung", "plattformunabhaengig", "sprache"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

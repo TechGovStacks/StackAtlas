@@ -9,12 +9,7 @@
 	},
 	"homepage": "https://opentelemetry.io/",
 	"license": "Apache-2.0",
-	"tags": [
-		"observability",
-		"tracing",
-		"metrics",
-		"cncf"
-	],
+	"tags": ["observability", "tracing", "metrics", "cncf"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -8,11 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.w3.org/Style/CSS/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/CSS3_logo_and_wordmark.svg",
-	"tags": [
-		"stil",
-		"user-interface"
-	],
+	"tags": ["stil", "user-interface"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

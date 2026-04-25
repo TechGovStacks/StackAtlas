@@ -9,13 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://about.gitlab.com/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/GitLab_logo.svg",
-	"tags": [
-		"pipeline",
-		"cd",
-		"bereitstellung",
-		"ci"
-	],
+	"tags": ["pipeline", "cd", "bereitstellung", "ci"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

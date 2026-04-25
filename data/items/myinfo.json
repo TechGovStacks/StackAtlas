@@ -9,11 +9,7 @@
 		"en": "Myinfo is a data-sharing service from Singapore's SGTS stack. With user consent, citizens share verified personal data with third-party services and avoid re-entering it."
 	},
 	"homepage": "https://www.singpass.gov.sg/myinfo/",
-	"tags": [
-		"egovernment",
-		"data-sharing",
-		"singapore"
-	],
+	"tags": ["egovernment", "data-sharing", "singapore"],
 	"oss": false,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
