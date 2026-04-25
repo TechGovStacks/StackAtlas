@@ -27,9 +27,8 @@ const zeroAdoption: AdoptionResult = {
 
 function createItem(
 	id: string,
-	sublayer?: string,
-	criteria: Partial<SovereigntyCriteria> = {},
 	groupKey?: string,
+	criteria: Partial<SovereigntyCriteria> = {},
 	adoption?: AdoptionResult,
 ): Item {
 	return {
@@ -37,7 +36,7 @@ function createItem(
 		name: { de: id, en: id },
 		groupKey,
 		layer: 'platform',
-		sublayer,
+		sublayer: 'some-sublayer',
 		description: { de: id, en: id },
 		oss: true,
 		tags: [],
@@ -50,7 +49,7 @@ function createItem(
 }
 
 describe('computeSublayerCoverageHints', () => {
-	it('returns a hint when another item in the same layer+sublayer has a higher score', () => {
+	it('returns a hint when another item in the same groupKey has a higher score', () => {
 		const items = [createItem('low', 'messaging', { openSource: true }), createItem('high', 'messaging', { openSource: true, selfHostable: true })];
 
 		const hints = computeSublayerCoverageHints(items);
@@ -71,10 +70,21 @@ describe('computeSublayerCoverageHints', () => {
 		expect(hints.size).toBe(0);
 	});
 
-	it('prefers groupKey over sublayer and only compares within the same groupKey', () => {
+	it('only compares within the same groupKey, not across different groupKeys', () => {
 		const items = [
-			createItem('react', 'frameworks', { openSource: true }, 'component-framework'),
-			createItem('nextjs', 'frameworks', { openSource: true, selfHostable: true }, 'server-side-rendering'),
+			createItem('react', 'component-framework', { openSource: true }),
+			createItem('nextjs', 'server-side-rendering', { openSource: true, selfHostable: true }),
+		];
+
+		const hints = computeSublayerCoverageHints(items);
+
+		expect(hints.size).toBe(0);
+	});
+
+	it('ignores items without a groupKey', () => {
+		const items = [
+			createItem('no-group-a'),
+			createItem('no-group-b', undefined, { openSource: true, selfHostable: true }),
 		];
 
 		const hints = computeSublayerCoverageHints(items);
@@ -112,12 +122,12 @@ describe('computeSublayerCoverageHints', () => {
 		// Item B: lower sovereignty (openSource only = 15, base=30) but high sovereign adoption score
 		// Without stack: A beats B on sovereignty (65 > 30)
 		// With stack and adoption: B's overall score (60%*30 + 25%*100 + 15%*80 = 18+25+12=55) may exceed A's (60%*65 + 0 + 0 = 39)
-		const itemA = createItem('high-sovereignty', 'auth', { openSource: true, selfHostable: true, dataPortability: true }, undefined, {
+		const itemA = createItem('high-sovereignty', 'auth-provider', { openSource: true, selfHostable: true, dataPortability: true }, {
 			...zeroAdoption,
 			adoptionScore: 0,
 			sovereignAdoptionScore: 0,
 		});
-		const itemB = createItem('high-adoption', 'auth', { openSource: true }, undefined, {
+		const itemB = createItem('high-adoption', 'auth-provider', { openSource: true }, {
 			...zeroAdoption,
 			adoptionScore: 80,
 			sovereignAdoptionScore: 100,
@@ -137,13 +147,5 @@ describe('computeSublayerCoverageHints', () => {
 		// Without stack: compare sovereignty scores only → A(65) > B(30), so B gets the hint
 		expect(hintsWithoutStack.get('high-adoption')).toMatchObject({ betterItemId: 'high-sovereignty' });
 		expect(hintsWithoutStack.has('high-sovereignty')).toBe(false);
-	});
-
-	it('ignores items without sublayer', () => {
-		const items = [createItem('no-sublayer'), createItem('other', 'runtime', { openSource: true, selfHostable: true })];
-
-		const hints = computeSublayerCoverageHints(items);
-
-		expect(hints.size).toBe(0);
 	});
 });
