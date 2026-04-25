@@ -1,0 +1,1 @@
+import{lt as e}from"./index-Bx53Aliu.js";var t=(t,n)=>{e(t,`_readOnly`,n)};export{t};
