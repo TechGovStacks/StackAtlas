@@ -38,11 +38,14 @@ jobs:
       - name: Stylelint
         run: pnpm lint:stylelint
 
-      - name: Prettier
+      - name: Prettier (format check)
         run: pnpm format
 
-      - name: Check unused
+      - name: Knip (unused code detection)
         run: pnpm check-unused
+
+      - name: Unit tests
+        run: pnpm test
 
       - name: Validate JSON Schemas
         run: pnpm validate-schemas
@@ -55,7 +58,6 @@ jobs:
 
       - name: Check generated files (drift detection)
         run: pnpm prebuild && git diff --exit-code
-        continue-on-error: true
 
       - name: Get installed Playwright version
         id: playwright-version
