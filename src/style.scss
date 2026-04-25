@@ -1910,6 +1910,9 @@ kol-select {
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	gap: var(--ds-space-1);
 
 	&:hover {
 		color: var(--ds-color-primary-dark);
@@ -1921,6 +1924,14 @@ kol-select {
 		outline-offset: 2px;
 		border-radius: 2px;
 	}
+}
+
+.stack-gallery__compact-nav-custom-badge {
+	flex-shrink: 0;
+	font-size: var(--ds-text-xs);
+	color: var(--ds-color-text-muted);
+	font-weight: 400;
+	white-space: nowrap;
 }
 
 .stack-gallery__compact-nav-metrics {
@@ -1936,6 +1947,11 @@ kol-select {
 	color: var(--ds-color-text-muted);
 	white-space: nowrap;
 	text-align: right;
+	font-weight: 500;
+}
+
+.stack-gallery__compact-nav-score {
+	font-weight: 600;
 }
 
 .stack-gallery__title {
