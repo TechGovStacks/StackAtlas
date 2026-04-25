@@ -1,5 +1,5 @@
 {
-	"id": "nodejs",
+	"id": "node-js",
 	"name": "Node.js",
 	"layer": "platform",
 	"sublayer": "laufzeit",

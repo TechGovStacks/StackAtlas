@@ -1,5 +1,5 @@
 {
-	"id": "open-id-connect-oidc",
+	"id": "openid",
 	"name": "Open ID Connect (OIDC)",
 	"layer": "building-blocks",
 	"sublayer": "sicherheit",

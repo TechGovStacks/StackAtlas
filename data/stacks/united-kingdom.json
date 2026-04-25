@@ -86,7 +86,7 @@
 			}
 		},
 		{
-			"itemId": "nodejs",
+			"itemId": "node-js",
 			"status": "approved",
 			"role": "consumer",
 			"rationale": {
@@ -122,7 +122,7 @@
 			}
 		},
 		{
-			"itemId": "open-id-connect-oidc",
+			"itemId": "openid",
 			"status": "approved",
 			"role": "consumer",
 			"rationale": {
