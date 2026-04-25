@@ -2,6 +2,7 @@ import { KolButton, KolInputCheckbox, KolInputText } from '@public-ui/preact';
 import { useMemo } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { FilterState, Item, Layer, ParticipantRole, Stack } from '../types';
+import { asNullableParticipantRole, asNullableString, asString } from '../types/kolibri';
 import { getDependencyTypes, getLocalizedText } from '../utils';
 import { AutoSingleSelect as KolSingleSelect } from './AutoSingleSelect';
 
@@ -109,7 +110,7 @@ export function FilterBar({
 					_value={filters.searchQuery}
 					_placeholder={t('search.placeholder')}
 					_on={{
-						onInput: (_e: globalThis.Event, value: unknown) => onFilterChange({ ...filters, searchQuery: value as string }),
+						onInput: asString((searchQuery) => onFilterChange({ ...filters, searchQuery })),
 					}}
 				/>
 				<KolSingleSelect
@@ -119,10 +120,10 @@ export function FilterBar({
 					_options={stackOptions}
 					_value={activeStackId ?? ''}
 					_on={{
-						onChange: (_e: globalThis.Event, value: unknown) => {
-							onStackChange(value ? (value as string) : null);
+						onChange: asNullableString((stackId) => {
+							onStackChange(stackId);
 							onFilterChange({ ...filters, selectedRelation: null });
-						},
+						}),
 					}}
 				/>
 				<KolSingleSelect
@@ -132,8 +133,9 @@ export function FilterBar({
 					_options={layerOptions}
 					_value={filters.selectedLayer ?? ''}
 					_on={{
-						onChange: (_e: globalThis.Event, value: unknown) =>
-							onFilterChange({ ...filters, selectedLayer: value ? (value as string) : null, selectedSublayer: null }),
+						onChange: asNullableString((selectedLayer) =>
+							onFilterChange({ ...filters, selectedLayer, selectedSublayer: null }),
+						),
 					}}
 				/>
 				{filters.selectedLayer && (
@@ -148,7 +150,7 @@ export function FilterBar({
 						_value={filters.selectedSublayer ?? ''}
 						_disabled={sublayerOptions.length === 0}
 						_on={{
-							onChange: (_e: globalThis.Event, value: unknown) => onFilterChange({ ...filters, selectedSublayer: value ? (value as string) : null }),
+							onChange: asNullableString((selectedSublayer) => onFilterChange({ ...filters, selectedSublayer })),
 						}}
 					/>
 				)}
@@ -160,7 +162,7 @@ export function FilterBar({
 						_options={[{ label: t('search.allRelations'), value: '' }, ...relationOptions]}
 						_value={filters.selectedRelation ?? ''}
 						_on={{
-							onChange: (_e: globalThis.Event, value: unknown) => onFilterChange({ ...filters, selectedRelation: value ? (value as ParticipantRole) : null }),
+							onChange: asNullableParticipantRole((selectedRelation) => onFilterChange({ ...filters, selectedRelation })),
 						}}
 					/>
 				)}

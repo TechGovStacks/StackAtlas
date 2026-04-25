@@ -14,7 +14,6 @@ interface CategoryGridProps {
 	articles: Item[];
 	stackScoreItems?: Item[];
 	filters: FilterState;
-	onFilterChange: (filters: FilterState) => void;
 	totalCount: number;
 	activeStack?: Stack;
 	stackItemMap?: Map<string, StackItem>;
@@ -30,8 +29,6 @@ export function CategoryGrid({
 	articles,
 	stackScoreItems,
 	filters,
-	// eslint-disable-next-line @typescript-eslint/no-unused-vars
-	onFilterChange,
 	totalCount,
 	activeStack,
 	stackItemMap,

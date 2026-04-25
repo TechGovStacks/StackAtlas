@@ -78,7 +78,6 @@ export function HomePage() {
 				articles={filtered}
 				stackScoreItems={baseItems}
 				filters={filters}
-				onFilterChange={setFilters}
 				totalCount={baseItems.length}
 				activeStack={activeStack ?? undefined}
 				stackItemMap={stackItemMap}
