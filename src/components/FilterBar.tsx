@@ -133,9 +133,7 @@ export function FilterBar({
 					_options={layerOptions}
 					_value={filters.selectedLayer ?? ''}
 					_on={{
-						onChange: asNullableString((selectedLayer) =>
-							onFilterChange({ ...filters, selectedLayer, selectedSublayer: null }),
-						),
+						onChange: asNullableString((selectedLayer) => onFilterChange({ ...filters, selectedLayer, selectedSublayer: null })),
 					}}
 				/>
 				{filters.selectedLayer && (

@@ -34,7 +34,7 @@ Thumbs.db
 
 
 # Other
-/.husky
+/.husky/_
 /.reports
 .env
 .eslintcache
