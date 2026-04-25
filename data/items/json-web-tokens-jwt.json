@@ -8,7 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc7519",
-	"tags": ["authentifizierungm-autorisierung", "token", "json"],
+	"tags": ["authentifizierung", "autorisierung", "token", "json"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

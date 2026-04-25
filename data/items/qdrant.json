@@ -1,6 +1,6 @@
 {
-	"id": "nqdrant",
-	"name": "NQdrant",
+	"id": "qdrant",
+	"name": "Qdrant",
 	"layer": "platform",
 	"sublayer": "daten",
 	"groupKey": "vector-db",

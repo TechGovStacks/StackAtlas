@@ -725,7 +725,7 @@
 			}
 		},
 		{
-			"itemId": "nqdrant",
+			"itemId": "qdrant",
 			"status": "approved",
 			"role": "consumer",
 			"rationale": {
