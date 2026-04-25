@@ -1019,6 +1019,30 @@ kol-card.article-card,
 	display: block;
 }
 
+/* Großes Logo im Drawer */
+.article-logo--drawer {
+	display: block;
+	margin: 0 auto;
+	width: 180px;
+	height: 180px;
+	max-width: 90%;
+	max-height: 180px;
+	object-fit: contain;
+	background: var(--ds-color-bg);
+	border-radius: var(--ds-radius-md);
+	padding: 8px;
+}
+
+.article-logo-placeholder--drawer {
+	display: block;
+	margin: 0 auto;
+	width: 180px;
+	height: 180px;
+	max-width: 90%;
+	max-height: 180px;
+}
+}
+
 .card-content {
 	display: flex;
 	flex-direction: column;
