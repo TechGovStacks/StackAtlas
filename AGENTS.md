@@ -291,6 +291,20 @@ This approach eliminates duplication and keeps styling intent clear.
 
 Nach **jeder** Optimierung oder Änderung — egal wie klein — immer diese Konsolidierungsschritte ausführen, bevor committed wird:
 
+### Dokumentation konsistent halten
+
+**Pflicht:** Bei jeder Änderung die betroffenen Markdown-Dokumente mitziehen, damit Doku und Implementierung nie auseinanderlaufen.
+
+Relevante Dokumente prüfen:
+
+- `data/README.md` — Feldbeschreibungen, Vergleichsgruppen-Tabelle, Zählstände, Datumsangaben
+- `docs/ARC42.md` — Architekturentscheidungen, Konventionen
+- `AGENTS.md` — Agent-Anweisungen (dieses Dokument)
+- `src/content/news/*.md` — News-Artikel mit technischen Fakten (Zählstände, Gruppen, Scores)
+- Weitere Docs in `docs/` die betroffene Konzepte beschreiben
+
+Konkret: Wenn z. B. eine Vergleichsgruppe entfernt wird → Zählstand in `data/README.md` und News-Artikel aktualisieren. Wenn sich Scoring-Logik ändert → Beschreibung in `data/README.md` und `docs/ARC42.md` nachziehen.
+
 ```bash
 # 1. Datengenerierung (wenn JSON-Dateien in data/items/ oder data/stacks/ geändert wurden)
 node scripts/generate-data.mjs
