@@ -1854,6 +1854,106 @@ kol-select {
 	margin-bottom: var(--ds-space-8);
 }
 
+.stack-gallery__compact-nav {
+	margin-bottom: var(--ds-space-6);
+	background: var(--ds-color-surface);
+	border: 1px solid var(--ds-color-border);
+	border-radius: var(--ds-radius-md);
+	padding: var(--ds-space-3) var(--ds-space-4);
+}
+
+.stack-gallery__compact-nav-title {
+	font-size: var(--ds-text-base);
+	font-weight: 600;
+	color: var(--ds-color-text);
+	margin: 0 0 var(--ds-space-3);
+}
+
+.stack-gallery__compact-nav-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+}
+
+.stack-gallery__compact-nav-item {
+	display: flex;
+	align-items: center;
+	gap: var(--ds-space-2);
+	padding: var(--ds-space-2) 0;
+	margin: 0;
+	border-bottom: 1px solid var(--ds-color-border-light);
+	font-size: var(--ds-text-sm);
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.stack-gallery__compact-nav-rank {
+	font-weight: 700;
+	color: var(--ds-color-primary);
+	flex-shrink: 0;
+	min-width: 2rem;
+	text-align: right;
+}
+
+.stack-gallery__compact-nav-link {
+	flex: 1;
+	min-width: 0;
+	color: var(--ds-color-primary);
+	text-decoration: none;
+	font-weight: 500;
+	transition: color 150ms ease;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+	gap: var(--ds-space-1);
+
+	&:hover {
+		color: var(--ds-color-primary-dark);
+		text-decoration: underline;
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--ds-color-accent);
+		outline-offset: 2px;
+		border-radius: 2px;
+	}
+}
+
+.stack-gallery__compact-nav-custom-badge {
+	flex-shrink: 0;
+	font-size: var(--ds-text-xs);
+	color: var(--ds-color-text-muted);
+	font-weight: 400;
+	white-space: nowrap;
+}
+
+.stack-gallery__compact-nav-metrics {
+	display: flex;
+	gap: var(--ds-space-3);
+	flex-shrink: 0;
+	justify-content: flex-end;
+	min-width: fit-content;
+}
+
+.stack-gallery__compact-nav-metric {
+	font-size: var(--ds-text-xs);
+	color: var(--ds-color-text-muted);
+	white-space: nowrap;
+	text-align: right;
+	font-weight: 500;
+}
+
+.stack-gallery__compact-nav-score {
+	font-weight: 600;
+}
+
 .stack-gallery__title {
 	font-size: var(--ds-text-3xl);
 	font-weight: 700;

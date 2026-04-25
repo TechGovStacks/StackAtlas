@@ -11,7 +11,7 @@ import { useRouteAnnouncement } from '../hooks/useRouteAnnouncement';
 import { computeStackAvgScore, useStackMetrics } from '../hooks/useStackMetrics';
 import { Item, Stack } from '../types';
 import { getLocalizedText } from '../utils';
-import { computeEffectiveSovereigntyScore } from '../utils/sovereigntyScore';
+import { computeEffectiveSovereigntyScore, getScoreCategoryColor } from '../utils/sovereigntyScore';
 
 interface StackExposeWithMetricsProps {
 	children?: ComponentChildren;
@@ -205,6 +205,48 @@ export function StackGalleryPage() {
 				</h1>
 				<p className="stack-gallery__subtitle">{t('stackGallery.subtitle')}</p>
 			</div>
+
+			<nav className="stack-gallery__compact-nav" aria-label={t('stackGallery.compactNavAria') || 'Stack Navigation'}>
+				<h2 className="stack-gallery__compact-nav-title">{t('stackGallery.compactNavTitle') || 'Stacks'}</h2>
+				<ul className="stack-gallery__compact-nav-list">
+					{stacksWithScores
+						.sort((a, b) => b.avgScore - a.avgScore)
+						.map(({ stack }, index) => {
+							const stackName = getLocalizedText(stack.name, i18n.language);
+							const avgScore = computeStackAvgScore(stack, ITEMS);
+							const isCustom = isLocalStack(stack);
+							const rank = index + 1;
+							return (
+								<li key={stack.id} className="stack-gallery__compact-nav-item">
+									<span className="stack-gallery__compact-nav-rank">#{rank}</span>
+									<a
+										href={`?stack=${stack.id}`}
+										className="stack-gallery__compact-nav-link"
+										onClick={(e) => {
+											e.preventDefault();
+											const target = document.getElementById(`stack-${stack.id}`);
+											if (target) {
+												const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+												target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
+											}
+										}}
+									>
+										{stackName}
+										{isCustom && <span className="stack-gallery__compact-nav-custom-badge"> (Custom)</span>}
+									</a>
+									<span className="stack-gallery__compact-nav-metrics">
+										<span className="stack-gallery__compact-nav-metric">
+											{stack.items.length} {t('stackGallery.compactNavDeps') || 'Deps'}
+										</span>
+										<span className="stack-gallery__compact-nav-metric stack-gallery__compact-nav-score" style={{ color: getScoreCategoryColor(avgScore) }}>
+											{avgScore.toFixed(1)} {t('stackGallery.compactNavScore') || 'Score'}
+										</span>
+									</span>
+								</li>
+							);
+						})}
+				</ul>
+			</nav>
 
 			<ol className="stack-gallery__list" aria-label={t('stackGallery.listAria')}>
 				{builtInEntries.map((entry) => {
