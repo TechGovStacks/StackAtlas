@@ -1,1 +1,0 @@
-import{lt as e}from"./index-B7tv7olz-DOCC3kr9.js";var t=(t,n)=>{e(t,`_customClass`,n,{defaultValue:``})};export{t};
