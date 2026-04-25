@@ -226,7 +226,7 @@
 		"subtitle": "Alle bewerteten Tech-Stacks absteigend nach digitalem Souveränitäts-Score – vom besten zum schlechtesten.",
 		"listAria": "Rangliste der Tech-Stacks nach Souveränitäts-Score",
 		"compactNavAria": "Stack-Navigation",
-		"compactNavTitle": "Zur Stack navigieren",
+		"compactNavTitle": "Quick Navigation",
 		"compactNavDeps": "Deps",
 		"compactNavScore": "Score",
 		"bestStack": "Bester Stack – Gold-Platzierung",
