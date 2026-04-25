@@ -110,10 +110,10 @@ describe('computeSublayerCoverageHints', () => {
 	});
 
 	it('uses contextual overall score (sovereignty + adoption) when stack context and adoption data are present', () => {
-		// Item A: high sovereignty (openSource + selfHostable + dataPortability = 15+20+15=50, base=65) but zero adoption
-		// Item B: lower sovereignty (openSource only = 15, base=30) but high sovereign adoption score
-		// Without stack: A beats B on sovereignty (65 > 30)
-		// With stack and adoption: B's overall score (60%*30 + 25%*100 + 15%*80 = 18+25+12=55) may exceed A's (60%*65 + 0 + 0 = 39)
+		// Item A: high sovereignty (openSource + selfHostable + dataPortability = 15+20+15=50) but zero adoption
+		// Item B: lower sovereignty (openSource=15, dataPortability=15 from base → total 30) but high sovereign adoption score
+		// Without stack: A beats B on sovereignty (50 > 30)
+		// With stack and adoption: B's overall score (60%*30 + 25%*100 + 15%*80 = 18+25+12=55) exceeds A's (60%*50 = 30)
 		const itemA = createItem(
 			'high-sovereignty',
 			'auth-provider',
