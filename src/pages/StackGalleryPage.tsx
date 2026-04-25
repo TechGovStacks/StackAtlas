@@ -210,77 +210,43 @@ export function StackGalleryPage() {
 			<nav className="stack-gallery__compact-nav" aria-label={t('stackGallery.compactNavAria') || 'Stack Navigation'}>
 				<h2 className="stack-gallery__compact-nav-title">{t('stackGallery.compactNavTitle') || 'Stacks'}</h2>
 				<ul className="stack-gallery__compact-nav-list">
-					{builtInEntries.map((entry) => {
-						if (entry.kind === 'custom-note') {
-							return null;
-						}
-						const stackName = getLocalizedText(entry.stack.name, i18n.language);
-						const avgScore = computeStackAvgScore(entry.stack, ITEMS);
-						const isCustom = isLocalStack(entry.stack);
-						return (
-							<li key={entry.stack.id} className="stack-gallery__compact-nav-item">
-								<span className="stack-gallery__compact-nav-rank">#{entry.rank}</span>
-								<a
-									href={`?stack=${entry.stack.id}`}
-									className="stack-gallery__compact-nav-link"
-									onClick={(e) => {
-										e.preventDefault();
-										const target = document.getElementById(`stack-${entry.stack.id}`);
-										if (target) {
-											const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-											target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
-										}
-									}}
-								>
-									{stackName}
-									{isCustom && <span className="stack-gallery__compact-nav-custom-badge"> (Custom)</span>}
-								</a>
-								<span className="stack-gallery__compact-nav-metrics">
-									<span className="stack-gallery__compact-nav-metric">{entry.stack.items.length} {t('stackGallery.compactNavDeps') || 'Deps'}</span>
-									<span
-										className="stack-gallery__compact-nav-metric stack-gallery__compact-nav-score"
-										style={{ color: getScoreCategoryColor(avgScore) }}
+					{stacksWithScores
+						.sort((a, b) => b.avgScore - a.avgScore)
+						.map(({ stack }, index) => {
+							const stackName = getLocalizedText(stack.name, i18n.language);
+							const avgScore = computeStackAvgScore(stack, ITEMS);
+							const isCustom = isLocalStack(stack);
+							const rank = index + 1;
+							return (
+								<li key={stack.id} className="stack-gallery__compact-nav-item">
+									<span className="stack-gallery__compact-nav-rank">#{rank}</span>
+									<a
+										href={`?stack=${stack.id}`}
+										className="stack-gallery__compact-nav-link"
+										onClick={(e) => {
+											e.preventDefault();
+											const target = document.getElementById(`stack-${stack.id}`);
+											if (target) {
+												const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+												target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
+											}
+										}}
 									>
-										{avgScore.toFixed(1)} {t('stackGallery.compactNavScore') || 'Score'}
+										{stackName}
+										{isCustom && <span className="stack-gallery__compact-nav-custom-badge"> (Custom)</span>}
+									</a>
+									<span className="stack-gallery__compact-nav-metrics">
+										<span className="stack-gallery__compact-nav-metric">{stack.items.length} {t('stackGallery.compactNavDeps') || 'Deps'}</span>
+										<span
+											className="stack-gallery__compact-nav-metric stack-gallery__compact-nav-score"
+											style={{ color: getScoreCategoryColor(avgScore) }}
+										>
+											{avgScore.toFixed(1)} {t('stackGallery.compactNavScore') || 'Score'}
+										</span>
 									</span>
-								</span>
-							</li>
-						);
-					})}
-					{customRankedStacks.map((stackItem) => {
-						const stackName = getLocalizedText(stackItem.stack.name, i18n.language);
-						const avgScore = computeStackAvgScore(stackItem.stack, ITEMS);
-						const rank = globalRankByStackId.get(stackItem.stack.id) ?? 0;
-						return (
-							<li key={stackItem.stack.id} className="stack-gallery__compact-nav-item">
-								<span className="stack-gallery__compact-nav-rank">#{rank}</span>
-								<a
-									href={`?stack=${stackItem.stack.id}`}
-									className="stack-gallery__compact-nav-link"
-									onClick={(e) => {
-										e.preventDefault();
-										const target = document.getElementById(`stack-${stackItem.stack.id}`);
-										if (target) {
-											const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-											target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
-										}
-									}}
-								>
-									{stackName}
-									<span className="stack-gallery__compact-nav-custom-badge"> (Custom)</span>
-								</a>
-								<span className="stack-gallery__compact-nav-metrics">
-									<span className="stack-gallery__compact-nav-metric">{stackItem.stack.items.length} {t('stackGallery.compactNavDeps') || 'Deps'}</span>
-									<span
-										className="stack-gallery__compact-nav-metric stack-gallery__compact-nav-score"
-										style={{ color: getScoreCategoryColor(avgScore) }}
-									>
-										{avgScore.toFixed(1)} {t('stackGallery.compactNavScore') || 'Score'}
-									</span>
-								</span>
-							</li>
-						);
-					})}
+								</li>
+							);
+						})}
 				</ul>
 			</nav>
 
