@@ -64,12 +64,66 @@ type StoredEvaluatorState = {
 };
 
 const STORED_EVALUATOR_STATE_SCHEMA = z.object({
-	input: z.any() as z.ZodType<StackSelectionAssessmentInput>,
+	input: z.object({
+		dimensions: z.object({
+			austauschbarkeit: z.number(),
+			betriebsGovernanceFaehigkeit: z.number(),
+			interoperabilitaet: z.number(),
+			offenheitStandardisierung: z.number(),
+			patternFit: z.number(),
+			reifegrad: z.number(),
+			steuerbarkeit: z.number(),
+			souveraenitaet: z.number(),
+		}),
+		hardExclusion: z.object({
+			geringeAustauschbarkeit: z.boolean(),
+			keinDokumentierterStandard: z.boolean(),
+			keinKlaresPattern: z.boolean(),
+			keinMehrwertGegenueberBestand: z.boolean(),
+			nichtOperationalisierbar: z.boolean(),
+			nurHypeToolMode: z.boolean(),
+			starkeHerstellerCloudBindung: z.boolean(),
+			ueberschneidungOhneZusatznutzen: z.boolean(),
+			unreiferInstabilerReifegrad: z.boolean(),
+		}),
+		itemClass: z.enum(['architekturPattern', 'beobachtungskandidat', 'offenerStandard', 'produktPlattformFramework', 'referenzimplementierung']),
+		lifecycleStatus: z.enum(['deprecated', 'kandidat', 'kernstack', 'referenz', 'sunset']),
+	}),
 	selectedItemId: z.string(),
 	selectedStackId: z.string(),
 });
 
-const LINKED_ASSESSMENTS_SCHEMA = z.record(z.string(), z.any() as z.ZodType<LinkedAssessment>);
+const LINKED_ASSESSMENTS_SCHEMA = z.record(z.string(), z.object({
+	input: z.object({
+		dimensions: z.object({
+			austauschbarkeit: z.number(),
+			betriebsGovernanceFaehigkeit: z.number(),
+			interoperabilitaet: z.number(),
+			offenheitStandardisierung: z.number(),
+			patternFit: z.number(),
+			reifegrad: z.number(),
+			steuerbarkeit: z.number(),
+			souveraenitaet: z.number(),
+		}),
+		hardExclusion: z.object({
+			geringeAustauschbarkeit: z.boolean(),
+			keinDokumentierterStandard: z.boolean(),
+			keinKlaresPattern: z.boolean(),
+			keinMehrwertGegenueberBestand: z.boolean(),
+			nichtOperationalisierbar: z.boolean(),
+			nurHypeToolMode: z.boolean(),
+			starkeHerstellerCloudBindung: z.boolean(),
+			ueberschneidungOhneZusatznutzen: z.boolean(),
+			unreiferInstabilerReifegrad: z.boolean(),
+		}),
+		itemClass: z.enum(['architekturPattern', 'beobachtungskandidat', 'offenerStandard', 'produktPlattformFramework', 'referenzimplementierung']),
+		lifecycleStatus: z.enum(['deprecated', 'kandidat', 'kernstack', 'referenz', 'sunset']),
+	}),
+	itemId: z.string(),
+	result: z.object({}).passthrough(),
+	savedAt: z.string(),
+	stackId: z.string(),
+}));
 
 export function StackSelectionEvaluator() {
 	const { i18n, t } = useTranslation();

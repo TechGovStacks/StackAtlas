@@ -1,5 +1,7 @@
 import type { ParticipantRole } from './index';
 
+const VALID_PARTICIPANT_ROLES: ParticipantRole[] = ['maintainer', 'contributor', 'funder', 'consumer'];
+
 export function asString(handler: (v: string) => void) {
 	return (_e: globalThis.Event, value: unknown) => handler(String(value ?? ''));
 }
@@ -15,8 +17,10 @@ export function asNullableParticipantRole(handler: (v: ParticipantRole | null) =
 			return;
 		}
 		const str = String(value);
-		if (str === 'maintainer' || str === 'contributor' || str === 'funder' || str === 'consumer') {
-			handler(str);
+		if (VALID_PARTICIPANT_ROLES.includes(str as ParticipantRole)) {
+			handler(str as ParticipantRole);
+		} else {
+			handler(null);
 		}
 	};
 }

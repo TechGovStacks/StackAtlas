@@ -152,7 +152,7 @@ function loadPersistedLocalStacks(allItems: Item[]): PersistedLocalStack[] {
 	}
 
 	const parsed = safeJsonParse(raw, PERSISTED_LOCAL_STACK_STORE_SCHEMA);
-	if (!parsed || parsed.version !== LOCAL_STACK_VERSION || !Array.isArray(parsed.stacks)) {
+	if (!parsed || parsed.version !== LOCAL_STACK_VERSION) {
 		return [];
 	}
 
