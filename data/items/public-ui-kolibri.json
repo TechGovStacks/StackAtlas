@@ -1,6 +1,6 @@
 {
-	"id": "kolibri",
-	"name": "KoliBri (Public-UI)",
+	"id": "public-ui-kolibri",
+	"name": "Public-UI KoliBri",
 	"layer": "building-blocks",
 	"sublayer": "frameworks",
 	"description": {
