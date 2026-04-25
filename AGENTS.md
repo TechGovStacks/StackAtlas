@@ -287,6 +287,44 @@ This approach eliminates duplication and keeps styling intent clear.
 - **Pull requests:** Preview deployments to `pr-<number>/` via `deploy-pr.yml`.
 - **Cleanup:** `cleanup-pr.yml` removes PR previews on PR close. `cleanup-gh-pages.yml` removes orphaned previews.
 
+## Konsolidierung nach jeder Änderung (Pflicht)
+
+Nach **jeder** Optimierung oder Änderung — egal wie klein — immer diese Konsolidierungsschritte ausführen, bevor committed wird:
+
+### Dokumentation konsistent halten
+
+**Pflicht:** Bei jeder Änderung die betroffenen Markdown-Dokumente mitziehen, damit Doku und Implementierung nie auseinanderlaufen.
+
+Relevante Dokumente prüfen:
+
+- `data/README.md` — Feldbeschreibungen, Vergleichsgruppen-Tabelle, Zählstände, Datumsangaben
+- `docs/ARC42.md` — Architekturentscheidungen, Konventionen
+- `AGENTS.md` — Agent-Anweisungen (dieses Dokument)
+- `src/content/news/*.md` — News-Artikel mit technischen Fakten (Zählstände, Gruppen, Scores)
+- Weitere Docs in `docs/` die betroffene Konzepte beschreiben
+
+Konkret: Wenn z. B. eine Vergleichsgruppe entfernt wird → Zählstand in `data/README.md` und News-Artikel aktualisieren. Wenn sich Scoring-Logik ändert → Beschreibung in `data/README.md` und `docs/ARC42.md` nachziehen.
+
+```bash
+# 1. Datengenerierung (wenn JSON-Dateien in data/items/ oder data/stacks/ geändert wurden)
+node scripts/generate-data.mjs
+
+# 2. TypeScript-Check
+pnpm lint:ts
+
+# 3. ESLint
+pnpm lint:eslint
+
+# 4. Formatierung schreiben und prüfen
+pnpm format:write
+pnpm format
+
+# 5. Tests
+pnpm test -- --run
+```
+
+Erst nach sauberem Durchlauf aller Schritte committen.
+
 ## Pre-commit Checklist
 
 1. `pnpm lint:ts` – Type check

@@ -39,11 +39,11 @@ Beispiele:
 
 ### `groupKey` — Vergleichsgruppen für Coverage-Hinweise
 
-Das optionale Feld `groupKey` kennzeichnet Items, die **dieselbe Kernfunktion** erfüllen und damit echte Alternativen zueinander sind. Es bildet die Grundlage für Coverage-Hints: Nutzt ein Stack ein Item mit niedrigerem Sovereignty-Score, schlägt das System automatisch das höher bewertete Alternativ-Item derselben Gruppe vor.
+Das optionale Feld `groupKey` kennzeichnet Items, die **dieselbe Kernfunktion** erfüllen und damit echte Alternativen zueinander sind. Es bildet die Grundlage für Coverage-Hints: Ist ein Stack-Item nicht das bestbewertete seiner Gruppe, schlägt das System automatisch die souveränere Alternative vor. Der Vergleich basiert auf dem **kontextuellen Gesamtscore** (Sovereignty + Adoption, stack-rollengewichtet), wenn ein Stack aktiv ist — andernfalls auf dem reinen Sovereignty-Score.
 
-**Vergabekriterium:** `groupKey` wird nur gesetzt, wenn im Katalog **mindestens zwei Items** existieren, zwischen denen ein Stack tatsächlich wählen kann. Fundamentalstandards ohne Alternative (HTTP, TLS, DNS …) und singuläre Spezialwerkzeuge erhalten keinen `groupKey`.
+**Vergabekriterium:** `groupKey` wird nur gesetzt, wenn im Katalog **mindestens zwei Items** existieren, zwischen denen ein Stack tatsächlich wählen kann. Fundamentalstandards ohne Alternative (HTTP, TLS, DNS …) und singuläre Spezialwerkzeuge erhalten keinen `groupKey`. Items ohne `groupKey` nehmen an keinem Vergleich teil — der `sublayer` allein löst keinen Coverage-Hint aus.
 
-#### Alle 35 Vergleichsgruppen (Stand 2026-04-24)
+#### Alle 35 Vergleichsgruppen (Stand 2026-04-25)
 
 | groupKey                       | Items (Anzahl) | Typische Entscheidung                                    |
 | :----------------------------- | :------------: | :------------------------------------------------------- |
@@ -89,6 +89,7 @@ Das optionale Feld `groupKey` kennzeichnet Items, die **dieselbe Kernfunktion** 
 - **Komplementärprotokolle:** SMTPS + IMAPS (Senden ≠ Empfangen; kein Entscheidungspunkt)
 - **Subtypbeziehungen:** OSPF ist ein Typ von IGP, keine Alternative dazu
 - **Singulare Werkzeuge ohne Katalogpendant:** Kafka, Istio, Envoy, Helm, Grafana, Prometheus, OpenTelemetry, Node.js, Java, Python, R, Swift, CSS, Flutter u. a.
+- **Plattform-exklusive Betriebssysteme:** Android (`android-os`) und iOS (`ios-os`) sind keine echten Alternativen zueinander — ein Stack entscheidet sich nicht zwischen den Plattformen, sondern unterstützt beide oder keine.
 
 ---
 

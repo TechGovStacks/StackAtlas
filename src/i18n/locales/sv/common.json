@@ -60,7 +60,8 @@
 			"lowcode": "Low-code",
 			"anschluss": "Anslutning",
 			"browser": "Webbläsare",
-			"native-apps": "Native-appar",
+			"android-os": "Android",
+			"ios-os": "iOS",
 			"sprachen": "Språk",
 			"frameworks": "Ramverk och bibliotek",
 			"laufzeit": "Körtid"

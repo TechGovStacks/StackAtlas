@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { Item, SovereigntyCriteria, StackItem } from '../../types';
+import { AdoptionResult, Item, SovereigntyCriteria, StackItem } from '../../types';
 import { computeSublayerCoverageHints } from '../sublayerCoverageHint';
 
 const baseCriteria: SovereigntyCriteria = {
@@ -15,13 +15,23 @@ const baseCriteria: SovereigntyCriteria = {
 	selfHostable: false,
 };
 
-function createItem(id: string, sublayer?: string, criteria: Partial<SovereigntyCriteria> = {}, groupKey?: string): Item {
+const zeroAdoption: AdoptionResult = {
+	adoptionScore: 0,
+	sovereignAdoptionScore: 0,
+	overallScore: 0,
+	directCoverage: 0,
+	transitiveCoverage: 0,
+	diversity: 0,
+	usedInStacks: [],
+};
+
+function createItem(id: string, groupKey?: string, criteria: Partial<SovereigntyCriteria> = {}, adoption?: AdoptionResult): Item {
 	return {
 		id,
 		name: { de: id, en: id },
 		groupKey,
 		layer: 'platform',
-		sublayer,
+		sublayer: 'some-sublayer',
 		description: { de: id, en: id },
 		oss: true,
 		tags: [],
@@ -29,11 +39,12 @@ function createItem(id: string, sublayer?: string, criteria: Partial<Sovereignty
 			...baseCriteria,
 			...criteria,
 		},
+		adoption,
 	};
 }
 
 describe('computeSublayerCoverageHints', () => {
-	it('returns a hint when another item in the same layer+sublayer has a higher score', () => {
+	it('returns a hint when another item in the same groupKey has a higher score', () => {
 		const items = [createItem('low', 'messaging', { openSource: true }), createItem('high', 'messaging', { openSource: true, selfHostable: true })];
 
 		const hints = computeSublayerCoverageHints(items);
@@ -54,11 +65,19 @@ describe('computeSublayerCoverageHints', () => {
 		expect(hints.size).toBe(0);
 	});
 
-	it('prefers groupKey over sublayer and only compares within the same groupKey', () => {
+	it('only compares within the same groupKey, not across different groupKeys', () => {
 		const items = [
-			createItem('react', 'frameworks', { openSource: true }, 'component-framework'),
-			createItem('nextjs', 'frameworks', { openSource: true, selfHostable: true }, 'server-side-rendering'),
+			createItem('react', 'component-framework', { openSource: true }),
+			createItem('nextjs', 'server-side-rendering', { openSource: true, selfHostable: true }),
 		];
+
+		const hints = computeSublayerCoverageHints(items);
+
+		expect(hints.size).toBe(0);
+	});
+
+	it('ignores items without a groupKey', () => {
+		const items = [createItem('no-group-a'), createItem('no-group-b', undefined, { openSource: true, selfHostable: true })];
 
 		const hints = computeSublayerCoverageHints(items);
 
@@ -90,11 +109,45 @@ describe('computeSublayerCoverageHints', () => {
 		});
 	});
 
-	it('ignores items without sublayer', () => {
-		const items = [createItem('no-sublayer'), createItem('other', 'runtime', { openSource: true, selfHostable: true })];
+	it('uses contextual overall score (sovereignty + adoption) when stack context and adoption data are present', () => {
+		// Item A: high sovereignty (openSource + selfHostable + dataPortability = 15+20+15=50) but zero adoption
+		// Item B: lower sovereignty (openSource=15, dataPortability=15 from base → total 30) but high sovereign adoption score
+		// Without stack: A beats B on sovereignty (50 > 30)
+		// With stack and adoption: B's overall score (60%*30 + 25%*100 + 15%*80 = 18+25+12=55) exceeds A's (60%*50 = 30)
+		const itemA = createItem(
+			'high-sovereignty',
+			'auth-provider',
+			{ openSource: true, selfHostable: true, dataPortability: true },
+			{
+				...zeroAdoption,
+				adoptionScore: 0,
+				sovereignAdoptionScore: 0,
+			},
+		);
+		const itemB = createItem(
+			'high-adoption',
+			'auth-provider',
+			{ openSource: true },
+			{
+				...zeroAdoption,
+				adoptionScore: 80,
+				sovereignAdoptionScore: 100,
+			},
+		);
 
-		const hints = computeSublayerCoverageHints(items);
+		const stackItemMap = new Map<string, StackItem>([
+			['high-sovereignty', { itemId: 'high-sovereignty', role: 'consumer', status: 'approved' }],
+			['high-adoption', { itemId: 'high-adoption', role: 'consumer', status: 'approved' }],
+		]);
 
-		expect(hints.size).toBe(0);
+		const hintsWithStack = computeSublayerCoverageHints([itemA, itemB], stackItemMap);
+		// B's overall: 60%*30 + 25%*100 + 15%*80 = 18+25+12=55; A's overall: 60%*65 = 39 → B is better
+		expect(hintsWithStack.get('high-sovereignty')).toMatchObject({ betterItemId: 'high-adoption' });
+		expect(hintsWithStack.has('high-adoption')).toBe(false);
+
+		const hintsWithoutStack = computeSublayerCoverageHints([itemA, itemB]);
+		// Without stack: compare sovereignty scores only → A(65) > B(30), so B gets the hint
+		expect(hintsWithoutStack.get('high-adoption')).toMatchObject({ betterItemId: 'high-sovereignty' });
+		expect(hintsWithoutStack.has('high-sovereignty')).toBe(false);
 	});
 });

@@ -1,7 +1,7 @@
 ---
 focus: groupComparison
 title: 'Neue Vergleichsgruppen: Warum Docker Swarm im Stack einen Hinweis auf Kubernetes auslöst'
-summary: Alle 171 Items des Katalogs sind jetzt nach Kernfunktion in 36 Vergleichsgruppen geordnet. Das ermöglicht gezielte Coverage-Hints — und zeigt am Beispiel eines fiktiven Stadtportals, wie der Mechanismus in der Praxis wirkt.
+summary: Alle Items des Katalogs sind nach Kernfunktion in 35 Vergleichsgruppen geordnet. Das ermöglicht gezielte Coverage-Hints — und zeigt am Beispiel eines fiktiven Stadtportals, wie der Mechanismus in der Praxis wirkt.
 ---
 
 # Neue Vergleichsgruppen: Warum Docker Swarm im Stack einen Hinweis auf Kubernetes auslöst
@@ -92,7 +92,7 @@ Folgende Items im Stack erhalten **keinen** Coverage-Hint, weil sie keinen `grou
 
 ---
 
-## Die 36 Vergleichsgruppen im Überblick
+## Die 35 Vergleichsgruppen im Überblick
 
 | Bereich     | Gruppen                                                                                                                |
 | :---------- | :--------------------------------------------------------------------------------------------------------------------- |
@@ -103,7 +103,7 @@ Folgende Items im Stack erhalten **keinen** Coverage-Hint, weil sie keinen `grou
 | KI/ML       | `ml-framework` · `llm-framework` · `ai-agent-protocol`                                                                 |
 | Sicherheit  | `authentication-protocol` · `asymmetric-encryption` · `transport-protocol`                                             |
 | Gov-Dienste | `national-digital-id-platform` · `gov-integration-platform` · `government-payment-service` · `digital-citizen-service` |
-| Anwendungen | `cms` · `browser-engine` · `mobile-os` · `low-code-app-builder` · `test-automation`                                    |
+| Anwendungen | `cms` · `browser-engine` · `low-code-app-builder` · `test-automation`                                                  |
 | Netzwerk    | `traffic-engineering` · `short-range-wireless`                                                                         |
 
 ---
@@ -118,7 +118,7 @@ Das ist der Unterschied zwischen einem Messwert und einer **Handlungsempfehlung*
 
 ## Fazit
 
-36 Vergleichsgruppen, 102 Items mit `groupKey`, 69 Items bewusst ohne — weil ein Hinweis nur dann hilfreich ist, wenn er auf eine echte Wahl hinweist.
+35 Vergleichsgruppen, 104 Items mit `groupKey`, 70 Items bewusst ohne — weil ein Hinweis nur dann hilfreich ist, wenn er auf eine echte Wahl hinweist.
 
 > "groupKey ist kein Ranking, sondern eine Entscheidungshilfe: Wer zwischen diesen Items wählen kann, sollte das souveränste nehmen."
 
