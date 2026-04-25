@@ -18,6 +18,7 @@ test('countryToFlagEmoji returns empty string for invalid codes', () => {
 	expect(countryToFlagEmoji('')).toBe('');
 	expect(countryToFlagEmoji('D')).toBe('');
 	expect(countryToFlagEmoji('DEU')).toBe('');
+	expect(countryToFlagEmoji('12')).toBe('');
 	expect(countryToFlagEmoji('123')).toBe('');
 	expect(countryToFlagEmoji(null as unknown as string)).toBe('');
 });
