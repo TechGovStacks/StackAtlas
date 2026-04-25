@@ -1,0 +1,65 @@
+name: Feature Request
+description: Schlagen Sie eine neue Funktion vor
+title: '[FEATURE] '
+labels: ['enhancement', 'needs-triage']
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke für Ihren Feature-Vorschlag! Bitte erklären Sie Ihre Idee so detailliert wie möglich.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature-Beschreibung
+      description: Beschreiben Sie die gewünschte Funktionalität
+      placeholder: Ich möchte, dass StackAtlas...
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem, das gelöst wird
+      description: Welches Problem oder Bedürfnis wird adressiert?
+      placeholder: |
+        Derzeit müssen Nutzer...
+        Mit dieser Funktion könnten sie stattdessen...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Vorgeschlagene Lösung
+      description: Wie sollte die Funktion funktionieren?
+      placeholder: |
+        Die Funktion könnte...
+        Der Benutzer könnte...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Lösungsansätze
+      description: Gibt es andere Wege, das Problem zu lösen?
+      placeholder: Alternative 1...
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Zusätzlicher Kontext
+      description: Links zu Issues, Screenshots, Mockups, etc.
+      placeholder: z.B. ähnliche Features in anderen Projekten...
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checkliste
+      options:
+        - label: Ich habe ähnliche Feature-Anfragen durchsucht
+          required: true
+        - label: Diese Anfrage ist spezifisch und handlungsfähig
+          required: true
