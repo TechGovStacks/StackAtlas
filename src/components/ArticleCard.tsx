@@ -1,10 +1,10 @@
 import { KolAlert, KolAvatar, KolBadge, KolButton, KolCard, KolDrawer, KolImage, KolLinkButton } from '@public-ui/preact';
 import { useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
+import { ROLE_COLORS } from '../constants/roleColors';
 import { ITEMS, LAYERS, STACKS } from '../data/catalog';
 import { Item, SovereigntyCriteria, StackItem } from '../types';
-import { buildDependencyGraph, getLocalizedText, countryToFlagEmoji } from '../utils';
-import { ROLE_COLORS } from '../constants/roleColors';
+import { buildDependencyGraph, countryToFlagEmoji, getLocalizedText } from '../utils';
 import {
 	ADOPTION_WEIGHT,
 	computeContextualOverallScore,

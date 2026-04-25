@@ -1,10 +1,10 @@
 import { KolBadge } from '@public-ui/preact';
 import { useTranslation } from 'react-i18next';
+import { PARTICIPANT_ROLES, ROLE_COLORS } from '../constants/roleColors';
 import { Item, Stack, StackItem } from '../types';
 import { getLocalizedText } from '../utils';
 import { computeItemContextualOverallScore } from '../utils/overallScore';
 import { getScoreCategory, getScoreCategoryColor } from '../utils/sovereigntyScore';
-import { ROLE_COLORS, PARTICIPANT_ROLES } from '../constants/roleColors';
 
 interface StackStatsProps {
 	stack: Stack;
@@ -50,11 +50,9 @@ export function StackStats({ stack, items, stackItemMap }: StackStatsProps) {
 				</div>
 			</div>
 			<div className="stack-stats__roles">
-				{PARTICIPANT_ROLES
-					.filter((role) => roleCounts[role])
-					.map((role) => (
-						<KolBadge key={role} className="stack-stats__role-badge" _color={ROLE_COLORS[role]} _label={`${roleCounts[role]} ${t(`stack.roles.${role}`)}`} />
-					))}
+				{PARTICIPANT_ROLES.filter((role) => roleCounts[role]).map((role) => (
+					<KolBadge key={role} className="stack-stats__role-badge" _color={ROLE_COLORS[role]} _label={`${roleCounts[role]} ${t(`stack.roles.${role}`)}`} />
+				))}
 			</div>
 		</div>
 	);

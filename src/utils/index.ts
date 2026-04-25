@@ -1,7 +1,7 @@
+export { countryToFlagEmoji } from './countryFlag';
 export { getAppVersion } from './getAppVersion';
 export { getCommitDisplay } from './getCommitDisplay';
 export { getLocalizedText } from './getLocalizedText';
-export { countryToFlagEmoji } from './countryFlag';
 export {
 	applyMaintainerContext,
 	computeEffectiveSovereigntyScore,

@@ -2,10 +2,10 @@ import { KolBadge, KolLinkButton } from '@public-ui/preact';
 import { ComponentChildren } from 'preact';
 import { useMemo } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
+import { PARTICIPANT_ROLES, ROLE_COLORS } from '../constants/roleColors';
 import { StackMetrics } from '../hooks/useStackMetrics';
 import { Layer, SovereigntyScoreCategory, Stack } from '../types';
-import { getLocalizedText, countryToFlagEmoji } from '../utils';
-import { ROLE_COLORS, PARTICIPANT_ROLES } from '../constants/roleColors';
+import { countryToFlagEmoji, getLocalizedText } from '../utils';
 import { SovereigntyGauge } from './SovereigntyGauge';
 
 interface StackExposeProps {
