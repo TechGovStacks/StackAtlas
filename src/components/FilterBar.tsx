@@ -1,6 +1,7 @@
 import { KolButton, KolInputCheckbox, KolInputText } from '@public-ui/preact';
 import { useMemo } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
+import { PARTICIPANT_ROLES } from '../constants/roleColors';
 import { FilterState, Item, Layer, ParticipantRole, Stack } from '../types';
 import { getDependencyTypes, getLocalizedText } from '../utils';
 import { AutoSingleSelect as KolSingleSelect } from './AutoSingleSelect';
@@ -75,13 +76,10 @@ export function FilterBar({
 			},
 			{} as Record<ParticipantRole, number>,
 		);
-		const roles: ParticipantRole[] = ['maintainer', 'contributor', 'funder', 'consumer'];
-		return roles
-			.filter((role) => (roleCounts[role] ?? 0) > 0)
-			.map((role) => ({
-				label: `${t(`stack.roles.${role}`)} (${roleCounts[role]})`,
-				value: role,
-			}));
+		return PARTICIPANT_ROLES.filter((role) => (roleCounts[role] ?? 0) > 0).map((role) => ({
+			label: `${t(`stack.roles.${role}`)} (${roleCounts[role]})`,
+			value: role,
+		}));
 	})();
 
 	const dependencyTypeOptions = useMemo(

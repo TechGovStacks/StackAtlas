@@ -1,9 +1,10 @@
 import { KolAlert, KolAvatar, KolBadge, KolButton, KolCard, KolDrawer, KolImage, KolLinkButton } from '@public-ui/preact';
 import { useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
+import { ROLE_COLORS } from '../constants/roleColors';
 import { ITEMS, LAYERS, STACKS } from '../data/catalog';
-import { Item, ParticipantRole, SovereigntyCriteria, StackItem } from '../types';
-import { buildDependencyGraph, getLocalizedText } from '../utils';
+import { Item, SovereigntyCriteria, StackItem } from '../types';
+import { buildDependencyGraph, countryToFlagEmoji, getLocalizedText } from '../utils';
 import {
 	ADOPTION_WEIGHT,
 	computeContextualOverallScore,
@@ -41,18 +42,7 @@ interface ArticleCardProps {
 	coverageHint?: SublayerCoverageHint;
 }
 
-const ROLE_COLORS: Record<ParticipantRole, string> = {
-	maintainer: '#1565c0',
-	contributor: '#2e7d32',
-	funder: '#e65100',
-	consumer: '#546e7a',
-};
 const CATALOG_DEPENDENCY_GRAPH = buildDependencyGraph(ITEMS);
-
-function countryToFlagEmoji(code?: string): string {
-	if (!code || code.length !== 2) return '';
-	return [...code.toUpperCase()].map((c) => String.fromCodePoint(0x1f1e6 + c.charCodeAt(0) - 65)).join('');
-}
 
 export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile', coverageHint }: ArticleCardProps) {
 	const { i18n, t } = useTranslation();
