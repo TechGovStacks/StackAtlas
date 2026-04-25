@@ -76,11 +76,9 @@ jobs:
         if: steps.playwright-cache.outputs.cache-hit == 'true'
         run: pnpm exec playwright install-deps chromium
 
-      # E2E tests are not yet reliable in CI (Phase D plan: D4)
-      # Re-enable after implementing smoke test suite
-      # - name: Run E2E tests (smoke tests)
-      #   run: pnpm test:e2e
-      #   continue-on-error: true
+      - name: Run E2E tests (smoke tests)
+        run: pnpm test:e2e
+        continue-on-error: true
 
       - name: Upload Playwright report
         if: always()
