@@ -2,6 +2,52 @@
 
 Diese Datei enthält verbindliche Regeln für alle KI-Agenten (Claude & andere) bei der Arbeit an diesem Repository.
 
+---
+
+## ⚠️ MANDATORY RULE FOR ALL KI AGENTS - PR TITLE FORMAT
+
+**JEDER Commit und JEDE Pull Request MUSS diesem Format entsprechen:**
+
+```
+<type>: <description>
+```
+
+**ERLAUBTE TYPES** (nur diese):
+
+- `feat:` Neue Features/Funktionalität
+- `fix:` Bug-Fixes
+- `docs:` Dokumentation
+- `style:` Code-Style/Formatting
+- `refactor:` Code-Umstrukturierung
+- `perf:` Performance
+- `test:` Tests
+- `chore:` Build, Dependencies
+- `ci:` CI/CD, Workflows
+
+### ✅ KORREKTE BEISPIELE:
+
+```
+feat: Add type-safety improvements
+fix: Handle null values in parser
+ci: Add unit tests to workflow
+docs: Update contributing guidelines
+refactor: Simplify component logic
+```
+
+### ❌ UNGÜLTIGE BEISPIELE (WERDEN ABGELEHNT):
+
+```
+Phase C: Add type-safety improvements       ← FALSCH: kein type:
+feat: phase-c                               ← FALSCH: zu vage
+Update code                                 ← FALSCH: kein type:
+feat: Add type-safety AND event handlers    ← FALSCH: zu viel in einem PR
+chore: Update code.                         ← FALSCH: Punkt am Ende
+```
+
+**Das ist NICHT verhandelbar.** Git Hooks (`commitlint`) werden **jeden ungültigen Titel ablehnen**.
+
+---
+
 ## 🚨 Kritische Regeln (MUSS eingehalten werden)
 
 ### 1. Code-Formatting VOR jedem Commit

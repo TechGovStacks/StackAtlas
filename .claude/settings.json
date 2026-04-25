@@ -1,0 +1,33 @@
+{
+	"instructions": "See ai-instructions.md - MANDATORY: All commits must use Conventional Commits format (feat:, fix:, etc.). Commitlint will reject invalid titles.",
+	"context": {
+		"codebaseLanguage": "TypeScript/Preact",
+		"primaryLanguage": "de",
+		"commitStyle": "conventional-commits-required"
+	},
+	"rules": {
+		"commitMessage": {
+			"enforced": true,
+			"tool": "commitlint",
+			"format": "type: description",
+			"allowedTypes": ["feat", "fix", "docs", "style", "refactor", "perf", "test", "chore", "ci"],
+			"examples": ["feat: Add type-safe JSON parsing", "fix: Handle null values in parser", "ci: Add unit tests to workflow"],
+			"invalid": ["Phase C: Add features", "Update code", "feat: Add feature."]
+		},
+		"formatting": {
+			"tool": "prettier",
+			"enforced": true,
+			"hook": "pre-commit"
+		},
+		"linting": {
+			"tools": ["eslint", "stylelint", "typescript"],
+			"enforced": true,
+			"mustPassBefore": "push"
+		},
+		"testing": {
+			"command": "pnpm test",
+			"required": true,
+			"beforePush": true
+		}
+	}
+}
