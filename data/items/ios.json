@@ -2,7 +2,7 @@
 	"id": "ios",
 	"name": "iOS",
 	"layer": "applications",
-	"sublayer": "native-apps",
+	"sublayer": "ios-os",
 	"description": {
 		"de": "iOS ist das Betriebssystem für die Arbeit auf mobilen Endgeräten von Apple.",
 		"en": ""

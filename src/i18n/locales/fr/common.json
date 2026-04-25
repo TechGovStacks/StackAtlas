@@ -79,7 +79,8 @@
 			"lowcode": "Low-code",
 			"anschluss": "Connectivité",
 			"browser": "Navigateur",
-			"native-apps": "Applications natives",
+			"android-os": "Android",
+			"ios-os": "iOS",
 			"sprachen": "Langages",
 			"frameworks": "Frameworks et bibliothèques",
 			"laufzeit": "Exécution"

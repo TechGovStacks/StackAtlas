@@ -2,7 +2,7 @@
 	"id": "android",
 	"name": "Android",
 	"layer": "applications",
-	"sublayer": "native-apps",
+	"sublayer": "android-os",
 	"description": {
 		"de": "Android ist ein offenes Betriebssystem für die Arbeit auf mobilen Endgeräten.",
 		"en": ""
