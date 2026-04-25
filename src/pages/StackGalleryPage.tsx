@@ -11,8 +11,7 @@ import { useRouteAnnouncement } from '../hooks/useRouteAnnouncement';
 import { computeStackAvgScore, useStackMetrics } from '../hooks/useStackMetrics';
 import { Item, Stack } from '../types';
 import { getLocalizedText } from '../utils';
-import { getScoreCategoryColor } from '../utils/sovereigntyScore';
-import { computeEffectiveSovereigntyScore } from '../utils/sovereigntyScore';
+import { computeEffectiveSovereigntyScore, getScoreCategoryColor } from '../utils/sovereigntyScore';
 
 interface StackExposeWithMetricsProps {
 	children?: ComponentChildren;
@@ -236,11 +235,10 @@ export function StackGalleryPage() {
 										{isCustom && <span className="stack-gallery__compact-nav-custom-badge"> (Custom)</span>}
 									</a>
 									<span className="stack-gallery__compact-nav-metrics">
-										<span className="stack-gallery__compact-nav-metric">{stack.items.length} {t('stackGallery.compactNavDeps') || 'Deps'}</span>
-										<span
-											className="stack-gallery__compact-nav-metric stack-gallery__compact-nav-score"
-											style={{ color: getScoreCategoryColor(avgScore) }}
-										>
+										<span className="stack-gallery__compact-nav-metric">
+											{stack.items.length} {t('stackGallery.compactNavDeps') || 'Deps'}
+										</span>
+										<span className="stack-gallery__compact-nav-metric stack-gallery__compact-nav-score" style={{ color: getScoreCategoryColor(avgScore) }}>
 											{avgScore.toFixed(1)} {t('stackGallery.compactNavScore') || 'Score'}
 										</span>
 									</span>
