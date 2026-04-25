@@ -16,8 +16,6 @@ const huskyDir = path.join(rootDir, '.husky');
 const preCommitHookPath = path.join(huskyDir, 'pre-commit');
 
 const preCommitContent = `#!/bin/sh
-. "$(dirname "$0")/_/husky.sh"
-
 pnpm exec lint-staged
 `;
 

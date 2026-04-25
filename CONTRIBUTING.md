@@ -126,7 +126,7 @@ Closes #123
 
 Für Stack- oder Item-Korrektionen:
 
-1. Öffnen Sie einen Issue mit dem [Data Correction Template](docs/data_correction.yml)
+1. Öffnen Sie einen Issue mit dem [Data Correction Template](.github/ISSUE_TEMPLATE/data_correction.yml)
 2. Referenzieren Sie die betroffene Datei unter `data/`
 3. Validieren Sie mit `pnpm validate-schemas`
 4. Siehe [data/README.md](data/README.md) für Schema-Dokumentation
@@ -134,9 +134,9 @@ Für Stack- oder Item-Korrektionen:
 ## Issue-Tracker
 
 Verwenden Sie diese Templates:
-- [Bug Report](ISSUE_TEMPLATE/bug_report.yml) — Fehlerberichte
-- [Feature Request](ISSUE_TEMPLATE/feature_request.yml) — Feature-Wünsche
-- [Data Correction](ISSUE_TEMPLATE/data_correction.yml) — Stack/Item-Korrektionen
+- [Bug Report](.github/ISSUE_TEMPLATE/bug_report.yml) — Fehlerberichte
+- [Feature Request](.github/ISSUE_TEMPLATE/feature_request.yml) — Feature-Wünsche
+- [Data Correction](.github/ISSUE_TEMPLATE/data_correction.yml) — Stack/Item-Korrektionen
 
 ## AI-Beitragende
 

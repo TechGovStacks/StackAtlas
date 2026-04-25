@@ -7,7 +7,7 @@
 <!-- Löschen Sie nicht relevante Optionen -->
 
 - [ ] Bug-Fix (nicht-brechende Änderung, behebt ein Problem)
-- [ ] Neue Feature (nicht-brechende Änderung, fügt Funktionalität hinzu)
+- [ ] Neues Feature (nicht-brechende Änderung, fügt Funktionalität hinzu)
 - [ ] Brechende Änderung (Funktionalität ist betroffen)
 - [ ] Dokumentation
 - [ ] Code-Refactoring / Performance-Verbesserung
