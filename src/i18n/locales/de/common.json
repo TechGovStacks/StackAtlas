@@ -227,6 +227,8 @@
 		"listAria": "Rangliste der Tech-Stacks nach Souveränitäts-Score",
 		"compactNavAria": "Stack-Navigation",
 		"compactNavTitle": "Zur Stack navigieren",
+		"compactNavDeps": "Deps",
+		"compactNavScore": "Score",
 		"bestStack": "Bester Stack – Gold-Platzierung",
 		"rankAria": "Rang {{rank}}",
 		"avgScore": "Ø Souveränitätsscore",

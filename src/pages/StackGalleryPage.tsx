@@ -231,8 +231,14 @@ export function StackGalleryPage() {
 								>
 									<span className="stack-gallery__compact-nav-rank">#{entry.rank}</span>
 									<span className="stack-gallery__compact-nav-name">{stackName}</span>
-									<span className="stack-gallery__compact-nav-score">Ø {avgScore.toFixed(1)}</span>
-									<span className="stack-gallery__compact-nav-item-count">{entry.stack.items.length}</span>
+									<div className="stack-gallery__compact-nav-metric">
+										<span className="stack-gallery__compact-nav-metric-label">{t('stackGallery.compactNavDeps') || 'Deps'}</span>
+										<span className="stack-gallery__compact-nav-metric-value">{entry.stack.items.length}</span>
+									</div>
+									<div className="stack-gallery__compact-nav-metric">
+										<span className="stack-gallery__compact-nav-metric-label">{t('stackGallery.compactNavScore') || 'Score'}</span>
+										<span className="stack-gallery__compact-nav-metric-value">{avgScore.toFixed(1)}</span>
+									</div>
 								</a>
 							</li>
 						);

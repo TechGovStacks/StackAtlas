@@ -207,6 +207,8 @@
 		"listAria": "Classement des stacks technologiques par score de souveraineté",
 		"compactNavAria": "Navigation des stacks",
 		"compactNavTitle": "Naviguer vers le stack",
+		"compactNavDeps": "Dépendances",
+		"compactNavScore": "Score",
 		"bestStack": "Meilleur stack – classement or",
 		"rankAria": "Rang {{rank}}",
 		"avgScore": "Score moy. de souveraineté",

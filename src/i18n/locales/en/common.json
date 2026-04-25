@@ -227,6 +227,8 @@
 		"listAria": "Tech stacks ranked by sovereignty score",
 		"compactNavAria": "Stack navigation",
 		"compactNavTitle": "Navigate to stack",
+		"compactNavDeps": "Deps",
+		"compactNavScore": "Score",
 		"bestStack": "Top-ranked stack – gold placement",
 		"rankAria": "Rank {{rank}}",
 		"avgScore": "Avg. sovereignty score",

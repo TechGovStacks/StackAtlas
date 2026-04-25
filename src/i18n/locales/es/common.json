@@ -202,6 +202,8 @@
 		"listAria": "Pilas de tecnología clasificadas por puntuación de soberanía",
 		"compactNavAria": "Navegación de pilas",
 		"compactNavTitle": "Navegar a la pila",
+		"compactNavDeps": "Deps",
+		"compactNavScore": "Puntuación",
 		"bestStack": "Pila mejor clasificada: ubicación en oro",
 		"rankAria": "Rango {{rank}}",
 		"avgScore": "Promedio puntuación de soberanía",

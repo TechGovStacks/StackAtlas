@@ -1882,37 +1882,45 @@ kol-select {
 	margin: 0;
 }
 
+.stack-gallery__compact-nav-item {
+	border-bottom: 1px solid var(--ds-color-border-light);
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
 .stack-gallery__compact-nav-link {
 	display: grid;
-	grid-template-columns: auto 1fr auto auto;
-	gap: var(--ds-space-3);
+	grid-template-columns: auto auto 1fr auto auto;
+	gap: var(--ds-space-4);
 	align-items: center;
-	padding: var(--ds-space-2) var(--ds-space-3);
+	padding: var(--ds-space-3) 0;
 	color: var(--ds-color-text);
 	text-decoration: none;
 	font-size: var(--ds-text-sm);
-	border-radius: var(--ds-radius-sm);
-	border: 1px solid transparent;
-	transition:
-		background-color 150ms ease,
-		border-color 150ms ease;
+	transition: color 150ms ease;
 	cursor: pointer;
 
 	&:hover {
-		background-color: var(--ds-color-bg);
-		border-color: var(--ds-color-border-light);
+		color: var(--ds-color-primary);
+
+		.stack-gallery__compact-nav-metric {
+			background: var(--ds-color-bg);
+		}
 	}
 
 	&:focus-visible {
 		outline: 2px solid var(--ds-color-accent);
-		outline-offset: -2px;
+		outline-offset: 2px;
 	}
 }
 
 .stack-gallery__compact-nav-rank {
 	font-weight: 700;
 	color: var(--ds-color-primary);
-	min-width: 2.5rem;
+	min-width: 2rem;
+	text-align: center;
 }
 
 .stack-gallery__compact-nav-name {
@@ -1923,19 +1931,31 @@ kol-select {
 	white-space: nowrap;
 }
 
-.stack-gallery__compact-nav-score {
-	font-size: var(--ds-text-xs);
-	color: var(--ds-color-text-muted);
-	background: var(--ds-color-bg);
-	padding: var(--ds-space-1) var(--ds-space-2);
+.stack-gallery__compact-nav-metric {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ds-space-1);
+	padding: var(--ds-space-2) var(--ds-space-3);
 	border-radius: var(--ds-radius-sm);
-	white-space: nowrap;
+	background: var(--ds-color-surface);
+	border: 1px solid var(--ds-color-border-light);
+	transition: background-color 150ms ease;
+	text-align: center;
+	min-width: 4.5rem;
 }
 
-.stack-gallery__compact-nav-item-count {
+.stack-gallery__compact-nav-metric-label {
 	font-size: var(--ds-text-xs);
 	color: var(--ds-color-text-muted);
-	white-space: nowrap;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.stack-gallery__compact-nav-metric-value {
+	font-size: var(--ds-text-lg);
+	font-weight: 700;
+	color: var(--ds-color-primary);
 }
 
 .stack-gallery__title {
