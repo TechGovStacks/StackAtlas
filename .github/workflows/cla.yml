@@ -23,7 +23,7 @@ jobs:
           path-to-signatures: 'signatures/cla.json'
           path-to-document: 'CLA.md'
           branch: main
-          allowlist: dependabot[bot],renovate[bot],github-actions[bot]
+          allowlist: dependabot[bot],renovate[bot],github-actions[bot],Claude
           remote-organization-name: TechGovStacks
           remote-repository-name: StackAtlas
           create-file-commit-message: 'Sign CLA'
