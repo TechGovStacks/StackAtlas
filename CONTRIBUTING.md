@@ -51,6 +51,7 @@ pnpm test:e2e
 ## Branch-Konventionen
 
 Verwenden Sie folgende Branch-Präfixe:
+
 - `feat/` — neue Features
 - `fix/` — Bugfixes
 - `docs/` — Dokumentation
@@ -72,6 +73,7 @@ footer
 ```
 
 **Types:**
+
 - `feat` — neue Features
 - `fix` — Bugfixes
 - `docs` — Dokumentation
@@ -81,6 +83,7 @@ footer
 - `chore` — Build-Prozess, Dependencies
 
 Beispiel:
+
 ```
 feat(scoring): add new sovereignty metric
 
@@ -92,6 +95,7 @@ Closes #123
 ## Pull Request Prozess
 
 1. **Fork und Branch erstellen**
+
    ```bash
    git checkout -b feat/your-feature
    ```
@@ -101,6 +105,7 @@ Closes #123
    - Schreiben Sie aussagekräftige Commit-Messages
 
 3. **Push und PR erstellen**
+
    ```bash
    git push origin feat/your-feature
    ```
@@ -134,6 +139,7 @@ Für Stack- oder Item-Korrektionen:
 ## Issue-Tracker
 
 Verwenden Sie diese Templates:
+
 - [Bug Report](.github/ISSUE_TEMPLATE/bug_report.yml) — Fehlerberichte
 - [Feature Request](.github/ISSUE_TEMPLATE/feature_request.yml) — Feature-Wünsche
 - [Data Correction](.github/ISSUE_TEMPLATE/data_correction.yml) — Stack/Item-Korrektionen
@@ -141,6 +147,7 @@ Verwenden Sie diese Templates:
 ## AI-Beitragende
 
 Falls Sie ein AI-Tool wie GitHub Copilot verwenden, beachten Sie:
+
 - [CLA.md](CLA.md) für Contributor License Agreement
 - [AGENTS.md](AGENTS.md) für AI-spezifische Richtlinien
 

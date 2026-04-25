@@ -1,7 +1,7 @@
 name: Data Correction
 description: Melden Sie Fehler in Stack- oder Item-Daten
-title: "[DATA] "
-labels: ["data", "needs-triage"]
+title: '[DATA] '
+labels: ['data', 'needs-triage']
 
 body:
   - type: markdown

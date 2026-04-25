@@ -84,17 +84,20 @@ pnpm check-unused # Knip — findet ungenutzte Exports
 ### Git-Workflow
 
 1. **Feature-Branch erstellen:**
+
    ```bash
    git checkout -b feat/meine-feature
    ```
 
 2. **Code mit TypeScript-Checks:**
+
    ```bash
    pnpm lint    # vor jedem Commit
    pnpm test    # Neue Tests hinzufügen
    ```
 
 3. **Committen (Conventional Commits):**
+
    ```bash
    git add .
    git commit -m "feat(scoring): add new metric"
@@ -112,6 +115,7 @@ pnpm check-unused # Knip — findet ungenutzte Exports
 StackAtlas ist eine **Vergleichsplattform für Tech-Stacks** mit Fokus auf digitale Souveränität.
 
 **Tech Stack:**
+
 - **Frontend:** Preact, Vite, TypeScript
 - **Styling:** UnoCSS (Utility-first CSS)
 - **i18n:** i18next (Mehrsprachigkeit)
@@ -157,6 +161,7 @@ Weitere Details: [docs/ARC42.md](docs/ARC42.md)
 ### `src/utils/sovereigntyScore.ts`
 
 Berechnet den **Souveränität-Score** für ein Item basierend auf:
+
 - Open-Source-Status
 - Datenschutz
 - Datenlokation
@@ -170,6 +175,7 @@ const score = sovereigntyScore(item);
 ### `src/utils/overallScore.ts`
 
 Kombiniert mehrere Metriken zu einem **Gesamt-Score**:
+
 - Sovereignty Score
 - Adoption Score
 - Community Score
@@ -178,6 +184,7 @@ Kombiniert mehrere Metriken zu einem **Gesamt-Score**:
 ### `src/utils/stackSelectionScore.ts`
 
 Berechnet einen **Selection Score** für Stack-Kombinationen:
+
 - Kompatibilität
 - Kosteneffizienz
 - Wartungsaufwand
@@ -204,16 +211,19 @@ App nutzt typsichere Daten
 ### Neue Daten hinzufügen
 
 1. **JSON-Dateien in `data/` ändern:**
+
    ```bash
    # z.B. data/items.json oder data/stacks.json
    ```
 
 2. **Schemas validieren:**
+
    ```bash
    pnpm validate-schemas
    ```
 
 3. **TypeScript neu generieren:**
+
    ```bash
    pnpm prebuild
    ```
@@ -230,6 +240,7 @@ Siehe [data/README.md](data/README.md) für Schema-Dokumentation.
 ### Problem: `pnpm dev` fehlt logo file
 
 **Lösung:**
+
 ```bash
 pnpm postinstall
 # oder komplett neu:
@@ -240,6 +251,7 @@ pnpm i
 ### Problem: KoliBri-Assets fehlen
 
 **Ursache:** `.koli-dist`-Verzeichnis nicht generiert
+
 ```bash
 pnpm rebuild @public-ui/components @public-ui/themes
 pnpm postinstall

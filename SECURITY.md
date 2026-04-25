@@ -5,9 +5,9 @@
 Wir veröffentlichen Sicherheitspatches für die neueste Version. Bitte aktualisieren Sie auf die neueste Version, um Sicherheitsaktualisierungen zu erhalten.
 
 | Version | Unterstützt |
-|---------|-------------|
-| Latest  | ✅ Ja      |
-| Älter   | ❌ Nein    |
+| ------- | ----------- |
+| Latest  | ✅ Ja       |
+| Älter   | ❌ Nein     |
 
 ## Sicherheitslücken melden
 

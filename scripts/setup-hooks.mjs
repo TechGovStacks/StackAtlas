@@ -20,26 +20,26 @@ pnpm exec lint-staged
 `;
 
 function setupHusky() {
-  try {
-    // Create .husky directory if it doesn't exist
-    if (!fs.existsSync(huskyDir)) {
-      fs.mkdirSync(huskyDir, { recursive: true });
-    }
+	try {
+		// Create .husky directory if it doesn't exist
+		if (!fs.existsSync(huskyDir)) {
+			fs.mkdirSync(huskyDir, { recursive: true });
+		}
 
-    // Create pre-commit hook
-    fs.writeFileSync(preCommitHookPath, preCommitContent, { mode: 0o755 });
+		// Create pre-commit hook
+		fs.writeFileSync(preCommitHookPath, preCommitContent, { mode: 0o755 });
 
-    console.log('✓ Husky pre-commit hook set up successfully');
-    return true;
-  } catch (err) {
-    console.warn('⚠ Failed to set up Husky hooks:', err.message);
-    return false;
-  }
+		console.log('✓ Husky pre-commit hook set up successfully');
+		return true;
+	} catch (err) {
+		console.warn('⚠ Failed to set up Husky hooks:', err.message);
+		return false;
+	}
 }
 
 // Run setup if this is executed directly
 if (import.meta.url === `file://${process.argv[1]}`) {
-  setupHusky();
+	setupHusky();
 }
 
 export { setupHusky };
