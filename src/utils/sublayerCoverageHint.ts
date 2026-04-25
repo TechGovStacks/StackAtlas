@@ -1,4 +1,5 @@
 import { Item, LocalizableText, StackItem } from '../types';
+import { computeContextualOverallScore } from './overallScore';
 import { computeEffectiveSovereigntyScore } from './sovereigntyScore';
 
 export type SublayerCoverageHint = {
@@ -31,9 +32,15 @@ export function computeSublayerCoverageHints(items: Item[], stackItemMap?: Map<s
 
 		const groupKey = toGroupKey(item.layer, comparableGroup, !!item.groupKey);
 		const groupItems = groupedItems.get(groupKey) ?? [];
+		const stackItem = stackItemMap?.get(item.id);
+		const sovereigntyScore = computeEffectiveSovereigntyScore(item.sovereigntyCriteria, stackItem);
+		const score =
+			stackItemMap && item.adoption
+				? computeContextualOverallScore(sovereigntyScore, item.adoption, stackItem)
+				: sovereigntyScore;
 		groupItems.push({
 			id: item.id,
-			score: computeEffectiveSovereigntyScore(item.sovereigntyCriteria, stackItemMap?.get(item.id)),
+			score,
 			name: item.name,
 		});
 		groupedItems.set(groupKey, groupItems);
