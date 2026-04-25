@@ -1,0 +1,1 @@
+import{lt as e}from"./index-BfPsot5v.js";var t=(t,n)=>{e(t,`_spellCheck`,n,{defaultValue:void 0})};export{t};
