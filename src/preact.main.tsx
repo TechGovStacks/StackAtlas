@@ -9,6 +9,7 @@ import App from './App';
 import { i18nReady } from './i18n';
 import { normalizeLanguage } from './i18n/language';
 import { LanguageCode } from './types';
+import { logger } from './utils/logger';
 
 const SPLASH_FALLBACK_MS = 9000;
 const SPLASH_REDUCED_MOTION_MS = 1200;
@@ -68,8 +69,8 @@ function dismissSplash(): void {
 	const cleanup = () => {
 		try {
 			splash.remove();
-		} catch {
-			// ignore
+		} catch (e) {
+			logger.debug('splash element removal failed', e);
 		}
 	};
 	splash.addEventListener('transitionend', cleanup, { once: true });

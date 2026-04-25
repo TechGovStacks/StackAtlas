@@ -1,5 +1,7 @@
 import { useEffect, useMemo, useState } from 'preact/hooks';
+import { z } from 'zod';
 import { Item, ParticipantRole, Stack, StackItem, StackItemStatus } from '../types';
+import { safeJsonParse } from '../utils/safeJsonParse';
 
 const LOCAL_STACKS_STORAGE_KEY = 'local-stacks-v1';
 const LOCAL_STACK_VERSION = 1;
@@ -36,6 +38,11 @@ type LegacyPersistedLocalStack = {
 	name?: unknown;
 	updatedAt?: unknown;
 };
+
+const PERSISTED_LOCAL_STACK_STORE_SCHEMA = z.object({
+	stacks: z.array(z.object({}).passthrough()),
+	version: z.number(),
+});
 
 function normalizeStackName(name: string) {
 	return name.trim().toLocaleLowerCase();
@@ -139,24 +146,20 @@ function loadPersistedLocalStacks(allItems: Item[]): PersistedLocalStack[] {
 		return [];
 	}
 
-	try {
-		const raw = localStorage.getItem(LOCAL_STACKS_STORAGE_KEY);
-		if (!raw) {
-			return [];
-		}
-
-		const parsed = JSON.parse(raw) as Partial<PersistedLocalStackStore>;
-		if (parsed.version !== LOCAL_STACK_VERSION || !Array.isArray(parsed.stacks)) {
-			return [];
-		}
-
-		const validItemIds = new Set(allItems.map((item) => item.id));
-		return parsed.stacks
-			.map((stack) => sanitizeStack(stack, validItemIds) ?? sanitizeLegacyStack(stack, validItemIds))
-			.filter((stack): stack is PersistedLocalStack => Boolean(stack));
-	} catch {
+	const raw = localStorage.getItem(LOCAL_STACKS_STORAGE_KEY);
+	if (!raw) {
 		return [];
 	}
+
+	const parsed = safeJsonParse(raw, PERSISTED_LOCAL_STACK_STORE_SCHEMA);
+	if (!parsed || parsed.version !== LOCAL_STACK_VERSION || !Array.isArray(parsed.stacks)) {
+		return [];
+	}
+
+	const validItemIds = new Set(allItems.map((item) => item.id));
+	return parsed.stacks
+		.map((stack) => sanitizeStack(stack, validItemIds) ?? sanitizeLegacyStack(stack, validItemIds))
+		.filter((stack): stack is PersistedLocalStack => Boolean(stack));
 }
 
 function savePersistedLocalStacks(stacks: PersistedLocalStack[]) {

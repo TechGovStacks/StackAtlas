@@ -1,9 +1,11 @@
 import { KolButton, KolCard, KolInputCheckbox, KolInputNumber, KolSingleSelect } from '@public-ui/preact';
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
+import { z } from 'zod';
 import { ITEMS, STACKS } from '../data/catalog';
 import type { StackSelectionAssessmentInput, StackSelectionDimensionKey, StackSelectionHardExclusion } from '../types';
 import { computeStackSelectionAssessment, getLocalizedText } from '../utils';
+import { safeJsonParse } from '../utils/safeJsonParse';
 
 const DIMENSION_KEYS: StackSelectionDimensionKey[] = [
 	'austauschbarkeit',
@@ -61,6 +63,14 @@ type StoredEvaluatorState = {
 	selectedStackId: string;
 };
 
+const STORED_EVALUATOR_STATE_SCHEMA = z.object({
+	input: z.any() as z.ZodType<StackSelectionAssessmentInput>,
+	selectedItemId: z.string(),
+	selectedStackId: z.string(),
+});
+
+const LINKED_ASSESSMENTS_SCHEMA = z.record(z.string(), z.any() as z.ZodType<LinkedAssessment>);
+
 export function StackSelectionEvaluator() {
 	const { i18n, t } = useTranslation();
 	const [input, setInput] = useState<StackSelectionAssessmentInput>(DEFAULT_INPUT);
@@ -100,24 +110,20 @@ export function StackSelectionEvaluator() {
 			return;
 		}
 
-		try {
-			const rawState = localStorage.getItem(EVALUATOR_STATE_STORAGE_KEY);
-			if (!rawState) {
-				return;
-			}
+		const rawState = localStorage.getItem(EVALUATOR_STATE_STORAGE_KEY);
+		const parsed = safeJsonParse(rawState, STORED_EVALUATOR_STATE_SCHEMA);
+		if (!parsed) {
+			return;
+		}
 
-			const parsed = JSON.parse(rawState) as Partial<StoredEvaluatorState>;
-			if (parsed.input) {
-				setInput(parsed.input);
-			}
-			if (typeof parsed.selectedStackId === 'string') {
-				setSelectedStackId(parsed.selectedStackId);
-			}
-			if (typeof parsed.selectedItemId === 'string') {
-				setSelectedItemId(parsed.selectedItemId);
-			}
-		} catch {
-			// ignore invalid persisted state
+		if (parsed.input) {
+			setInput(parsed.input);
+		}
+		if (typeof parsed.selectedStackId === 'string') {
+			setSelectedStackId(parsed.selectedStackId);
+		}
+		if (typeof parsed.selectedItemId === 'string') {
+			setSelectedItemId(parsed.selectedItemId);
 		}
 	}, []);
 
@@ -146,14 +152,10 @@ export function StackSelectionEvaluator() {
 			return;
 		}
 
-		try {
-			const existingRaw = localStorage.getItem(STACK_ITEM_ASSESSMENTS_STORAGE_KEY);
-			const existing = existingRaw ? (JSON.parse(existingRaw) as Record<string, LinkedAssessment>) : {};
-			const storageKey = `${selectedStackId}:${selectedItemId}`;
-			setSavedSelection(existing[storageKey] ?? null);
-		} catch {
-			setSavedSelection(null);
-		}
+		const existingRaw = localStorage.getItem(STACK_ITEM_ASSESSMENTS_STORAGE_KEY);
+		const existing = (safeJsonParse(existingRaw, LINKED_ASSESSMENTS_SCHEMA) as Record<string, LinkedAssessment> | null) ?? {};
+		const storageKey = `${selectedStackId}:${selectedItemId}`;
+		setSavedSelection(existing[storageKey] ?? null);
 	}, [selectedItemId, selectedStackId]);
 
 	const updateDimension = (key: StackSelectionDimensionKey, rawValue: unknown) => {

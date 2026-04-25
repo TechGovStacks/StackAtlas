@@ -2,6 +2,6 @@
 	"$schema": "https://unpkg.com/knip@6/schema.json",
 	"project": ["src/**/*.{ts,tsx}"],
 	"ignoreBinaries": [],
-	"ignoreDependencies": ["lint-staged", "uno.css", "@capacitor/core", "@hookform/resolvers", "react-hook-form", "zod", "@capacitor/android", "@capacitor/ios"],
+	"ignoreDependencies": ["lint-staged", "uno.css", "@capacitor/core", "@hookform/resolvers", "react-hook-form", "@capacitor/android", "@capacitor/ios"],
 	"ignoreExportsUsedInFile": true
 }
