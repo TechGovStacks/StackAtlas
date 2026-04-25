@@ -66,11 +66,11 @@ klar trennen, ohne Layer-Architektur zu zerstören.
 
 Bewertete Varianten:
 
-| Variante | Idee | Bewertung |
-| --- | --- | --- |
-| A | `building-blocks/sprachen` + `building-blocks/frameworks` | **Empfohlen** — minimale Änderung, maximale Klarheit |
-| B | Sprachen in `platform/sprachen` verschieben | Architektonischer Bruch: Sprachen sind Spezifikationen, keine Laufzeitumgebungen. `nodejs` (= Runtime) bleibt dagegen korrekt in `platform`. |
-| C | `sprachen` + `frameworks` + `werkzeuge` (z. B. Selenium, Robot Framework) | Sinnvoll bei wachsendem Test-/Build-Tooling-Bestand, erhöht aber initiale Komplexität |
+| Variante | Idee                                                                      | Bewertung                                                                                                                                    |
+| -------- | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| A        | `building-blocks/sprachen` + `building-blocks/frameworks`                 | **Empfohlen** — minimale Änderung, maximale Klarheit                                                                                         |
+| B        | Sprachen in `platform/sprachen` verschieben                               | Architektonischer Bruch: Sprachen sind Spezifikationen, keine Laufzeitumgebungen. `nodejs` (= Runtime) bleibt dagegen korrekt in `platform`. |
+| C        | `sprachen` + `frameworks` + `werkzeuge` (z. B. Selenium, Robot Framework) | Sinnvoll bei wachsendem Test-/Build-Tooling-Bestand, erhöht aber initiale Komplexität                                                        |
 
 **Empfehlung:** Variante A zuerst umsetzen (2 Sublayer), Variante C optional
 als Folge-Task, sobald >5 reine Werkzeuge im Bestand sind.
@@ -242,25 +242,25 @@ Für jedes der 23 betroffenen Items in `data/items/*.json` wird der Wert
 
 - **Risiko:** Stale Referenzen in Doku/Archiv verwenden weiterhin
   `entwicklung`.
-  - *Mitigation:* Grep nach `"entwicklung"` im kompletten Repo durchführen
+  - _Mitigation:_ Grep nach `"entwicklung"` im kompletten Repo durchführen
     (außer `docs/archive/**` und `docs/plans/<diese Datei>`) und jede
     Fundstelle gezielt anpassen.
 - **Risiko:** Externe Konsumenten (CSV-Export, Drittanwendungen) referenzieren
   `entwicklung` als Sublayer.
-  - *Mitigation:* Changelog-Eintrag + klare Hinweis-Note in `data/README.md`
+  - _Mitigation:_ Changelog-Eintrag + klare Hinweis-Note in `data/README.md`
     und Release-Notes.
 - **Risiko:** i18n-Schlüsselbäume für noch nicht migrierte Sprachen
   (`bg`, `hr`, `cs`, …) enthalten neue Keys nicht — Fallback notwendig.
-  - *Mitigation:* `t('search.sublayers.<slug>', { defaultValue: slug })`
+  - _Mitigation:_ `t('search.sublayers.<slug>', { defaultValue: slug })`
     verwendet automatisch den Slug als sichtbaren Fallback.
 - **Risiko:** Aufteilung in nur zwei Sublayer ist für Test-Tools
   (`selenium`, `robot-framework`) semantisch unscharf.
-  - *Mitigation:* Folge-Task „Variante C" offen halten, Empfehlung dort für
+  - _Mitigation:_ Folge-Task „Variante C" offen halten, Empfehlung dort für
     `werkzeuge`.
 - **Risiko:** Sublayer-Aggregate in
   `docs/ITEM_METRICS_SCHEMA.md:249-300` wurden noch nicht implementiert;
   künftige Implementierung muss die neuen Gruppen kennen.
-  - *Mitigation:* Hinweis im Plan + Verweis in ARC42.
+  - _Mitigation:_ Hinweis im Plan + Verweis in ARC42.
 
 ## Offene Fragen
 

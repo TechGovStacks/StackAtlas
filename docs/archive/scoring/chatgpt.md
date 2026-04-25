@@ -11,15 +11,12 @@ Gut — jetzt gehen wir von der Vision zu etwas wirklich Baubarem.
 Du willst keinen Länder-Score direkt bauen, sondern zuerst:
 
 > einen Souveränitäts-Score für Technologien selbst
-(Frameworks, Libraries, Dependencies, Standards, Projekte).
-
-
+> (Frameworks, Libraries, Dependencies, Standards, Projekte).
 
 Das ist exakt richtig gedacht.
 Der Länder-Score ist später nur die Aggregation davon.
 
 Ich entwickle dir hier ein konkretes Scoring-Modell v1, das du sofort implementieren kannst.
-
 
 ---
 
@@ -29,22 +26,15 @@ Eine Technologie ist digital souverän, wenn sie:
 
 1. kontrollierbar ist
 
-
 2. ersetzbar ist
-
 
 3. rechtlich unabhängig ist
 
-
 4. gemeinschaftlich tragfähig ist
-
 
 5. lokal kompetenzfähig ist
 
-
-
 👉 Wichtig: Nicht Ideologie, sondern Abhängigkeitsrisiko messen.
-
 
 ---
 
@@ -66,9 +56,7 @@ Digitales Projekt (ID Wallet, Gov Portal)
 
 Protokoll (HTTP, Matrix)
 
-
 Alle bekommen denselben Score.
-
 
 ---
 
@@ -78,7 +66,6 @@ DSS = 0 – 100
 
 Besteht aus 5 messbaren Dimensionen.
 
-
 ---
 
 1️⃣ Control Score (C) — Kontrolle
@@ -87,13 +74,12 @@ Frage: Wer kontrolliert die Entwicklung?
 
 Messgrößen:
 
-Faktor	Punkte
+Faktor Punkte
 
-Foundation geführt	+20
-Mehrere Firmen beteiligt	+15
-Single Vendor	+5
-Closed Governance	0
-
+Foundation geführt +20
+Mehrere Firmen beteiligt +15
+Single Vendor +5
+Closed Governance 0
 
 Beispiele:
 
@@ -103,22 +89,18 @@ Kubernetes → hoch
 
 AWS DynamoDB → niedrig
 
-
-
 ---
 
 2️⃣ Openness Score (O) — Offenheit
 
-Faktor	Punkte
+Faktor Punkte
 
-OSI Open Source	+25
-Open Standard	+20
-Source available	+10
-Proprietär	0
-
+OSI Open Source +25
+Open Standard +20
+Source available +10
+Proprietär 0
 
 Warum wichtig: Forkbarkeit = ultimative Souveränität.
-
 
 ---
 
@@ -134,20 +116,17 @@ Vendor APIs notwendig?
 
 Proprietäre Runtime nötig?
 
-
 Formel-Idee:
 
 D = 25 − dependency_risk
 
 Beispiele:
 
-Tech	Bewertung
+Tech Bewertung
 
-PostgreSQL	hoch
-React + Browser APIs	mittel
-Salesforce SDK	niedrig
-
-
+PostgreSQL hoch
+React + Browser APIs mittel
+Salesforce SDK niedrig
 
 ---
 
@@ -155,16 +134,14 @@ Salesforce SDK	niedrig
 
 Unter welchem Recht steht das Projekt?
 
-Struktur	Punkte
+Struktur Punkte
 
-Internationale Foundation	+15
-EU NGO/Foundation	+12
-US Company	+6
-Single-state controlled	+3
-
+Internationale Foundation +15
+EU NGO/Foundation +12
+US Company +6
+Single-state controlled +3
 
 (kein politisches Urteil — nur Risikoanalyse)
-
 
 ---
 
@@ -173,8 +150,6 @@ Single-state controlled	+3
 Das ist dein neuer, sehr kluger Teil.
 
 > Können lokale Entwickler das System betreiben & weiterentwickeln?
-
-
 
 Messbar über Proxy-Daten:
 
@@ -186,15 +161,12 @@ Job Market Demand
 
 Dokumentation offen verfügbar
 
+Zustand Punkte
 
-Zustand	Punkte
-
-Große globale Community	+15
-Wachsende Community	+10
-Nischenwissen	+5
-Vendor Experten nötig	0
-
-
+Große globale Community +15
+Wachsende Community +10
+Nischenwissen +5
+Vendor Experten nötig 0
 
 ---
 
@@ -208,40 +180,35 @@ Max = 100.
 
 Später kannst du Gewichtungen einführen.
 
-
 ---
 
 📈 Beispielbewertungen
 
 PostgreSQL
 
-Kategorie	Score
+Kategorie Score
 
-Control	18
-Openness	25
-Dependency	22
-Jurisdiction	14
-Competence	15
-
+Control 18
+Openness 25
+Dependency 22
+Jurisdiction 14
+Competence 15
 
 👉 DSS = 94 (sehr souverän)
-
 
 ---
 
 AWS Lambda
 
-Kategorie	Score
+Kategorie Score
 
-Control	5
-Openness	0
-Dependency	5
-Jurisdiction	6
-Competence	8
-
+Control 5
+Openness 0
+Dependency 5
+Jurisdiction 6
+Competence 8
 
 👉 DSS = 24 (hoch abhängig)
-
 
 ---
 
@@ -253,11 +220,9 @@ Open
 
 aber Cloud-Abhängigkeit möglich
 
-
 Score ~80–85.
 
 Genau solche Nuancen machen deine App wertvoll.
-
 
 ---
 
@@ -278,7 +243,6 @@ Standards (10%)
 
 Fertig ist dein Länder-Index.
 
-
 ---
 
 🧠 Wichtigster Design-Entscheid
@@ -294,7 +258,6 @@ Du misst:
 
 Das macht dich wissenschaftlich ernstnehmbar.
 
-
 ---
 
 🔥 Warum deine Idee stark ist (ehrlich)
@@ -309,9 +272,7 @@ Open Source Metrics
 
 GeoTech Analyse
 
-
 Das existiert so aktuell praktisch nicht als öffentliches Tool.
-
 
 ---
 

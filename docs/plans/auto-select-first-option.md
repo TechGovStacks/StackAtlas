@@ -9,12 +9,14 @@ Alle `KolSingleSelect`-Instanzen der App können in einen Zustand geraten, in de
 ## Design-Ziele & Nicht-Ziele
 
 ### Ziele
+
 - Einheitliches Verhalten für **alle** `KolSingleSelect`-Instanzen in der App
 - Kapselung der Logik in **einer einzigen Komponente** (`AutoSingleSelect`)
 - Keine Änderung am bestehenden `onChange`-Verhalten
 - Barrierefreiheitskonformes Verhalten (WCAG 2.1)
 
 ### Nicht-Ziele
+
 - Kein Eingriff in die `@public-ui/preact`-Bibliothek selbst
 - Keine erzwungene Auswahl bei Selects, die bewusst ohne Wert starten dürfen (z.B. Filter mit "Alle"-Option als erstem Eintrag — dort ist der erste Eintrag `value: ''`, also bereits ein gültiger Wert)
 - Kein Refactoring der State-Verwaltung in `useFilters` oder anderen Hooks
@@ -76,23 +78,23 @@ import type { ComponentProps } from 'preact';
 type KolSingleSelectProps = ComponentProps<typeof KolSingleSelect>;
 
 export function AutoSingleSelect(props: KolSingleSelectProps) {
-  const { _on, _value, _options, ...rest } = props;
+	const { _on, _value, _options, ...rest } = props;
 
-  const handleBlur = () => {
-    const options = Array.isArray(_options) ? _options : [];
-    if (options.some((o) => o.value === _value)) return;
-    const first = options.find((o) => !o.disabled);
-    if (!first || !_on?.onChange) return;
-    _on.onChange(new Event('change'), first.value);
-  };
+	const handleBlur = () => {
+		const options = Array.isArray(_options) ? _options : [];
+		if (options.some((o) => o.value === _value)) return;
+		const first = options.find((o) => !o.disabled);
+		if (!first || !_on?.onChange) return;
+		_on.onChange(new Event('change'), first.value);
+	};
 
-  // Strategie A: via _on.onBlur (falls von @public-ui unterstützt)
-  const onProps: KolSingleSelectProps['_on'] = {
-    ..._on,
-    onBlur: handleBlur,
-  };
+	// Strategie A: via _on.onBlur (falls von @public-ui unterstützt)
+	const onProps: KolSingleSelectProps['_on'] = {
+		..._on,
+		onBlur: handleBlur,
+	};
 
-  return <KolSingleSelect {...rest} _value={_value} _options={_options} _on={onProps} />;
+	return <KolSingleSelect {...rest} _value={_value} _options={_options} _on={onProps} />;
 }
 ```
 
@@ -100,9 +102,9 @@ Falls `_on.onBlur` nicht unterstützt wird (Strategie B):
 
 ```tsx
 return (
-  <div onFocusOut={handleBlur}>
-    <KolSingleSelect {...rest} _value={_value} _options={_options} _on={_on} />
-  </div>
+	<div onFocusOut={handleBlur}>
+		<KolSingleSelect {...rest} _value={_value} _options={_options} _on={_on} />
+	</div>
 );
 ```
 
@@ -110,14 +112,15 @@ return (
 
 Ersetze in folgenden Dateien alle `KolSingleSelect`-Importe und -Verwendungen durch `AutoSingleSelect`:
 
-| Datei | Anzahl Instanzen | Selects |
-|-------|-----------------|---------|
-| `src/components/FilterBar.tsx` | 7 | stack, layer, sublayer, relation, dependency-depth, dependency-type, sort |
-| `src/components/SettingsForm.tsx` | 1 | theme |
-| `src/components/LanguageSwitcher.tsx` | 1 | language |
-| `src/pages/DependencyGraphPage.tsx` | 1 | graph-root |
+| Datei                                 | Anzahl Instanzen | Selects                                                                   |
+| ------------------------------------- | ---------------- | ------------------------------------------------------------------------- |
+| `src/components/FilterBar.tsx`        | 7                | stack, layer, sublayer, relation, dependency-depth, dependency-type, sort |
+| `src/components/SettingsForm.tsx`     | 1                | theme                                                                     |
+| `src/components/LanguageSwitcher.tsx` | 1                | language                                                                  |
+| `src/pages/DependencyGraphPage.tsx`   | 1                | graph-root                                                                |
 
 Import-Änderung pro Datei:
+
 ```tsx
 // Vorher:
 import { KolSingleSelect } from '@public-ui/preact';
@@ -140,6 +143,7 @@ Falls `_on.onBlur` nicht im Typ von `@public-ui` definiert ist, Strategie B (div
 **Neue Datei:** `src/components/__tests__/AutoSingleSelect.test.tsx`
 
 Testfälle:
+
 - Blur ohne Wert (`_value={undefined}`) → `onChange` mit erstem Option-Wert aufgerufen
 - Blur mit leerem String (`_value=""`) → `onChange` **nicht** aufgerufen (leerer String = gültige Wahl)
 - Blur mit gültigem Wert → `onChange` nicht aufgerufen
@@ -153,6 +157,7 @@ pnpm dev
 ```
 
 Prüfen:
+
 1. FilterBar Sort-Select: Tab auf Select, sofort Tab weiter → Wert bleibt `'overall'` (bereits gesetzt, kein Trigger)
 2. Neuladen der Seite → alle Selects zeigen korrekten Standardwert
 3. Ein Select dessen `_value` programmatisch auf `null` gesetzt wird → nach Blur wird erste Option gesetzt
@@ -171,12 +176,12 @@ Keine externen Dokumentationsänderungen notwendig. Die neue Komponente `AutoSin
 
 ## Risiken & Mitigationen
 
-| Risiko | Wahrscheinlichkeit | Mitigation |
-|--------|-------------------|------------|
-| `_on.onBlur` nicht in @public-ui 4.1.2 typisiert | Mittel | Strategie B (div-Wrapper) als Fallback |
-| Shadow DOM blockiert `focusout`-Bubbling beim div-Wrapper | Niedrig | `onFocusOut` statt `onBlur` auf div; testen mit `composed: true` |
-| Unerwartete Auto-Selects bei Selects mit `_value=""` | Kein Risiko | Options-Existenz-Prüfung (`some`) deckt `''` korrekt ab — nur auto-select wenn `''` nicht in Optionen |
-| TypeScript-Fehler durch inkompatible Props | Niedrig | Typen von `KolSingleSelect` direkt über `ComponentProps` ableiten |
+| Risiko                                                    | Wahrscheinlichkeit | Mitigation                                                                                            |
+| --------------------------------------------------------- | ------------------ | ----------------------------------------------------------------------------------------------------- |
+| `_on.onBlur` nicht in @public-ui 4.1.2 typisiert          | Mittel             | Strategie B (div-Wrapper) als Fallback                                                                |
+| Shadow DOM blockiert `focusout`-Bubbling beim div-Wrapper | Niedrig            | `onFocusOut` statt `onBlur` auf div; testen mit `composed: true`                                      |
+| Unerwartete Auto-Selects bei Selects mit `_value=""`      | Kein Risiko        | Options-Existenz-Prüfung (`some`) deckt `''` korrekt ab — nur auto-select wenn `''` nicht in Optionen |
+| TypeScript-Fehler durch inkompatible Props                | Niedrig            | Typen von `KolSingleSelect` direkt über `ComponentProps` ableiten                                     |
 
 ## Offene Fragen
 

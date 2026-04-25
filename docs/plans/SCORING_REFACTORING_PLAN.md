@@ -13,22 +13,23 @@ ohne jeden Hard-Cap.
 
 ## Neues Gewichtsmodell
 
-| Kriterium              | Gewicht alt | Gewicht neu | Delta |
-|------------------------|-------------|-------------|-------|
-| `openSource`           | 30          | 25          | −5    |
-| `euHeadquartered`      | 25          | 20          | −5    |
-| `hasAudit`             | 20          | 20          | ±0    |
-| `permissiveLicense`    | 10          | 10          | ±0    |
-| `matureProject`        | 10          | 10          | ±0    |
-| `largeEcosystem`       | 5           | 5           | ±0    |
-| **Basis-Summe**        | **100**     | **90**      |       |
-| `independentConsortium`| 15          | 10          | −5    |
-| `community`            | 10          | 7           | −3    |
-| `corporation`          | 5           | 3           | −2    |
-| `oneManShow`           | 0           | 0           | ±0    |
-| **Gesamtmaximum**      | 115 → cap 100 | **100**   | ✓     |
+| Kriterium               | Gewicht alt   | Gewicht neu | Delta |
+| ----------------------- | ------------- | ----------- | ----- |
+| `openSource`            | 30            | 25          | −5    |
+| `euHeadquartered`       | 25            | 20          | −5    |
+| `hasAudit`              | 20            | 20          | ±0    |
+| `permissiveLicense`     | 10            | 10          | ±0    |
+| `matureProject`         | 10            | 10          | ±0    |
+| `largeEcosystem`        | 5             | 5           | ±0    |
+| **Basis-Summe**         | **100**       | **90**      |       |
+| `independentConsortium` | 15            | 10          | −5    |
+| `community`             | 10            | 7           | −3    |
+| `corporation`           | 5             | 3           | −2    |
+| `oneManShow`            | 0             | 0           | ±0    |
+| **Gesamtmaximum**       | 115 → cap 100 | **100**     | ✓     |
 
 ### Semantisches Mapping
+
 - Ohne `ownerType`: max. **90 Punkte** → "excellent" (76–90) erreichbar, aber nie "outstanding"
 - Mit bester Eigentümerstruktur (`independentConsortium`): **100 Punkte** → "outstanding" ✓
 
@@ -36,15 +37,15 @@ ohne jeden Hard-Cap.
 
 ## Was entfernt wird
 
-| Element                            | Datei                          | Grund               |
-|------------------------------------|--------------------------------|---------------------|
-| `Math.min(100, ...)`               | `sovereigntyScore.ts`          | nicht mehr nötig    |
-| `Math.min(100, ...)`               | `scripts/generate-data.mjs`    | nicht mehr nötig    |
-| `MAX_SCORE_WITHOUT_OWNER = 60`     | `sovereigntyScore.ts`          | nicht mehr nötig    |
-| `MAX_SCORE_WITHOUT_OWNER = 60`     | `scripts/generate-data.mjs`    | nicht mehr nötig    |
-| `ownerType: 0` in `WEIGHTS`        | `sovereigntyScore.ts`          | redundante Zeile    |
-| `if (key === 'ownerType') return`  | `sovereigntyScore.ts`          | entfällt mit obigem |
-| Typ `Record<keyof SovereigntyCriteria, number>` | `sovereigntyScore.ts` | → `Record<keyof Omit<SovereigntyCriteria, 'ownerType'>, number>` |
+| Element                                         | Datei                       | Grund                                                            |
+| ----------------------------------------------- | --------------------------- | ---------------------------------------------------------------- |
+| `Math.min(100, ...)`                            | `sovereigntyScore.ts`       | nicht mehr nötig                                                 |
+| `Math.min(100, ...)`                            | `scripts/generate-data.mjs` | nicht mehr nötig                                                 |
+| `MAX_SCORE_WITHOUT_OWNER = 60`                  | `sovereigntyScore.ts`       | nicht mehr nötig                                                 |
+| `MAX_SCORE_WITHOUT_OWNER = 60`                  | `scripts/generate-data.mjs` | nicht mehr nötig                                                 |
+| `ownerType: 0` in `WEIGHTS`                     | `sovereigntyScore.ts`       | redundante Zeile                                                 |
+| `if (key === 'ownerType') return`               | `sovereigntyScore.ts`       | entfällt mit obigem                                              |
+| Typ `Record<keyof SovereigntyCriteria, number>` | `sovereigntyScore.ts`       | → `Record<keyof Omit<SovereigntyCriteria, 'ownerType'>, number>` |
 
 ---
 
@@ -56,14 +57,14 @@ Score-Ranges unterschiedlich groß sind. Die Nadel berechnet sich korrekt mit `(
 
 ### Korrigierte Segment-Winkel
 
-| Kategorie     | Score-Range | Winkel alt | Winkel neu (= `(max_prev/100)*270`) |
-|---------------|-------------|------------|--------------------------------------|
-| insufficient  | 0–30        | 0°         | 0°                                   |
-| minimal       | 31–45       | 45°        | 81°                                  |
-| adequate      | 46–60       | 90°        | 121.5°                               |
-| good          | 61–75       | 135°       | 162°                                 |
-| excellent     | 76–90       | 180°       | 202.5°                               |
-| outstanding   | 91–100      | 225°       | 243°                                 |
+| Kategorie    | Score-Range | Winkel alt | Winkel neu (= `(max_prev/100)*270`) |
+| ------------ | ----------- | ---------- | ----------------------------------- |
+| insufficient | 0–30        | 0°         | 0°                                  |
+| minimal      | 31–45       | 45°        | 81°                                 |
+| adequate     | 46–60       | 90°        | 121.5°                              |
+| good         | 61–75       | 135°       | 162°                                |
+| excellent    | 76–90       | 180°       | 202.5°                              |
+| outstanding  | 91–100      | 225°       | 243°                                |
 
 ---
 
@@ -78,6 +79,7 @@ Score-Ranges unterschiedlich groß sind. Die Nadel berechnet sich korrekt mit `(
 ## Verifikation
 
 Nach der Änderung gilt:
+
 - `25 + 20 + 20 + 10 + 10 + 5 + 10 = 100` ✓
 - Ohne `ownerType`: max. 90, kein expliziter Cap nötig ✓
 - Gauge: Nadel bei Score 40 → 108°, Segment `minimal`: 81°–121.5° → korrekt ✓

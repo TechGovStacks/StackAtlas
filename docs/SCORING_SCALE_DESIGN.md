@@ -5,7 +5,7 @@
 Für ein System zur Bewertung der digitalen Souveränität empfehlen wir eine **Hybrid-Skala mit 6 Kategorien + feinkörnige Unter-Scores**:
 
 - **Kategorie 1: Unzureichend** (0-30) - Rote Zone
-- **Kategorie 2: Minimal** (31-45) - Orange Zone  
+- **Kategorie 2: Minimal** (31-45) - Orange Zone
 - **Kategorie 3: Ausreichend** (46-60) - Gelbe Zone
 - **Kategorie 4: Gut** (61-75) - Hellgrüne Zone
 - **Kategorie 5: Sehr Gut** (76-90) - Grüne Zone
@@ -29,15 +29,18 @@ Innerhalb jeder Kategorie wird der **genaue Punktewert (0-100)** angezeigt, um D
 ### Hintergrund: Psychologie von Skalen
 
 **Jost's Law der Skalen:**
+
 - Zu viele Optionen (>9 Stufen) werden nicht unterschieden (zu komplex)
 - Zu wenige Optionen (<3 Stufen) verlieren zu viel Information
 - Optimal sind **5-7 Kategorien** für menschliche Wahrnehmung
 
 **Anchoring Effect:**
+
 - Menschen vergleichen gegen extremste Werte (0 und 100)
 - Mittelpunkte (50) werden oft als "neutral" interpretiert
 
 **Numerische Psychologie:**
+
 - Runde Zahlen wirken weniger präzise (95 wirkt präziser als 90)
 - Steile Sprünge (0→100) wirken weniger fair als graduell
 
@@ -48,17 +51,20 @@ Innerhalb jeder Kategorie wird der **genaue Punktewert (0-100)** angezeigt, um D
 ### Variante 1: Kontinuierliche 0-100 Skala (Status Quo)
 
 **Beschreibung:**
+
 - Punkte von 0-100 ohne Kategorisierung
 - Granularität: Alle Ganzzahlen von 0-100 möglich
 - Potentiell bis zu 101 verschiedene Werte
 
 **Vorteile:**
+
 - ✅ Maximale Differenzierung - Items unterscheiden sich deutlich
 - ✅ Präzision - "72 ist besser als 71"
 - ✅ Einfach zu implementieren - Bestehende Logik nutzen
 - ✅ Vertraut in akademischen/technischen Kontexten
 
 **Nachteile:**
+
 - ❌ Zu viel Granularität - Menschen können 100 Unterschiede nicht verarbeiten
 - ❌ Falsche Präzision - Suggeriert Genauigkeit, die nicht existiert
 - ❌ Schwer zu kommunizieren - "68 vs 67" ist für Laien sinnlos
@@ -66,6 +72,7 @@ Innerhalb jeder Kategorie wird der **genaue Punktewert (0-100)** angezeigt, um D
 - ❌ Psychologisch unfair - Kleine Unterschiede werden über/unterbewertet
 
 **Differenzierungs-Analyse:**
+
 ```
 Szenario: 20 Items mit Scores
 - Minimum Unterschied: 1 Punkt (z.B. 45 vs 46)
@@ -74,6 +81,7 @@ Szenario: 20 Items mit Scores
 ```
 
 **Beispiel-Kommunikation:**
+
 - Techniker verstehen: "Score 72 ist gut"
 - Politiker verstehen nicht: "Warum 72 und nicht 70?"
 - Bürger verstehen: "Irgendeine Zahl zwischen 0 und 100"
@@ -83,11 +91,13 @@ Szenario: 20 Items mit Scores
 ### Variante 2: Kategorisiert mit 5 Stufen (Einfach)
 
 **Beschreibung:**
+
 - Nur 5 diskrete Kategorien: ⭐ bis ⭐⭐⭐⭐⭐
 - Oder: Very Low / Low / Medium / High / Very High
 - Keine numerischen Scores, nur Kategorien
 
 **Ranges:**
+
 - **Unzureichend** (⭐): 0-20
 - **Schwach** (⭐⭐): 21-40
 - **Befriedigend** (⭐⭐⭐): 41-60
@@ -95,6 +105,7 @@ Szenario: 20 Items mit Scores
 - **Hervorragend** (⭐⭐⭐⭐⭐): 81-100
 
 **Vorteile:**
+
 - ✅ Einfach zu verstehen - Jeder kennt Schulnoten oder Sterne
 - ✅ Psychologisch fair - Ähnliche Items sind in gleicher Kategorie
 - ✅ Gut zu kommunizieren - "Das ist 4 Sterne" ist universell
@@ -102,6 +113,7 @@ Szenario: 20 Items mit Scores
 - ✅ International bekannt - Wie Amazon/Google/IMDb
 
 **Nachteile:**
+
 - ❌ Zu wenig Differenzierung - Viele Items in gleicher Kategorie
 - ❌ Ungleiche Ranges - Items am Anfang/Ende der Range sind zu verschieden
 - ❌ Information-Verlust - Warum 45 statt 55 nicht sichtbar
@@ -109,6 +121,7 @@ Szenario: 20 Items mit Scores
 - ❌ Zu simpel für Fachkontext - Experten fühlen sich unterfordert
 
 **Differenzierungs-Analyse:**
+
 ```
 Szenario: 20 Items gleichmäßig verteilt
 - Score 0-20:   4-5 Items   → identische Kategorie ⭐
@@ -120,6 +133,7 @@ Problem: Nextcloud (60) = Kubernetes (65) = beide ⭐⭐⭐
 ```
 
 **Psychologische Probleme:**
+
 ```
 Kognitive Dissonanz:
 - Item A: 41/100 → "Befriedigend"
@@ -132,6 +146,7 @@ Kognitive Dissonanz:
 ### Variante 3: Hybrid-Skala mit 6 Kategorien + Unter-Scores (EMPFOHLEN)
 
 **Beschreibung:**
+
 - 6 semantisch bedeutungsvolle Kategorien (basierend auf Jost's Law + 1)
 - Jede Kategorie hat ein visuelles Zeichen (Farbe, Icon)
 - Dahinter steht der genaue numerische Score (0-100)
@@ -148,6 +163,7 @@ Kognitive Dissonanz:
 | Hervorragend | 91-100 | Optimale Souveränität | 🟢 Dunkelgrün |
 
 **Vorteile:**
+
 - ✅ **Beste Differenzierung** - Items unterscheiden sich deutlich UND haben 0-100 Granularität
 - ✅ **Verständlich** - Laien verstehen Kategorien, Techniker sehen genaue Scores
 - ✅ **Psychologisch fair** - 6 Kategorien optimal für menschliche Verarbeitung (Jost)
@@ -157,10 +173,12 @@ Kognitive Dissonanz:
 - ✅ **International** - Farbcodierung ist kulturell bekannt
 
 **Nachteile:**
+
 - ⚠️ Etwas komplexer zu implementieren (aber managebar)
 - ⚠️ Erfordert UI-Design für Kategorien/Farben
 
 **Differenzierungs-Analyse:**
+
 ```
 Szenario: 20 Items mit Scores
 - Score 0-30:   2-3 Items     → 🔴 Unzureichend (aber unterschiedlich 10 vs 29)
@@ -170,12 +188,13 @@ Szenario: 20 Items mit Scores
 - Score 76-90:  3-4 Items     → 🟢 Sehr Gut
 - Score 91-100: 0-2 Items     → 🟢 Hervorragend (Seltene Excellenz)
 
-Resultat: 
+Resultat:
 - Gleiche Kategorie → Visuell ähnlich, aber Zahlen zeigen Unterschiede
 - Unterschiedliche Kategorien → Visuell und semantisch unterschiedlich
 ```
 
 **Beispiel-Kommunikation:**
+
 - Techniker: "Nextcloud 60, Kubernetes 85 - großer Unterschied"
 - Politiker: "Nextcloud: Ausreichend 🟡, Kubernetes: Sehr Gut 🟢"
 - Bürger: "Diese zwei sind unterschiedlich (Farben), aber beide ok"
@@ -184,15 +203,15 @@ Resultat:
 
 ## Vergleichstabelle: Kriterien-Matrix
 
-| Kriterium | Kontinuierlich | 5er-Kategorien | Hybrid 6er | Gewichtung |
-|-----------|---|---|---|---|
-| Differenzierung (0-100) | 5/5 | 2/5 | 5/5 | 20% |
-| Nachvollziehbarkeit Laien | 2/5 | 5/5 | 4/5 | 20% |
-| Psychol. Fairness | 2/5 | 4/5 | 5/5 | 15% |
-| Entscheidungshilfe | 3/5 | 5/5 | 5/5 | 20% |
-| Visualisierbarkeit | 3/5 | 5/5 | 5/5 | 15% |
-| Implementierungs-Komplexität | 5/5 | 4/5 | 3/5 | 10% |
-| **GESAMT-SCORE** | **3.1/5** | **4.3/5** | **4.7/5** | 100% |
+| Kriterium                    | Kontinuierlich | 5er-Kategorien | Hybrid 6er | Gewichtung |
+| ---------------------------- | -------------- | -------------- | ---------- | ---------- |
+| Differenzierung (0-100)      | 5/5            | 2/5            | 5/5        | 20%        |
+| Nachvollziehbarkeit Laien    | 2/5            | 5/5            | 4/5        | 20%        |
+| Psychol. Fairness            | 2/5            | 4/5            | 5/5        | 15%        |
+| Entscheidungshilfe           | 3/5            | 5/5            | 5/5        | 20%        |
+| Visualisierbarkeit           | 3/5            | 5/5            | 5/5        | 15%        |
+| Implementierungs-Komplexität | 5/5            | 4/5            | 3/5        | 10%        |
+| **GESAMT-SCORE**             | **3.1/5**      | **4.3/5**      | **4.7/5**  | 100%       |
 
 ---
 
@@ -201,12 +220,14 @@ Resultat:
 ### Jost's Law der Diskretisierung
 
 Psychologische Studien zeigen:
+
 - **<3 Kategorien:** Zu viel Informationsverlust
 - **3-5 Kategorien:** Gut verständlich, aber wenig Differenzierung
 - **5-7 Kategorien:** Optimal für Wahrnehmung und Erinnerung
 - **>9 Kategorien:** Menschen können nicht mehr unterscheiden
 
 **Empirische Bestätigung:**
+
 - Schulnoten: Oft 5-6 Stufen (Note 1-6, oder A-F)
 - Customer Ratings: Meist 5 Sterne
 - Credit Ratings: S&P nutzt 20+ Kategorien, aber Laien verstehen nur die Top-5 (AAA-BBB)
@@ -217,11 +238,13 @@ Psychologische Studien zeigen:
 **Test-Ergebnis:** Universitäts-Studie zu Bewertungsskalen
 
 Präsentation 1 (Kontinuierlich): "Projekt A: 67/100, Projekt B: 73/100"
+
 - Techniker: Verstehen den 6-Punkt-Unterschied
 - Laien: "Beide sind... irgendwie ok?"
 - Psychologische Wahrnehmung: Unterschied fühlt sich klein an
 
 Präsentation 2 (Hybrid): "Projekt A: Ausreichend 🟡 (67/100), Projekt B: Gut 🟢 (73/100)"
+
 - Techniker: Verstehen den 6-Punkt-Unterschied UND die Kategorie-Differenz
 - Laien: "Ah, B ist besser!" (visuell deutlich)
 - Psychologische Wahrnehmung: Unterschied fühlt sich signifikant an
@@ -244,6 +267,7 @@ Ohne ownerType (Szenario A):
 ```
 
 **Verteilung der Scores in der Praxis:**
+
 ```
 Typisches Szenario: 50 Items in einem Sublayer
 0-10:     0-1 Items  (praktisch unmöglich mit unseren Criteria)
@@ -276,7 +300,7 @@ Diese Ranges entsprechen auch **Perzentil-Grenzen** in typischen Verteilungen.
 
 **Semantische Bedeutung:**
 
-1. **0-30 (Unzureichend):** 
+1. **0-30 (Unzureichend):**
    - "Sollte nicht empfohlen werden"
    - Großes Risiko für Vendor Lock-in oder Datenschutz
    - Klare Rote Zone
@@ -307,6 +331,7 @@ Diese Ranges entsprechen auch **Perzentil-Grenzen** in typischen Verteilungen.
    - Dunkelgrünes Gold-Standard (selten, aber anstrebenswert)
 
 Diese Semantik folgt **Schulnoten-Logik:**
+
 ```
 Schulnoten (Deutschland):
 1 = Hervorragend      → 91-100 ✓
@@ -324,14 +349,16 @@ Schulnoten (Deutschland):
 ### Frontend-Darstellung (Hybrid-Skala)
 
 **Variante A: Minimal**
+
 ```
 [🔴 Unzureichend]  [🟠 Minimal]  [🟡 Ausreichend]  [🟢 Gut]  [🟢 Sehr Gut]  [🟢 Hervorragend]
-                                                              
+
 Nextcloud: 🟡 (60/100)
 Kubernetes: 🟢 (85/100)
 ```
 
 **Variante B: Detail**
+
 ```
 Souveränität: Ausreichend 🟡
 Score: 60/100 (mittleres Drittel der "Ausreichend"-Range)
@@ -341,6 +368,7 @@ Gaps: Large Ecosystem ✗, Owner Type: None
 ```
 
 **Variante C: Interaktiv**
+
 ```
 [████░░░░░░░░░░░░░░░░] 60/100 - Ausreichend 🟡
 
@@ -352,25 +380,26 @@ Move to "Gut" by:
 ### Backend-Änderungen
 
 **Type Definition:**
+
 ```typescript
-export type SovereigntyScoreCategory = 
-  | 'insufficient'      // 0-30
-  | 'minimal'          // 31-45
-  | 'adequate'         // 46-60
-  | 'good'             // 61-75
-  | 'excellent'        // 76-90
-  | 'outstanding';     // 91-100
+export type SovereigntyScoreCategory =
+	| 'insufficient' // 0-30
+	| 'minimal' // 31-45
+	| 'adequate' // 46-60
+	| 'good' // 61-75
+	| 'excellent' // 76-90
+	| 'outstanding'; // 91-100
 
 export type SovereigntyScoreWithCategory = {
-  score: number;           // 0-100
-  category: SovereigntyScoreCategory;
-  color: string;           // #FF5722, #FF9800, etc.
-  label: LocalizableText;  // { de: "Ausreichend", en: "Adequate" }
-  percentile: number;      // Position in dieser Kategorie (0-100)
+	score: number; // 0-100
+	category: SovereigntyScoreCategory;
+	color: string; // #FF5722, #FF9800, etc.
+	label: LocalizableText; // { de: "Ausreichend", en: "Adequate" }
+	percentile: number; // Position in dieser Kategorie (0-100)
 };
 
 function computeScoreCategory(score: number): SovereigntyScoreWithCategory {
-  // ... kategorisierung
+	// ... kategorisierung
 }
 ```
 
@@ -380,13 +409,13 @@ function computeScoreCategory(score: number): SovereigntyScoreWithCategory {
 
 **Wenn die Organisation sich entscheidet:**
 
-| Kontext | Empfehlung | Grund |
-|---------|-----------|-------|
-| Technische/akademische Zielgruppe | 0-100 kontinuierlich | Maximale Präzision erwünscht |
-| Nur Laien-Kommunikation | 5er-Kategorien | Einfachheit über Granularität |
-| **Gemischte Zielgruppe** | **Hybrid 6er** | **Beste Gesamtbalance** |
-| Compliance/Regulierung | 6er-Kategorien (gestuft) | Rechtsverbindlichkeit & Klarheit |
-| Real-time Monitoring | 0-100 kontinuierlich | Sensitive Trend-Erkennung |
+| Kontext                           | Empfehlung               | Grund                            |
+| --------------------------------- | ------------------------ | -------------------------------- |
+| Technische/akademische Zielgruppe | 0-100 kontinuierlich     | Maximale Präzision erwünscht     |
+| Nur Laien-Kommunikation           | 5er-Kategorien           | Einfachheit über Granularität    |
+| **Gemischte Zielgruppe**          | **Hybrid 6er**           | **Beste Gesamtbalance**          |
+| Compliance/Regulierung            | 6er-Kategorien (gestuft) | Rechtsverbindlichkeit & Klarheit |
+| Real-time Monitoring              | 0-100 kontinuierlich     | Sensitive Trend-Erkennung        |
 
 ---
 
@@ -395,9 +424,11 @@ function computeScoreCategory(score: number): SovereigntyScoreWithCategory {
 ### Risiko 1: Kategorien werden zu rigide (Gaming)
 
 **Problem:** Projekte optimieren nur für Kategorie-Grenzen statt echter Verbesserung
+
 - "Warum auf 76 verbessern, wenn 75 auch 'Gut' ist?"
 
 **Mitigation:**
+
 - Prozentile INNERHALB jeder Kategorie anzeigen ("Top 30% in dieser Kategorie")
 - Trend-Anzeige: Hat sich der Score verbessert? ("↑ +5 Punkte letzte 6 Monate")
 - Raum-für-Verbesserung anzeigen ("Nächster Meilenstein: 61 Punkte für 'Gut'")
@@ -407,6 +438,7 @@ function computeScoreCategory(score: number): SovereigntyScoreWithCategory {
 **Problem:** 35 Items in der Range "46-60", wie unterscheide ich?
 
 **Mitigation:**
+
 - Sekundäre Sortierung: Nach Kriterien-Subsets ("Best OSS in Adequate Range")
 - Sub-Kategorisierung innerhalb Range: "Low, Mid, High Adequate" (46-52, 53-56, 57-60)
 - Detaillierte Ansicht: Zeige welche Kriterien erfüllt sind
@@ -416,6 +448,7 @@ function computeScoreCategory(score: number): SovereigntyScoreWithCategory {
 **Problem:** Was in der EU als "gut" gilt, könnte in Asien anders sein
 
 **Mitigation:**
+
 - Kategorien sind semantisch konsistent, nicht wertend
 - Labels sind lokalisierbar ("Ausreichend" vs "Adequate" vs "Suficiente")
 - Kontextuelle Erklärung pro Land/Region
@@ -436,6 +469,7 @@ function computeScoreCategory(score: number): SovereigntyScoreWithCategory {
 6. **Implementierbarkeit:** ✅ Moderat komplex, aber gut managebar
 
 ### Konkrete Ranges:
+
 ```
 🔴 Unzureichend      0-30   (Nicht empfohlen)
 🟠 Minimal          31-45   (Unter Vorbehalt)
@@ -483,14 +517,14 @@ wenn die Stack-Rolle `maintainer` lautet. Sechs der neun Kriterien — jene, die
 **Kontrollierbarkeit** beschreiben — werden in diesem Fall als erfüllt
 behandelt, weil die Maintainer-Organisation sie inhärent kontrolliert:
 
-| Kriterium            | Maintainer-Override | Begründung |
-|----------------------|---------------------|------------|
-| `openSource`         | ✅ auf `true`       | Maintainer besitzt Quellcode-Zugang und Modifikationsrechte |
-| `permissiveLicense`  | ✅ auf `true`       | Maintainer ist Lizenzgeber, kann Bedingungen selbst gestalten |
-| `selfHostable`       | ✅ auf `true`       | Maintainer betreibt es per Definition selbst |
-| `dataPortability`    | ✅ auf `true`       | Maintainer hält die Daten und ihr Schema |
-| `openStandards`      | ✅ auf `true`       | Maintainer definiert die Protokolle seiner Schnittstellen |
-| `noTelemetryByDefault` | ✅ auf `true`     | Maintainer kontrolliert Telemetriekanäle |
+| Kriterium              | Maintainer-Override | Begründung                                                    |
+| ---------------------- | ------------------- | ------------------------------------------------------------- |
+| `openSource`           | ✅ auf `true`       | Maintainer besitzt Quellcode-Zugang und Modifikationsrechte   |
+| `permissiveLicense`    | ✅ auf `true`       | Maintainer ist Lizenzgeber, kann Bedingungen selbst gestalten |
+| `selfHostable`         | ✅ auf `true`       | Maintainer betreibt es per Definition selbst                  |
+| `dataPortability`      | ✅ auf `true`       | Maintainer hält die Daten und ihr Schema                      |
+| `openStandards`        | ✅ auf `true`       | Maintainer definiert die Protokolle seiner Schnittstellen     |
+| `noTelemetryByDefault` | ✅ auf `true`       | Maintainer kontrolliert Telemetriekanäle                      |
 
 **Unverändert** bleiben die faktischen Kriterien, die von der Rolle unabhängig
 sind:
@@ -519,14 +553,11 @@ Kriterien explizit.
 
 ```typescript
 // src/utils/sovereigntyScore.ts
-export function computeEffectiveSovereigntyScore(
-  criteria: SovereigntyCriteria,
-  stackItem?: Pick<StackItem, 'role'>,
-): number {
-  if (roleGrantsMaintainerSovereignty(stackItem?.role)) {
-    return computeSovereigntyScore(applyMaintainerContext(criteria));
-  }
-  return computeSovereigntyScore(criteria);
+export function computeEffectiveSovereigntyScore(criteria: SovereigntyCriteria, stackItem?: Pick<StackItem, 'role'>): number {
+	if (roleGrantsMaintainerSovereignty(stackItem?.role)) {
+		return computeSovereigntyScore(applyMaintainerContext(criteria));
+	}
+	return computeSovereigntyScore(criteria);
 }
 ```
 
@@ -558,6 +589,7 @@ in der Praxis 95–100 Punkte. Damit bleibt der Score **erklärbar** und
 7.0–8.9:         High
 9.0–10.0:        Critical
 ```
+
 → 5 Kategorien für Security, ähnlich unserem Ansatz!
 
 ### Credit Ratings (Moody's)
@@ -566,6 +598,7 @@ in der Praxis 95–100 Punkte. Damit bleibt der Score **erklärbar** und
 Aaa, Aa1, Aa2, Aa3, A1, A2, A3, Baa1, Baa2, Baa3, Ba1, Ba2, Ba3, B1, B2, B3, ...
 → 21 Kategorien, aber Laien verstehen nur "Investment Grade vs Junk"
 ```
+
 → Zu viele Kategorien für Nicht-Experten
 
 ### Environmental Sustainability Ratings (ISO)
@@ -577,17 +610,19 @@ C (Average)
 D (Below average)
 E (Poor)
 ```
+
 → 5 Kategorien, ähnlich unserem Ansatz! (Nur Farben unterschiedlich)
 
 ### COVID-19 Risk Levels (US CDC)
 
 ```
 🟦 Low       (Blue)
-🟩 Moderate  (Green)  
+🟩 Moderate  (Green)
 🟨 Significant (Yellow)
 🟧 Substantial (Orange)
 🟥 High      (Red)
 ```
+
 → **5 kategorien mit Farben - bewährtes Pattern!**
 
 ---
@@ -640,10 +675,10 @@ Gewichtungen:
 
 ```javascript
 overallScore = round(
-  0.60 * sovereigntyScore           // Primär: Qualität
-  + 0.25 * sovereignAdoptionScore   // Sekundär: Konvergenz unter Souveränen
-  + 0.15 * adoptionScore            // Tertiär: Breitere Ökosystem-Präsenz
-)
+	0.6 * sovereigntyScore + // Primär: Qualität
+		0.25 * sovereignAdoptionScore + // Sekundär: Konvergenz unter Souveränen
+		0.15 * adoptionScore, // Tertiär: Breitere Ökosystem-Präsenz
+);
 ```
 
 #### Update 2026-04: robuste Adoption + Stack-Kontext
@@ -653,10 +688,7 @@ Die Adoption-Komponente wird inzwischen robust normalisiert (Perzentil-Anchor st
 Für die UI-Darstellung im **aktiven Stack-Kontext** wird zusätzlich ein kontextualisierter Overall berechnet:
 
 ```javascript
-contextualOverall = computeOverallScore(
-  effectiveSovereigntyScore,
-  withStackRoleAdoptionContext(adoption, stackItem)
-)
+contextualOverall = computeOverallScore(effectiveSovereigntyScore, withStackRoleAdoptionContext(adoption, stackItem));
 ```
 
 Damit wird bei `maintainer`/`contributor` sichtbar, dass bewusste Verantwortung
@@ -667,7 +699,7 @@ den globalen Kennzahlen basieren.
 
 1. **60% Sovereignty:** Der Sovereignty Score bleibt dominant. Ein Item mit
    exzellenter Souveränität (90) aber niedriger Adoption (20) erhält `0.6*90 +
-   0.25*20 + 0.15*20 = 62` — immer noch "gut" klassifiziert, weil die Qualität
+0.25*20 + 0.15*20 = 62` — immer noch "gut" klassifiziert, weil die Qualität
    zählt.
 
 2. **25% Sovereign Adoption:** Das zweite Gewicht adressiert das wichtigste
@@ -706,6 +738,7 @@ Maximum: 0.60*100 + 0.25*100 + 0.15*100 = 100 ✓
 In der Benutzeroberfläche werden alle drei Scores angezeigt:
 
 **Pill-Ansicht auf Item-Cards:**
+
 ```
 ┌─────────────────────────────┐
 │ Nextcloud (Overall: 65)      │
@@ -718,6 +751,7 @@ In der Benutzeroberfläche werden alle drei Scores angezeigt:
 ```
 
 **Sortierungs-Optionen (Dropdown):**
+
 - Default: "Overall Score" (kombiniert, 0.60/0.25/0.15)
 - "Sovereignty Score" (nur intrinsisch)
 - "Sovereign Adoption Score" (nur europäische Konvergenz)
@@ -725,6 +759,7 @@ In der Benutzeroberfläche werden alle drei Scores angezeigt:
 - "Name A-Z"
 
 **Stack-Ø-Metriken:**
+
 ```
 Germany Stack
   avgOverallScore:          72/100  ← primär für Stack-Vergleich
@@ -736,6 +771,7 @@ Germany Stack
 ### Praktische Beispiele
 
 **Fall 1: Linux Kernel**
+
 ```
 Sovereignty Score:         92/100  (OSS, EU-relevant, Audit, Standards, mature)
 Sovereign Adoption Score:  78/100  (in 15+ souveränen Stacks)
@@ -747,6 +783,7 @@ Interpretation: Universell empfohlen, hochwertig, breit verbreitet
 ```
 
 **Fall 2: Keycloak**
+
 ```
 Sovereignty Score:         85/100  (OSS, EU-centric, Audit, owned by community)
 Sovereign Adoption Score:  72/100  (in 8 souveränen Stacks)
@@ -758,6 +795,7 @@ Interpretation: Spezialisiert auf Identity, hochwertig, mit europäischen Stacks
 ```
 
 **Fall 3: GitHub Enterprise**
+
 ```
 Sovereignty Score:         35/100  (proprietär, US-HQ, Limited audit)
 Sovereign Adoption Score:  22/100  (in 2 Stacks, meist deprecated)

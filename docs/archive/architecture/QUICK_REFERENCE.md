@@ -8,6 +8,7 @@ source_of_truth: docs/README.md
 > Archivhinweis: Dieses Dokument ist historisch und nicht normativ.
 
 # Quick Reference Card
+
 ## Landscape2-ähnliche Übersichtsseite MVP
 
 **Print this out & keep it handy while coding**
@@ -25,25 +26,25 @@ source_of_truth: docs/README.md
 
 ## The 3 Routes
 
-| Route | Purpose | Components |
-|-------|---------|------------|
-| `/` | Homepage mit allen Artikeln | Hero + CategoryGrid + SearchBar + ArticleGrid |
-| `/category/:id` | Gefilterte Ansicht nach Kategorie | CategoryHeader + ArticleGrid |
-| `/search?q=...` | Such-Ergebnisse mit URL-Sync | SearchBar + ArticleGrid + Stats |
+| Route           | Purpose                           | Components                                    |
+| --------------- | --------------------------------- | --------------------------------------------- |
+| `/`             | Homepage mit allen Artikeln       | Hero + CategoryGrid + SearchBar + ArticleGrid |
+| `/category/:id` | Gefilterte Ansicht nach Kategorie | CategoryHeader + ArticleGrid                  |
+| `/search?q=...` | Such-Ergebnisse mit URL-Sync      | SearchBar + ArticleGrid + Stats               |
 
 ---
 
 ## The 7 Categories (mit Farben & Icons)
 
-| ID | Name | Color | Icon | Articles |
-|----|------|-------|------|----------|
-| infrastruktur | Infrastruktur | #c5192d (Rot) | server | 12 |
-| plattform | Plattform | #003d82 (Blau) | package | 11 |
-| betrieb | Betrieb | #00883d (Grün) | sliders | 10 |
-| zugang | Zugang | #f39c12 (Orange) | globe | 9 |
-| entwicklung | Entwicklung | #8e44ad (Lila) | code | 9 |
-| sicherheit | Sicherheit | #6f4a3a (Braun) | shield | 8 |
-| ki | KI | #5b2c6f (Indigo) | brain | 11 |
+| ID            | Name          | Color            | Icon    | Articles |
+| ------------- | ------------- | ---------------- | ------- | -------- |
+| infrastruktur | Infrastruktur | #c5192d (Rot)    | server  | 12       |
+| plattform     | Plattform     | #003d82 (Blau)   | package | 11       |
+| betrieb       | Betrieb       | #00883d (Grün)   | sliders | 10       |
+| zugang        | Zugang        | #f39c12 (Orange) | globe   | 9        |
+| entwicklung   | Entwicklung   | #8e44ad (Lila)   | code    | 9        |
+| sicherheit    | Sicherheit    | #6f4a3a (Braun)  | shield  | 8        |
+| ki            | KI            | #5b2c6f (Indigo) | brain   | 11       |
 
 ---
 
@@ -59,11 +60,11 @@ source_of_truth: docs/README.md
 ## The 5 Core Hooks
 
 ```typescript
-useFilters()          // Filter state management
-useSearch()           // Search debouncing
-usePagination()       // Pagination logic
-useFilterSync()       // URL-Sync (Deep-linking)
-useArticles()         // Article fetching (mock for Phase 1)
+useFilters(); // Filter state management
+useSearch(); // Search debouncing
+usePagination(); // Pagination logic
+useFilterSync(); // URL-Sync (Deep-linking)
+useArticles(); // Article fetching (mock for Phase 1)
 ```
 
 ---
@@ -97,12 +98,12 @@ KolLink             → Links
 
 ## Responsive Breakpoints
 
-| Device | Breakpoint | Columns | Layout |
-|--------|-----------|---------|--------|
-| Mobile | < 600px | 2 | Stack everything |
-| Tablet | 600-1023px | 3 | Inline filters |
-| Desktop | 1024-1439px | 4 | Sticky filter bar |
-| Wide | ≥1440px | 5 | Extra wide grid |
+| Device  | Breakpoint  | Columns | Layout            |
+| ------- | ----------- | ------- | ----------------- |
+| Mobile  | < 600px     | 2       | Stack everything  |
+| Tablet  | 600-1023px  | 3       | Inline filters    |
+| Desktop | 1024-1439px | 4       | Sticky filter bar |
+| Wide    | ≥1440px     | 5       | Extra wide grid   |
 
 ---
 
@@ -141,9 +142,9 @@ src/
 
 ```css
 /* Farben */
---kol-color-primary: #003d82;      /* Blau (alle Buttons) */
---kol-color-success: #00883d;       /* Grün */
---kol-color-danger: #c5192d;        /* Rot */
+--kol-color-primary: #003d82; /* Blau (alle Buttons) */
+--kol-color-success: #00883d; /* Grün */
+--kol-color-danger: #c5192d; /* Rot */
 
 /* Kategorie-Farben */
 --cat-infrastruktur: #c5192d;
@@ -155,17 +156,17 @@ src/
 --cat-ki: #5b2c6f;
 
 /* Spacing (8px-Raster) */
---spacing-xs: 0.25rem;  /* 4px */
---spacing-sm: 0.5rem;   /* 8px */
---spacing-md: 1rem;     /* 16px */
---spacing-lg: 1.5rem;   /* 24px */
---spacing-xl: 2rem;     /* 32px */
+--spacing-xs: 0.25rem; /* 4px */
+--spacing-sm: 0.5rem; /* 8px */
+--spacing-md: 1rem; /* 16px */
+--spacing-lg: 1.5rem; /* 24px */
+--spacing-xl: 2rem; /* 32px */
 
 /* Typographie */
---font-size-sm: 0.875rem;    /* 14px */
---font-size-base: 1rem;       /* 16px */
---font-size-lg: 1.125rem;    /* 18px */
---font-size-xl: 1.5rem;      /* 24px */
+--font-size-sm: 0.875rem; /* 14px */
+--font-size-base: 1rem; /* 16px */
+--font-size-lg: 1.125rem; /* 18px */
+--font-size-xl: 1.5rem; /* 24px */
 ```
 
 ---
@@ -181,20 +182,21 @@ pnpm add -D @types/react-router-dom
 
 ## Phase 1 Timeline (1 Week)
 
-| Phase | Days | Task | Output |
-|-------|------|------|--------|
-| 1a | 1 | Architecture | ✓ DONE (This Doc) |
-| 1b | 1-2 | Setup & Foundation | Projekt-Grundgerüst |
-| 1c | 2-3 | Layout & Components | UI sieht aus wie Design |
-| 1d | 2-3 | Logic & Interactivity | Filter/Search funktionieren |
-| 1e | 1-2 | Polish & Responsive | Mobile/Tablet/Desktop OK |
-| 1f | 0.5-1 | Review & Launch | MVP Live |
+| Phase | Days  | Task                  | Output                      |
+| ----- | ----- | --------------------- | --------------------------- |
+| 1a    | 1     | Architecture          | ✓ DONE (This Doc)           |
+| 1b    | 1-2   | Setup & Foundation    | Projekt-Grundgerüst         |
+| 1c    | 2-3   | Layout & Components   | UI sieht aus wie Design     |
+| 1d    | 2-3   | Logic & Interactivity | Filter/Search funktionieren |
+| 1e    | 1-2   | Polish & Responsive   | Mobile/Tablet/Desktop OK    |
+| 1f    | 0.5-1 | Review & Launch       | MVP Live                    |
 
 ---
 
 ## Success Criteria Checklist
 
 ### Functionality
+
 - [ ] Homepage with 70-80 articles
 - [ ] Search filters in real-time
 - [ ] Category filter works
@@ -204,18 +206,21 @@ pnpm add -D @types/react-router-dom
 - [ ] /search?q=... with URL-sync
 
 ### Design
+
 - [ ] KERN colors applied
 - [ ] Responsive (Mobile 2Col → Desktop 4Col)
 - [ ] Search bar sticky on desktop
 - [ ] Card hover effects
 
 ### Accessibility
+
 - [ ] Keyboard navigation works
 - [ ] Focus rings visible
 - [ ] WCAG AA contrast
 - [ ] Alt text on images
 
 ### Code
+
 - [ ] TypeScript strict mode
 - [ ] No console errors
 - [ ] ESLint/Prettier clean
@@ -264,27 +269,29 @@ Language: TypeScript 5.9.3 (strict mode)
 
 ## Key Files to Know
 
-| File | Purpose |
-|------|---------|
-| DESIGN_PLAN_MVP.md | Full architecture (Reference) |
-| FILE_STRUCTURE_TEMPLATE.md | Setup guide (For Phase 1b) |
-| ARCHITECT_SUMMARY.md | Executive brief (For meetings) |
-| src/types/index.ts | Article, Category types |
-| src/utils/filterArticles.ts | Core filter logic |
-| src/styles/theme.css | KERN CSS variables |
-| src/App.tsx | React Router setup |
+| File                        | Purpose                        |
+| --------------------------- | ------------------------------ |
+| DESIGN_PLAN_MVP.md          | Full architecture (Reference)  |
+| FILE_STRUCTURE_TEMPLATE.md  | Setup guide (For Phase 1b)     |
+| ARCHITECT_SUMMARY.md        | Executive brief (For meetings) |
+| src/types/index.ts          | Article, Category types        |
+| src/utils/filterArticles.ts | Core filter logic              |
+| src/styles/theme.css        | KERN CSS variables             |
+| src/App.tsx                 | React Router setup             |
 
 ---
 
 ## Phase 1 Definition
 
 **IN SCOPE:**
+
 - Homepage with grid
 - Search + Filter (Kategorie, Maturity)
 - Responsive design
 - KoliBri + KERN integrated
 
 **OUT OF SCOPE (Phase 2+):**
+
 - Detail pages
 - Advanced filters
 - Dark mode
@@ -306,14 +313,14 @@ Language: TypeScript 5.9.3 (strict mode)
 
 ## Debugging Checklist
 
-| Issue | Check |
-|-------|-------|
-| KoliBri not rendering | CSS assets copied? Theme registered? |
-| Filters not working | filterArticles() logic correct? State update? |
-| Mobile broken | Breakpoints in CSS? Grid columns adjust? |
-| Colors wrong | KERN CSS variables in theme.css? |
-| Search too slow | Debounce 300ms applied? |
-| Deep-links broken | URL params read correctly? |
+| Issue                 | Check                                         |
+| --------------------- | --------------------------------------------- |
+| KoliBri not rendering | CSS assets copied? Theme registered?          |
+| Filters not working   | filterArticles() logic correct? State update? |
+| Mobile broken         | Breakpoints in CSS? Grid columns adjust?      |
+| Colors wrong          | KERN CSS variables in theme.css?              |
+| Search too slow       | Debounce 300ms applied?                       |
+| Deep-links broken     | URL params read correctly?                    |
 
 ---
 
@@ -323,7 +330,7 @@ Language: TypeScript 5.9.3 (strict mode)
 - FILE_STRUCTURE_TEMPLATE.md (setup steps)
 - ARCHITECT_SUMMARY.md (overview)
 - ARCHITECTURE_INDEX.md (navigation)
-- data/*.csv (raw data to convert)
+- data/\*.csv (raw data to convert)
 
 ---
 
@@ -333,4 +340,4 @@ Language: TypeScript 5.9.3 (strict mode)
 
 ---
 
-*Version 1.0 | Created 2026-04-04 | Architect: Claude Code*
+_Version 1.0 | Created 2026-04-04 | Architect: Claude Code_

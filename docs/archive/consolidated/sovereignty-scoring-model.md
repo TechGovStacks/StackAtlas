@@ -29,15 +29,15 @@ Dieses Dokument ist die kanonische Referenz fuer den item-spezifischen Souveraen
 
 ## Kriterien und Gewichtung
 
-| Kriterium | Gewicht |
-| --- | ---: |
-| K1 Rechtliche Souveraenitaet | 15 % |
-| K2 Datenhoheit und Datenportabilitaet | 20 % |
-| K3 Technologische Offenheit und Interoperabilitaet | 15 % |
-| K4 Governance und Anbieterunabhaengigkeit | 15 % |
-| K5 Sicherheits- und Lieferketten-Souveraenitaet | 15 % |
-| K6 Betriebsautonomie und Exit-Faehigkeit | 10 % |
-| K7 Transparenz und Nachvollziehbarkeit | 10 % |
+| Kriterium                                          | Gewicht |
+| -------------------------------------------------- | ------: |
+| K1 Rechtliche Souveraenitaet                       |    15 % |
+| K2 Datenhoheit und Datenportabilitaet              |    20 % |
+| K3 Technologische Offenheit und Interoperabilitaet |    15 % |
+| K4 Governance und Anbieterunabhaengigkeit          |    15 % |
+| K5 Sicherheits- und Lieferketten-Souveraenitaet    |    15 % |
+| K6 Betriebsautonomie und Exit-Faehigkeit           |    10 % |
+| K7 Transparenz und Nachvollziehbarkeit             |    10 % |
 
 ## Berechnung
 

@@ -159,7 +159,7 @@ In Detailansicht explizit drei Bausteine zeigen:
 - Souveräne Adoption
 - Ökosystem-Präsenz (inkl. Rollenbeitrag)
 
-So wird sichtbar, *warum* ein Item wie bewertet wird.
+So wird sichtbar, _warum_ ein Item wie bewertet wird.
 
 ---
 
@@ -198,4 +198,3 @@ So wird sichtbar, *warum* ein Item wie bewertet wird.
 3. Review mit 10–15 repräsentativen Items (inkl. KoliBri-Fall).
 4. Nach Freigabe Flag default-on, alte Formel für einen Releasezyklus parallel
    berechenbar halten (Regression-Check).
-

@@ -1,6 +1,5 @@
 ---
 status: archived
-owner: Documentation Maintainers
 last_reviewed: 2026-04-09
 source_of_truth: docs/README.md
 ---
@@ -96,6 +95,7 @@ Recherchephase: Systematische Sammlung von Daten zu nationalen Technologie-Stack
 Expertenkonsultation: Validierung der Kriterien für den Souveränitäts-Score.
 Prototyp-Entwicklung: Erstellung einer ersten Version der Vergleichsmatrix und des Scores.
 Feedback-Schleife: Präsentation des Konzepts an Fachpublikum (z. B. auf IT-Konferenzen).
+
 
 Frage an Sie: Soll der Fokus zunächst auf europäischen Ländern liegen, oder sollen auch nicht-europäische Stacks (z. B. USA, China) einbezogen werden?
 
