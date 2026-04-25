@@ -5,6 +5,7 @@ import { Footer } from './components/Footer';
 import { HashLocationProvider } from './components/HashLocationProvider';
 import { Header } from './components/Header';
 import { PwaWrapper } from './components/PwaWrapper';
+import { ScrollToTopButton } from './components/ScrollToTopButton';
 import { RouteAnnouncementRegion } from './hooks/useRouteAnnouncement';
 import { DependencyGraphPage } from './pages/DependencyGraphPage';
 import { HomePage } from './pages/HomePage';
@@ -34,6 +35,7 @@ function AppContent() {
 			<Footer />
 			<PwaWrapper />
 			<BetaNoticeModal isOpen={betaModalOpen} onClose={() => setBetaModalOpen(false)} />
+			<ScrollToTopButton />
 		</div>
 	);
 }
