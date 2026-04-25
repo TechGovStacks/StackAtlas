@@ -1,0 +1,78 @@
+name: Data Correction
+description: Melden Sie Fehler in Stack- oder Item-Daten
+title: "[DATA] "
+labels: ["data", "needs-triage"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke, dass Sie einen Datenfehler melden! Bitte füllen Sie die folgenden Details aus.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Fehlerhafte Daten
+      description: Welche Daten sind fehlerhaft oder veraltet?
+      placeholder: Der Stack/Item...
+    validations:
+      required: true
+
+  - type: input
+    id: affected-item
+    attributes:
+      label: Betroffener Stack/Item
+      description: Name oder ID des betroffenen Items
+      placeholder: z.B. "nextcloud" oder "Item #42"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-data
+    attributes:
+      label: Aktuelle (falsche) Daten
+      description: Was ist derzeit eingetragen?
+      placeholder: |
+        - Name: ...
+        - URL: ...
+        - Beschreibung: ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: correct-data
+    attributes:
+      label: Korrekte Daten
+      description: Wie sollten die Daten sein?
+      placeholder: |
+        - Name: ...
+        - URL: ...
+        - Beschreibung: ...
+    validations:
+      required: true
+
+  - type: input
+    id: source
+    attributes:
+      label: Quelle/Beweis
+      description: Link zu offizieller Quelle (Website, Repository, etc.)
+      placeholder: https://...
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Zusätzliche Informationen
+      description: Weitere relevante Details?
+      placeholder: z.B. Änderungsdatum, Kontext...
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checkliste
+      options:
+        - label: Ich habe die Daten-Dokumentation in data/README.md gelesen
+          required: false
+        - label: Ich habe mit einer zuverlässigen Quelle überprüft
+          required: true
