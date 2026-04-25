@@ -61,12 +61,12 @@ Abschließende Einordnung und Handlungsempfehlung.
 
 ## Verfügbare `focus`-Keys
 
-| Key | Anzeige (DE) |
-| :--- | :--- |
-| `openDataGovernance` | Fokus: Open Data Governance |
+| Key                              | Anzeige (DE)                            |
+| :------------------------------- | :-------------------------------------- |
+| `openDataGovernance`             | Fokus: Open Data Governance             |
 | `identityWalletInteroperability` | Fokus: Identity Wallet Interoperability |
-| `reportTemplate` | Fokus: Report-Template |
-| `scoringExplained` | Fokus: Scoring erklärt |
+| `reportTemplate`                 | Fokus: Report-Template                  |
+| `scoringExplained`               | Fokus: Scoring erklärt                  |
 
 Neuen Key anlegen: Eintrag in **allen 8** Locale-Dateien ergänzen:
 `src/i18n/locales/{de,en,fr,es,it,da,no,sv}/common.json` → `pages.news.focus.<newKey>`
