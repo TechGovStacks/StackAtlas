@@ -206,6 +206,37 @@ export function StackGalleryPage() {
 				<p className="stack-gallery__subtitle">{t('stackGallery.subtitle')}</p>
 			</div>
 
+			<nav className="stack-gallery__compact-nav" aria-label={t('stackGallery.compactNavAria') || 'Stack Navigation'}>
+				<details className="stack-gallery__compact-nav-details">
+					<summary className="stack-gallery__compact-nav-summary">{t('stackGallery.compactNavTitle') || 'Stacks'}</summary>
+					<ul className="stack-gallery__compact-nav-list">
+						{builtInEntries.map((entry) => {
+							if (entry.kind === 'custom-note') {
+								return null;
+							}
+							const stackName = getLocalizedText(entry.stack.name, i18n.language);
+							return (
+								<li key={entry.stack.id} className="stack-gallery__compact-nav-item">
+									<a
+										href={`?stack=${entry.stack.id}`}
+										className="stack-gallery__compact-nav-link"
+										onClick={() => {
+											const target = document.getElementById(`stack-${entry.stack.id}`);
+											if (target) {
+												const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+												target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
+											}
+										}}
+									>
+										{entry.rank}. {stackName}
+									</a>
+								</li>
+							);
+						})}
+					</ul>
+				</details>
+			</nav>
+
 			<ol className="stack-gallery__list" aria-label={t('stackGallery.listAria')}>
 				{builtInEntries.map((entry) => {
 					if (entry.kind === 'custom-note') {

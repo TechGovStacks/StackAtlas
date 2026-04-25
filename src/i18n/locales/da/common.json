@@ -200,6 +200,8 @@
 		"title": "Stacks",
 		"subtitle": "Alle bedømte teknologistakke rangeret efter digital suverænitetsscore – bedst til lavest.",
 		"listAria": "Tekniske stakke rangeret efter suverænitetsscore",
+		"compactNavAria": "Staknavigation",
+		"compactNavTitle": "Naviger til stak",
 		"bestStack": "Toprangerede stak – guldplacering",
 		"rankAria": "Rangering {{rank}}",
 		"avgScore": "Gns. suverænitetsscore",

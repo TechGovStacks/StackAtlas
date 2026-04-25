@@ -205,6 +205,8 @@
 		"title": "Stacks",
 		"subtitle": "Tous les stacks technologiques évalués classés par score de souveraineté numérique – du meilleur au moins bon.",
 		"listAria": "Classement des stacks technologiques par score de souveraineté",
+		"compactNavAria": "Navigation des stacks",
+		"compactNavTitle": "Naviguer vers le stack",
 		"bestStack": "Meilleur stack – classement or",
 		"rankAria": "Rang {{rank}}",
 		"avgScore": "Score moy. de souveraineté",
