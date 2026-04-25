@@ -217,6 +217,7 @@ export function StackGalleryPage() {
 						const avgScore = computeStackAvgScore(entry.stack, ITEMS);
 						return (
 							<li key={entry.stack.id} className="stack-gallery__compact-nav-item">
+								<span className="stack-gallery__compact-nav-rank">#{entry.rank}</span>
 								<a
 									href={`?stack=${entry.stack.id}`}
 									className="stack-gallery__compact-nav-link"
@@ -229,17 +230,12 @@ export function StackGalleryPage() {
 										}
 									}}
 								>
-									<span className="stack-gallery__compact-nav-rank">#{entry.rank}</span>
-									<span className="stack-gallery__compact-nav-name">{stackName}</span>
-									<div className="stack-gallery__compact-nav-metric">
-										<span className="stack-gallery__compact-nav-metric-label">{t('stackGallery.compactNavDeps') || 'Deps'}</span>
-										<span className="stack-gallery__compact-nav-metric-value">{entry.stack.items.length}</span>
-									</div>
-									<div className="stack-gallery__compact-nav-metric">
-										<span className="stack-gallery__compact-nav-metric-label">{t('stackGallery.compactNavScore') || 'Score'}</span>
-										<span className="stack-gallery__compact-nav-metric-value">{avgScore.toFixed(1)}</span>
-									</div>
+									{stackName}
 								</a>
+								<span className="stack-gallery__compact-nav-metrics">
+									<span className="stack-gallery__compact-nav-metric">{entry.stack.items.length} {t('stackGallery.compactNavDeps') || 'Deps'}</span>
+									<span className="stack-gallery__compact-nav-metric">{avgScore.toFixed(1)} {t('stackGallery.compactNavScore') || 'Score'}</span>
+								</span>
 							</li>
 						);
 					})}
