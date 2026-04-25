@@ -6,8 +6,5 @@
  */
 export function countryToFlagEmoji(code?: string): string {
 	if (!code || !/^[a-z]{2}$/i.test(code)) return '';
-	return [...code.toUpperCase()]
-		.map((c) => String.fromCodePoint(0x1f1e6 + c.charCodeAt(0) - 65))
-		.join('');
+	return [...code.toUpperCase()].map((c) => String.fromCodePoint(0x1f1e6 + c.charCodeAt(0) - 65)).join('');
 }
-
