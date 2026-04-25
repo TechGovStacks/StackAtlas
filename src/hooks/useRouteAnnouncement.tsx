@@ -10,7 +10,7 @@ export function useRouteAnnouncement({ pageTitle, skipHeadingFocus = false }: Ro
 
 	useEffect(() => {
 		// Update document title
-		document.title = pageTitle;
+		document.title = `${pageTitle} | StackAtlas`;
 
 		// Announce page change to screenreaders
 		if (liveRegionRef.current) {
