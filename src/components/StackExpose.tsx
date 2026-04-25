@@ -3,8 +3,9 @@ import { ComponentChildren } from 'preact';
 import { useMemo } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { StackMetrics } from '../hooks/useStackMetrics';
-import { Layer, ParticipantRole, SovereigntyScoreCategory, Stack } from '../types';
-import { getLocalizedText } from '../utils';
+import { Layer, SovereigntyScoreCategory, Stack } from '../types';
+import { getLocalizedText, countryToFlagEmoji } from '../utils';
+import { ROLE_COLORS, PARTICIPANT_ROLES } from '../constants/roleColors';
 import { SovereigntyGauge } from './SovereigntyGauge';
 
 interface StackExposeProps {
@@ -16,12 +17,6 @@ interface StackExposeProps {
 	rank: number;
 }
 
-const ROLE_COLORS: Record<ParticipantRole, string> = {
-	maintainer: '#1565c0',
-	contributor: '#2e7d32',
-	funder: '#e65100',
-	consumer: '#546e7a',
-};
 const STATUS_COLORS = {
 	recommended: '#1565c0',
 	approved: '#2e7d32',
@@ -39,23 +34,12 @@ const CATEGORY_COLORS: Record<SovereigntyScoreCategory, string> = {
 	outstanding: '#1B5E20',
 };
 
-const PARTICIPANT_ROLES: ParticipantRole[] = ['maintainer', 'contributor', 'funder', 'consumer'];
-
 // Farben für Metrik-Werte: ≥50 % positiv (grün), <50 % negativ (rot)
 const METRIC_COLOR_POSITIVE = '#2e7d32';
 const METRIC_COLOR_NEGATIVE = '#c62828';
 
 function metricColor(pct: number): string {
 	return pct >= 50 ? METRIC_COLOR_POSITIVE : METRIC_COLOR_NEGATIVE;
-}
-
-/**
- * Konvertiert einen 2-buchstabigen ISO-Ländercode in ein Flag-Emoji.
- * 'DE' → '🇩🇪', 'EU' → '🇪🇺', etc.
- */
-function countryToFlagEmoji(code?: string): string {
-	if (!code || code.length !== 2) return '';
-	return [...code.toUpperCase()].map((c) => String.fromCodePoint(0x1f1e6 + c.charCodeAt(0) - 65)).join('');
 }
 
 export function StackExpose({ stack, metrics, allLayers, isTop, rank, children }: StackExposeProps) {
