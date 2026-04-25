@@ -9,11 +9,7 @@
 	},
 	"homepage": "https://kafka.apache.org/",
 	"license": "Apache-2.0",
-	"tags": [
-		"streaming",
-		"events",
-		"messaging"
-	],
+	"tags": ["streaming", "events", "messaging"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

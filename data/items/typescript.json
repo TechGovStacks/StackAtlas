@@ -9,11 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.typescriptlang.org/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Typescript_logo_2020.svg",
-	"tags": [
-		"programmierung",
-		"sprache"
-	],
+	"tags": ["programmierung", "sprache"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

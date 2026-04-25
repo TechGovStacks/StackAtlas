@@ -9,13 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://haystack.deepset.ai/",
-	"logo": "https://raw.githubusercontent.com/deepset-ai/haystack/main/docs/img/haystack_icon_colored.png",
-	"tags": [
-		"orchestrierung",
-		"rag",
-		"verarbeitung",
-		"pipeline"
-	],
+	"tags": ["orchestrierung", "rag", "verarbeitung", "pipeline"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

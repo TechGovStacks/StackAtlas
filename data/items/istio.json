@@ -8,12 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://istio.io/",
-	"logo": "https://istio.io/latest/img/icons/istio.svg",
-	"tags": [
-		"load-balancer",
-		"orchestrierung",
-		"mesh"
-	],
+	"tags": ["load-balancer", "orchestrierung", "mesh"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

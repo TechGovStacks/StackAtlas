@@ -9,11 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://angelml.ai",
-	"tags": [
-		"machine-learning",
-		"verarbeitung",
-		"ml"
-	],
+	"tags": ["machine-learning", "verarbeitung", "ml"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

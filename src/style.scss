@@ -1,3 +1,14 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   ScrollToTopButton
+   ───────────────────────────────────────────────────────────────────────────── */
+.scroll-to-top-btn {
+	position: fixed;
+	right: 1.5rem;
+	bottom: 1.5rem;
+	z-index: 1000;
+	transition: opacity 0.2s;
+}
+
 .footer__nav-section ul {
 	list-style: none !important;
 	padding: 0 !important;
@@ -1017,6 +1028,29 @@ kol-card.article-card,
 	height: 40px;
 	flex-shrink: 0;
 	display: block;
+}
+
+/* Großes Logo im Drawer */
+.article-logo--drawer {
+	display: block;
+	margin: 0 auto;
+	width: 180px;
+	height: 180px;
+	max-width: 90%;
+	max-height: 180px;
+	object-fit: contain;
+	background: var(--ds-color-bg);
+	border-radius: var(--ds-radius-md);
+	padding: 8px;
+}
+
+.article-logo-placeholder--drawer {
+	display: block;
+	margin: 0 auto;
+	width: 180px;
+	height: 180px;
+	max-width: 90%;
+	max-height: 180px;
 }
 
 .card-content {

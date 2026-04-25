@@ -9,13 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://budibase.com/",
-	"logo": "https://raw.githubusercontent.com/Budibase/budibase/master/packages/builder/public/logo.svg",
-	"tags": [
-		"automations",
-		"open-source",
-		"datenquellen",
-		"low-code"
-	],
+	"tags": ["automations", "open-source", "datenquellen", "low-code"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

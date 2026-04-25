@@ -9,12 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://couchdb.apache.org/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/CouchDB_logo.svg",
-	"tags": [
-		"nosql",
-		"datenbank",
-		"dokumentenbasiert"
-	],
+	"tags": ["nosql", "datenbank", "dokumentenbasiert"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

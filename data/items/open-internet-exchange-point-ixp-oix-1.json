@@ -8,12 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.oix.org/standards-and-certifications/ixp-oix-1-certification/",
-	"tags": [
-		"netz",
-		"netzwerk",
-		"internet-exchange-point",
-		"ixp"
-	],
+	"tags": ["netz", "netzwerk", "internet-exchange-point", "ixp"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

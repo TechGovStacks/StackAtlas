@@ -9,12 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://grpc.io/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/GRPC_logo.svg",
-	"tags": [
-		"rpc",
-		"api",
-		"schnittstelle"
-	],
+	"tags": ["rpc", "api", "schnittstelle"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

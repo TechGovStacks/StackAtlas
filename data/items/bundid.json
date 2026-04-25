@@ -9,12 +9,7 @@
 		"en": "BundID is Germany's federal citizen account for digital administrative services. It supports eIDAS-compliant assurance levels and integrates with web services via SAML or OpenID Connect so that forms can be pre-filled automatically."
 	},
 	"homepage": "https://id.bund.de/",
-	"tags": [
-		"egovernment",
-		"identity",
-		"eidas",
-		"germany"
-	],
+	"tags": ["egovernment", "identity", "eidas", "germany"],
 	"oss": false,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

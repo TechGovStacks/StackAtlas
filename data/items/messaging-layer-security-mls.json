@@ -8,11 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://messaginglayersecurity.rocks/",
-	"tags": [
-		"sicherheit",
-		"kurznachricht",
-		"datenuebertragung"
-	],
+	"tags": ["sicherheit", "kurznachricht", "datenuebertragung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

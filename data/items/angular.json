@@ -9,11 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://angular.dev/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Angular_full_color_logo.svg",
-	"tags": [
-		"webframework",
-		"user-interface"
-	],
+	"tags": ["webframework", "user-interface"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

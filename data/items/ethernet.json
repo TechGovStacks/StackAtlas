@@ -8,13 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.ieee802.org/3/",
-	"tags": [
-		"paket",
-		"kabelgebunden",
-		"rj",
-		"lan",
-		"frame"
-	],
+	"tags": ["paket", "kabelgebunden", "rj", "lan", "frame"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

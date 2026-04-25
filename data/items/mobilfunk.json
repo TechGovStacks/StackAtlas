@@ -8,12 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.3gpp.org/",
-	"tags": [
-		"lte",
-		"funk",
-		"zelle",
-		"drahtlos"
-	],
+	"tags": ["lte", "funk", "zelle", "drahtlos"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

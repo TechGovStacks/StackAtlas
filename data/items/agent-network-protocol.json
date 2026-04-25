@@ -9,11 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://agent-network-protocol.com/",
-	"tags": [
-		"agent",
-		"kommunikation",
-		"agentische-ki"
-	],
+	"tags": ["agent", "kommunikation", "agentische-ki"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

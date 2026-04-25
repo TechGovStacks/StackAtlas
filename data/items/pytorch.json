@@ -9,14 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://pytorch.org/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/PyTorch_logo_icon.svg",
-	"tags": [
-		"deep-learning",
-		"neuronale-netze",
-		"verarbeitung",
-		"nlp",
-		"machine-learning"
-	],
+	"tags": ["deep-learning", "neuronale-netze", "verarbeitung", "nlp", "machine-learning"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

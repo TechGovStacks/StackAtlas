@@ -9,13 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.postgresql.org/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Postgresql_elephant.svg",
-	"tags": [
-		"open-source",
-		"datenbank",
-		"sql",
-		"relational"
-	],
+	"tags": ["open-source", "datenbank", "sql", "relational"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

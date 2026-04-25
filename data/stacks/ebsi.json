@@ -22,7 +22,7 @@
 			}
 		},
 		{
-			"itemId": "open-id-connect-oidc",
+			"itemId": "openid",
 			"status": "approved",
 			"role": "consumer",
 			"rationale": {

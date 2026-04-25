@@ -8,12 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://spacy.io/usage",
-	"logo": "https://spacy.io/_static/logo.png",
-	"tags": [
-		"dl",
-		"verarbeitung",
-		"nlp"
-	],
+	"tags": ["dl", "verarbeitung", "nlp"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -97,16 +97,16 @@ Fehlende externe Signale führen zu Lücken:
 
 ```typescript
 export type PopularityMetrics = {
-  /** ISO 8601 date when metrics were last updated — required for ageFactor calculation */
-  updatedAt: string;
-  /** GitHub star count */
-  githubStars?: number;
-  /** npm weekly download count */
-  npmWeeklyDownloads?: number;
-  /** Docker Hub weekly pull count */
-  dockerWeeklyPulls?: number;
-  /** PyPI weekly download count */
-  pypiWeeklyDownloads?: number;
+	/** ISO 8601 date when metrics were last updated — required for ageFactor calculation */
+	updatedAt: string;
+	/** GitHub star count */
+	githubStars?: number;
+	/** npm weekly download count */
+	npmWeeklyDownloads?: number;
+	/** Docker Hub weekly pull count */
+	dockerWeeklyPulls?: number;
+	/** PyPI weekly download count */
+	pypiWeeklyDownloads?: number;
 };
 ```
 
@@ -114,10 +114,10 @@ Erweiterung von `Item`:
 
 ```typescript
 export type Item = {
-  // ... existing fields ...
-  popularityMetrics?: PopularityMetrics;
-  // Computed (nicht im JSON, gesetzt durch generate-data.mjs):
-  popularityScore?: number; // 0-100, only if popularityMetrics present
+	// ... existing fields ...
+	popularityMetrics?: PopularityMetrics;
+	// Computed (nicht im JSON, gesetzt durch generate-data.mjs):
+	popularityScore?: number; // 0-100, only if popularityMetrics present
 };
 ```
 
@@ -127,9 +127,9 @@ export type Item = {
 
 ```typescript
 export type AdoptionResult = {
-  // ... existing fields ...
-  /** Popularity score (0-100): normalized log-scale from external signals. Undefined if no data. */
-  popularityScore?: number;
+	// ... existing fields ...
+	/** Popularity score (0-100): normalized log-scale from external signals. Undefined if no data. */
+	popularityScore?: number;
 };
 ```
 
@@ -145,20 +145,20 @@ Der Popularity Score wird aus den vorhandenen optionalen Signalen zusammengesetz
 
 Verschiedene Plattformen haben unterschiedliche Reichweiten und Skalen. Um Vergleichbarkeit herzustellen, werden Plattform-spezifische Referenzwerte (`REF`) definiert, bei denen ein Item als "sehr popular" gilt (entspricht 100 normalisierten Punkten):
 
-| Signal | Referenzwert (`REF`) | Begründung |
-|--------|---------------------|-----------|
-| `githubStars` | 50.000 | Top-Tier OSS-Projekte (Kubernetes: ~110k, Nextcloud: ~28k) |
-| `npmWeeklyDownloads` | 5.000.000 | Sehr populäre npm-Pakete (react: ~50M, express: ~35M) |
-| `dockerWeeklyPulls` | 1.000.000 | Top-Docker-Images (nginx: ~10M, postgres: ~5M) |
-| `pypiWeeklyDownloads` | 5.000.000 | Populäre Python-Pakete (requests: ~100M) |
+| Signal                | Referenzwert (`REF`) | Begründung                                                 |
+| --------------------- | -------------------- | ---------------------------------------------------------- |
+| `githubStars`         | 50.000               | Top-Tier OSS-Projekte (Kubernetes: ~110k, Nextcloud: ~28k) |
+| `npmWeeklyDownloads`  | 5.000.000            | Sehr populäre npm-Pakete (react: ~50M, express: ~35M)      |
+| `dockerWeeklyPulls`   | 1.000.000            | Top-Docker-Images (nginx: ~10M, postgres: ~5M)             |
+| `pypiWeeklyDownloads` | 5.000.000            | Populäre Python-Pakete (requests: ~100M)                   |
 
 #### Schritt 2: Log-Normalisierung je Signal
 
 ```typescript
 function normalizeSignal(value: number, ref: number): number {
-  // log1p-Normalisierung, capped at 1.0
-  // Ergibt 0.0 bei value=0, 0.5 bei value≈ref/10, 1.0 bei value≥ref
-  return Math.min(1.0, Math.log1p(value) / Math.log1p(ref));
+	// log1p-Normalisierung, capped at 1.0
+	// Ergibt 0.0 bei value=0, 0.5 bei value≈ref/10, 1.0 bei value≥ref
+	return Math.min(1.0, Math.log1p(value) / Math.log1p(ref));
 }
 ```
 
@@ -177,25 +177,21 @@ Um Doppelzählung zu vermeiden (ein Tool, das auf npm und Docker präsent ist, s
 
 ```typescript
 function computeRawPopularityScore(metrics: PopularityMetrics): number {
-  const signals: number[] = [];
-  
-  if (metrics.githubStars !== undefined)
-    signals.push(normalizeSignal(metrics.githubStars, 50_000));
-  if (metrics.npmWeeklyDownloads !== undefined)
-    signals.push(normalizeSignal(metrics.npmWeeklyDownloads, 5_000_000));
-  if (metrics.dockerWeeklyPulls !== undefined)
-    signals.push(normalizeSignal(metrics.dockerWeeklyPulls, 1_000_000));
-  if (metrics.pypiWeeklyDownloads !== undefined)
-    signals.push(normalizeSignal(metrics.pypiWeeklyDownloads, 5_000_000));
-  
-  if (signals.length === 0) return 0;
-  
-  // Primär: Maximum des stärksten Signals
-  // Sekundär: kleiner Bonus für Multisignal-Präsenz (cross-platform)
-  const maxSignal = Math.max(...signals);
-  const multiPlatformBonus = Math.max(0, Math.min(0.1, (signals.filter(s => s > 0).length - 1) * 0.05));
-  
-  return Math.min(1.0, maxSignal + multiPlatformBonus);
+	const signals: number[] = [];
+
+	if (metrics.githubStars !== undefined) signals.push(normalizeSignal(metrics.githubStars, 50_000));
+	if (metrics.npmWeeklyDownloads !== undefined) signals.push(normalizeSignal(metrics.npmWeeklyDownloads, 5_000_000));
+	if (metrics.dockerWeeklyPulls !== undefined) signals.push(normalizeSignal(metrics.dockerWeeklyPulls, 1_000_000));
+	if (metrics.pypiWeeklyDownloads !== undefined) signals.push(normalizeSignal(metrics.pypiWeeklyDownloads, 5_000_000));
+
+	if (signals.length === 0) return 0;
+
+	// Primär: Maximum des stärksten Signals
+	// Sekundär: kleiner Bonus für Multisignal-Präsenz (cross-platform)
+	const maxSignal = Math.max(...signals);
+	const multiPlatformBonus = Math.max(0, Math.min(0.1, (signals.filter((s) => s > 0).length - 1) * 0.05));
+
+	return Math.min(1.0, maxSignal + multiPlatformBonus);
 }
 ```
 
@@ -205,12 +201,12 @@ Veraltete Daten (> 12 Monate) sollten ein geringeres Gewicht haben:
 
 ```typescript
 function ageFactor(updatedAt?: string): number {
-  if (!updatedAt) return 0.8; // Unbekanntes Alter → konservativ
-  const ageMonths = monthsSince(updatedAt);
-  if (ageMonths <= 6) return 1.0;
-  if (ageMonths <= 12) return 0.9;
-  if (ageMonths <= 24) return 0.7;
-  return 0.5; // Sehr alte Daten haben halbes Gewicht
+	if (!updatedAt) return 0.8; // Unbekanntes Alter → konservativ
+	const ageMonths = monthsSince(updatedAt);
+	if (ageMonths <= 6) return 1.0;
+	if (ageMonths <= 12) return 0.9;
+	if (ageMonths <= 24) return 0.7;
+	return 0.5; // Sehr alte Daten haben halbes Gewicht
 }
 ```
 
@@ -218,9 +214,9 @@ function ageFactor(updatedAt?: string): number {
 
 ```typescript
 export function computePopularityScore(metrics: PopularityMetrics): number {
-  const raw = computeRawPopularityScore(metrics);
-  const age = ageFactor(metrics.updatedAt);
-  return Math.round(raw * age * 100);
+	const raw = computeRawPopularityScore(metrics);
+	const age = ageFactor(metrics.updatedAt);
+	return Math.round(raw * age * 100);
 }
 ```
 
@@ -229,6 +225,7 @@ export function computePopularityScore(metrics: PopularityMetrics): number {
 #### Designprinzip: Popularity als optionale Ergänzung des Adoption-Signals
 
 Popularität ist konzeptuell dem Adoption Score verwandt (beide messen externe Verbreitung), unterscheidet sich aber durch:
+
 - Adoption Score = kuratierte Stack-Präsenz (qualitativ, kontrolliert)
 - Popularity Score = externe Markt-Signale (quantitativ, roh)
 
@@ -273,8 +270,8 @@ overallScore = round(
 
 ```javascript
 // Popularity blending
-export const POPULARITY_ADOPTION_BLEND = 0.3;    // 30% Popularity in Adoption-Blending
-export const POPULARITY_ADOPTION_WEIGHT = 0.7;   // 70% bisheriger Adoption Score
+export const POPULARITY_ADOPTION_BLEND = 0.3; // 30% Popularity in Adoption-Blending
+export const POPULARITY_ADOPTION_WEIGHT = 0.7; // 70% bisheriger Adoption Score
 
 // Platform-Referenzwerte für log-Normalisierung
 export const POPULARITY_REF_GITHUB_STARS = 50_000;
@@ -330,25 +327,25 @@ export const POPULARITY_REF_PYPI_WEEKLY = 5_000_000;
 
 ## 6. Dokumentations-Updates
 
-| Dokument | Art der Änderung |
-|----------|-----------------|
-| `docs/ITEM_METRICS_SCHEMA.md` | Neuer Abschnitt „Popularity Metrics" mit Schema-Referenz, Normalisierungsformel, Referenzwerten |
-| `docs/SCORING_SCALE_DESIGN.md` | Abschnitt „Overall Score" aktualisieren: blendedAdoption-Formel, Max-Einfluss ±4,5 Punkte dokumentieren |
-| `docs/ARC42.md` | Kapitel Datenmodell und Scoring-Pipeline um `popularityMetrics` erweitern |
-| `data/schemas/item.schema.json` | Inline-Descriptions (erfolgt in Schritt 1) |
-| `src/config/adoptionScoringWeights.mjs` | JSDoc für neue Konstanten |
+| Dokument                                | Art der Änderung                                                                                        |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| `docs/ITEM_METRICS_SCHEMA.md`           | Neuer Abschnitt „Popularity Metrics" mit Schema-Referenz, Normalisierungsformel, Referenzwerten         |
+| `docs/SCORING_SCALE_DESIGN.md`          | Abschnitt „Overall Score" aktualisieren: blendedAdoption-Formel, Max-Einfluss ±4,5 Punkte dokumentieren |
+| `docs/ARC42.md`                         | Kapitel Datenmodell und Scoring-Pipeline um `popularityMetrics` erweitern                               |
+| `data/schemas/item.schema.json`         | Inline-Descriptions (erfolgt in Schritt 1)                                                              |
+| `src/config/adoptionScoringWeights.mjs` | JSDoc für neue Konstanten                                                                               |
 
 ---
 
 ## 7. Risiken & Mitigationen
 
-| Risiko | Wahrscheinlichkeit | Mitigation |
-|--------|-------------------|-----------|
-| Popularitätsverzerrung zugunsten US-dominierter Ökosysteme (npm, GitHub) | Mittel | Maximaler Einfluss auf ±4,5 Punkte begrenzt; Sovereignty bleibt bei 60% |
-| Veraltete Daten verfälschen Score | Mittel | `ageFactor`-Abzug; `updatedAt`-Pflichtfeld für Transparenz; UI-Badge für alte Daten |
-| Proprietäre Tools mit hoher Popularity bevorzugt | Niedrig | Popularity beeinflusst nur Adoption-Segment (15%); Sovereignty (60%) dominiert weiterhin |
-| Kuration aufwändig ohne Automation | Hoch | Optionales Backfill-Skript (Phase 4); Feature ist explizit optional — Daten müssen nicht sofort gepflegt werden |
-| Score-Volatilität bei häufig aktualisierten Daten | Niedrig | Scores werden nur bei `generate-data`-Build neu berechnet, nicht live |
+| Risiko                                                                   | Wahrscheinlichkeit | Mitigation                                                                                                      |
+| ------------------------------------------------------------------------ | ------------------ | --------------------------------------------------------------------------------------------------------------- |
+| Popularitätsverzerrung zugunsten US-dominierter Ökosysteme (npm, GitHub) | Mittel             | Maximaler Einfluss auf ±4,5 Punkte begrenzt; Sovereignty bleibt bei 60%                                         |
+| Veraltete Daten verfälschen Score                                        | Mittel             | `ageFactor`-Abzug; `updatedAt`-Pflichtfeld für Transparenz; UI-Badge für alte Daten                             |
+| Proprietäre Tools mit hoher Popularity bevorzugt                         | Niedrig            | Popularity beeinflusst nur Adoption-Segment (15%); Sovereignty (60%) dominiert weiterhin                        |
+| Kuration aufwändig ohne Automation                                       | Hoch               | Optionales Backfill-Skript (Phase 4); Feature ist explizit optional — Daten müssen nicht sofort gepflegt werden |
+| Score-Volatilität bei häufig aktualisierten Daten                        | Niedrig            | Scores werden nur bei `generate-data`-Build neu berechnet, nicht live                                           |
 
 ---
 

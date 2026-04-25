@@ -9,11 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.trychroma.com/",
-	"logo": "https://raw.githubusercontent.com/chroma-core/chroma/main/docs/assets/chroma.svg",
-	"tags": [
-		"datenbank",
-		"vektor"
-	],
+	"tags": ["datenbank", "vektor"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

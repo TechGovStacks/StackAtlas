@@ -9,13 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://nginx.org/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nginx_logo.svg",
-	"tags": [
-		"proxy",
-		"load-balancer",
-		"gateway",
-		"orchestrierung"
-	],
+	"tags": ["proxy", "load-balancer", "gateway", "orchestrierung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -9,11 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.selenium.dev/",
-	"tags": [
-		"automation",
-		"testing",
-		"user-interface"
-	],
+	"tags": ["automation", "testing", "user-interface"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

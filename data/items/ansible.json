@@ -10,11 +10,7 @@
 	},
 	"homepage": "https://www.ansible.com/",
 	"license": "GPL-3.0-or-later",
-	"tags": [
-		"automation",
-		"configuration",
-		"iac"
-	],
+	"tags": ["automation", "configuration", "iac"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -9,11 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.langchain.com/langgraph",
-	"logo": "https://raw.githubusercontent.com/langchain-ai/langgraph/main/docs/static/img/langgraph_logo.png",
-	"tags": [
-		"ki",
-		"agent"
-	],
+	"tags": ["ki", "agent"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

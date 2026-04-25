@@ -9,13 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://spinnaker.io/",
-	"logo": "https://spinnaker.io/assets/images/spinnaker.svg",
-	"tags": [
-		"pipeline",
-		"cd",
-		"bereitstellung",
-		"ci"
-	],
+	"tags": ["pipeline", "cd", "bereitstellung", "ci"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

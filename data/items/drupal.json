@@ -10,11 +10,7 @@
 	},
 	"homepage": "https://www.drupal.org/",
 	"license": "GPL-2.0-or-later",
-	"tags": [
-		"cms",
-		"egovernment",
-		"accessibility"
-	],
+	"tags": ["cms", "egovernment", "accessibility"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

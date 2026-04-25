@@ -9,10 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/wg/mpls/documents/",
-	"tags": [
-		"netzwerk",
-		"weitverkehr"
-	],
+	"tags": ["netzwerk", "weitverkehr"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

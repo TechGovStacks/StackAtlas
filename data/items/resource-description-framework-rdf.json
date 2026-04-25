@@ -8,10 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.w3.org/RDF/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/RDF_logo.svg",
-	"tags": [
-		"datenformat"
-	],
+	"tags": ["datenformat"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

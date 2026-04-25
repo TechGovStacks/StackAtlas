@@ -8,10 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc7763",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Markdown-mark.svg",
-	"tags": [
-		"datenformat"
-	],
+	"tags": ["datenformat"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -9,32 +9,32 @@ const ITEMS_DIR = path.join(__dirname, '..', 'data', 'items');
 const STACK_FILE = path.join(__dirname, '..', 'data', 'stacks', 'germany.json');
 
 // Read all JSON files from data/items/
-const files = fs.readdirSync(ITEMS_DIR).filter(file => {
-  return file.endsWith('.json') && file !== 'README.md';
+const files = fs.readdirSync(ITEMS_DIR).filter((file) => {
+	return file.endsWith('.json') && file !== 'README.md';
 });
 
 console.log(`Found ${files.length} JSON files to process...\n`);
 
 // Process each file and extract IDs
 const items = [];
-files.forEach(file => {
-  const filePath = path.join(ITEMS_DIR, file);
-  const content = fs.readFileSync(filePath, 'utf-8');
-  const data = JSON.parse(content);
-  
-  // Create stack item entry according to schema
-  const stackItem = {
-    itemId: data.id,
-    status: 'approved',
-    role: 'consumer',
-    rationale: {
-      de: 'Integriert in den Deutschland Stack',
-      en: 'Integrated into Germany Stack'
-    }
-  };
-  
-  items.push(stackItem);
-  console.log(`✓ Added: ${data.id}`);
+files.forEach((file) => {
+	const filePath = path.join(ITEMS_DIR, file);
+	const content = fs.readFileSync(filePath, 'utf-8');
+	const data = JSON.parse(content);
+
+	// Create stack item entry according to schema
+	const stackItem = {
+		itemId: data.id,
+		status: 'approved',
+		role: 'consumer',
+		rationale: {
+			de: 'Integriert in den Deutschland Stack',
+			en: 'Integrated into Germany Stack',
+		},
+	};
+
+	items.push(stackItem);
+	console.log(`✓ Added: ${data.id}`);
 });
 
 // Read existing stack file

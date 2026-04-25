@@ -9,12 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc9293",
-	"tags": [
-		"paket",
-		"datenuebertragung",
-		"zustellung",
-		"datenintegritaet"
-	],
+	"tags": ["paket", "datenuebertragung", "zustellung", "datenintegritaet"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

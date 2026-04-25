@@ -9,12 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.mysql.com/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/MySQL_logo.svg",
-	"tags": [
-		"datenbank",
-		"sql",
-		"relational"
-	],
+	"tags": ["datenbank", "sql", "relational"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

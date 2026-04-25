@@ -9,12 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://hbase.apache.org/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/HBase_logo.svg",
-	"tags": [
-		"nosql",
-		"datenbank",
-		"spalten"
-	],
+	"tags": ["nosql", "datenbank", "spalten"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -17,38 +17,43 @@ Detailreferenz fuer Layer- und Sublayer-Zuordnung. Terminologie ist mit `data/RE
 
 ## Layer-IDs (verbindlich)
 
-| Order | Layer-ID | Name (DE) |
-| ---: | --- | --- |
-| 1 | `infrastructure` | Infrastruktur |
-| 2 | `platform` | Plattform |
-| 3 | `building-blocks` | Bausteine |
-| 4 | `applications` | Anwendungen |
-| 5 | `sovereign-standards` | Souveraenitaetsstandards |
+| Order | Layer-ID              | Name (DE)                |
+| ----: | --------------------- | ------------------------ |
+|     1 | `infrastructure`      | Infrastruktur            |
+|     2 | `platform`            | Plattform                |
+|     3 | `building-blocks`     | Bausteine                |
+|     4 | `applications`        | Anwendungen              |
+|     5 | `sovereign-standards` | Souveraenitaetsstandards |
 
 ## Sublayer-Bereiche
 
 ### Infrastructure
+
 - `anschluss`
 - `transport`
 - `verteilung`
 
 ### Platform
+
 - `daten`
 - `integration`
 - `ki`
 - `lowcode`
 
 ### Building Blocks
+
 - `sprachen`
 - `frameworks`
 - `inbetriebnahme`
 - `sicherheit`
 
 ### Applications
+
 - `browser`
 - `native-apps`
 
 ### Sovereign Standards
+
 - `ux`
 - `kommunikation`
 - `ki-souveraen`

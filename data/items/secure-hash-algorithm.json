@@ -8,13 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://csrc.nist.gov/projects/hash-functions",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/SHA-2.svg",
-	"tags": [
-		"schluessel",
-		"integritaet",
-		"manipulation",
-		"pruefwert"
-	],
+	"tags": ["schluessel", "integritaet", "manipulation", "pruefwert"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -8,12 +8,8 @@
 		"de": "C++ ist eine objektorientierte Programmiersprache für die Entwicklung von Systemsoftware.",
 		"en": ""
 	},
-	"homepage": "https://isocpp.org/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/ISO_C%2B%2B_Logo.svg",
-	"tags": [
-		"programmierung",
-		"sprache"
-	],
+	"homepage": "https://en.cppreference.com/w/c",
+	"tags": ["programmierung", "sprache"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

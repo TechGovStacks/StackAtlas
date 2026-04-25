@@ -8,10 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/wg/sipcore/about/",
-	"tags": [
-		"telefonie",
-		"kommunikation"
-	],
+	"tags": ["telefonie", "kommunikation"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

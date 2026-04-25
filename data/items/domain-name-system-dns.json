@@ -8,11 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/wg/dns/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/DNS_Architecture.svg",
-	"tags": [
-		"adresse",
-		"netzwerk"
-	],
+	"tags": ["adresse", "netzwerk"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

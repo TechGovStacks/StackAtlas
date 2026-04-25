@@ -23,7 +23,7 @@
 			}
 		},
 		{
-			"itemId": "nodejs",
+			"itemId": "node-js",
 			"status": "approved",
 			"role": "consumer",
 			"rationale": {

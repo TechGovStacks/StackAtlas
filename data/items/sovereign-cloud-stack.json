@@ -12,15 +12,7 @@
 	"github": {
 		"repo": "https://github.com/SovereignCloudStack"
 	},
-	"tags": [
-		"cloud",
-		"federation",
-		"germany",
-		"iaas",
-		"interoperability",
-		"kaas",
-		"sovereignty"
-	],
+	"tags": ["cloud", "federation", "germany", "iaas", "interoperability", "kaas", "sovereignty"],
 	"oss": true,
 	"maturity": "incubation",
 	"sovereigntyCriteria": {

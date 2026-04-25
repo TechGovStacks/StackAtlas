@@ -9,12 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://react.dev/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/React-icon.svg",
-	"tags": [
-		"webdesign",
-		"components",
-		"user-interface"
-	],
+	"tags": ["webdesign", "components", "user-interface"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -9,11 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://microsoft.github.io/promptflow/",
-	"logo": "https://raw.githubusercontent.com/microsoft/promptflow/main/docs/media/logo/promptflow_logo_light.png",
-	"tags": [
-		"entwicklung",
-		"verarbeitung"
-	],
+	"tags": ["entwicklung", "verarbeitung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

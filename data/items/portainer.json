@@ -9,10 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.portainer.io/",
-	"logo": "https://raw.githubusercontent.com/portainer/portainer/develop/app/assets/images/logo_alt.svg",
-	"tags": [
-		"orchestrierung"
-	],
+	"tags": ["orchestrierung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

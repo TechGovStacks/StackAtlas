@@ -1,6 +1,6 @@
 {
-	"id": "kolibri",
-	"name": "KoliBri (Public-UI)",
+	"id": "public-ui-kolibri",
+	"name": "Public-UI KoliBri",
 	"layer": "building-blocks",
 	"sublayer": "frameworks",
 	"description": {
@@ -8,7 +8,6 @@
 		"en": "Public UI KoliBri is a component library for developing accessible web interfaces. It provides pre-built, accessible UI components that comply with WCAG standards and enables rapid development of government applications with high accessibility requirements."
 	},
 	"homepage": "https://public-ui.github.io/",
-	"logo": "https://public-ui.github.io/logo.svg",
 	"tags": ["webframework", "user-interface", "components", "accessibility", "wcag"],
 	"oss": true,
 	"maturity": "graduated",

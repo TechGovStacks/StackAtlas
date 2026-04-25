@@ -8,13 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://fluxcd.io/",
-	"logo": "https://fluxcd.io/img/logos/flux-icon@2x.png",
-	"tags": [
-		"pipeline",
-		"cd",
-		"bereitstellung",
-		"ci"
-	],
+	"tags": ["pipeline", "cd", "bereitstellung", "ci"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

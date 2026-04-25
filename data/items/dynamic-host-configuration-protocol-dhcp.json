@@ -8,10 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/wg/dhc/about/",
-	"tags": [
-		"adresse",
-		"netzwerk"
-	],
+	"tags": ["adresse", "netzwerk"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

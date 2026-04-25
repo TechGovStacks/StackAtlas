@@ -10,9 +10,10 @@ const stackMetadata = JSON.parse(fs.readFileSync(stackPath, 'utf-8'));
 
 // Read all JSON files from data/items/
 const itemsDir = path.join(__dirname, 'data/items/');
-const files = fs.readdirSync(itemsDir)
-  .filter(file => file.endsWith('.json') && file !== 'README.md')
-  .sort();
+const files = fs
+	.readdirSync(itemsDir)
+	.filter((file) => file.endsWith('.json') && file !== 'README.md')
+	.sort();
 
 console.log(`Found ${files.length} item files`);
 
@@ -20,21 +21,21 @@ console.log(`Found ${files.length} item files`);
 const stackItems = [];
 
 for (const file of files) {
-  const itemPath = path.join(itemsDir, file);
-  const itemData = JSON.parse(fs.readFileSync(itemPath, 'utf-8'));
-  
-  // Create correct stack item entry with schema-compliant fields
-  const stackItem = {
-    itemId: itemData.id,
-    status: "approved",
-    note: {
-      "de": "Integriert in den Deutschland Stack",
-      "en": "Integrated into Germany Stack"
-    }
-  };
-  
-  stackItems.push(stackItem);
-  console.log(`✓ Processed: ${itemData.id}`);
+	const itemPath = path.join(itemsDir, file);
+	const itemData = JSON.parse(fs.readFileSync(itemPath, 'utf-8'));
+
+	// Create correct stack item entry with schema-compliant fields
+	const stackItem = {
+		itemId: itemData.id,
+		status: 'approved',
+		note: {
+			de: 'Integriert in den Deutschland Stack',
+			en: 'Integrated into Germany Stack',
+		},
+	};
+
+	stackItems.push(stackItem);
+	console.log(`✓ Processed: ${itemData.id}`);
 }
 
 // Update the stack metadata with new items

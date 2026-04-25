@@ -9,12 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://qdrant.tech/",
-	"logo": "https://qdrant.tech/images/qdrant-logo.svg",
-	"tags": [
-		"datenbank",
-		"container",
-		"vektor"
-	],
+	"tags": ["datenbank", "vektor"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

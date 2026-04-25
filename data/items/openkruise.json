@@ -8,12 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://openkruise.io/",
-	"tags": [
-		"pipeline",
-		"cd",
-		"bereitstellung",
-		"ci"
-	],
+	"tags": ["pipeline", "cd", "bereitstellung", "ci"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

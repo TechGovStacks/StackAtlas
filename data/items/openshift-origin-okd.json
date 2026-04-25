@@ -8,11 +8,7 @@
 		"en": ""
 	},
 	"homepage": "http://www.openshift.org/",
-	"logo": "https://www.okd.io/images/okd-panda-flat.svg",
-	"tags": [
-		"orchestrierung",
-		"container"
-	],
+	"tags": ["orchestrierung", "container"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

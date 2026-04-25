@@ -9,12 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.mongodb.com/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/MongoDB_Logo.svg",
-	"tags": [
-		"nosql",
-		"datenbank",
-		"dokumentenbasiert"
-	],
+	"tags": ["nosql", "datenbank", "dokumentenbasiert"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

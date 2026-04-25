@@ -26,10 +26,7 @@ const ITEMS_DIR = join(process.cwd(), 'data', 'items');
 // ---------------------------------------------------------------------------
 
 /** Items that look open but are practically SaaS-only (cannot be run by the user). */
-const NOT_SELF_HOSTABLE = new Set([
-	'circleci',
-	'github-actions',
-]);
+const NOT_SELF_HOSTABLE = new Set(['circleci', 'github-actions']);
 
 /** Items whose default deployment phones home / collects telemetry (even if OSS). */
 const HAS_DEFAULT_TELEMETRY = new Set([
@@ -138,22 +135,78 @@ const PERMISSIVE_LICENSE_TOKENS = [
  */
 const KNOWN_PERMISSIVE = new Set([
 	// languages, runtimes
-	'python', 'rust', 'go', 'swift', 'java', 'javascript-ecma-script', 'typescript', 'php', 'r', 'c',
+	'python',
+	'rust',
+	'go',
+	'swift',
+	'java',
+	'javascript-ecma-script',
+	'typescript',
+	'php',
+	'r',
+	'c',
 	// platform / infra
-	'kubernetes', 'postgresql', 'mariadb', 'mysql-server', 'mongodb', 'cassandra', 'couchdb', 'hbase',
-	'nginx', 'envoy-proxy', 'traefik', 'kong', 'istio', 'flux', 'contour', 'docker-swarm',
-	'openshift-origin-okd', 'rancher', 'portainer', 'spinnaker', 'jenkins', 'nomad',
-	'emissary-ingress', 'openkruise', 'github-actions',
+	'kubernetes',
+	'postgresql',
+	'mariadb',
+	'mysql-server',
+	'mongodb',
+	'cassandra',
+	'couchdb',
+	'hbase',
+	'nginx',
+	'envoy-proxy',
+	'traefik',
+	'kong',
+	'istio',
+	'flux',
+	'contour',
+	'docker-swarm',
+	'openshift-origin-okd',
+	'rancher',
+	'portainer',
+	'spinnaker',
+	'jenkins',
+	'nomad',
+	'emissary-ingress',
+	'openkruise',
+	'github-actions',
 	// frameworks / libs
-	'react', 'angular', 'nextjs', 'flutter', 'tensorflow', 'pytorch', 'huggingface-transformers',
-	'spacy', 'haystack', 'langgraph', 'mlflow', 'milvus', 'chroma', 'nqdrant', 'pyro',
-	'promptflow', 'ragflow', 'axolotl', 'angel-ml', 'selenium', 'robot-framework',
+	'react',
+	'angular',
+	'nextjs',
+	'flutter',
+	'tensorflow',
+	'pytorch',
+	'huggingface-transformers',
+	'spacy',
+	'haystack',
+	'langgraph',
+	'mlflow',
+	'milvus',
+	'chroma',
+	'nqdrant',
+	'pyro',
+	'promptflow',
+	'ragflow',
+	'axolotl',
+	'angel-ml',
+	'selenium',
+	'robot-framework',
 	// browsers / engines (iOS is intentionally NOT here — it is proprietary)
-	'gecko', 'webkit', 'blink', 'android',
+	'gecko',
+	'webkit',
+	'blink',
+	'android',
 	// apps / lowcode
-	'budibase', 'appsmith', 'joget', 'n8n', 'node-red',
+	'budibase',
+	'appsmith',
+	'joget',
+	'n8n',
+	'node-red',
 	// data
-	'neo4j', 'scylla',
+	'neo4j',
+	'scylla',
 	// build
 	'gitlab',
 ]);
@@ -169,9 +222,7 @@ function deriveCriteria(item) {
 	const existing = item.sovereigntyCriteria || {};
 
 	const isStandardOrProtocol =
-		layer === 'infrastructure' ||
-		/protocol|standard|format|notation|markup/i.test(item.name || '') ||
-		/-protocol|^iso-|^ietf-/.test(id);
+		layer === 'infrastructure' || /protocol|standard|format|notation|markup/i.test(item.name || '') || /-protocol|^iso-|^ietf-/.test(id);
 
 	// --- selfHostable ----------------------------------------------------
 	let selfHostable;
@@ -263,7 +314,9 @@ function deriveCriteria(item) {
 // Apply
 // ---------------------------------------------------------------------------
 
-const files = readdirSync(ITEMS_DIR).filter((f) => f.endsWith('.json')).sort();
+const files = readdirSync(ITEMS_DIR)
+	.filter((f) => f.endsWith('.json'))
+	.sort();
 
 const counts = {
 	selfHostable: 0,

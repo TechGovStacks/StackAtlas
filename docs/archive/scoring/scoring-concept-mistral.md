@@ -9,7 +9,7 @@ source_of_truth: docs/README.md
 
 # **Evaluierungskonzept für item-spezifische Souveränitätsscores – Version 2.0**
 
-*Stand: 08.04.2026*
+_Stand: 08.04.2026_
 
 ---
 
@@ -32,7 +32,6 @@ Dieses Konzept beschreibt ein **neutrales, objektives und reproduzierbares** Ver
 
 ## **2. Bewertungsprinzipien**
 
-
 | Prinzip                       | Beschreibung                                                                                      |
 | ----------------------------- | ------------------------------------------------------------------------------------------------- |
 | **Gleichbehandlung**          | Identischer Kriterienkatalog und Gewichtung pro Layer/Sub-Layer.                                  |
@@ -42,13 +41,11 @@ Dieses Konzept beschreibt ein **neutrales, objektives und reproduzierbares** Ver
 | **Vier-Augen-Prinzip**        | Bei Abweichungen >2 Punkte pro Kriterium erfolgt eine Zweitbewertung.                             |
 | **Priorisierung der Quellen** | **Q5 (unabhängige Drittquellen)** ist stets obligatorisch, Q1–Q4 werden nach Kriterien gewichtet. |
 
-
 ---
 
 ## **3. Standardisierte Quellenklassen (verpflichtend)**
 
 Für jedes Item werden – soweit verfügbar – **dieselben Quellenklassen** erhoben und dokumentiert:
-
 
 | Klasse                                | Beschreibung                                                                | Vertrauenslevel | Beispiele                                                    |
 | ------------------------------------- | --------------------------------------------------------------------------- | --------------- | ------------------------------------------------------------ |
@@ -58,7 +55,6 @@ Für jedes Item werden – soweit verfügbar – **dieselben Quellenklassen** er
 | **Q4: Sicherheitsquellen**            | CVE/NVD, Advisories, SBOM/Signierung, Security-Response-Prozesse            | Mittel          | NVD-Datenbank, OWASP Top 10                                  |
 | **Q5: Unabhängige Drittquellen**      | Audit-Berichte, Branchenanalysen, wissenschaftliche Quellen                 | Hoch            | BSI-Zertifikate, FSFE-Empfehlungen, wissenschaftliche Papers |
 | **Q6: Betriebs-/Marktquellen**        | SLA/Supportmodell, Anbieterstruktur, Exit-/Migrationsoptionen               | Mittel          | Anbieter-Websites, Marktanalysen (Gartner, Forrester)        |
-
 
 **Regeln:**
 
@@ -82,7 +78,6 @@ Skala pro Kriterium: **0 bis 10 Punkte**
 
 **Gesamtgewichtung (100 %):**
 
-
 | Nr.    | Kriterium                                    | Gewicht | Bewertungsfokus (Prüfpunkte)                                                                                             |
 | ------ | -------------------------------------------- | ------- | ------------------------------------------------------------------------------------------------------------------------ |
 | **K1** | Rechtliche Souveränität                      | 15 %    | Lizenzmodell, Nutzungsrechte, Vertragsklarheit, Lock-in-reduzierende Rechte, Compliance mit lokalen Gesetzen             |
@@ -92,7 +87,6 @@ Skala pro Kriterium: **0 bis 10 Punkte**
 | **K5** | Sicherheits- und Lieferketten-Souveränität   | 15 %    | Vulnerability-Management, Signierung, SBOM, Incident-Reaktion, Abhängigkeiten von Drittanbietern                         |
 | **K6** | Betriebsautonomie & Exit-Fähigkeit           | 10 %    | Self-Hosting-Option, Migrationsaufwand, Betriebswissen, Multi-Provider-Unterstützung, Dokumentation der Abhängigkeiten   |
 | **K7** | Transparenz & Nachvollziehbarkeit            | 5 %     | Dokumentationsqualität, Änderungsprotokolle, Offenlegung relevanter Kennzahlen, Community-Beteiligung                    |
-
 
 **Mindestanforderungen:**
 
@@ -137,14 +131,12 @@ Ein Item mit den Punkten **K1=8, K2=7, K3=6, K4=5, K5=9, K6=7, K7=8** ergibt:
 
 Kombination aus **Souveränitätsscore** und **Kritikalität des Items** (z. B. für Infrastruktur oder personenbezogene Daten):
 
-
 | Souveränität | Kritikalität | Empfehlung                           |
 | ------------ | ------------ | ------------------------------------ |
 | 80–100       | Hoch         | Souverän                             |
 | 60–79        | Hoch         | Risiko! Alternativen evaluieren      |
 | 40–59        | Hoch         | Kritisch! Sofortige Maßnahmen        |
 | 0–39         | Hoch         | Abhängigkeit! Migration erforderlich |
-
 
 ---
 
@@ -169,7 +161,6 @@ Kombination aus **Souveränitätsscore** und **Kritikalität des Items** (z. B
 
 **Pflichtfelder pro Item:**
 
-
 | Feld                    | Beschreibung                                                  | Format              |
 | ----------------------- | ------------------------------------------------------------- | ------------------- |
 | **Item-ID**             | Eindeutige Kennung                                            | z. B. `SW-2026-001` |
@@ -184,7 +175,6 @@ Kombination aus **Souveränitätsscore** und **Kritikalität des Items** (z. B
 | **Version**             | Version des Kriterienkatalogs                                 | z. B. `2.0`         |
 | **Offene Annahmen**     | Dokumentation von Annahmen                                    | Freitext            |
 
-
 **Visualisierung:**
 
 - **Radardiagramm** der Einzelkriterien (z. B. mit Python `matplotlib` oder Excel).
@@ -193,7 +183,6 @@ Kombination aus **Souveränitätsscore** und **Kritikalität des Items** (z. B
 
 ## **8. Score-Interpretation**
 
-
 | Score-Bereich | Interpretation                              | Empfehlung                    |
 | ------------- | ------------------------------------------- | ----------------------------- |
 | 80–100        | Hohe Souveränität                           | Item uneingeschränkt nutzbar  |
@@ -201,11 +190,9 @@ Kombination aus **Souveränitätsscore** und **Kritikalität des Items** (z. B
 | 40–59         | Eingeschränkte Souveränität                 | Alternativen evaluieren       |
 | 0–39          | Niedrige Souveränität / starke Abhängigkeit | Migration priorisieren        |
 
-
 ---
 
 ## **9. Qualitätssicherung und Revisionszyklus**
-
 
 | Maßnahme                        | Häufigkeit               | Verantwortlich                   |
 | ------------------------------- | ------------------------ | -------------------------------- |
@@ -214,7 +201,6 @@ Kombination aus **Souveränitätsscore** und **Kritikalität des Items** (z. B
 | **Externe Audits**              | Jährlich                 | Unabhängige Stelle (z. B. BSI)   |
 | **Community-Feedback**          | Kontinuierlich           | GitHub Issues / Diskussionsforum |
 | **KPIs für Objektivität**       | &nbsp;                   | &nbsp;                           |
-
 
 - **Inter-Rater-Reliabilität (Cohen’s Kappa):** Sollwert ≥ 0.7
 - **Anteil „nicht bewertbarer“ Items:** Sollwert < 5 %
@@ -228,14 +214,12 @@ Kombination aus **Souveränitätsscore** und **Kritikalität des Items** (z. B
 
 ## **10. Automatisierung und Tools**
 
-
 | Tool                    | Zweck                                   | Beispiel                       |
 | ----------------------- | --------------------------------------- | ------------------------------ |
 | **Python-Skript**       | Plausibilitätsprüfung, Score-Berechnung | `souveraenitaet_score.py`      |
 | **Excel/Google-Sheets** | Manuelle Eingabe und Berechnung         | `Souveraenitaet_Template.xlsx` |
 | **Radardiagramm**       | Visualisierung der Kriterien            | `plot_radar.py`                |
 | **Git**                 | Versionierung des Dokuments             | Repository auf GitHub          |
-
 
 ---
 

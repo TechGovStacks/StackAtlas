@@ -1,15 +1,15 @@
 {
-	"id": "yaml-ain-t-markup-language",
-	"name": "YAML Ain't Markup Language",
+	"id": "qdrant",
+	"name": "Qdrant",
 	"layer": "platform",
 	"sublayer": "daten",
-	"groupKey": "data-serialization-format",
+	"groupKey": "vector-db",
 	"description": {
-		"de": "YAML ist ein Datenformat für den Datenaustausch.",
+		"de": "Qdrant ist eine container-basierte Vektor-Datenbank mit integrierter Ähnlichkeitssuche.",
 		"en": ""
 	},
-	"homepage": "https://yaml.org/",
-	"tags": ["datenformat"],
+	"homepage": "https://qdrant.tech/",
+	"tags": ["datenbank", "vektor"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -20,12 +20,13 @@
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": true,
+		"openStandards": false,
 		"noTelemetryByDefault": true,
-		"ownerType": "independentConsortium"
+		"ownerType": "corporation"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",
-		"url": "https://github.com/yaml/"
-	}
+		"url": "https://github.com/qdrant/qdrant"
+	},
+	"license": "AGPL-3.0"
 }

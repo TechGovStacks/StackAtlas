@@ -10,11 +10,7 @@
 	},
 	"homepage": "https://www.payments.service.gov.uk/",
 	"license": "MIT",
-	"tags": [
-		"egovernment",
-		"payments",
-		"uk"
-	],
+	"tags": ["egovernment", "payments", "uk"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

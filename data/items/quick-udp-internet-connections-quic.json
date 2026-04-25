@@ -9,10 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://quicwg.org/",
-	"tags": [
-		"sicherheit",
-		"datenuebertragung"
-	],
+	"tags": ["sicherheit", "datenuebertragung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

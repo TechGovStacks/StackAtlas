@@ -8,13 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/wg/tls/documents/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/OpenSSL_logo.svg",
-	"tags": [
-		"ssl",
-		"sicherheit",
-		"sdns",
-		"datenuebertragung"
-	],
+	"tags": ["ssl", "sicherheit", "sdns", "datenuebertragung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

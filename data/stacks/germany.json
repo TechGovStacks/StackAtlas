@@ -725,7 +725,7 @@
 			}
 		},
 		{
-			"itemId": "nqdrant",
+			"itemId": "qdrant",
 			"status": "approved",
 			"role": "consumer",
 			"rationale": {
@@ -761,7 +761,7 @@
 			}
 		},
 		{
-			"itemId": "open-id-connect-oidc",
+			"itemId": "openid",
 			"status": "approved",
 			"role": "consumer",
 			"rationale": {

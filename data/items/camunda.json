@@ -10,11 +10,7 @@
 	},
 	"homepage": "https://camunda.com/",
 	"license": "Apache-2.0",
-	"tags": [
-		"bpmn",
-		"workflow",
-		"automation"
-	],
+	"tags": ["bpmn", "workflow", "automation"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

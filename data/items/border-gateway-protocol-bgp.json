@@ -8,11 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://github.com/bgp",
-	"tags": [
-		"netzwerk",
-		"isp",
-		"routing"
-	],
+	"tags": ["netzwerk", "isp", "routing"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

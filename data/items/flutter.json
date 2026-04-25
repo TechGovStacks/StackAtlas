@@ -8,10 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://flutter.dev/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Google_Flutter_Logo.svg",
-	"tags": [
-		"user-interface"
-	],
+	"tags": ["user-interface"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

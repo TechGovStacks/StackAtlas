@@ -8,10 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/wg/ospf/about/",
-	"tags": [
-		"netzwerk",
-		"routing"
-	],
+	"tags": ["netzwerk", "routing"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

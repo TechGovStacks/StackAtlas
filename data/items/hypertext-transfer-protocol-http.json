@@ -8,13 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/wg/httpbis/documents/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/HTTP_logo.svg",
-	"tags": [
-		"multiplexing",
-		"datenuebertragung",
-		"webseiten",
-		"internet"
-	],
+	"tags": ["multiplexing", "datenuebertragung", "webseiten", "internet"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

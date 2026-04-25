@@ -14,10 +14,10 @@ const pattern = /logos\/[a-f0-9]{64}\.png/g;
 
 const matches = content.match(pattern);
 if (matches) {
-  console.log(`Found ${matches.length} matching logo paths to remove`);
-  matches.forEach(match => console.log(`  - ${match}`));
+	console.log(`Found ${matches.length} matching logo paths to remove`);
+	matches.forEach((match) => console.log(`  - ${match}`));
 } else {
-  console.log(`No matching logo paths found with pattern: logos/[a-f0-9]{64}.png`);
+	console.log(`No matching logo paths found with pattern: logos/[a-f0-9]{64}.png`);
 }
 
 const modifiedContent = content.replace(pattern, '');

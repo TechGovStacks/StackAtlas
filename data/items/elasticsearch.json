@@ -9,11 +9,7 @@
 	},
 	"homepage": "https://www.elastic.co/elasticsearch/",
 	"license": "SSPL-1.0",
-	"tags": [
-		"search",
-		"logging",
-		"analytics"
-	],
+	"tags": ["search", "logging", "analytics"],
 	"oss": false,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

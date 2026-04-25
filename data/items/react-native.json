@@ -9,11 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://reactnative.dev/",
-	"tags": [
-		"mobile",
-		"cross-platform",
-		"user-interface"
-	],
+	"tags": ["mobile", "cross-platform", "user-interface"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

@@ -10,11 +10,7 @@
 	},
 	"homepage": "https://rubyonrails.org/",
 	"license": "MIT",
-	"tags": [
-		"ruby",
-		"framework",
-		"web"
-	],
+	"tags": ["ruby", "framework", "web"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

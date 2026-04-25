@@ -9,12 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://traefik.io/traefik",
-	"logo": "https://raw.githubusercontent.com/traefik/traefik/master/docs/content/assets/img/traefik.logo.png",
-	"tags": [
-		"proxy",
-		"load-balancer",
-		"orchestrierung"
-	],
+	"tags": ["proxy", "load-balancer", "orchestrierung"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

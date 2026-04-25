@@ -1,5 +1,5 @@
 {
-	"id": "temporal-io",
+	"id": "temporal",
 	"name": "Temporal",
 	"layer": "building-blocks",
 	"sublayer": "lowcode",
@@ -10,11 +10,7 @@
 	},
 	"homepage": "https://temporal.io/",
 	"license": "MIT",
-	"tags": [
-		"workflow",
-		"orchestration",
-		"microservices"
-	],
+	"tags": ["workflow", "orchestration", "microservices"],
 	"oss": true,
 	"maturity": "incubation",
 	"sovereigntyCriteria": {

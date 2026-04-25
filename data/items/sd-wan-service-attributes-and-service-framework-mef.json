@@ -9,13 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.mplify.net/resources/mef-70-2-sd-wan-service-attributes-and-service-framework/",
-	"tags": [
-		"netz",
-		"sd-wan",
-		"netzwerk",
-		"wide-area",
-		"wan"
-	],
+	"tags": ["netz", "sd-wan", "netzwerk", "wide-area", "wan"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

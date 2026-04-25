@@ -8,10 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/wg/",
-	"tags": [
-		"netzwerk",
-		"internet"
-	],
+	"tags": ["netzwerk", "internet"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

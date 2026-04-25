@@ -9,12 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.getambassador.io/products/api-gateway",
-	"logo": "https://www.getambassador.io/images/emissary-icon-black.svg",
-	"tags": [
-		"api",
-		"orchestrierung",
-		"gateway"
-	],
+	"tags": ["api", "orchestrierung", "gateway"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {

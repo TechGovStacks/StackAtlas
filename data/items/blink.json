@@ -9,12 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://www.chromium.org/blink/",
-	"logo": "https://commons.wikimedia.org/wiki/Special:FilePath/Blink_(browser_engine)_colored_logo.svg",
-	"tags": [
-		"webseite",
-		"browser-engine",
-		"rendern"
-	],
+	"tags": ["webseite", "browser-engine", "rendern"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
