@@ -15,7 +15,7 @@ Fundament für Skalierung, Containerisierung und Deployment【4†L60-L68】【3
 - **Helm** – Paketmanager für Kubernetes-Charts (OSS, Apache 2.0). Vereinfacht Deployment komplexer Applikationen. [❌ unbekannt/vermutlich fehlt].
 - **Serverless (Lambda, Functions)** – Funktionen als Service (z.B. AWS Lambda, Azure Functions). Zur schnellen Skalierung ohne Infrastruktur-Management. (Datenschutz/Verfügbarkeit muss geprüft werden) [❌ unbekannt/vermutlich fehlt].
 
-【51†embed_image】 *Infrastruktur-Diagramm: Moderne CI/CD-Pipeline mit Container-Registry und Kubernetes (Quelle: GovStack Sandbox)【49†L110-L119】【51†】.*
+【51†embed_image】 _Infrastruktur-Diagramm: Moderne CI/CD-Pipeline mit Container-Registry und Kubernetes (Quelle: GovStack Sandbox)【49†L110-L119】【51†】._
 
 ## 🔐 Identity & Trust
 
