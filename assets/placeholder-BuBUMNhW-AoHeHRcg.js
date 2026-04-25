@@ -1,1 +1,0 @@
-import{ft as e}from"./index-Bx53Aliu.js";var t=(t,n,r={})=>{e(t,`_placeholder`,n,r)};export{t};

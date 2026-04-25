@@ -1,1 +1,0 @@
-import"./index-Bx53Aliu.js";import{r as e}from"./align-D3Z54kEL-DgEIDVD_.js";var t=(t,n)=>{e(t,`_tooltipAlign`,n)};export{t};
