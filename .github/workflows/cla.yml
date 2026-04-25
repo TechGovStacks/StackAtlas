@@ -1,0 +1,46 @@
+name: Contributor License Agreement
+
+on:
+  pull_request_target:
+    types: [opened, synchronize]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  cla:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: CLA Assistant
+        uses: contributor-assistant/github-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          path-to-signatures: 'signatures/cla.json'
+          path-to-document: 'CLA.md'
+          branch: main
+          allowlist: dependabot[bot],renovate[bot],github-actions[bot]
+          remote-organization-name: TechGovStacks
+          remote-repository-name: StackAtlas
+          create-file-commit-message: 'Sign CLA'
+          signed-commit-message: '✅ CLA signed by @$userName'
+          unsigned-commit-message: '❌ CLA signature missing'
+          custom-notsigned-prcomment: |
+            Thanks for your contribution! 🙏
+
+            Before we can accept your pull request, you need to sign our Contributor License Agreement (CLA).
+
+            **[Click here to sign the CLA](https://cla-assistant.io/techgovstacks/stackatlas)**
+
+            By signing, you agree that:
+            - You own the copyright to the code you submit
+            - You grant TechGovStacks a license to use your code in StackAtlas
+            - You have the right to give us this license
+
+            ✨ Thank you for contributing to StackAtlas!
+          custom-pr-sign-comment: 'Thank you for signing the CLA! 🎉 Your pull request can now proceed.'
+          custom-allsigned-prcomment: 'All contributors have signed the CLA. ✅'
