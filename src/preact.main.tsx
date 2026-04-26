@@ -63,8 +63,6 @@ function dismissSplash(): void {
 	if (status) status.textContent = 'Anwendung bereit';
 
 	splash.classList.add('splash--exiting');
-	splash.style.display = 'none';
-	splash.style.visibility = 'hidden';
 	splash.style.pointerEvents = 'none';
 
 	const cleanup = () => {
