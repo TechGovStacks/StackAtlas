@@ -167,7 +167,8 @@
 				color: rgba(255, 255, 255, 0.46);
 				font-family: 'Fira Sans', system-ui, sans-serif;
 				user-select: none;
-				pointer-events: none;
+				pointer-events: auto;
+				cursor: pointer;
 				transform: translate3d(0, 0, 0);
 			}
 			.splash__skip-icon {
@@ -556,7 +557,7 @@
 				<span>Powered by KoliBri</span>
 				<img src="./assets/kolibri.ico" alt="" />
 			</div>
-			<div class="splash__skip-hint" aria-hidden="true">
+			<div class="splash__skip-hint" role="button" aria-label="Skip splash animation (click or Escape)" title="Skip splash (Click or Esc)">
 				<i class="fa-solid fa-xmark splash__skip-icon"></i>
 			</div>
 			<span class="splash-sr-only" aria-live="polite" id="splash-status"> Application loading. Click or press Escape to skip the animation. </span>
