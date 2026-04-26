@@ -111,6 +111,14 @@
 				transform: scale(1.04);
 				pointer-events: none;
 			}
+			.splash--skip-preview .splash__seg,
+			.splash--skip-preview .splash__fixed-label,
+			.splash--skip-preview .splash__sovereign,
+			.splash--skip-preview .splash__title {
+				animation: none !important;
+				opacity: 1 !important;
+				transform: none !important;
+			}
 			.splash__content {
 				display: flex;
 				flex-direction: column;
@@ -139,20 +147,21 @@
 			}
 			.splash__skip-hint {
 				position: absolute;
-				right: clamp(0.75rem, 3vw, 1.5rem);
-				bottom: clamp(1rem, 4vh, 1.75rem);
+				right: max(env(safe-area-inset-right), clamp(0.9rem, 3.2vw, 1.8rem));
+				bottom: max(env(safe-area-inset-bottom), clamp(0.9rem, 3.8vh, 1.8rem));
 				display: inline-flex;
 				align-items: center;
-				gap: 0.35rem;
+				justify-content: center;
+				width: clamp(1.4rem, 4vw, 1.85rem);
+				height: clamp(1.4rem, 4vw, 1.85rem);
 				color: rgba(255, 255, 255, 0.35);
 				font-family: 'Fira Sans', system-ui, sans-serif;
-				font-size: clamp(0.62rem, 1.7vw, 0.72rem);
-				letter-spacing: 0.02em;
 				user-select: none;
 				pointer-events: none;
+				transform: translate3d(0, 0, 0);
 			}
 			.splash__skip-icon {
-				font-size: clamp(0.72rem, 2vw, 0.84rem);
+				font-size: clamp(0.95rem, 2.8vw, 1.2rem);
 				opacity: 0.75;
 			}
 
@@ -539,7 +548,6 @@
 			</div>
 			<div class="splash__skip-hint" aria-hidden="true">
 				<i class="fa-solid fa-arrow-pointer splash__skip-icon"></i>
-				<span>Click to skip</span>
 			</div>
 			<span class="splash-sr-only" aria-live="polite" id="splash-status">Application loading</span>
 		</div>

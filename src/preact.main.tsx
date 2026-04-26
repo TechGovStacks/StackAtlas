@@ -13,6 +13,7 @@ import { logger } from './utils/logger';
 
 const SPLASH_FALLBACK_MS = 9000;
 const SPLASH_REDUCED_MOTION_MS = 1200;
+const SPLASH_SKIP_PREVIEW_MS = 1000;
 let splashDismissed = false;
 
 type KolibriLanguage = NonNullable<NonNullable<Parameters<typeof register>[2]>['translation']>['name'];
@@ -100,14 +101,26 @@ function waitForSplashCompletion(): Promise<void> {
 			window.clearTimeout(fallbackTimer);
 			resolve();
 		};
+		const finishWithSkipPreview = () => {
+			if (done) {
+				return;
+			}
+			done = true;
+			splash.removeEventListener('click', finishWithSkipPreview);
+			document.removeEventListener('keydown', onKeydown);
+			title?.removeEventListener('animationend', finish);
+			window.clearTimeout(fallbackTimer);
+			splash.classList.add('splash--skip-preview');
+			window.setTimeout(resolve, SPLASH_SKIP_PREVIEW_MS);
+		};
 
 		const onKeydown = (event: globalThis.KeyboardEvent) => {
 			if (event.key === 'Escape') {
-				finish();
+				finishWithSkipPreview();
 			}
 		};
 
-		splash.addEventListener('click', finish);
+		splash.addEventListener('click', finishWithSkipPreview);
 		document.addEventListener('keydown', onKeydown);
 
 		if (!prefersReducedMotion) {
