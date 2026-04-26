@@ -14,7 +14,14 @@ updates:
     schedule:
       interval: weekly
     groups:
+      public-ui:
+        patterns:
+          - '@public-ui/*'
       dependencies:
         dependency-type: production
+        exclude-patterns:
+          - '@public-ui/*'
       dev-dependencies:
         dependency-type: development
+        exclude-patterns:
+          - '@public-ui/*'
