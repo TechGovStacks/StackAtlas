@@ -950,9 +950,9 @@ kol-select,
 }
 
 .pagination-bar__pagination-wrapper {
-	flex: 1;
+	flex: 2;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 }
 
 .pagination-controls {
@@ -984,7 +984,9 @@ kol-select,
 }
 
 .pagination-bar__view-toggle {
-	flex-shrink: 0;
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
