@@ -5,11 +5,11 @@ import { fileURLToPath } from 'url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Read source stack file
-const stackPath = path.join(__dirname, 'data/stacks/germany.json');
+const stackPath = path.join(__dirname, '..', '..', 'data/stacks/germany.json');
 const stackMetadata = JSON.parse(fs.readFileSync(stackPath, 'utf-8'));
 
 // Read all JSON files from data/items/
-const itemsDir = path.join(__dirname, 'data/items/');
+const itemsDir = path.join(__dirname, '..', '..', 'data/items/');
 const files = fs
 	.readdirSync(itemsDir)
 	.filter((file) => file.endsWith('.json') && file !== 'README.md')

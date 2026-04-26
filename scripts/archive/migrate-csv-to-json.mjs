@@ -13,14 +13,14 @@
  * to avoid losing data the migration writes the layer from the CSV mapping
  * above and leaves re-categorisation to a manual editorial pass.
  *
- * Run:  node scripts/migrate-csv-to-json.mjs
+ * Run:  node scripts/archive/migrate-csv-to-json.mjs
  */
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const INPUT_CSV = join(ROOT, 'data', 'items.csv');
 const OUTPUT_DIR = join(ROOT, 'data', 'items');
 
