@@ -9,8 +9,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: bump-patch-version-main
-  cancel-in-progress: false
+  group: ${{ github.workflow }}-${{ github.event.pull_request.head.ref || github.ref }}
+  cancel-in-progress: true
 
 jobs:
   bump-version:
