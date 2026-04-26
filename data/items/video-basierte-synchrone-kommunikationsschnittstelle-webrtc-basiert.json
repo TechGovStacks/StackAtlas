@@ -1,0 +1,22 @@
+{
+	"id": "video-basierte-synchrone-kommunikationsschnittstelle-webrtc-basiert",
+	"name": "Video-basierte synchrone Kommunikationsschnittstelle (WebRTC-basiert)",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Standardisierte, browserbasierte Videokommunikation zur Durchführung synchroner Interaktionen zwischen Verwaltung und Bürgern. Ermöglicht terminierte und Ad-hoc-Kommunikation sowie Integration in Fachverfahren, Identitätsdienste und Portale.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

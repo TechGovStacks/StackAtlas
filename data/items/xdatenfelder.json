@@ -1,0 +1,22 @@
+{
+	"id": "xdatenfelder",
+	"name": "Xdatenfelder",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Ein Standard des IT-Planungsrates. Mit XDatenfelder steht ein Föderaler IT-Standard zum Datenaustausch zur Verfügung. Antragsdaten im föderalen Kontext werden strukturiert erstellt und für einen tool- und herstellerunabhängigen Austausch bereitgestellt. XDatenfelder definiert alle Datenstrukturen und statischen Inhalte (z. B. Adresse), die für eine Beantragung von Verwaltungsleistungen, Nachweise, Bescheide oder andere leistungsbezogene Dokumente nötig sind, und stellt diese mit allen Feldinformationen und Regeln bereit.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

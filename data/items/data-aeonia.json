@@ -1,0 +1,22 @@
+{
+	"id": "data-aeonia",
+	"name": "DATA Aeonia",
+	"layer": "applications",
+	"description": {
+		"de": "Data Aeonia ist eine TR-ESOR konforme Lösung, die die rechtskonforme Aufbewahrung von Akten ermöglicht. Hierüber wird der Beweiswert erhalten. Ist bereits beim Bund und vielen Ländern im Einsatz. Im D-Stack kann eine zentraler Betrieb genauso wie einheitliche zentrale Bereitstellung der Lösung realisiert werden.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

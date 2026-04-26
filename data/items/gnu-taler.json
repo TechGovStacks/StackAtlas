@@ -1,0 +1,22 @@
+{
+	"id": "gnu-taler",
+	"name": "GNU Taler",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Das Bezahlsystem GNU Taler ermöglicht das schnelle und einfache Geldüberweisen mit Datenschutz und hoher technischer Sicherheit. - Bezahlen ohne Registrierung - Datenschutz als Grundeinstellung - Systematisch gesichert gegen Betrug - Keine neue Währung! - Ermöglicht die Entwicklung einer selbstbestimmten Zahlungsinfrastruktur - Freie Software siehe https://www.taler.net/de/ und https://www.taler.net/de/ngi-taler.html",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

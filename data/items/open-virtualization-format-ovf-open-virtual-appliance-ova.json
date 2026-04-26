@@ -1,0 +1,22 @@
+{
+	"id": "open-virtualization-format-ovf-open-virtual-appliance-ova",
+	"name": "Open Virtualization Format (OVF) / Open Virtual Appliance (OVA)",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Industriestandard für virtuelle Maschinen und Appliances",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

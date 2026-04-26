@@ -1,0 +1,22 @@
+{
+	"id": "com-tauri",
+	"name": "COM Tauri",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "COM Tauri ist ein Kernelement der OSCI-Infrastruktur, die föderal eingesetzt und durch diverse Fachgesetzte gefordert wird (Meldewesen, Gewerbemeldung). Dieser Baustein ist ein Produkt des ITPLR und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung. Diese Lösung ist in vielen Ländern schon als Basisdienst etabliert.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

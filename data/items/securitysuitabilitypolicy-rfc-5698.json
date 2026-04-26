@@ -1,0 +1,22 @@
+{
+	"id": "securitysuitabilitypolicy-rfc-5698",
+	"name": "SecuritySuitabilityPolicy / RFC 5698",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Ermöglicht Erstellung von maschinenlesbaren Katalogen mit kryptographischen Algorithmen.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

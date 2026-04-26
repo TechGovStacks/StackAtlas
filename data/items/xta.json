@@ -1,0 +1,22 @@
+{
+	"id": "xta",
+	"name": "XTA",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Ein Standard des IT-Planungsrats für die einheitliche Schnittstelle zwischen Fach- und Transportverfahren und ermöglicht eine einheitliche Beauftragung, Steuerung und Überprüfung des Nachrichtentransports. Weiteres unter https://www.xoev.de/xta",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

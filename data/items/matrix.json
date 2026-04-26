@@ -1,0 +1,22 @@
+{
+	"id": "matrix",
+	"name": "Matrix",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Matrix ist ein offener Standard für sichere, Ende-zu-Ende verschlüsselte, dezentrale, interoperable (Echtzeit-)Kommunikation. Der Standard wird von der Matrix.org Foundation veröffentlicht und weiterentwickelt und befindet sich vollständig in der Public Domain. Matrix kann sowohl für die Realisierung von klassischen Chat-Anwendungen eingesetzt werden, bietet zudem durch Verfügbarkeit der offenen Spezifikation und diversen Integrationen aber auch eine ideale Basis für die Integration von (KI-)Chatbots und die Nutzung als sicheren Kommunikationslayer für maschinenlesbare M2M-Kommuniation. Zudem bietet Matrix mit MatrixRTC (Matrix Real Time Communication) ebenfalls einen standardisierten Interoperabilitätslayer für Audio-, Video- und Echtzeit-Datenkommunikation. Rund um den Matrix Standard hat sich ein großes Ökosystem aus einer Vielzahl an Unternehmen, Universitäten, öffentlichen und militärischen Einrichtungen und zivilgesellschaftlichen Organisationen gebildet. Zahlreiche Server- und Client-Implementationen des Matrix-Standards sind sowohl offen lizenziert (Open Source) als auch proprietär sowohl kommerziell mit professionellem Support als auch in Form von nicht-kommerziellen Community-Projekten verfügbar. Expertise zum Matrix-Standard besteht bereits in vielen Unternehmen wie beispielsweise IBM, Deutsche Telekom, Element, adesso SE, Bechtle AG, Dataport, BWI GmbH, gematik sowie die Krankenkassen in Deutschland, ZenDiS, adfinis AG, Materna Information & Communications SE, BearingPoint, Nordeck IT + Consulting, Famedly GmbH, fairkom, welche den Matrix-Standard in ihren Produkten und Projekten einsetzen - teils spezifisch angepasst auf die Anforderungen der öffentlichen Verwaltung, teils ausgerichtet auf die Anforderungen der Privatwirtschaft.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"id": "dokumentenmanagement-systeme-wie-docuware-u-a",
+	"name": "Dokumentenmanagement-Systeme wie Docuware u.a.",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "DMS-Systeme wie Docuware oder andere bieten einen sicheren und DSGVO-gerechten Standard für die Archivierung, Ablage etc. von Dokumenten und Formularen.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

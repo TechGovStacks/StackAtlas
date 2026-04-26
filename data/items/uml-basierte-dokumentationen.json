@@ -1,0 +1,22 @@
+{
+	"id": "uml-basierte-dokumentationen",
+	"name": "UML-basierte Dokumentationen",
+	"layer": "applications",
+	"description": {
+		"de": "Beschreibung der Komponenten und Schnittstellen, z.B. über Swagger/OpenAPI",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

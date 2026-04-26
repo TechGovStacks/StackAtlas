@@ -1,0 +1,22 @@
+{
+	"id": "betriebsplattformen-betriebssysteme",
+	"name": "Betriebsplattformen / Betriebssysteme",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Hierbei handelt es sich nicht um einen einzelnen Standard, sondern um einen Bereich, der in der Landkarte derzeit nicht abgedeckt ist.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

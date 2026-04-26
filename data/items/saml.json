@@ -1,0 +1,22 @@
+{
+	"id": "saml",
+	"name": "SAML",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "SAML (Security Assertion Markup Language) ist ein etablierter Standard für den föderierten Identitätsaustausch und Single Sign-On (SSO). Er ermöglicht die sichere Übertragung von Authentifizierungs- und Autorisierungsinformationen zwischen Identitätsanbietern (IdP) und Anwendungen (Service Provider).",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

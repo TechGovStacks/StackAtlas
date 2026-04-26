@@ -1,0 +1,22 @@
+{
+	"id": "solid-social-linked-data",
+	"name": "Solid (Social Linked Data)",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Solid ist ein offenes Protokoll für ein dezentrales Web, bei dem Daten in Datenspeichern (Pods) verwaltet werden, aber auch externe Datenquellen eingebunden und referenziert werden können. Über standardisierte Schnittstellen und Linked-Data-Prinzipien lassen sich bestehende Systeme interoperabel integrieren, ohne Daten zentral zu kopieren. Im Kontext eines Deutschland-Stacks stärkt Solid damit sowohl digitale Souveränität als auch die Anschlussfähigkeit an vorhandene IT-Landschaften.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

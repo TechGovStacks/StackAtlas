@@ -1,0 +1,22 @@
+{
+	"id": "llm-d",
+	"name": "llm-d",
+	"layer": "infrastructure",
+	"description": {
+		"de": "llm-d ist ein Kubernetes-natives, verteiltes Inferenz-Framework für skalierbares LLM-Serving auf Cluster-Ebene mit Disaggregated Prefill/Decode und KV-Cache-Aware Routing.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

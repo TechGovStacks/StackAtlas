@@ -1,0 +1,22 @@
+{
+	"id": "ams",
+	"name": "AMS",
+	"layer": "applications",
+	"description": {
+		"de": "Application Management System vom Auswärtigen Amt",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"id": "dataprepkit",
+	"name": "DataPrepKit",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "DPK ist ein Open-Source-Toolkit für skalierbare Datenaufbereitung von Trainings- und RAG-Daten für LLMs, mit Modulen für Deduplizierung, PII-Filterung und Qualitätsbewertung.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"id": "semic-spezifikationen",
+	"name": "SEMIC-Spezifikationen",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "SEMIC‑Spezifikationen sind offene, wiederverwendbare semantische Datenmodelle und Application Profiles der Europäischen Kommission, die grundlegende Konzepte wie Personen, Organisationen, Leistungen, Kriterien und Nachweise kontextneutral beschreiben, um semantische Interoperabilität zwischen Verwaltungen zu ermöglichen. Sie dienen als europaweite Referenzbasis für Austausch, Mapping und Integration von Daten.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

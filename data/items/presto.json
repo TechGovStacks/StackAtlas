@@ -1,0 +1,22 @@
+{
+	"id": "presto",
+	"name": "Presto",
+	"layer": "infrastructure",
+	"description": {
+		"de": "Presto ist eine verteilte SQL-Query-Engine für föderierte Abfragen über heterogene Datenquellen: von Iceberg-Tabellen über relationale Datenbanken bis zu Object Storage.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

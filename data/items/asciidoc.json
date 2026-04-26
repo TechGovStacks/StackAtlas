@@ -1,0 +1,22 @@
+{
+	"id": "asciidoc",
+	"name": "AsciiDoc",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "AsciiDoc ist ein textbasiertes, standardisiertes und leicht versionierbares Format für die Dokumentation technischre Sachverhalte.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

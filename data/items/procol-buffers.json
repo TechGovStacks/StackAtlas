@@ -1,0 +1,22 @@
+{
+	"id": "procol-buffers",
+	"name": "Procol Buffers",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Protocol Buffers (protobuf) ist ein Datenformat zur Serialisierung mit einer Schnittstellen-Beschreibungssprache. Hauptsächliche Entwurfskriterien der Protocol Buffers sind Einfachheit und Performance. Daher ist es als ein Binärformat konzipiert im Gegensatz zu XML, welches auf ein textuelles Format setzt.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

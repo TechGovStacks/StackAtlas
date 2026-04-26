@@ -1,0 +1,22 @@
+{
+	"id": "osci-xta",
+	"name": "OSCI, XTA",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "OSCI (Online Services Computer Interface) in Verbindung mit XTA 2 (XML Transport Adapter) ist ein zentraler Standard für den sicheren, vertraulichen und rechtsverbindlichen Datenaustausch im deutschen E-Government. Er ermöglicht die Kommunikation zwischen Fachverfahren von Behörden, auch über unsichere Netzwerke wie das Internet.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

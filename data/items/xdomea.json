@@ -1,0 +1,22 @@
+{
+	"id": "xdomea",
+	"name": "xdomea",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "xdomea ist der vom IT-Planungsrat beschlossene verbindliche Standard für den elektronischen Austausch von Schriftgutobjekten (Akten, Vorgänge und Dokumente) und ihren Metadaten im Kontext der Übermittlung, der Abgabe sowie der Aussonderung von Schriftgutobjekten. Weitere Anwendungsbereiche beziehen sich auf die Kommunikation zwischen Fachverfahren und DMS/VBS sowie die Zwischenarchivierung. Details können dem entsprechenden Beschluss des IT-Planungsrates entnommen werden, siehe https://www.it-planungsrat.de/beschluss/beschluss-2017-39. Die Versionen von xdomea sind im XRepository veröffentlicht.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

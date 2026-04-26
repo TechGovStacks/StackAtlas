@@ -1,0 +1,22 @@
+{
+	"id": "data-varuna",
+	"name": "DATA Varuna",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "DATA Varuna ermöglicht die Prüfung von Signaturen und Siegeln, damit stellt DATA Varuna einen flexibel einsetzbaren Baustein dar, der in verschiedensten Einsatzszenarien Anwendung findet. Im Rahmen der elektronischen Aktenführung ist die Prüfung der kryptografisch gesicherter Daten essenziell für die rechtskonforme Aktenfühung. Diese Daten können Dokumente, Vertrauensanker, Nachweise (QEAA) und weitere sein. Dieser Baustein ist ein Produkt des ITPLR und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung. Diese Lösung ist in vielen Ländern schon als Basisdienst etabliert.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

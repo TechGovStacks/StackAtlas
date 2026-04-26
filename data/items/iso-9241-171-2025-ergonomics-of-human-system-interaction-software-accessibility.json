@@ -1,0 +1,22 @@
+{
+	"id": "iso-9241-171-2025-ergonomics-of-human-system-interaction-software-accessibility",
+	"name": "ISO 9241-171:2025 – Ergonomics of human-system interaction: Software accessibility",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "ISO 9241-171 (aktualisierte Fassung 2025, verabschiedet als EN ISO 9241-171:2025) ist die internationale Leitnorm für die barrierefreie Gestaltung von Software-Benutzeroberflächen. Sie ergänzt WCAG (die sich primär auf Webinhalte bezieht) um Anforderungen an Desktop-Anwendungen, native Apps und verwaltungsinterne Fachanwendungen, die nicht im Browser laufen.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"id": "e164",
+	"name": "E164",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Standard für die Präsentation von Telefonnummern/SMS",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"id": "802-11-bis-802-11-be",
+	"name": "802.11 bis 802.11 be",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "IEEE Wi-Fi Standards",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

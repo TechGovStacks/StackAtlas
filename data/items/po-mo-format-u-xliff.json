@@ -1,0 +1,22 @@
+{
+	"id": "po-mo-format-u-xliff",
+	"name": "PO / MO Format u. XLIFF",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Standards für Software-Lokalisierung (gettext)",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

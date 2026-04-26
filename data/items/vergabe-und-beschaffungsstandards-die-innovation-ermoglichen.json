@@ -1,0 +1,22 @@
+{
+	"id": "vergabe-und-beschaffungsstandards-die-innovation-ermoglichen",
+	"name": "Vergabe- und Beschaffungsstandards, die Innovation ermöglichen",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Standards für IT-Beschaffungsverfahren, die Wettbewerb strukturell öffnen: funktionale Leistungsbeschreibungen statt produktspezifischer Anforderungen, aktive KMU-Einbindung in Markterkundungsverfahren (§28 VgV), Interoperabilitätsnachweise als Eignungskriterium statt Unternehmensgröße.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

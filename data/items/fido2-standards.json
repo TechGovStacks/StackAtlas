@@ -1,0 +1,22 @@
+{
+	"id": "fido2-standards",
+	"name": "FIDO2-Standards",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "siehe https://de.wikipedia.org/wiki/FIDO2",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

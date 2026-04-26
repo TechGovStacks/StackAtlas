@@ -1,0 +1,22 @@
+{
+	"id": "arc42",
+	"name": "arc42",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Dokumentationsstandard für pragmatische Softwarearchitekturen, siehe: https://arc42.org/",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

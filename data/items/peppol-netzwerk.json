@@ -1,0 +1,22 @@
+{
+	"id": "peppol-netzwerk",
+	"name": "Peppol Netzwerk",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Peppol ist ein technisches, organisatorisches und rechtliches Netzwerk, auf das der IT-Planungsrat seit 2018 für den Bereich der öffentlichen Beschaffung setzt. OpenPeppol ist von einem europäischen Projekt für öffentliche Beschaffung zu einem der weltweit am weitesten verbreiteten Rahmenwerke für den grenzüberschreitenden elektronischen Dokumentenaustausch geworden, das verschiedene Rechtsordnungen auf den meisten Kontinenten umfasst. Diese Expansion spiegelt den grundlegenden Wert des Netzwerks wider: eine vertrauenswürdige, sichere und interoperable Infrastruktur, die es Unternehmen jeder Größe ermöglicht, Rechnungen und andere Geschäftsdokumente mit jedem Partner im Netzwerk, weltweit, auszutauschen. Hierfür sind keine bilateralen technischen Vereinbarungen notwendig. Die verwendeten technischen Standards basieren grundsätzlich auf offene, international akzeptierte Standards. Die Umsetzung und Zusammenarbeit erfolgt auf der Grundlage des Peppol Interoperability Frameworks.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

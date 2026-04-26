@@ -1,0 +1,22 @@
+{
+	"id": "kafka",
+	"name": "Kafka",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Kafka ist die De-facto-Standardplattform für ereignisgetriebene Architekturen, verteiltes Event-Streaming und entkoppelte Datenintegration zwischen Fachverfahren. Sie ermöglicht hochskalierbare, persistente Nachrichtenflüsse zwischen Registern, Portalen und nachgelagerten Systemen.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"id": "xjustiz",
+	"name": "XJustiz",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Datenaustauschformat für den elektronischen Rechtsverkehr zwischen Gerichten und Verfahrensbeteiligten",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

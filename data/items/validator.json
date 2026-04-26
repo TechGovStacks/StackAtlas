@@ -1,0 +1,22 @@
+{
+	"id": "validator",
+	"name": "validator",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Werkzeug zur automatisierten Prüfung elektronischer Dokumente im behördenübergreifenden Datenaustausch und in der Kommunikation mit Unternehmen Der Validator ist eine einheitliche Open-Source-Lösung zur automatisierten Prüfung von XML-strukturierten Dokumenten. Er reduziert manuelle Qualitätsprüfungen eingehender und ausgehender Dokumente erheblich. Seine modulare Architektur erlaubt eine feingranulare Konfiguration für unterschiedliche Anwendungsszenarien. Zum Einsatz kommen ausschließlich offene Standards und Komponenten wie XML, XML Schema, Schematron, OpenAPI, Saxon, Picocli und Jakarta. https://github.com/itplr-kosit/validator",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

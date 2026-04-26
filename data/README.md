@@ -1,7 +1,7 @@
 ---
 status: active
 owner: Data Engineering
-last_reviewed: 2026-04-24
+last_reviewed: 2026-04-26
 source_of_truth: docs/ARC42.md
 ---
 

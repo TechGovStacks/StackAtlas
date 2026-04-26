@@ -1,0 +1,22 @@
+{
+	"id": "standards-fur-tests-mocks-ci-cd",
+	"name": "Standards für Tests, Mocks, CI/CD",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Standards, die sicherstellen, dass Softwarekomponenten und Dienste unabhängig voneinander getestet und in Betrieb genommen werden können, möglichst ohne Betriebsunterbrechung.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

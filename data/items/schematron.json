@@ -1,0 +1,22 @@
+{
+	"id": "schematron",
+	"name": "Schematron",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "A language for making assertions about the presence or absence of patterns in linked XML documents, and reporting them in useful ways.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

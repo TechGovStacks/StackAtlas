@@ -1,0 +1,22 @@
+{
+	"id": "apache-produkte",
+	"name": "Apache Produkte",
+	"layer": "applications",
+	"description": {
+		"de": "Apache HTTP Server, Tomcat",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

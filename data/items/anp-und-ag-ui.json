@@ -1,0 +1,22 @@
+{
+	"id": "anp-und-ag-ui",
+	"name": "ANP und AG-UI",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Agent Network Protocol (ANP) und Agent-User Interaction Protocol (AG-UI) – zwei Kommunikationsprotokolle für KI-Agenten, im Beschluss gleichrangig neben MCP und A2A geführt.",
+		"en": ""
+	},
+	"tags": [],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}
