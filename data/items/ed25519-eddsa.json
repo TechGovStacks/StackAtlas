@@ -6,8 +6,8 @@
 		"de": "M. E. nach inzwischen nahezu der Standard für SSH-Schlüssel.",
 		"en": ""
 	},
-	"tags": ["negz-import", "unresearched"],
-	"oss": true,
+	"tags": ["negz-import", "researched"],
+	"oss": false,
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,

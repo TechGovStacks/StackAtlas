@@ -6,7 +6,7 @@
 		"de": "COM Tauri ist ein Kernelement der OSCI-Infrastruktur, die föderal eingesetzt und durch diverse Fachgesetzte gefordert wird (Meldewesen, Gewerbemeldung). Dieser Baustein ist ein Produkt des ITPLR und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung. Diese Lösung ist in vielen Ländern schon als Basisdienst etabliert.",
 		"en": ""
 	},
-	"tags": ["negz-import", "unresearched"],
+	"tags": ["negz-import", "researched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

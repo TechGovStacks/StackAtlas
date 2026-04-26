@@ -6,8 +6,8 @@
 		"de": "ISO/IEC 23761:2021 (EPUB Accessibility) definiert Anforderungen an barrierefreie E-Book- und digitale Publikationsformate (derzeit EPUB 3.3 und höher). Er referenziert WCAG 2.x und ergänzt diese um publikationsspezifische Anforderungen (Navigation, Metadaten, Leseabfolge). Relevant für alle D-Stack-Publikationsformate: digitale Broschüren, Leitfäden, Fachinformationen, digitale Amtsblätter.",
 		"en": ""
 	},
-	"tags": ["negz-import", "unresearched"],
-	"oss": true,
+	"tags": ["negz-import", "researched"],
+	"oss": false,
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,

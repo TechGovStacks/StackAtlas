@@ -6,8 +6,8 @@
 		"de": "Die EN 301 549 ist der übergreifende europäische Barrierefreiheitsstandard für IKT-Produkte und -Dienste (CEN/CENELEC/ETSI). Er referenziert die WCAG 2.1 (bald 2.2) für Web-Inhalte, Software, mobile Anwendungen, Hardware und Dokumente sowie weitere spezifische Normen.",
 		"en": ""
 	},
-	"tags": ["negz-import", "unresearched"],
-	"oss": true,
+	"tags": ["negz-import", "researched"],
+	"oss": false,
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,

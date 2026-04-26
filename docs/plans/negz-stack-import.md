@@ -5,6 +5,7 @@
 Die Datei `docs/stacks/NEGZ-Stack.de.csv` enthält Community-Feedback des NEGZ (Nationales E-Government Kompetenzzentrum) zum Deutschland-Stack. Darin sind ~495 Zeilen mit Technologievorschlägen (Urteil: fehlt/überflüssig/ändern).
 
 **Ziel:**
+
 1. Alle einzigartigen Technologien/Standards aus dem CSV in den `data/items/`-Katalog aufnehmen (neue Einträge anlegen, sofern noch nicht vorhanden)
 2. Neuen Stack `data/stacks/negz.json` anlegen, der alle NEGZ-Items referenziert
 3. Annahme: alle Items werden in den Stack aufgenommen — unabhängig vom Urteil (fehlt/überflüssig/ändern)
@@ -14,17 +15,20 @@ Die Datei `docs/stacks/NEGZ-Stack.de.csv` enthält Community-Feedback des NEGZ (
 ## Analyse der CSV
 
 **CSV-Struktur:**
+
 ```
 Urteil | Standard | Was ist das? | Warum nötig/unnötig? | Kontakt | Anmerkungen
 ```
 
 **Zahlen:**
+
 - ~495 Zeilen Gesamtinhalt
 - ~200 eindeutige Technologienamen nach Deduplication
 - ~40–50 bereits im Katalog vorhanden (z.B. postgresql, kubernetes, tls, mcp, oauth, yaml, soap, mls, gitlab, angular, react, github-actions, docker-swarm, portainer, openapi, python, typescript ...)
 - ~150–160 neue Items zu erstellen
 
 **Bekannte Duplikate im CSV** (erscheinen mehrfach unter identischem oder ähnlichem Namen):
+
 - Redis (3×), RabbitMQ (3×), vLLM (2×), llm-d/Llm-d (2×), Vue.js (3×), .NET (3×), OpenTelemetry (3×), Grafana (+ Mimir/Loki/Tempo/Alloy), Matrix (4×), Knative (2×), SAML (3×), Keycloak (3×), BPMN (3×), Valkey (2×), Kafka/Apache Kafka (2×), Sigstore (2×), A2A (2×), Helm (2×), Protocol Buffers / Procol Buffers (Tippfehler, 2×), OSCI (3×), XÖV (2×)
 
 ---
@@ -32,9 +36,11 @@ Urteil | Standard | Was ist das? | Warum nötig/unnötig? | Kontakt | Anmerkunge
 ## Umsetzungsplan
 
 ### Schritt 1: Import-Script schreiben
+
 **Datei:** `scripts/import-negz-stack.mjs`
 
 Das Script:
+
 1. Liest `docs/stacks/NEGZ-Stack.de.csv` ein (Node.js, kein externes CSV-Paket nötig — manuelles Parsing via `fs.readFileSync`)
 2. Parst alle Zeilen ab Zeile 14 (Datenstart nach Header-Block)
 3. Extrahiert: `name`, `description` (Spalte 3), `rationale` (Spalte 4), `verdict` (Spalte 1)
@@ -45,11 +51,13 @@ Das Script:
 8. Erstellt `data/stacks/negz.json` mit allen Item-Referenzen
 
 ### Schritt 2: Script ausführen
+
 ```bash
 node scripts/import-negz-stack.mjs
 ```
 
 ### Schritt 3: Qualitätssicherung & Formatierung
+
 ```bash
 pnpm format
 node scripts/validate-schemas.mjs
@@ -59,6 +67,7 @@ pnpm build
 ```
 
 ### Schritt 4: Commit & Push auf Branch `claude/add-negz-stack-items-NLjIy`
+
 ```
 feat: Add NEGZ stack and ~150 new items from community feedback
 ```
@@ -69,20 +78,20 @@ feat: Add NEGZ stack and ~150 new items from community feedback
 
 ```json
 {
-  "id": "negz",
-  "name": { "de": "NEGZ-Empfehlungsstack", "en": "NEGZ Recommendation Stack" },
-  "description": {
-    "de": "Community-Feedback des NEGZ zu fehlenden und überflüssigen Standards im Deutschland-Stack.",
-    "en": "NEGZ community feedback on missing and redundant standards in the Germany Stack."
-  },
-  "country": "DE",
-  "issuer": "Nationales E-Government Kompetenzzentrum (NEGZ)",
-  "version": "0.1.0",
-  "publishedAt": "2026-04-26",
-  "sources": [
-    { "label": { "de": "NEGZ-Feedback-CSV" }, "url": "https://negz.org" }
-  ],
-  "items": [ /* alle einzigartigen Items mit status: "recommended", role: "consumer" */ ]
+	"id": "negz",
+	"name": { "de": "NEGZ-Empfehlungsstack", "en": "NEGZ Recommendation Stack" },
+	"description": {
+		"de": "Community-Feedback des NEGZ zu fehlenden und überflüssigen Standards im Deutschland-Stack.",
+		"en": "NEGZ community feedback on missing and redundant standards in the Germany Stack."
+	},
+	"country": "DE",
+	"issuer": "Nationales E-Government Kompetenzzentrum (NEGZ)",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-26",
+	"sources": [{ "label": { "de": "NEGZ-Feedback-CSV" }, "url": "https://negz.org" }],
+	"items": [
+		/* alle einzigartigen Items mit status: "recommended", role: "consumer" */
+	]
 }
 ```
 
@@ -92,27 +101,28 @@ feat: Add NEGZ stack and ~150 new items from community feedback
 
 ```json
 {
-  "id": "<slug>",
-  "name": "<Name aus CSV>",
-  "layer": "<best-effort aus Kontext>",
-  "description": { "de": "<Was ist das?-Text>" },
-  "oss": true,
-  "tags": [],
-  "sovereigntyCriteria": {
-    "openSource": false,
-    "euHeadquartered": false,
-    "hasAudit": false,
-    "permissiveLicense": false,
-    "matureProject": false,
-    "selfHostable": false,
-    "dataPortability": false,
-    "openStandards": false,
-    "noTelemetryByDefault": false
-  }
+	"id": "<slug>",
+	"name": "<Name aus CSV>",
+	"layer": "<best-effort aus Kontext>",
+	"description": { "de": "<Was ist das?-Text>" },
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
 }
 ```
 
 **Layer-Zuordnung (Best-effort im Script via Keyword-Mapping):**
+
 - `infrastructure`: Netzwerkprotokolle, Krypto, Storage, OS, Virtualisierung, Bare-Metal
 - `platform`: Container, K8s-Tools, CI/CD, Observability, Messaging, Datenbanken, IAM
 - `building-blocks`: Sprachen, Frameworks, Libraries, Serialisierungsformate, Test-Tools
@@ -153,16 +163,16 @@ feat: Add NEGZ stack and ~150 new items from community feedback
 
 ## Kritische Dateien
 
-| Datei | Aktion |
-|-------|--------|
-| `docs/stacks/NEGZ-Stack.de.csv` | Input (nur gelesen) |
-| `docs/plans/negz-stack-import.md` | Dieser Plan |
-| `scripts/import-negz-stack.mjs` | Neu erstellen |
-| `data/stacks/negz.json` | Neu erstellen (via Script) |
-| `data/items/*.json` | ~150 neue Dateien (via Script) |
-| `data/schemas/item.schema.json` | Referenz (nicht geändert) |
-| `data/schemas/stack.schema.json` | Referenz (nicht geändert) |
-| `scripts/validate-schemas.mjs` | Zum Validieren der neuen Dateien |
+| Datei                             | Aktion                           |
+| --------------------------------- | -------------------------------- |
+| `docs/stacks/NEGZ-Stack.de.csv`   | Input (nur gelesen)              |
+| `docs/plans/negz-stack-import.md` | Dieser Plan                      |
+| `scripts/import-negz-stack.mjs`   | Neu erstellen                    |
+| `data/stacks/negz.json`           | Neu erstellen (via Script)       |
+| `data/items/*.json`               | ~150 neue Dateien (via Script)   |
+| `data/schemas/item.schema.json`   | Referenz (nicht geändert)        |
+| `data/schemas/stack.schema.json`  | Referenz (nicht geändert)        |
+| `scripts/validate-schemas.mjs`    | Zum Validieren der neuen Dateien |
 
 ---
 
@@ -178,10 +188,10 @@ feat: Add NEGZ stack and ~150 new items from community feedback
 
 ## Geschätzter Umfang
 
-| Kategorie | Anzahl |
-|-----------|--------|
-| Neue Item-JSON-Dateien | ~150–160 |
-| Bereits vorhandene Items (referenziert) | ~40–50 |
-| Stack-Items gesamt | ~190–200 |
-| Übersprungene Duplikate | ~50–60 |
-| Übersprungene Meta-Einträge | ~15–20 |
+| Kategorie                               | Anzahl   |
+| --------------------------------------- | -------- |
+| Neue Item-JSON-Dateien                  | ~150–160 |
+| Bereits vorhandene Items (referenziert) | ~40–50   |
+| Stack-Items gesamt                      | ~190–200 |
+| Übersprungene Duplikate                 | ~50–60   |
+| Übersprungene Meta-Einträge             | ~15–20   |

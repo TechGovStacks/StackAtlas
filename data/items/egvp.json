@@ -6,7 +6,7 @@
 		"de": "Auf dem OSCI-Standard beruhende Transportinfrastruktur für den elektronischen Rechtsverkehr zwischen Gerichten und Verfahrensbeteiligten.",
 		"en": ""
 	},
-	"tags": ["negz-import", "unresearched"],
+	"tags": ["negz-import", "researched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

@@ -6,7 +6,7 @@
 		"de": "DPK ist ein Open-Source-Toolkit für skalierbare Datenaufbereitung von Trainings- und RAG-Daten für LLMs, mit Modulen für Deduplizierung, PII-Filterung und Qualitätsbewertung.",
 		"en": ""
 	},
-	"tags": ["negz-import", "unresearched"],
+	"tags": ["negz-import", "researched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

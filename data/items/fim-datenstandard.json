@@ -6,8 +6,8 @@
 		"de": "FIM-Datenstandard (Föderales Informationsmanagement) ist ein zentraler Standard zur Strukturierung und Standardisierung von Verwaltungsdaten in Deutschland. Er dient dazu, Verwaltungsleistungen, Prozesse und Datenfelder bundesweit einheitlich zu definieren, um die Digitalisierung nach dem Onlinezugangsgesetz (OZG) zu beschleunigen und medienbruchfreie Verfahren zu ermöglichen.",
 		"en": ""
 	},
-	"tags": ["negz-import", "unresearched"],
-	"oss": true,
+	"tags": ["negz-import", "researched"],
+	"oss": false,
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,

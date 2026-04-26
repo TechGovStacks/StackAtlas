@@ -6,8 +6,8 @@
 		"de": "eIDAS 2.0 ist der europäische Rechts- und Interoperabilitätsrahmen für elektronische Identitäten und Vertrauensdienste. Er schafft einheitliche Anforderungen dafür, wie digitale Identitäten und Nachweise grenzüberschreitend eingesetzt werden.",
 		"en": ""
 	},
-	"tags": ["negz-import", "unresearched"],
-	"oss": true,
+	"tags": ["negz-import", "researched"],
+	"oss": false,
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,

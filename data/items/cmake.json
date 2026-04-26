@@ -1,12 +1,12 @@
 {
 	"id": "cmake",
 	"name": "CMake",
-	"layer": "sovereign-standards",
+	"layer": "building-blocks",
 	"description": {
 		"de": "Buildtool für C++-basierte Anwendungen.",
 		"en": ""
 	},
-	"tags": ["negz-import", "unresearched"],
+	"tags": ["negz-import", "researched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,
@@ -18,5 +18,6 @@
 		"dataPortability": false,
 		"openStandards": false,
 		"noTelemetryByDefault": false
-	}
+	},
+	"homepage": "https://cmake.org/"
 }

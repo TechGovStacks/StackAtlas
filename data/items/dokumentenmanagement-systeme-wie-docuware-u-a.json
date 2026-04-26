@@ -6,7 +6,7 @@
 		"de": "DMS-Systeme wie Docuware oder andere bieten einen sicheren und DSGVO-gerechten Standard für die Archivierung, Ablage etc. von Dokumenten und Formularen.",
 		"en": ""
 	},
-	"tags": ["negz-import", "unresearched"],
+	"tags": ["negz-import", "researched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,
