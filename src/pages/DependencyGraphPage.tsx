@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { AutoSingleSelect as KolSingleSelect } from '../components/AutoSingleSelect';
 import { DependencyGraph } from '../components/DependencyGraph';
-import { FilterBar, SortDir, SortField, ViewMode } from '../components/FilterBar';
+import { FilterBar, SortDir, SortField } from '../components/FilterBar';
 import { ITEMS, LAYERS, STACKS } from '../data/catalog';
 import { useFilters } from '../hooks/useFilters';
 import { useRouteAnnouncement } from '../hooks/useRouteAnnouncement';
@@ -15,7 +15,6 @@ export function DependencyGraphPage() {
 	const [selectedRootItemId, setSelectedRootItemId] = useState<string | null>(null);
 	const [sortField, setSortField] = useState<SortField>('overall');
 	const [sortDir, setSortDir] = useState<SortDir>('desc');
-	const [viewMode, setViewMode] = useState<ViewMode>('tile');
 
 	const activeStack = useMemo(() => STACKS.find((stack) => stack.id === activeStackId) ?? null, [activeStackId]);
 	const stackItemMap = useMemo(() => new Map((activeStack?.items ?? []).map((stackItem) => [stackItem.itemId, stackItem])), [activeStack]);
@@ -72,8 +71,6 @@ export function DependencyGraphPage() {
 				onSortFieldChange={setSortField}
 				sortDir={sortDir}
 				onSortDirToggle={() => setSortDir((direction) => (direction === 'asc' ? 'desc' : 'asc'))}
-				viewMode={viewMode}
-				onViewModeChange={setViewMode}
 				showDependencyControls
 			/>
 			<div className="px-3 md:px-4 lg:px-5 py-3">

@@ -23,8 +23,6 @@ interface FilterBarProps {
 	onSortFieldChange: (field: SortField) => void;
 	sortDir: SortDir;
 	onSortDirToggle: () => void;
-	viewMode: ViewMode;
-	onViewModeChange: (mode: ViewMode) => void;
 	showDependencyControls?: boolean;
 }
 
@@ -40,8 +38,6 @@ export function FilterBar({
 	onSortFieldChange,
 	sortDir,
 	onSortDirToggle,
-	viewMode,
-	onViewModeChange,
 	showDependencyControls = false,
 }: FilterBarProps) {
 	const { i18n, t } = useTranslation();
@@ -232,16 +228,6 @@ export function FilterBar({
 						_on={{ onClick: onSortDirToggle }}
 					/>
 				</div>
-				<KolInputCheckbox
-					className="filter-bar__view-toggle"
-					_label={t('view.viewToggle')}
-					_hideLabel
-					_variant="switch"
-					_checked={viewMode === 'list'}
-					_on={{
-						onChange: (_e: globalThis.Event, value: unknown) => onViewModeChange(value ? 'list' : 'tile'),
-					}}
-				/>
 			</div>
 		</section>
 	);
