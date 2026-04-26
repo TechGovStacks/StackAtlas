@@ -957,19 +957,24 @@ kol-select,
 .pagination-controls {
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	gap: var(--ds-space-2);
+	justify-content: flex-start;
+	gap: var(--ds-space-1);
 }
 
 .pagination-controls kol-button {
 	flex-shrink: 0;
 }
 
+.pagination-controls kol-button kol-icon {
+	font-size: 18px;
+}
+
 .pagination-info {
-	min-width: 60px;
+	min-width: 45px;
 	text-align: center;
-	font-size: var(--ds-text-sm);
+	font-size: var(--ds-text-xs);
 	color: var(--ds-color-text-muted);
+	white-space: nowrap;
 }
 
 .pagination-bar__view-toggle {
