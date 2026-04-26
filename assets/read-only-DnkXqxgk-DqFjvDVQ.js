@@ -1,1 +1,0 @@
-import{lt as e}from"./index-BQMM3wH-.js";var t=(t,n)=>{e(t,`_readOnly`,n)};export{t};
