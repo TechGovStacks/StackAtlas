@@ -208,6 +208,11 @@ Legende Eignung:
 - 🟡 prüfen = sinnvoll, aber kontext-/einsatzabhängig
 - ❌ eher nein = aktuell kein Fokus für StackAtlas-Kernset
 
+Umsetzung in den Daten:
+
+- Neues kuratiertes Stack-Profil: `data/stacks/negz-sovereign-interoperability.json`
+- Enthält die ausgewählten „Interoperabilitäts-Rückkehrer“ (u. a. X-Familie, OSCI/XTA, ebMS/AS4, SAML, S3-API) als empfohlenes Teilset.
+
 |   # | ID                                                                                                                 | Name                                                                                                                 | Layer               | Research-Status | Eignung (StackAtlas) |
 | --: | ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------- | ------------------- | --------------- | -------------------- |
 |   1 | `802-11-bis-802-11-be`                                                                                             | 802.11 bis 802.11 be                                                                                                 | sovereign-standards | researched      | ✅ geeignet          |
