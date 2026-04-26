@@ -6,7 +6,7 @@
 		"de": "Verschlüsselung von XML-Nachrichten, um eine Nicht-Einsehbarkeit umzusetzen. Siehe DSGVO, Art. 5.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

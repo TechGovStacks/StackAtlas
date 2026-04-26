@@ -6,7 +6,7 @@
 		"de": "Hybride Programmiersprache mit Unterstützung für die JVM, JavaScript und Native Entwicklung, die objektorientierte (OO) und funktionale Programmierung (FP) vereint.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

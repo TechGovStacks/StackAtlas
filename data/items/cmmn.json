@@ -6,7 +6,7 @@
 		"de": "CMMN (Case Management Model and Notation) beschreibt fallbezogene, weniger strikt lineare Vorgänge. Der Standard eignet sich besonders für Verwaltungsprozesse mit Ausnahmen, Ermessensspielräumen und ereignisgetriebenen Bearbeitungsschritten.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

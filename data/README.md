@@ -113,4 +113,5 @@ Das optionale Feld `groupKey` kennzeichnet Items, die **dieselbe Kernfunktion** 
   - `platform`: `daten`, `integration`, `ki`, `lowcode`, `laufzeit`
 - Validierung: `pnpm validate-schemas`
 - D-Stack-Metadaten (Maturity, Tags, Audit-Datum) aus `data/projects.csv` in Items synchronisieren: `node scripts/sync-d-stack.mjs`
+- NEGZ-Importe markieren neue, noch nicht manuell verifizierte Items mit den Tags `negz-import` und `unresearched`.
 - Kernschemas: `data/schemas/layer.schema.json`, `data/schemas/item.schema.json`, `data/schemas/stack.schema.json`

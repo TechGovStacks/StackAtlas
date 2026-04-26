@@ -6,7 +6,7 @@
 		"de": "SPDX ist ein Standardformat für Software Bill of Materials (SBOM) und Lizenzinformationen. Er macht transparent, welche Komponenten in einer Softwarelieferkette enthalten sind und unter welchen Bedingungen sie genutzt werden.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

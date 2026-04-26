@@ -6,7 +6,7 @@
 		"de": "Token-Oriented Object Notation (TOON) https://github.com/toon-format/toon",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

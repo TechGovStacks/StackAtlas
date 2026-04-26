@@ -6,7 +6,7 @@
 		"de": "Protocol Buffers (protobuf) ist ein Datenformat zur Serialisierung mit einer Schnittstellen-Beschreibungssprache. Hauptsächliche Entwurfskriterien der Protocol Buffers sind Einfachheit und Performance. Daher ist es als ein Binärformat konzipiert im Gegensatz zu XML, welches auf ein textuelles Format setzt.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

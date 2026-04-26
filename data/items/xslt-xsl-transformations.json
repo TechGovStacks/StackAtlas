@@ -6,7 +6,7 @@
 		"de": "Mächtige Sprache zur Transformation von XML-Dokumenten in Bezug auf die XML-Struktur oder gänzlich andere Formate (PDF / HTML / TEXT / JSON / ..).",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

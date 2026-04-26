@@ -6,7 +6,7 @@
 		"de": "Iceberg ist ein offenes Tabellenformat für große analytische Datenbestände auf Object Storage (S3/COS/MinIO). Es bietet ACID-Transaktionen, Schema Evolution und Time-Travel über Engine-Grenzen hinweg (Spark, Trino, Flink, u.a.).",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

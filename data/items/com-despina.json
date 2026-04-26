@@ -6,7 +6,7 @@
 		"de": "COM Despina ist ein Baustein für fachunabhängigen Datenaustausch gemäß ITPLR-Standards. COM Despina kann sowohl zentral als auch dezentral betrieben werden und erleichtert den Fachverfahren die Verarbeitung von Transportnachrichten. Dieser Baustein ist ein Produkt des ITPLR und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung. Diese Lösung ist in vielen Ländern schon als Basisdienst etabliert.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

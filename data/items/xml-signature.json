@@ -6,7 +6,7 @@
 		"de": "Signatur für XML-Nachrichten, um eine Authentisierung durchführen zu können. Siehe DSGVO, Art. 5.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

@@ -6,7 +6,7 @@
 		"de": "Sigstore ist ein offener Standard- und Tooling-Ansatz für die kryptographische Signatur und Verifikation von Software-Artefakten. Damit lässt sich nachvollziehen, wer ein Artefakt erzeugt hat und ob es unverändert ausgeliefert wurde.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

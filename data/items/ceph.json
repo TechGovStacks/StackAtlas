@@ -6,7 +6,7 @@
 		"de": "Ceph ist eine quelloffene (Open Source), verteilte und softwaredefinierte Speicherplattform (SDS), die speziell für die hochverfügbare und massiv skalierbare Verwaltung von Daten in Cloud-Infrastrukturen sowie modernen Rechenzentren entwickelt wurde. Sie bietet Unternehmen eine vereinheitlichte Architektur für Object-, Block- und File-Storage auf Basis von Standard-Hardware und ist für den Einsatz in geschäftskritischen Umgebungen optimiert, in denen maximale Ausfallsicherheit, Transparenz und nahtloses Wachstum gefragt sind.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

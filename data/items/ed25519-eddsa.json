@@ -6,7 +6,7 @@
 		"de": "M. E. nach inzwischen nahezu der Standard für SSH-Schlüssel.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

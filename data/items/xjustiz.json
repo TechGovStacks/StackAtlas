@@ -6,7 +6,7 @@
 		"de": "Datenaustauschformat für den elektronischen Rechtsverkehr zwischen Gerichten und Verfahrensbeteiligten",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

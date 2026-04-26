@@ -6,7 +6,7 @@
 		"de": "Standard für den Betrieb von IT-Lösungen",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

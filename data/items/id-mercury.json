@@ -6,7 +6,7 @@
 		"de": "ID Mercury dient als Zugang zu verschiednen eID-Systemen und Infrastrukturen. In seiner Rolle als AUtentisierungs-Broker ist ID Mercury eine Erleicherung für die Online-Dienste. Derzeit wird ID Mercury als Wallet-Adapter weiterentwickelt, so dass auch das kommende EUDI-Wallet ohne große ANpassunegnen in den bestehenden Online-Diensten genutz twerden kann. Darüber kann ein wichtiger Mehrwert über den D-Stack erreicht werden. Dieser Baustein ist ein Produkt des ITPLR und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung. Diese Lösung ist in vielen Ländern schon als Basisdienst etabliert.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

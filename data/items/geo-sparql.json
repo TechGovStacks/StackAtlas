@@ -6,7 +6,7 @@
 		"de": "SPARQL ist eine Abfragesprache zur Verarbeitung und Abfrage von RDF-Daten. Sie ermöglicht es, strukturierte Daten in Graphenform gezielt zu durchsuchen und zu kombinieren. Dabei ähnelt sie konzeptionell SQL, ist jedoch speziell auf semantische Datenmodelle ausgelegt. GeoSPARQL erweitert SPARQL um Abfragen mit räumlichen Bezug (z.B. Distanzen, Umkreise, etc.)",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

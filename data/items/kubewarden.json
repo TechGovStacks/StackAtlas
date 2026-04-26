@@ -6,7 +6,7 @@
 		"de": "Kubewarden ist ein cloud-native Policy-Governance-Framework für Kubernetes, das als dynamischer Admission Controller fungiert. Es ermöglicht die Definition, Validierung und Mutation von Cluster-Ressourcen basierend auf plattformübergreifenden Richtlinien (Policies).",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

@@ -6,7 +6,7 @@
 		"de": "XRechnung ist ein eigenständiger Standard, der speziell für E-Rechnungen im öffentlichen Auftragswesen entwickelt wurde.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

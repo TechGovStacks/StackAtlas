@@ -6,7 +6,7 @@
 		"de": "Regelbasierte Validierungssprache für XML-Dokumente. Dient u. a. der Formulierung von Geschäftsregeln, die automatisiert geprüft werden können",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

@@ -6,7 +6,7 @@
 		"de": "Legt Strukturen für XML-Nachrichten fest. Eine Überprüfung von XML-Nachrichten gegen ein zugehöriges Schema sollte immer stattfinden (Überprüfung von Eingabedaten gemäß IT-Grundschutz).",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

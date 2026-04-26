@@ -6,7 +6,7 @@
 		"de": "Valkey ist eine offene Weiterentwicklung von Redis.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

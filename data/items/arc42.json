@@ -6,7 +6,7 @@
 		"de": "Dokumentationsstandard für pragmatische Softwarearchitekturen, siehe: https://arc42.org/",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

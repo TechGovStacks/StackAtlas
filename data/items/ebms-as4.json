@@ -6,7 +6,7 @@
 		"de": "AS4 (Applicability Statement 4) ist ein offener Standard für den sicheren und nutzdatenunabhängigenAustausch von Business-to-Business-Dokumenten mithilfe von Webservices.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

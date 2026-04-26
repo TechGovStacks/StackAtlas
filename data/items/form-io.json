@@ -6,7 +6,7 @@
 		"de": "Framework zur Erzeugung von Formularen",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

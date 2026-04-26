@@ -6,7 +6,7 @@
 		"de": "Ein Standard des IT-Planungsrats für die einheitliche Schnittstelle zwischen Fach- und Transportverfahren und ermöglicht eine einheitliche Beauftragung, Steuerung und Überprüfung des Nachrichtentransports. Weiteres unter https://www.xoev.de/xta",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

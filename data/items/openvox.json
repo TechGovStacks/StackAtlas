@@ -6,7 +6,7 @@
 		"de": "OpenSource IaS-Lösung, als community-Fork von Puppet",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

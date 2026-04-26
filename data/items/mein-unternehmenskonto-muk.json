@@ -6,7 +6,7 @@
 		"de": "Über den D-Stack können Behörden Zugang zum MUK bekommen, um mit Unternehmen und anderen Organisationen kommunizieren zu können. Das kann analog zum ZBP der BundID erfolgen.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

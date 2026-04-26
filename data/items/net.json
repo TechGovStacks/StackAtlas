@@ -6,7 +6,7 @@
 		"de": ".NET ist ein vollständig Open Source gestelltes Entwicklungs Framework mit Bibliotheken, Runtime, Compiler, Sprachen wie C#, Visual Basic F# etc., dass mit der Ausrichtung zur Entwicklung von Cross-Platform und Cloud native Architekturen betrieben in Kubernetes in enger Kopplung zu den Zielen der Cloud Native Computing Foundation (CNCF) steht.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

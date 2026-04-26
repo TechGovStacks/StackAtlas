@@ -6,7 +6,7 @@
 		"de": "Standrad zur Abstimmung der Geschäftsprozesse und der IT, damit die Unternehmensziele erreicht werden und Veränderungen nachvollziehbar gestaltet werden. Siehe https://www.opengroup.org/togaf",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

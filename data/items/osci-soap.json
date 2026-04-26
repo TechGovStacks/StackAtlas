@@ -6,7 +6,7 @@
 		"de": "OSCI defiiert Protokollstandards für den sicheren elektronischen Nachrichtenaustausch über das Internet und andere Netze. Diese garantieren Integrität, Authentizität, Vertraulichkeit und Nachweisbarkeit der Daten und Datenflüsse und ermöglichen medienbruchfreien, effizienten Transport und Verarbeitung.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

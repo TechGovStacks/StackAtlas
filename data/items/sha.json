@@ -6,7 +6,7 @@
 		"de": "SSH-Schlüssel SHA ist zwar aufgeführt, aber ohne Hinweise siehe Spalte D",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

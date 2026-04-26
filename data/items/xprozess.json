@@ -6,7 +6,7 @@
 		"de": "Ein Standard des IT-Planungsrates zum Austausch von Prozessmodellen innerhalb der deutschen Verwaltung. XProzess 3.0 wird FIM-BPMN und auch BPMN 2.0-Notationen austauschbar und speziell für die deutsche Verwaltung anwendbar machen.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

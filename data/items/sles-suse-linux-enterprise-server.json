@@ -6,7 +6,7 @@
 		"de": "SUSE Linux Enterprise Server (SLES) ist eine modulare, kommerzielle Linux-Distribution, die speziell für den stabilen und sicheren Einsatz in Unternehmensumgebungen sowie Rechenzentren entwickelt wurde. Sie bietet Unternehmen zertifizierten Support für geschäftskritische IT-Infrastrukturen und ist für den Betrieb auf verschiedensten Architekturen, von der Cloud bis zum Mainframe, optimiert.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

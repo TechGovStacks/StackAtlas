@@ -6,7 +6,7 @@
 		"de": "Leichtgewichtiges, menschenlesbares Textformat für strukturierte Dokumentation. Referenzspezifikation: CommonMark (commonmark.org), registriert als IETF-Medientyp text/markdown (RFC 7763).",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

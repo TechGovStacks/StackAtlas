@@ -6,7 +6,7 @@
 		"de": "Offener Standard zur Modellierung von Organisationen, von Organisationszielen bis zu deren Umsetzung",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

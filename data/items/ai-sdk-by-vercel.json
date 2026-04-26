@@ -6,7 +6,7 @@
 		"de": "Das AI SDK von Vercel ist eine TypeScript-Bibliothek, die eine einheitliche Schnittstelle zu verschiedenen Large-Language-Model-Anbietern bereitstellt. Es unterstützt Streaming, Structured Outputs und Tool Use und vereinfacht die Integration von KI-Funktionalitäten in Webanwendungen erheblich.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

@@ -6,7 +6,7 @@
 		"de": "SEMIC‑Spezifikationen sind offene, wiederverwendbare semantische Datenmodelle und Application Profiles der Europäischen Kommission, die grundlegende Konzepte wie Personen, Organisationen, Leistungen, Kriterien und Nachweise kontextneutral beschreiben, um semantische Interoperabilität zwischen Verwaltungen zu ermöglichen. Sie dienen als europaweite Referenzbasis für Austausch, Mapping und Integration von Daten.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

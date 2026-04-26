@@ -6,7 +6,7 @@
 		"de": "SLSA (Supply-chain Levels for Software Artifacts) ist ein Rahmenwerk zur Absicherung der Software-Lieferkette. Es definiert Reifestufen und Nachweise dafür, wie Build- und Release-Prozesse gegen Manipulation geschützt werden.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

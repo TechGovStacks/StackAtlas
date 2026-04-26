@@ -6,7 +6,7 @@
 		"de": "Ein weit verbreitetes, effizientes kryptografisches Verfahren zur Erstellung digitaler Signaturen, basierend auf der Elliptische-Kurven-Kryptografie (ECC).",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

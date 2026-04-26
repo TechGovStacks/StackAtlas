@@ -6,7 +6,7 @@
 		"de": "Die DIN 91379 definiert diejenige Teilmenge des Internationalen Standards ISO 10646 (Unicode), die aus fachlichen Gründen von jedem IT-Verfahren der deutschen Verwaltung mindestens unterstützt werden muss.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

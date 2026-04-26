@@ -6,7 +6,7 @@
 		"de": "Abfragesprache, um XML-Inhalte zu adressieren und auszuwerten.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

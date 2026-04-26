@@ -6,7 +6,7 @@
 		"de": "Der XUnternehmen.Kerndatenmodell spezifiziert ein semantisches Datenmodell für die fachübergreifende, interoperable Übermittlung von Kerndaten (Stammdaten) zu Unternehmen im Bereich der öffentlichen Wirtschaftsverwaltung",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

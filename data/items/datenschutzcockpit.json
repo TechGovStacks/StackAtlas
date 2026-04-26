@@ -6,7 +6,7 @@
 		"de": "Im Datenschutzcockpit (DSC) werden auf Basis der Zustimmung einer natürlichen Person erfolgte Datenübermittlungen zur Anzeige gebracht. Diese Teilfunktionalität kann für den Funktionsbaustein \"Consent\" nachgenutzt werden. Das DSC wird aktuell einamlig zentral bereitgestellt (durch den Bund) und liefert so Mehrwerte für den kommenden D-Stack.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

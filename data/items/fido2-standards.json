@@ -6,7 +6,7 @@
 		"de": "siehe https://de.wikipedia.org/wiki/FIDO2",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

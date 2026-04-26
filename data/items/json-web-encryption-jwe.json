@@ -6,7 +6,7 @@
 		"de": "JSON Web Encryption ist ein IETF-Standard, der eine standardisierte Syntax für den Austausch verschlüsselter Daten basierend auf JSON und Base64 bereitstellt.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

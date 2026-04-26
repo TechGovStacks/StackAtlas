@@ -6,7 +6,7 @@
 		"de": "Ermöglicht Erstellung von maschinenlesbaren Katalogen mit kryptographischen Algorithmen.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

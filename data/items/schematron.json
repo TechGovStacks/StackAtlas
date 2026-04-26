@@ -6,7 +6,7 @@
 		"de": "A language for making assertions about the presence or absence of patterns in linked XML documents, and reporting them in useful ways.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

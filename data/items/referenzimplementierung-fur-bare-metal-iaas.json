@@ -6,7 +6,7 @@
 		"de": "metal-stack.io (Bare-Metal IaaS Plattform) metal-stack.io ist eine Open-Source-Plattform zur automatisierten Bereitstellung und Verwaltung von physischer Server-Infrastruktur („Bare Metal as a Service“). Sie stellt Cloud-ähnliche Funktionen wie Provisionierung, Netzwerkmanagement und Lifecycle-Steuerung über APIs bereit und ermöglicht den Betrieb souveräner Infrastruktur auf eigener Hardware.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

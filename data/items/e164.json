@@ -6,7 +6,7 @@
 		"de": "Standard für die Präsentation von Telefonnummern/SMS",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

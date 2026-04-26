@@ -6,7 +6,7 @@
 		"de": "Konsolidierungsvorhaben für Postfächer der FITKO",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

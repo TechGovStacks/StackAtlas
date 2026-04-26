@@ -6,7 +6,7 @@
 		"de": "ATAG 2.0 (W3C-Standard) definiert Barrierefreiheitsanforderungen für Autorenwerkzeuge – d. h. alle Systeme, mit denen digitale Inhalte erstellt, bearbeitet oder veröffentlicht werden. Teil A: Das Werkzeug selbst muss barrierefrei bedienbar sein. Teil B: Das Werkzeug muss die Erstellung barrierefreier Inhalte unterstützen und fördern. Anwendungsbereich: CMS, Formular-Builder, Dokumentengeneratoren, E-Government-Redaktionssysteme.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

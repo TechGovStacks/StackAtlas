@@ -6,7 +6,7 @@
 		"de": "Multi-Cloud-fähige Plattform des ITZBunds für die Bereitstellung souveräner Tool-Chains, z.B. für Softwareentwicklung sowie Projektmanangement und Dokumentation. Basierend auf der Open Source Applikationsplattform Cloudogu EcoSystem und Open Source Tools wie Redmine, SonarQube, Sonatype Nexus, SCM-Manager und BlueSpice-Wiki.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

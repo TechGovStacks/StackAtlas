@@ -6,7 +6,7 @@
 		"de": "OZG-Cloud ist eine Open-Source-Plattform zur digitalen Antragsbearbeitung in kommunalen Verwaltungen, entwickelt im Kontext des Onlinezugangsgesetzes.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

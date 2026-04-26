@@ -6,7 +6,7 @@
 		"de": "Der EMREX-Datenstandard gehört zum europäischen Netzwerk EMREX Network und wird verwendet, um Studierendendaten sicher zwischen Hochschulen in Europa auszutauschen. Was ist EMREX? EMREX steht für Electronic Data Exchange. Es ermöglicht Studierenden, ihre Leistungsnachweise (z. B. Noten, Credits) direkt von einer Hochschule an eine andere zu übertragen, ohne Papierdokumente.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

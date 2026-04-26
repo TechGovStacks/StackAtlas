@@ -6,7 +6,7 @@
 		"de": "Standard der in OSCI, XTA, XÖV, ebMS, AS4, eDelivery etc. eingesetzt wird um Nachrichteninhalte zu übermitteln.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

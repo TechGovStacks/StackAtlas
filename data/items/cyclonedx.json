@@ -6,7 +6,7 @@
 		"de": "Bill of material Standard (ECMA 424) Cyclone DX",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

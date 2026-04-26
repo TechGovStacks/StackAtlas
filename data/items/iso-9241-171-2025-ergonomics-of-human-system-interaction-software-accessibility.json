@@ -6,7 +6,7 @@
 		"de": "ISO 9241-171 (aktualisierte Fassung 2025, verabschiedet als EN ISO 9241-171:2025) ist die internationale Leitnorm für die barrierefreie Gestaltung von Software-Benutzeroberflächen. Sie ergänzt WCAG (die sich primär auf Webinhalte bezieht) um Anforderungen an Desktop-Anwendungen, native Apps und verwaltungsinterne Fachanwendungen, die nicht im Browser laufen.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

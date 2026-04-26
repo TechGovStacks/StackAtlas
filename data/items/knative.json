@@ -6,7 +6,7 @@
 		"de": "Knative ist ein Kubernetes-basiertes Framework für Serverless-Workloads und ereignisgetriebene Funktionen mit Skalierung auf Null.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

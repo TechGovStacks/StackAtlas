@@ -6,7 +6,7 @@
 		"de": "Betriebssystem- und Datenbankagnostische Nocode und Lowcode fähige Plattform zur Automatisierung von Geschäftsprozessen und zur Orchestrierung vorhandener Systeme. Sie unterstützt offene Standards (jeva-basiert) und kann beliebig an alle vorhandenen Systeme angepasst werden.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

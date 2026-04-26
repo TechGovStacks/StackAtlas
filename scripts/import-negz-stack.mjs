@@ -278,7 +278,7 @@ for (const entry of [...entries.values()].sort((a, b) => a.name.localeCompare(b.
 				de: entry.description || `Eintrag aus dem NEGZ-Feedback: ${entry.name}.`,
 				en: '',
 			},
-			tags: [],
+			tags: ['negz-import', 'unresearched'],
 			oss,
 			sovereigntyCriteria: {
 				openSource: oss,

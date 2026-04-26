@@ -6,7 +6,7 @@
 		"de": "Application Management System vom Auswärtigen Amt",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

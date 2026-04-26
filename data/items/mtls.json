@@ -6,7 +6,7 @@
 		"de": "Verschlüsselter Datentransport",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,

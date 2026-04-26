@@ -6,7 +6,7 @@
 		"de": "Standards, die sicherstellen, dass Softwarekomponenten und Dienste unabhängig voneinander getestet und in Betrieb genommen werden können, möglichst ohne Betriebsunterbrechung.",
 		"en": ""
 	},
-	"tags": [],
+	"tags": ["negz-import", "unresearched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,
