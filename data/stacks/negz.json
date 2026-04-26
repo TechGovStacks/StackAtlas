@@ -104,15 +104,6 @@
 			}
 		},
 		{
-			"itemId": "anp-und-ag-ui",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (überflüssig): MCP und A2A verfügen über wachsende Industrieadoption, dokumentierte Implementierungen und aktive Entwickler-Communities. ANP und AG-UI befinden sich in einem deutlich früheren Reifestadium mit begrenzter Erprobung und noch nicht gefestigter Spezifikation. Die Gleichstellung suggeriert eine Austauschbarkeit, die praktisch nicht gegeben ist, und erzeugt für Anwender Unsicherheit statt Orientierung. Die Aufnahme sollte an überprüfbare Reifekriterien geknüpft werden – stabile Spezifikation, produktive Implementierungen, nachgewiesene Interoperabilität.",
-				"en": "NEGZ feedback (überflüssig): MCP und A2A verfügen über wachsende Industrieadoption, dokumentierte Implementierungen und aktive Entwickler-Communities. ANP und AG-UI befinden sich in einem deutlich früheren Reifestadium mit begrenzter Erprobung und noch nicht gefestigter Spezifikation. Die Gleichstellung suggeriert eine Austauschbarkeit, die praktisch nicht gegeben ist, und erzeugt für Anwender Unsicherheit statt Orientierung. Die Aufnahme sollte an überprüfbare Reifekriterien geknüpft werden – stabile Spezifikation, produktive Implementierungen, nachgewiesene Interoperabilität."
-			}
-		},
-		{
 			"itemId": "ansible",
 			"status": "recommended",
 			"role": "consumer",
@@ -137,15 +128,6 @@
 			"rationale": {
 				"de": "NEGZ-Feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Verteiltes Event Streaming' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität.",
 				"en": "NEGZ feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Verteiltes Event Streaming' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität."
-			}
-		},
-		{
-			"itemId": "apache-produkte",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Diverse OpenSource Lösungen für den Betrieb verschiedener Serveranwendungen.",
-				"en": "NEGZ feedback (fehlt): Diverse OpenSource Lösungen für den Betrieb verschiedener Serveranwendungen."
 			}
 		},
 		{
@@ -239,15 +221,6 @@
 			}
 		},
 		{
-			"itemId": "auffuhren-einzelner-algorithmen-fur-signatur-verschlusselung",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (überflüssig): Zu viele Änderungen sind zu erwarten.",
-				"en": "NEGZ feedback (überflüssig): Zu viele Änderungen sind zu erwarten."
-			}
-		},
-		{
 			"itemId": "axon-ivy",
 			"status": "recommended",
 			"role": "consumer",
@@ -263,15 +236,6 @@
 			"rationale": {
 				"de": "NEGZ-Feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'CI/CD und Projektmanagement' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität.",
 				"en": "NEGZ feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'CI/CD und Projektmanagement' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität."
-			}
-		},
-		{
-			"itemId": "betriebsplattformen-betriebssysteme",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Die Berücksichtigung von Betriebsplattformen / Betriebssystemen würde die Landkarte sinnvoll erweitern.",
-				"en": "NEGZ feedback (fehlt): Die Berücksichtigung von Betriebsplattformen / Betriebssystemen würde die Landkarte sinnvoll erweitern."
 			}
 		},
 		{
@@ -824,15 +788,6 @@
 			}
 		},
 		{
-			"itemId": "gitlab-erweiterung-der-beschreibung",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): GitLab ist erfreulicherweise bereits berücksichtigt in der Landkarte, wird dort jedoch vor allem als Version Control System (VCS) gelistet. Wir empfehlen eine Erweiterung der Definition wie folgt: \"GitLab ist eine Open Source basierte DevSecOps-Plattform, mit der Teams den gesamten Softwarelebenszyklus von Planung über Entwicklung und Sicherheit bis zum Betrieb in einer Anwendung steuern und mit KI-Funktionen wie GitLab DAP als Duo Agent Plattform produktiver programmieren, testen und dokumentieren können.\"",
-				"en": "NEGZ feedback (fehlt): GitLab ist erfreulicherweise bereits berücksichtigt in der Landkarte, wird dort jedoch vor allem als Version Control System (VCS) gelistet. Wir empfehlen eine Erweiterung der Definition wie folgt: \"GitLab ist eine Open Source basierte DevSecOps-Plattform, mit der Teams den gesamten Softwarelebenszyklus von Planung über Entwicklung und Sicherheit bis zum Betrieb in einer Anwendung steuern und mit KI-Funktionen wie GitLab DAP als Duo Agent Plattform produktiver programmieren, testen und dokumentieren können.\""
-			}
-		},
-		{
 			"itemId": "gitlabrunner",
 			"status": "recommended",
 			"role": "consumer",
@@ -1157,15 +1112,6 @@
 			}
 		},
 		{
-			"itemId": "kmu-gerechte-beschaffungsstandards-fur-spezialisierte-it-anbieter",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): KMU sind in der deutschen Verwaltungs-IT überproportional innovativ, aber strukturell benachteiligt. Konzernbilanzen als Referenz, komplexe Rahmenvertragsstrukturen und Eignungsanforderungen schließen spezialisierte Anbieter systematisch aus. Der D-Stack kann nur eine lernende, adaptive Infrastruktur werden, wenn das Anbieter-Ökosystem divers bleibt.",
-				"en": "NEGZ feedback (fehlt): KMU sind in der deutschen Verwaltungs-IT überproportional innovativ, aber strukturell benachteiligt. Konzernbilanzen als Referenz, komplexe Rahmenvertragsstrukturen und Eignungsanforderungen schließen spezialisierte Anbieter systematisch aus. Der D-Stack kann nur eine lernende, adaptive Infrastruktur werden, wenn das Anbieter-Ökosystem divers bleibt."
-			}
-		},
-		{
 			"itemId": "knative",
 			"status": "recommended",
 			"role": "consumer",
@@ -1481,15 +1427,6 @@
 			}
 		},
 		{
-			"itemId": "open-virtualization-format-ovf-open-virtual-appliance-ova",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Inbesondere für den Einsatz von virtuellen Appliances fehlt bisher ein Format",
-				"en": "NEGZ feedback (fehlt): Inbesondere für den Einsatz von virtuellen Appliances fehlt bisher ein Format"
-			}
-		},
-		{
 			"itemId": "openbao",
 			"status": "recommended",
 			"role": "consumer",
@@ -1634,24 +1571,6 @@
 			}
 		},
 		{
-			"itemId": "ozg-datenmodelle-fim-datenmodelle",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): OZG-Datenmodelle sollten als zentraler Standardbaustein für Nachnutzung und föderale Anschlussfähigkeit sichtbar verankert werden. Zudem sollten FIM und XÖV-Standards harmonisiert werden.",
-				"en": "NEGZ feedback (fehlt): OZG-Datenmodelle sollten als zentraler Standardbaustein für Nachnutzung und föderale Anschlussfähigkeit sichtbar verankert werden. Zudem sollten FIM und XÖV-Standards harmonisiert werden."
-			}
-		},
-		{
-			"itemId": "pack-und-verschlusselungsformate",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Bisher keine Formate zum Verpacken von Dateien im D-Stack",
-				"en": "NEGZ feedback (fehlt): Bisher keine Formate zum Verpacken von Dateien im D-Stack"
-			}
-		},
-		{
 			"itemId": "pdf-a",
 			"status": "recommended",
 			"role": "consumer",
@@ -1721,15 +1640,6 @@
 			"rationale": {
 				"de": "NEGZ-Feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'End-to-End Frontend Tests' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität.",
 				"en": "NEGZ feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'End-to-End Frontend Tests' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität."
-			}
-		},
-		{
-			"itemId": "po-mo-format-u-xliff",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): PO und XLIFF sind gängige menschen- und maschinenlesbare Formate für Software-Internationalisierung (i18n) und Lokalisierung (l10n).",
-				"en": "NEGZ feedback (fehlt): PO und XLIFF sind gängige menschen- und maschinenlesbare Formate für Software-Internationalisierung (i18n) und Lokalisierung (l10n)."
 			}
 		},
 		{
@@ -1904,15 +1814,6 @@
 			}
 		},
 		{
-			"itemId": "sbt-und-mill",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Automatisieren komplexe Build-Zyklen und Abhängigkeiten in Scala-Projekten für eine effiziente Continuous Integration.",
-				"en": "NEGZ feedback (fehlt): Automatisieren komplexe Build-Zyklen und Abhängigkeiten in Scala-Projekten für eine effiziente Continuous Integration."
-			}
-		},
-		{
 			"itemId": "scala",
 			"status": "recommended",
 			"role": "consumer",
@@ -2021,15 +1922,6 @@
 			}
 		},
 		{
-			"itemId": "sla-basierte-betriebsmodelle",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Ohne diese Standards lassen sich für komplexe zusammengesetzte Syteme und Dienste keine Aussagen zu Verfügbarkeiten machen und der Betrieb wird erschwert.",
-				"en": "NEGZ feedback (fehlt): Ohne diese Standards lassen sich für komplexe zusammengesetzte Syteme und Dienste keine Aussagen zu Verfügbarkeiten machen und der Betrieb wird erschwert."
-			}
-		},
-		{
 			"itemId": "sles-suse-linux-enterprise-server",
 			"status": "recommended",
 			"role": "consumer",
@@ -2129,39 +2021,12 @@
 			}
 		},
 		{
-			"itemId": "standards-fur-logging-monitoring-und-analyse-tools",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Um End-to-End Monitoring in heterogenen Prozessen zu ermöglichen (SaaS / EfA Front-End offen im Web) vs Backend On-Prem-Legacy: die offenen Web-Components sollten für den Gesamtprozess-Support über webhooks oder APIs \"keys/transactions_ids\" liefern um in der Gesamtstrecke nachvollziehbarkeit auf Transaktionsebene transparent herzustellen; Dies erhöht substanziell das Vertrauen der Verwaltung in verteilte Systeme, da prüfbar wird ob Anträge auch wirklich in den Fachverfahren oder der e-Akte ankommen.",
-				"en": "NEGZ feedback (fehlt): Um End-to-End Monitoring in heterogenen Prozessen zu ermöglichen (SaaS / EfA Front-End offen im Web) vs Backend On-Prem-Legacy: die offenen Web-Components sollten für den Gesamtprozess-Support über webhooks oder APIs \"keys/transactions_ids\" liefern um in der Gesamtstrecke nachvollziehbarkeit auf Transaktionsebene transparent herzustellen; Dies erhöht substanziell das Vertrauen der Verwaltung in verteilte Systeme, da prüfbar wird ob Anträge auch wirklich in den Fachverfahren oder der e-Akte ankommen."
-			}
-		},
-		{
 			"itemId": "standards-fur-tests-mocks-ci-cd",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
 				"de": "NEGZ-Feedback (fehlt): Ohne derartige Standards ist ein Betrieb komplexer Dienste und Infrastrukturen erheblich erschwert.",
 				"en": "NEGZ feedback (fehlt): Ohne derartige Standards ist ein Betrieb komplexer Dienste und Infrastrukturen erheblich erschwert."
-			}
-		},
-		{
-			"itemId": "starttls-smtps",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Verschlüsselter E-Mail Transport' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität.",
-				"en": "NEGZ feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Verschlüsselter E-Mail Transport' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität."
-			}
-		},
-		{
-			"itemId": "stoa-potentiell-kommender-standard",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Europäisches MCP-Gateway (potentiell kommender Standard)' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität.",
-				"en": "NEGZ feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Europäisches MCP-Gateway (potentiell kommender Standard)' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität."
 			}
 		},
 		{
@@ -2198,15 +2063,6 @@
 			"rationale": {
 				"de": "NEGZ-Feedback (fehlt): Erlaubt die Entwicklung hochoptimierter und sicherer mobiler Anwendungen für das Apple-Ökosystem (z. B. für digitale Identitäten).",
 				"en": "NEGZ feedback (fehlt): Erlaubt die Entwicklung hochoptimierter und sicherer mobiler Anwendungen für das Apple-Ökosystem (z. B. für digitale Identitäten)."
-			}
-		},
-		{
-			"itemId": "symfony-php-stack",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Symfony bündelt Standards in der Softwareentwicklung (Code-Stil, Patterns, usw.) und bietet die Möglichkeit Bundles bereitzustellen und zu teilen (z.B. ein Programm-Baustein der die Authentifizierung mit der EUDI-Wallet abhandelt und nachgenutzt werden kann). Die Einstiegshürden sind relativ gering. Da Symfony Open Source ist und primär durch ein in Frankreich ansässiges Unternehmen maintained wird, ist dies auch als europäische Lösung zu sehen. Im Grunde genommen ist Symfony nicht nur ein Framework für die Programmierung sondern auch für die Organisation rund um den Code. Nachnutzung und Souveränität bekommt mit Symfony eine ganz neue Tragweite...",
-				"en": "NEGZ feedback (fehlt): Symfony bündelt Standards in der Softwareentwicklung (Code-Stil, Patterns, usw.) und bietet die Möglichkeit Bundles bereitzustellen und zu teilen (z.B. ein Programm-Baustein der die Authentifizierung mit der EUDI-Wallet abhandelt und nachgenutzt werden kann). Die Einstiegshürden sind relativ gering. Da Symfony Open Source ist und primär durch ein in Frankreich ansässiges Unternehmen maintained wird, ist dies auch als europäische Lösung zu sehen. Im Grunde genommen ist Symfony nicht nur ein Framework für die Programmierung sondern auch für die Organisation rund um den Code. Nachnutzung und Souveränität bekommt mit Symfony eine ganz neue Tragweite..."
 			}
 		},
 		{
@@ -2291,15 +2147,6 @@
 			}
 		},
 		{
-			"itemId": "trennung-von-infrastruktur-standards-und-referenzimplementierungen-iaas-bare-metal",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Vermeidet Vermischung von Standards und Technologien im Deutschland-Stack und erhöht Vergleichbarkeit, Austauschbarkeit und strategische Steuerbarkeit.",
-				"en": "NEGZ feedback (fehlt): Vermeidet Vermischung von Standards und Technologien im Deutschland-Stack und erhöht Vergleichbarkeit, Austauschbarkeit und strategische Steuerbarkeit."
-			}
-		},
-		{
 			"itemId": "trivy",
 			"status": "recommended",
 			"role": "consumer",
@@ -2315,15 +2162,6 @@
 			"rationale": {
 				"de": "NEGZ-Feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Robotic Process Automation (RPA) ' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität.",
 				"en": "NEGZ feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Robotic Process Automation (RPA) ' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität."
-			}
-		},
-		{
-			"itemId": "uml-basierte-dokumentationen",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Wird benötigt, damit unterschiedliche Hersteller die Komponenten und Dienste anderer Hersteller verstehen und nachnutzen können.",
-				"en": "NEGZ feedback (fehlt): Wird benötigt, damit unterschiedliche Hersteller die Komponenten und Dienste anderer Hersteller verstehen und nachnutzen können."
 			}
 		},
 		{
@@ -2351,33 +2189,6 @@
 			"rationale": {
 				"de": "NEGZ-Feedback (fehlt): Valkey stärkt digitale Souveränität durch eine community-getriebene Alternative ohne Vendor-Lock-in.",
 				"en": "NEGZ feedback (fehlt): Valkey stärkt digitale Souveränität durch eine community-getriebene Alternative ohne Vendor-Lock-in."
-			}
-		},
-		{
-			"itemId": "verbindliche-integration-des-fim-baukasten-als-systemstandard",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): FIM ist konzeptionell stark, aber in der Praxis nur unzureichend in Fachverfahren integriert, weil die Einbindung optional bleibt. Solange FIM optional ist, wird er nicht flächendeckend genutzt und der Pflegeaufwand steht in keinem Verhältnis zur Wirkung. Verbindlichkeit ist Voraussetzung für Wirksamkeit.",
-				"en": "NEGZ feedback (fehlt): FIM ist konzeptionell stark, aber in der Praxis nur unzureichend in Fachverfahren integriert, weil die Einbindung optional bleibt. Solange FIM optional ist, wird er nicht flächendeckend genutzt und der Pflegeaufwand steht in keinem Verhältnis zur Wirkung. Verbindlichkeit ist Voraussetzung für Wirksamkeit."
-			}
-		},
-		{
-			"itemId": "vergabe-und-beschaffungsstandards-die-innovation-ermoglichen",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Aktuelle Vergabepraktiken – Rahmenwerkverträge, Losstrukturen, Mindestumsatzgrenzen – bevorzugen strukturell dieselben wenigen Großanbieter, unabhängig von Lösungsqualität. Ohne vergaberechtliche Standards, die den Markt öffnen, wird der D-Stack de facto ein Projekt weniger Plattformanbieter. Vergabestandards müssen ausdrücklich in den D-Stack-Standardisierungsrahmen aufgenommen werden.",
-				"en": "NEGZ feedback (fehlt): Aktuelle Vergabepraktiken – Rahmenwerkverträge, Losstrukturen, Mindestumsatzgrenzen – bevorzugen strukturell dieselben wenigen Großanbieter, unabhängig von Lösungsqualität. Ohne vergaberechtliche Standards, die den Markt öffnen, wird der D-Stack de facto ein Projekt weniger Plattformanbieter. Vergabestandards müssen ausdrücklich in den D-Stack-Standardisierungsrahmen aufgenommen werden."
-			}
-		},
-		{
-			"itemId": "video-basierte-synchrone-kommunikationsschnittstelle-webrtc-basiert",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Notwendig zur Realisierung durchgängiger digitaler Verwaltungsprozesse mit direkter Bürgerinteraktion. Reduziert Medienbrüche, ermöglicht ortsunabhängige Beratung und steigert Effizienz sowie Servicequalität. Als querschnittlicher Kommunikationsbaustein relevant für zahlreiche Fachverfahren und kompatibel mit bestehenden Standards (z. B. WebRTC, OAuth/OIDC). Unterstützt die Ziele des Deutschland-Stacks hinsichtlich Interoperabilität, Nutzerzentrierung und digitaler Souveränität.",
-				"en": "NEGZ feedback (fehlt): Notwendig zur Realisierung durchgängiger digitaler Verwaltungsprozesse mit direkter Bürgerinteraktion. Reduziert Medienbrüche, ermöglicht ortsunabhängige Beratung und steigert Effizienz sowie Servicequalität. Als querschnittlicher Kommunikationsbaustein relevant für zahlreiche Fachverfahren und kompatibel mit bestehenden Standards (z. B. WebRTC, OAuth/OIDC). Unterstützt die Ziele des Deutschland-Stacks hinsichtlich Interoperabilität, Nutzerzentrierung und digitaler Souveränität."
 			}
 		},
 		{

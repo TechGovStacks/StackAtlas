@@ -30,6 +30,28 @@ const META_ENTRIES = new Set([
 	'uml-basierte dokumentationen',
 	'sboms (als generisches konzept)',
 	'fast alle frameworks',
+	// additional exclusions for non-item / editorial rows
+	'apache produkte',
+	'auffuhren einzelner algorithmen fur signatur verschlusselung',
+	'betriebsplattformen betriebssysteme',
+	'gitlab erweiterung der beschreibung',
+	'kmu gerechte beschaffungsstandards fur spezialisierte it anbieter',
+	'open virtualization format ovf open virtual appliance ova',
+	'ozg datenmodelle fim datenmodelle',
+	'pack und verschlusselungsformate',
+	'po mo format u xliff',
+	'sbt und mill',
+	'sla basierte betriebsmodelle',
+	'standards fur logging monitoring und analyse tools',
+	'starttls smtps',
+	'stoa potentiell kommender standard',
+	'symfony php stack',
+	'trennung von infrastruktur standards und referenzimplementierungen iaas bare metal',
+	'uml basierte dokumentationen',
+	'verbindliche integration des fim baukasten als systemstandard',
+	'vergabe und beschaffungsstandards die innovation ermoglichen',
+	'video basierte synchrone kommunikationsschnittstelle webrtc basiert',
+	'anp und ag ui',
 ]);
 
 const ALIASES = new Map([
@@ -56,10 +78,8 @@ const ALIASES = new Map([
 ]);
 
 const SPLIT_MAP = new Map([
-	['anp und ag-ui', ['ANP', 'AG-UI']],
 	['cyclonedx und cdxgen', ['CycloneDX', 'cdxgen']],
 	['webrtc and janus server', ['WebRTC', 'Janus Server']],
-	['po / mo format u. xliff', ['PO Format', 'MO Format', 'XLIFF']],
 ]);
 
 const PROPRIETARY_HINTS = ['azure', 'microsoft', 'telerik', 'uipath', 'snyk', 'oracle', 'salesforce', 'servicenow'];
