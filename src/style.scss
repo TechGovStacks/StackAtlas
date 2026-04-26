@@ -950,11 +950,26 @@ kol-select,
 
 .pagination-bar__pagination-wrapper {
 	flex: 1;
-}
-
-.pagination-bar__pagination-wrapper kol-pagination {
 	display: flex;
 	justify-content: center;
+}
+
+.pagination-controls {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--ds-space-2);
+}
+
+.pagination-controls kol-button {
+	flex-shrink: 0;
+}
+
+.pagination-info {
+	min-width: 60px;
+	text-align: center;
+	font-size: var(--ds-text-sm);
+	color: var(--ds-color-text-muted);
 }
 
 .pagination-bar__view-toggle {

@@ -1,4 +1,4 @@
-import { KolInputCheckbox, KolPagination } from '@public-ui/preact';
+import { KolButton, KolInputCheckbox } from '@public-ui/preact';
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { FilterState, Item, Layer, Stack, StackItem } from '../types';
@@ -124,34 +124,49 @@ export function CategoryGrid({
 		return computeSublayerCoverageHints(sourceItems, stackItemMap);
 	}, [activeStack, articles, stackItemMap, stackScoreItems]);
 
-	const renderPaginationBar = () => (
-		<div className="pagination-bar">
-			<div className="pagination-bar__pagination-wrapper">
-				{activeCount > ITEMS_PER_PAGE && (
-					<KolPagination
-						className="pagination-bar__pagination"
-						_page={currentPage}
-						_max={activeCount}
-						_pageSize={ITEMS_PER_PAGE}
-						_label={t('category.paginationLabel')}
-						_on={{
-							onChangePage: (_event: unknown, page: number) => setCurrentPage(page),
-						}}
-					/>
-				)}
+	const renderPaginationBar = () => {
+		if (activeCount <= ITEMS_PER_PAGE) {
+			return null;
+		}
+
+		return (
+			<div className="pagination-bar">
+				<div className="pagination-bar__pagination-wrapper">
+					<div className="pagination-controls">
+						<KolButton
+							_label={t('category.pagination.previous') || 'Previous'}
+							_hideLabel
+							_icons={{ left: 'chevron-left' }}
+							_disabled={currentPage === 1}
+							_variant="secondary"
+							_on={{ onClick: () => setCurrentPage(Math.max(1, currentPage - 1)) }}
+						/>
+						<span className="pagination-info">
+							{currentPage} / {totalPages}
+						</span>
+						<KolButton
+							_label={t('category.pagination.next') || 'Next'}
+							_hideLabel
+							_icons={{ left: 'chevron-right' }}
+							_disabled={currentPage === totalPages}
+							_variant="secondary"
+							_on={{ onClick: () => setCurrentPage(Math.min(totalPages, currentPage + 1)) }}
+						/>
+					</div>
+				</div>
+				<KolInputCheckbox
+					className="pagination-bar__view-toggle"
+					_label={t('view.viewToggle')}
+					_hideLabel
+					_variant="switch"
+					_checked={viewMode === 'list'}
+					_on={{
+						onChange: (_e: globalThis.Event, value: unknown) => onViewModeChange(value ? 'list' : 'tile'),
+					}}
+				/>
 			</div>
-			<KolInputCheckbox
-				className="pagination-bar__view-toggle"
-				_label={t('view.viewToggle')}
-				_hideLabel
-				_variant="switch"
-				_checked={viewMode === 'list'}
-				_on={{
-					onChange: (_e: globalThis.Event, value: unknown) => onViewModeChange(value ? 'list' : 'tile'),
-				}}
-			/>
-		</div>
-	);
+		);
+	};
 
 	return (
 		<div id="category-results" className="category-container px-3 md:px-4 lg:px-5">
