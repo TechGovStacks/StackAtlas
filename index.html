@@ -148,21 +148,24 @@
 			.splash__skip-hint {
 				position: absolute;
 				right: max(env(safe-area-inset-right), clamp(0.9rem, 3.2vw, 1.8rem));
-				bottom: max(env(safe-area-inset-bottom), clamp(0.9rem, 3.8vh, 1.8rem));
+				top: max(env(safe-area-inset-top), clamp(0.9rem, 3.2vh, 1.8rem));
 				display: inline-flex;
 				align-items: center;
 				justify-content: center;
-				width: clamp(1.4rem, 4vw, 1.85rem);
-				height: clamp(1.4rem, 4vw, 1.85rem);
-				color: rgba(255, 255, 255, 0.35);
+				width: clamp(1.45rem, 3.6vw, 1.9rem);
+				height: clamp(1.45rem, 3.6vw, 1.9rem);
+				border: 1px solid rgba(255, 255, 255, 0.24);
+				border-radius: 999px;
+				background: rgba(255, 255, 255, 0.05);
+				color: rgba(255, 255, 255, 0.46);
 				font-family: 'Fira Sans', system-ui, sans-serif;
 				user-select: none;
 				pointer-events: none;
 				transform: translate3d(0, 0, 0);
 			}
 			.splash__skip-icon {
-				font-size: clamp(0.95rem, 2.8vw, 1.2rem);
-				opacity: 0.75;
+				font-size: clamp(0.72rem, 2.1vw, 0.88rem);
+				opacity: 0.88;
 			}
 
 			/* ── Labels ── */
@@ -547,7 +550,7 @@
 				<img src="./assets/kolibri.ico" alt="" />
 			</div>
 			<div class="splash__skip-hint" aria-hidden="true">
-				<i class="fa-solid fa-arrow-pointer splash__skip-icon"></i>
+				<i class="fa-solid fa-xmark splash__skip-icon"></i>
 			</div>
 			<span class="splash-sr-only" aria-live="polite" id="splash-status">Application loading</span>
 		</div>
