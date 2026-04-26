@@ -1,12 +1,12 @@
 {
 	"id": "arc42",
 	"name": "arc42",
-	"layer": "sovereign-standards",
+	"layer": "building-blocks",
 	"description": {
 		"de": "Dokumentationsstandard für pragmatische Softwarearchitekturen, siehe: https://arc42.org/",
 		"en": ""
 	},
-	"tags": ["negz-import", "unresearched"],
+	"tags": ["negz-import", "researched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,
@@ -18,5 +18,6 @@
 		"dataPortability": false,
 		"openStandards": false,
 		"noTelemetryByDefault": false
-	}
+	},
+	"homepage": "https://arc42.org/"
 }

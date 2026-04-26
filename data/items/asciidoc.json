@@ -6,7 +6,7 @@
 		"de": "AsciiDoc ist ein textbasiertes, standardisiertes und leicht versionierbares Format für die Dokumentation technischre Sachverhalte.",
 		"en": ""
 	},
-	"tags": ["negz-import", "unresearched"],
+	"tags": ["negz-import", "researched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,
@@ -18,5 +18,6 @@
 		"dataPortability": false,
 		"openStandards": false,
 		"noTelemetryByDefault": false
-	}
+	},
+	"homepage": "https://asciidoc.org/"
 }

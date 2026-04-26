@@ -1,13 +1,13 @@
 {
 	"id": "appian",
 	"name": "Appian",
-	"layer": "sovereign-standards",
+	"layer": "applications",
 	"description": {
 		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Low-Code Prozessautomatisierung' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
 		"en": ""
 	},
-	"tags": ["negz-import", "unresearched"],
-	"oss": true,
+	"tags": ["negz-import", "researched"],
+	"oss": false,
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -18,5 +18,6 @@
 		"dataPortability": false,
 		"openStandards": false,
 		"noTelemetryByDefault": false
-	}
+	},
+	"homepage": "https://appian.com/"
 }

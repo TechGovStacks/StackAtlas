@@ -1,12 +1,12 @@
 {
 	"id": "apache-spark",
 	"name": "Apache Spark",
-	"layer": "applications",
+	"layer": "platform",
 	"description": {
 		"de": "Open-Source-Engine zur Datenverarbeitung für maschinelles Lernen und KI-Anwendungen.",
 		"en": ""
 	},
-	"tags": ["negz-import", "unresearched"],
+	"tags": ["negz-import", "researched"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,
@@ -18,5 +18,6 @@
 		"dataPortability": false,
 		"openStandards": false,
 		"noTelemetryByDefault": false
-	}
+	},
+	"homepage": "https://spark.apache.org/"
 }
