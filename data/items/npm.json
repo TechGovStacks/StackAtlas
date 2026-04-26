@@ -12,10 +12,12 @@
 		"euHeadquartered": false,
 		"hasAudit": false,
 		"permissiveLicense": false,
-		"matureProject": false,
-		"selfHostable": false,
-		"dataPortability": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
 		"openStandards": false,
 		"noTelemetryByDefault": false
-	}
+	},
+	"homepage": "https://www.npmjs.com/",
+	"license": "Artistic-2.0"
 }

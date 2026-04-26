@@ -6,17 +6,19 @@
 		"de": "RFC7516 - https://datatracker.ietf.org/doc/html/rfc7516\n\n\nJSON-basierter Standard für Verschlüsselung beliebiger Daten (moderne Form von XML Encryption)",
 		"en": ""
 	},
-	"oss": true,
+	"oss": false,
 	"tags": [],
 	"sovereigntyCriteria": {
-		"openSource": true,
+		"openSource": false,
 		"euHeadquartered": false,
 		"hasAudit": false,
-		"permissiveLicense": false,
-		"matureProject": false,
-		"selfHostable": false,
-		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://datatracker.ietf.org/doc/html/rfc7516",
+	"license": "IETF-RFC"
 }

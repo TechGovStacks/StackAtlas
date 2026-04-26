@@ -12,11 +12,13 @@
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": false,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": false,
-		"selfHostable": false,
-		"dataPortability": false,
+		"selfHostable": true,
+		"dataPortability": true,
 		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://github.com/llm-d/llm-d",
+	"license": "Apache-2.0"
 }

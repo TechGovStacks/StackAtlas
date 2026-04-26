@@ -5,17 +5,19 @@
 	"description": {
 		"de": "Über den D-Stack können Behörden Zugang zum MUK bekommen, um mit Unternehmen und anderen Organisationen kommunizieren zu können. Das kann analog zum ZBP der BundID erfolgen."
 	},
-	"oss": true,
+	"oss": false,
 	"tags": [],
 	"sovereigntyCriteria": {
-		"openSource": true,
-		"euHeadquartered": false,
+		"openSource": false,
+		"euHeadquartered": true,
 		"hasAudit": false,
 		"permissiveLicense": false,
-		"matureProject": false,
+		"matureProject": true,
 		"selfHostable": false,
-		"dataPortability": false,
+		"dataPortability": true,
 		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.mein-unternehmenskonto.de/",
+	"license": "proprietary"
 }

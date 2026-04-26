@@ -10,13 +10,15 @@
 	"tags": [],
 	"sovereigntyCriteria": {
 		"openSource": true,
-		"euHeadquartered": false,
+		"euHeadquartered": true,
 		"hasAudit": false,
-		"permissiveLicense": false,
-		"matureProject": false,
-		"selfHostable": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
 		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.kern-ux.de/",
+	"license": "CC-BY-4.0"
 }
