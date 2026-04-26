@@ -32,15 +32,6 @@
 			}
 		},
 		{
-			"itemId": "a2a-agent-to-agent-protocol",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Agent-zu-Agent Kommunikation' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität.",
-				"en": "NEGZ feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Agent-zu-Agent Kommunikation' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität."
-			}
-		},
-		{
 			"itemId": "acr-azure-container-registry",
 			"status": "recommended",
 			"role": "consumer",
@@ -54,8 +45,8 @@
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Mit AG-UI, ANP und MCP ist die Agent-Protokoll-Schicht teilweise ausgebaut, die Agent-zu-Agent-Kommunikation selbst fehlt. A2A schließt diese Lücke unter neutraler Governance der Linux Foundation.",
-				"en": "NEGZ feedback (fehlt): Mit AG-UI, ANP und MCP ist die Agent-Protokoll-Schicht teilweise ausgebaut, die Agent-zu-Agent-Kommunikation selbst fehlt. A2A schließt diese Lücke unter neutraler Governance der Linux Foundation."
+				"de": "NEGZ-Feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Agent-zu-Agent Kommunikation' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität.",
+				"en": "NEGZ feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Agent-zu-Agent Kommunikation' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität."
 			}
 		},
 		{
@@ -788,6 +779,15 @@
 			}
 		},
 		{
+			"itemId": "gitlab",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: Bestehendes Katalog-Item aus der CSV zugeordnet.",
+				"en": "NEGZ feedback: Existing catalog item mapped from CSV."
+			}
+		},
+		{
 			"itemId": "gitlabrunner",
 			"status": "recommended",
 			"role": "consumer",
@@ -1067,15 +1067,6 @@
 			}
 		},
 		{
-			"itemId": "k8s",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Ergänzung bzw. Ablösung des Docker Swarm Standards.",
-				"en": "NEGZ feedback (fehlt): Ergänzung bzw. Ablösung des Docker Swarm Standards."
-			}
-		},
-		{
 			"itemId": "kafka",
 			"status": "recommended",
 			"role": "consumer",
@@ -1166,6 +1157,15 @@
 			}
 		},
 		{
+			"itemId": "kubernetes",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback (fehlt): Ergänzung bzw. Ablösung des Docker Swarm Standards.",
+				"en": "NEGZ feedback (fehlt): Ergänzung bzw. Ablösung des Docker Swarm Standards."
+			}
+		},
+		{
 			"itemId": "kubewarden",
 			"status": "recommended",
 			"role": "consumer",
@@ -1229,15 +1229,6 @@
 			}
 		},
 		{
-			"itemId": "mcp-model-context-protocol",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Kontextprotokoll für KI Modelle' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität.",
-				"en": "NEGZ feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Kontextprotokoll für KI Modelle' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität."
-			}
-		},
-		{
 			"itemId": "mcprouter-microsoft",
 			"status": "recommended",
 			"role": "consumer",
@@ -1269,8 +1260,8 @@
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Ohne MCP entstehen oft proprietäre und schwer wartbare Integrationen zwischen Modellen und externen Systemen. MCP schafft eine einheitliche Schnittstelle, die die Wiederverwendbarkeit und Austauschbarkeit von Tools und Kontextquellen verbessert. Zudem unterstützt es Governance, Sicherheit und Nachvollziehbarkeit bei der Nutzung externer Daten durch KI-Systeme.",
-				"en": "NEGZ feedback (fehlt): Ohne MCP entstehen oft proprietäre und schwer wartbare Integrationen zwischen Modellen und externen Systemen. MCP schafft eine einheitliche Schnittstelle, die die Wiederverwendbarkeit und Austauschbarkeit von Tools und Kontextquellen verbessert. Zudem unterstützt es Governance, Sicherheit und Nachvollziehbarkeit bei der Nutzung externer Daten durch KI-Systeme."
+				"de": "NEGZ-Feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Kontextprotokoll für KI Modelle' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität.",
+				"en": "NEGZ feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Kontextprotokoll für KI Modelle' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität."
 			}
 		},
 		{
@@ -1373,15 +1364,6 @@
 			}
 		},
 		{
-			"itemId": "oauth-2-0",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): OAuth2 ist die Grundlage für sicheren API-Zugriff und ermöglicht kontrollierten, delegierten Zugriff auf Ressourcen über Systemgrenzen hinweg.",
-				"en": "NEGZ feedback (fehlt): OAuth2 ist die Grundlage für sicheren API-Zugriff und ermöglicht kontrollierten, delegierten Zugriff auf Ressourcen über Systemgrenzen hinweg."
-			}
-		},
-		{
 			"itemId": "oci-image-format",
 			"status": "recommended",
 			"role": "consumer",
@@ -1397,6 +1379,15 @@
 			"rationale": {
 				"de": "NEGZ-Feedback (überflüssig): OTP kann beliebig realisiert werden. Das zu verwendende Verfahren sollte präzisiert werden. Aktuell ist beispielsweise auch eine Zusendung von OTP-Tokens per Mail oder ausgedrucken Einmalpasswörtern (siehe https://de.wikipedia.org/wiki/Einmalkennwort) möglich",
 				"en": "NEGZ feedback (überflüssig): OTP kann beliebig realisiert werden. Das zu verwendende Verfahren sollte präzisiert werden. Aktuell ist beispielsweise auch eine Zusendung von OTP-Tokens per Mail oder ausgedrucken Einmalpasswörtern (siehe https://de.wikipedia.org/wiki/Einmalkennwort) möglich"
+			}
+		},
+		{
+			"itemId": "open-authorization-oauth",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback (fehlt): OAuth2 ist die Grundlage für sicheren API-Zugriff und ermöglicht kontrollierten, delegierten Zugriff auf Ressourcen über Systemgrenzen hinweg.",
+				"en": "NEGZ feedback (fehlt): OAuth2 ist die Grundlage für sicheren API-Zugriff und ermöglicht kontrollierten, delegierten Zugriff auf Ressourcen über Systemgrenzen hinweg."
 			}
 		},
 		{
@@ -1424,6 +1415,15 @@
 			"rationale": {
 				"de": "NEGZ-Feedback (fehlt): Grundlage für transparentes Observability ohne Lock-in gegenüber proprietären Monitoring-Lösungen.",
 				"en": "NEGZ feedback (fehlt): Grundlage für transparentes Observability ohne Lock-in gegenüber proprietären Monitoring-Lösungen."
+			}
+		},
+		{
+			"itemId": "openapi",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'API Beschreibung und Standard' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität.",
+				"en": "NEGZ feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'API Beschreibung und Standard' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität."
 			}
 		},
 		{
@@ -1715,6 +1715,15 @@
 			}
 		},
 		{
+			"itemId": "python",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: Bestehendes Katalog-Item aus der CSV zugeordnet.",
+				"en": "NEGZ feedback: Existing catalog item mapped from CSV."
+			}
+		},
+		{
 			"itemId": "quay",
 			"status": "recommended",
 			"role": "consumer",
@@ -1730,6 +1739,15 @@
 			"rationale": {
 				"de": "NEGZ-Feedback (fehlt): Wird benötigt, um neben synchroner auch asynchrone Kommunikation zu unterstützten",
 				"en": "NEGZ feedback (fehlt): Wird benötigt, um neben synchroner auch asynchrone Kommunikation zu unterstützten"
+			}
+		},
+		{
+			"itemId": "react",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: Bestehendes Katalog-Item aus der CSV zugeordnet.",
+				"en": "NEGZ feedback: Existing catalog item mapped from CSV."
 			}
 		},
 		{
@@ -2039,15 +2057,6 @@
 			}
 		},
 		{
-			"itemId": "swagger-openapi",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'API Beschreibung und Standard' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität.",
-				"en": "NEGZ feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'API Beschreibung und Standard' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität."
-			}
-		},
-		{
 			"itemId": "swec-software-entwicklungsplattform-cloud",
 			"status": "recommended",
 			"role": "consumer",
@@ -2120,15 +2129,6 @@
 			}
 		},
 		{
-			"itemId": "tls",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Sichere Transportverschlüsselung' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität.",
-				"en": "NEGZ feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Sichere Transportverschlüsselung' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität."
-			}
-		},
-		{
 			"itemId": "togaf",
 			"status": "recommended",
 			"role": "consumer",
@@ -2147,12 +2147,30 @@
 			}
 		},
 		{
+			"itemId": "transport-layer-security-tls",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Sichere Transportverschlüsselung' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität.",
+				"en": "NEGZ feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Sichere Transportverschlüsselung' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität."
+			}
+		},
+		{
 			"itemId": "trivy",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
 				"de": "NEGZ-Feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Container und Dependency Scanner' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität.",
 				"en": "NEGZ feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Container und Dependency Scanner' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität."
+			}
+		},
+		{
+			"itemId": "typescript",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: Bestehendes Katalog-Item aus der CSV zugeordnet.",
+				"en": "NEGZ feedback: Existing catalog item mapped from CSV."
 			}
 		},
 		{
@@ -2270,6 +2288,15 @@
 			"rationale": {
 				"de": "NEGZ-Feedback (ändern): ist eine Technologie",
 				"en": "NEGZ feedback (ändern): ist eine Technologie"
+			}
+		},
+		{
+			"itemId": "wifi",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: Bestehendes Katalog-Item aus der CSV zugeordnet.",
+				"en": "NEGZ feedback: Existing catalog item mapped from CSV."
 			}
 		},
 		{
@@ -2453,7 +2480,7 @@
 			}
 		},
 		{
-			"itemId": "yaml",
+			"itemId": "yaml-ain-t-markup-language",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
