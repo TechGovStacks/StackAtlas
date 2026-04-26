@@ -943,9 +943,10 @@ kol-select,
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: var(--ds-space-3);
-	margin-top: var(--ds-space-4);
-	margin-bottom: var(--ds-space-4);
+	gap: var(--ds-space-2);
+	margin-top: var(--ds-space-3);
+	margin-bottom: var(--ds-space-3);
+	padding: var(--ds-space-1) 0;
 }
 
 .pagination-bar__pagination-wrapper {
@@ -965,14 +966,19 @@ kol-select,
 	flex-shrink: 0;
 }
 
+.pagination-controls kol-button {
+	padding: 0;
+}
+
 .pagination-controls kol-button kol-icon {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 .pagination-info {
-	min-width: 45px;
+	min-width: 40px;
 	text-align: center;
-	font-size: var(--ds-text-xs);
+	font-size: 12px;
+	line-height: 1.2;
 	color: var(--ds-color-text-muted);
 	white-space: nowrap;
 }
