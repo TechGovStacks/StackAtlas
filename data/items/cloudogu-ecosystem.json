@@ -1,10 +1,10 @@
 {
 	"id": "cloudogu-ecosystem",
 	"name": "Cloudogu EcoSystem",
-	"layer": "sovereign-standards",
+	"layer": "platform",
 	"description": {
-		"de": "Open Source Applikations-Plattform zur Bereitstellung souveräner Tool-Chains. Layer zwischen Infrastruktur und Tools. Läuft auf unterschiedlichen Infrastrukturen, von Multi-Cloud bis air-gapped, inklusive automatischem Cloud-Switching. Schafft Standards, die Tools austauschbar und einfach betreibbar machen, inklusive automatisierbaren Updates und anwendungsübergreifendem KI-Assistenten. Made in Germany.",
-		"en": ""
+		"de": "Open-Source-Plattform für den Betrieb und die Integration von Entwicklungs- und Kollaborationstools in einer standardisierten Toolchain. Unterstützt On-Premises- und Multi-Cloud-Betrieb mit automatisierter Bereitstellung und Updates.",
+		"en": "Open-source platform for operating and integrating development and collaboration tools in a standardized toolchain. Supports on-premises and multi-cloud operation with automated provisioning and updates."
 	},
 	"tags": ["negz-import", "researched"],
 	"oss": true,
@@ -18,5 +18,6 @@
 		"dataPortability": false,
 		"openStandards": false,
 		"noTelemetryByDefault": false
-	}
+	},
+	"homepage": "https://platform.cloudogu.com/en/info/cloudogu-ecosystem/"
 }
