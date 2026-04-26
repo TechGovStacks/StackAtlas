@@ -3,8 +3,8 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const itemsDir = path.join(__dirname, 'data', 'items');
-const stacksDir = path.join(__dirname, 'data', 'stacks');
+const itemsDir = path.join(__dirname, '..', '..', 'data', 'items');
+const stacksDir = path.join(__dirname, '..', '..', 'data', 'stacks');
 
 // Read the current germany.json to preserve the header
 const germanyPath = path.join(stacksDir, 'germany.json');
