@@ -6,17 +6,19 @@
 		"de": "COM Tauri ist ein Kernelement der OSCI-Infrastruktur, die föderal eingesetzt und durch diverse Fachgesetzte gefordert wird (Meldewesen, Gewerbemeldung). Dieser Baustein ist ein Produkt des ITPLR und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung. Diese Lösung ist in vielen Ländern schon als Basisdienst etabliert.",
 		"en": ""
 	},
-	"oss": false,
+	"oss": true,
 	"tags": [],
 	"sovereigntyCriteria": {
-		"openSource": false,
+		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": false,
-		"permissiveLicense": false,
-		"matureProject": false,
-		"selfHostable": false,
-		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://v2.tauri.app/",
+	"license": "MIT"
 }

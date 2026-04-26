@@ -6,17 +6,19 @@
 		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Kubernetes Ingress Controller' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
 		"en": ""
 	},
-	"oss": false,
+	"oss": true,
 	"tags": [],
 	"sovereigntyCriteria": {
-		"openSource": false,
-		"euHeadquartered": false,
+		"openSource": true,
+		"euHeadquartered": true,
 		"hasAudit": false,
 		"permissiveLicense": false,
-		"matureProject": false,
-		"selfHostable": false,
-		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.haproxy.org/",
+	"license": "GPL-2.0-or-later"
 }

@@ -13,10 +13,12 @@
 		"euHeadquartered": false,
 		"hasAudit": false,
 		"permissiveLicense": false,
-		"matureProject": false,
-		"selfHostable": false,
-		"dataPortability": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
 		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://ceph.io/",
+	"license": "LGPL-2.1-or-later"
 }

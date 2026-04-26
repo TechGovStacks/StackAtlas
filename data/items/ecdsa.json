@@ -11,12 +11,14 @@
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
-		"hasAudit": false,
-		"permissiveLicense": false,
-		"matureProject": false,
-		"selfHostable": false,
-		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.secg.org/",
+	"license": "Public Domain"
 }

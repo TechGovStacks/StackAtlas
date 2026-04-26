@@ -6,17 +6,19 @@
 		"de": "Offener Standard zur Modellierung von Organisationen, von Organisationszielen bis zu deren Umsetzung",
 		"en": ""
 	},
-	"oss": true,
+	"oss": false,
 	"tags": [],
 	"sovereigntyCriteria": {
-		"openSource": true,
+		"openSource": false,
 		"euHeadquartered": false,
 		"hasAudit": false,
 		"permissiveLicense": false,
-		"matureProject": false,
-		"selfHostable": false,
+		"matureProject": true,
+		"selfHostable": true,
 		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.opengroup.org/archimate-forum/archimate-overview",
+	"license": "Proprietary"
 }

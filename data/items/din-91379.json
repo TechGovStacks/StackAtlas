@@ -6,17 +6,19 @@
 		"de": "Die DIN 91379 definiert diejenige Teilmenge des Internationalen Standards ISO 10646 (Unicode), die aus fachlichen Gründen von jedem IT-Verfahren der deutschen Verwaltung mindestens unterstützt werden muss.",
 		"en": ""
 	},
-	"oss": true,
+	"oss": false,
 	"tags": [],
 	"sovereigntyCriteria": {
-		"openSource": true,
-		"euHeadquartered": false,
+		"openSource": false,
+		"euHeadquartered": true,
 		"hasAudit": false,
 		"permissiveLicense": false,
-		"matureProject": false,
+		"matureProject": true,
 		"selfHostable": false,
 		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.din.de/en/getting-involved/standards-committees/nid/standards/wdc-beuth:din21:353496951",
+	"license": "Proprietary"
 }

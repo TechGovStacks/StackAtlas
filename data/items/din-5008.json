@@ -6,17 +6,19 @@
 		"de": "Gestaltungsregeln für Dokumente",
 		"en": ""
 	},
-	"oss": true,
+	"oss": false,
 	"tags": [],
 	"sovereigntyCriteria": {
-		"openSource": true,
-		"euHeadquartered": false,
+		"openSource": false,
+		"euHeadquartered": true,
 		"hasAudit": false,
 		"permissiveLicense": false,
-		"matureProject": false,
+		"matureProject": true,
 		"selfHostable": false,
 		"dataPortability": false,
 		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.din.de/en/getting-involved/standards-committees/nid/standards/wdc-beuth:din21:322665538",
+	"license": "Proprietary"
 }

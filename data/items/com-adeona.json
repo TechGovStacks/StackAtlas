@@ -10,13 +10,15 @@
 	"tags": [],
 	"sovereigntyCriteria": {
 		"openSource": false,
-		"euHeadquartered": false,
+		"euHeadquartered": true,
 		"hasAudit": false,
 		"permissiveLicense": false,
-		"matureProject": false,
-		"selfHostable": false,
+		"matureProject": true,
+		"selfHostable": true,
 		"dataPortability": false,
 		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.governikus.de/en/produkte/com-adeona/",
+	"license": "Proprietary"
 }

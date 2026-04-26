@@ -13,10 +13,12 @@
 		"euHeadquartered": false,
 		"hasAudit": false,
 		"permissiveLicense": false,
-		"matureProject": false,
+		"matureProject": true,
 		"selfHostable": false,
 		"dataPortability": false,
 		"openStandards": false,
 		"noTelemetryByDefault": false
-	}
+	},
+	"homepage": "https://appian.com/",
+	"license": "Proprietary"
 }

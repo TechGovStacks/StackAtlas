@@ -5,17 +5,19 @@
 	"description": {
 		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Software Defined Network' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen."
 	},
-	"oss": false,
+	"oss": true,
 	"tags": [],
 	"sovereigntyCriteria": {
-		"openSource": false,
+		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": false,
-		"permissiveLicense": false,
-		"matureProject": false,
-		"selfHostable": false,
-		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.ovn.org/en/",
+	"license": "Apache-2.0"
 }

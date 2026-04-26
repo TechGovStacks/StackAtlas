@@ -10,13 +10,15 @@
 	"tags": [],
 	"sovereigntyCriteria": {
 		"openSource": false,
-		"euHeadquartered": false,
-		"hasAudit": false,
+		"euHeadquartered": true,
+		"hasAudit": true,
 		"permissiveLicense": false,
-		"matureProject": false,
-		"selfHostable": false,
+		"matureProject": true,
+		"selfHostable": true,
 		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.governikus.de/en/produkte/data-aeonia/",
+	"license": "Proprietary"
 }

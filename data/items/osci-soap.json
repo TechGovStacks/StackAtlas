@@ -9,13 +9,15 @@
 	"tags": [],
 	"sovereigntyCriteria": {
 		"openSource": false,
-		"euHeadquartered": false,
+		"euHeadquartered": true,
 		"hasAudit": false,
 		"permissiveLicense": false,
-		"matureProject": false,
-		"selfHostable": false,
+		"matureProject": true,
+		"selfHostable": true,
 		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.xoev.de/osci-xta-3355",
+	"license": "Proprietary"
 }

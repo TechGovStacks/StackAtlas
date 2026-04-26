@@ -6,17 +6,19 @@
 		"de": "Werkzeug zur Synchronisation von Ressourcen (u.a. Git Repo) und einem Kubernetes Clusters gemäß GitOps-Ansatz.",
 		"en": ""
 	},
-	"oss": false,
+	"oss": true,
 	"tags": [],
 	"sovereigntyCriteria": {
-		"openSource": false,
+		"openSource": true,
 		"euHeadquartered": false,
-		"hasAudit": false,
-		"permissiveLicense": false,
-		"matureProject": false,
-		"selfHostable": false,
-		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://argoproj.github.io/cd/",
+	"license": "Apache-2.0"
 }

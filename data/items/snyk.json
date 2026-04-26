@@ -10,12 +10,14 @@
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": false,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": false,
-		"matureProject": false,
+		"matureProject": true,
 		"selfHostable": false,
-		"dataPortability": false,
+		"dataPortability": true,
 		"openStandards": false,
 		"noTelemetryByDefault": false
-	}
+	},
+	"homepage": "https://snyk.io/",
+	"license": "Proprietary"
 }

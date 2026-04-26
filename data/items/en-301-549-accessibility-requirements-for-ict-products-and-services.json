@@ -10,13 +10,15 @@
 	"tags": [],
 	"sovereigntyCriteria": {
 		"openSource": true,
-		"euHeadquartered": false,
+		"euHeadquartered": true,
 		"hasAudit": false,
-		"permissiveLicense": false,
-		"matureProject": false,
+		"permissiveLicense": true,
+		"matureProject": true,
 		"selfHostable": false,
 		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.etsi.org/deliver/etsi_en/301500_302000/301549/03.02.01_60/en_301549v030201p.pdf",
+	"license": "ETSI"
 }

@@ -6,17 +6,19 @@
 		"de": "Betriebssystem- und Datenbankagnostische Nocode und Lowcode fähige Plattform zur Automatisierung von Geschäftsprozessen und zur Orchestrierung vorhandener Systeme. Sie unterstützt offene Standards (jeva-basiert) und kann beliebig an alle vorhandenen Systeme angepasst werden.",
 		"en": ""
 	},
-	"oss": true,
+	"oss": false,
 	"tags": [],
 	"sovereigntyCriteria": {
-		"openSource": true,
-		"euHeadquartered": false,
+		"openSource": false,
+		"euHeadquartered": true,
 		"hasAudit": false,
 		"permissiveLicense": false,
-		"matureProject": false,
-		"selfHostable": false,
+		"matureProject": true,
+		"selfHostable": true,
 		"dataPortability": false,
 		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.axonivy.com/",
+	"license": "Proprietary"
 }

@@ -11,12 +11,14 @@
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": false,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": false,
-		"matureProject": false,
+		"matureProject": true,
 		"selfHostable": false,
 		"dataPortability": false,
 		"openStandards": false,
 		"noTelemetryByDefault": false
-	}
+	},
+	"homepage": "https://azure.microsoft.com/en-us/products/container-registry",
+	"license": "Proprietary"
 }

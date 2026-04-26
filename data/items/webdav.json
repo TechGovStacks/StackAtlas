@@ -5,17 +5,19 @@
 	"description": {
 		"de": "Protokoll für den Dateizugriff über das Internet"
 	},
-	"oss": false,
+	"oss": true,
 	"tags": [],
 	"sovereigntyCriteria": {
-		"openSource": false,
+		"openSource": true,
 		"euHeadquartered": false,
-		"hasAudit": false,
-		"permissiveLicense": false,
-		"matureProject": false,
-		"selfHostable": false,
-		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.rfc-editor.org/rfc/rfc4918",
+	"license": "IETF"
 }

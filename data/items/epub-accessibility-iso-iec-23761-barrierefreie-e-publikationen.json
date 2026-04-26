@@ -12,11 +12,13 @@
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": false,
-		"permissiveLicense": false,
-		"matureProject": false,
+		"permissiveLicense": true,
+		"matureProject": true,
 		"selfHostable": false,
-		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.w3.org/publishing/a11y/",
+	"license": "W3C-20150513"
 }
