@@ -1,1 +1,0 @@
-import{lt as e}from"./index-DVdXvZ2-.js";var t=(t,n,r)=>{e(t,`_multiple`,n,r)};export{t};
