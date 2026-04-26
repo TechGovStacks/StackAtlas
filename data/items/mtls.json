@@ -1,0 +1,22 @@
+{
+	"id": "mtls",
+	"name": "mTLS",
+	"layer": "infrastructure",
+	"description": {
+		"de": "Verschlüsselter Datentransport",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"id": "egvp",
+	"name": "EGVP",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Auf dem OSCI-Standard beruhende Transportinfrastruktur für den elektronischen Rechtsverkehr zwischen Gerichten und Verfahrensbeteiligten.",
+		"en": ""
+	},
+	"tags": ["negz-import", "researched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

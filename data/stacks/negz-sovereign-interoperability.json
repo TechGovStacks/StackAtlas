@@ -1,0 +1,854 @@
+{
+	"id": "negz-sovereign-interoperability",
+	"name": {
+		"de": "NEGZ Sovereign Interoperability Stack",
+		"en": "NEGZ Sovereign Interoperability Stack"
+	},
+	"description": {
+		"de": "Kuratiertes Teilset aus dem NEGZ-Import mit Fokus auf Interoperabilität, offene Standards und Datenportabilität (Standards first, implementation second).",
+		"en": "Curated subset of the NEGZ import focused on interoperability, open standards and data portability (standards first, implementation second)."
+	},
+	"country": "DE",
+	"issuer": "StackAtlas Curation (from NEGZ feedback)",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-26",
+	"sources": [
+		{
+			"label": {
+				"de": "NEGZ-Feedback-CSV + Sovereign-Stack-Neugewichtung",
+				"en": "NEGZ feedback CSV + sovereign stack reweighting"
+			},
+			"url": "https://negz.org"
+		}
+	],
+	"items": [
+		{
+			"itemId": "acr-azure-container-registry",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "agentgateway",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "ai-sdk-by-vercel",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "amqp",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "ams",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "apache-camel-integration-framework",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "apache-spark",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "apex-oracle",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "appian",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "argo-cd",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "argo-workflow",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "atag-2-0-authoring-tool-accessibility-guidelines-w3c",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "axon-ivy",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "azure-devops",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "blazor",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "bpmn",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "bruno",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "c-razor",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "cargo",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "cdxgen",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "ceph",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "cloudogu-ecosystem",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "cmake",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "cmmn",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "conan",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "cyclonedx",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "dapr",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "data-varuna",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "datadog-vektor",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "dataprepkit",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "din-91379",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "dmn",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "docker",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "ebms-as4",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "eforms-de",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "egvp",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "eidas-2-0",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "etcd",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "fido2-standards",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "fim-datenstandard",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "fluentd",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "forgejo",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "gateway-api",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "gemma",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "git",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "grafana-alloy",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "harbor",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "hashicorp-vault-secret-management",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "iceberg",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "influxdb",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "jaeger",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "json-schema",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "k6",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "kafka",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "knative",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "kotlin",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "matrix",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "mtls",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "nats",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "net",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "npm",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "openbao",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "opensearch",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "osci",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "owasp-dependency-track",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "ozg-cloud",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "peppol-bis-spezifikationen",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "pgvector",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "playwright",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "podman",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "s3-api-minio-eine-implementierung",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "saml",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "sealed-secrets",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "semantic-kernel-agentic-framework",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "sigstore",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "sles-suse-linux-enterprise-server",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "sonarqube",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "spiffe-spire",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "sqlite",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "tekton",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "thanos",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "trivy",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "webassembly-wasm",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "xbestellung",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "xdatenfeld",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "xjustiz",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "xml",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "xprozess",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "xrechnung",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "xta",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "xzufi",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		},
+		{
+			"itemId": "zitadel",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ausgewählt im Sovereign-Stack-View: Interoperabilität und offene Schnittstellen priorisiert.",
+				"en": "Selected in sovereign stack view: interoperability and open interfaces prioritized."
+			}
+		}
+	]
+}

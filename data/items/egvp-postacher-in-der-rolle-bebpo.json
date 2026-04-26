@@ -1,0 +1,22 @@
+{
+	"id": "egvp-postacher-in-der-rolle-bebpo",
+	"name": "EGVP Postächer in der Rolle BeBPo",
+	"layer": "applications",
+	"description": {
+		"de": "Über den D-Stack sollten Behörden Zugang zu dem jeweiligen BeBPo bekommen. Stichwort \"BeBpo as a Service\"",
+		"en": ""
+	},
+	"tags": ["negz-import", "researched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"id": "xml-signature",
+	"name": "XML Signature",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Signatur für XML-Nachrichten, um eine Authentisierung durchführen zu können. Siehe DSGVO, Art. 5.",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"id": "sboms",
+	"name": "SBOMs",
+	"layer": "applications",
+	"description": {
+		"de": "Software Bill of Materials",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

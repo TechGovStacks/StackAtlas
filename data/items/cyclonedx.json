@@ -1,0 +1,23 @@
+{
+	"id": "cyclonedx",
+	"name": "CycloneDX",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Bill of material Standard (ECMA 424) Cyclone DX",
+		"en": ""
+	},
+	"tags": ["negz-import", "researched"],
+	"oss": false,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	},
+	"homepage": "https://cyclonedx.org/"
+}

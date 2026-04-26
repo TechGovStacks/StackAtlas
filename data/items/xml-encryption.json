@@ -1,0 +1,22 @@
+{
+	"id": "xml-encryption",
+	"name": "XML Encryption",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Verschlüsselung von XML-Nachrichten, um eine Nicht-Einsehbarkeit umzusetzen. Siehe DSGVO, Art. 5.",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

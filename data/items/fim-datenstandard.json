@@ -1,0 +1,22 @@
+{
+	"id": "fim-datenstandard",
+	"name": "FIM-Datenstandard",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "FIM-Datenstandard (Föderales Informationsmanagement) ist ein zentraler Standard zur Strukturierung und Standardisierung von Verwaltungsdaten in Deutschland. Er dient dazu, Verwaltungsleistungen, Prozesse und Datenfelder bundesweit einheitlich zu definieren, um die Digitalisierung nach dem Onlinezugangsgesetz (OZG) zu beschleunigen und medienbruchfreie Verfahren zu ermöglichen.",
+		"en": ""
+	},
+	"tags": ["negz-import", "researched"],
+	"oss": false,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

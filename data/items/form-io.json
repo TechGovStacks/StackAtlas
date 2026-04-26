@@ -1,0 +1,22 @@
+{
+	"id": "form-io",
+	"name": "form.io",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Framework zur Erzeugung von Formularen",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

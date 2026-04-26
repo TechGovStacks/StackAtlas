@@ -1,0 +1,23 @@
+{
+	"id": "cargo",
+	"name": "Cargo",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Buildtool für Rust-basierte Anwendungen.",
+		"en": ""
+	},
+	"tags": ["negz-import", "researched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	},
+	"homepage": "https://doc.rust-lang.org/cargo/"
+}

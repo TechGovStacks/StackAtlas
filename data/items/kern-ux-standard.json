@@ -1,0 +1,22 @@
+{
+	"id": "kern-ux-standard",
+	"name": "KERN UX-Standard",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Der KERN UX-Standard ist das Open-Source-Design-System für die deutsche öffentliche Verwaltung. Mit über 600 Community-Mitgliedern, strategischen Partnerschaften und Unterstützung von Bund, Ländern und Kommunen bietet KERN einen technologieunabhängigen, barrierefreien und wirtschaftlichen Rahmen für die Gestaltung nutzerfreundlicher digitaler Verwaltungsangebote. Nach dem Vorbild des britischen GOV.UK Design Systems, das jährlich 41 Millionen Euro einspart, konsolidiert KERN die derzeit fragmentierte Design-System-Landschaft in Deutschland und schafft durch Nachnutzung erhebliche Effizienzgewinne.",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

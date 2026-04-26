@@ -1,0 +1,23 @@
+{
+	"id": "cloudogu-ecosystem",
+	"name": "Cloudogu EcoSystem",
+	"layer": "platform",
+	"description": {
+		"de": "Open-Source-Plattform für den Betrieb und die Integration von Entwicklungs- und Kollaborationstools in einer standardisierten Toolchain. Unterstützt On-Premises- und Multi-Cloud-Betrieb mit automatisierter Bereitstellung und Updates.",
+		"en": "Open-source platform for operating and integrating development and collaboration tools in a standardized toolchain. Supports on-premises and multi-cloud operation with automated provisioning and updates."
+	},
+	"tags": ["negz-import", "researched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	},
+	"homepage": "https://platform.cloudogu.com/en/info/cloudogu-ecosystem/"
+}

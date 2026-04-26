@@ -1,0 +1,23 @@
+{
+	"id": "axon-ivy",
+	"name": "Axon Ivy",
+	"layer": "applications",
+	"description": {
+		"de": "Betriebssystem- und Datenbankagnostische Nocode und Lowcode fähige Plattform zur Automatisierung von Geschäftsprozessen und zur Orchestrierung vorhandener Systeme. Sie unterstützt offene Standards (jeva-basiert) und kann beliebig an alle vorhandenen Systeme angepasst werden.",
+		"en": ""
+	},
+	"tags": ["negz-import", "researched"],
+	"oss": false,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	},
+	"homepage": "https://www.axonivy.com/"
+}

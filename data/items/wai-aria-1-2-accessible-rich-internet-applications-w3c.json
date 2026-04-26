@@ -1,0 +1,22 @@
+{
+	"id": "wai-aria-1-2-accessible-rich-internet-applications-w3c",
+	"name": "WAI-ARIA 1.2 – Accessible Rich Internet Applications (W3C)",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "WAI-ARIA 1.2 (W3C Recommendation) ist ein technischer Standard zur Anreicherung von HTML mit semantischen Rollen, Zuständen und Eigenschaften. Er ermöglicht die barrierefreie Umsetzung dynamischer Webkomponenten (modale Dialoge, Tab-Panels, Akkordeons, Live-Regionen für Statusmeldungen), die mit HTML allein nicht ausreichend beschreibbar sind. ARIA Live Regions erlauben es, asynchrone Änderungen (z. B. Formularbearbeitungsrückmeldungen, Ladeanzeigen) für Screenreader anzukündigen.",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

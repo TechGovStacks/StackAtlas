@@ -1,0 +1,22 @@
+{
+	"id": "knative",
+	"name": "Knative",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Knative ist ein Kubernetes-basiertes Framework für Serverless-Workloads und ereignisgetriebene Funktionen mit Skalierung auf Null.",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

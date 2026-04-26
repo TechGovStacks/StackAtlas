@@ -1,0 +1,22 @@
+{
+	"id": "referenzimplementierung-fur-bare-metal-iaas",
+	"name": "Referenzimplementierung für Bare-Metal IaaS",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "metal-stack.io (Bare-Metal IaaS Plattform) metal-stack.io ist eine Open-Source-Plattform zur automatisierten Bereitstellung und Verwaltung von physischer Server-Infrastruktur („Bare Metal as a Service“). Sie stellt Cloud-ähnliche Funktionen wie Provisionierung, Netzwerkmanagement und Lifecycle-Steuerung über APIs bereit und ermöglicht den Betrieb souveräner Infrastruktur auf eigener Hardware.",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

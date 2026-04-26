@@ -1,0 +1,23 @@
+{
+	"id": "conan",
+	"name": "Conan",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Package-Manager für C++-Anwendungen.",
+		"en": ""
+	},
+	"tags": ["negz-import", "researched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	},
+	"homepage": "https://conan.io/"
+}

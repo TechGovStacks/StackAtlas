@@ -1,0 +1,22 @@
+{
+	"id": "json-web-encryption-jwe",
+	"name": "JSON Web Encryption (JWE)",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "JSON Web Encryption ist ein IETF-Standard, der eine standardisierte Syntax für den Austausch verschlüsselter Daten basierend auf JSON und Base64 bereitstellt.",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

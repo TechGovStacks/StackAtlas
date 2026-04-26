@@ -1,7 +1,7 @@
 ---
 status: active
 owner: Data Engineering
-last_reviewed: 2026-04-24
+last_reviewed: 2026-04-26
 source_of_truth: docs/ARC42.md
 ---
 
@@ -104,6 +104,7 @@ Das optionale Feld `groupKey` kennzeichnet Items, die **dieselbe Kernfunktion** 
 - **`data/stacks/`** enthält Stacks (z.B. `germany.json`) mit ihren Item-Referenzen
 - Jede Stack-Item-Beziehung deklariert eine Rolle (`maintainer|contributor|funder|consumer`)
 - Für Sovereign-Standards-Items zeigt die Rolle die Stack-Verantwortung
+- Für den NEGZ-Import existiert zusätzlich ein kuratiertes Teilset `data/stacks/negz-sovereign-interoperability.json` (Standards-first, Interoperabilität, Datenportabilität)
 
 ## Schnellcheck
 
@@ -113,4 +114,6 @@ Das optionale Feld `groupKey` kennzeichnet Items, die **dieselbe Kernfunktion** 
   - `platform`: `daten`, `integration`, `ki`, `lowcode`, `laufzeit`
 - Validierung: `pnpm validate-schemas`
 - D-Stack-Metadaten (Maturity, Tags, Audit-Datum) aus `data/projects.csv` in Items synchronisieren: `node scripts/sync-d-stack.mjs`
+- NEGZ-Importe markieren neue, noch nicht manuell verifizierte Items mit den Tags `negz-import` und `unresearched`; nach manueller Prüfung wird auf `researched` umgestellt.
+- Das kuratierte NEGZ-Sovereign-Teilset priorisiert interoperable Standards (z.B. XÖV/X-Familie, OSCI/XTA, AS4, S3) vor konkreten Implementierungen.
 - Kernschemas: `data/schemas/layer.schema.json`, `data/schemas/item.schema.json`, `data/schemas/stack.schema.json`

@@ -1,0 +1,22 @@
+{
+	"id": "openbao",
+	"name": "OpenBao",
+	"layer": "platform",
+	"description": {
+		"de": "OpenBao ist eine freie OpenSource Lösung für Secrets Management und PKI, die als Fork von Hashicorp Vault entstanden ist. OpenBao ist API-kompatibel zu Vault, so dass ein Wechsel möglich sein sollte ohne vorhandene Client-Software anpassen zu müssen.",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

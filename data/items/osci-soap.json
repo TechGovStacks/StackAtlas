@@ -1,0 +1,22 @@
+{
+	"id": "osci-soap",
+	"name": "OSCI | SOAP",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "OSCI defiiert Protokollstandards für den sicheren elektronischen Nachrichtenaustausch über das Internet und andere Netze. Diese garantieren Integrität, Authentizität, Vertraulichkeit und Nachweisbarkeit der Daten und Datenflüsse und ermöglichen medienbruchfreien, effizienten Transport und Verarbeitung.",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

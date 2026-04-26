@@ -1,0 +1,22 @@
+{
+	"id": "iceberg",
+	"name": "Iceberg",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Iceberg ist ein offenes Tabellenformat für große analytische Datenbestände auf Object Storage (S3/COS/MinIO). Es bietet ACID-Transaktionen, Schema Evolution und Time-Travel über Engine-Grenzen hinweg (Spark, Trino, Flink, u.a.).",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

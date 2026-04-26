@@ -1,0 +1,22 @@
+{
+	"id": "persistent-identifier-pids",
+	"name": "Persistent Identifier (PIDs)",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Ein Persistenter Identifier (PID) ist eine dauerhafte, eindeutige Kennung, die einem digitalen oder physischen Objekt (z. B. Publikationen, Datensätzen, Personen oder Organisationen) zugewiesen wird. Er bleibt stabil über lange Zeit, auch wenn sich Speicherort oder Metadaten ändern, und ermöglicht dadurch eine zuverlässige Referenzierung und Verknüpfung in wissenschaftlichen und digitalen Informationssystemen.",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

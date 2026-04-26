@@ -1,0 +1,22 @@
+{
+	"id": "kitten",
+	"name": "Kitten",
+	"layer": "applications",
+	"description": {
+		"de": "Kitten ist ein Open-Source-Projekt, das einen dezentralen, datensouveränen Technologie-Stack entwickelt. Es verfolgt das Ziel, eine Alternative zu zentralen Plattformen großer Tech-Konzerne zu schaffen. Der Fokus liegt auf Transparenz, Nutzerkontrolle und ethischer Gestaltung, wobei der Stack bewusst einfach und zugänglich gehalten wird, um auch Nicht-Expert:innen die Nutzung zu ermöglichen. Kitten setzt auf offene Protokolle und dezentrale Architektur, um Abhängigkeiten von zentralen Servern zu vermeiden. Der Ansatz kombiniert technische Einfachheit mit starken Datenschutzprinzipien, die direkt an europäische Regularien wie die DSGVO anknüpfen.",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

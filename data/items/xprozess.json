@@ -1,0 +1,22 @@
+{
+	"id": "xprozess",
+	"name": "Xprozess",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Ein Standard des IT-Planungsrates zum Austausch von Prozessmodellen innerhalb der deutschen Verwaltung. XProzess 3.0 wird FIM-BPMN und auch BPMN 2.0-Notationen austauschbar und speziell für die deutsche Verwaltung anwendbar machen.",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

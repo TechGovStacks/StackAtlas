@@ -140,6 +140,12 @@ Layer-Struktur:
 **Stack-Commitment-Modell:**
 Ein Stack ist eine Verantwortungserklärung: Durch die Auswahl einer Rolle für ein Item (insbesondere für Sovereign-Standards) committet sich ein Stack, diesen Standard zu maintainen oder zu unterstützen.
 
+**Sovereignty-/Interoperabilitäts-Prinzip:**
+
+- Standards first, implementation second.
+- Priorität auf Entkopplung von Logik und Datenformat (Portabilität statt Tool-Lock-in).
+- Interoperabilität ist ein Hard-Requirement für souveräne Stacks.
+
 ## 6. Querschnittliche Konzepte
 
 ### Design

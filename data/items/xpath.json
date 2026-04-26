@@ -1,0 +1,22 @@
+{
+	"id": "xpath",
+	"name": "XPath",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Abfragesprache, um XML-Inhalte zu adressieren und auszuwerten.",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

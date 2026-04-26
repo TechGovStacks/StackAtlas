@@ -1,0 +1,22 @@
+{
+	"id": "valkey",
+	"name": "Valkey",
+	"layer": "applications",
+	"description": {
+		"de": "Valkey ist eine offene Weiterentwicklung von Redis.",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}
