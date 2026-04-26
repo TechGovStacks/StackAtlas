@@ -263,14 +263,6 @@
 			}
 		},
 		{
-			"itemId": "bpmn-v2-0",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "bruno",
 			"status": "recommended",
 			"role": "consumer",
@@ -600,14 +592,6 @@
 		},
 		{
 			"itemId": "egvp-post-cher-in-der-rolle-bebpo",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "eidas-2-0",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -1272,14 +1256,6 @@
 		},
 		{
 			"itemId": "nvidia-gpu-operator",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "oauth-2-0",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
