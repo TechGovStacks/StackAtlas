@@ -27,5 +27,6 @@
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://web.mit.edu/kerberos/"
-	}
+	},
+	"license": "MIT"
 }

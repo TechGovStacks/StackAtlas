@@ -17,5 +17,7 @@
 		"dataPortability": false,
 		"openStandards": false,
 		"noTelemetryByDefault": false
-	}
+	},
+	"homepage": "https://webpack.js.org/",
+	"license": "MIT"
 }

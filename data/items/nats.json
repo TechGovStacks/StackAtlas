@@ -17,5 +17,7 @@
 		"dataPortability": false,
 		"openStandards": false,
 		"noTelemetryByDefault": false
-	}
+	},
+	"homepage": "https://nats.io/",
+	"license": "Apache-2.0"
 }

@@ -18,5 +18,7 @@
 		"dataPortability": false,
 		"openStandards": false,
 		"noTelemetryByDefault": false
-	}
+	},
+	"homepage": "https://etcd.io/",
+	"license": "Apache-2.0"
 }

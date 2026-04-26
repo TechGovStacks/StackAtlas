@@ -18,5 +18,7 @@
 		"dataPortability": false,
 		"openStandards": false,
 		"noTelemetryByDefault": false
-	}
+	},
+	"homepage": "https://www.docker.com/",
+	"license": "Proprietary"
 }

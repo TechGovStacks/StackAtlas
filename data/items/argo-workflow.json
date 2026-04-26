@@ -18,5 +18,7 @@
 		"dataPortability": false,
 		"openStandards": false,
 		"noTelemetryByDefault": false
-	}
+	},
+	"homepage": "https://argoproj.github.io/workflows/",
+	"license": "Apache-2.0"
 }
