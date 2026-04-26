@@ -1121,15 +1121,6 @@
 			}
 		},
 		{
-			"itemId": "kolibri-barrierefreie-html-standard-public-ui",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): KoliBri ist die fehlende UX-Schicht des Deutschland-Stacks. Der D-Stack liefert die technischen Plattformdienste – aber nur KoliBri macht diese Infrastruktur für Bürger:innen, Unternehmen und Verwaltungsmitarbeitende verständlich, barrierefrei und vertrauenswürdig erlebbar. Strategisch ist KoliBri unverzichtbar für digitale Souveränität: Europa-native Entwicklung, EUPL-Lizenz (nicht propriätär), kein Vendor-Lock-in, transparente Supply Chain, bereits produktiv in der Bundesverwaltung im Einsatz. KoliBri wird zum Hausstandard für alle Verwaltungsdigitalisierung auf Bundes-, Landes- und Kommunalebene. Mit KoliBri wird der D-Stack nicht nur technisch sinnvoll – er wird menschlich nutzbar. KERN UX, DESYBRI und viele andere Design System der öffentlichen Verwaltung nutzen schon heute KoliBri Komponenten zu Umsetzung von Komponenten für Ihre Designs für die Entwicklung. KoliBri ist als Web Components und Design-Agnostik ideal für ein Standard mit Barrierfreiheit und öffentlichen für föderale Gestaltung. Link: https://gitlab.opencode.de/dstack/d-stack-home/-/work_items/200",
-				"en": "NEGZ feedback (fehlt): KoliBri ist die fehlende UX-Schicht des Deutschland-Stacks. Der D-Stack liefert die technischen Plattformdienste – aber nur KoliBri macht diese Infrastruktur für Bürger:innen, Unternehmen und Verwaltungsmitarbeitende verständlich, barrierefrei und vertrauenswürdig erlebbar. Strategisch ist KoliBri unverzichtbar für digitale Souveränität: Europa-native Entwicklung, EUPL-Lizenz (nicht propriätär), kein Vendor-Lock-in, transparente Supply Chain, bereits produktiv in der Bundesverwaltung im Einsatz. KoliBri wird zum Hausstandard für alle Verwaltungsdigitalisierung auf Bundes-, Landes- und Kommunalebene. Mit KoliBri wird der D-Stack nicht nur technisch sinnvoll – er wird menschlich nutzbar. KERN UX, DESYBRI und viele andere Design System der öffentlichen Verwaltung nutzen schon heute KoliBri Komponenten zu Umsetzung von Komponenten für Ihre Designs für die Entwicklung. KoliBri ist als Web Components und Design-Agnostik ideal für ein Standard mit Barrierfreiheit und öffentlichen für föderale Gestaltung. Link: https://gitlab.opencode.de/dstack/d-stack-home/-/work_items/200"
-			}
-		},
-		{
 			"itemId": "kotlin",
 			"status": "recommended",
 			"role": "consumer",
@@ -1400,21 +1391,12 @@
 			}
 		},
 		{
-			"itemId": "open-policy-agent-opa",
+			"itemId": "open-policy-agent",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
 				"de": "NEGZ-Feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Policy Engine für Autorisierung' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität.",
 				"en": "NEGZ feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Policy Engine für Autorisierung' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität."
-			}
-		},
-		{
-			"itemId": "open-telemetry",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Grundlage für transparentes Observability ohne Lock-in gegenüber proprietären Monitoring-Lösungen.",
-				"en": "NEGZ feedback (fehlt): Grundlage für transparentes Observability ohne Lock-in gegenüber proprietären Monitoring-Lösungen."
 			}
 		},
 		{
@@ -1485,8 +1467,8 @@
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
-				"de": "NEGZ-Feedback (fehlt): Die Observability-Schicht fehlt im Stack, obwohl Nachvollziehbarkeit und DSGVO-konforme Protokollierung zentrale Anforderungen an Verwaltungs-IT sind. OpenTelemetry ergänzt u.a. OpenSearch durch ein vendor-neutrales Eingabeformat für Traces, Metrics und Logs.",
-				"en": "NEGZ feedback (fehlt): Die Observability-Schicht fehlt im Stack, obwohl Nachvollziehbarkeit und DSGVO-konforme Protokollierung zentrale Anforderungen an Verwaltungs-IT sind. OpenTelemetry ergänzt u.a. OpenSearch durch ein vendor-neutrales Eingabeformat für Traces, Metrics und Logs."
+				"de": "NEGZ-Feedback (fehlt): Grundlage für transparentes Observability ohne Lock-in gegenüber proprietären Monitoring-Lösungen.",
+				"en": "NEGZ feedback (fehlt): Grundlage für transparentes Observability ohne Lock-in gegenüber proprietären Monitoring-Lösungen."
 			}
 		},
 		{
@@ -1712,6 +1694,15 @@
 			"rationale": {
 				"de": "NEGZ-Feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Effiziente Datenserialisierung' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität.",
 				"en": "NEGZ feedback (fehlt): Die Standardisierung dieser Technologie ist erforderlich, um den Funktionsbereich 'Effiziente Datenserialisierung' einheitlich, sicher und wirtschaftlich in der Referenzarchitektur abzubilden. Sie vermeidet technologische Fragmentierung, reduziert Betriebs- und Integrationskosten, erhöht die Austauschbarkeit von Produkten und unterstützt strategische Ziele wie Steuerbarkeit, Compliance, Resilienz und digitale Souveränität."
+			}
+		},
+		{
+			"itemId": "public-ui-kolibri",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback (fehlt): KoliBri ist die fehlende UX-Schicht des Deutschland-Stacks. Der D-Stack liefert die technischen Plattformdienste – aber nur KoliBri macht diese Infrastruktur für Bürger:innen, Unternehmen und Verwaltungsmitarbeitende verständlich, barrierefrei und vertrauenswürdig erlebbar. Strategisch ist KoliBri unverzichtbar für digitale Souveränität: Europa-native Entwicklung, EUPL-Lizenz (nicht propriätär), kein Vendor-Lock-in, transparente Supply Chain, bereits produktiv in der Bundesverwaltung im Einsatz. KoliBri wird zum Hausstandard für alle Verwaltungsdigitalisierung auf Bundes-, Landes- und Kommunalebene. Mit KoliBri wird der D-Stack nicht nur technisch sinnvoll – er wird menschlich nutzbar. KERN UX, DESYBRI und viele andere Design System der öffentlichen Verwaltung nutzen schon heute KoliBri Komponenten zu Umsetzung von Komponenten für Ihre Designs für die Entwicklung. KoliBri ist als Web Components und Design-Agnostik ideal für ein Standard mit Barrierfreiheit und öffentlichen für föderale Gestaltung. Link: https://gitlab.opencode.de/dstack/d-stack-home/-/work_items/200",
+				"en": "NEGZ feedback (fehlt): KoliBri ist die fehlende UX-Schicht des Deutschland-Stacks. Der D-Stack liefert die technischen Plattformdienste – aber nur KoliBri macht diese Infrastruktur für Bürger:innen, Unternehmen und Verwaltungsmitarbeitende verständlich, barrierefrei und vertrauenswürdig erlebbar. Strategisch ist KoliBri unverzichtbar für digitale Souveränität: Europa-native Entwicklung, EUPL-Lizenz (nicht propriätär), kein Vendor-Lock-in, transparente Supply Chain, bereits produktiv in der Bundesverwaltung im Einsatz. KoliBri wird zum Hausstandard für alle Verwaltungsdigitalisierung auf Bundes-, Landes- und Kommunalebene. Mit KoliBri wird der D-Stack nicht nur technisch sinnvoll – er wird menschlich nutzbar. KERN UX, DESYBRI und viele andere Design System der öffentlichen Verwaltung nutzen schon heute KoliBri Komponenten zu Umsetzung von Komponenten für Ihre Designs für die Entwicklung. KoliBri ist als Web Components und Design-Agnostik ideal für ein Standard mit Barrierfreiheit und öffentlichen für föderale Gestaltung. Link: https://gitlab.opencode.de/dstack/d-stack-home/-/work_items/200"
 			}
 		},
 		{

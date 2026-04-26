@@ -78,6 +78,8 @@ const ALIASES = new Map([
 	['typescript', 'typescript'],
 	['openapi', 'openapi'],
 	['swagger openapi', 'openapi'],
+	['kolibri barrierefreie html standard public ui', 'public-ui-kolibri'],
+	['public ui kolibri', 'public-ui-kolibri'],
 	['xov', 'xoev'],
 	['xov standards', 'xoev'],
 	['xov nachrichtenformate', 'xoev'],
@@ -151,6 +153,10 @@ const slugify = (value) =>
 		.replace(/^-+|-+$/g, '');
 
 const cleanText = (value) => value.replace(/\s+/g, ' ').trim();
+const tokenize = (value) =>
+	normalize(value)
+		.split(' ')
+		.filter((token) => token.length > 2);
 
 const guessLayer = ({ name, description, rationale }) => {
 	const text = normalize(`${name} ${description} ${rationale}`);
@@ -187,6 +193,34 @@ for (const file of existingFiles) {
 	existingNameToId.set(normalize(item.name), item.id);
 }
 
+const findFuzzyExistingId = (name) => {
+	const nameNorm = normalize(name);
+	const nameTokens = new Set(tokenize(name));
+	if (nameNorm.includes('kolibri') && existingIds.has('public-ui-kolibri')) {
+		return 'public-ui-kolibri';
+	}
+
+	let bestId;
+	let bestScore = 0;
+	for (const [existingName, existingId] of existingNameToId) {
+		const existingTokens = new Set(existingName.split(' ').filter((token) => token.length > 2));
+		const union = new Set([...nameTokens, ...existingTokens]);
+		const intersectionCount = [...nameTokens].filter((token) => existingTokens.has(token)).length;
+		const score = union.size > 0 ? intersectionCount / union.size : 0;
+
+		if (score > bestScore) {
+			bestScore = score;
+			bestId = existingId;
+		}
+		if (nameNorm.length >= 8 && (existingName.includes(nameNorm) || nameNorm.includes(existingName))) {
+			bestId = existingId;
+			bestScore = Math.max(bestScore, 0.9);
+		}
+	}
+
+	return bestScore >= 0.72 ? bestId : undefined;
+};
+
 const entries = new Map();
 for (const row of rows.slice(headerIndex + 1)) {
 	if (!row.some((cell) => cell?.trim())) continue;
@@ -221,6 +255,9 @@ for (const entry of [...entries.values()].sort((a, b) => a.name.localeCompare(b.
 	if (!id) {
 		const slug = slugify(entry.name);
 		id = existingIds.has(slug) ? slug : undefined;
+	}
+	if (!id) {
+		id = findFuzzyExistingId(entry.name);
 	}
 	if (!id) {
 		id = slugify(entry.name);
