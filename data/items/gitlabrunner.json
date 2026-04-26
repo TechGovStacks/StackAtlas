@@ -12,11 +12,13 @@
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": false,
-		"permissiveLicense": false,
-		"matureProject": false,
-		"selfHostable": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
 		"dataPortability": false,
 		"openStandards": false,
 		"noTelemetryByDefault": false
-	}
+	},
+	"homepage": "https://docs.gitlab.com/runner/",
+	"license": "MIT"
 }

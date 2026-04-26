@@ -12,11 +12,13 @@
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": false,
-		"permissiveLicense": false,
-		"matureProject": false,
-		"selfHostable": false,
-		"dataPortability": false,
-		"openStandards": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
 		"noTelemetryByDefault": false
-	}
+	},
+	"homepage": "https://www.influxdata.com/products/influxdb/",
+	"license": "MIT"
 }
