@@ -1,1 +1,0 @@
-import{ft as e}from"./index-D8nFP2wR.js";var t=(t,n,r={})=>{e(t,`_href`,n,r)};export{t};

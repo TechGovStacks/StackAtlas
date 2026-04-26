@@ -1,0 +1,1 @@
+import{ft as e}from"./index-BQMM3wH-.js";var t=(t,n,r={})=>{e(t,`_href`,n,r)};export{t};
