@@ -125,7 +125,7 @@ export function CategoryGrid({
 	}, [activeStack, articles, stackItemMap, stackScoreItems]);
 
 	const renderPaginationBar = () => (
-		<div className="pagination-bar my-4 flex items-center justify-between">
+		<div className="pagination-bar">
 			<div className="pagination-bar__pagination-wrapper">
 				{activeCount > ITEMS_PER_PAGE && (
 					<KolPagination
