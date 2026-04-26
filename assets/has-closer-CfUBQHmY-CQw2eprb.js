@@ -1,1 +1,0 @@
-import{lt as e}from"./index-CESG-poj.js";var t=(t,n)=>{e(t,`_hasCloser`,n)};export{t};

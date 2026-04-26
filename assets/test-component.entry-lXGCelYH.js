@@ -1,1 +1,0 @@
-import{f as e}from"./index-CESG-poj.js";var t=class{constructor(t){e(this,t)}};export{t as test_component};
