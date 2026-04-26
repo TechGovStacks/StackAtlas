@@ -1,0 +1,22 @@
+{
+	"id": "a12-low-code",
+	"name": "A12 Low Code",
+	"layer": "building-blocks",
+	"description": {
+		"de": "A12 ist ein offenes und ausgereiftes Low Code Framework, welches die modellgetriebene Entwicklung von Portalen, Fach- und Antragsverfahren inkl. KI-Integration nachhaltig unterstützt. A12 ist ab Mai 2026 Open Source und schafft somit vollständige Transparenz, Auditierbarkeit und kann souverän genutzt werden.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

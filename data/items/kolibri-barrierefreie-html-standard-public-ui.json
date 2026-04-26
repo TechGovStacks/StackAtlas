@@ -1,0 +1,22 @@
+{
+	"id": "kolibri-barrierefreie-html-standard-public-ui",
+	"name": "KoliBri - barrierefreie HTML-Standard (Public-UI)",
+	"layer": "infrastructure",
+	"description": {
+		"de": "KoliBri ist die barrierefreie Komponentenbibliothek des ITZBund für die deutsche \nBundesverwaltung. Sie basiert auf dem W3C-Standard \"Web Components\" und implementiert \nBarrierefreiheit bereits im Code (BITV 2.0, WCAG 2.1). KoliBri ist framework-agnostisch \n(React, Vue, Angular uvm.), vollständig unter EUPL-1.2 lizenziert und Multi-Theme-fähig. \nDie Komponenten sind semantic, reusable und funktionieren auf allen Geräten, Betriebssystemen \nund Browsern. KoliBri bietet keine fachliche Logik oder D",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"id": "xml",
+	"name": "XML",
+	"layer": "infrastructure",
+	"description": {
+		"de": "Standard der in OSCI, XTA, XÖV, ebMS, AS4, eDelivery etc. eingesetzt wird um Nachrichteninhalte zu übermitteln."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

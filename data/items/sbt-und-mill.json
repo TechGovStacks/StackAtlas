@@ -1,0 +1,21 @@
+{
+	"id": "sbt-und-mill",
+	"name": "sbt und mill",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Buildtools, insbesondere für Scala-basierte Anwendungen."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

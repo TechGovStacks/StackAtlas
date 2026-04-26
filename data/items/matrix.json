@@ -1,0 +1,21 @@
+{
+	"id": "matrix",
+	"name": "Matrix",
+	"layer": "infrastructure",
+	"description": {
+		"de": "Matrix ist ein offener Standard für sichere, Ende-zu-Ende verschlüsselte, dezentrale, interoperable (Echtzeit-)Kommunikation. Der Standard wird von der Matrix.org Foundation veröffentlicht und weiterentwickelt und befindet sich vollständig in der Public Domain. Matrix kann sowohl für die Realisierung von klassischen Chat-Anwendungen eingesetzt werden, bietet zudem durch Verfügbarkeit der offenen Spezifikation und diversen Integrationen aber auch eine ideale Basis für die Integration von (KI-)Cha"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

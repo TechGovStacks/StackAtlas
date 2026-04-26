@@ -1,0 +1,22 @@
+{
+	"id": "ldap",
+	"name": "LDAP",
+	"layer": "infrastructure",
+	"description": {
+		"de": "Das \"Lightweight Directory Access Protocol\" ist ein offener Standard zum Abruf von Informationen über Identitäten und Organisationsstrukturen (z.B. Gruppen) mit Optionen zur Authentifikation. LDAP wird flankiert von RfCs zur Standardisierung der Datenformate.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

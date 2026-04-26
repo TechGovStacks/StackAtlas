@@ -1,0 +1,21 @@
+{
+	"id": "webdav",
+	"name": "WebDav",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Protokoll für den Dateizugriff über das Internet"
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

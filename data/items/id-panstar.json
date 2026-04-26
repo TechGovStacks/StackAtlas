@@ -1,0 +1,22 @@
+{
+	"id": "id-panstar",
+	"name": "ID Panstar",
+	"layer": "infrastructure",
+	"description": {
+		"de": "Die Software Panstar ist ein Lösungsbaustein zum Zugang zur Online-Ausweisfunktion und zur Identifizierung im europäischen Ausland (eIDAS). ID Panstar wird zu diesem Zwecke in der BundID verwendet. Als eID-Service im D-Stack kann Panstar auch anderen Anwendungen den Zugang ermöglichen. Dieser Baustein ist ein Produkt des ITPLR und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung. Diese Lösung ist in vielen Ländern schon als Basisdienst etabliert.",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

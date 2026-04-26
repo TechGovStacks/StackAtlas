@@ -1,0 +1,22 @@
+{
+	"id": "caldav",
+	"name": "CalDav",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Protokoll für die Synchronisation und den gemeinsamen Zugriff auf Kalenderdaten",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

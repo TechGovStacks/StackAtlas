@@ -1,0 +1,21 @@
+{
+	"id": "pdf-a",
+	"name": "PDF/A",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "PDF/A ist der ISO-standardisierte (ISO 19005) Archivierungsstandard für langzeitstabile Dokumente"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

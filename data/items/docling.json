@@ -1,0 +1,22 @@
+{
+	"id": "docling",
+	"name": "Docling",
+	"layer": "platform",
+	"description": {
+		"de": "Docling ist eine Open-Source-Library zur strukturierten Extraktion von Inhalten aus PDFs, Office-Dokumenten, gescannten Verwaltungsunterlagen. Docling bietet Layout-Erkennung, Tabellen- und Formel-Extraktion sowie Ausgabeformate, die sich unmittelbar für KI-Pipelines weiterverarbeiten lassen.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

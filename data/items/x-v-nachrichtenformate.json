@@ -1,0 +1,21 @@
+{
+	"id": "x-v-nachrichtenformate",
+	"name": "XÖV-Nachrichtenformate",
+	"layer": "infrastructure",
+	"description": {
+		"de": "XML-basierte Nachrichtenformate für den OSCI-Datenaustausch https://www.itzbund.de/DE/itloesungen/standardloesungen/xoev/xoev.html"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

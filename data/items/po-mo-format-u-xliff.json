@@ -1,0 +1,21 @@
+{
+	"id": "po-mo-format-u-xliff",
+	"name": "PO / MO Format u. XLIFF",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Standards für Software-Lokalisierung (gettext)"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

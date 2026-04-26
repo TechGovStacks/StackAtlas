@@ -1,0 +1,21 @@
+{
+	"id": "ozg-datenmodelle-fim-datenmodelle",
+	"name": "OZG-Datenmodelle / FIM-Datenmodelle",
+	"layer": "building-blocks",
+	"description": {
+		"de": "OZG-Datenmodelle strukturieren die für Verwaltungsleistungen benötigten Informationen fachlich konsistent. Sie dienen als Grundlage dafür, Daten zwischen Portalen, Fachverfahren und Registern ohne Medienbrüche auszutauschen."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

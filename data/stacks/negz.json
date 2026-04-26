@@ -1,0 +1,2346 @@
+{
+	"id": "negz",
+	"name": {
+		"de": "NEGZ-Empfehlungsstack",
+		"en": "NEGZ Recommendation Stack"
+	},
+	"description": {
+		"de": "Community-Feedback des NEGZ zu fehlenden und überflüssigen Standards im Deutschland-Stack.",
+		"en": "NEGZ community feedback on missing and redundant standards in the Germany Stack."
+	},
+	"country": "DE",
+	"issuer": "Nationales E-Government Kompetenzzentrum (NEGZ)",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-26",
+	"sources": [
+		{
+			"label": {
+				"de": "NEGZ-Feedback-CSV",
+				"en": "NEGZ Feedback CSV"
+			},
+			"url": "https://negz.org"
+		}
+	],
+	"items": [
+		{
+			"itemId": "802-11-bis-802-11-be",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "a12-low-code",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "a2a",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "a2a-agent-to-agent-protocol",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "acr-azure-container-registry",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "agentgateway",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "ai-sdk-by-vercel",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "amqp",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "ams",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "angular",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: überflüssig"
+			}
+		},
+		{
+			"itemId": "anp-und-ag-ui",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: überflüssig"
+			}
+		},
+		{
+			"itemId": "ansible",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "apache-camel-integration-framework",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "apache-kafka",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "apache-kafka",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "apache-produkte",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "apache-spark",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "apex-oracle",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "appian",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "arc42",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "archimate",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "argo-cd",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "argo-workflow",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "argocd",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "asciidoc",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "atag-2-0-authoring-tool-accessibility-guidelines-w3c",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "axon-ivy",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "azure-devops",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "blazor",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "bpmn",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "bpmn-v2-0",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "bruno",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "c",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "c",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "c-razor",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "caldav",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "carddav",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "cargo",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "ceph",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "cloudogu-ecosystem",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "cmake",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "cmmn",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "com-adeona",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "com-despina",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "com-tauri",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "conan",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "contextforge",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "cyclonedx",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "cyclonedx-und-cdxgen",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "dapr",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "data-aeonia",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "data-sign",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "data-varuna",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "datadog-vektor",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "dataprepkit",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "datenschutzcockpit",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "din-5008",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "din-91379",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "din-spec-66336-servicestandard-qualit-tsanforderungen-f-r-onlineservices-und-portale-der-ffentlichen",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "dmn",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "docker",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "docker-swarm",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: überflüssig"
+			}
+		},
+		{
+			"itemId": "docling",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "dokumentenmanagement-systeme-wie-docuware-u-a",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "dvdv",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "e164",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "ebms-as4",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "ecdsa",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "ed25519-eddsa",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "eforms-de",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "eforms-unterschwelle",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "egvp",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "egvp-post-cher-in-der-rolle-bebpo",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "eidas-2-0",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "elsa",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "emrex",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "en-301-549-accessibility-requirements-for-ict-products-and-services",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "epub-accessibility-iso-iec-23761-barrierefreie-e-publikationen",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "etcd",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "etsi-en-119-461-v2",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "fast-alle-frameworks",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: ändern"
+			}
+		},
+		{
+			"itemId": "fehlt",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "fido2-webauthn",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "fim-datenstandard",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "fluentd",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "forgejo",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "form-io",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "gateway-api",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "gemma",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "geo-sparql",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "git",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "github-actions",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: überflüssig"
+			}
+		},
+		{
+			"itemId": "gitlab-erweiterung-der-beschreibung",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "gitlabrunner",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "gnu-taler",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "governikus-multi-messenger",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "grafana",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "grafana-alloy",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "grafana-loki",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "grafana-mimir",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "grafana-tempo",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "haproxy",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "harbor",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "harvester",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "hashicorp-vault-secret-management",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "helm",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "hive",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "iceberg",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "id-crucis",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "id-mercury",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "id-panstar",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "imap",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "influxdb",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "ingrid-vkoopuis",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "iso-9241-171-2025-ergonomics-of-human-system-interaction-software-accessibility",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "iso-9241-normenreihe-ergonomie-der-mensch-system-interaktion",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "iso-iec-19757-3-schematron",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "itil",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "jaeger",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "jquery",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "json-schema",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "json-web-encryption",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "json-web-encryption-jwe",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "k6",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "kern-ux-standard",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "keycloak",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "kitten",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "knative",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "knockoutjs",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "kolibri-barrierefreie-html-standard-public-ui",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "kotlin",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "kotlin-multiplatform",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "krypto-agilit-t-standards-ff",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "kubernetes",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "kubewarden",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "ldap",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "lightllm",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "llm-d",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "longhorn",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "markdown-commonmark-spezifikation-rfc-7763",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "matrix",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "mcp",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "mcp-model-context-protocol",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "mcprouter-microsoft",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "mein-unternehmenskonto-muk",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "messaging-layer-security-mls",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "msbuild",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "mtls",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "nats",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "net",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "net-aspire",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "newtonsoft-json",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "nfs-network-file-system",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "npm",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "nuget",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "nuke-build",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "nvidia-gpu-operator",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "oauth-2-0",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "oci-image-format",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "one-time-password-otp-f-r-multi-faktor-authentifizierung-mfa",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: überflüssig"
+			}
+		},
+		{
+			"itemId": "open-build-service",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "open-policy-agent-opa",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "open-telemetry",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "open-virtualization-format-ovf-open-virtual-appliance-ova",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "openapi",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "openbao",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "opencluster-management",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "opendocument-format-odf",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "opengdx",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "openresponses",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "opensearch",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "opentelemetry",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "openvox",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "operator-framework-f-r-deskriptive-erweiterungen-von-kubernetes",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "osci",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "osci-soap",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "osci-xta",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "osci-xta-soap",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "ovn",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "owasp-dependency-track",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "ozg-cloud",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "ozg-datenmodelle-fim-datenmodelle",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "pdf-a",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "peppol-bis-spezifikationen",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "peppol-edelivery-network",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "peppol-netzwerk",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "persistent-identifier-pids",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "pgvector",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "phi",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "playwright",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "po-mo-format-u-xliff",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "podman",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "pop3",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "portainer",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "postgresql",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: ändern"
+			}
+		},
+		{
+			"itemId": "presto",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "procol-buffers",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "prometheus",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "protocol-buffers-protobuf",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "quay",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "rabbitmq",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "redis",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "referenzimplementierung-f-r-bare-metal-iaas",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "renovate-bot",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "rook",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "rust",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "s3-api-minio-eine-implementierung",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "safe",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "saml",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "sboms",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "sbt-und-mill",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "scala",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "schematron",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "scim",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "sealed-secrets",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "securitysuitabilitypolicy-rfc-5698",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "semantic-kernel-agentic-framework",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "semic-spezifikationen",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "seq",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "sha",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "shacl",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "signalr",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "sigstore",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "simple-object-access-protocol",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "slsa",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "smtp",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "snyk",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "solid-social-linked-data",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "sonarqube",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "spdx",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "spiffe-spire",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "sql",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "sqlite",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "stackrox",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "starttls-smtps",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "stoa-potentiell-kommender-standard",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "swec-software-entwicklungsplattform-cloud",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "swift",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "symfony-php-stack",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "tekton",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "telerik",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "terraform",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "terrascan",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "thanos",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "time-based-one-time-password-totp-f-r-multi-faktor-authentifizierung-mfa",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "tls",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "togaf",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "toon",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "trivy",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "uipath",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "universal-business-language-ubl-iso-iec-19845",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "validator",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "valkey",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "video-basierte-synchrone-kommunikationsschnittstelle-webrtc-basiert",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "vllm",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "vuejs",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "wai-aria-1-2-accessible-rich-internet-applications-w3c",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "webassembly-wasm",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "webdav",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "webpack",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "webrtc",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "webrtc-and-janus-server",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "websockets",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "wifi",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: ändern"
+			}
+		},
+		{
+			"itemId": "x-road",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "x-v",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "x-v-nachrichtenformate",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "x-v-standards",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xbestellung",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xbezahldienste",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xdatenfeld",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xdatenfelder",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xdomea",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xjustiz",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xkatalog",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xml",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xml-encryption",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xml-schema-xsd",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xml-signature",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xmpp",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xpath",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xprozess",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xrechnung",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xslt-xsl-transformations",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xta",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xunternehmen-kerndatenmodell",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "xzufi",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "yaml",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "zapuk",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "zitadel",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		}
+	]
+}

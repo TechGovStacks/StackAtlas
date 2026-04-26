@@ -1,0 +1,22 @@
+{
+	"id": "apache-spark",
+	"name": "Apache Spark",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Open-Source-Engine zur Datenverarbeitung für maschinelles Lernen und KI-Anwendungen.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

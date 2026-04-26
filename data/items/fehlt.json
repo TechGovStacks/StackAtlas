@@ -1,0 +1,22 @@
+{
+	"id": "fehlt",
+	"name": "fehlt",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Mehrsprachige Standardslizenz der Europäischen Union für Software-Lizenzierung",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

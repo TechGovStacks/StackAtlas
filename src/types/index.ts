@@ -4,7 +4,7 @@ export type LocalizedText = {
 	[K in LanguageCode]?: string;
 } & {
 	de: string;
-	en: string;
+	en?: string;
 };
 
 export type LocalizableText = string | LocalizedText;

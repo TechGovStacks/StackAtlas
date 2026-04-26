@@ -1,0 +1,22 @@
+{
+	"id": "ingrid-vkoopuis",
+	"name": "InGrid/VKoopUIS",
+	"layer": "infrastructure",
+	"description": {
+		"de": "InGrid (Projekt-Webseite: https://ingrid-oss.eu/) ist eine modular aufgebaute Softwareplattform (Details: https://ingrid-oss.eu/8.2.0/components/overview/), Kernkomponenten sind\n\n- ein Portalframework zur Recherche und Darstellung von Daten und Informationen, \n\n- ein Harvester für externe Datenquellen, \n\n- ein Metadaten-Katalog zum Nachweis von Geo-, Umwelt- und offenen Daten, \n\n- ein Katalogsystem zur Umsetzung der Anforderungen der UVP-Richtlinie, \n\n- eine Visualisierungskomponente für OGC WMS",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

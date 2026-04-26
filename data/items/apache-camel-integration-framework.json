@@ -1,0 +1,22 @@
+{
+	"id": "apache-camel-integration-framework",
+	"name": "Apache Camel Integration Framework",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Java/XML-Basiertes OPEN SOURCE Integration Framework mit unendlich vielen und einfach soliden performant en und IT-sicheren Adapter -Componenten.  Quasi-Standard, wenn es um IT-Systemintegration nach EIPs in Unternehmen geht",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

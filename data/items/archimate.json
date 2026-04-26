@@ -1,0 +1,22 @@
+{
+	"id": "archimate",
+	"name": "ArchiMate",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Offener Standard zur Modellierung von Organisationen, von Organisationszielen bis zu deren Umsetzung",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

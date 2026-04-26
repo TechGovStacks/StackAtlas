@@ -1,0 +1,21 @@
+{
+	"id": "toon",
+	"name": "TOON",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Token-Oriented Object Notation (TOON)\nhttps://github.com/toon-format/toon"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

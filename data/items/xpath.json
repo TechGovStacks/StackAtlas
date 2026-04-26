@@ -1,0 +1,21 @@
+{
+	"id": "xpath",
+	"name": "XPath",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Abfragesprache, um XML-Inhalte zu adressieren und auszuwerten."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

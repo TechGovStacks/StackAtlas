@@ -1,0 +1,21 @@
+{
+	"id": "open-telemetry",
+	"name": "Open Telemetry",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "OpenTelemetry ist ein offener CNCF-Standard zur herstellerneutralen Erfassung von Logs, Traces und Metriken"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

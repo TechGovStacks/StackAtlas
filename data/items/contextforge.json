@@ -1,0 +1,22 @@
+{
+	"id": "contextforge",
+	"name": "ContextForge",
+	"layer": "infrastructure",
+	"description": {
+		"de": "ContextForge ist ein Open-Source-Gateway, -Registry und -Proxy für das Model Context Protocol (MCP). Es föderiert MCP- und REST-Dienste unter einem einheitlichen Endpunkt, virtualisiert bestehende REST- und gRPC-APIs als MCP-konforme Tools und bietet integrierte OAuth-Authentifizierung, Rate-Limiting und OpenTelemetry-Observability.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

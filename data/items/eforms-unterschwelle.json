@@ -1,0 +1,22 @@
+{
+	"id": "eforms-unterschwelle",
+	"name": "eForms Unterschwelle",
+	"layer": "infrastructure",
+	"description": {
+		"de": "In der Standardfamilie XStandards Einkauf sind alle maßgeblichen Standards für die Beschaffung in Deutschland zusammengefasst. Alle Standards stellen nationale Konkretisierungen europäischer und internationaler Normen und Standards dar. Grundlage sind in der Regel europäische Normen (CEN basierend auf Normungsaufträgen der Europäischen Kommission) oder internationale Standards (Peppol Business Interoperability Specifications). XStandards Einkauf sind dabei konsequent auf Digitalisierung und Auto",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

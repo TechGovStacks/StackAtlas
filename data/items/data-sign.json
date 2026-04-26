@@ -1,0 +1,22 @@
+{
+	"id": "data-sign",
+	"name": "DATA Sign",
+	"layer": "infrastructure",
+	"description": {
+		"de": "Data Sign ist eine anbieterunhabhängige Signatur- und Siegelplattform, die einen einheitlichen Zugang zum europäischen Markt der Vertrauensdiensteanbieter zur Verfügung stellt. Im Sinne eines Basisdienstes stellt DATA Sign einen zentralen Zugang für Fachverfahren und E-Akten Systemen bereit. DATA Sign ist bereits ein Produkt des ITPLR und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung. Sign hat eine eigene Benutzeroverfläche und stellt darüber einen Basisworkflow be",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

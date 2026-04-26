@@ -1,0 +1,22 @@
+{
+	"id": "json-web-encryption",
+	"name": "JSON Web Encryption",
+	"layer": "infrastructure",
+	"description": {
+		"de": "RFC7516 - https://datatracker.ietf.org/doc/html/rfc7516\n\n\nJSON-basierter Standard für Verschlüsselung beliebiger Daten (moderne Form von XML Encryption)",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

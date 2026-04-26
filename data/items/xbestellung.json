@@ -1,0 +1,21 @@
+{
+	"id": "xbestellung",
+	"name": "XBestellung",
+	"layer": "infrastructure",
+	"description": {
+		"de": "XBestellung ist ein europaweit einheitliches Format für elektronische Bestellnachrichten im öffentlichen Einkauf und wurde geschaffen, um die Digitalisierung der Beschaffungsprozesse nach Einführung von XRechnung konsequent fortzuführen. \r\n\nIn der Standardfamilie XStandards Einkauf sind alle maßgeblichen Standards für die Beschaffung in Deutschland zusammengefasst. Alle Standards stellen nationale Konkretisierungen europäischer und internationaler Normen und Standards dar. Grundlage sind in der "
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

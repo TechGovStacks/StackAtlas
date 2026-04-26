@@ -1,0 +1,22 @@
+{
+	"id": "com-adeona",
+	"name": "COM Adeona",
+	"layer": "building-blocks",
+	"description": {
+		"de": "COM ist eine Ergänzungskomponente für die Kommunikaiton mit dem NOOTS. Diese Lösung sollte zenral zur Verfügung gestellt werden und dezentral betrieben werden.",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

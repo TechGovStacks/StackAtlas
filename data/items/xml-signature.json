@@ -1,0 +1,21 @@
+{
+	"id": "xml-signature",
+	"name": "XML Signature",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Signatur für XML-Nachrichten, um eine Authentisierung durchführen zu können. Siehe DSGVO, Art. 5."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"id": "togaf",
+	"name": "TOGAF",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Standrad zur Abstimmung der Geschäftsprozesse und der IT, damit die Unternehmensziele erreicht werden und Veränderungen nachvollziehbar gestaltet werden. Siehe https://www.opengroup.org/togaf"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

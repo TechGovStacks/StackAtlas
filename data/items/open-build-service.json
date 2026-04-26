@@ -1,0 +1,21 @@
+{
+	"id": "open-build-service",
+	"name": "Open Build Service",
+	"layer": "applications",
+	"description": {
+		"de": "Der Open Build Service (OBS) ist eine leistungsstarke, quelloffene Entwicklungsplattform, die ursprünglich vom openSUSE-Projekt ins Leben gerufen wurde. Er dient dazu, Softwarepakete automatisch aus ihrem Quellcode zu erstellen und für eine Vielzahl von Linux-Distributionen und Hardware-Architekturen bereitzustellen."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

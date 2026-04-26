@@ -1,0 +1,22 @@
+{
+	"id": "eforms-de",
+	"name": "eForms-DE",
+	"layer": "infrastructure",
+	"description": {
+		"de": "eForms‑DE ist der verbindliche Datenaustauschstandard für Bekanntmachungsdaten \r\nim öffentlichen Einkauf in Deutschland basierend auf der Durchführungsverordnung (EU) 2019/1780 der EU-Kommission.\r\n\nIn der Standardfamilie XStandards Einkauf sind alle maßgeblichen Standards für die Beschaffung in Deutschland zusammengefasst. Alle Standards stellen nationale Konkretisierungen europäischer und internationaler Normen und Standards dar. Grundlage sind in der Regel europäische Normen (CEN basierend auf",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"id": "id-crucis",
+	"name": "ID Crucis",
+	"layer": "infrastructure",
+	"description": {
+		"de": "ID Crucis ist ein Baustein, um Zustimmungen (Consent) von einem oder mehreren Personen (juristisch oder natürlich) zu einem Vorgang einzuholen. Diese Zustimmung wird menschen- und maschinenlesbar an die weiterverarbeitenden Prozesse weitergereicht. Dieser Baustein ist ein Produkt des ITPLR und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung. Diese Lösung ist in vielen Ländern schon als Basisdienst etabliert.",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

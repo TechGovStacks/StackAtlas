@@ -1,0 +1,22 @@
+{
+	"id": "epub-accessibility-iso-iec-23761-barrierefreie-e-publikationen",
+	"name": "EPUB Accessibility / ISO/IEC 23761 – Barrierefreie E-Publikationen",
+	"layer": "infrastructure",
+	"description": {
+		"de": "ISO/IEC 23761:2021 (EPUB Accessibility) definiert Anforderungen an barrierefreie E-Book- und digitale Publikationsformate (derzeit EPUB 3.3 und höher). Er referenziert WCAG 2.x und ergänzt diese um publikationsspezifische Anforderungen (Navigation, Metadaten, Leseabfolge). Relevant für alle D-Stack-Publikationsformate: digitale Broschüren, Leitfäden, Fachinformationen, digitale Amtsblätter.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

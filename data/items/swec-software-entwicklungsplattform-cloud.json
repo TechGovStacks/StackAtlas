@@ -1,0 +1,21 @@
+{
+	"id": "swec-software-entwicklungsplattform-cloud",
+	"name": "SWEC - Software \nEntwicklungsplattform Cloud",
+	"layer": "infrastructure",
+	"description": {
+		"de": "Multi-Cloud-fähige Plattform des ITZBunds für die Bereitstellung souveräner Tool-Chains, z.B. für Softwareentwicklung sowie Projektmanangement und Dokumentation.\nBasierend auf der Open Source Applikationsplattform Cloudogu EcoSystem und Open Source Tools wie Redmine, SonarQube, Sonatype Nexus, SCM-Manager und BlueSpice-Wiki."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

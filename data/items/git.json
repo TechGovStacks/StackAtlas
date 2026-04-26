@@ -1,0 +1,22 @@
+{
+	"id": "git",
+	"name": "git",
+	"layer": "applications",
+	"description": {
+		"de": "Git ist ein verteiltes Versionskontrollsystem, das entwickelt wurde, um die Zusammenarbeit an Softwareprojekten effizient, transparent und dezentral zu gestalten. Im Gegensatz zu zentralen Systemen speichert Git den gesamten Projektverlauf inklusive aller Änderungen lokal auf dem Rechner jeder Nutzer:in, was Offline-Arbeit ermöglicht und die Abhängigkeit von einem zentralen Server minimiert. Durch seine leistungsstarke Branching- und Merging-Funktionalität erlaubt Git komplexe Workflows, bei den",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

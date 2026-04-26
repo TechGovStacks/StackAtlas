@@ -1,0 +1,22 @@
+{
+	"id": "a2a",
+	"name": "A2A",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "A2A ist ein offener Standard (Linux Foundation, Apache-2.0) für die direkte Kommunikation zwischen autonomen KI-Agenten. Das Protokoll definiert einheitliche Mechanismen für Capability-Discovery, Task-Delegation, asynchrone Koordination und Ergebnis-Übergabe zwischen Agenten unterschiedlicher Hersteller und Laufzeitumgebungen.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

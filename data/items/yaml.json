@@ -1,0 +1,21 @@
+{
+	"id": "yaml",
+	"name": "YAML",
+	"layer": "building-blocks",
+	"description": {
+		"de": "YAML ist ein textbasiertes Dateiformat zur Datenserialisierung, das außerdem für Konfigurationsdateien verbreitet ist."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}
