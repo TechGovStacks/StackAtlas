@@ -20,5 +20,24 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://ai-sdk.dev/",
-	"license": "Apache-2.0"
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/vercel/ai"
+		},
+		{
+			"type": "url",
+			"url": "https://raw.githubusercontent.com/vercel/ai/main/packages/ai/package.json"
+		},
+		{
+			"type": "url",
+			"url": "https://raw.githubusercontent.com/vercel/ai/main/packages/ai/src/telemetry/telemetry-options.ts"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Vercel"
+		}
+	]
 }

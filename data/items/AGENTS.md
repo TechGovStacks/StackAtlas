@@ -7,7 +7,6 @@
 - Nach Abschluss einer Recherche können neue Erkenntnisse zum Rechercheprozess abschließend in dieser Datei ergänzt werden.
 - Die AGENTS.md ist bei Bedarf zu optimieren und an neue Anforderungen oder Erkenntnisse anzupassen.
 
-
 **Ablauf und Regeln:**
 
 1. Die Bearbeitung erfolgt ausschließlich für die Items, deren itemId im Feld "items" von data/stacks/negz.json enthalten ist. Alle anderen Items werden ignoriert.
