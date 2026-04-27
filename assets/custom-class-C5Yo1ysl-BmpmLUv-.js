@@ -1,0 +1,1 @@
+import{ft as e}from"./index-BTlsu5Gx.js";var t=(t,n)=>{e(t,`_customClass`,n,{defaultValue:``})};export{t};
