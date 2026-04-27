@@ -1,0 +1,21 @@
+{
+	"id": "xrechnung",
+	"name": "XRechnung",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "XRechnung ist ein eigenständiger Standard, der speziell für E-Rechnungen im öffentlichen Auftragswesen entwickelt wurde."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

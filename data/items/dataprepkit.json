@@ -1,0 +1,24 @@
+{
+	"id": "dataprepkit",
+	"name": "DataPrepKit",
+	"layer": "building-blocks",
+	"description": {
+		"de": "DPK ist ein Open-Source-Toolkit für skalierbare Datenaufbereitung von Trainings- und RAG-Daten für LLMs, mit Modulen für Deduplizierung, PII-Filterung und Qualitätsbewertung.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://github.com/huggingface/datatrove",
+	"license": "Apache-2.0"
+}

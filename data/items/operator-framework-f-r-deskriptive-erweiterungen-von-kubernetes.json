@@ -1,0 +1,23 @@
+{
+	"id": "operator-framework-f-r-deskriptive-erweiterungen-von-kubernetes",
+	"name": "Operator Framework für deskriptive Erweiterungen von Kubernetes",
+	"layer": "platform",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Operator Framework für deskriptive Erweiterungen von Kubernetes' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://operatorhub.io/",
+	"license": "Apache-2.0"
+}

@@ -1,0 +1,24 @@
+{
+	"id": "knative",
+	"name": "Knative",
+	"layer": "platform",
+	"description": {
+		"de": "Knative ist ein Kubernetes-basiertes Framework für Serverless-Workloads und ereignisgetriebene Funktionen mit Skalierung auf Null.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://knative.dev/",
+	"license": "Apache-2.0"
+}

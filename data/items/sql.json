@@ -1,0 +1,21 @@
+{
+	"id": "sql",
+	"name": "SQL",
+	"layer": "building-blocks",
+	"description": {
+		"de": "SQL (Structured Query Language) ist die standardisierte Sprache zur Verwaltung, Abfrage und Bearbeitung von Daten in relationalen Datenbanken."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

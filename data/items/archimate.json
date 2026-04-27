@@ -1,0 +1,43 @@
+{
+	"id": "archimate",
+	"name": "ArchiMate",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Offener Standard zur Modellierung von Organisationen, von Organisationszielen bis zu deren Umsetzung",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.opengroup.org/archimate-forum/archimate-overview",
+	"license": "The Open Group License",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.opengroup.org/archimate-forum/archimate-overview"
+		},
+		{
+			"type": "url",
+			"url": "https://www.opengroup.org/open-group-archimate-model-exchange-file-format"
+		},
+		{
+			"type": "url",
+			"url": "https://www.opengroup.org/xsd/archimate/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/ArchiMate"
+		}
+	]
+}

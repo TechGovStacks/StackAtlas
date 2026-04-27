@@ -1,0 +1,24 @@
+{
+	"id": "din-5008",
+	"name": "Din 5008",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Gestaltungsregeln für Dokumente",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.din.de/en/getting-involved/standards-committees/nid/standards/wdc-beuth:din21:322665538",
+	"license": "Proprietary"
+}

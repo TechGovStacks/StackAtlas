@@ -15,7 +15,7 @@
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
-		"hasAudit": true,
+		"hasAudit": false,
 		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
@@ -24,8 +24,24 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"audit": {
-		"lastDate": "2025-11-11",
-		"url": "https://github.com/i-am-bee/beeai-platform/blob/main/docs/community-and-support/acp-a2a-migration-guide.mdx"
-	}
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://a2aprotocol.ai/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/a2aproject"
+		},
+		{
+			"type": "url",
+			"url": "https://www.linuxfoundation.org/press/linux-foundation-launches-the-agent2agent-protocol-project-to-enable-secure-intelligent-communication-between-ai-agents"
+		},
+		{
+			"type": "url",
+			"url": "https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year"
+		}
+	]
 }

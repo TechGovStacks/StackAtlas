@@ -1,0 +1,23 @@
+{
+	"id": "webdav",
+	"name": "WebDav",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Protokoll für den Dateizugriff über das Internet"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.rfc-editor.org/rfc/rfc4918",
+	"license": "IETF"
+}

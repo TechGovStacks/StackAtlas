@@ -1,0 +1,24 @@
+{
+	"id": "fim-datenstandard",
+	"name": "FIM-Datenstandard",
+	"layer": "building-blocks",
+	"description": {
+		"de": "FIM-Datenstandard (Föderales Informationsmanagement) ist ein zentraler Standard zur Strukturierung und Standardisierung von Verwaltungsdaten in Deutschland. Er dient dazu, Verwaltungsleistungen, Prozesse und Datenfelder bundesweit einheitlich zu definieren, um die Digitalisierung nach dem Onlinezugangsgesetz (OZG) zu beschleunigen und medienbruchfreie Verfahren zu ermöglichen.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.fitko.de/produktmanagement/fim",
+	"license": "CC-BY-4.0"
+}

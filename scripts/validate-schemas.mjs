@@ -13,6 +13,7 @@ import url from 'url';
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 const projectRoot = path.join(__dirname, '..');
 const itemDataDir = path.join(projectRoot, 'data/items');
+const stackDataDir = path.join(projectRoot, 'data/stacks');
 
 const args = new Set(process.argv.slice(2));
 const cycleCheckEnabled = args.has('--check-cycles');
@@ -40,6 +41,8 @@ for (const { schemaFile, dataDir, name } of validationMap) {
 }
 
 const itemContext = loadItemRecords();
+const stackContext = loadStackRecords();
+runCatalogSemanticChecks(itemContext, stackContext, stats);
 runDependencySemanticChecks(itemContext, stats);
 
 if (cycleCheckEnabled) {
@@ -171,14 +174,108 @@ function loadItemRecords() {
 	return { itemRecords, parseErrors };
 }
 
+function loadStackRecords() {
+	if (!fs.existsSync(stackDataDir)) {
+		return {
+			parseErrors: ['Stacks directory not found: data/stacks'],
+			stackRecords: [],
+		};
+	}
+
+	const parseErrors = [];
+	const stackRecords = fs
+		.readdirSync(stackDataDir)
+		.filter((file) => file.endsWith('.json') && file !== '.gitkeep.json')
+		.sort()
+		.map((file) => {
+			const filePath = path.join(stackDataDir, file);
+			try {
+				return { file, data: JSON.parse(fs.readFileSync(filePath, 'utf8')) };
+			} catch (error) {
+				parseErrors.push(`${file}: invalid JSON (${error.message})`);
+				return null;
+			}
+		})
+		.filter(Boolean);
+
+	return { parseErrors, stackRecords };
+}
+
+function runCatalogSemanticChecks({ itemRecords, parseErrors: itemParseErrors }, { stackRecords, parseErrors: stackParseErrors }, statsRef) {
+	console.log('🧾 Catalog semantic checks:');
+
+	for (const message of itemParseErrors) {
+		statsRef.errors++;
+		console.error(`   ❌ ${message}`);
+	}
+	for (const message of stackParseErrors) {
+		statsRef.errors++;
+		console.error(`   ❌ ${message}`);
+	}
+
+	if (itemRecords.length === 0) {
+		statsRef.warnings++;
+		console.warn('   ⚠️  No item data available for catalog checks');
+		console.log('');
+		return;
+	}
+
+	const semanticErrors = [];
+	const itemIdFiles = new Map();
+
+	for (const { file, data: item } of itemRecords) {
+		const itemId = item?.id;
+		if (!itemId) continue;
+
+		const files = itemIdFiles.get(itemId) ?? [];
+		files.push(file);
+		itemIdFiles.set(itemId, files);
+	}
+
+	for (const [itemId, files] of itemIdFiles) {
+		if (files.length > 1) {
+			semanticErrors.push(`duplicate item id '${itemId}' in ${files.join(', ')}`);
+		}
+	}
+
+	const itemIdSet = new Set(itemIdFiles.keys());
+	for (const { file, data: stack } of stackRecords) {
+		const stackItems = Array.isArray(stack.items) ? stack.items : [];
+		const seenStackItems = new Set();
+
+		for (const stackItem of stackItems) {
+			const itemId = stackItem?.itemId;
+			if (!itemId) continue;
+
+			if (!itemIdSet.has(itemId)) {
+				semanticErrors.push(`${file}: stack item '${itemId}' does not exist in data/items`);
+			}
+
+			if (seenStackItems.has(itemId)) {
+				semanticErrors.push(`${file}: duplicate stack item '${itemId}'`);
+			} else {
+				seenStackItems.add(itemId);
+			}
+		}
+	}
+
+	for (const message of semanticErrors) {
+		statsRef.errors++;
+		console.error(`   ❌ ${message}`);
+	}
+
+	if (semanticErrors.length === 0 && itemParseErrors.length === 0 && stackParseErrors.length === 0) {
+		console.log('   ✅ Catalog semantics passed');
+	}
+
+	console.log('');
+}
+
 function runDependencySemanticChecks({ itemRecords, parseErrors }, statsRef) {
 	console.log('🔗 Dependency semantic checks:');
 
 	if (parseErrors.length > 0) {
-		for (const message of parseErrors) {
-			statsRef.errors++;
-			console.error(`   ❌ ${message}`);
-		}
+		console.warn('   ⚠️  Skipping dependency checks for item files with JSON parse errors');
 	}
 
 	if (itemRecords.length === 0) {

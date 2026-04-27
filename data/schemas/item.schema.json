@@ -6,6 +6,29 @@
 	"required": ["id", "name", "layer", "description", "oss", "sovereigntyCriteria"],
 	"additionalProperties": false,
 	"properties": {
+		"researchSources": {
+			"type": "array",
+			"description": "Quellen für die Recherche der sovereigntyCriteria und anderer Meta-Informationen (z. B. URLs oder Pfade zu eingecheckten Dateien)",
+			"items": {
+				"type": "object",
+				"oneOf": [{ "required": ["url"] }, { "required": ["repoPath"] }],
+				"properties": {
+					"type": {
+						"type": "string",
+						"enum": ["url", "file"],
+						"description": "Art der Quelle: 'url' für Web-Links, 'file' für Repository-Dateien"
+					},
+					"url": { "type": "string", "format": "uri", "description": "URL der Quelle (bei type=url)" },
+					"path": { "type": "string", "description": "Pfad zu einer eingecheckten Datei im Repository (bei type=file), z. B. data/items/foo.json" }
+				},
+				"additionalProperties": false
+			}
+		},
+		"lastResearchDate": {
+			"type": "string",
+			"description": "ISO 8601 date of last meta-information research (YYYY-MM-DD)",
+			"format": "date"
+		},
 		"id": {
 			"type": "string",
 			"description": "Unique item identifier (slug format: lowercase with hyphens)",

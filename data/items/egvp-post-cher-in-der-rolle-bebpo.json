@@ -1,0 +1,24 @@
+{
+	"id": "egvp-post-cher-in-der-rolle-bebpo",
+	"name": "EGVP Postächer in der Rolle BeBPo",
+	"layer": "infrastructure",
+	"description": {
+		"de": "Über den D-Stack sollten Behörden Zugang zu dem jeweiligen BeBPo bekommen. Stichwort \"BeBpo as a Service\"",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": false,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.justiz.de/egvp/",
+	"license": "Proprietary"
+}

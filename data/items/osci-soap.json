@@ -1,0 +1,23 @@
+{
+	"id": "osci-soap",
+	"name": "OSCI | SOAP",
+	"layer": "infrastructure",
+	"description": {
+		"de": "OSCI defiiert Protokollstandards für den sicheren elektronischen Nachrichtenaustausch über das Internet und andere Netze. Diese garantieren Integrität, Authentizität, Vertraulichkeit und Nachweisbarkeit der Daten und Datenflüsse und ermöglichen medienbruchfreien, effizienten Transport und Verarbeitung."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": false,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.xoev.de/osci-xta-3355",
+	"license": "Proprietary"
+}

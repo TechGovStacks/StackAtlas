@@ -43,14 +43,15 @@ Das optionale Feld `groupKey` kennzeichnet Items, die **dieselbe Kernfunktion** 
 
 **Vergabekriterium:** `groupKey` wird nur gesetzt, wenn im Katalog **mindestens zwei Items** existieren, zwischen denen ein Stack tatsächlich wählen kann. Fundamentalstandards ohne Alternative (HTTP, TLS, DNS …) und singuläre Spezialwerkzeuge erhalten keinen `groupKey`. Items ohne `groupKey` nehmen an keinem Vergleich teil — der `sublayer` allein löst keinen Coverage-Hint aus.
 
-#### Alle 35 Vergleichsgruppen (Stand 2026-04-25)
+#### Alle 36 Vergleichsgruppen (Stand 2026-04-27)
 
 | groupKey                       | Items (Anzahl) | Typische Entscheidung                                    |
 | :----------------------------- | :------------: | :------------------------------------------------------- |
 | `sql-db`                       |       3        | PostgreSQL · MariaDB · MySQL                             |
 | `nosql-db`                     |       5        | MongoDB · Cassandra · CouchDB · HBase · ScyllaDB         |
-| `vector-db`                    |       3        | Chroma · Milvus · Qdrant                                 |
+| `vector-db`                    |       4        | Chroma · Milvus · NQdrant · Qdrant                       |
 | `component-framework`          |       3        | Angular · React · Vue.js                                 |
+| `cross-platform-ui-framework`  |       3        | Capacitor · Flutter · React Native                       |
 | `web-framework`                |       3        | Django · Spring Boot · Ruby on Rails                     |
 | `server-side-rendering`        |       2        | Next.js · PHP                                            |
 | `ci-cd`                        |       5        | GitHub Actions · GitLab · Jenkins · CircleCI · Spinnaker |
@@ -88,7 +89,7 @@ Das optionale Feld `groupKey` kennzeichnet Items, die **dieselbe Kernfunktion** 
 - **Fundamentalstandards:** HTTP, TLS, DNS, DHCP, IPv6, MAC, BGP, IPSec, JWT, MLS, SIP, FTPS
 - **Komplementärprotokolle:** SMTPS + IMAPS (Senden ≠ Empfangen; kein Entscheidungspunkt)
 - **Subtypbeziehungen:** OSPF ist ein Typ von IGP, keine Alternative dazu
-- **Singulare Werkzeuge ohne Katalogpendant:** Kafka, Istio, Envoy, Helm, Grafana, Prometheus, OpenTelemetry, Node.js, Java, Python, R, Swift, CSS, Flutter u. a.
+- **Singulare Werkzeuge ohne Katalogpendant:** Kafka, Istio, Envoy, Helm, Grafana, Prometheus, OpenTelemetry, Node.js, Java, Python, R, Swift, CSS u. a.
 - **Plattform-exklusive Betriebssysteme:** Android (`android-os`) und iOS (`ios-os`) sind keine echten Alternativen zueinander — ein Stack entscheidet sich nicht zwischen den Plattformen, sondern unterstützt beide oder keine.
 
 ---

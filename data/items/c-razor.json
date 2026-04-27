@@ -1,0 +1,35 @@
+{
+	"id": "c-razor",
+	"name": "C# Razor",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Serverseitige Web Templates' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://dotnet.microsoft.com/en-us/apps/aspnet",
+	"license": "MIT",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://dotnet.microsoft.com/en-us/platform/open-source"
+		},
+		{
+			"type": "url",
+			"url": "https://dotnet.microsoft.com/en-us/platform/free"
+		}
+	]
+}

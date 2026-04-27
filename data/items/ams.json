@@ -1,0 +1,26 @@
+{
+	"id": "ams",
+	"name": "AMS",
+	"layer": "applications",
+	"description": {
+		"de": "Application Management System vom Auswärtigen Amt",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.governikus.de/en/",
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": []
+}

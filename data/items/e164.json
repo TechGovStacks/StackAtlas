@@ -1,0 +1,24 @@
+{
+	"id": "e164",
+	"name": "E164",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Standard für die Präsentation von Telefonnummern/SMS",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.itu.int/rec/T-REC-E.164/",
+	"license": "ITU-T"
+}

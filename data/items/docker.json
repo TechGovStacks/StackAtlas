@@ -1,0 +1,24 @@
+{
+	"id": "docker",
+	"name": "Docker",
+	"layer": "platform",
+	"description": {
+		"de": "Docker ist eine Open-Source-Plattform zur Containerisierung von Anwendungen. Sie ermöglicht das Paketieren von Software mit allen Abhängigkeiten in portable Container-Images, die konsistent in verschiedenen Umgebungen ausgeführt werden können.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": false
+	},
+	"homepage": "https://www.docker.com/",
+	"license": "Apache-2.0"
+}

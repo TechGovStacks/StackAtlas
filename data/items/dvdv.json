@@ -1,0 +1,24 @@
+{
+	"id": "dvdv",
+	"name": "DVDV",
+	"layer": "building-blocks",
+	"description": {
+		"de": "DVDV ist eine föderale Lösung, die bereits heute Informationen zur Parametrisierung zahlreicher Dienste bereitstellt und etablierte Pflegeprozesse operationalisiert. In DVDV sind föderale Pflegestrukturen abgebildet.",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": false,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.itzbund.de/DE/itloesungen/standardloesungen/dvdv/dvdv.html",
+	"license": "Proprietary"
+}

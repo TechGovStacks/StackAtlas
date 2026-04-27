@@ -1,0 +1,23 @@
+{
+	"id": "openvox",
+	"name": "openVOX",
+	"layer": "building-blocks",
+	"description": {
+		"de": "OpenSource IaS-Lösung, als community-Fork von Puppet"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://voxpupuli.org/openvox/",
+	"license": "Apache-2.0"
+}

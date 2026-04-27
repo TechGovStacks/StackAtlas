@@ -1,0 +1,21 @@
+{
+	"id": "shacl",
+	"name": "SHACL",
+	"layer": "building-blocks",
+	"description": {
+		"de": "SHACL (Shapes Constraint Language) ist eine Sprache zur Validierung von RDF-Daten. Sie definiert Regeln und Strukturen, die RDF-Graphen erfüllen müssen, um als gültig zu gelten. Dadurch lassen sich Datenmodelle formalisieren und deren Qualität automatisiert prüfen."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

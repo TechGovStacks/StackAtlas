@@ -1,0 +1,21 @@
+{
+	"id": "xzufi",
+	"name": "XZufi",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Ein Standard des IT-Planungsrates. XZuFi dient dem produkt- und herstellerunabhängigen Austausch von Informationen zu Verwaltungsleistungen und den hierfür zuständigen Organisationseinheiten."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

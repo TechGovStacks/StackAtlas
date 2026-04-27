@@ -1,0 +1,31 @@
+{
+	"id": "com-adeona",
+	"name": "COM Adeona",
+	"layer": "building-blocks",
+	"description": {
+		"de": "COM ist eine Ergänzungskomponente für die Kommunikaiton mit dem NOOTS. Diese Lösung sollte zenral zur Verfügung gestellt werden und dezentral betrieben werden.",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.governikus.de/en/produkte/com-adeona/",
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/en/produkte/com-adeona/"
+		}
+	]
+}

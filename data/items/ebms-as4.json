@@ -1,0 +1,24 @@
+{
+	"id": "ebms-as4",
+	"name": "ebMS/AS4",
+	"layer": "applications",
+	"description": {
+		"de": "AS4 (Applicability Statement 4) ist ein offener Standard für den sicheren und nutzdatenunabhängigenAustausch von Business-to-Business-Dokumenten mithilfe von Webservices.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.oasis-open.org/committees/ebxml-msg/",
+	"license": "OASIS"
+}

@@ -1,0 +1,35 @@
+{
+	"id": "azure-devops",
+	"name": "Azure DevOps",
+	"layer": "platform",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'CI/CD und Projektmanagement' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	},
+	"homepage": "https://azure.microsoft.com/en-us/products/devops",
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://learn.microsoft.com/en-us/azure/devops/organizations/security/data-protection?view=azure-devops"
+		},
+		{
+			"type": "url",
+			"url": "https://learn.microsoft.com/en-us/compliance/regulatory/gdpr-dsr-vsts"
+		}
+	]
+}

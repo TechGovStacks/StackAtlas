@@ -1,0 +1,21 @@
+{
+	"id": "sha",
+	"name": "SHA",
+	"layer": "infrastructure",
+	"description": {
+		"de": "SSH-Schlüssel\n\nSHA ist zwar aufgeführt, aber ohne Hinweise siehe Spalte D"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

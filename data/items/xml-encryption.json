@@ -1,0 +1,21 @@
+{
+	"id": "xml-encryption",
+	"name": "XML Encryption",
+	"layer": "infrastructure",
+	"description": {
+		"de": "Verschlüsselung von XML-Nachrichten, um eine Nicht-Einsehbarkeit umzusetzen. Siehe DSGVO, Art. 5."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

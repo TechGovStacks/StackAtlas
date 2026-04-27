@@ -1,0 +1,24 @@
+{
+	"id": "din-91379",
+	"name": "DIN 91379",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Die DIN 91379 definiert diejenige Teilmenge des Internationalen Standards ISO 10646 (Unicode), die aus fachlichen Gründen von jedem IT-Verfahren der deutschen Verwaltung mindestens unterstützt werden muss.",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.din.de/en/getting-involved/standards-committees/nid/standards/wdc-beuth:din21:353496951",
+	"license": "Proprietary"
+}

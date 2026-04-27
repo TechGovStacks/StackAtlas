@@ -1,0 +1,24 @@
+{
+	"id": "cargo",
+	"name": "Cargo",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Buildtool für Rust-basierte Anwendungen.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://doc.rust-lang.org/cargo/",
+	"license": "MIT OR Apache-2.0"
+}

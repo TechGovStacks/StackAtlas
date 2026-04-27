@@ -1,0 +1,21 @@
+{
+	"id": "webrtc-and-janus-server",
+	"name": "Webrtc and Janus Server",
+	"layer": "applications",
+	"description": {
+		"de": "Standard for video based communications services"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

@@ -26,5 +26,16 @@
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://datatracker.ietf.org/doc/html/rfc9114"
-	}
+	},
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/wg/httpbis/documents/"
+		},
+		{
+			"type": "url",
+			"url": "https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol"
+		}
+	],
+	"lastResearchDate": "2026-04-27"
 }

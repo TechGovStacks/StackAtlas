@@ -1,0 +1,43 @@
+{
+	"id": "apache-spark",
+	"name": "Apache Spark",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Open-Source-Engine zur Datenverarbeitung für maschinelles Lernen und KI-Anwendungen.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://spark.apache.org/",
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://spark.apache.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/apache/spark"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/apache/spark/blob/master/LICENSE"
+		},
+		{
+			"type": "url",
+			"url": "https://spark.apache.org/docs/latest/"
+		}
+	]
+}

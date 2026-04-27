@@ -1,0 +1,21 @@
+{
+	"id": "sigstore",
+	"name": "Sigstore",
+	"layer": "infrastructure",
+	"description": {
+		"de": "Sigstore ist ein offener Standard- und Tooling-Ansatz für die kryptographische Signatur und Verifikation von Software-Artefakten. Damit lässt sich nachvollziehen, wer ein Artefakt erzeugt hat und ob es unverändert ausgeliefert wurde."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

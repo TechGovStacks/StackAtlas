@@ -1,0 +1,23 @@
+{
+	"id": "mtls",
+	"name": "mTLS",
+	"layer": "infrastructure",
+	"description": {
+		"de": "Verschlüsselter Datentransport"
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://datatracker.ietf.org/doc/html/rfc8705",
+	"license": "IETF-RFC"
+}

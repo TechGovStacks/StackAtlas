@@ -1,0 +1,23 @@
+{
+	"id": "po-mo-format-u-xliff",
+	"name": "PO / MO Format u. XLIFF",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Standards für Software-Lokalisierung (gettext)"
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://docs.oasis-open.org/xliff/xliff-core/v2.1/xliff-core-v2.1.html",
+	"license": "OASIS"
+}

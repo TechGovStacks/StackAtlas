@@ -27,5 +27,6 @@
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://openid.net/specs/openid-connect-core-1_0.html#:~:text=Final:%20OpenID%20Connect%20Core%201.0%20incorporating%20errata%20set%202"
-	}
+	},
+	"license": "Various"
 }

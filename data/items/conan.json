@@ -1,0 +1,35 @@
+{
+	"id": "conan",
+	"name": "Conan",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Package-Manager für C++-Anwendungen.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://conan.io/",
+	"license": "MIT",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://conan.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/conan-io/conan"
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"id": "ecdsa",
+	"name": "ECDSA",
+	"layer": "infrastructure",
+	"description": {
+		"de": "Ein weit verbreitetes, effizientes kryptografisches Verfahren zur Erstellung digitaler Signaturen, basierend auf der Elliptische-Kurven-Kryptografie (ECC).",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.secg.org/",
+	"license": "Public Domain"
+}

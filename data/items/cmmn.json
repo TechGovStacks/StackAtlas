@@ -1,0 +1,35 @@
+{
+	"id": "cmmn",
+	"name": "CMMN",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "CMMN (Case Management Model and Notation) beschreibt fallbezogene, weniger strikt lineare Vorgänge. Der Standard eignet sich besonders für Verwaltungsprozesse mit Ausnahmen, Ermessensspielräumen und ereignisgetriebenen Bearbeitungsschritten.",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.omg.org/cmmn/",
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.omg.org/cmmn/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.omg.org/spec/CMMN/1.1/About-CMMN"
+		}
+	]
+}

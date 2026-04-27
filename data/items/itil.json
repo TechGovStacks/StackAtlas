@@ -1,0 +1,24 @@
+{
+	"id": "itil",
+	"name": "ITIL",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "Standard für den Betrieb von IT-Lösungen",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.axelos.com/",
+	"license": "proprietary"
+}

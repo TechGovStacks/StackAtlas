@@ -1,0 +1,35 @@
+{
+	"id": "asciidoc",
+	"name": "AsciiDoc",
+	"layer": "building-blocks",
+	"description": {
+		"de": "AsciiDoc ist ein textbasiertes, standardisiertes und leicht versionierbares Format für die Dokumentation technischre Sachverhalte.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://asciidoc.org/",
+	"license": "MIT",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/asciidoctor/asciidoctor"
+		},
+		{
+			"type": "url",
+			"url": "https://asciidoctor.org/"
+		}
+	]
+}

@@ -1,0 +1,43 @@
+{
+	"id": "apache-camel-integration-framework",
+	"name": "Apache Camel Integration Framework",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Java/XML-Basiertes OPEN SOURCE Integration Framework mit unendlich vielen und einfach soliden performant en und IT-sicheren Adapter -Componenten.  Quasi-Standard, wenn es um IT-Systemintegration nach EIPs in Unternehmen geht",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://camel.apache.org/",
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://camel.apache.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/apache/camel"
+		},
+		{
+			"type": "url",
+			"url": "https://svn.apache.org/repos/infra/websites/production/camel/content/what-is-the-license.html"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Apache_Camel"
+		}
+	]
+}

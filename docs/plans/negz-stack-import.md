@@ -47,8 +47,10 @@ Das Script:
 4. Dedupliziert nach normalisiertem Namen (trim, lowercase-Vergleich, führende Tabs entfernen)
 5. Überspringt meta-editorielle Einträge (siehe Liste unten)
 6. Mapped Namen auf existierende Item-IDs (slug-Vergleich + Name-Matching gegen `data/items/*.json`)
-7. Erstellt für neue Items minimale JSON-Dateien in `data/items/`
-8. Erstellt `data/stacks/negz.json` mit allen Item-Referenzen
+7. Dedupliziert Stack-Einträge zusätzlich nach finaler `itemId`, damit Alias-Treffer wie `Kafka` und `Apache Kafka` nur einmal im Stack landen
+8. Erstellt für neue Items minimale JSON-Dateien in `data/items/` mit vollständigem Beschreibungstext aus der CSV
+9. Repariert bereits importierte Item-Dateien nur dann, wenn sie exakt dem früheren 500-Zeichen-Trunkat entsprechen oder eindeutig vom früheren `.net`-Regex-Fehler betroffen sind
+10. Erstellt `data/stacks/negz.json` mit allen deduplizierten Item-Referenzen
 
 ### Schritt 2: Script ausführen
 
@@ -180,13 +182,13 @@ feat: Add NEGZ stack and ~150 new items from community feedback
 
 1. `node scripts/validate-schemas.mjs` — alle neuen Item-JSONs müssen schema-konform sein
 2. `pnpm build` — Build muss erfolgreich sein
-3. In der App: NEGZ-Stack erscheint in der Stack-Auswahl mit ~180–200 Items
+3. In der App: NEGZ-Stack erscheint in der Stack-Auswahl mit 288 Items
 4. Keine doppelten Item-IDs in `data/items/`
 5. Keine doppelten `itemId`-Einträge im Stack
 
 ---
 
-## Geschätzter Umfang
+## Aktueller Import-Umfang
 
 | Kategorie                               | Anzahl   |
 | --------------------------------------- | -------- |

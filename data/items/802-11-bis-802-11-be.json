@@ -1,0 +1,35 @@
+{
+	"id": "802-11-bis-802-11-be",
+	"name": "802.11 bis 802.11 be",
+	"layer": "sovereign-standards",
+	"description": {
+		"de": "IEEE Wi-Fi Standards",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.ieee802.org/11/",
+	"license": "IEEE",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/IEEE_802.11"
+		},
+		{
+			"type": "url",
+			"url": "https://www.ieee802.org/11/"
+		}
+	]
+}

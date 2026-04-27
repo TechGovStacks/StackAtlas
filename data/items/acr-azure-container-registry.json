@@ -1,0 +1,35 @@
+{
+	"id": "acr-azure-container-registry",
+	"name": "ACR (Azure Container Registry)",
+	"layer": "infrastructure",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Verwaltete Container Registry' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	},
+	"homepage": "https://azure.microsoft.com/en-us/products/container-registry",
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://azure.microsoft.com/en-us/products/container-registry"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Azure_Container_Registry"
+		}
+	]
+}

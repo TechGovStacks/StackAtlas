@@ -1,0 +1,21 @@
+{
+	"id": "xslt-xsl-transformations",
+	"name": "XSLT / XSL Transformations",
+	"layer": "building-blocks",
+	"description": {
+		"de": "Mächtige Sprache zur Transformation von XML-Dokumenten in Bezug auf die XML-Struktur oder gänzlich andere Formate (PDF / HTML / TEXT / JSON / ..)."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": false,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	}
+}

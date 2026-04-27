@@ -1,0 +1,24 @@
+{
+	"id": "egvp",
+	"name": "EGVP",
+	"layer": "infrastructure",
+	"description": {
+		"de": "Auf dem OSCI-Standard beruhende Transportinfrastruktur für den elektronischen Rechtsverkehr zwischen Gerichten und Verfahrensbeteiligten.",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": false,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.justiz.de/egvp/",
+	"license": "Proprietary"
+}

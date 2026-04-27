@@ -27,5 +27,16 @@
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://isocpp.org/std/standing-documents"
-	}
+	},
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.iso.org/standard/74528.html"
+		},
+		{
+			"type": "url",
+			"url": "https://blog.ansi.org/ansi/c-programming-language-standard-iso-iec-9899-2024/"
+		}
+	]
 }

@@ -1,0 +1,24 @@
+{
+	"id": "ed25519-eddsa",
+	"name": "Ed25519 (EdDSA)",
+	"layer": "infrastructure",
+	"description": {
+		"de": "M. E. nach inzwischen nahezu der Standard für SSH-Schlüssel.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://datatracker.ietf.org/doc/html/rfc8032",
+	"license": "Public Domain"
+}

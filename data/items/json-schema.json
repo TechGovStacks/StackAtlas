@@ -1,0 +1,24 @@
+{
+	"id": "json-schema",
+	"name": "JSON Schema",
+	"layer": "building-blocks",
+	"description": {
+		"de": "JSON-basierte Variante zu XML-Schema / Schematron",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://json-schema.org/",
+	"license": "IETF-draft"
+}
