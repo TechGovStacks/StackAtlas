@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef } from 'preact/hooks';
 
 interface RouteAnnouncementOptions {
 	pageTitle: string;
@@ -6,20 +6,18 @@ interface RouteAnnouncementOptions {
 }
 
 export function useRouteAnnouncement({ pageTitle, skipHeadingFocus = false }: RouteAnnouncementOptions) {
-	const liveRegionRef = useRef<HTMLDivElement>(null);
-	const [isFirstRender, setIsFirstRender] = useState(true);
+	const isFirstRenderRef = useRef(true);
 
 	useEffect(() => {
-		// Update document title
 		document.title = `${pageTitle} | StackAtlas`;
 
-		// Announce page change to screenreaders
-		if (liveRegionRef.current) {
-			liveRegionRef.current.textContent = pageTitle;
+		// Schreibt in das von RouteAnnouncementRegion gerenderte Live-Region-Element
+		const liveRegion = document.getElementById('route-announcer');
+		if (liveRegion) {
+			liveRegion.textContent = pageTitle;
 		}
 
-		// Focus main heading if available and not skipped, but not on first render
-		if (!skipHeadingFocus && !isFirstRender) {
+		if (!skipHeadingFocus && !isFirstRenderRef.current) {
 			setTimeout(() => {
 				const mainHeading = document.querySelector('main h1');
 				if (mainHeading instanceof HTMLElement) {
@@ -35,10 +33,8 @@ export function useRouteAnnouncement({ pageTitle, skipHeadingFocus = false }: Ro
 				}
 			}, 0);
 		}
-		if (isFirstRender) setIsFirstRender(false);
-	}, [pageTitle, skipHeadingFocus, isFirstRender]);
-
-	return liveRegionRef;
+		if (isFirstRenderRef.current) isFirstRenderRef.current = false;
+	}, [pageTitle, skipHeadingFocus]);
 }
 
 /**
