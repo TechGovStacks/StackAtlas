@@ -12,7 +12,7 @@
 		"openSource": true,
 		"euHeadquartered": true,
 		"hasAudit": false,
-		"permissiveLicense": true,
+		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": false,
@@ -20,5 +20,20 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.kern-ux.de/",
-	"license": "CC-BY-4.0"
+	"license": "EUPL-1.2 (Code), CC BY-NC-SA (Design/Text)",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://interoperable-europe.ec.europa.eu/eu-oss-catalogue/solutions/kern-ux-standard-3"
+		},
+		{
+			"type": "url",
+			"url": "https://www.dataport.de/newsroom/stories/ux-standard-in-der-oeffentlichen-verwaltung-ein-staat-ein-design/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.kern-ux.de/"
+		}
+	]
 }
