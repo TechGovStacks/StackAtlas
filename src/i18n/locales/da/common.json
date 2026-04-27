@@ -355,5 +355,10 @@
 		"title": "Betaversion",
 		"description": "StackAtlas er i betaversion. Kernefunktionerne er tilgængelige og optimeres og udvides løbende. Datagrundlaget forbedres også hele tiden. Alle interesserede er velkomne til at bidrage til projektet via GitHub!",
 		"closeButton": "Forstået"
+	},
+	"community": {
+		"bannerAriaLabel": "Fællesskabsmeddelelse",
+		"bannerText": "Dette datagrundlag vedligeholdes af fællesskabet. Operatøren stiller kun platformen til rådighed.",
+		"contribute": "Deltag →"
 	}
 }

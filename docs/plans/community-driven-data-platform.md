@@ -111,6 +111,7 @@ Kein neuer Algorithmus. Die Community-Funktionalität ist rein UI/UX und navigat
 ### Schritt 5: GitHub Issue-Templates anlegen
 
 - `.github/ISSUE_TEMPLATE/data-correction.md`: Template für Datenkorrekturen
+
   ```markdown
   ---
   name: Datenkorrektur
@@ -122,6 +123,7 @@ Kein neuer Algorithmus. Die Community-Funktionalität ist rein UI/UX und navigat
   **Korrektur:**
   **Quelle:**
   ```
+
 - `.github/ISSUE_TEMPLATE/new-stack.md`: Template für neue Stacks
 - `.github/ISSUE_TEMPLATE/new-item.md`: Template für neue Items/Technologien
 

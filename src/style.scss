@@ -469,6 +469,37 @@ main {
    Footer (BEM Component Styling)
    ───────────────────────────────────────────────────────────────────────────── */
 
+/* ─────────────────────────────────────────────────────────────────────────────
+   Community Banner
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.community-banner {
+	background-color: var(--ds-color-primary-dark, #002d6b);
+	color: rgb(255 255 255 / 85%);
+	border-bottom: 1px solid rgb(255 255 255 / 12%);
+	padding: var(--ds-space-3) 0;
+}
+
+.community-banner__inner {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ds-space-3);
+}
+
+.community-banner__text {
+	font-size: var(--ds-text-sm);
+	line-height: var(--ds-lh-body);
+	margin: 0;
+}
+
+.community-banner__actions {
+	display: flex;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Footer (BEM Component Styling)
+   ───────────────────────────────────────────────────────────────────────────── */
+
 .footer {
 	background-color: var(--ds-color-primary);
 	color: rgb(255 255 255 / 75%);

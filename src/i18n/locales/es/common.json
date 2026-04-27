@@ -355,5 +355,10 @@
 		"title": "Versión beta",
 		"description": "StackAtlas está en versión beta. Las funciones principales están disponibles y se optimizan y amplían continuamente. La base de datos también mejora permanentemente. ¡Todos los interesados son bienvenidos a contribuir al proyecto a través de GitHub!",
 		"closeButton": "Entendido"
+	},
+	"community": {
+		"bannerAriaLabel": "Aviso de la comunidad",
+		"bannerText": "Esta base de datos es mantenida por la comunidad. El operador solo proporciona la plataforma.",
+		"contribute": "Participar →"
 	}
 }
