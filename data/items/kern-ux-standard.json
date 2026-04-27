@@ -25,6 +25,11 @@
 	"researchSources": [
 		{
 			"type": "url",
+			"url": "https://www.kern-ux.de/ueber-kern/faq/",
+			"note": "Official source: EUPL for Code, CC BY-NC-SA for Content"
+		},
+		{
+			"type": "url",
 			"url": "https://interoperable-europe.ec.europa.eu/eu-oss-catalogue/solutions/kern-ux-standard-3"
 		},
 		{
@@ -33,7 +38,7 @@
 		},
 		{
 			"type": "url",
-			"url": "https://www.kern-ux.de/"
+			"url": "https://gitlab.opencode.de/kern-ux/pattern-library"
 		}
 	]
 }
