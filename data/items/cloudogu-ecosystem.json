@@ -19,6 +19,13 @@
 		"openStandards": false,
 		"noTelemetryByDefault": true
 	},
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://platform.cloudogu.com/en/info/cloudogu-ecosystem/"
+		}
+	],
 	"homepage": "https://platform.cloudogu.com/en/info/cloudogu-ecosystem/",
 	"license": "AGPL-3.0-only"
 }

@@ -22,11 +22,30 @@
 		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": true,
-		"ownerType": "community"
+		"ownerType": "foundation"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://docs.pytorch.org/docs/stable/index.html"
 	},
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://pytorch.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/pytorch/pytorch"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/PyTorch"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.pytorch.org/docs/stable/index.html"
+		}
+	],
 	"license": "BSD-3-Clause"
 }

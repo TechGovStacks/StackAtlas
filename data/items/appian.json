@@ -20,5 +20,6 @@
 		"noTelemetryByDefault": false
 	},
 	"homepage": "https://appian.com/",
-	"license": "Proprietary"
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-27"
 }
