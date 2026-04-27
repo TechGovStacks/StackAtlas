@@ -459,6 +459,16 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 									</ul>
 								</div>
 							)}
+							<div className="drawer-footer mt-6 pt-6 border-t border-gray-300">
+								<KolLinkButton
+									_label={t('community.improveData')}
+									_href={`https://github.com/techgovstacks/stackatlas/issues/new?template=data_correction.yml&title=${encodeURIComponent(`Data Correction: ${localizedSelectedArticleName}`)}`}
+									_target="_blank"
+									_rel="noopener noreferrer"
+									_variant="ghost"
+									className="text-sm"
+								/>
+							</div>
 						</div>
 					</KolCard>
 				</div>

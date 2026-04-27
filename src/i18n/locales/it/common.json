@@ -351,5 +351,13 @@
 		"title": "Versione beta",
 		"description": "StackAtlas è in versione beta. Le funzionalità di base sono disponibili e vengono continuamente ottimizzate ed ampliate. Anche la base dati viene costantemente migliorata. Tutti gli interessati sono invitati a contribuire al progetto tramite GitHub!",
 		"closeButton": "Capito"
+	},
+	"community": {
+		"bannerLabel": "Banner della comunità",
+		"bannerText": "Questo database è mantenuto dalla comunità. L'operatore fornisce solo la piattaforma.",
+		"bannerClose": "Chiudi banner",
+		"contribute": "Contribuisci →",
+		"localStackHint": "Gli stack locali vengono archiviati solo nel tuo browser. Vuoi aggiungere uno stack per tutti?",
+		"improveData": "Migliora i dati"
 	}
 }

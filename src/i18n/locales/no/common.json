@@ -351,5 +351,13 @@
 		"title": "Betaversjon",
 		"description": "StackAtlas er i betaversjon. Kjernefunksjonene er tilgjengelige og optimaliseres og utvides kontinuerlig. Datagrunnlaget forbedres også stadig. Alle interesserte er velkomne til å bidra til prosjektet via GitHub!",
 		"closeButton": "Forstått"
+	},
+	"community": {
+		"bannerLabel": "Fellesskapsbanner",
+		"bannerText": "Dette datagrunnlaget vedlikeholdes av fellesskapet. Operatøren tilbyr bare plattformen.",
+		"bannerClose": "Lukk banner",
+		"contribute": "Bidra →",
+		"localStackHint": "Lokale stabler lagres bare i nettleseren din. Vil du legge til en stabel for alle?",
+		"improveData": "Forbedre data"
 	}
 }

@@ -2611,6 +2611,43 @@ kol-select {
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
+   Community Banner
+   ───────────────────────────────────────────────────────────────────────── */
+
+.community-banner {
+	background: var(--ds-color-primary-light, #1a56a0);
+	border-bottom: 1px solid var(--ds-color-primary, #003d82);
+	padding: var(--ds-space-4) var(--ds-space-6);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--ds-space-4);
+	font-size: 0.875rem;
+	color: var(--ds-color-text-inverse);
+}
+
+.community-banner__content {
+	display: flex;
+	align-items: center;
+	gap: var(--ds-space-4);
+	flex: 1;
+}
+
+.community-banner__text {
+	display: flex;
+	align-items: center;
+}
+
+.community-banner__link-button {
+	white-space: nowrap;
+	flex-shrink: 0;
+}
+
+.community-banner__close-button {
+	flex-shrink: 0;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
    Screen-reader only content
    ───────────────────────────────────────────────────────────────────────── */
 

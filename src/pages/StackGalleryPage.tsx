@@ -1,4 +1,4 @@
-import { KolButton, KolDialog, KolDrawer, KolInputText } from '@public-ui/preact';
+import { KolAlert, KolButton, KolDialog, KolDrawer, KolInputText, KolLinkButton } from '@public-ui/preact';
 import type { ComponentChildren } from 'preact';
 import { useLocation } from 'preact-iso';
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
@@ -284,6 +284,18 @@ export function StackGalleryPage() {
 					</div>
 				</div>
 				{createMessage && <p className="mt-2">{createMessage}</p>}
+				<KolAlert _type="info" _variant="msg" className="mt-4">
+					<p>
+						{t('community.localStackHint')}{' '}
+						<KolLinkButton
+							_label={t('community.contribute')}
+							_href="https://github.com/techgovstacks/stackatlas/issues/new?template=new_stack.yml"
+							_target="_blank"
+							_rel="noopener noreferrer"
+							_variant="ghost"
+						/>
+					</p>
+				</KolAlert>
 			</section>
 
 			{customRankedStacks.length > 0 && (
