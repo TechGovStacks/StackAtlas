@@ -1,4 +1,6 @@
-import { useEffect, useRef } from 'preact/hooks';
+import { useEffect } from 'preact/hooks';
+
+const ROUTE_ANNOUNCER_ID = 'route-announcer';
 
 interface RouteAnnouncementOptions {
 	pageTitle: string;
@@ -6,18 +8,16 @@ interface RouteAnnouncementOptions {
 }
 
 export function useRouteAnnouncement({ pageTitle, skipHeadingFocus = false }: RouteAnnouncementOptions) {
-	const isFirstRenderRef = useRef(true);
-
 	useEffect(() => {
 		document.title = `${pageTitle} | StackAtlas`;
 
-		// Schreibt in das von RouteAnnouncementRegion gerenderte Live-Region-Element
-		const liveRegion = document.getElementById('route-announcer');
+		// Updates the live region element rendered by RouteAnnouncementRegion
+		const liveRegion = document.getElementById(ROUTE_ANNOUNCER_ID);
 		if (liveRegion) {
 			liveRegion.textContent = pageTitle;
 		}
 
-		if (!skipHeadingFocus && !isFirstRenderRef.current) {
+		if (!skipHeadingFocus) {
 			setTimeout(() => {
 				const mainHeading = document.querySelector('main h1');
 				if (mainHeading instanceof HTMLElement) {
@@ -33,7 +33,6 @@ export function useRouteAnnouncement({ pageTitle, skipHeadingFocus = false }: Ro
 				}
 			}, 0);
 		}
-		if (isFirstRenderRef.current) isFirstRenderRef.current = false;
 	}, [pageTitle, skipHeadingFocus]);
 }
 
@@ -41,5 +40,5 @@ export function useRouteAnnouncement({ pageTitle, skipHeadingFocus = false }: Ro
  * Render this in your app layout to support route announcements
  */
 export function RouteAnnouncementRegion() {
-	return <div role="status" aria-live="polite" aria-atomic="true" className="sr-only" id="route-announcer" aria-label="Page change announcements" />;
+	return <div role="status" aria-live="polite" aria-atomic="true" className="sr-only" id={ROUTE_ANNOUNCER_ID} aria-label="Page change announcements" />;
 }
