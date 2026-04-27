@@ -7,19 +7,24 @@
 - Nach Abschluss einer Recherche können neue Erkenntnisse zum Rechercheprozess abschließend in dieser Datei ergänzt werden.
 - Die AGENTS.md ist bei Bedarf zu optimieren und an neue Anforderungen oder Erkenntnisse anzupassen.
 
-Durchsuche alle JSON-Dateien im Verzeichnis data/items/. Für jede Datei, in der das Feld sovereigntyCriteria existiert, recherchiere im Internet die aktuellen Meta-Informationen zu folgenden Kriterien:
+**Recherche- und Bewertungsregeln:**
 
-- openSource
-- euHeadquartered
-- hasAudit
-- permissiveLicense
-- matureProject
-- selfHostable
-- dataPortability
-- openStandards
-- noTelemetryByDefault
+1. Durchsuche alle JSON-Dateien im Verzeichnis data/items/. Für jede Datei, in der das Feld sovereigntyCriteria existiert, recherchiere im Internet die aktuellen Meta-Informationen zu folgenden Kriterien:
+   - openSource
+   - euHeadquartered
+   - hasAudit
+   - permissiveLicense
+   - matureProject
+   - selfHostable
+   - dataPortability
+   - openStandards
+   - noTelemetryByDefault
 
-Aktualisiere die Werte in sovereigntyCriteria entsprechend der recherchierten Fakten (Stand: 2026). Ergänze oder aktualisiere zusätzlich das Feld lastResearchDate (Format: YYYY-MM-DD) auf Top-Level mit dem aktuellen Datum der Recherche. Entferne alle Kommentare, sodass das JSON stets gültig bleibt. Wiederhole dies für alle relevanten Dateien, bis alle sovereigntyCriteria-Felder und lastResearchDate im gesamten Verzeichnis korrekt und aktuell befüllt sind.
+2. Nutze für jede Recherche immer mindestens zwei unabhängige, seriöse Quellen (z. B. offizielle Website, GitHub, Wikipedia, Foundation-Seiten, relevante Fachportale). Bevorzuge Wikipedia und GitHub, wenn verfügbar.
+
+3. Prüfe bei jedem Item, ob es sich nur um eine Erweiterung, ein Addon oder ein Plugin eines anderen Items handelt. Falls ja, bewerte das Item ab (z. B. sovereigntyCriteria.matureProject = false, sovereigntyCriteria.openStandards = false, sovereigntyCriteria.dataPortability = false, sovereigntyCriteria.selfHostable = false) und dokumentiere dies im researchSources-Objekt mit einer Begründung.
+
+4. Aktualisiere die Werte in sovereigntyCriteria entsprechend der recherchierten Fakten (Stand: 2026). Ergänze oder aktualisiere zusätzlich das Feld lastResearchDate (Format: YYYY-MM-DD) auf Top-Level mit dem aktuellen Datum der Recherche. Entferne alle Kommentare, sodass das JSON stets gültig bleibt. Wiederhole dies für alle relevanten Dateien, bis alle sovereigntyCriteria-Felder und lastResearchDate im gesamten Verzeichnis korrekt und aktuell befüllt sind.
 
 **WICHTIG:**
 
