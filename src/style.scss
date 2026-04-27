@@ -1626,6 +1626,13 @@ kol-badge.stack-expose__status-badge {
 	gap: var(--ds-space-1);
 }
 
+.stack-stats__score-label-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--ds-space-1);
+}
+
 .stack-stats__score-label {
 	font-size: var(--ds-text-xs);
 	color: var(--ds-color-text-muted);
@@ -2694,4 +2701,73 @@ kol-select {
 	clip-path: inset(50%);
 	white-space: nowrap;
 	border: 0;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Metric Info Drawer
+   ───────────────────────────────────────────────────────────────────────── */
+
+.metric-info-drawer {
+	padding: var(--ds-space-6);
+}
+
+.metric-info-drawer-content {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ds-space-6);
+}
+
+.metric-info-section {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ds-space-2);
+
+	h3 {
+		margin: 0;
+		font-size: 0.9rem;
+		font-weight: 700;
+		color: var(--ds-color-text);
+	}
+
+	p {
+		margin: 0;
+		font-size: 0.85rem;
+		line-height: 1.5;
+		color: var(--ds-color-text-subtle);
+	}
+}
+
+.info-icon-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: var(--ds-space-1);
+	opacity: 0.6;
+	transition: opacity 0.2s;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	&:focus {
+		opacity: 1;
+		outline: 2px solid var(--ds-color-primary);
+		outline-offset: 2px;
+	}
+}
+
+/* Mobile: Bottom Sheet for Drawer */
+@media (width <= 640px) {
+	.metric-info-drawer {
+		--kol-drawer-align: bottom !important;
+
+		position: fixed;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		max-height: 80vh;
+		border-radius: 1rem 1rem 0 0;
+		box-shadow: 0 -2px 10px rgb(0 0 0 / 10%);
+		overflow-y: auto;
+	}
 }

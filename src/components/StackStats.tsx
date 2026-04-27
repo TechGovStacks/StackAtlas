@@ -5,6 +5,7 @@ import { Item, Stack, StackItem } from '../types';
 import { getLocalizedText } from '../utils';
 import { computeItemContextualOverallScore } from '../utils/overallScore';
 import { getScoreCategory, getScoreCategoryColor } from '../utils/sovereigntyScore';
+import { InfoIcon } from './InfoIcon';
 
 interface StackStatsProps {
 	stack: Stack;
@@ -39,7 +40,10 @@ export function StackStats({ stack, items, stackItemMap }: StackStatsProps) {
 				{stack.issuer && <span className="stack-stats__issuer">{stack.issuer}</span>}
 			</div>
 			<div className="stack-stats__score">
-				<span className="stack-stats__score-label">{t('stack.stats.avgScore')}</span>
+				<div className="stack-stats__score-label-wrapper">
+					<span className="stack-stats__score-label">{t('stack.stats.avgScore')}</span>
+					<InfoIcon explainerId="overallScore" label={t('stack.stats.avgScore')} />
+				</div>
 				<div className="stack-stats__score-container">
 					<span className="stack-stats__score-value" style={{ color: avgColor }}>
 						{avgScore}/100

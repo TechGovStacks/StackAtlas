@@ -418,5 +418,13 @@
 		"contribute": "Mitmachen →",
 		"localStackHint": "Lokale Stacks werden nur in deinem Browser gespeichert. Möchtest du einen Stack für alle hinzufügen?",
 		"improveData": "Daten verbessern"
+	},
+	"metricExplainer": {
+		"definition": "Was ist das?",
+		"importance": "Warum wichtig?",
+		"calculation": "Berechnung",
+		"example": "Beispiel",
+		"openExplainer": "Erklärung öffnen",
+		"openFor": "Erklärung für {{label}} öffnen"
 	}
 }
