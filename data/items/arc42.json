@@ -12,7 +12,7 @@
 		"openSource": true,
 		"euHeadquartered": true,
 		"hasAudit": false,
-		"permissiveLicense": true,
+		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
@@ -20,5 +20,24 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://arc42.org/",
-	"license": "CC-BY-4.0"
+	"license": "CC-BY-SA-4.0",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://arc42.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://arc42.org/license"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/arc42/arc42-template"
+		},
+		{
+			"type": "url",
+			"url": "https://arc42.org/imprint"
+		}
+	]
 }

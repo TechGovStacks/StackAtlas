@@ -11,7 +11,7 @@
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
@@ -20,5 +20,24 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://argoproj.github.io/cd/",
-	"license": "Apache-2.0"
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://argo-cd.readthedocs.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/argoproj/argo-cd"
+		},
+		{
+			"type": "url",
+			"url": "https://www.cncf.io/projects/argo/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.cncf.io/blog/2022/07/19/ostifs-audit-of-argo-is-complete-critical-and-high-severity-security-issues-found-and-fixed/"
+		}
+	]
 }

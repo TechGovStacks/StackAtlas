@@ -39,15 +39,7 @@
 			}
 		},
 		{
-			"itemId": "a2a",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "a2a-agent-to-agent-protocol",
+			"itemId": "agent-to-agent-protocol",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -103,7 +95,15 @@
 			}
 		},
 		{
-			"itemId": "anp-und-ag-ui",
+			"itemId": "agent-network-protocol",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: überflüssig"
+			}
+		},
+		{
+			"itemId": "agent-user-interaction-protocol-ag-ui",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -184,14 +184,6 @@
 		},
 		{
 			"itemId": "argo-workflow",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "argocd",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -383,14 +375,6 @@
 			}
 		},
 		{
-			"itemId": "cyclonedx-und-cdxgen",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "dapr",
 			"status": "recommended",
 			"role": "consumer",
@@ -496,14 +480,6 @@
 		},
 		{
 			"itemId": "docling",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "dokumentenmanagement-systeme-wie-docuware-u-a",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -639,7 +615,7 @@
 			}
 		},
 		{
-			"itemId": "fehlt",
+			"itemId": "eupl-1-2",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -727,7 +703,7 @@
 			}
 		},
 		{
-			"itemId": "gitlab-erweiterung-der-beschreibung",
+			"itemId": "gitlab",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -959,14 +935,6 @@
 			}
 		},
 		{
-			"itemId": "json-web-encryption",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "json-web-encryption-jwe",
 			"status": "recommended",
 			"role": "consumer",
@@ -1119,15 +1087,7 @@
 			}
 		},
 		{
-			"itemId": "mcp",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "mcp-model-context-protocol",
+			"itemId": "model-context-protocol-mcp",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -1263,7 +1223,7 @@
 			}
 		},
 		{
-			"itemId": "one-time-password-otp-f-r-multi-faktor-authentifizierung-mfa",
+			"itemId": "one-time-password-otp",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -1279,7 +1239,7 @@
 			}
 		},
 		{
-			"itemId": "open-policy-agent-opa",
+			"itemId": "open-policy-agent",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -1287,7 +1247,7 @@
 			}
 		},
 		{
-			"itemId": "open-telemetry",
+			"itemId": "opentelemetry",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -1352,14 +1312,6 @@
 		},
 		{
 			"itemId": "opensearch",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "opentelemetry",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -1671,14 +1623,6 @@
 			}
 		},
 		{
-			"itemId": "sbt-und-mill",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "scala",
 			"status": "recommended",
 			"role": "consumer",
@@ -1871,15 +1815,7 @@
 			}
 		},
 		{
-			"itemId": "stoa-potentiell-kommender-standard",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "swec-software-entwicklungsplattform-cloud",
+			"itemId": "cloudogu-swec",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -2191,7 +2127,7 @@
 			}
 		},
 		{
-			"itemId": "xml",
+			"itemId": "extensible-markup-language-xml",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -2287,7 +2223,7 @@
 			}
 		},
 		{
-			"itemId": "yaml",
+			"itemId": "yaml-ain-t-markup-language",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {

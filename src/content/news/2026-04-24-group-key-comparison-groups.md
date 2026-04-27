@@ -1,7 +1,7 @@
 ---
 focus: groupComparison
 title: 'Neue Vergleichsgruppen: Warum Docker Swarm im Stack einen Hinweis auf Kubernetes auslöst'
-summary: Alle Items des Katalogs sind nach Kernfunktion in 35 Vergleichsgruppen geordnet. Das ermöglicht gezielte Coverage-Hints — und zeigt am Beispiel eines fiktiven Stadtportals, wie der Mechanismus in der Praxis wirkt.
+summary: Alle Items des Katalogs sind nach Kernfunktion in 36 Vergleichsgruppen geordnet. Das ermöglicht gezielte Coverage-Hints — und zeigt am Beispiel eines fiktiven Stadtportals, wie der Mechanismus in der Praxis wirkt.
 ---
 
 # Neue Vergleichsgruppen: Warum Docker Swarm im Stack einen Hinweis auf Kubernetes auslöst
@@ -92,19 +92,19 @@ Folgende Items im Stack erhalten **keinen** Coverage-Hint, weil sie keinen `grou
 
 ---
 
-## Die 35 Vergleichsgruppen im Überblick
+## Die 36 Vergleichsgruppen im Überblick
 
-| Bereich     | Gruppen                                                                                                                |
-| :---------- | :--------------------------------------------------------------------------------------------------------------------- |
-| Daten       | `sql-db` · `nosql-db` · `vector-db` · `data-serialization-format` · `open-data-portal`                                 |
-| Integration | `container-orchestration` · `k8s-ingress-controller` · `k8s-management-ui` · `message-broker` · `api-style`            |
-| Entwicklung | `component-framework` · `web-framework` · `server-side-rendering` · `systems-language` · `web-scripting-language`      |
-| Betrieb     | `ci-cd` · `infrastructure-as-code` · `workflow-orchestration` · `workflow-automation`                                  |
-| KI/ML       | `ml-framework` · `llm-framework` · `ai-agent-protocol`                                                                 |
-| Sicherheit  | `authentication-protocol` · `asymmetric-encryption` · `transport-protocol`                                             |
-| Gov-Dienste | `national-digital-id-platform` · `gov-integration-platform` · `government-payment-service` · `digital-citizen-service` |
-| Anwendungen | `cms` · `browser-engine` · `low-code-app-builder` · `test-automation`                                                  |
-| Netzwerk    | `traffic-engineering` · `short-range-wireless`                                                                         |
+| Bereich     | Gruppen                                                                                                                                           |
+| :---------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Daten       | `sql-db` · `nosql-db` · `vector-db` · `data-serialization-format` · `open-data-portal`                                                            |
+| Integration | `container-orchestration` · `k8s-ingress-controller` · `k8s-management-ui` · `message-broker` · `api-style`                                       |
+| Entwicklung | `component-framework` · `cross-platform-ui-framework` · `web-framework` · `server-side-rendering` · `systems-language` · `web-scripting-language` |
+| Betrieb     | `ci-cd` · `infrastructure-as-code` · `workflow-orchestration` · `workflow-automation`                                                             |
+| KI/ML       | `ml-framework` · `llm-framework` · `ai-agent-protocol`                                                                                            |
+| Sicherheit  | `authentication-protocol` · `asymmetric-encryption` · `transport-protocol`                                                                        |
+| Gov-Dienste | `national-digital-id-platform` · `gov-integration-platform` · `government-payment-service` · `digital-citizen-service`                            |
+| Anwendungen | `cms` · `browser-engine` · `low-code-app-builder` · `test-automation`                                                                             |
+| Netzwerk    | `traffic-engineering` · `short-range-wireless`                                                                                                    |
 
 ---
 
@@ -118,7 +118,7 @@ Das ist der Unterschied zwischen einem Messwert und einer **Handlungsempfehlung*
 
 ## Fazit
 
-35 Vergleichsgruppen, 104 Items mit `groupKey`, 70 Items bewusst ohne — weil ein Hinweis nur dann hilfreich ist, wenn er auf eine echte Wahl hinweist.
+36 Vergleichsgruppen, 104 Items mit `groupKey`, 313 Items bewusst ohne — weil ein Hinweis nur dann hilfreich ist, wenn er auf eine echte Wahl hinweist.
 
 > "groupKey ist kein Ranking, sondern eine Entscheidungshilfe: Wer zwischen diesen Items wählen kann, sollte das souveränste nehmen."
 
