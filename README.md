@@ -8,7 +8,7 @@ source_of_truth: docs/README.md
 # Stack Atlas
 
 [![CI](https://github.com/techgovstacks/stackatlas/workflows/CI/badge.svg)](https://github.com/techgovstacks/stackatlas/actions)
-[![License: EUPL-1.2](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: EUPL-1.2](https://img.shields.io/badge/License-EUPL-blue.svg)](LICENSE)
 
 Interaktive Vergleichsplattform für staatliche und organisationale Tech-Stacks mit Fokus auf digitale Souveränität.
 
