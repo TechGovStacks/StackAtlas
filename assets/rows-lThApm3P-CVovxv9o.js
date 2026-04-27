@@ -1,1 +1,0 @@
-import{dt as e}from"./index-ChK0oLVy.js";var t=(t,n)=>{e(t,`_rows`,n,{min:1})};export{t};
