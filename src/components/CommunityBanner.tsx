@@ -8,7 +8,7 @@ interface CommunityBannerProps {
 
 const BANNER_DISMISSED_KEY = 'community-banner-dismissed';
 
-export function CommunityBanner({ githubUrl = 'https://github.com/techgovstacks/stackatlas' }: CommunityBannerProps) {
+export function CommunityBanner({ githubUrl = import.meta.env.VITE_GITHUB_REPO_URL ?? 'https://github.com/techgovstacks/stackatlas' }: CommunityBannerProps) {
 	const { t } = useTranslation();
 	const [dismissed, setDismissed] = useState(true);
 	const [mounted, setMounted] = useState(false);

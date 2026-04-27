@@ -78,5 +78,5 @@ body:
       options:
         - label: Ich habe überprüft, dass diese Technologie/dieser Standard nicht bereits in StackAtlas existiert
           required: true
-        - label: Ich habe die offizielle Dokumentation consulted
+        - label: Ich habe die offizielle Dokumentation gelesen
           required: true

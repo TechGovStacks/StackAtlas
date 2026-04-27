@@ -289,7 +289,7 @@ export function StackGalleryPage() {
 						{t('community.localStackHint')}{' '}
 						<KolLinkButton
 							_label={t('community.contribute')}
-							_href="https://github.com/techgovstacks/stackatlas/issues/new?template=new_stack.yml"
+							_href={`${import.meta.env.VITE_GITHUB_REPO_URL ?? 'https://github.com/techgovstacks/stackatlas'}/issues/new?template=new_stack.yml`}
 							_target="_blank"
 							_rel="noopener noreferrer"
 							_variant="ghost"
