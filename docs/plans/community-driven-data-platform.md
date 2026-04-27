@@ -82,10 +82,8 @@ Kein neuer Algorithmus. Die Community-Funktionalität ist rein UI/UX und navigat
 // Beispiel-Struktur
 <div className="community-banner" role="banner">
 	<span>{t('community.bannerText')}</span>
-	<KolLinkButton _href={githubUrl} _target="_blank">
-		{t('community.contribute')}
-	</KolLinkButton>
-	<KolButton _icon="codicon codicon-close" _variant="ghost" _on={{ onClick: onDismiss }} />
+	<KolLinkButton _label={t('community.contribute')} _href={githubUrl} _target="_blank" />
+	<KolButton _label={t('community.close')} _hideLabel _icons={{ left: 'codicon codicon-close' }} _variant="ghost" _on={{ onClick: onDismiss }} />
 </div>
 ```
 

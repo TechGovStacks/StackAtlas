@@ -129,13 +129,19 @@ function filterEntries(entries: NewsEntry[], activeTag: string | null): NewsEntr
 
 ## Implementierungsschritte
 
-### Schritt 1: Typen in `NewsPage.tsx` erweitern
+### Schritt 1: `parseLocalIsoDate` nach `src/utils/index.ts` verschieben
+
+- Die Hilfsfunktion `parseLocalIsoDate` ist aktuell privat in `src/pages/NewsPage.tsx` definiert
+- Sie muss nach `src/utils/index.ts` verschoben und dort exportiert werden, damit `FeaturedNewsCard` und `NewsCard` sie ohne Code-Duplikation nutzen können
+- `NewsPage.tsx` importiert sie anschließend aus `../utils`
+
+### Schritt 2: Typen in `NewsPage.tsx` erweitern
 
 - `NewsMetadata`-Typ um `featured`, `tags`, `author`, `coverImage` ergänzen (s. Datenmodell-Änderungen)
 - `NewsEntry`-Typ entsprechend erweitern
 - `normalizeEntries()` anpassen, um neue Felder zu lesen
 
-### Schritt 2: `FeaturedNewsCard`-Komponente erstellen
+### Schritt 4: `FeaturedNewsCard`-Komponente erstellen
 
 - Neue Datei: `src/components/FeaturedNewsCard.tsx`
 - Props: `entry: NewsEntry`, `dateFormatter: Intl.DateTimeFormat`
@@ -157,7 +163,7 @@ function filterEntries(entries: NewsEntry[], activeTag: string | null): NewsEntr
 </article>
 ```
 
-### Schritt 3: `NewsCard`-Komponente erstellen
+### Schritt 5: `NewsCard`-Komponente erstellen
 
 - Neue Datei: `src/components/NewsCard.tsx`
 - Props: `entry: NewsEntry`, `dateFormatter: Intl.DateTimeFormat`
@@ -165,14 +171,14 @@ function filterEntries(entries: NewsEntry[], activeTag: string | null): NewsEntr
 - Struktur: Datum → Tags → Titel → Summary → Toggle „Weiterlesen"
 - Nutzt `KolCard` oder natives `<article>` mit CSS
 
-### Schritt 4: `TagList`-Komponente erstellen
+### Schritt 6: `TagList`-Komponente erstellen
 
 - Neue Datei: `src/components/TagList.tsx`
 - Props: `tags: string[]`, `activeTag?: string | null`, `onTagClick?: (tag: string) => void`
 - Rendert Tags als `KolButton _variant="ghost"` oder styled `<button>`-Elemente
 - Aktiver Tag visuell hervorgehoben (z. B. `background: var(--ds-color-primary)`)
 
-### Schritt 5: `ExpandableContent`-Komponente erstellen
+### Schritt 7: `ExpandableContent`-Komponente erstellen
 
 - Neue Datei: `src/components/ExpandableContent.tsx`
 - Props: `Content: ComponentType`
@@ -197,14 +203,14 @@ export function ExpandableContent({ Content }: { Content: ComponentType }) {
 }
 ```
 
-### Schritt 6: `NewsFilterBar`-Komponente erstellen (optional, aber empfohlen)
+### Schritt 8: `NewsFilterBar`-Komponente erstellen (optional, aber empfohlen)
 
 - Neue Datei: `src/components/NewsFilterBar.tsx`
 - Props: `allTags: string[]`, `activeTag: string | null`, `sortOrder: 'newest' | 'oldest'`, `onTagChange`, `onSortChange`
 - Rendert: „Alle"-Button + je ein Button pro Tag + Sort-Toggle
 - Layout: horizontales Flexbox-Scrollable auf Mobile
 
-### Schritt 7: `NewsPage.tsx` refaktorieren
+### Schritt 9: `NewsPage.tsx` refaktorieren
 
 - Import neue Komponenten: `FeaturedNewsCard`, `NewsCard`, `NewsFilterBar`
 - State hinzufügen:
@@ -227,7 +233,7 @@ export function ExpandableContent({ Content }: { Content: ComponentType }) {
   </main>
   ```
 
-### Schritt 8: CSS für das neue Layout
+### Schritt 10: CSS für das neue Layout
 
 - `src/style.scss` oder neue `src/components/NewsPage.scss`:
 
@@ -267,7 +273,7 @@ export function ExpandableContent({ Content }: { Content: ComponentType }) {
 }
 ```
 
-### Schritt 9: i18n-Schlüssel ergänzen
+### Schritt 11: i18n-Schlüssel ergänzen
 
 - `src/i18n/locales/de.json`:
   - `news.featured`: „Hervorgehoben"
@@ -279,25 +285,25 @@ export function ExpandableContent({ Content }: { Content: ComponentType }) {
   - `news.noResults`: „Keine Artikel für diesen Filter gefunden."
 - `src/i18n/locales/en.json`: Englische Entsprechungen
 
-### Schritt 10: Bestehende News-Artikel aktualisieren
+### Schritt 12: Bestehende News-Artikel aktualisieren
 
 - `src/content/news/2026-04-23-adoption-calibration-rollout.md`: `featured: true` setzen (neuester Artikel)
 - `src/content/news/2026-04-01-markdown-features-demo.md`: `tags: ['demo', 'markdown']` ergänzen
 - Alle weiteren Artikel: sinnvolle Tags ergänzen
 
-### Schritt 11: Tests schreiben
+### Schritt 13: Tests schreiben
 
 - `src/pages/NewsPage.test.tsx`: Rendering mit/ohne Featured, Filter-Logik, Sort-Logik
 - `src/components/ExpandableContent.test.tsx`: Toggle-Verhalten
 - `src/components/TagList.test.tsx`: Klick auf Tag setzt aktiven Tag
 
-### Schritt 12: Linting, Format, Build-Check
+### Schritt 14: Linting, Format, Build-Check
 
 ```bash
 pnpm format && pnpm lint && pnpm test && pnpm build
 ```
 
-### Schritt 13 (nach Merge): Plan-Datei löschen
+### Schritt 15 (nach Merge): Plan-Datei löschen
 
 ```bash
 rm docs/plans/structured-news-page.md
