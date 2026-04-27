@@ -392,8 +392,11 @@
 		"closeButton": "Compris"
 	},
 	"community": {
-		"bannerAriaLabel": "Note communautaire",
+		"bannerLabel": "Bannière communautaire",
 		"bannerText": "Cette base de données est maintenue par la communauté. L'opérateur fournit uniquement la plateforme.",
-		"contribute": "Contribuer →"
+		"bannerClose": "Fermer la bannière",
+		"contribute": "Contribuer →",
+		"localStackHint": "Les stacks locaux ne sont stockés que dans votre navigateur. Voulez-vous ajouter un stack pour tous ?",
+		"improveData": "Améliorer les données"
 	}
 }

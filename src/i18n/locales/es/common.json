@@ -357,8 +357,11 @@
 		"closeButton": "Entendido"
 	},
 	"community": {
-		"bannerAriaLabel": "Aviso de la comunidad",
+		"bannerLabel": "Banner de la comunidad",
 		"bannerText": "Esta base de datos es mantenida por la comunidad. El operador solo proporciona la plataforma.",
-		"contribute": "Participar →"
+		"bannerClose": "Cerrar banner",
+		"contribute": "Contribuir →",
+		"localStackHint": "Los stacks locales solo se guardan en tu navegador. ¿Deseas agregar un stack para todos?",
+		"improveData": "Mejorar datos"
 	}
 }

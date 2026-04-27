@@ -2642,6 +2642,45 @@ kol-select {
 }
 
 /* ─────────────────────────────────────────────────────────────────────────
+   Community Banner
+   ───────────────────────────────────────────────────────────────────────── */
+
+.community-banner {
+	background: var(--ds-color-primary-light, #1a56a0);
+	border-bottom: 1px solid var(--ds-color-primary, #003d82);
+	padding: var(--ds-space-4) var(--ds-space-6);
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: var(--ds-space-4);
+	font-size: 0.875rem;
+	color: var(--ds-color-text-inverse);
+}
+
+.community-banner__content {
+	display: flex;
+	align-items: center;
+	flex: 1;
+}
+
+.community-banner__text {
+	display: flex;
+	align-items: center;
+}
+
+.community-banner__link-button {
+	white-space: nowrap;
+	flex-shrink: 0;
+	align-self: flex-start;
+}
+
+.community-banner__close-button {
+	flex-shrink: 0;
+	align-self: flex-end;
+	margin-top: calc(var(--ds-space-4) * -1);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
    Screen-reader only content
    ───────────────────────────────────────────────────────────────────────── */
 

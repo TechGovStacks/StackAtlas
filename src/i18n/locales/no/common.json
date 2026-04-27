@@ -353,8 +353,11 @@
 		"closeButton": "Forstått"
 	},
 	"community": {
-		"bannerAriaLabel": "Fellesskapsvarsel",
-		"bannerText": "Dette datagrunnlaget vedlikeholdes av fellesskapet. Operatøren tilbyr kun plattformen.",
-		"contribute": "Bidra →"
+		"bannerLabel": "Fellesskapsbanner",
+		"bannerText": "Dette datagrunnlaget vedlikeholdes av fellesskapet. Operatøren tilbyr bare plattformen.",
+		"bannerClose": "Lukk banner",
+		"contribute": "Bidra →",
+		"localStackHint": "Lokale stabler lagres bare i nettleseren din. Vil du legge til en stabel for alle?",
+		"improveData": "Forbedre data"
 	}
 }

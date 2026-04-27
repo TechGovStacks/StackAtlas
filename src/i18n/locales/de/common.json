@@ -412,8 +412,11 @@
 		"closeButton": "Verstanden"
 	},
 	"community": {
-		"bannerAriaLabel": "Community-Hinweis",
+		"bannerLabel": "Community-Banner",
 		"bannerText": "Diese Datenbasis wird von der Community gepflegt. Der Betreiber stellt nur die Plattform bereit.",
-		"contribute": "Mitmachen →"
+		"bannerClose": "Banner schließen",
+		"contribute": "Mitmachen →",
+		"localStackHint": "Lokale Stacks werden nur in deinem Browser gespeichert. Möchtest du einen Stack für alle hinzufügen?",
+		"improveData": "Daten verbessern"
 	}
 }

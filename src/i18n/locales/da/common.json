@@ -357,8 +357,11 @@
 		"closeButton": "Forstået"
 	},
 	"community": {
-		"bannerAriaLabel": "Fællesskabsmeddelelse",
-		"bannerText": "Dette datagrundlag vedligeholdes af fællesskabet. Operatøren stiller kun platformen til rådighed.",
-		"contribute": "Deltag →"
+		"bannerLabel": "Fællesskabsbanner",
+		"bannerText": "Dette datasæt vedligeholdes af fællesskabet. Operatøren stiller kun platformen til rådighed.",
+		"bannerClose": "Luk banner",
+		"contribute": "Bidrag →",
+		"localStackHint": "Lokale stacks gemmes kun i din browser. Vil du tilføje en stack for alle?",
+		"improveData": "Forbedre data"
 	}
 }

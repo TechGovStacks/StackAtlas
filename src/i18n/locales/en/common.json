@@ -412,8 +412,11 @@
 		"closeButton": "Got it"
 	},
 	"community": {
-		"bannerAriaLabel": "Community notice",
-		"bannerText": "This data is maintained by the community. The operator provides the platform only.",
-		"contribute": "Contribute →"
+		"bannerLabel": "Community Banner",
+		"bannerText": "This data basis is maintained by the community. The operator only provides the platform.",
+		"bannerClose": "Close banner",
+		"contribute": "Contribute →",
+		"localStackHint": "Local stacks are only stored in your browser. Do you want to add a stack for everyone?",
+		"improveData": "Improve data"
 	}
 }
