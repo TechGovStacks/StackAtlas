@@ -239,14 +239,6 @@
 			}
 		},
 		{
-			"itemId": "bpmn-v2-0",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "bruno",
 			"status": "recommended",
 			"role": "consumer",
