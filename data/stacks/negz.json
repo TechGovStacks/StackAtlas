@@ -1023,7 +1023,7 @@
 			}
 		},
 		{
-			"itemId": "kolibri-barrierefreie-html-standard-public-ui",
+			"itemId": "public-ui-kolibri",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
