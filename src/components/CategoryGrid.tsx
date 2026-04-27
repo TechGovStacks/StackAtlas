@@ -1,4 +1,4 @@
-import { KolButton, KolInputCheckbox } from '@public-ui/preact';
+import { KolInputCheckbox, KolPagination } from '@public-ui/preact';
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { FilterState, Item, Layer, Stack, StackItem } from '../types';
@@ -130,32 +130,18 @@ export function CategoryGrid({
 		}
 
 		return (
-			<div className="pagination-bar">
-				<div className="pagination-bar__pagination-wrapper">
-					<div className="pagination-controls">
-						<KolButton
-							_label={t('category.pagination.previous') || 'Previous'}
-							_hideLabel
-							_icons={{ left: 'chevron-left' }}
-							_disabled={currentPage === 1}
-							_variant="secondary"
-							_on={{ onClick: () => setCurrentPage(Math.max(1, currentPage - 1)) }}
-						/>
-						<span className="pagination-info">
-							{currentPage} / {totalPages}
-						</span>
-						<KolButton
-							_label={t('category.pagination.next') || 'Next'}
-							_hideLabel
-							_icons={{ left: 'chevron-right' }}
-							_disabled={currentPage === totalPages}
-							_variant="secondary"
-							_on={{ onClick: () => setCurrentPage(Math.min(totalPages, currentPage + 1)) }}
-						/>
-					</div>
-				</div>
+			<div className="grid grid-cols-3 items-end gap-4 w-full my-4">
+				<KolPagination
+					className="col-span-2 justify-start"
+					_max={totalPages}
+					_page={currentPage}
+					_on={{
+						onChangePage: (_e: Event, page: number) => setCurrentPage(page),
+					}}
+					_label={t('category.pagination.label') || 'Pagination'}
+				/>
 				<KolInputCheckbox
-					className="pagination-bar__view-toggle"
+					className="col-span-1 justify-end"
 					_label={t('view.viewToggle')}
 					_hideLabel
 					_variant="switch"
