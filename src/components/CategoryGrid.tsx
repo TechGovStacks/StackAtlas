@@ -105,6 +105,7 @@ export function CategoryGrid({
 
 	const activeCount = articles.length;
 	const totalPages = Math.max(1, Math.ceil(activeCount / ITEMS_PER_PAGE));
+	const hasMultiplePages = activeCount > ITEMS_PER_PAGE;
 
 	useEffect(() => {
 		if (currentPage > totalPages) {
@@ -125,7 +126,7 @@ export function CategoryGrid({
 	}, [activeStack, articles, stackItemMap, stackScoreItems]);
 
 	const renderPaginationBar = () => {
-		if (activeCount <= ITEMS_PER_PAGE) {
+		if (!hasMultiplePages) {
 			return null;
 		}
 
@@ -213,7 +214,7 @@ export function CategoryGrid({
 							</li>
 						))}
 					</ul>
-					{renderPaginationBar()}
+					{hasMultiplePages && renderPaginationBar()}
 				</>
 			)}
 		</div>
