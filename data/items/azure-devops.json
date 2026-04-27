@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": false
 	},
 	"homepage": "https://azure.microsoft.com/en-us/products/devops",
-	"license": "Proprietary"
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://learn.microsoft.com/en-us/azure/devops/organizations/security/data-protection?view=azure-devops"
+		},
+		{
+			"type": "url",
+			"url": "https://learn.microsoft.com/en-us/compliance/regulatory/gdpr-dsr-vsts"
+		}
+	]
 }

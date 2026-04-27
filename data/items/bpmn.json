@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.omg.org/bpmn/",
-	"license": "Proprietary"
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN"
+		},
+		{
+			"type": "url",
+			"url": "https://www.bpmn.org/"
+		}
+	]
 }

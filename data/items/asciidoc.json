@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://asciidoc.org/",
-	"license": "MIT"
+	"license": "MIT",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/asciidoctor/asciidoctor"
+		},
+		{
+			"type": "url",
+			"url": "https://asciidoctor.org/"
+		}
+	]
 }

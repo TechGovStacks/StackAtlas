@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://dotnet.microsoft.com/en-us/apps/aspnet",
-	"license": "MIT"
+	"license": "MIT",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://dotnet.microsoft.com/en-us/platform/open-source"
+		},
+		{
+			"type": "url",
+			"url": "https://dotnet.microsoft.com/en-us/platform/free"
+		}
+	]
 }

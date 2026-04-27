@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor",
-	"license": "Apache-2.0"
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://dotnet.microsoft.com/en-us/platform/free"
+		},
+		{
+			"type": "url",
+			"url": "https://dotnet.microsoft.com/en-us/platform/open-source"
+		}
+	]
 }

@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc6352",
-	"license": "IETF"
+	"license": "IETF",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc6352"
+		},
+		{
+			"type": "url",
+			"url": "https://devguide.calconnect.org/CardDAV/introduction/"
+		}
+	]
 }

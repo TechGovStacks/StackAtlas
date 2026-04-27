@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.w3.org/TR/ATAG20/",
-	"license": "W3C-20150513"
+	"license": "W3C-20150513",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/ATAG20/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.w3.org/WAI/standards-guidelines/atag/"
+		}
+	]
 }
