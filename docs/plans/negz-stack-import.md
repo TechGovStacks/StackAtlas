@@ -190,9 +190,10 @@ feat: Add NEGZ stack and ~150 new items from community feedback
 
 ## Aktueller Import-Umfang
 
-| Kategorie                                  | Anzahl |
-| ------------------------------------------ | ------ |
-| Eindeutige CSV-Einträge nach Namens-Dedupe | 290    |
-| Stack-Items gesamt                         | 288    |
-| Übersprungene Alias-/ID-Duplikate          | 2      |
-| Übersprungene Meta-Einträge                | 21     |
+| Kategorie                               | Anzahl   |
+| --------------------------------------- | -------- |
+| Neue Item-JSON-Dateien                  | ~150–160 |
+| Bereits vorhandene Items (referenziert) | ~40–50   |
+| Stack-Items gesamt                      | ~190–200 |
+| Übersprungene Duplikate                 | ~50–60   |
+| Übersprungene Meta-Einträge             | ~15–20   |

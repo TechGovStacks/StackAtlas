@@ -1,4 +1,4 @@
-import { KolPagination } from '@public-ui/preact';
+import { KolInputCheckbox, KolPagination } from '@public-ui/preact';
 import { useEffect, useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { FilterState, Item, Layer, Stack, StackItem } from '../types';
@@ -20,9 +20,20 @@ interface CategoryGridProps {
 	sortField: SortField;
 	sortDir: SortDir;
 	viewMode: ViewMode;
+	onViewModeChange: (mode: ViewMode) => void;
 }
 
 const ITEMS_PER_PAGE = 15;
+
+const DEFAULT_ADOPTION_RESULT = {
+	adoptionScore: 0,
+	sovereignAdoptionScore: 0,
+	overallScore: 0,
+	directCoverage: 0,
+	transitiveCoverage: 0,
+	diversity: 0,
+	usedInStacks: [],
+};
 
 export function CategoryGrid({
 	layers,
@@ -35,6 +46,7 @@ export function CategoryGrid({
 	sortField,
 	sortDir,
 	viewMode,
+	onViewModeChange,
 }: CategoryGridProps) {
 	const { i18n, t } = useTranslation();
 	const [currentPage, setCurrentPage] = useState(1);
@@ -51,23 +63,12 @@ export function CategoryGrid({
 		filters.selectedDependencyType,
 	]);
 
-	// Default AdoptionResult with all fields zeroed (except usedInStacks)
-	const defaultAdoptionResult = {
-		adoptionScore: 0,
-		sovereignAdoptionScore: 0,
-		overallScore: 0,
-		directCoverage: 0,
-		transitiveCoverage: 0,
-		diversity: 0,
-		usedInStacks: [],
-	};
-
 	// Precompute scores for all articles
 	const precomputedScores = useMemo(() => {
 		return articles.map((article) => {
 			const stackItem = stackItemMap?.get(article.id);
 			const sovereigntyScore = computeEffectiveSovereigntyScore(article.sovereigntyCriteria, stackItem);
-			const adoption = article.adoption ?? defaultAdoptionResult;
+			const adoption = article.adoption ?? DEFAULT_ADOPTION_RESULT;
 			const contextualOverallScore = computeContextualOverallScore(sovereigntyScore, adoption, stackItem);
 			return {
 				...article,
@@ -104,6 +105,7 @@ export function CategoryGrid({
 
 	const activeCount = articles.length;
 	const totalPages = Math.max(1, Math.ceil(activeCount / ITEMS_PER_PAGE));
+	const hasMultiplePages = activeCount > ITEMS_PER_PAGE;
 
 	useEffect(() => {
 		if (currentPage > totalPages) {
@@ -122,6 +124,36 @@ export function CategoryGrid({
 		const sourceItems = stackScoreItems ?? articles;
 		return computeSublayerCoverageHints(sourceItems, stackItemMap);
 	}, [activeStack, articles, stackItemMap, stackScoreItems]);
+
+	const renderPaginationBar = () => {
+		if (!hasMultiplePages) {
+			return null;
+		}
+
+		return (
+			<div className="grid grid-cols-3 items-end gap-4 w-full my-4">
+				<KolPagination
+					className="col-span-2 justify-start"
+					_max={totalPages}
+					_page={currentPage}
+					_on={{
+						onChangePage: (_e: Event, page: number) => setCurrentPage(page),
+					}}
+					_label={t('category.pagination.label') || 'Pagination'}
+				/>
+				<KolInputCheckbox
+					className="col-span-1 justify-end"
+					_label={t('view.viewToggle')}
+					_hideLabel
+					_variant="switch"
+					_checked={viewMode === 'list'}
+					_on={{
+						onChange: (_e: globalThis.Event, value: unknown) => onViewModeChange(value ? 'list' : 'tile'),
+					}}
+				/>
+			</div>
+		);
+	};
 
 	return (
 		<div id="category-results" className="category-container px-3 md:px-4 lg:px-5">
@@ -168,6 +200,7 @@ export function CategoryGrid({
 				</div>
 			) : (
 				<>
+					{renderPaginationBar()}
 					<ul className={viewMode === 'tile' ? 'articles-grid' : 'articles-list'}>
 						{paginatedArticles.map((article) => (
 							<li key={article.id}>
@@ -181,18 +214,7 @@ export function CategoryGrid({
 							</li>
 						))}
 					</ul>
-					{activeCount > ITEMS_PER_PAGE && (
-						<KolPagination
-							className="my-4"
-							_page={currentPage}
-							_max={activeCount}
-							_pageSize={ITEMS_PER_PAGE}
-							_label={t('category.paginationLabel')}
-							_on={{
-								onChangePage: (_event: unknown, page: number) => setCurrentPage(page),
-							}}
-						/>
-					)}
+					{hasMultiplePages && renderPaginationBar()}
 				</>
 			)}
 		</div>

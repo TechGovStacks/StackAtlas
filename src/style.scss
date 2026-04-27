@@ -935,15 +935,58 @@ kol-select,
 	flex: 1;
 }
 
-.filter-bar__view-toggle {
-	grid-area: toggle;
-	place-self: end;
+/* ─────────────────────────────────────────────────────────────────────────────
+   Pagination Bar Styles
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.pagination-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--ds-space-2);
+	margin-top: var(--ds-space-3);
+	margin-bottom: var(--ds-space-3);
+	padding: var(--ds-space-1) 0;
 }
 
-@media (width < 480px) {
-	.filter-bar__view-toggle {
-		place-self: start;
-	}
+.pagination-bar__pagination-wrapper {
+	flex: 2;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.pagination-controls {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: var(--ds-space-1);
+}
+
+.pagination-controls kol-button {
+	flex-shrink: 0;
+}
+
+.pagination-controls kol-button {
+	padding: 0;
+}
+
+.pagination-controls kol-button kol-icon {
+	font-size: 16px;
+}
+
+.pagination-info {
+	min-width: 40px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 1.2;
+	color: var(--ds-color-text-muted);
+	white-space: nowrap;
+}
+
+.pagination-bar__view-toggle {
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────

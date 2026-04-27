@@ -69,8 +69,6 @@ export function HomePage() {
 				onSortFieldChange={setSortField}
 				sortDir={sortDir}
 				onSortDirToggle={() => setSortDir((d) => (d === 'asc' ? 'desc' : 'asc'))}
-				viewMode={viewMode}
-				onViewModeChange={setViewMode}
 				showDependencyControls={false}
 			/>
 			<CategoryGrid
@@ -84,6 +82,7 @@ export function HomePage() {
 				sortField={sortField}
 				sortDir={sortDir}
 				viewMode={viewMode}
+				onViewModeChange={setViewMode}
 			/>
 		</main>
 	);

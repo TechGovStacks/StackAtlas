@@ -265,7 +265,7 @@ export function StackSelectionEvaluator() {
 
 		try {
 			const existingRaw = localStorage.getItem(STACK_ITEM_ASSESSMENTS_STORAGE_KEY);
-			const existing = existingRaw ? (JSON.parse(existingRaw) as Record<string, LinkedAssessment>) : {};
+			const existing = safeJsonParse(existingRaw, LINKED_ASSESSMENTS_SCHEMA) ?? {};
 			existing[storageKey] = payload;
 			localStorage.setItem(STACK_ITEM_ASSESSMENTS_STORAGE_KEY, JSON.stringify(existing));
 			setSavedSelection(payload);
