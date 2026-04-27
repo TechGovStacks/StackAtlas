@@ -17,5 +17,7 @@
 		"dataPortability": false,
 		"openStandards": false,
 		"noTelemetryByDefault": false
-	}
+	},
+	"lastResearchDate": "2026-04-27",
+	"researchSources": []
 }

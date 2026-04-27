@@ -3,11 +3,11 @@
 **Meta-Anweisung:**
 
 - Jede Optimierung oder Präzisierung dieser Agenten-Anweisung ist immer unmittelbar in dieser Datei zu dokumentieren und zu übernehmen. Die AGENTS.md in data/items/ ist stets die maßgebliche, aktuelle Referenz für alle Bearbeitungsschritte.
-- Die Recherche erfolgt immer sequenziell: Es wird immer nur ein Item nach dem anderen recherchiert und aktualisiert. Zuerst werden alle Items ohne lastResearchDate bearbeitet, danach die mit dem jeweils ältesten lastResearchDate.
+- Die Bearbeitung erfolgt vollautomatisch: Es wird immer das Item ohne lastResearchDate oder mit dem ältesten lastResearchDate zuerst bearbeitet. Die Reihenfolge ist strikt einzuhalten.
 - Nach Abschluss einer Recherche können neue Erkenntnisse zum Rechercheprozess abschließend in dieser Datei ergänzt werden.
 - Die AGENTS.md ist bei Bedarf zu optimieren und an neue Anforderungen oder Erkenntnisse anzupassen.
 
-**Recherche- und Bewertungsregeln:**
+**Ablauf und Regeln:**
 
 1. Durchsuche alle JSON-Dateien im Verzeichnis data/items/. Für jede Datei, in der das Feld sovereigntyCriteria existiert, recherchiere im Internet die aktuellen Meta-Informationen zu folgenden Kriterien:
    - openSource
@@ -25,6 +25,8 @@
 3. Prüfe bei jedem Item, ob es sich nur um eine Erweiterung, ein Addon oder ein Plugin eines anderen Items handelt. Falls ja, bewerte das Item ab (z. B. sovereigntyCriteria.matureProject = false, sovereigntyCriteria.openStandards = false, sovereigntyCriteria.dataPortability = false, sovereigntyCriteria.selfHostable = false) und dokumentiere dies im researchSources-Objekt mit einer Begründung.
 
 4. Aktualisiere die Werte in sovereigntyCriteria entsprechend der recherchierten Fakten (Stand: 2026). Ergänze oder aktualisiere zusätzlich das Feld lastResearchDate (Format: YYYY-MM-DD) auf Top-Level mit dem aktuellen Datum der Recherche. Entferne alle Kommentare, sodass das JSON stets gültig bleibt. Wiederhole dies für alle relevanten Dateien, bis alle sovereigntyCriteria-Felder und lastResearchDate im gesamten Verzeichnis korrekt und aktuell befüllt sind.
+
+5. Wenn keine seriösen Quellen auffindbar sind, setze researchSources auf ein leeres Array und dokumentiere dies durch das Setzen von lastResearchDate. Rückfragen an den Nutzer entfallen – die Bearbeitung erfolgt immer automatisch.
 
 **WICHTIG:**
 
