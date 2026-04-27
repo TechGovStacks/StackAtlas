@@ -1,41 +1,44 @@
-# Agenten-Anweisung für sovereigntyCriteria-Recherche und Quellenpflege
+# Agenten-Anweisung: sovereigntyCriteria-Recherche
 
-**Meta-Anweisung:**
+## Scope
 
-- Jede Optimierung oder Präzisierung dieser Agenten-Anweisung ist immer unmittelbar in dieser Datei zu dokumentieren und zu übernehmen. Die AGENTS.md in data/items/ ist stets die maßgebliche, aktuelle Referenz für alle Bearbeitungsschritte.
-- Die Bearbeitung erfolgt vollautomatisch: Es wird immer das Item ohne lastResearchDate oder mit dem ältesten lastResearchDate zuerst bearbeitet. Die Reihenfolge ist strikt einzuhalten.
-- Nach Abschluss einer Recherche können neue Erkenntnisse zum Rechercheprozess abschließend in dieser Datei ergänzt werden.
-- Die AGENTS.md ist bei Bedarf zu optimieren und an neue Anforderungen oder Erkenntnisse anzupassen.
+- Nur Items in `data/stacks/negz.json` → `items[]` bearbeiten
+- Andere Items ignorieren
+- Reihenfolge: Item ohne `lastResearchDate` oder mit ältestem Datum zuerst
 
-**Ablauf und Regeln:**
+## Recherche
 
-1. Die Bearbeitung erfolgt ausschließlich für die Items, deren itemId im Feld "items" von data/stacks/negz.json enthalten ist. Alle anderen Items werden ignoriert.
+**Was:** Für jedes Item die 9 sovereigntyCriteria aktuell prüfen + groupKey verifizieren:
 
-2. Für jedes dieser Items im Verzeichnis data/items/ mit sovereigntyCriteria gilt:
-   - Recherchiere im Internet die aktuellen Meta-Informationen zu folgenden Kriterien **und verifiziere bei jeder Recherche alle bestehenden sovereigntyCriteria-Werte erneut. Passe die Werte an, falls sich neue Erkenntnisse ergeben:**
-     - openSource
-     - euHeadquartered
-     - hasAudit
-     - permissiveLicense
-     - matureProject
-     - selfHostable
-     - dataPortability
-     - openStandards
-     - noTelemetryByDefault
+- openSource, euHeadquartered, hasAudit, permissiveLicense
+- matureProject, selfHostable, dataPortability, openStandards, noTelemetryByDefault
+- **groupKey überprüfen:** Passt die Kategorisierung? Sollte ein groupKey hinzugefügt werden?
 
-3. Nutze für jede Recherche immer mindestens zwei unabhängige, seriöse Quellen (z. B. offizielle Website, GitHub, Wikipedia, Foundation-Seiten, relevante Fachportale). Bevorzuge Wikipedia und GitHub, wenn verfügbar.
+**Wie:**
 
-4. Prüfe bei jedem Item, ob es sich nur um eine Erweiterung, ein Addon oder ein Plugin eines anderen Items handelt. Falls ja, bewerte das Item ab (z. B. sovereigntyCriteria.matureProject = false, sovereigntyCriteria.openStandards = false, sovereigntyCriteria.dataPortability = false, sovereigntyCriteria.selfHostable = false) und dokumentiere dies im researchSources-Objekt mit einer Begründung.
+- Mindestens 2 unabhängige, seriöse Quellen (GitHub, Wikipedia, offizielle Website, Fachportale)
+- **Alle bestehenden Quellen erneut verifizieren** — Werte anpassen, wenn neue Erkenntnisse
+- Falls keine Quellen gefunden: `researchSources = []` setzen
+- **groupKey überprüfen:** Item-Typ identifizieren und mit bestehenden groupKeys vergleichen (z.B. programming-language, database, protocol)
 
-5. Aktualisiere die Werte in sovereigntyCriteria entsprechend der recherchierten Fakten (Stand: 2026). Ergänze oder aktualisiere zusätzlich das Feld lastResearchDate (Format: YYYY-MM-DD) auf Top-Level mit dem aktuellen Datum der Recherche. Entferne alle Kommentare, sodass das JSON stets gültig bleibt. Wiederhole dies für alle relevanten Dateien, bis alle sovereigntyCriteria-Felder und lastResearchDate im gesamten Verzeichnis korrekt und aktuell befüllt sind.
+**Spezialfall:** Addon/Plugin/Extension eines anderen Items?
 
-6. Wenn keine seriösen Quellen auffindbar sind, setze researchSources auf ein leeres Array und dokumentiere dies durch das Setzen von lastResearchDate. Rückfragen an den Nutzer entfallen – die Bearbeitung erfolgt immer automatisch.
+- Dann: `matureProject = false`, `openStandards = false`, `dataPortability = false`, `selfHostable = false`
+- Mit Begründung in `researchSources` dokumentieren
 
-**WICHTIG:**
+## Update
 
-- Bei jeder neuen Recherche müssen alle bestehenden researchSources erneut besucht und auf Aktualität/Erreichbarkeit geprüft werden.
-- Verifiziere, ob die Informationen aus den bisherigen Quellen weiterhin gültig und relevant sind.
-- Füge neue Quellen nur ergänzend hinzu, ersetze niemals bestehende Quellen ohne Grund.
-- Wenn eine alte Quelle nicht mehr erreichbar oder relevant ist, dokumentiere dies mit einem Kommentar im researchSources-Objekt (z. B. "nicht mehr erreichbar am <Datum>").
-- Die Historie und Nachvollziehbarkeit der Recherche muss immer erhalten bleiben.
-- Jede Quelle muss ein type-Feld ("url" oder "file") und je nach Typ ein url- oder path-Feld enthalten.
+1. `sovereigntyCriteria`-Werte aktualisieren
+2. **groupKey überprüfen** und ggf. hinzufügen/aktualisieren
+3. `lastResearchDate` (Format: `YYYY-MM-DD`) setzen
+4. **Keine Kommentare** im JSON
+5. Alle Dateien validieren
+
+## Quellen
+
+Jede Quelle braucht:
+
+- `type`: "url" | "file"
+- `url` oder `path` (je nach Type)
+
+**Wichtig:** Alte, unerreichbare Quellen dokumentieren (z.B. "offline seit [Datum]"), nicht löschen. Historia erhalten.
