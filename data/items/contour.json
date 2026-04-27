@@ -28,5 +28,16 @@
 		"lastDate": "2025-11-11",
 		"url": "https://github.com/projectcontour/contour"
 	},
-	"license": "Apache-2.0"
+	"license": "Apache-2.0",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://projectcontour.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/projectcontour/contour"
+		}
+	],
+	"lastResearchDate": "2026-04-27"
 }

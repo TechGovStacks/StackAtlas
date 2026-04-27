@@ -19,5 +19,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.fitko.de/produktmanagement/fim",
-	"license": "Government"
+	"license": "Government",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.fitko.de/produktmanagement/fim"
+		},
+		{
+			"type": "url",
+			"url": "https://de.wikipedia.org/wiki/F%C3%B6derales_Informationsmanagement"
+		}
+	],
+	"lastResearchDate": "2026-04-27"
 }
