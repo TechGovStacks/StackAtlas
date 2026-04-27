@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://ceph.io/",
-	"license": "LGPL-2.1-or-later"
+	"license": "LGPL-2.1-or-later",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://ceph.io/en/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/ceph/ceph"
+		}
+	]
 }

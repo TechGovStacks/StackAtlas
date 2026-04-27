@@ -20,5 +20,12 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.governikus.de/en/produkte/com-adeona/",
-	"license": "Proprietary"
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/en/produkte/com-adeona/"
+		}
+	]
 }

@@ -19,6 +19,17 @@
 		"openStandards": false,
 		"noTelemetryByDefault": true
 	},
-	"homepage": "https://github.com/dexaai/llm-tools",
-	"license": "MIT"
+	"homepage": "https://github.com/IBM/mcp-context-forge",
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/IBM/mcp-context-forge"
+		},
+		{
+			"type": "url",
+			"url": "https://ibm.github.io/mcp-context-forge/"
+		}
+	]
 }
