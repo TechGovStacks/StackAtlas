@@ -1,10 +1,3 @@
----
-status: active
-owner: Product and Engineering
-last_reviewed: 2026-04-09
-source_of_truth: docs/README.md
----
-
 # Stack Atlas
 
 [![CI](https://github.com/techgovstacks/stackatlas/workflows/CI/badge.svg)](https://github.com/techgovstacks/stackatlas/actions)
