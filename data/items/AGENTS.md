@@ -9,7 +9,7 @@
 
 **Ablauf und Regeln:**
 
-1. Durchsuche alle JSON-Dateien im Verzeichnis data/items/. Für jede Datei, in der das Feld sovereigntyCriteria existiert, recherchiere im Internet die aktuellen Meta-Informationen zu folgenden Kriterien:
+1. Durchsuche alle JSON-Dateien im Verzeichnis data/items/. Für jede Datei, in der das Feld sovereigntyCriteria existiert, recherchiere im Internet die aktuellen Meta-Informationen zu folgenden Kriterien **und verifiziere bei jeder Recherche alle bestehenden sovereigntyCriteria-Werte erneut. Passe die Werte an, falls sich neue Erkenntnisse ergeben:**
    - openSource
    - euHeadquartered
    - hasAudit
