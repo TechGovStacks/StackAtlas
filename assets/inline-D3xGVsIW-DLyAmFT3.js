@@ -1,0 +1,1 @@
+import{lt as e}from"./index-DqdT5OxJ.js";var t=(t,n,r={})=>{e(t,`_inline`,n,r)};export{t};
