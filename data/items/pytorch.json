@@ -22,7 +22,7 @@
 		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": true,
-		"ownerType": "foundation"
+		"ownerType": "independentConsortium"
 	},
 	"audit": {
 		"lastDate": "2026-04-27",
