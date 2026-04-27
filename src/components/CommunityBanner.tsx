@@ -32,16 +32,16 @@ export function CommunityBanner({ githubUrl = import.meta.env.VITE_GITHUB_REPO_U
 		<div className="community-banner" role="banner" aria-label={t('community.bannerLabel')}>
 			<div className="community-banner__content">
 				<span className="community-banner__text">{t('community.bannerText')}</span>
-				<KolLinkButton
-					className="community-banner__link-button"
-					_label={t('community.contribute')}
-					_href={githubUrl}
-					_target="_blank"
-					_rel="noopener noreferrer"
-					_variant="secondary"
-					_size="small"
-				/>
 			</div>
+			<KolLinkButton
+				className="community-banner__link-button"
+				_label={t('community.contribute')}
+				_href={githubUrl}
+				_target="_blank"
+				_rel="noopener noreferrer"
+				_variant="secondary"
+				_size="small"
+			/>
 			<KolButton
 				className="community-banner__close-button"
 				_label={t('community.bannerClose')}
