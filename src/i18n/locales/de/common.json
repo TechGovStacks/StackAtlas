@@ -409,6 +409,7 @@
 	"betaNotice": {
 		"title": "Beta-Version",
 		"description": "StackAtlas befindet sich in der Beta-Phase. Die Grundfunktionen sind vorhanden und werden permanent optimiert und erweitert. Auch die Datenbasis wird laufend verbessert. Alle Interessierten können gerne über GitHub am Projekt mitarbeiten!",
-		"closeButton": "Verstanden"
+		"closeButton": "Verstanden",
+		"githubButton": "Auf GitHub mitwirken"
 	}
 }
