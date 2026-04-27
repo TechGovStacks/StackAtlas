@@ -9,6 +9,7 @@ StackAtlas präsentiert aktuell Daten (Stacks, Items, Metriken) ohne klare Kennz
 - Unklarem Verantwortlichkeitsgefühl (Plattformbetreiber vs. Community)
 
 Bereits vorhandene Bearbeitungsfunktionen (lokale Stacks via `useLocalStacks`) sind rein lokal und nicht Community-gerichtet. Es fehlen:
+
 - Ein sichtbares Community-Signal auf der Plattform
 - Möglichkeit, Datenverbesserungen einzureichen (z. B. via GitHub-Link oder Formular)
 - Kontext, der erklärt: „Diese Daten pflegt die Community, nicht der Betreiber"
@@ -18,6 +19,7 @@ Bereits vorhandene Bearbeitungsfunktionen (lokale Stacks via `useLocalStacks`) s
 ## Design-Ziele & Nicht-Ziele
 
 ### Ziele
+
 - Globaler Community-Banner / Info-Bereich in der App sichtbar machen
 - Kontextueller Hinweis beim Bearbeiten/Erstellen von Stacks
 - Klarer CTA (Call-to-Action) für Beitragende: Link zu GitHub-Repository / Contribution Guide
@@ -25,6 +27,7 @@ Bereits vorhandene Bearbeitungsfunktionen (lokale Stacks via `useLocalStacks`) s
 - Keine eigene Datenbank oder Backend nötig (statische Plattform bleibt erhalten)
 
 ### Nicht-Ziele
+
 - Kein vollständiges In-App-Editing mit Datenbankpersistenz
 - Kein eigenes User-Account-System
 - Kein Live-Review-Workflow in der App
@@ -43,14 +46,14 @@ Optional: Frontmatter-Feld `contributors` in Item-Dateien oder Stack-Dateien erg
 ```typescript
 // src/types/index.ts — optionale Erweiterung
 export type Item = {
-  // ...bestehendes
-  contributors?: string[]; // GitHub-Usernames, optional
+	// ...bestehendes
+	contributors?: string[]; // GitHub-Usernames, optional
 };
 
 export type Stack = {
-  // ...bestehendes
-  contributors?: string[]; // GitHub-Usernames, optional
-  dataSource?: 'community' | 'official' | 'imported'; // Herkunftskennzeichnung
+	// ...bestehendes
+	contributors?: string[]; // GitHub-Usernames, optional
+	dataSource?: 'community' | 'official' | 'imported'; // Herkunftskennzeichnung
 };
 ```
 
@@ -78,9 +81,11 @@ Kein neuer Algorithmus. Die Community-Funktionalität ist rein UI/UX und navigat
 ```tsx
 // Beispiel-Struktur
 <div className="community-banner" role="banner">
-  <span>{t('community.bannerText')}</span>
-  <KolLinkButton _href={githubUrl} _target="_blank">{t('community.contribute')}</KolLinkButton>
-  <KolButton _icon="codicon codicon-close" _variant="ghost" _on={{ onClick: onDismiss }} />
+	<span>{t('community.bannerText')}</span>
+	<KolLinkButton _href={githubUrl} _target="_blank">
+		{t('community.contribute')}
+	</KolLinkButton>
+	<KolButton _icon="codicon codicon-close" _variant="ghost" _on={{ onClick: onDismiss }} />
 </div>
 ```
 
@@ -111,7 +116,8 @@ Kein neuer Algorithmus. Die Community-Funktionalität ist rein UI/UX und navigat
   name: Datenkorrektur
   about: Schlage eine Verbesserung oder Korrektur bestehender Daten vor
   ---
-  **Item/Stack:** 
+
+  **Item/Stack:**
   **Was ist falsch:**
   **Korrektur:**
   **Quelle:**
@@ -145,13 +151,13 @@ Kein neuer Algorithmus. Die Community-Funktionalität ist rein UI/UX und navigat
 - `src/style.scss`: Banner-Styles ergänzen
   ```scss
   .community-banner {
-    background: var(--ds-color-primary-light, #e8f0fe);
-    border-bottom: 1px solid var(--ds-color-primary);
-    padding: var(--ds-space-2) var(--ds-space-6);
-    display: flex;
-    align-items: center;
-    gap: var(--ds-space-4);
-    font-size: var(--ds-text-sm);
+  	background: var(--ds-color-primary-light, #e8f0fe);
+  	border-bottom: 1px solid var(--ds-color-primary);
+  	padding: var(--ds-space-2) var(--ds-space-6);
+  	display: flex;
+  	align-items: center;
+  	gap: var(--ds-space-4);
+  	font-size: var(--ds-text-sm);
   }
   ```
 
@@ -184,13 +190,13 @@ rm docs/plans/community-driven-data-platform.md
 
 ## Risiken & Mitigationen
 
-| Risiko | Mitigation |
-|--------|------------|
-| Banner wird als Werbung/Spam wahrgenommen | Dezentes Styling, einmalig schließbar, kein aggressives Re-Appearing |
-| GitHub-Link nicht korrekt für alle Deployments | `VITE_GITHUB_REPO_URL` als Env-Variable konfigurieren |
-| Nutzer submiten unkomplizierte/spam-Issues | Issue-Templates mit klarer Struktur reduzieren Spam; GitHub-Account nötig |
-| `contributors`-Feld bei vielen Items leer → wirkt verlassen | Feature nur anzeigen, wenn `contributors.length > 0`; sonst ausblenden |
-| In-App-Link-Generierung mit Item-Namen kann Sonderzeichen enthalten | URL-Encoding via `encodeURIComponent()` |
+| Risiko                                                              | Mitigation                                                                |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| Banner wird als Werbung/Spam wahrgenommen                           | Dezentes Styling, einmalig schließbar, kein aggressives Re-Appearing      |
+| GitHub-Link nicht korrekt für alle Deployments                      | `VITE_GITHUB_REPO_URL` als Env-Variable konfigurieren                     |
+| Nutzer submiten unkomplizierte/spam-Issues                          | Issue-Templates mit klarer Struktur reduzieren Spam; GitHub-Account nötig |
+| `contributors`-Feld bei vielen Items leer → wirkt verlassen         | Feature nur anzeigen, wenn `contributors.length > 0`; sonst ausblenden    |
+| In-App-Link-Generierung mit Item-Namen kann Sonderzeichen enthalten | URL-Encoding via `encodeURIComponent()`                                   |
 
 ---
 

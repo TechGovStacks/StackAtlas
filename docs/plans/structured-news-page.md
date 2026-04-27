@@ -16,6 +16,7 @@ Die aktuelle News-Seite (`src/pages/NewsPage.tsx`) rendert alle Artikel als glei
 ## Design-Ziele & Nicht-Ziele
 
 ### Ziele
+
 - Klare visuelle Hierarchie: Featured News oben, restliche News im Grid/Liste darunter
 - Konsistentes Card-Layout: Datum → Tags → Titel → Summary → Inhalt (ausklappbar oder via Link)
 - Tags / Kategorien: sichtbar und klickbar für Filterung
@@ -25,6 +26,7 @@ Die aktuelle News-Seite (`src/pages/NewsPage.tsx`) rendert alle Artikel als glei
 - Alle Änderungen rückwärtskompatibel mit bestehenden Markdown-Dateien
 
 ### Nicht-Ziele
+
 - Kein Paginierungssystem mit Backend
 - Kein Kommentar- oder Like-System
 - Keine Volltext-Suche (würde Backend erfordern)
@@ -37,6 +39,7 @@ Die aktuelle News-Seite (`src/pages/NewsPage.tsx`) rendert alle Artikel als glei
 ### Erweiterung des Frontmatter-Schemas (`src/pages/NewsPage.tsx`)
 
 Bestehende Felder:
+
 ```yaml
 ---
 focus: string
@@ -50,14 +53,14 @@ Neue optionale Felder:
 ```typescript
 // Erweitert den Typ NewsModule.metadata in src/pages/NewsPage.tsx
 type NewsMetadata = {
-  focus?: string;
-  title?: string;
-  summary?: string;
-  // NEU:
-  featured?: boolean;       // Hebt Artikel als Featured hervor
-  tags?: string[];          // Frei wählbare Tags, z. B. ['security', 'release', 'update']
-  author?: string;          // Optionaler Autorenname
-  coverImage?: string;      // Optionaler Pfad zu einem Cover-Bild (relativ zu /public/)
+	focus?: string;
+	title?: string;
+	summary?: string;
+	// NEU:
+	featured?: boolean; // Hebt Artikel als Featured hervor
+	tags?: string[]; // Frei wählbare Tags, z. B. ['security', 'release', 'update']
+	author?: string; // Optionaler Autorenname
+	coverImage?: string; // Optionaler Pfad zu einem Cover-Bild (relativ zu /public/)
 };
 ```
 
@@ -65,16 +68,16 @@ Entsprechend erweiterte Typdefinition in `NewsPage.tsx`:
 
 ```typescript
 type NewsEntry = {
-  Content: ComponentType;
-  author?: string;
-  coverImage?: string;
-  date: string;
-  featured: boolean;
-  focus?: string;
-  slug: string;
-  summary: string;
-  tags: string[];
-  title: string;
+	Content: ComponentType;
+	author?: string;
+	coverImage?: string;
+	date: string;
+	featured: boolean;
+	focus?: string;
+	slug: string;
+	summary: string;
+	tags: string[];
+	title: string;
 };
 ```
 
@@ -82,16 +85,16 @@ type NewsEntry = {
 
 ```typescript
 return {
-  Content: module.default,
-  author: module.metadata?.author,
-  coverImage: module.metadata?.coverImage,
-  date,
-  featured: module.metadata?.featured ?? false,
-  focus: module.metadata?.focus,
-  slug,
-  summary: module.metadata?.summary ?? slug,
-  tags: module.metadata?.tags ?? [],
-  title: module.metadata?.title ?? slug,
+	Content: module.default,
+	author: module.metadata?.author,
+	coverImage: module.metadata?.coverImage,
+	date,
+	featured: module.metadata?.featured ?? false,
+	focus: module.metadata?.focus,
+	slug,
+	summary: module.metadata?.summary ?? slug,
+	tags: module.metadata?.tags ?? [],
+	title: module.metadata?.title ?? slug,
 };
 ```
 
@@ -103,11 +106,7 @@ return {
 
 ```typescript
 function sortEntries(entries: NewsEntry[], sortOrder: 'newest' | 'oldest'): NewsEntry[] {
-  return [...entries].sort((a, b) =>
-    sortOrder === 'newest'
-      ? b.date.localeCompare(a.date)
-      : a.date.localeCompare(b.date)
-  );
+	return [...entries].sort((a, b) => (sortOrder === 'newest' ? b.date.localeCompare(a.date) : a.date.localeCompare(b.date)));
 }
 ```
 
@@ -115,8 +114,8 @@ function sortEntries(entries: NewsEntry[], sortOrder: 'newest' | 'oldest'): News
 
 ```typescript
 function filterEntries(entries: NewsEntry[], activeTag: string | null): NewsEntry[] {
-  if (!activeTag) return entries;
-  return entries.filter((e) => e.tags.includes(activeTag));
+	if (!activeTag) return entries;
+	return entries.filter((e) => e.tags.includes(activeTag));
 }
 ```
 
@@ -146,15 +145,15 @@ function filterEntries(entries: NewsEntry[], activeTag: string | null): NewsEntr
 
 ```tsx
 <article className="news-card news-card--featured">
-  {entry.coverImage && <img src={entry.coverImage} alt="" className="news-card__cover" />}
-  <div className="news-card__header">
-    <span className="news-card__badge">{t('news.featured')}</span>
-    <time dateTime={entry.date}>{dateFormatter.format(parseLocalIsoDate(entry.date))}</time>
-  </div>
-  <h2 className="news-card__title">{entry.title}</h2>
-  <p className="news-card__summary">{entry.summary}</p>
-  <TagList tags={entry.tags} />
-  <ExpandableContent Content={entry.Content} />
+	{entry.coverImage && <img src={entry.coverImage} alt="" className="news-card__cover" />}
+	<div className="news-card__header">
+		<span className="news-card__badge">{t('news.featured')}</span>
+		<time dateTime={entry.date}>{dateFormatter.format(parseLocalIsoDate(entry.date))}</time>
+	</div>
+	<h2 className="news-card__title">{entry.title}</h2>
+	<p className="news-card__summary">{entry.summary}</p>
+	<TagList tags={entry.tags} />
+	<ExpandableContent Content={entry.Content} />
 </article>
 ```
 
@@ -184,21 +183,17 @@ function filterEntries(entries: NewsEntry[], activeTag: string | null): NewsEntr
 
 ```tsx
 export function ExpandableContent({ Content }: { Content: ComponentType }) {
-  const [expanded, setExpanded] = useState(false);
-  return (
-    <div className="expandable-content">
-      {expanded && (
-        <div className="expandable-content__body news-report-card__content">
-          <Content />
-        </div>
-      )}
-      <KolButton
-        _label={expanded ? t('news.collapse') : t('news.expand')}
-        _variant="ghost"
-        _on={{ onClick: () => setExpanded(!expanded) }}
-      />
-    </div>
-  );
+	const [expanded, setExpanded] = useState(false);
+	return (
+		<div className="expandable-content">
+			{expanded && (
+				<div className="expandable-content__body news-report-card__content">
+					<Content />
+				</div>
+			)}
+			<KolButton _label={expanded ? t('news.collapse') : t('news.expand')} _variant="ghost" _on={{ onClick: () => setExpanded(!expanded) }} />
+		</div>
+	);
 }
 ```
 
@@ -238,37 +233,37 @@ export function ExpandableContent({ Content }: { Content: ComponentType }) {
 
 ```scss
 .news-page__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: var(--ds-space-6);
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+	gap: var(--ds-space-6);
 }
 
 @media (max-width: 640px) {
-  .news-page__grid {
-    grid-template-columns: 1fr;
-  }
+	.news-page__grid {
+		grid-template-columns: 1fr;
+	}
 }
 
 .news-card--featured {
-  grid-column: 1 / -1;
-  border-left: 4px solid var(--ds-color-primary);
+	grid-column: 1 / -1;
+	border-left: 4px solid var(--ds-color-primary);
 }
 
 .news-card__cover {
-  width: 100%;
-  max-height: 240px;
-  object-fit: cover;
-  border-radius: var(--ds-space-2);
+	width: 100%;
+	max-height: 240px;
+	object-fit: cover;
+	border-radius: var(--ds-space-2);
 }
 
 .news-card__badge {
-  background: var(--ds-color-primary);
-  color: white;
-  padding: 2px 8px;
-  border-radius: 12px;
-  font-size: var(--ds-text-xs);
-  font-weight: 600;
-  text-transform: uppercase;
+	background: var(--ds-color-primary);
+	color: white;
+	padding: 2px 8px;
+	border-radius: 12px;
+	font-size: var(--ds-text-xs);
+	font-weight: 600;
+	text-transform: uppercase;
 }
 ```
 
@@ -319,14 +314,14 @@ rm docs/plans/structured-news-page.md
 
 ## Risiken & Mitigationen
 
-| Risiko | Mitigation |
-|--------|------------|
+| Risiko                                                        | Mitigation                                                                             |
+| ------------------------------------------------------------- | -------------------------------------------------------------------------------------- |
 | Bestehende Artikel fehlen `tags`/`featured` → leere Tag-Liste | Fallback: `tags: []` → Tag-Filter zeigt keine Tags wenn alle leer; rückwärtskompatibel |
-| `ExpandableContent` bricht MDX-Komponenten-Rendering | Test mit `2026-04-01-markdown-features-demo.md` (vollständiges MDX-Demo) |
-| Grid-Layout auf kleinen Breakpoints zu eng | `minmax(280px, 1fr)` statt fixer Breite; testen auf 320px-Viewport |
-| Zu viele Tags → Filterbar unübersichtlich | Nur Tags anzeigen, die ≥ 2 Artikel haben; Rest unter „Weitere..."-Dropdown |
-| Cover-Bilder fehlen für die meisten Artikel | `coverImage` ist optional; Card ohne Bild bleibt valide |
-| `featured: true` bei mehreren Artikeln | Nur das erste `featured: true`-Ergebnis nach Datum-Sort verwenden |
+| `ExpandableContent` bricht MDX-Komponenten-Rendering          | Test mit `2026-04-01-markdown-features-demo.md` (vollständiges MDX-Demo)               |
+| Grid-Layout auf kleinen Breakpoints zu eng                    | `minmax(280px, 1fr)` statt fixer Breite; testen auf 320px-Viewport                     |
+| Zu viele Tags → Filterbar unübersichtlich                     | Nur Tags anzeigen, die ≥ 2 Artikel haben; Rest unter „Weitere..."-Dropdown             |
+| Cover-Bilder fehlen für die meisten Artikel                   | `coverImage` ist optional; Card ohne Bild bleibt valide                                |
+| `featured: true` bei mehreren Artikeln                        | Nur das erste `featured: true`-Ergebnis nach Datum-Sort verwenden                      |
 
 ---
 
