@@ -151,6 +151,10 @@ function loadExistingItems() {
 	return map;
 }
 
+function writeJSON(filePath, data) {
+	writeFileSync(filePath, `${JSON.stringify(data, null, '\t')}\n`, 'utf8');
+}
+
 // Convert name to slug
 function toSlug(name) {
 	return name
@@ -245,7 +249,7 @@ function guessLayer(name, description) {
 }
 
 // Guess OSS flag
-function guessOSS(name, description, verdict) {
+function guessOSS(name, description) {
 	const text = `${name} ${description}`.toLowerCase();
 
 	// Known proprietary
@@ -259,7 +263,7 @@ function guessOSS(name, description, verdict) {
 	}
 
 	// Microsoft products (often proprietary, but some OSS)
-	if (/microsoft|azure|.net|c#|csharp|powershell|visual studio/.test(text)) {
+	if (/microsoft|azure|\.net|c#|csharp|powershell|visual studio/.test(text)) {
 		if (/github|opensource|mono|roslyn/.test(text)) return true;
 		return false; // Default to proprietary for MS
 	}
@@ -268,17 +272,38 @@ function guessOSS(name, description, verdict) {
 	return true;
 }
 
+function guessOSSWithUnescapedDotNetBug(name, description) {
+	const text = `${name} ${description}`.toLowerCase();
+
+	if (PROPRIETARY_PRODUCTS.has(normalizeName(name))) {
+		return false;
+	}
+
+	if (/open.?source|opensource|github|gitlab|apache|mozilla|linux|gnu|gpl|mit|bsd|eupl/.test(text)) {
+		return true;
+	}
+
+	if (/microsoft|azure|.net|c#|csharp|powershell|visual studio/.test(text)) {
+		if (/github|opensource|mono|roslyn/.test(text)) return true;
+		return false;
+	}
+
+	return true;
+}
+
 // Create a new item object
 function createItem(name, description, id) {
+	const itemDescription = description || 'Keine Beschreibung im NEGZ-Feedback angegeben.';
+
 	return {
 		id,
 		name,
-		layer: guessLayer(name, description),
-		description: { de: description.substring(0, 500), en: '' },
-		oss: guessOSS(name, description),
+		layer: guessLayer(name, itemDescription),
+		description: { de: itemDescription, en: '' },
+		oss: guessOSS(name, itemDescription),
 		tags: [],
 		sovereigntyCriteria: {
-			openSource: guessOSS(name, description),
+			openSource: guessOSS(name, itemDescription),
 			euHeadquartered: false,
 			hasAudit: false,
 			permissiveLicense: false,
@@ -289,6 +314,43 @@ function createItem(name, description, id) {
 			noTelemetryByDefault: false,
 		},
 	};
+}
+
+function repairExistingImportedItem(id, name, description, existingItems) {
+	const existingItem = existingItems.get(id);
+	if (!existingItem) return false;
+
+	let changed = false;
+	const itemDescription = description || 'Keine Beschreibung im NEGZ-Feedback angegeben.';
+	const truncatedDescription = description.substring(0, 500);
+
+	if (existingItem.description?.de === '') {
+		existingItem.description.de = itemDescription;
+		changed = true;
+	}
+
+	if (description.length > 500 && existingItem.description?.de === truncatedDescription) {
+		existingItem.description.de = description;
+		changed = true;
+	}
+
+	if (
+		existingItem.oss === false &&
+		existingItem.sovereigntyCriteria?.openSource === false &&
+		guessOSSWithUnescapedDotNetBug(name, description) === false &&
+		guessOSS(name, description) === true
+	) {
+		existingItem.oss = true;
+		existingItem.sovereigntyCriteria.openSource = true;
+		changed = true;
+	}
+
+	if (changed) {
+		writeJSON(join(ROOT, 'data/items', `${id}.json`), existingItem);
+		existingItems.set(id, existingItem);
+	}
+
+	return changed;
 }
 
 // Main function
@@ -341,9 +403,34 @@ async function main() {
 	console.log(`🎯 Unique items after dedup: ${items.length}\n`);
 
 	// Process items
-	const stackItems = [];
+	const stackItemsMap = new Map();
 	let newCount = 0;
 	let existingCount = 0;
+	let repairedCount = 0;
+	let duplicateCount = 0;
+
+	const addStackItem = (itemId, verdict) => {
+		const rationale = `NEGZ-Feedback: ${verdict}`;
+		const existing = stackItemsMap.get(itemId);
+
+		if (existing) {
+			duplicateCount++;
+			if (!existing.rationale.de.includes(rationale)) {
+				existing.rationale.de = `${existing.rationale.de}; ${rationale}`;
+			}
+			return false;
+		}
+
+		stackItemsMap.set(itemId, {
+			itemId,
+			status: 'recommended',
+			role: 'consumer',
+			rationale: {
+				de: rationale,
+			},
+		});
+		return true;
+	};
 
 	for (const item of items) {
 		const existingId = findExistingItemId(item.name, existingItems);
@@ -351,37 +438,34 @@ async function main() {
 		if (existingId) {
 			console.log(`✨ Found existing: ${item.name} → ${existingId}`);
 			existingCount++;
-			stackItems.push({
-				itemId: existingId,
-				status: 'recommended',
-				role: 'consumer',
-				rationale: {
-					de: `NEGZ-Feedback: ${item.verdict}`,
-				},
-			});
+			if (repairExistingImportedItem(existingId, item.name, item.description, existingItems)) {
+				repairedCount++;
+			}
+			addStackItem(existingId, item.verdict);
 		} else {
 			const slug = toSlug(item.name);
+
+			if (!addStackItem(slug, item.verdict)) {
+				console.log(`⏭️  Skip duplicate stack item: ${item.name} → ${slug}`);
+				continue;
+			}
+
 			const newItem = createItem(item.name, item.description, slug);
 
 			// Write item file
 			const itemPath = join(ROOT, 'data/items', `${slug}.json`);
-			writeFileSync(itemPath, JSON.stringify(newItem, null, 2) + '\n', 'utf8');
+			writeJSON(itemPath, newItem);
 
 			console.log(`✏️  Created new: ${item.name} (${slug})`);
 			newCount++;
-
-			stackItems.push({
-				itemId: slug,
-				status: 'recommended',
-				role: 'consumer',
-				rationale: {
-					de: `NEGZ-Feedback: ${item.verdict}`,
-				},
-			});
 		}
 	}
 
-	console.log(`\n📊 Summary:\n  New items: ${newCount}\n  Existing: ${existingCount}\n  Total: ${stackItems.length}\n`);
+	const stackItems = Array.from(stackItemsMap.values());
+
+	console.log(
+		`\n📊 Summary:\n  New items: ${newCount}\n  Existing: ${existingCount}\n  Repaired existing: ${repairedCount}\n  Duplicates skipped: ${duplicateCount}\n  Total: ${stackItems.length}\n`,
+	);
 
 	// Create stack
 	const stack = {
@@ -412,7 +496,7 @@ async function main() {
 
 	// Write stack file
 	const stackPath = join(ROOT, 'data/stacks/negz.json');
-	writeFileSync(stackPath, JSON.stringify(stack, null, 2) + '\n', 'utf8');
+	writeJSON(stackPath, stack);
 
 	console.log(`✅ Created: data/stacks/negz.json`);
 	console.log(`\n🎉 NEGZ Stack import complete!\n`);

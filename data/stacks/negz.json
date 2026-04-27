@@ -135,22 +135,6 @@
 			}
 		},
 		{
-			"itemId": "apache-kafka",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "apache-produkte",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "apache-spark",
 			"status": "recommended",
 			"role": "consumer",
@@ -263,7 +247,7 @@
 			}
 		},
 		{
-			"itemId": "bruno",
+			"itemId": "bpmn-v2-0",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -271,7 +255,7 @@
 			}
 		},
 		{
-			"itemId": "c",
+			"itemId": "bruno",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -599,6 +583,14 @@
 			}
 		},
 		{
+			"itemId": "eidas-2-0",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
 			"itemId": "elsa",
 			"status": "recommended",
 			"role": "consumer",
@@ -644,14 +636,6 @@
 			"role": "consumer",
 			"rationale": {
 				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "fast-alle-frameworks",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: ändern"
 			}
 		},
 		{
@@ -1039,7 +1023,7 @@
 			}
 		},
 		{
-			"itemId": "public-ui-kolibri",
+			"itemId": "kolibri-barrierefreie-html-standard-public-ui",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -1256,6 +1240,14 @@
 		},
 		{
 			"itemId": "nvidia-gpu-operator",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "oauth-2-0",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {

@@ -20,5 +20,24 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://spark.apache.org/",
-	"license": "Apache-2.0"
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://spark.apache.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/apache/spark"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/apache/spark/blob/master/LICENSE"
+		},
+		{
+			"type": "url",
+			"url": "https://spark.apache.org/docs/latest/"
+		}
+	]
 }

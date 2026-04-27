@@ -15,10 +15,29 @@
 		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
-		"dataPortability": false,
+		"dataPortability": true,
 		"openStandards": false,
-		"noTelemetryByDefault": false
+		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.oracle.com/apex/",
-	"license": "Proprietary"
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://apex.oracle.com/en/platform/deployment/"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.oracle.com/en/database/oracle/apex/22.1/htmdb/importing-export-files.html"
+		},
+		{
+			"type": "url",
+			"url": "https://apex.oracle.com/en/platform/features/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Oracle_Application_Express"
+		}
+	]
 }

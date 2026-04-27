@@ -88,6 +88,8 @@ pnpm format
 - ✅ `ci: Add unit tests to workflow`
 - ✅ `docs: Update contributing guidelines`
 
+Die Groß-/Kleinschreibung der Beschreibung ist frei, damit englische Imperativ-Subjects wie `feat: Add new items` gültig sind. Commit-Bodies dürfen längere Bullet-Listen enthalten, wenn sie Änderungen verständlich dokumentieren.
+
 **UNGÜLTIGE Beispiele** (werden abgelehnt):
 
 - ❌ `Phase C1: Add type-safe JSON parsing` (Schema nicht eingehalten)

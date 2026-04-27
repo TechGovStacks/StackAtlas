@@ -20,5 +20,24 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://camel.apache.org/",
-	"license": "Apache-2.0"
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://camel.apache.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/apache/camel"
+		},
+		{
+			"type": "url",
+			"url": "https://svn.apache.org/repos/infra/websites/production/camel/content/what-is-the-license.html"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Apache_Camel"
+		}
+	]
 }

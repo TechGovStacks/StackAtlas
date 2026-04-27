@@ -5,10 +5,10 @@
 	"description": {
 		"de": "Online Services Computer Interface – kurz OSCI – sind Protokollstandards für den sicheren elektronischen Nachrichtenaustausch über das Internet und andere Netze. Sie garantieren Integrität, Authentizität, Vertraulichkeit und Nachweisbarkeit der Daten und ermöglichen ihre medienbruchfreie, effiziente Verarbeitung."
 	},
-	"oss": false,
+	"oss": true,
 	"tags": [],
 	"sovereigntyCriteria": {
-		"openSource": false,
+		"openSource": true,
 		"euHeadquartered": true,
 		"hasAudit": false,
 		"permissiveLicense": false,

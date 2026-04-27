@@ -3,7 +3,7 @@
 	"name": "Peppol BIS Spezifikationen",
 	"layer": "infrastructure",
 	"description": {
-		"de": "Peppol-BIS standardisiert elektronische Dokumente zur Validierung und sicheren Übertragung zwischen Dienstleistern über das Peppol-Netzwerk und unterstützt Käufer und Verkäufer weltweit.\n \nPeppol BIS setzt Spezifikationen um, die auf den Universal Business Language (UBL) ISO/IEC 19845 Standards basieren. Für gängige Pre-Award- und Post-Award-eProcurement-Prozesse stehen verschiedene Nachrichtentypen zur Verfügung, unterstützt durch Spezifikationen für Adressierung und Sicherheit sowie Packaging."
+		"de": "Peppol-BIS standardisiert elektronische Dokumente zur Validierung und sicheren Übertragung zwischen Dienstleistern über das Peppol-Netzwerk und unterstützt Käufer und Verkäufer weltweit.\n \nPeppol BIS setzt Spezifikationen um, die auf den Universal Business Language (UBL) ISO/IEC 19845 Standards basieren. Für gängige Pre-Award- und Post-Award-eProcurement-Prozesse stehen verschiedene Nachrichtentypen zur Verfügung, unterstützt durch Spezifikationen für Adressierung und Sicherheit sowie Packaging. Die Nachrichtentypen werden durch  ein umfassendes Set an Werkzeugen und Leitfäden ergänzt. Post Award Documentation - OpenPeppol: https://peppol.org/documentation/technical-documentation/post-award-documentation/, Pre Award Documentation - OpenPeppol: https://peppol.org/documentation/technical-documentation/pre-award-documentation/"
 	},
 	"oss": true,
 	"tags": [],
