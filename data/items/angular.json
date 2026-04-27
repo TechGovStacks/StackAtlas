@@ -15,18 +15,14 @@
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
-		"hasAudit": true,
+		"hasAudit": false,
 		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": false,
+		"noTelemetryByDefault": true,
 		"ownerType": "corporation"
-	},
-	"audit": {
-		"lastDate": "2025-11-11",
-		"url": "https://angular.dev/overview"
 	},
 	"dependencies": [
 		{
@@ -48,5 +44,24 @@
 			}
 		}
 	],
-	"license": "MIT"
+	"license": "MIT",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://angular.dev/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/angular/angular"
+		},
+		{
+			"type": "url",
+			"url": "https://raw.githubusercontent.com/angular/angular/main/LICENSE"
+		},
+		{
+			"type": "url",
+			"url": "https://angular.dev/cli/analytics/enable"
+		}
+	]
 }

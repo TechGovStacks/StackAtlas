@@ -17,12 +17,31 @@
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": false,
-		"permissiveLicense": true,
+		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": true,
+		"openStandards": false,
 		"noTelemetryByDefault": true,
 		"ownerType": "corporation"
-	}
+	},
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/ansible/ansible"
+		},
+		{
+			"type": "url",
+			"url": "https://raw.githubusercontent.com/ansible/ansible/devel/COPYING"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.ansible.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Ansible_(software)"
+		}
+	]
 }

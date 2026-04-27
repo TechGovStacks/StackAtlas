@@ -20,5 +20,7 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.governikus.de/en/",
-	"license": "Proprietary"
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": []
 }
