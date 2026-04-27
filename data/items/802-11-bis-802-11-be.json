@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.ieee802.org/11/",
-	"license": "IEEE"
+	"license": "IEEE",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/IEEE_802.11"
+		},
+		{
+			"type": "url",
+			"url": "https://www.ieee802.org/11/"
+		}
+	]
 }

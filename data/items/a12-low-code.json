@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.mgm-tp.com/a12.html",
-	"license": "Proprietary"
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.mgm-tp.com/a12.html"
+		},
+		{
+			"type": "url",
+			"url": "https://de.wikipedia.org/wiki/Low-Code-Entwicklung"
+		}
+	]
 }

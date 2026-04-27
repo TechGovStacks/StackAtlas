@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://agentgateway.dev/",
-	"license": "Apache-2.0"
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://agentgateway.dev/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Agent_communication_language"
+		}
+	]
 }
