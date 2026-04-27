@@ -1,0 +1,1 @@
+import{lt as e}from"./index-CntAFXba.js";var t=(t,n)=>{e(t,`_hasCloser`,n)};export{t};
