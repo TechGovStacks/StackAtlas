@@ -1,3 +1,16 @@
+/**
+ * ResearchSource: Source used for sovereignty research
+ */
+export type ResearchSource = {
+	/** Type of source: url or file */
+	type: 'url' | 'file';
+	/** URL if type is url */
+	url?: string;
+	/** File path if type is file */
+	path?: string;
+	/** Optional note or description */
+	note?: string;
+};
 export type LanguageCode = 'da' | 'de' | 'en' | 'es' | 'fr' | 'it' | 'no' | 'sv';
 
 export type LocalizedText = {
@@ -205,6 +218,10 @@ export type Item = {
 		url?: string;
 	};
 	popularityMetrics?: PopularityMetrics;
+	/** ISO 8601 date of last sovereignty research (YYYY-MM-DD) */
+	lastResearchDate?: string;
+	/** Sources used for sovereignty research */
+	researchSources?: ResearchSource[];
 };
 
 // ---------------------------------------------------------------------------
