@@ -1,6 +1,7 @@
 {
 	"id": "css",
 	"name": "CSS",
+	"groupKey": "markup-stylesheet-language",
 	"layer": "building-blocks",
 	"sublayer": "sprachen",
 	"description": {
@@ -26,5 +27,16 @@
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://www.w3.org/Style/CSS/"
-	}
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.w3.org/Style/CSS/"
+		},
+		{
+			"type": "url",
+			"url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+		}
+	]
 }

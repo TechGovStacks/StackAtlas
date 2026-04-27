@@ -1,6 +1,7 @@
 {
 	"id": "data-sign",
 	"name": "DATA Sign",
+	"groupKey": "digital-signature-system",
 	"layer": "infrastructure",
 	"description": {
 		"de": "Data Sign ist eine anbieterunhabhängige Signatur- und Siegelplattform, die einen einheitlichen Zugang zum europäischen Markt der Vertrauensdiensteanbieter zur Verfügung stellt. Im Sinne eines Basisdienstes stellt DATA Sign einen zentralen Zugang für Fachverfahren und E-Akten Systemen bereit. DATA Sign ist bereits ein Produkt des ITPLR und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung. Sign hat eine eigene Benutzeroverfläche und stellt darüber einen Basisworkflow bereit um Mehrfachzeichnungen umzusetzen.  Dieser Baustein ist ein Produkt des ITPLR und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung. Diese Lösung ist in vielen Ländern schon als Basisdienst etabliert.",
@@ -20,5 +21,12 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.init.de/en/",
-	"license": "Proprietary"
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.init.de/en/"
+		}
+	]
 }
