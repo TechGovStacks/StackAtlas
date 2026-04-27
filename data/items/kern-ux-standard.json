@@ -15,7 +15,7 @@
 		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
-		"dataPortability": false,
+		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": true
 	},
@@ -25,8 +25,7 @@
 	"researchSources": [
 		{
 			"type": "url",
-			"url": "https://www.kern-ux.de/ueber-kern/faq/",
-			"note": "Official source: EUPL for Code, CC BY-NC-SA for Content"
+			"url": "https://www.kern-ux.de/ueber-kern/faq/"
 		},
 		{
 			"type": "url",
