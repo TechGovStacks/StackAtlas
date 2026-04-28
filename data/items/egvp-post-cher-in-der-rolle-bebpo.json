@@ -5,8 +5,8 @@
 	"sublayer": "transport",
 	"groupKey": "legal-communication-infrastructure",
 	"description": {
-		"de": "EGVP Postfächer in der Rolle BeBPo (Behördliches E-Mail-Postfach für Behörden und Organisationen) ermöglichen sicheren elektronischen Rechtsverkehr. Der D-Stack soll Behörden Zugang zu ihren BeBPo-Postfächern als Service bieten (\"BeBpo as a Service\").",
-		"en": "EGVP mailboxes in the BeBPo role (official e-mail mailbox for authorities and organizations) enable secure electronic legal communication. The D-Stack should provide authorities with access to their BeBPo mailboxes as a service (\"BeBpo as a Service\")."
+		"de": "EGVP Postfächer in der Rolle BeBPo (Behördliches E-Mail-Postfach für Behörden und Organisationen) ermöglichen sicheren elektronischen Rechtsverkehr. Der D-Stack soll Behörden Zugang zu ihren BeBPo-Postfächern als Service bieten (\"BeBPo as a Service\").",
+		"en": "EGVP mailboxes in the BeBPo role (official e-mail mailbox for authorities and organizations) enable secure electronic legal communication. The D-Stack should provide authorities with access to their BeBPo mailboxes as a service (\"BeBPo as a Service\")."
 	},
 	"oss": false,
 	"tags": ["legal", "communication", "germany", "justice", "bebpo"],

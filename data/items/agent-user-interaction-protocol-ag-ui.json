@@ -24,6 +24,10 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://github.com/ag-ui-protocol/ag-ui"
+	},
 	"researchSources": [
 		{
 			"type": "url",
@@ -34,9 +38,5 @@
 			"url": "https://ag-ui.com"
 		}
 	],
-	"lastResearchDate": "2026-04-27",
-	"audit": {
-		"lastDate": "2025-11-11",
-		"url": "https://github.com/ag-ui-protocol/ag-ui"
-	}
+	"lastResearchDate": "2026-04-27"
 }

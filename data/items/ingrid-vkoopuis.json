@@ -20,6 +20,8 @@
 		"noTelemetryByDefault": false
 	},
 	"homepage": "https://ingrid-oss.eu/",
+	"license": "EUPL-1.2",
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
@@ -29,6 +31,5 @@
 			"type": "url",
 			"url": "https://github.com/informationgrid"
 		}
-	],
-	"lastResearchDate": "2026-04-28"
+	]
 }

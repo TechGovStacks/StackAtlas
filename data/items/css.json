@@ -1,7 +1,7 @@
 {
 	"id": "css",
 	"name": "CSS",
-	"groupKey": "markup-stylesheet-language",
+	"groupKey": "styling-language",
 	"layer": "building-blocks",
 	"sublayer": "sprachen",
 	"description": {

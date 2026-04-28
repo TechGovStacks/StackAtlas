@@ -1,7 +1,7 @@
 {
 	"id": "data-catalog-vocabulary-dcat",
 	"name": "Data Catalog Vocabulary (DCAT)",
-	"groupKey": "rdf-vocabulary",
+	"groupKey": "data-catalog-standard",
 	"layer": "platform",
 	"sublayer": "daten",
 	"description": {
