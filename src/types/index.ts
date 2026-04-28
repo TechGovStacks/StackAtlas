@@ -310,6 +310,41 @@ export type FilterState = {
 };
 
 // ---------------------------------------------------------------------------
+// Metric Explainer
+// ---------------------------------------------------------------------------
+
+export type MetricExplainerSection = {
+	definition: LocalizableText;
+	importance: LocalizableText;
+	calculation?: LocalizableText;
+	example?: LocalizableText;
+};
+
+export type MetricExplainerId =
+	| 'sovereigntyScore'
+	| 'adoptionScore'
+	| 'overallScore'
+	| 'sovereignAdoptionScore'
+	| 'directCoverage'
+	| 'transitiveCoverage'
+	| 'diversity'
+	| 'openSource'
+	| 'euHeadquartered'
+	| 'auditedCode'
+	| 'permissiveLicense'
+	| 'mature'
+	| 'selfHostable'
+	| 'dataPortability'
+	| 'openStandards'
+	| 'noTelemetry'
+	| 'ownerType';
+
+export type MetricExplainer = MetricExplainerSection & {
+	id: MetricExplainerId;
+	label: LocalizableText;
+};
+
+// ---------------------------------------------------------------------------
 // Legacy aliases — kept for gradual migration
 // ---------------------------------------------------------------------------
 // Stack (Gov-Stack mapping)
