@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://xeinkauf.de/eforms-de/",
-	"license": "Apache-2.0"
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://xeinkauf.de/eforms-de/"
+		},
+		{
+			"type": "url",
+			"url": "https://xeinkauf.de/"
+		}
+	]
 }

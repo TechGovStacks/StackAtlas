@@ -2,12 +2,14 @@
 	"id": "ed25519-eddsa",
 	"name": "Ed25519 (EdDSA)",
 	"layer": "infrastructure",
+	"sublayer": "sicherheit",
+	"groupKey": "digital-signature-algorithm",
 	"description": {
-		"de": "M. E. nach inzwischen nahezu der Standard für SSH-Schlüssel.",
-		"en": ""
+		"de": "Ed25519 ist eine moderne Implementierung der EdDSA-Signaturalgorithmen basierend auf Curve25519. Es ist inzwischen nahezu der Standard für SSH-Schlüssel und bietet ausgezeichnete Sicherheit und Leistung.",
+		"en": "Ed25519 is a modern implementation of EdDSA signature algorithms based on Curve25519. It is now nearly the standard for SSH keys and provides excellent security and performance."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["cryptography", "digital-signature", "ssh"],
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -20,5 +22,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc8032",
-	"license": "Public Domain"
+	"license": "Public Domain",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc8032"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/EdDSA"
+		}
+	]
 }

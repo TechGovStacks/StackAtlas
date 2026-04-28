@@ -11,7 +11,7 @@
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": true,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.finanzen.bremen.de/digitalisierung/digitalisierungsbuero/datenschutzcockpit-107106",
-	"license": "Proprietary"
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.finanzen.bremen.de/digitalisierung/digitalisierungsbuero/datenschutzcockpit-107106"
+		},
+		{
+			"type": "url",
+			"url": "https://www.digitale-verwaltung.de/Webs/DV/DE/registermodernisierung/elemente/datenschutzcockpit/datenschutzcockpit-node.html"
+		}
+	]
 }

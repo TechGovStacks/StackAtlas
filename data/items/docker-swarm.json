@@ -29,6 +29,17 @@
 		"url": "https://docs.docker.com/engine/swarm/"
 	},
 	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.docker.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/moby/moby"
+		}
+	],
 	"popularityMetrics": {
 		"updatedAt": "2026-04-20",
 		"githubStars": 9200,

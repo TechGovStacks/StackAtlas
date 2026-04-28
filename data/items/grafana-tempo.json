@@ -2,6 +2,7 @@
 	"id": "grafana-tempo",
 	"name": "Grafana Tempo",
 	"layer": "platform",
+	"groupKey": "distributed-tracing",
 	"description": {
 		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Distributed Tracing Backend' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
 		"en": ""
@@ -20,5 +21,15 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://grafana.com/oss/tempo/",
-	"license": "AGPL-3.0-only"
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://grafana.com/oss/tempo/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/grafana/tempo"
+		}
+	]
 }

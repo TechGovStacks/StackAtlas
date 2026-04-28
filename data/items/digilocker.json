@@ -15,7 +15,7 @@
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": false,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": false,
@@ -23,5 +23,16 @@
 		"openStandards": true,
 		"noTelemetryByDefault": false,
 		"ownerType": "independentConsortium"
-	}
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.digilocker.gov.in/"
+		},
+		{
+			"type": "url",
+			"url": "https://negd.gov.in/blog/digilocker-the-digital-briefcase-for-indias-authentic-e-documents/"
+		}
+	]
 }

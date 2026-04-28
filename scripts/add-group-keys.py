@@ -230,6 +230,12 @@ GROUP_KEY_MAP = {
     "sovereign-cloud-stack": "sovereign-cloud-standard",
     "eudi-wallet":         "digital-identity-wallet",
     "fido2-webauthn":      "passwordless-auth-standard",
+
+    # ── building-blocks / build & tools ────────────────────────────────
+    "cargo":            "build-tool",
+
+    # ── sovereign-standards / sicherheit (digital signatures) ───────────
+    "data-sign":        "digital-signature-service",
 }
 
 

@@ -4,7 +4,7 @@
 	"layer": "sovereign-standards",
 	"description": {
 		"de": "ETSI EN 119 461 v2 ist ein europäischer Standard im Umfeld sicherer elektronischer Identifikation und Vertrauensdienste. Er konkretisiert technische und organisatorische Anforderungen für interoperable, vertrauenswürdige Identitätslösungen.",
-		"en": ""
+		"en": "ETSI EN 119 461 v2 is a European standard specifying technical and organizational requirements for interoperable, trustworthy identity solutions in secure electronic identification and trust services."
 	},
 	"oss": true,
 	"tags": [],
@@ -15,10 +15,20 @@
 		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": false,
-		"dataPortability": false,
+		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.etsi.org/deliver/etsi_en/119400_119499/119461/02.01.01_60/en_119461v020101p.pdf",
-	"license": "ETSI"
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.etsi.org/deliver/etsi_en/119400_119499/119461/02.01.01_60/en_119461v020101p.pdf"
+		},
+		{
+			"type": "url",
+			"url": "https://www.etsi.org/standards/etsi-en-119-461"
+		}
+	]
 }

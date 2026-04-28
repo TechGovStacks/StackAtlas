@@ -1,13 +1,15 @@
 {
 	"id": "egvp-post-cher-in-der-rolle-bebpo",
-	"name": "EGVP Postächer in der Rolle BeBPo",
+	"name": "EGVP Postfächer in der Rolle BeBPo",
 	"layer": "infrastructure",
+	"sublayer": "transport",
+	"groupKey": "legal-communication-infrastructure",
 	"description": {
-		"de": "Über den D-Stack sollten Behörden Zugang zu dem jeweiligen BeBPo bekommen. Stichwort \"BeBpo as a Service\"",
-		"en": ""
+		"de": "EGVP Postfächer in der Rolle BeBPo (Behördliches E-Mail-Postfach für Behörden und Organisationen) ermöglichen sicheren elektronischen Rechtsverkehr. Der D-Stack soll Behörden Zugang zu ihren BeBPo-Postfächern als Service bieten (\"BeBPo as a Service\").",
+		"en": "EGVP mailboxes in the BeBPo role (official e-mail mailbox for authorities and organizations) enable secure electronic legal communication. The D-Stack should provide authorities with access to their BeBPo mailboxes as a service (\"BeBPo as a Service\")."
 	},
 	"oss": false,
-	"tags": [],
+	"tags": ["legal", "communication", "germany", "justice", "bebpo"],
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": true,
@@ -20,5 +22,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.justiz.de/egvp/",
-	"license": "Proprietary"
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.justiz.de/egvp/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.justiz.de/"
+		}
+	]
 }

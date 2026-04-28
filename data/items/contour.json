@@ -9,26 +9,20 @@
 		"en": ""
 	},
 	"homepage": "https://projectcontour.io/",
-	"tags": ["controller", "orchestrierung", "ingress"],
+	"tags": ["kubernetes", "ingress-controller", "load-balancing", "proxy"],
 	"oss": true,
-	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
-		"hasAudit": true,
+		"hasAudit": false,
 		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true,
-		"ownerType": "independentConsortium"
+		"noTelemetryByDefault": true
 	},
-	"audit": {
-		"lastDate": "2025-11-11",
-		"url": "https://github.com/projectcontour/contour"
-	},
-	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
@@ -38,6 +32,5 @@
 			"type": "url",
 			"url": "https://github.com/projectcontour/contour"
 		}
-	],
-	"lastResearchDate": "2026-04-27"
+	]
 }

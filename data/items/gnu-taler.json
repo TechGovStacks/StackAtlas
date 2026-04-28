@@ -2,6 +2,7 @@
 	"id": "gnu-taler",
 	"name": "GNU Taler",
 	"layer": "building-blocks",
+	"groupKey": "payment-system",
 	"description": {
 		"de": "Das Bezahlsystem GNU Taler ermöglicht das schnelle und einfache Geldüberweisen mit Datenschutz und hoher technischer Sicherheit.\n\n    - Bezahlen ohne Registrierung\n    - Datenschutz als Grundeinstellung\n    - Systematisch gesichert gegen Betrug\n    - Keine neue Währung!\n    - Ermöglicht die Entwicklung einer selbstbestimmten Zahlungsinfrastruktur\n    - Freie Software\n\nsiehe https://www.taler.net/de/ und https://www.taler.net/de/ngi-taler.html",
 		"en": ""
@@ -20,5 +21,15 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.taler.net/",
-	"license": "AGPL-3.0-or-later"
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.taler.net/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/taler/gnu-taler"
+		}
+	]
 }
