@@ -9,6 +9,19 @@
 		"en": ""
 	},
 	"homepage": "https://about.gitlab.com/",
+	"tags": ["ci-cd", "git", "devops", "version-control", "devsecops"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
 	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{

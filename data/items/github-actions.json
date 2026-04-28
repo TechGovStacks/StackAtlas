@@ -9,6 +9,19 @@
 		"en": ""
 	},
 	"homepage": "https://github.com/actions",
+	"tags": ["ci-cd", "automation", "github", "workflow"],
+	"oss": false,
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": true,
+		"noTelemetryByDefault": false
+	},
 	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{

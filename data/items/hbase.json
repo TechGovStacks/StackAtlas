@@ -9,6 +9,19 @@
 		"en": ""
 	},
 	"homepage": "https://hbase.apache.org/",
+	"tags": ["nosql", "database", "hadoop", "column-oriented", "big-data"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
 	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{

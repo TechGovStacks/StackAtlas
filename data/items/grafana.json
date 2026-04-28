@@ -9,6 +9,19 @@
 		"en": "Grafana is an open-source platform for visualisation and dashboards. Combined with Prometheus and many other data sources it presents metrics, logs and traces for operational reliability and observability."
 	},
 	"homepage": "https://grafana.com/oss/grafana/",
+	"tags": ["observability", "monitoring", "dashboard", "metrics", "visualization"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
 	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{

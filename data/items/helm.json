@@ -8,6 +8,19 @@
 		"en": "Helm is the de-facto package manager for Kubernetes. Helm charts version, share and reproducibly deploy complex Kubernetes applications."
 	},
 	"homepage": "https://helm.sh/",
+	"tags": ["kubernetes", "package-manager", "deployment", "charts"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
 	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{

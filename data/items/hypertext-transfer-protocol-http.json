@@ -8,7 +8,20 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/wg/httpbis/documents/",
-	"lastResearchDate": "2026-04-27",
+	"tags": ["protocol", "web", "standard", "ietf", "transport"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",

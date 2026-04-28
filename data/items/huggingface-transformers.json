@@ -8,6 +8,19 @@
 		"en": ""
 	},
 	"homepage": "https://huggingface.co/docs/transformers/index",
+	"tags": ["nlp", "ml", "transformers", "deep-learning", "model-hub"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
 	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{

@@ -9,6 +9,19 @@
 		"en": ""
 	},
 	"homepage": "https://haystack.deepset.ai/",
+	"tags": ["rag", "llm", "nlp", "ai-framework", "document-search"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
 	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{

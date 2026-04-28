@@ -9,7 +9,20 @@
 		"en": ""
 	},
 	"homepage": "https://projectcontour.io/",
-	"lastResearchDate": "2026-04-27",
+	"tags": ["kubernetes", "ingress-controller", "load-balancing", "proxy"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
