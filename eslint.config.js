@@ -23,6 +23,7 @@ export default [
 				HTMLSelectElement: 'readonly',
 				CustomEvent: 'readonly',
 				Event: 'readonly',
+				KeyboardEvent: 'readonly',
 				localStorage: 'readonly',
 				clearTimeout: 'readonly',
 				performance: 'readonly',

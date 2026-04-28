@@ -18,9 +18,8 @@ export function BetaNoticeModal({ isOpen, onClose }: BetaNoticeModalProps) {
 			closeButtonRef.current?.focus();
 		}, 50);
 
-		const handleKeyDown = (e: Event) => {
-			const keyboardEvent = e as unknown as { key?: string };
-			if (keyboardEvent.key === 'Escape') onClose();
+		const handleKeyDown = (e: KeyboardEvent) => {
+			if (e.key === 'Escape') onClose();
 		};
 		document.addEventListener('keydown', handleKeyDown);
 
