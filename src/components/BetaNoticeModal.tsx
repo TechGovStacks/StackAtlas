@@ -45,7 +45,7 @@ export function BetaNoticeModal({ isOpen, onClose }: BetaNoticeModalProps) {
 				if (e.key === 'Escape' && (e.target as HTMLElement) === e.currentTarget) onClose();
 			}}
 		>
-			<div role="dialog" aria-modal="true" aria-labelledby="beta-modal-title" className="beta-modal-dialog">
+			<div role="dialog" aria-modal="true" aria-labelledby="beta-modal-title" aria-describedby="beta-modal-description" className="beta-modal-dialog">
 				<div className="beta-modal-header">
 					<span className="beta-modal-badge">BETA</span>
 					<div className="beta-modal-icon" aria-hidden="true">
@@ -54,7 +54,7 @@ export function BetaNoticeModal({ isOpen, onClose }: BetaNoticeModalProps) {
 					<h2 id="beta-modal-title" className="beta-modal-title">
 						{t('betaNotice.title')}
 					</h2>
-					<button type="button" className="beta-modal-close-x" aria-label={t('betaNotice.closeButton')} onClick={onClose}>
+					<button type="button" className="beta-modal-close-x" aria-label={t('betaNotice.closeAriaLabel')} onClick={onClose}>
 						<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 							<path d="M13 1L1 13M1 1l12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
 						</svg>
@@ -62,7 +62,9 @@ export function BetaNoticeModal({ isOpen, onClose }: BetaNoticeModalProps) {
 				</div>
 
 				<div className="beta-modal-body">
-					<p className="beta-modal-description">{t('betaNotice.description')}</p>
+					<p id="beta-modal-description" className="beta-modal-description">
+						{t('betaNotice.description')}
+					</p>
 				</div>
 
 				<div className="beta-modal-footer">

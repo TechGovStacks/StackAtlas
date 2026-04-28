@@ -747,7 +747,7 @@ main {
 .beta-modal-header {
 	background: linear-gradient(140deg, var(--ds-color-primary) 0%, var(--ds-color-primary-light) 100%);
 	padding: var(--ds-space-6);
-	color: #fff;
+	color: var(--ds-color-text-inverse);
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -758,7 +758,7 @@ main {
 	display: inline-flex;
 	align-items: center;
 	background: rgb(255 255 255 / 18%);
-	color: #fff;
+	color: var(--ds-color-text-inverse);
 	font-size: var(--ds-text-xs);
 	font-weight: 700;
 	letter-spacing: 0.12em;
@@ -777,13 +777,13 @@ main {
 	align-items: center;
 	justify-content: center;
 	font-size: var(--ds-text-xl);
-	color: #fff;
+	color: var(--ds-color-text-inverse);
 }
 
 .beta-modal-title {
 	font-size: var(--ds-text-2xl);
 	font-weight: 700;
-	color: #fff;
+	color: var(--ds-color-text-inverse);
 	margin: 0;
 	line-height: var(--ds-lh-heading);
 }
@@ -800,7 +800,7 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #fff;
+	color: var(--ds-color-text-inverse);
 	cursor: pointer;
 	transition:
 		background 0.15s ease,
@@ -2227,7 +2227,7 @@ kol-select {
 .stack-expose__rank--top {
 	background: #c8a800;
 	border-color: #c8a800;
-	color: #fff;
+	color: var(--ds-color-text-inverse);
 	font-size: 1.25rem;
 }
 
