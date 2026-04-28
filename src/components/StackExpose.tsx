@@ -6,6 +6,7 @@ import { PARTICIPANT_ROLES, ROLE_COLORS } from '../constants/roleColors';
 import { StackMetrics } from '../hooks/useStackMetrics';
 import { Layer, SovereigntyScoreCategory, Stack } from '../types';
 import { countryToFlagEmoji, getLocalizedText } from '../utils';
+import { InfoIcon } from './InfoIcon';
 import { SovereigntyGauge } from './SovereigntyGauge';
 
 interface StackExposeProps {
@@ -122,7 +123,10 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank, children }
 			<div className="stack-expose__score-section">
 				<SovereigntyGauge score={metrics.avgScore} category={metrics.avgCategory} size={160} />
 				<div className="stack-expose__score-meta">
-					<span className="stack-expose__avg-label">{t('stackGallery.avgScore')}</span>
+					<div className="stack-expose__avg-label-row">
+						<span className="stack-expose__avg-label">{t('stackGallery.avgScore')}</span>
+						<InfoIcon explainerId="overallScore" label={t('stackGallery.avgScore')} />
+					</div>
 					<span className="stack-expose__avg-category" style={{ color: metrics.avgColor }}>
 						{t(`article.scoreCategories.${metrics.avgCategory}`)}
 					</span>
@@ -165,23 +169,38 @@ export function StackExpose({ stack, metrics, allLayers, isTop, rank, children }
 				<h3 className="stack-expose__section-title">{t('stackGallery.keyMetrics')}</h3>
 				<dl className="stack-expose__metrics">
 					<div className="stack-expose__metric">
-						<dt>{t('stackGallery.metrics.selfHostable')}</dt>
+						<dt>
+							<span>{t('stackGallery.metrics.selfHostable')}</span>
+							<InfoIcon explainerId="selfHostable" label={t('stackGallery.metrics.selfHostable')} />
+						</dt>
 						<dd style={{ color: metricColor(metrics.pctSelfHostable) }}>{metrics.pctSelfHostable}%</dd>
 					</div>
 					<div className="stack-expose__metric">
-						<dt>{t('stackGallery.metrics.openSource')}</dt>
+						<dt>
+							<span>{t('stackGallery.metrics.openSource')}</span>
+							<InfoIcon explainerId="openSource" label={t('stackGallery.metrics.openSource')} />
+						</dt>
 						<dd style={{ color: metricColor(metrics.pctOpenSource) }}>{metrics.pctOpenSource}%</dd>
 					</div>
 					<div className="stack-expose__metric">
-						<dt>{t('stackGallery.metrics.euHQ')}</dt>
+						<dt>
+							<span>{t('stackGallery.metrics.euHQ')}</span>
+							<InfoIcon explainerId="euHeadquartered" label={t('stackGallery.metrics.euHQ')} />
+						</dt>
 						<dd style={{ color: metricColor(metrics.pctEuHQ) }}>{metrics.pctEuHQ}%</dd>
 					</div>
 					<div className="stack-expose__metric">
-						<dt>{t('stackGallery.metrics.permissiveLicense')}</dt>
+						<dt>
+							<span>{t('stackGallery.metrics.permissiveLicense')}</span>
+							<InfoIcon explainerId="permissiveLicense" label={t('stackGallery.metrics.permissiveLicense')} />
+						</dt>
 						<dd style={{ color: metricColor(metrics.pctPermissiveLicense) }}>{metrics.pctPermissiveLicense}%</dd>
 					</div>
 					<div className="stack-expose__metric">
-						<dt>{t('stackGallery.metrics.audit')}</dt>
+						<dt>
+							<span>{t('stackGallery.metrics.audit')}</span>
+							<InfoIcon explainerId="auditedCode" label={t('stackGallery.metrics.audit')} />
+						</dt>
 						<dd style={{ color: metricColor(metrics.pctAudit) }}>{metrics.pctAudit}%</dd>
 					</div>
 					<div className="stack-expose__metric">

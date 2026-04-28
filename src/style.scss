@@ -2303,6 +2303,12 @@ kol-select {
 	gap: var(--ds-space-1);
 }
 
+.stack-expose__avg-label-row {
+	display: flex;
+	align-items: center;
+	gap: var(--ds-space-1);
+}
+
 .stack-expose__avg-label {
 	font-size: var(--ds-text-sm);
 	color: var(--ds-color-text-muted);
@@ -2394,9 +2400,16 @@ kol-select {
 
 .stack-expose__metric {
 	dt {
+		display: flex;
+		align-items: center;
+		gap: var(--ds-space-1);
 		font-size: var(--ds-text-xs);
 		color: var(--ds-color-text-muted);
 		margin-bottom: 2px;
+
+		span {
+			flex: 1;
+		}
 	}
 
 	dd {
