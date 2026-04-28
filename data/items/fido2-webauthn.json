@@ -22,5 +22,16 @@
 		"openStandards": true,
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
-	}
+	},
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://fidoalliance.org/fido2/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/webauthn-2/"
+		}
+	],
+	"lastResearchDate": "2026-04-28"
 }

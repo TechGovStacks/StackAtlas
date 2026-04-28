@@ -4,7 +4,7 @@
 	"layer": "infrastructure",
 	"description": {
 		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Selbstgehostete Git Plattform' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
-		"en": ""
+		"en": "A self-hosted Git service fork of Gitea under GPL license, enabling organizations to maintain full control over their software development infrastructure."
 	},
 	"oss": true,
 	"tags": [],
@@ -16,9 +16,20 @@
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": false,
+		"openStandards": true,
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://forgejo.org/",
-	"license": "GPL-3.0-or-later"
+	"license": "GPL-3.0-or-later",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://forgejo.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/forgejo/forgejo"
+		}
+	],
+	"lastResearchDate": "2026-04-28"
 }

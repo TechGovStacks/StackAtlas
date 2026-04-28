@@ -6,7 +6,7 @@
 	"groupKey": "data-serialization-format",
 	"description": {
 		"de": "XML ist ein Datenformat für den Datenaustausch.",
-		"en": ""
+		"en": "XML is a widely used, standardized data format for data exchange managed by W3C, enabling interoperable structured document representation."
 	},
 	"homepage": "https://www.w3.org/XML/",
 	"tags": ["datenformat"],
@@ -28,5 +28,16 @@
 		"lastDate": "2025-11-11",
 		"url": "https://www.w3.org/TR/xml11/"
 	},
-	"license": "public-domain"
+	"license": "public-domain",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.w3.org/XML/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/xml11/"
+		}
+	],
+	"lastResearchDate": "2026-04-28"
 }
