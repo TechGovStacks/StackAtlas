@@ -27,5 +27,16 @@
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://github.com/gitlabhq/gitlabhq"
-	}
+	},
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://about.gitlab.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/gitlabhq/gitlabhq"
+		}
+	],
+	"lastResearchDate": "2026-04-28"
 }

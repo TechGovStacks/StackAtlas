@@ -2,6 +2,7 @@
 	"id": "grafana-loki",
 	"name": "Grafana Loki",
 	"layer": "platform",
+	"groupKey": "log-aggregation",
 	"description": {
 		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Log Aggregation System' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
 		"en": ""
@@ -20,5 +21,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://grafana.com/oss/loki/",
-	"license": "AGPL-3.0-only"
+	"license": "AGPL-3.0-only",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://grafana.com/oss/loki/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/grafana/loki"
+		}
+	],
+	"lastResearchDate": "2026-04-28"
 }

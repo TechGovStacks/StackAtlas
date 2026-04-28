@@ -2,6 +2,7 @@
 	"id": "haproxy",
 	"name": "Haproxy",
 	"layer": "infrastructure",
+	"groupKey": "load-balancer",
 	"description": {
 		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Kubernetes Ingress Controller' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
 		"en": ""
@@ -20,5 +21,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.haproxy.org/",
-	"license": "GPL-2.0-or-later"
+	"license": "GPL-2.0-or-later",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.haproxy.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/haproxy/haproxy"
+		}
+	],
+	"lastResearchDate": "2026-04-28"
 }

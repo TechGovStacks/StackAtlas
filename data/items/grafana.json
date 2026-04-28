@@ -3,6 +3,7 @@
 	"name": "Grafana",
 	"layer": "platform",
 	"sublayer": "inbetriebnahme",
+	"groupKey": "observability",
 	"description": {
 		"de": "Grafana ist eine quelloffene Plattform für Visualisierung und Dashboards. In Kombination mit Prometheus und vielen weiteren Datenquellen stellt sie Metriken, Logs und Traces für Betriebssicherheit und Observability bereit.",
 		"en": "Grafana is an open-source platform for visualisation and dashboards. Combined with Prometheus and many other data sources it presents metrics, logs and traces for operational reliability and observability."
@@ -52,5 +53,16 @@
 				"en": "Redis can be integrated for caching and session-related use cases."
 			}
 		}
-	]
+	],
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://grafana.com/oss/grafana/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/grafana/grafana"
+		}
+	],
+	"lastResearchDate": "2026-04-28"
 }
