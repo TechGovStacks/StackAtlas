@@ -722,48 +722,152 @@ main {
 .beta-modal-overlay {
 	position: fixed;
 	inset: 0;
-	background: rgb(0 0 0 / 55%);
+	background: rgb(0 0 0 / 65%);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	z-index: 9998;
 	padding: var(--ds-space-4);
-	backdrop-filter: blur(2px);
+	backdrop-filter: blur(6px);
 	animation: beta-modal-fade-in 0.25s ease;
 }
 
-.beta-modal-card {
-	max-width: 520px;
+.beta-modal-dialog {
+	max-width: 540px;
 	width: 100%;
-	border-radius: var(--ds-radius-lg);
+	border-radius: 14px;
+	background: var(--ds-color-bg-white);
+	box-shadow:
+		0 24px 64px rgb(0 0 0 / 28%),
+		0 4px 16px rgb(0 0 0 / 14%);
+	overflow: hidden;
 	animation: beta-modal-slide-up 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
 
-	/* Override KolCard default styles */
-	kol-heading {
-		--kol-heading-font-weight: 700;
-		--kol-heading-font-size: var(--ds-text-xl);
+.beta-modal-header {
+	background: linear-gradient(140deg, var(--ds-color-primary) 0%, var(--ds-color-primary-light) 100%);
+	padding: var(--ds-space-6);
+	color: var(--ds-color-text-inverse);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: var(--ds-space-3);
+}
+
+.beta-modal-badge {
+	display: inline-flex;
+	align-items: center;
+	background: rgb(255 255 255 / 18%);
+	color: var(--ds-color-text-inverse);
+	font-size: var(--ds-text-xs);
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	padding: 3px 10px;
+	border-radius: 100px;
+	border: 1px solid rgb(255 255 255 / 30%);
+	width: fit-content;
+}
+
+.beta-modal-icon {
+	width: 44px;
+	height: 44px;
+	background: rgb(255 255 255 / 15%);
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: var(--ds-text-xl);
+	color: var(--ds-color-text-inverse);
+}
+
+.beta-modal-title {
+	font-size: var(--ds-text-2xl);
+	font-weight: 700;
+	color: var(--ds-color-text-inverse);
+	margin: 0;
+	line-height: var(--ds-lh-heading);
+}
+
+.beta-modal-close-x {
+	position: absolute;
+	top: var(--ds-space-4);
+	right: var(--ds-space-4);
+	background: rgb(255 255 255 / 15%);
+	border: 1px solid rgb(255 255 255 / 20%);
+	border-radius: 8px;
+	width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--ds-color-text-inverse);
+	cursor: pointer;
+	transition:
+		background 0.15s ease,
+		border-color 0.15s ease;
+
+	&:hover {
+		background: rgb(255 255 255 / 28%);
+		border-color: rgb(255 255 255 / 40%);
+	}
+
+	&:focus-visible {
+		outline: 2px solid rgb(255 255 255 / 80%);
+		outline-offset: 2px;
 	}
 }
 
-.beta-modal-content {
-	padding: var(--ds-space-3) 0;
-	display: flex;
-	flex-direction: column;
-	gap: var(--ds-space-4);
+.beta-modal-body {
+	padding: var(--ds-space-6);
 }
 
 .beta-modal-description {
 	font-size: var(--ds-text-base);
-	line-height: 1.7;
+	line-height: 1.75;
 	margin: 0;
 	color: var(--ds-color-text-muted);
 }
 
-.beta-modal-actions {
+.beta-modal-footer {
 	display: flex;
-	justify-content: flex-end;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--ds-space-3);
+	padding: var(--ds-space-4) var(--ds-space-6);
+	border-top: 1px solid var(--ds-color-border-light);
+	background: var(--ds-surface-subtle);
+}
+
+.beta-modal-github-link {
+	display: inline-flex;
+	align-items: center;
 	gap: var(--ds-space-2);
-	padding-top: var(--ds-space-2);
+	font-size: var(--ds-text-sm);
+	font-weight: 500;
+	color: var(--ds-color-text-muted);
+	text-decoration: none;
+	padding: 6px 14px;
+	border-radius: 8px;
+	border: 1px solid var(--ds-color-border);
+	background: var(--ds-color-bg-white);
+	transition:
+		color 0.15s ease,
+		border-color 0.15s ease,
+		background 0.15s ease;
+
+	&:hover {
+		color: var(--ds-color-primary);
+		border-color: var(--ds-color-primary);
+	}
+
+	&:focus-visible {
+		outline: 2px solid var(--ds-color-primary);
+		outline-offset: 2px;
+	}
+
+	i {
+		font-size: var(--ds-text-base);
+	}
 }
 
 @keyframes beta-modal-fade-in {
@@ -779,18 +883,18 @@ main {
 @keyframes beta-modal-slide-up {
 	from {
 		opacity: 0;
-		transform: translateY(24px);
+		transform: translateY(28px) scale(0.98);
 	}
 
 	to {
 		opacity: 1;
-		transform: translateY(0);
+		transform: translateY(0) scale(1);
 	}
 }
 
 @media (prefers-reduced-motion: reduce) {
 	.beta-modal-overlay,
-	.beta-modal-card {
+	.beta-modal-dialog {
 		animation: none;
 		backdrop-filter: none;
 	}
@@ -2123,7 +2227,7 @@ kol-select {
 .stack-expose__rank--top {
 	background: #c8a800;
 	border-color: #c8a800;
-	color: #fff;
+	color: var(--ds-color-text-inverse);
 	font-size: 1.25rem;
 }
 

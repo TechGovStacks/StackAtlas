@@ -409,6 +409,8 @@
 	"betaNotice": {
 		"title": "Beta Version",
 		"description": "StackAtlas is in beta. Core features are available and are continuously being optimized and expanded. The data basis is also steadily being improved. All interested parties are welcome to contribute to the project via GitHub!",
-		"closeButton": "Got it"
+		"closeButton": "Got it",
+		"closeAriaLabel": "Close",
+		"githubButton": "Contribute on GitHub"
 	}
 }
