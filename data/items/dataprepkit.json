@@ -16,9 +16,20 @@
 		"matureProject": false,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": false,
+		"openStandards": true,
 		"noTelemetryByDefault": true
 	},
-	"homepage": "https://github.com/huggingface/datatrove",
-	"license": "Apache-2.0"
+	"homepage": "https://github.com/data-prep-kit/data-prep-kit",
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/data-prep-kit/data-prep-kit"
+		},
+		{
+			"type": "url",
+			"url": "https://www.ibm.com/think/topics/data-prep-kit"
+		}
+	]
 }

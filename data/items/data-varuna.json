@@ -11,14 +11,25 @@
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": true,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
-		"dataPortability": false,
+		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.governikus.de/en/produkte/data-varuna/",
-	"license": "Proprietary"
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/en/produkte/data-varuna/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/wp-content/uploads/2025/10/Governikus-Pruefprotokoll_3.5.0.pdf"
+		}
+	]
 }
