@@ -4,7 +4,7 @@
 	"layer": "infrastructure",
 	"description": {
 		"de": "Der EMREX-Datenstandard gehört zum europäischen Netzwerk EMREX Network und wird verwendet, um Studierendendaten sicher zwischen Hochschulen in Europa auszutauschen. Was ist EMREX?\n\nEMREX steht für Electronic Data Exchange. Es ermöglicht Studierenden, ihre Leistungsnachweise (z. B. Noten, Credits) direkt von einer Hochschule an eine andere zu übertragen, ohne Papierdokumente.",
-		"en": ""
+		"en": "EMREX (Electronic Mobility and Recognition Exchange) is a European network standard enabling secure academic record exchange between educational institutions with Apache-2.0 license, supporting student data portability."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,5 +20,15 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://emrex.eu/",
-	"license": "Apache-2.0"
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://emrex.eu/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.dini.de/projekte-und-aktivitaeten/projektgruppen/emrex/"
+		}
+	]
 }

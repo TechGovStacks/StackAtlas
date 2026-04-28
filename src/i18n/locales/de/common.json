@@ -418,5 +418,8 @@
 		"contribute": "Mitmachen →",
 		"localStackHint": "Lokale Stacks werden nur in deinem Browser gespeichert. Möchtest du einen Stack für alle hinzufügen?",
 		"improveData": "Daten verbessern"
+		"closeButton": "Verstanden",
+		"closeAriaLabel": "Schließen",
+		"githubButton": "Auf GitHub mitwirken"
 	}
 }

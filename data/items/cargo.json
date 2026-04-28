@@ -1,6 +1,7 @@
 {
 	"id": "cargo",
 	"name": "Cargo",
+	"groupKey": "build-tool",
 	"layer": "building-blocks",
 	"description": {
 		"de": "Buildtool für Rust-basierte Anwendungen.",
@@ -20,5 +21,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://doc.rust-lang.org/cargo/",
-	"license": "MIT OR Apache-2.0"
+	"license": "MIT OR Apache-2.0",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/rust-lang/cargo"
+		},
+		{
+			"type": "url",
+			"url": "https://doc.rust-lang.org/cargo/"
+		}
+	]
 }

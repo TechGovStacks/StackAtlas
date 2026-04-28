@@ -9,21 +9,20 @@
 		"en": ""
 	},
 	"homepage": "https://ag-ui.com",
-	"tags": ["agent", "agentische-ki", "user-interface"],
+	"tags": ["protocol", "ai-agent", "interaction", "standardization"],
 	"oss": true,
-	"maturity": "sandbox",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
-		"hasAudit": true,
+		"hasAudit": false,
 		"permissiveLicense": true,
-		"matureProject": true,
+		"matureProject": false,
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true,
-		"ownerType": "independentConsortium"
+		"noTelemetryByDefault": true
 	},
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
@@ -33,10 +32,5 @@
 			"type": "url",
 			"url": "https://ag-ui.com"
 		}
-	],
-	"lastResearchDate": "2026-04-27",
-	"audit": {
-		"lastDate": "2025-11-11",
-		"url": "https://github.com/ag-ui-protocol/ag-ui"
-	}
+	]
 }

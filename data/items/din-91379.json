@@ -11,7 +11,7 @@
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": true,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": false,
@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.din.de/en/getting-involved/standards-committees/nid/standards/wdc-beuth:din21:353496951",
-	"license": "Proprietary"
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/DIN_91379"
+		},
+		{
+			"type": "url",
+			"url": "https://www.dinmedia.de/en/draft-standard/din-91379/339812645"
+		}
+	]
 }

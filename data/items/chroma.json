@@ -28,5 +28,16 @@
 		"lastDate": "2025-11-11",
 		"url": "https://docs.trychroma.com/docs/overview/introduction"
 	},
-	"license": "Apache-2.0"
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/chroma-core/chroma"
+		},
+		{
+			"type": "url",
+			"url": "https://www.trychroma.com/"
+		}
+	]
 }

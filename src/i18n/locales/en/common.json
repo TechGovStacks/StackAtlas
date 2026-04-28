@@ -418,5 +418,8 @@
 		"contribute": "Contribute →",
 		"localStackHint": "Local stacks are only stored in your browser. Do you want to add a stack for everyone?",
 		"improveData": "Improve data"
+		"closeButton": "Got it",
+		"closeAriaLabel": "Close",
+		"githubButton": "Contribute on GitHub"
 	}
 }

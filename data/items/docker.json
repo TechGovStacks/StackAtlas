@@ -2,12 +2,14 @@
 	"id": "docker",
 	"name": "Docker",
 	"layer": "platform",
+	"sublayer": "container",
+	"groupKey": "container-runtime",
 	"description": {
 		"de": "Docker ist eine Open-Source-Plattform zur Containerisierung von Anwendungen. Sie ermöglicht das Paketieren von Software mit allen Abhängigkeiten in portable Container-Images, die konsistent in verschiedenen Umgebungen ausgeführt werden können.",
-		"en": ""
+		"en": "Docker is an open-source platform for containerizing applications. It enables packaging software with all dependencies into portable container images that can run consistently across different environments."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["container", "containerization", "infrastructure"],
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -20,5 +22,16 @@
 		"noTelemetryByDefault": false
 	},
 	"homepage": "https://www.docker.com/",
-	"license": "Apache-2.0"
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.docker.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/moby/moby"
+		}
+	]
 }

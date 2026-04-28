@@ -11,7 +11,7 @@
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": true,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": false,
@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.din.de/en/getting-involved/standards-committees/nid/din-spec/wdc-beuth:din21:371369268",
-	"license": "Proprietary"
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://servicestandard.gov.de/din-spec-66336/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.digitale-verwaltung.de/Webs/DV/DE/onlinezugangsgesetz/rahmenarchitektur/standardisierung/din-spec/din-spec-66336-node.html"
+		}
+	]
 }

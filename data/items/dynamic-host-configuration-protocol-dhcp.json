@@ -26,5 +26,16 @@
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://datatracker.ietf.org/doc/html/rfc8415"
-	}
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/wg/dhc/about/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol"
+		}
+	]
 }
