@@ -4,19 +4,30 @@
 	"layer": "sovereign-standards",
 	"description": {
 		"de": "eIDAS 2.0 ist der europäische Rechts- und Interoperabilitätsrahmen für elektronische Identitäten und Vertrauensdienste. Er schafft einheitliche Anforderungen dafür, wie digitale Identitäten und Nachweise grenzüberschreitend eingesetzt werden.",
-		"en": ""
+		"en": "eIDAS 2.0 is the European legal and interoperability framework for electronic identities and trust services, establishing unified requirements for cross-border digital identity and evidence usage."
 	},
 	"oss": true,
 	"tags": [],
 	"sovereigntyCriteria": {
 		"openSource": true,
-		"euHeadquartered": false,
-		"hasAudit": false,
+		"euHeadquartered": true,
+		"hasAudit": true,
 		"permissiveLicense": false,
-		"matureProject": false,
+		"matureProject": true,
 		"selfHostable": false,
-		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": false
-	}
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://digital-strategy.ec.europa.eu/en/policies/eidas-regulation"
+		},
+		{
+			"type": "url",
+			"url": "https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/eIDAS+2.0"
+		}
+	]
 }

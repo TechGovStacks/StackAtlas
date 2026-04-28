@@ -11,14 +11,25 @@
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": false,
+		"openStandards": true,
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://vector.dev/",
-	"license": "MPL-2.0"
+	"license": "MPL-2.0",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/vectordotdev/vector"
+		},
+		{
+			"type": "url",
+			"url": "https://vector.dev/"
+		}
+	]
 }

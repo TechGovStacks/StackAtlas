@@ -28,5 +28,16 @@
 		"lastDate": "2025-11-11",
 		"url": "https://github.com/ckan/ckan"
 	},
-	"license": "AGPL-3.0"
+	"license": "AGPL-3.0",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/ckan/ckan"
+		},
+		{
+			"type": "url",
+			"url": "https://ckan.org/"
+		}
+	]
 }

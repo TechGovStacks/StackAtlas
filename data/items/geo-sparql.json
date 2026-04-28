@@ -2,6 +2,7 @@
 	"id": "geo-sparql",
 	"name": "(Geo)SPARQL",
 	"layer": "infrastructure",
+	"groupKey": "query-language",
 	"description": {
 		"de": "SPARQL ist eine Abfragesprache zur Verarbeitung und Abfrage von RDF-Daten. Sie ermöglicht es, strukturierte Daten in Graphenform gezielt zu durchsuchen und zu kombinieren. Dabei ähnelt sie konzeptionell SQL, ist jedoch speziell auf semantische Datenmodelle ausgelegt. GeoSPARQL erweitert SPARQL um Abfragen mit räumlichen Bezug (z.B. Distanzen, Umkreise, etc.)",
 		"en": ""
@@ -20,5 +21,15 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.ogc.org/standards/geosparql/",
-	"license": "OGC"
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.ogc.org/standards/geosparql/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.w3.org/2015/spatial/"
+		}
+	]
 }

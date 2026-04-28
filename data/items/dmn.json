@@ -11,7 +11,7 @@
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": false,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.omg.org/dmn/",
-	"license": "Proprietary"
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.omg.org/dmn/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Decision_Model_and_Notation"
+		}
+	]
 }

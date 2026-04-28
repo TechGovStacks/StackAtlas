@@ -27,5 +27,16 @@
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://circleci.com/docs/"
-	}
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/CircleCI"
+		},
+		{
+			"type": "url",
+			"url": "https://circleci.com/"
+		}
+	]
 }

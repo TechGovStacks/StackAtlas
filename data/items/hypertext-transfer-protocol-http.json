@@ -8,9 +8,8 @@
 		"en": ""
 	},
 	"homepage": "https://datatracker.ietf.org/wg/httpbis/documents/",
-	"tags": ["multiplexing", "datenuebertragung", "webseiten", "internet"],
+	"tags": ["protocol", "web", "standard", "ietf", "transport"],
 	"oss": true,
-	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -20,13 +19,9 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true,
-		"ownerType": "independentConsortium"
+		"noTelemetryByDefault": true
 	},
-	"audit": {
-		"lastDate": "2025-11-11",
-		"url": "https://datatracker.ietf.org/doc/html/rfc9114"
-	},
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
@@ -36,6 +31,5 @@
 			"type": "url",
 			"url": "https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol"
 		}
-	],
-	"lastResearchDate": "2026-04-27"
+	]
 }

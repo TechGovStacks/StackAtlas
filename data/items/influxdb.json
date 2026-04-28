@@ -20,5 +20,15 @@
 		"noTelemetryByDefault": false
 	},
 	"homepage": "https://www.influxdata.com/products/influxdb/",
-	"license": "MIT"
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.influxdata.com/products/influxdb/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/influxdata/influxdb"
+		}
+	]
 }

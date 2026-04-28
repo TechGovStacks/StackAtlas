@@ -9,23 +9,28 @@
 		"en": ""
 	},
 	"homepage": "https://github.com/actions",
-	"tags": ["pipeline", "cd", "bereitstellung", "ci"],
-	"oss": true,
-	"maturity": "graduated",
+	"tags": ["ci-cd", "automation", "github", "workflow"],
+	"oss": false,
 	"sovereigntyCriteria": {
-		"openSource": true,
+		"openSource": false,
 		"euHeadquartered": false,
-		"hasAudit": true,
-		"permissiveLicense": true,
+		"hasAudit": false,
+		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": false,
 		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": false,
-		"ownerType": "corporation"
+		"openStandards": true,
+		"noTelemetryByDefault": false
 	},
-	"audit": {
-		"lastDate": "2025-11-11",
-		"url": "https://docs.github.com/en/actions"
-	}
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/actions"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.github.com/en/actions"
+		}
+	]
 }

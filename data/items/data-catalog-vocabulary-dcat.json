@@ -1,6 +1,7 @@
 {
 	"id": "data-catalog-vocabulary-dcat",
 	"name": "Data Catalog Vocabulary (DCAT)",
+	"groupKey": "data-catalog-standard",
 	"layer": "platform",
 	"sublayer": "daten",
 	"description": {
@@ -26,5 +27,16 @@
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://github.com/SEMICeu/DCAT-AP"
-	}
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/vocab-dcat-3/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Data_Catalog_Vocabulary"
+		}
+	]
 }

@@ -18,5 +18,18 @@
 		"dataPortability": false,
 		"openStandards": false,
 		"noTelemetryByDefault": false
-	}
+	},
+	"homepage": "https://ingrid-oss.eu/",
+	"license": "EUPL-1.2",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://ingrid-oss.eu/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/informationgrid"
+		}
+	]
 }

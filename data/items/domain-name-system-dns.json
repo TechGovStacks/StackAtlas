@@ -26,5 +26,16 @@
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://tools.ietf.org/html/rfc7858"
-	}
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/wg/dns/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Domain_Name_System"
+		}
+	]
 }
