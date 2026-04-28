@@ -1,6 +1,7 @@
 import { Route, Router, useLocation } from 'preact-iso';
 import { useState } from 'preact/hooks';
 import { BetaNoticeModal } from './components/BetaNoticeModal';
+import { CommunityBanner } from './components/CommunityBanner';
 import { Footer } from './components/Footer';
 import { HashLocationProvider } from './components/HashLocationProvider';
 import { Header } from './components/Header';
@@ -22,6 +23,7 @@ function AppContent() {
 		<div className="flex flex-col min-h-screen w-full">
 			<RouteAnnouncementRegion />
 			<Header currentUrl={path} />
+			<CommunityBanner />
 			<Router>
 				<Route path="/" component={StackGalleryPage} />
 				<Route path="/settings" component={SettingsPage} />

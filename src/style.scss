@@ -469,6 +469,37 @@ main {
    Footer (BEM Component Styling)
    ───────────────────────────────────────────────────────────────────────────── */
 
+/* ─────────────────────────────────────────────────────────────────────────────
+   Community Banner
+   ───────────────────────────────────────────────────────────────────────────── */
+
+.community-banner {
+	background-color: var(--ds-color-primary-dark, #002d6b);
+	color: rgb(255 255 255 / 85%);
+	border-bottom: 1px solid rgb(255 255 255 / 12%);
+	padding: var(--ds-space-3) 0;
+}
+
+.community-banner__inner {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ds-space-3);
+}
+
+.community-banner__text {
+	font-size: var(--ds-text-sm);
+	line-height: var(--ds-lh-body);
+	margin: 0;
+}
+
+.community-banner__actions {
+	display: flex;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Footer (BEM Component Styling)
+   ───────────────────────────────────────────────────────────────────────────── */
+
 .footer {
 	background-color: var(--ds-color-primary);
 	color: rgb(255 255 255 / 75%);
@@ -2712,6 +2743,45 @@ kol-select {
 .stack-selection-evaluator__result-line {
 	color: var(--ds-color-text);
 	margin: 0 0 var(--ds-space-2) 0;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   Community Banner
+   ───────────────────────────────────────────────────────────────────────── */
+
+.community-banner {
+	background: var(--ds-color-primary-light, #1a56a0);
+	border-bottom: 1px solid var(--ds-color-primary, #003d82);
+	padding: var(--ds-space-4) var(--ds-space-6);
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: var(--ds-space-4);
+	font-size: 0.875rem;
+	color: var(--ds-color-text-inverse);
+}
+
+.community-banner__content {
+	display: flex;
+	align-items: center;
+	flex: 1;
+}
+
+.community-banner__text {
+	display: flex;
+	align-items: center;
+}
+
+.community-banner__link-button {
+	white-space: nowrap;
+	flex-shrink: 0;
+	align-self: flex-start;
+}
+
+.community-banner__close-button {
+	flex-shrink: 0;
+	align-self: flex-end;
+	margin-top: calc(var(--ds-space-4) * -1);
 }
 
 /* ─────────────────────────────────────────────────────────────────────────

@@ -127,22 +127,48 @@ Closes #123
    - Feedback adressieren und neu committen (nicht amend)
    - PR wird gemerged, wenn all Checks grün sind
 
-## Daten-Beiträge
+## Community-getriebene Datenbasis
 
-Für Stack- oder Item-Korrektionen:
+StackAtlas wird von der Community gepflegt. Die Datenbasis basiert auf Open-Source-Daten, die von Contributoren wie Ihnen gepflegt und erweitert werden.
 
-1. Öffnen Sie einen Issue mit dem [Data Correction Template](.github/ISSUE_TEMPLATE/data_correction.yml)
-2. Referenzieren Sie die betroffene Datei unter `data/`
-3. Validieren Sie mit `pnpm validate-schemas`
-4. Siehe [data/README.md](data/README.md) für Schema-Dokumentation
+### Neue Stacks hinzufügen
+
+1. Öffnen Sie einen Issue mit dem [New Stack Template](https://github.com/techgovstacks/stackatlas/issues/new?template=new_stack.yml)
+2. Beschreiben Sie die Komponenten des Stacks und deren Verwendungszweck
+3. Vergewissern Sie sich, dass alle Komponenten bereits in StackAtlas dokumentiert sind
+4. Maintainer werden den Stack zur Datenbasis hinzufügen
+
+### Neue Technologien/Standards vorschlagen
+
+1. Öffnen Sie einen Issue mit dem [New Item Template](https://github.com/techgovstacks/stackatlas/issues/new?template=new_item.yml)
+2. Geben Sie detaillierte Informationen zu Technologie/Standard an
+3. Stellen Sie sicher, dass ein gültiger Link zur offiziellen Quelle vorhanden ist
+4. Maintainer werden das Item nach Überprüfung hinzufügen
+
+### Stack- oder Item-Daten korrigieren
+
+1. Öffnen Sie einen Issue mit dem [Data Correction Template](https://github.com/techgovstacks/stackatlas/issues/new?template=data_correction.yml)
+2. Beschreiben Sie klar, was fehlerhaft ist und wie es korrigiert werden sollte
+3. Geben Sie eine zuverlässige Quelle an, die die Korrektur belegt
+4. Maintainer werden die Änderungen überprüfen und durchführen
+
+### Daten-Validierung
+
+Wenn Sie selbst Daten bearbeiten:
+
+1. Validieren Sie mit `pnpm validate-schemas`
+2. Siehe [data/README.md](data/README.md) für Schema-Dokumentation
+3. Stellen Sie sicher, dass alle Referenzen korrekt sind
 
 ## Issue-Tracker
 
 Verwenden Sie diese Templates:
 
-- [Bug Report](.github/ISSUE_TEMPLATE/bug_report.yml) — Fehlerberichte
-- [Feature Request](.github/ISSUE_TEMPLATE/feature_request.yml) — Feature-Wünsche
-- [Data Correction](.github/ISSUE_TEMPLATE/data_correction.yml) — Stack/Item-Korrektionen
+- [Bug Report](https://github.com/techgovstacks/stackatlas/issues/new?template=bug_report.yml) — Fehlerberichte
+- [Feature Request](https://github.com/techgovstacks/stackatlas/issues/new?template=feature_request.yml) — Feature-Wünsche
+- [New Stack](https://github.com/techgovstacks/stackatlas/issues/new?template=new_stack.yml) — Neue Tech-Stacks vorschlagen
+- [New Item](https://github.com/techgovstacks/stackatlas/issues/new?template=new_item.yml) — Neue Technologien/Standards vorschlagen
+- [Data Correction](https://github.com/techgovstacks/stackatlas/issues/new?template=data_correction.yml) — Stack/Item-Korrektionen
 
 ## AI-Beitragende
 

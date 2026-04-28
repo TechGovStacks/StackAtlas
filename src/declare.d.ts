@@ -18,6 +18,7 @@ interface ImportMetaEnv {
 	readonly VITE_APP_VERSION?: string;
 	readonly VITE_BRAND_URL?: string;
 	readonly VITE_ENABLE_PWA?: string;
+	readonly VITE_GITHUB_REPO_URL?: string;
 }
 
 interface ImportMeta {
