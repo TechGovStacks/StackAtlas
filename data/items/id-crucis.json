@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.governikus.de/en/produkte/id-crucis/",
-	"license": "Proprietary"
+	"license": "Proprietary",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/en/produkte/id-crucis/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/de/produkte/id-crucis/"
+		}
+	],
+	"lastResearchDate": "2026-04-28"
 }

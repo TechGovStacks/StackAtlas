@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.governikus.de/en/produkte/id-mercury/",
-	"license": "Proprietary"
+	"license": "Proprietary",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/en/produkte/id-mercury/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/de/produkte/id-mercury/"
+		}
+	],
+	"lastResearchDate": "2026-04-28"
 }

@@ -23,5 +23,16 @@
 		"openStandards": true,
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
-	}
+	},
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://helm.sh/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/helm/helm"
+		}
+	],
+	"lastResearchDate": "2026-04-28"
 }

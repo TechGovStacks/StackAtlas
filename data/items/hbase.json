@@ -27,5 +27,16 @@
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://hbase.apache.org/book.html"
-	}
+	},
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://hbase.apache.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/apache/hbase"
+		}
+	],
+	"lastResearchDate": "2026-04-28"
 }

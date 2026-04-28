@@ -20,5 +20,16 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://harvesterhci.io/",
-	"license": "Apache-2.0"
+	"license": "Apache-2.0",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://harvesterhci.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/harvester/harvester"
+		}
+	],
+	"lastResearchDate": "2026-04-28"
 }
