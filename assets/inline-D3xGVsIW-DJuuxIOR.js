@@ -1,1 +1,0 @@
-import{lt as e}from"./index-BZhc64ye.js";var t=(t,n,r={})=>{e(t,`_inline`,n,r)};export{t};

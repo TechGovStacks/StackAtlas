@@ -1,0 +1,1 @@
+import{ft as e}from"./index-BUJCe4va.js";var t=(t,n)=>{e(t,`_customClass`,n,{defaultValue:``})};export{t};
