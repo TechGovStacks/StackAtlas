@@ -8,26 +8,7 @@
 		"en": ""
 	},
 	"homepage": "https://huggingface.co/docs/transformers/index",
-	"tags": ["deep-learning", "dl", "transformer", "verarbeitung"],
-	"oss": true,
-	"maturity": "graduated",
-	"sovereigntyCriteria": {
-		"openSource": true,
-		"euHeadquartered": false,
-		"hasAudit": true,
-		"permissiveLicense": true,
-		"matureProject": true,
-		"selfHostable": true,
-		"dataPortability": true,
-		"openStandards": false,
-		"noTelemetryByDefault": false,
-		"ownerType": "corporation"
-	},
-	"audit": {
-		"lastDate": "2025-11-11",
-		"url": "https://github.com/huggingface/transformers"
-	},
-	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
@@ -37,6 +18,5 @@
 			"type": "url",
 			"url": "https://github.com/huggingface/transformers"
 		}
-	],
-	"lastResearchDate": "2026-04-28"
+	]
 }

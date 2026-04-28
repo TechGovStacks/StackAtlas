@@ -20,7 +20,7 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.w3.org/publishing/a11y/",
-	"license": "W3C-20150513",
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
@@ -30,6 +30,5 @@
 			"type": "url",
 			"url": "https://www.iso.org/standard/80785.html"
 		}
-	],
-	"lastResearchDate": "2026-04-28"
+	]
 }

@@ -20,7 +20,7 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.etsi.org/deliver/etsi_en/119400_119499/119461/02.01.01_60/en_119461v020101p.pdf",
-	"license": "ETSI",
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
@@ -30,6 +30,5 @@
 			"type": "url",
 			"url": "https://www.etsi.org/standards/etsi-en-119-461"
 		}
-	],
-	"lastResearchDate": "2026-04-28"
+	]
 }

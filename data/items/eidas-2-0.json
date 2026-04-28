@@ -19,6 +19,7 @@
 		"openStandards": true,
 		"noTelemetryByDefault": true
 	},
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
@@ -28,6 +29,5 @@
 			"type": "url",
 			"url": "https://ec.europa.eu/digital-building-blocks/wikis/display/DIGITAL/eIDAS+2.0"
 		}
-	],
-	"lastResearchDate": "2026-04-28"
+	]
 }

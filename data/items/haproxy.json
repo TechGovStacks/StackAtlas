@@ -21,7 +21,7 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.haproxy.org/",
-	"license": "GPL-2.0-or-later",
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
@@ -31,6 +31,5 @@
 			"type": "url",
 			"url": "https://github.com/haproxy/haproxy"
 		}
-	],
-	"lastResearchDate": "2026-04-28"
+	]
 }

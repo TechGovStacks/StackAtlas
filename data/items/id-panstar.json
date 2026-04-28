@@ -20,7 +20,7 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.governikus.de/en/produkte/id-panstar/",
-	"license": "Proprietary",
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
@@ -30,6 +30,5 @@
 			"type": "url",
 			"url": "https://www.governikus.de/de/produkte/id-panstar/"
 		}
-	],
-	"lastResearchDate": "2026-04-28"
+	]
 }

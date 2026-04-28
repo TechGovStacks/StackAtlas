@@ -20,7 +20,7 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://iceberg.apache.org/",
-	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
@@ -30,6 +30,5 @@
 			"type": "url",
 			"url": "https://github.com/apache/iceberg"
 		}
-	],
-	"lastResearchDate": "2026-04-28"
+	]
 }

@@ -20,7 +20,7 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://tools.ietf.org/html/rfc3501",
-	"license": "IETF",
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
@@ -30,6 +30,5 @@
 			"type": "url",
 			"url": "https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol"
 		}
-	],
-	"lastResearchDate": "2026-04-28"
+	]
 }

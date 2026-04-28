@@ -9,26 +9,7 @@
 		"en": ""
 	},
 	"homepage": "https://projectcontour.io/",
-	"tags": ["controller", "orchestrierung", "ingress"],
-	"oss": true,
-	"maturity": "graduated",
-	"sovereigntyCriteria": {
-		"openSource": true,
-		"euHeadquartered": false,
-		"hasAudit": true,
-		"permissiveLicense": true,
-		"matureProject": true,
-		"selfHostable": true,
-		"dataPortability": true,
-		"openStandards": true,
-		"noTelemetryByDefault": true,
-		"ownerType": "independentConsortium"
-	},
-	"audit": {
-		"lastDate": "2025-11-11",
-		"url": "https://github.com/projectcontour/contour"
-	},
-	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-27",
 	"researchSources": [
 		{
 			"type": "url",
@@ -38,6 +19,5 @@
 			"type": "url",
 			"url": "https://github.com/projectcontour/contour"
 		}
-	],
-	"lastResearchDate": "2026-04-27"
+	]
 }

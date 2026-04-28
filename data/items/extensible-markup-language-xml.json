@@ -9,26 +9,7 @@
 		"en": "XML is a widely used, standardized data format for data exchange managed by W3C, enabling interoperable structured document representation."
 	},
 	"homepage": "https://www.w3.org/XML/",
-	"tags": ["datenformat"],
-	"oss": true,
-	"maturity": "graduated",
-	"sovereigntyCriteria": {
-		"openSource": true,
-		"euHeadquartered": false,
-		"hasAudit": true,
-		"permissiveLicense": true,
-		"matureProject": true,
-		"selfHostable": true,
-		"dataPortability": true,
-		"openStandards": true,
-		"noTelemetryByDefault": true,
-		"ownerType": "independentConsortium"
-	},
-	"audit": {
-		"lastDate": "2025-11-11",
-		"url": "https://www.w3.org/TR/xml11/"
-	},
-	"license": "public-domain",
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
@@ -38,6 +19,5 @@
 			"type": "url",
 			"url": "https://www.w3.org/TR/xml11/"
 		}
-	],
-	"lastResearchDate": "2026-04-28"
+	]
 }

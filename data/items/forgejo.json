@@ -20,7 +20,7 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://forgejo.org/",
-	"license": "GPL-3.0-or-later",
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
@@ -30,6 +30,5 @@
 			"type": "url",
 			"url": "https://github.com/forgejo/forgejo"
 		}
-	],
-	"lastResearchDate": "2026-04-28"
+	]
 }

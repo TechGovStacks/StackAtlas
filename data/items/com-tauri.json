@@ -20,7 +20,7 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://v2.tauri.app/",
-	"license": "MIT",
+	"lastResearchDate": "2026-04-27",
 	"researchSources": [
 		{
 			"type": "url",
@@ -30,6 +30,5 @@
 			"type": "url",
 			"url": "https://github.com/tauri-apps/tauri"
 		}
-	],
-	"lastResearchDate": "2026-04-27"
+	]
 }

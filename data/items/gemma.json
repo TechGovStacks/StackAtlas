@@ -21,7 +21,7 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://ai.google.dev/gemma",
-	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
@@ -31,6 +31,5 @@
 			"type": "url",
 			"url": "https://github.com/google/gemma.cpp"
 		}
-	],
-	"lastResearchDate": "2026-04-28"
+	]
 }

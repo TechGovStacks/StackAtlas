@@ -20,7 +20,7 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.fitko.de/produktmanagement/fim",
-	"license": "CC-BY-4.0",
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
@@ -30,6 +30,5 @@
 			"type": "url",
 			"url": "https://github.com/FIM-Datenstandards"
 		}
-	],
-	"lastResearchDate": "2026-04-28"
+	]
 }

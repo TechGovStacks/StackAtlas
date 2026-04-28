@@ -21,7 +21,7 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://goharbor.io/",
-	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
@@ -31,6 +31,5 @@
 			"type": "url",
 			"url": "https://github.com/goharbor/harbor"
 		}
-	],
-	"lastResearchDate": "2026-04-28"
+	]
 }

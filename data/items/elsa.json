@@ -20,7 +20,7 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://docs.elsaworkflows.io/",
-	"license": "MIT",
+	"lastResearchDate": "2026-04-28",
 	"researchSources": [
 		{
 			"type": "url",
@@ -30,6 +30,5 @@
 			"type": "url",
 			"url": "https://docs.elsaworkflows.io/"
 		}
-	],
-	"lastResearchDate": "2026-04-28"
+	]
 }
