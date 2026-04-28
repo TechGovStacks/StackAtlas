@@ -3,6 +3,7 @@ import { useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { ROLE_COLORS } from '../constants/roleColors';
 import { ITEMS, LAYERS, STACKS } from '../data/catalog';
+import type { MetricExplainerId } from '../types';
 import { Item, SovereigntyCriteria, StackItem } from '../types';
 import { buildDependencyGraph, countryToFlagEmoji, getLocalizedText } from '../utils';
 import {
@@ -14,6 +15,7 @@ import {
 } from '../utils/overallScore';
 import { computeEffectiveSovereigntyScoreResult, getScoreCategory, getScoreCategoryColor } from '../utils/sovereigntyScore';
 import { SublayerCoverageHint } from '../utils/sublayerCoverageHint';
+import { InfoIcon } from './InfoIcon';
 import { SovereigntyGauge } from './SovereigntyGauge';
 
 type ViewMode = 'tile' | 'list';
@@ -43,6 +45,18 @@ interface ArticleCardProps {
 }
 
 const CATALOG_DEPENDENCY_GRAPH = buildDependencyGraph(ITEMS);
+
+const CRITERIA_TO_EXPLAINER: Partial<Record<keyof SovereigntyCriteria, MetricExplainerId>> = {
+	openSource: 'openSource',
+	euHeadquartered: 'euHeadquartered',
+	hasAudit: 'auditedCode',
+	permissiveLicense: 'permissiveLicense',
+	matureProject: 'mature',
+	selfHostable: 'selfHostable',
+	dataPortability: 'dataPortability',
+	openStandards: 'openStandards',
+	noTelemetryByDefault: 'noTelemetry',
+};
 
 export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile', coverageHint }: ArticleCardProps) {
 	const { i18n, t } = useTranslation();
@@ -253,7 +267,10 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 								</div>
 								<div className="drawer-score-section">
 									{/* ── Gesamt-Score (Gauge) ─────────────────────────────── */}
-									<p className="drawer-score-title">{t('article.scoreOverview.title')}</p>
+									<div className="drawer-score-title-row">
+										<p className="drawer-score-title">{t('article.scoreOverview.title')}</p>
+										<InfoIcon explainerId="overallScore" label={t('article.scoreOverview.title')} />
+									</div>
 									<div className="drawer-gauge-container">
 										<SovereigntyGauge score={selectedOverallScore} category={getScoreCategory(selectedOverallScore)} size={160} />
 									</div>
@@ -264,7 +281,10 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 											<p className="score-breakdown__title">{t('article.scoreOverview.calculation')}</p>
 											<div className="score-breakdown__rows">
 												<div className="score-breakdown__row">
-													<span className="score-breakdown__label">{t('article.scoreOverview.sovereignty')}</span>
+													<span className="score-breakdown__label">
+														{t('article.scoreOverview.sovereignty')}
+														<InfoIcon explainerId="sovereigntyScore" label={t('article.scoreOverview.sovereignty')} />
+													</span>
 													<span className="score-breakdown__score" style={{ color: getScoreCategoryColor(selectedScoreResult.rawScore) }}>
 														{selectedScoreResult.rawScore}/100
 													</span>
@@ -272,7 +292,10 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 													<span className="score-breakdown__pts">{(selectedScoreResult.rawScore * SOVEREIGNTY_WEIGHT).toFixed(1)}</span>
 												</div>
 												<div className="score-breakdown__row">
-													<span className="score-breakdown__label">{t('article.scoreOverview.sovereignAdoption')}</span>
+													<span className="score-breakdown__label">
+														{t('article.scoreOverview.sovereignAdoption')}
+														<InfoIcon explainerId="sovereignAdoptionScore" label={t('article.scoreOverview.sovereignAdoption')} />
+													</span>
 													<span className="score-breakdown__score" style={{ color: getScoreCategoryColor(selectedAdoption.sovereignAdoptionScore) }}>
 														{selectedAdoption.sovereignAdoptionScore}/100
 													</span>
@@ -280,7 +303,10 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 													<span className="score-breakdown__pts">{(selectedAdoption.sovereignAdoptionScore * SOVEREIGN_ADOPTION_WEIGHT).toFixed(1)}</span>
 												</div>
 												<div className="score-breakdown__row">
-													<span className="score-breakdown__label">{t('article.scoreOverview.adoption')}</span>
+													<span className="score-breakdown__label">
+														{t('article.scoreOverview.adoption')}
+														<InfoIcon explainerId="adoptionScore" label={t('article.scoreOverview.adoption')} />
+													</span>
 													<span className="score-breakdown__score" style={{ color: getScoreCategoryColor(selectedAdoption.adoptionScore) }}>
 														{selectedAdoption.adoptionScore}/100
 													</span>
@@ -296,13 +322,22 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 											</div>
 											<p className="score-breakdown__stacks">{t('article.scoreOverview.usedInStacks', { count: selectedAdoption.usedInStacks.length })}</p>
 											<p className="score-breakdown__stacks">
-												{t('article.scoreOverview.directCoverage')}: {selectedAdoption.directCoverage.toFixed(2)}
+												<span>
+													{t('article.scoreOverview.directCoverage')}: {selectedAdoption.directCoverage.toFixed(2)}
+												</span>
+												<InfoIcon explainerId="directCoverage" label={t('article.scoreOverview.directCoverage')} />
 											</p>
 											<p className="score-breakdown__stacks">
-												{t('article.scoreOverview.transitiveCoverage')}: {selectedAdoption.transitiveCoverage.toFixed(2)}
+												<span>
+													{t('article.scoreOverview.transitiveCoverage')}: {selectedAdoption.transitiveCoverage.toFixed(2)}
+												</span>
+												<InfoIcon explainerId="transitiveCoverage" label={t('article.scoreOverview.transitiveCoverage')} />
 											</p>
 											<p className="score-breakdown__stacks">
-												{t('article.scoreOverview.diversity')}: {(selectedAdoption.diversity * 100).toFixed(0)}%
+												<span>
+													{t('article.scoreOverview.diversity')}: {(selectedAdoption.diversity * 100).toFixed(0)}%
+												</span>
+												<InfoIcon explainerId="diversity" label={t('article.scoreOverview.diversity')} />
 											</p>
 										</div>
 									)}
@@ -321,12 +356,16 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 									)}
 
 									{/* ── Souveränitäts-Kriterien ───────────────────────────── */}
-									<p className="drawer-score-title">{t('article.sovereigntyScore')}</p>
+									<div className="drawer-score-title-row">
+										<p className="drawer-score-title">{t('article.sovereigntyScore')}</p>
+										<InfoIcon explainerId="sovereigntyScore" label={t('article.sovereigntyScore')} />
+									</div>
 									<ul className="drawer-criteria">
 										{criteriaKeys.map((key) => {
 											const isSatisfied = selectedArticle.sovereigntyCriteria[key];
 											const isBoosted = selectedBoostedCriteria.has(key);
 											const iconClass = isSatisfied ? 'criteria-icon criteria-icon--satisfied' : 'criteria-icon criteria-icon--unsatisfied';
+											const criteriaExplainerId = CRITERIA_TO_EXPLAINER[key as keyof SovereigntyCriteria];
 											return (
 												<li key={key} className={`drawer-criteria__item${isSatisfied ? ' drawer-criteria__item--satisfied' : ''}`}>
 													<span className={iconClass} aria-hidden="true">
@@ -340,6 +379,7 @@ export function ArticleCard({ article, stackItem, stackItemMap, viewMode = 'tile
 															</span>
 														)}
 													</span>
+													{criteriaExplainerId && <InfoIcon explainerId={criteriaExplainerId} label={t(`article.criteria.${key}`)} />}
 												</li>
 											);
 										})}
