@@ -1,0 +1,1 @@
+import{pt as e}from"./index-BkrBw0yF.js";var t=(t,n,r={})=>{e(t,`_href`,n,r)};export{t};
