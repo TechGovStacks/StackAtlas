@@ -47,14 +47,6 @@
 			}
 		},
 		{
-			"itemId": "advanced-encryption-standard",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "agent-network-protocol",
 			"status": "recommended",
 			"role": "consumer",
@@ -111,22 +103,6 @@
 			}
 		},
 		{
-			"itemId": "android",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "angel-ml",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "angular",
 			"status": "recommended",
 			"role": "consumer",
@@ -140,14 +116,6 @@
 			"role": "consumer",
 			"rationale": {
 				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "apache-airflow",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "Workflow-Orchestrierung, Apache Foundation"
 			}
 		},
 		{
@@ -191,14 +159,6 @@
 			}
 		},
 		{
-			"itemId": "appsmith",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "arc42",
 			"status": "recommended",
 			"role": "consumer",
@@ -231,14 +191,6 @@
 			}
 		},
 		{
-			"itemId": "argocd",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "GitOps/CD, CNCF-Tool, cloud-native Standard"
-			}
-		},
-		{
 			"itemId": "asciidoc",
 			"status": "recommended",
 			"role": "consumer",
@@ -248,14 +200,6 @@
 		},
 		{
 			"itemId": "atag-2-0-authoring-tool-accessibility-guidelines-w3c",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "axolotl",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -287,30 +231,6 @@
 			}
 		},
 		{
-			"itemId": "blink",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "bluetooth",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "border-gateway-protocol-bgp",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "bpmn",
 			"status": "recommended",
 			"role": "consumer",
@@ -319,35 +239,11 @@
 			}
 		},
 		{
-			"itemId": "bpmn-v2-0",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "Prozessmodellierungs-Standard, Abhängigkeit für Camunda"
-			}
-		},
-		{
 			"itemId": "bruno",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
 				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "budibase",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "bundid",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "Deutsches Bundes-Identitätssystem"
 			}
 		},
 		{
@@ -375,22 +271,6 @@
 			}
 		},
 		{
-			"itemId": "camunda",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "BPM/Prozessautomatisierung, DE-Firma"
-			}
-		},
-		{
-			"itemId": "capacitor",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "Cross-platform Mobile Framework"
-			}
-		},
-		{
 			"itemId": "carddav",
 			"status": "recommended",
 			"role": "consumer",
@@ -407,14 +287,6 @@
 			}
 		},
 		{
-			"itemId": "cassandra",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "cdxgen",
 			"status": "recommended",
 			"role": "consumer",
@@ -424,22 +296,6 @@
 		},
 		{
 			"itemId": "ceph",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "chroma",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "circleci",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -503,22 +359,6 @@
 			}
 		},
 		{
-			"itemId": "comma-separated-values-csv",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "comprehensive-knowledge-archive-network-ckan",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "conan",
 			"status": "recommended",
 			"role": "consumer",
@@ -528,30 +368,6 @@
 		},
 		{
 			"itemId": "contextforge",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "contour",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "couchdb",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "css",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -576,14 +392,6 @@
 		},
 		{
 			"itemId": "data-aeonia",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "data-catalog-vocabulary-dcat",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -687,31 +495,7 @@
 			}
 		},
 		{
-			"itemId": "domain-name-system-dns",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "drupal",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "Open-Source CMS"
-			}
-		},
-		{
 			"itemId": "dvdv",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "dynamic-host-configuration-protocol-dhcp",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -783,14 +567,6 @@
 			}
 		},
 		{
-			"itemId": "egvp-postacher-in-der-rolle-bebpo",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "Elektronischer Rechtsverkehr DE"
-			}
-		},
-		{
 			"itemId": "eidas-2-0",
 			"status": "recommended",
 			"role": "consumer",
@@ -799,23 +575,7 @@
 			}
 		},
 		{
-			"itemId": "elliptic-curve-integrated-encryption-scheme",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "elsa",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "emissary-ingress",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -839,14 +599,6 @@
 			}
 		},
 		{
-			"itemId": "envoy-proxy",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "epub-accessibility-iso-iec-23761-barrierefreie-e-publikationen",
 			"status": "recommended",
 			"role": "consumer",
@@ -856,14 +608,6 @@
 		},
 		{
 			"itemId": "etcd",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "ethernet",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -887,23 +631,7 @@
 			}
 		},
 		{
-			"itemId": "extensible-markup-language-xml",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "fido2-webauthn",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "file-transfer-protocol-uber-tls-ftps",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -919,31 +647,7 @@
 			}
 		},
 		{
-			"itemId": "fit-connect",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "DE Gov Integrationsplattform (FITKO)"
-			}
-		},
-		{
 			"itemId": "fluentd",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "flutter",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "flux",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -975,23 +679,7 @@
 			}
 		},
 		{
-			"itemId": "gecko",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "gemma",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "general-purpose-remote-procedure-calls",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -1039,23 +727,7 @@
 			}
 		},
 		{
-			"itemId": "glasfaser",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "gnu-taler",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "go",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -1111,14 +783,6 @@
 			}
 		},
 		{
-			"itemId": "graphql",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "haproxy",
 			"status": "recommended",
 			"role": "consumer",
@@ -1151,22 +815,6 @@
 			}
 		},
 		{
-			"itemId": "haystack",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "hbase",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "helm",
 			"status": "recommended",
 			"role": "consumer",
@@ -1176,22 +824,6 @@
 		},
 		{
 			"itemId": "hive",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "huggingface-transformers",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "hypertext-transfer-protocol-http",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -1255,46 +887,6 @@
 			}
 		},
 		{
-			"itemId": "internal-gateway-protocols-igp",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "internet-message-access-protocol-secure-imaps",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "internet-protocol-security-ipsec",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "internet-protocol-version-6-ipv6",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "ios",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "iso-9241-171-2025-ergonomics-of-human-system-interaction-software-accessibility",
 			"status": "recommended",
 			"role": "consumer",
@@ -1319,14 +911,6 @@
 			}
 		},
 		{
-			"itemId": "istio",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "itil",
 			"status": "recommended",
 			"role": "consumer",
@@ -1336,54 +920,6 @@
 		},
 		{
 			"itemId": "jaeger",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "janus-server",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "WebRTC Media Server, Abhängigkeit für Video-Kommunikation"
-			}
-		},
-		{
-			"itemId": "java",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "javascript-ecma-script",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "javascript-object-notation-json",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "jenkins",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "joget",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -1415,23 +951,7 @@
 			}
 		},
 		{
-			"itemId": "json-web-tokens-jwt",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "k6",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "kerberos",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -1479,14 +999,6 @@
 			}
 		},
 		{
-			"itemId": "kong",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "kotlin",
 			"status": "recommended",
 			"role": "consumer",
@@ -1527,14 +1039,6 @@
 			}
 		},
 		{
-			"itemId": "langgraph",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "ldap",
 			"status": "recommended",
 			"role": "consumer",
@@ -1567,23 +1071,7 @@
 			}
 		},
 		{
-			"itemId": "mariadb",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "markdown-commonmark-spezifikation-rfc-7763",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "markdown-md",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -1607,14 +1095,6 @@
 			}
 		},
 		{
-			"itemId": "media-access-control-mac",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "mein-unternehmenskonto-muk",
 			"status": "recommended",
 			"role": "consumer",
@@ -1631,47 +1111,7 @@
 			}
 		},
 		{
-			"itemId": "milvus",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "mlflow",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "mobilfunk",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "model-context-protocol-mcp",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "module-lattice-based-key-encapsulation-mechanism",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "mongodb",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -1695,39 +1135,7 @@
 			}
 		},
 		{
-			"itemId": "multiprotocol-label-switching-mpls",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "mysql-server",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "n8n",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "nats",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "neo4j",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -1759,39 +1167,7 @@
 			}
 		},
 		{
-			"itemId": "nextjs",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "nfs-network-file-system",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "nginx",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "node-red",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "nomad",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -1855,22 +1231,6 @@
 			}
 		},
 		{
-			"itemId": "open-archives-initiative-protocol-for-metadata-harvesting",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "open-authorization-oauth",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "open-build-service",
 			"status": "recommended",
 			"role": "consumer",
@@ -1879,31 +1239,7 @@
 			}
 		},
 		{
-			"itemId": "open-internet-exchange-point-ixp-oix-1",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "open-neural-network-exchange",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "open-policy-agent",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "open-shortest-path-first-ospf",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -1959,22 +1295,6 @@
 			}
 		},
 		{
-			"itemId": "openid",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "openkruise",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "openresponses",
 			"status": "recommended",
 			"role": "consumer",
@@ -1984,14 +1304,6 @@
 		},
 		{
 			"itemId": "opensearch",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "openshift-origin-okd",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -2143,22 +1455,6 @@
 			}
 		},
 		{
-			"itemId": "php",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "piveau",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "playwright",
 			"status": "recommended",
 			"role": "consumer",
@@ -2231,14 +1527,6 @@
 			}
 		},
 		{
-			"itemId": "promptflow",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "protocol-buffers-protobuf",
 			"status": "recommended",
 			"role": "consumer",
@@ -2255,55 +1543,7 @@
 			}
 		},
 		{
-			"itemId": "pyro",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "python",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "pytorch",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "qdrant",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "quay",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "quick-udp-internet-connections-quic",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "r",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -2316,38 +1556,6 @@
 			"role": "consumer",
 			"rationale": {
 				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "ragflow",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "rancher",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "react",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "react-native",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "Cross-platform Mobile Framework (Meta)"
 			}
 		},
 		{
@@ -2368,38 +1576,6 @@
 		},
 		{
 			"itemId": "renovate-bot",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "representational-state-transfer",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "resource-description-framework-rdf",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "rivest-shamir-adleman",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "robot-framework",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -2479,22 +1655,6 @@
 			}
 		},
 		{
-			"itemId": "scylla",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "sd-wan-service-attributes-and-service-framework-mef",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "sealed-secrets",
 			"status": "recommended",
 			"role": "consumer",
@@ -2503,31 +1663,7 @@
 			}
 		},
 		{
-			"itemId": "secure-hash-algorithm",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "securitysuitabilitypolicy-rfc-5698",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "segment-routing-sr",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "selenium",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -2552,14 +1688,6 @@
 		},
 		{
 			"itemId": "seq",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "session-initiation-protocol-sip",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -2592,14 +1720,6 @@
 		},
 		{
 			"itemId": "sigstore",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "simple-mail-transfer-protocol-secure-smtps",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -2663,14 +1783,6 @@
 			}
 		},
 		{
-			"itemId": "spacy",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "spdx",
 			"status": "recommended",
 			"role": "consumer",
@@ -2680,14 +1792,6 @@
 		},
 		{
 			"itemId": "spiffe-spire",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "spinnaker",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -2743,14 +1847,6 @@
 			}
 		},
 		{
-			"itemId": "tailwind-css",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "CSS Utility Framework"
-			}
-		},
-		{
 			"itemId": "tekton",
 			"status": "recommended",
 			"role": "consumer",
@@ -2760,22 +1856,6 @@
 		},
 		{
 			"itemId": "telerik",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "temporal",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "Workflow-Orchestrierung (Durable Execution)"
-			}
-		},
-		{
-			"itemId": "tensorflow",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -2839,51 +1919,11 @@
 			}
 		},
 		{
-			"itemId": "traefik",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "transmission-control-protocol-tcp",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "transport-layer-security-tls",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "trivy",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
 				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "typescript",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "typo3",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "Enterprise CMS, weit verbreitet in DE Verwaltung"
 			}
 		},
 		{
@@ -2896,14 +1936,6 @@
 		},
 		{
 			"itemId": "universal-business-language-ubl-iso-iec-19845",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
-			"itemId": "user-datagram-protocol-udp",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
@@ -2975,14 +2007,6 @@
 			}
 		},
 		{
-			"itemId": "webkit",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "NEGZ-Feedback: fehlt"
-			}
-		},
-		{
 			"itemId": "webpack",
 			"status": "recommended",
 			"role": "consumer",
@@ -3020,14 +2044,6 @@
 			"role": "consumer",
 			"rationale": {
 				"de": "NEGZ-Feedback: ändern"
-			}
-		},
-		{
-			"itemId": "wordpress",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "Meistgenutztes CMS weltweit"
 			}
 		},
 		{
@@ -3215,14 +2231,6 @@
 			}
 		},
 		{
-			"itemId": "yaml",
-			"status": "recommended",
-			"role": "consumer",
-			"rationale": {
-				"de": "Universelles Konfigurations- und Datenformat"
-			}
-		},
-		{
 			"itemId": "yaml-ain-t-markup-language",
 			"status": "recommended",
 			"role": "consumer",
@@ -3240,6 +2248,998 @@
 		},
 		{
 			"itemId": "zitadel",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "argocd",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "GitOps/CD, CNCF-Tool, cloud-native Standard"
+			}
+		},
+		{
+			"itemId": "apache-airflow",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Workflow-Orchestrierung, Apache Foundation"
+			}
+		},
+		{
+			"itemId": "bundid",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Deutsches Bundes-Identitätssystem"
+			}
+		},
+		{
+			"itemId": "bpmn-v2-0",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Prozessmodellierungs-Standard, Abhängigkeit für Camunda"
+			}
+		},
+		{
+			"itemId": "camunda",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "BPM/Prozessautomatisierung, DE-Firma"
+			}
+		},
+		{
+			"itemId": "capacitor",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Cross-platform Mobile Framework"
+			}
+		},
+		{
+			"itemId": "drupal",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Open-Source CMS"
+			}
+		},
+		{
+			"itemId": "egvp-postacher-in-der-rolle-bebpo",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Elektronischer Rechtsverkehr DE"
+			}
+		},
+		{
+			"itemId": "fit-connect",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "DE Gov Integrationsplattform (FITKO)"
+			}
+		},
+		{
+			"itemId": "janus-server",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "WebRTC Media Server, Abhängigkeit für Video-Kommunikation"
+			}
+		},
+		{
+			"itemId": "react-native",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Cross-platform Mobile Framework (Meta)"
+			}
+		},
+		{
+			"itemId": "tailwind-css",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "CSS Utility Framework"
+			}
+		},
+		{
+			"itemId": "temporal",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Workflow-Orchestrierung (Durable Execution)"
+			}
+		},
+		{
+			"itemId": "typo3",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Enterprise CMS, weit verbreitet in DE Verwaltung"
+			}
+		},
+		{
+			"itemId": "wordpress",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Meistgenutztes CMS weltweit"
+			}
+		},
+		{
+			"itemId": "yaml",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Universelles Konfigurations- und Datenformat"
+			}
+		},
+		{
+			"itemId": "advanced-encryption-standard",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "android",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "angel-ml",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "appsmith",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "axolotl",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "blink",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "bluetooth",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "border-gateway-protocol-bgp",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "budibase",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "cassandra",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "chroma",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "circleci",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "comma-separated-values-csv",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "comprehensive-knowledge-archive-network-ckan",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "contour",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "couchdb",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "css",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "data-catalog-vocabulary-dcat",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "domain-name-system-dns",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "dynamic-host-configuration-protocol-dhcp",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "elliptic-curve-integrated-encryption-scheme",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "emissary-ingress",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "envoy-proxy",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "ethernet",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "extensible-markup-language-xml",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "file-transfer-protocol-uber-tls-ftps",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "flutter",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "flux",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "gecko",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "general-purpose-remote-procedure-calls",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "glasfaser",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "go",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "graphql",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "haystack",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "hbase",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "huggingface-transformers",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "hypertext-transfer-protocol-http",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "internal-gateway-protocols-igp",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "internet-message-access-protocol-secure-imaps",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "internet-protocol-security-ipsec",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "internet-protocol-version-6-ipv6",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "ios",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "istio",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "java",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "javascript-ecma-script",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "javascript-object-notation-json",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "jenkins",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "joget",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "json-web-tokens-jwt",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "kerberos",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "kong",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "langgraph",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "mariadb",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "markdown-md",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "media-access-control-mac",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "milvus",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "mlflow",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "mobilfunk",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "module-lattice-based-key-encapsulation-mechanism",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "mongodb",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "multiprotocol-label-switching-mpls",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "mysql-server",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "n8n",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "neo4j",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "nextjs",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "nginx",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "node-red",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "nomad",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "open-archives-initiative-protocol-for-metadata-harvesting",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "open-authorization-oauth",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "open-internet-exchange-point-ixp-oix-1",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "open-neural-network-exchange",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "open-shortest-path-first-ospf",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "openid",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "openkruise",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "openshift-origin-okd",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "php",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "piveau",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "promptflow",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "pyro",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "python",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "pytorch",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "qdrant",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "quick-udp-internet-connections-quic",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "r",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "ragflow",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "rancher",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "react",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "representational-state-transfer",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "resource-description-framework-rdf",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "rivest-shamir-adleman",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "robot-framework",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "scylla",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "sd-wan-service-attributes-and-service-framework-mef",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "secure-hash-algorithm",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "segment-routing-sr",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "selenium",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "session-initiation-protocol-sip",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "simple-mail-transfer-protocol-secure-smtps",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "spacy",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "spinnaker",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "tensorflow",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "traefik",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "transmission-control-protocol-tcp",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "transport-layer-security-tls",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "typescript",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "user-datagram-protocol-udp",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "NEGZ-Feedback: fehlt"
+			}
+		},
+		{
+			"itemId": "webkit",
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
