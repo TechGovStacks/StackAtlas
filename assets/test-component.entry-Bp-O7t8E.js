@@ -1,1 +1,0 @@
-import{p as e}from"./index-BS22rsKi.js";var t=class{constructor(t){e(this,t)}};export{t as test_component};

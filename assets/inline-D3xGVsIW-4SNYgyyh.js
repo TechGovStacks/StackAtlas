@@ -1,0 +1,1 @@
+import{ut as e}from"./index-Bu74cGc4.js";var t=(t,n,r={})=>{e(t,`_inline`,n,r)};export{t};
