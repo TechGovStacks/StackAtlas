@@ -1,0 +1,34 @@
+{
+	"id": "xzufi",
+	"name": "XZufi",
+	"layer": "building-blocks",
+	"itemKind": "standard",
+	"description": {
+		"de": "Ein Standard des IT-Planungsrates. XZuFi dient dem produkt- und herstellerunabhängigen Austausch von Informationen zu Verwaltungsleistungen und den hierfür zuständigen Organisationseinheiten."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.xoev.de/xzufi"
+		},
+		{
+			"type": "url",
+			"url": "https://www.xoev.de/"
+		}
+	]
+}

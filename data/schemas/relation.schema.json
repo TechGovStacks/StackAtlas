@@ -1,0 +1,40 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Stack-Item Relation Definition",
+	"description": "Defines the role-based relationship between a Stack (country) and an Item. The sovereignty score is calculated from the item's intrinsic sovereigntyCriteria combined with the role multiplier.",
+	"type": "object",
+	"required": ["stack", "item", "role"],
+	"additionalProperties": false,
+	"properties": {
+		"stack": {
+			"type": "string",
+			"description": "Stack ID (must exist in data/stacks/)"
+		},
+		"item": {
+			"type": "string",
+			"description": "Item ID (must exist in data/items/)"
+		},
+		"role": {
+			"type": "string",
+			"description": "Role of the stack (country) relative to this item. Used as multiplier for sovereignty scoring: maintainer=1.0, contributor=0.75, funder=0.5, consumer=0.25",
+			"enum": ["maintainer", "contributor", "funder", "consumer"]
+		},
+		"rationale": {
+			"type": "object",
+			"description": "Localized explanation why this item is in the stack and its sovereignty rating",
+			"additionalProperties": false,
+			"properties": {
+				"de": { "type": "string" },
+				"en": { "type": "string" },
+				"fr": { "type": "string" }
+			}
+		},
+		"alternatives": {
+			"type": "array",
+			"description": "Alternative items that could replace this one",
+			"items": {
+				"type": "string"
+			}
+		}
+	}
+}

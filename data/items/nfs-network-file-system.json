@@ -1,0 +1,36 @@
+{
+	"id": "nfs-network-file-system",
+	"name": "NFS Network File System",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Netzwerk Dateisystem' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"homepage": "https://www.rfc-editor.org/rfc/rfc7530.html",
+	"license": "IETF",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc7530"
+		},
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc7530"
+		}
+	]
+}

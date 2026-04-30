@@ -1,0 +1,152 @@
+{
+	"id": "govstack",
+	"name": {
+		"de": "GovStack Initiative",
+		"en": "GovStack Initiative"
+	},
+	"description": {
+		"de": "Internationale Initiative von Estland, Deutschland, ITU und DIAL für 19 essenzielle Digital-Public-Infrastructure-Building-Blocks und einen quelloffenen Werkzeugkasten.",
+		"en": "International initiative by Estonia, Germany, ITU and DIAL defining 19 essential digital public infrastructure building blocks and an open-source toolkit."
+	},
+	"issuer": "ITU / DIAL / Estonia / Germany",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-13",
+	"items": [
+		{
+			"itemId": "govstack-information-mediator",
+			"status": "recommended",
+			"role": "maintainer",
+			"rationale": {
+				"de": "Zentraler Building Block für asynchronen Datenaustausch.",
+				"en": "Central building block for asynchronous data exchange."
+			}
+		},
+		{
+			"itemId": "x-road",
+			"status": "recommended",
+			"role": "contributor",
+			"rationale": {
+				"de": "Bildet die Security-Server-Schicht des Information Mediators.",
+				"en": "Provides the Security Server layer of the Information Mediator."
+			}
+		},
+		{
+			"itemId": "activemq-artemis",
+			"status": "recommended",
+			"role": "contributor",
+			"rationale": {
+				"de": "Asynchrone Nachrichtenwarteschlangen im Information Mediator.",
+				"en": "Asynchronous message queues in the Information Mediator."
+			}
+		},
+		{
+			"itemId": "mosip",
+			"status": "approved",
+			"role": "contributor",
+			"rationale": {
+				"de": "Quelloffene Identitätsplattform – Referenz für Identification & Authentication BB.",
+				"en": "Open-source identity platform – reference for the Identification & Authentication BB."
+			}
+		},
+		{
+			"itemId": "keycloak",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Verbreiteter IAM-Provider in GovStack-Implementierungen.",
+				"en": "Widely used IAM provider in GovStack implementations."
+			}
+		},
+		{
+			"itemId": "java",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Hauptsprache der GovStack-Building-Blocks.",
+				"en": "Primary language of the GovStack building blocks."
+			}
+		},
+		{
+			"itemId": "spring-boot",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Microservice-Framework der GovStack-Referenzimplementierungen.",
+				"en": "Microservice framework of GovStack reference implementations."
+			}
+		},
+		{
+			"itemId": "react",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Frontend-Framework vieler GovStack-Portale.",
+				"en": "Frontend framework of many GovStack portals."
+			}
+		},
+		{
+			"itemId": "postgresql",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Standard-Datenbank für GovStack-Building-Blocks.",
+				"en": "Standard database for GovStack building blocks."
+			}
+		},
+		{
+			"itemId": "kubernetes",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Container-Orchestrierung in der GovStack Sandbox.",
+				"en": "Container orchestration in the GovStack sandbox."
+			}
+		},
+		{
+			"itemId": "openapi",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "GovSpec-konforme API-Beschreibung.",
+				"en": "GovSpec-compliant API description."
+			}
+		},
+		{
+			"itemId": "openid",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Föderierte Authentifizierung in GovStack-BBs.",
+				"en": "Federated authentication in GovStack BBs."
+			}
+		},
+		{
+			"itemId": "transport-layer-security-tls",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Transportverschlüsselung aller GovStack-Schnittstellen.",
+				"en": "Transport encryption of all GovStack interfaces."
+			}
+		},
+		{
+			"itemId": "comprehensive-knowledge-archive-network-ckan",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Datenkatalog-Komponente in GovStack-Open-Data-Setups.",
+				"en": "Data catalogue component in GovStack open-data setups."
+			}
+		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "GovStack",
+				"en": "GovStack",
+				"fr": "GovStack"
+			},
+			"url": "https://www.govstack.global/"
+		}
+	]
+}

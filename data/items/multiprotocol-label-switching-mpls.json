@@ -1,0 +1,43 @@
+{
+	"id": "multiprotocol-label-switching-mpls",
+	"name": "Multiprotocol Label Switching (MPLS)",
+	"layer": "infrastructure",
+	"sublayer": "verteilung",
+	"groupKey": "traffic-engineering",
+	"itemKind": "protocol",
+	"description": {
+		"de": "MPLS dient der Übertragung von Datenpaketen in einem verbindungslosen Netz. Das Verfahren zur Verteilung wird in großen Netzwerken eingesetzt.",
+		"en": ""
+	},
+	"homepage": "https://datatracker.ietf.org/wg/mpls/documents/",
+	"tags": ["netzwerk", "weitverkehr"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://datatracker.ietf.org/doc/html/rfc6790"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc3031"
+		},
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc3031"
+		}
+	]
+}

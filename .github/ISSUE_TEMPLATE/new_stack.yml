@@ -1,0 +1,84 @@
+name: New Stack
+description: Schlagen Sie einen neuen Tech-Stack vor
+title: '[STACK] '
+labels: ['data', 'stack', 'needs-triage']
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke, dass Sie einen neuen Tech-Stack vorschlagen! Bitte füllen Sie die folgenden Details aus.
+
+  - type: input
+    id: stack-name
+    attributes:
+      label: Stack-Name
+      description: Name des neuen Tech-Stacks
+      placeholder: z.B. "Cloud-Native E-Commerce Stack"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Stack-Beschreibung
+      description: Kurze Beschreibung des Tech-Stacks und seiner Verwendung
+      placeholder: |
+        Dieser Stack ist konzipiert für...
+        Er beinhaltet Technologien für...
+    validations:
+      required: true
+
+  - type: textarea
+    id: components
+    attributes:
+      label: Stack-Komponenten
+      description: Komponenten und Technologien, die in diesem Stack enthalten sind
+      placeholder: |
+        Frontend:
+        - React
+        - TypeScript
+
+        Backend:
+        - Node.js
+        - PostgreSQL
+
+        Infrastructure:
+        - Docker
+        - Kubernetes
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Anwendungsfall
+      description: Für welche Szenarien ist dieser Stack geeignet?
+      placeholder: |
+        Dieser Stack eignet sich besonders für:
+        - ...
+        - ...
+
+  - type: input
+    id: reference-link
+    attributes:
+      label: Referenz-Link
+      description: Link zu Dokumentation oder Beispiel-Implementierung
+      placeholder: https://...
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Zusätzliche Informationen
+      description: Weitere relevante Details oder Kontext
+      placeholder: z.B. Gründe für die Auswahl der Komponenten...
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checkliste
+      options:
+        - label: Alle Komponenten sind in StackAtlas dokumentiert
+          required: false
+        - label: Ich habe überprüft, dass dieser Stack nicht bereits existiert
+          required: true

@@ -1,0 +1,5 @@
+{
+	"permissions": {
+		"allow": ["Agent(*)", "Bash(*)", "Read(*)", "WebFetch(*)", "WebSearch(*)", "mcp__claude_ai_KoliBri__search", "mcp__claude_ai_KoliBri__fetch"]
+	}
+}

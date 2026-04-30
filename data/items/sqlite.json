@@ -1,0 +1,36 @@
+{
+	"id": "sqlite",
+	"name": "SQLite",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "SQLite ist eine kompakte, serverlose Datenbank-Engine, die direkt in Anwendungen eingebettet wird und eine vollständige SQL-Schnittstelle bietet. Sie ist in der Programmiersprache C geschrieben, öffentlich zugänglich und benötigt keine separate Server-Instanz, was sie besonders leichtgewichtig, schnell und einfach in der Nutzung macht. SQLite speichert gesamte Datenbanken in einer einzigen Datei, was den Einsatz in lokalen Anwendungen, mobilen Geräten oder sogar im Internet der Dinge ideal macht. Die Engine ist bekannt für ihre Zuverlässigkeit, hohe Performance und minimale Konfigurationsanforderungen, was sie zu einer der am weitesten verbreiteten Datenbanklösungen weltweit macht."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "oneManShow"
+	},
+	"homepage": "https://www.sqlite.org/",
+	"license": "Public Domain",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.sqlite.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://sqlite.org/docs.html"
+		}
+	]
+}

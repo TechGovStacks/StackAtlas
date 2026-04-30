@@ -1,0 +1,54 @@
+name: Bump patch version on main
+
+on:
+  pull_request:
+    types: [closed]
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.head.ref || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  bump-version:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - uses: pnpm/action-setup@v6
+        with:
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: 25
+
+      - name: Increase patch version in package.json
+        run: pnpm version patch --no-git-tag-version
+
+      - name: Commit and push bumped version
+        run: |
+          set -euo pipefail
+
+          if [ -z "$(git status --porcelain package.json)" ]; then
+            echo "No version change detected."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          NEW_VERSION="$(node -p "require('./package.json').version")"
+          git add package.json
+          git commit -m "chore(release): bump patch version to ${NEW_VERSION}"
+          git pull --rebase origin main
+          git push origin HEAD:main

@@ -1,0 +1,36 @@
+{
+	"id": "atag-2-0-authoring-tool-accessibility-guidelines-w3c",
+	"name": "ATAG 2.0 – Authoring Tool Accessibility Guidelines (W3C)",
+	"layer": "applications",
+	"itemKind": "standard",
+	"description": {
+		"de": "ATAG 2.0 (W3C-Standard) definiert Barrierefreiheitsanforderungen für Autorenwerkzeuge – d. h. alle Systeme, mit denen digitale Inhalte erstellt, bearbeitet oder veröffentlicht werden. Teil A: Das Werkzeug selbst muss barrierefrei bedienbar sein. Teil B: Das Werkzeug muss die Erstellung barrierefreier Inhalte unterstützen und fördern. Anwendungsbereich: CMS, Formular-Builder, Dokumentengeneratoren, E-Government-Redaktionssysteme.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.w3.org/TR/ATAG20/",
+	"license": "W3C-20150513",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/ATAG20/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.w3.org/WAI/standards-guidelines/atag/"
+		}
+	]
+}

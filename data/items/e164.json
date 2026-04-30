@@ -1,0 +1,37 @@
+{
+	"id": "e164",
+	"name": "E164",
+	"layer": "sovereign-standards",
+	"groupKey": "phone-number-standard",
+	"itemKind": "standard",
+	"description": {
+		"de": "ITU-T E.164 ist ein internationaler Standard für die Präsentation von Telefonnummern in Telekommunikationssystemen. Er definiert das Format für E.164-Nummern, das weltweit verwendete eindeutige Telefonnummern-Format.",
+		"en": "ITU-T E.164 is an international standard for the presentation of telephone numbers in telecommunications systems. It defines the format for E.164 numbers, the worldwide-used unique telephone number format."
+	},
+	"oss": false,
+	"tags": ["telephone", "standard", "telecommunications"],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.itu.int/rec/T-REC-E.164/",
+	"license": "ITU-T",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.itu.int/rec/T-REC-E.164/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/E.164"
+		}
+	]
+}

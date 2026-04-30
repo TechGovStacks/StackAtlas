@@ -1,0 +1,44 @@
+{
+	"id": "graphql",
+	"name": "GraphQL",
+	"layer": "platform",
+	"sublayer": "integration",
+	"groupKey": "api-style",
+	"itemKind": "standard",
+	"description": {
+		"de": "Ein Abfragesprache und Laufzeitumgebung, die es Clients ermöglicht, genau die Daten abzufragen, die sie benötigen. Sie bietet eine effiziente und flexible Alternative zu traditionellen APIs, indem sie es Clients ermöglicht, nur die exakt benötigten Daten mit einem einzigen Aufruf abzurufen. Ein zentrales Element ist das GraphQL-Schema, das die Datenstrukturen definiert, und der Client sendet eine Abfrage (Query), die durch das Schema validiert und von einem Resolver auf dem Server ausgeführt wird.",
+		"en": ""
+	},
+	"homepage": "https://graphql.org/",
+	"tags": ["abfrage", "daten", "schnittstelle"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://spec.graphql.org/"
+	},
+	"license": "MIT",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://graphql.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://spec.graphql.org/"
+		}
+	]
+}

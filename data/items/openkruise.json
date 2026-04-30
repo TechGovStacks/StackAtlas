@@ -1,0 +1,42 @@
+{
+	"id": "openkruise",
+	"name": "OpenKruise",
+	"layer": "building-blocks",
+	"sublayer": "inbetriebnahme",
+	"itemKind": "tool",
+	"description": {
+		"de": "OpenKruise ist eine Open-Source-Anwendungssuite, die Kubernetes um Funktionen für das Management von großen Anwendungen erweitert. Als ein Projekt der Cloud Native Computing Foundation (CNCF) bietet OpenKruise Funktionen für die Automatisierung von Deployment, Upgrades und Betrieb von Anwendungen.",
+		"en": ""
+	},
+	"homepage": "https://openkruise.io/",
+	"tags": ["pipeline", "cd", "bereitstellung", "ci"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://github.com/openkruise/kruise"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://openkruise.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/openkruise/kruise"
+		}
+	]
+}

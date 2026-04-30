@@ -1,0 +1,35 @@
+{
+	"id": "egvp-postacher-in-der-rolle-bebpo",
+	"name": "EGVP Postächer in der Rolle BeBPo",
+	"layer": "applications",
+	"itemKind": "service",
+	"description": {
+		"de": "Über den D-Stack sollten Behörden Zugang zu dem jeweiligen BeBPo bekommen. Stichwort \"BeBpo as a Service\"",
+		"en": ""
+	},
+	"tags": ["negz-import", "researched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.justiz.de/egvp/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.brak.de/fuer-anwaelte/beA/"
+		}
+	]
+}

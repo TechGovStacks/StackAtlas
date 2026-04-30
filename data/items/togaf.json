@@ -1,0 +1,34 @@
+{
+	"id": "togaf",
+	"name": "TOGAF",
+	"layer": "building-blocks",
+	"itemKind": "tool",
+	"description": {
+		"de": "Standrad zur Abstimmung der Geschäftsprozesse und der IT, damit die Unternehmensziele erreicht werden und Veränderungen nachvollziehbar gestaltet werden. Siehe https://www.opengroup.org/togaf"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": false,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.opengroup.org/togaf"
+		},
+		{
+			"type": "url",
+			"url": "https://www.opengroup.org/togaf/togaf-standard-version-9.2"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"id": "platform",
+	"order": 2,
+	"name": { "de": "Plattform", "en": "Platform" },
+	"description": {
+		"de": "Plattformen und Middleware: Cloud-Dienste, Container-Orchestrierung, KI-Frameworks und Integrationsschichten.",
+		"en": "Platforms and middleware: cloud services, container orchestration, AI frameworks and integration layers."
+	},
+	"color": "#1a56a0"
+}

@@ -1,0 +1,37 @@
+{
+	"id": "eupl-1-2",
+	"name": "European Union Public Licence 1.2",
+	"layer": "sovereign-standards",
+	"itemKind": "standard",
+	"description": {
+		"de": "Die European Union Public Licence (EUPL) 1.2 ist eine mehrsprachige Open-Source-Lizenz der Europäischen Kommission für Software und Dokumentation. Sie ist auf europäische Rechtsräume ausgerichtet und unterstützt die rechtssichere Weitergabe, Nutzung und Veränderung öffentlich entwickelter Software.",
+		"en": "The European Union Public Licence (EUPL) 1.2 is a multilingual open-source licence by the European Commission for software and documentation. It supports legally robust reuse, modification and redistribution of publicly developed software in European legal contexts."
+	},
+	"homepage": "https://interoperable-europe.ec.europa.eu/collection/eupl",
+	"license": "EUPL-1.2",
+	"oss": true,
+	"tags": ["eu", "license", "open-source", "software"],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://interoperable-europe.ec.europa.eu/collection/eupl"
+		},
+		{
+			"type": "url",
+			"url": "https://joinup.ec.europa.eu/collection/eupl/eupl-text-eupl-12"
+		}
+	]
+}

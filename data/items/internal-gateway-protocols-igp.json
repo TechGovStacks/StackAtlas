@@ -1,0 +1,42 @@
+{
+	"id": "internal-gateway-protocols-igp",
+	"name": "Internal Gateway Protocols (IGP)",
+	"layer": "infrastructure",
+	"sublayer": "verteilung",
+	"itemKind": "protocol",
+	"description": {
+		"de": "IGP sind Routing-Protokolle, die für die automatische Weiterleitung von Datenpaketen innerhalb eines autonomen Systems verwendet werden. Sie ermöglichen es Routern, dynamisch die besten Pfade zu Zielnetzwerken zu ermitteln und sich automatisch an Netzwerkänderungen anzupassen. IGPs sind essentiell für die Funktionsfähigkeit moderner IP-Netzwerke in Unternehmen und Service-Provider-Umgebungen.",
+		"en": ""
+	},
+	"homepage": "https://datatracker.ietf.org/wg/",
+	"tags": ["netzwerk", "internet"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://www.rfc-editor.org/rfc/rfc9350.html"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/wg/idr/documents/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Interior_gateway_protocol"
+		}
+	]
+}

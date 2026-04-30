@@ -1,0 +1,43 @@
+{
+	"id": "piveau",
+	"name": "Piveau",
+	"layer": "platform",
+	"sublayer": "daten",
+	"groupKey": "open-data-portal",
+	"itemKind": "platform",
+	"description": {
+		"de": "Piveau ist ein Datenmanagement Werkzeug für die Verarbeitungskette von der Erfassung, Aggregation, Bereitstellung bis zur Nutzung der Daten.",
+		"en": ""
+	},
+	"homepage": "https://www.piveau.de/",
+	"tags": ["aggregation", "datennutzung", "bereitstellung", "erfassung", "datenkonvertierung"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://interoperable-europe.ec.europa.eu/collection/open-data/solution/piveau"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.piveau.de/"
+		},
+		{
+			"type": "url",
+			"url": "https://gitlab.com/piveau"
+		}
+	]
+}

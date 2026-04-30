@@ -1,0 +1,44 @@
+{
+	"id": "php",
+	"name": "PHP",
+	"layer": "building-blocks",
+	"sublayer": "sprachen",
+	"groupKey": "server-side-rendering",
+	"itemKind": "language",
+	"description": {
+		"de": "PHP dient der serverseitigen Entwicklung von dynamischen Webseiten und Anwendungen.",
+		"en": ""
+	},
+	"homepage": "https://www.php.net/",
+	"tags": ["programmierung", "sprache"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://www.php.net/docs.php"
+	},
+	"license": "PHP-3.01",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.php.net/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/php/php-src"
+		}
+	]
+}

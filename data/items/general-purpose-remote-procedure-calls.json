@@ -1,0 +1,43 @@
+{
+	"id": "general-purpose-remote-procedure-calls",
+	"name": "general-purpose Remote Procedure Calls",
+	"layer": "platform",
+	"sublayer": "integration",
+	"groupKey": "api-style",
+	"itemKind": "protocol",
+	"description": {
+		"de": "gRPC ist ein leistungsstarkes, quelloffenes Framework, das effiziente Kommunikation zwischen verteilten Diensten ermöglicht. Es nutzt HTTP/2 und Protocol Buffers für schnelle, typsichere Datenübertragung und bietet Funktionen wie bidirektionales Streaming und Authentifizierung. Damit vereinfacht gRPC die Entwicklung von skalierbaren Microservices-Architekturen und verbessert im Vergleich zu REST die Leistung deutlich.",
+		"en": ""
+	},
+	"homepage": "https://grpc.io/",
+	"tags": ["rpc", "api", "schnittstelle"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://grpc.io/docs/"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://grpc.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/grpc/grpc"
+		}
+	]
+}

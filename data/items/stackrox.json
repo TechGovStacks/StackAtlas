@@ -1,0 +1,36 @@
+{
+	"id": "stackrox",
+	"name": "StackRox",
+	"layer": "platform",
+	"itemKind": "platform",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Sicherheitslösung für Kubernetes, Container&Build' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"homepage": "https://www.redhat.com/en/technologies/cloud-computing/openshift/advanced-cluster-security-kubernetes",
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.stackrox.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/stackrox/stackrox"
+		}
+	]
+}

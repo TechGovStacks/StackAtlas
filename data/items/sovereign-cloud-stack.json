@@ -1,0 +1,43 @@
+{
+	"id": "sovereign-cloud-stack",
+	"name": "Sovereign Cloud Stack",
+	"layer": "sovereign-standards",
+	"sublayer": "inbetriebnahme",
+	"itemKind": "platform",
+	"ownerCountry": "DE",
+	"description": {
+		"de": "Der Sovereign Cloud Stack (SCS) ist ein offener, modularer Referenz-Stack fuer souveraene Cloud-Infrastrukturen in Europa. Als OSBA-Projekt kombiniert SCS offene Standards und Referenzimplementierungen fuer IaaS, KaaS und IAM (u. a. OpenStack, Kubernetes und Keycloak), um Portabilitaet, Interoperabilitaet und rechtliche Kontrolle ueber Daten zu sichern.",
+		"en": "The Sovereign Cloud Stack (SCS) is an open, modular reference stack for sovereign cloud infrastructure in Europe. As an OSBA project, SCS combines open standards and reference implementations for IaaS, KaaS, and IAM (including OpenStack, Kubernetes, and Keycloak) to ensure portability, interoperability, and legal control over data."
+	},
+	"homepage": "https://scs.community/",
+	"github": {
+		"repo": "https://github.com/SovereignCloudStack"
+	},
+	"tags": ["cloud", "federation", "germany", "iaas", "interoperability", "kaas", "sovereignty"],
+	"oss": true,
+	"maturity": "incubation",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://scs.community/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/SovereignCloudStack"
+		}
+	]
+}

@@ -1,0 +1,35 @@
+{
+	"id": "imap",
+	"name": "IMAP",
+	"layer": "sovereign-standards",
+	"itemKind": "protocol",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Serverseitiger E-Mail Zugriff' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://tools.ietf.org/html/rfc3501",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://tools.ietf.org/html/rfc3501"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol"
+		}
+	]
+}

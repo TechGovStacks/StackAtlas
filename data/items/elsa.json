@@ -1,0 +1,35 @@
+{
+	"id": "elsa",
+	"name": "Elsa",
+	"layer": "applications",
+	"itemKind": "service",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Workflow Engine für .NET' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": "Open-source .NET workflow engine enabling visual workflow design with MIT license, self-hostable and supporting data portability through standard integration patterns."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://docs.elsaworkflows.io/",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/elsa-workflows/elsa-core"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.elsaworkflows.io/"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"id": "infrastructure",
+	"order": 1,
+	"name": { "de": "Infrastruktur", "en": "Infrastructure" },
+	"description": {
+		"de": "Grundlegende technische Infrastruktur: Netzwerke, Protokolle, Kryptographie und Sicherheitsstandards.",
+		"en": "Fundamental technical infrastructure: networks, protocols, cryptography and security standards."
+	},
+	"color": "#c5192d"
+}

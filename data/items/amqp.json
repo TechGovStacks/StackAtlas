@@ -1,0 +1,44 @@
+{
+	"id": "amqp",
+	"name": "AMQP",
+	"layer": "platform",
+	"itemKind": "protocol",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Standardisiertes Messaging Protokoll' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.amqp.org/",
+	"license": "OASIS RF on RAND",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.oasis-open.org/standard/amqp/"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.oasis-open.org/amqp/core/v1.0/os/amqp-core-overview-v1.0-os.html"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol"
+		},
+		{
+			"type": "url",
+			"url": "https://qpid.apache.org/releases/qpid-broker-j-9.2.1/book/Java-Broker-Introduction.html"
+		}
+	]
+}

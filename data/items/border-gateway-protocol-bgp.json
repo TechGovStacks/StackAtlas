@@ -1,0 +1,42 @@
+{
+	"id": "border-gateway-protocol-bgp",
+	"name": "Border Gateway Protocol (BGP)",
+	"layer": "infrastructure",
+	"sublayer": "verteilung",
+	"itemKind": "protocol",
+	"description": {
+		"de": "BGP ist ein entscheidendes Routing-Protokoll im Internet, das Netzwerke miteinander verbindet und dafür sorgt, dass Datenpakete ihren optimalen Weg durch verschiedene autonome Systeme finden. BGP ermöglicht es Internetdienstleistern (ISPs) und größeren Netzwerken, Routeninformationen effizient auszutauschen, um die Datenübertragung zu optimieren. Es spielt eine Schlüsselrolle bei der Aufrechterhaltung der Stabilität und Skalierbarkeit der globalen Internetinfrastruktur",
+		"en": ""
+	},
+	"homepage": "https://github.com/bgp",
+	"tags": ["netzwerk", "isp", "routing"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://fgithub.com/bgp/bgpq4"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc4271"
+		},
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc4271"
+		}
+	]
+}

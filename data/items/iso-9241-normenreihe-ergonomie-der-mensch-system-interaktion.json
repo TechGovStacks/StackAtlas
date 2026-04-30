@@ -1,0 +1,35 @@
+{
+	"id": "iso-9241-normenreihe-ergonomie-der-mensch-system-interaktion",
+	"name": "ISO 9241 (Normenreihe) - Ergonomie der Mensch-System-Interaktion",
+	"layer": "sovereign-standards",
+	"itemKind": "standard",
+	"description": {
+		"de": "Die ISO 9241 ist eine umfangreiche Normenreihe zur Gebrauchstauglichkeit (Usability) und Ergonomie interaktiver Systeme. Ergänzend zu dem Beitrag in Zeile 273 (ISO 9241-171:2025), können die Teile 1-20 als grundlegendes Fundament, sowie Teil 210 (Menschzentrierte Gestaltung interaktiver Systeme) für den D-Stack besonders relevant sein.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.iso.org/standard/77520.html"
+		},
+		{
+			"type": "url",
+			"url": "https://www.iso.org/search.html#q=9241"
+		}
+	]
+}

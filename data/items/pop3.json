@@ -1,0 +1,36 @@
+{
+	"id": "pop3",
+	"name": "POP3",
+	"layer": "sovereign-standards",
+	"itemKind": "protocol",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Lokaler E-Mail Abruf' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen."
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"homepage": "https://datatracker.ietf.org/doc/html/rfc1939",
+	"license": "IETF-RFC",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc1939"
+		},
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc1939"
+		}
+	]
+}

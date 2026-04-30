@@ -1,0 +1,37 @@
+{
+	"id": "grafana",
+	"name": "Grafana",
+	"layer": "platform",
+	"sublayer": "inbetriebnahme",
+	"groupKey": "observability",
+	"itemKind": "platform",
+	"description": {
+		"de": "Grafana ist eine quelloffene Plattform für Visualisierung und Dashboards. In Kombination mit Prometheus und vielen weiteren Datenquellen stellt sie Metriken, Logs und Traces für Betriebssicherheit und Observability bereit.",
+		"en": "Grafana is an open-source platform for visualisation and dashboards. Combined with Prometheus and many other data sources it presents metrics, logs and traces for operational reliability and observability."
+	},
+	"homepage": "https://grafana.com/oss/grafana/",
+	"tags": ["observability", "monitoring", "dashboard", "metrics", "visualization"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://grafana.com/oss/grafana/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/grafana/grafana"
+		}
+	]
+}

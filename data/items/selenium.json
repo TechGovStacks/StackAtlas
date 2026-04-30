@@ -1,0 +1,44 @@
+{
+	"id": "selenium",
+	"name": "Selenium",
+	"layer": "building-blocks",
+	"sublayer": "frameworks",
+	"groupKey": "test-automation",
+	"itemKind": "tool",
+	"description": {
+		"de": "Selenium ist ein Open‑Source‑Projekt, das Entwicklern und Testern ermöglicht, Web‑Browser automatisch zu steuern. Mit Selenium können wiederkehrende Aufgaben – etwa das Öffnen einer Webseite, das Ausfüllen von Formularen, das Klicken auf Buttons oder das Prüfen von Inhalten – programmgesteuert durchgeführt werden. Der Hauptzweck liegt darin, funktionale Tests von Web‑Anwendungen zu automatisieren, sodass die Qualität der Software zuverlässig und effizient überprüft werden kann, ohne dass jede Testschritt manuell ausgeführt werden muss. Durch die Unterstützung verschiedener Browser (wie Chrome, Firefox, Edge und Safari) und Programmiersprachen (z. B. Java, Python, C#) lässt sich Selenium flexibel in bestehende Entwicklungs‑ und Continuous‑Integration‑Umgebungen integrieren.",
+		"en": ""
+	},
+	"homepage": "https://www.selenium.dev/",
+	"tags": ["automation", "testing", "user-interface"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://www.selenium.dev/documentation/"
+	},
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.selenium.dev/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/SeleniumHQ/selenium"
+		}
+	]
+}

@@ -1,0 +1,42 @@
+{
+	"id": "secure-hash-algorithm",
+	"name": "Secure Hash Algorithm",
+	"layer": "building-blocks",
+	"sublayer": "sicherheit",
+	"itemKind": "tool",
+	"description": {
+		"de": "SHA wandelt Daten in einen eindeutigen Prüfwert um. Der Prüfwert kann zu Sicherstellung der Integrität genutzt werden (digitaler Fingerabdruck).",
+		"en": ""
+	},
+	"homepage": "https://csrc.nist.gov/projects/hash-functions",
+	"tags": ["schluessel", "integritaet", "manipulation", "pruefwert"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf?__blob=publicationFile"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://csrc.nist.gov/projects/hash-functions"
+		},
+		{
+			"type": "url",
+			"url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf"
+		}
+	]
+}

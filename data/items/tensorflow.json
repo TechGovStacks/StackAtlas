@@ -1,0 +1,44 @@
+{
+	"id": "tensorflow",
+	"name": "TensorFlow",
+	"layer": "platform",
+	"sublayer": "ki",
+	"groupKey": "ml-framework",
+	"itemKind": "platform",
+	"description": {
+		"de": "TensorFlow ist eine Bibliothek für maschinelles Lernen und Künstliche Intelligen. Es wird insbesondere für Training und Inferenz von neuronalen Netzen eingesetzt.",
+		"en": ""
+	},
+	"homepage": "https://www.tensorflow.org/",
+	"tags": ["machine-learning", "inferenz", "verarbeitung", "training"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://github.com/tensorflow/serving"
+	},
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.tensorflow.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/tensorflow/tensorflow"
+		}
+	]
+}

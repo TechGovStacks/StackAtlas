@@ -1,0 +1,44 @@
+{
+	"id": "rust",
+	"name": "Rust",
+	"layer": "building-blocks",
+	"sublayer": "sprachen",
+	"groupKey": "systems-language",
+	"itemKind": "language",
+	"description": {
+		"de": "Rust ist eine systemnahe Programmiersprache. Rust arbeitet mit Typen statt einer Garbage Collection um Speichermanagement zu verbessern.",
+		"en": ""
+	},
+	"homepage": "https://rust-lang.org/",
+	"tags": ["programmierung", "sprache"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://rust-lang.org/learn/"
+	},
+	"license": "MIT",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.rust-lang.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/rust-lang/rust"
+		}
+	]
+}

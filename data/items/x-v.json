@@ -1,0 +1,34 @@
+{
+	"id": "x-v",
+	"name": "XÖV",
+	"layer": "infrastructure",
+	"itemKind": "standard",
+	"description": {
+		"de": "xöv (XML im öffentlichen Verwaltung) ist ein deutscher Standardisierungsrahmen, der den elektronischen Datenaustausch zwischen Behörden, Ländern und dem Bund vereinheitlicht. Er basiert auf XML-Technologie, fördert die Interoperabilität durch einheitliche Datensätze und wird zentral von der Koordinierungsstelle für IT-Standards (KoSIT) betreut, um medienbruchfreie Prozesse zu ermöglichen"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://consumerdatastandardsaustralia.github.io/standards/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/ConsumerDataStandardsAustralia/standards"
+		}
+	]
+}

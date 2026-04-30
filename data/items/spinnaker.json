@@ -1,0 +1,43 @@
+{
+	"id": "spinnaker",
+	"name": "Spinnaker",
+	"layer": "building-blocks",
+	"sublayer": "inbetriebnahme",
+	"groupKey": "ci-cd",
+	"itemKind": "tool",
+	"description": {
+		"de": "Spinnaker ist eine quelloffene Continuous-Delivery-(CD)-Plattform. Sie konzentriert sich auf die schnelle und sichere Bereitstellung von Softwareänderungen.",
+		"en": ""
+	},
+	"homepage": "https://spinnaker.io/",
+	"tags": ["pipeline", "cd", "bereitstellung", "ci"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://github.com/spinnaker/spinnaker"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://spinnaker.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/spinnaker/spinnaker"
+		}
+	]
+}

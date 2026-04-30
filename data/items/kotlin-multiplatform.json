@@ -1,0 +1,37 @@
+{
+	"id": "kotlin-multiplatform",
+	"name": "Kotlin Multiplatform",
+	"layer": "building-blocks",
+	"itemKind": "language",
+	"description": {
+		"de": "Framework",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
+	},
+	"homepage": "https://kotlinlang.org/docs/multiplatform.html",
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.jetbrains.com/kotlin-multiplatform/"
+		},
+		{
+			"type": "url",
+			"url": "https://kotlinlang.org/docs/multiplatform.html"
+		}
+	]
+}

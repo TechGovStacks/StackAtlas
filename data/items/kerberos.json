@@ -1,0 +1,44 @@
+{
+	"id": "kerberos",
+	"name": "Kerberos",
+	"layer": "building-blocks",
+	"sublayer": "sicherheit",
+	"groupKey": "authentication-protocol",
+	"itemKind": "protocol",
+	"description": {
+		"de": "Ermöglicht sichere Netzwerk-Authentifizierung durch ein Ticket-basiertes System ohne Übertragung von Passwörtern über das Netzwerk. Fungiert als vertrauenswürdiger Drittanbieter (Key Distribution Center) für Single Sign-On in Enterprise-Umgebungen und stellt mutual Authentication zwischen Clients und Services sicher.",
+		"en": ""
+	},
+	"homepage": "https://datatracker.ietf.org/doc/html/rfc4120",
+	"tags": ["authentifizierung", "token", "zugriff", "autorisierung"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://web.mit.edu/kerberos/"
+	},
+	"license": "MIT",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://web.mit.edu/kerberos/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc4120"
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"id": "net-aspire",
+	"name": ".NET Aspire",
+	"layer": "sovereign-standards",
+	"itemKind": "framework",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Cloud-native .NET Entwicklung' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"homepage": "https://learn.microsoft.com/en-us/dotnet/aspire/get-started/aspire-overview",
+	"license": "MIT",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://learn.microsoft.com/en-us/dotnet/aspire/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/dotnet/aspire"
+		}
+	]
+}

@@ -1,0 +1,6 @@
+{
+	"doctorTest": "npm run build && npm run lint",
+	"reject": ["@public-ui/components", "@public-ui/react-v19", "@public-ui/theme-default"],
+	"target": "minor",
+	"upgrade": true
+}

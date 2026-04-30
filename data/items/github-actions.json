@@ -1,0 +1,37 @@
+{
+	"id": "github-actions",
+	"name": "GitHub Actions",
+	"layer": "building-blocks",
+	"sublayer": "inbetriebnahme",
+	"groupKey": "ci-cd",
+	"itemKind": "tool",
+	"description": {
+		"de": "GitHub Actions können Entwicklungsprozesse automatisieren und anpassen (CI/CD).",
+		"en": ""
+	},
+	"homepage": "https://github.com/actions",
+	"tags": ["ci-cd", "automation", "github", "workflow"],
+	"oss": false,
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": true,
+		"noTelemetryByDefault": false
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/actions"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.github.com/en/actions"
+		}
+	]
+}

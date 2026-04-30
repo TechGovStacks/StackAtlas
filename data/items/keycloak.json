@@ -1,0 +1,72 @@
+{
+	"id": "keycloak",
+	"name": "Keycloak",
+	"layer": "building-blocks",
+	"sublayer": "sicherheit",
+	"itemKind": "tool",
+	"description": {
+		"de": "Keycloak ist eine Open-Source-Lösung für Identity- und Access-Management. Sie bietet Single Sign-On, OpenID Connect, OAuth2 und SAML, Benutzer- und Rollenverwaltung sowie Föderation und gilt als De-facto-Standard für IAM in vielen öffentlichen Verwaltungen.",
+		"en": "Keycloak is an open-source identity and access management solution. It provides single sign-on, OpenID Connect, OAuth2, SAML, user and role management as well as federation and is the de-facto IAM standard in many public administrations."
+	},
+	"homepage": "https://www.keycloak.org/",
+	"tags": ["iam", "sso", "oidc", "saml"],
+	"license": "Apache-2.0",
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
+	},
+	"dependencies": [
+		{
+			"targetItemId": "hypertext-transfer-protocol-http",
+			"type": "protocol",
+			"scope": "required",
+			"reason": {
+				"de": "Keycloak stellt HTTP(S)-Endpoints für Clients bereit.",
+				"en": "Keycloak exposes HTTP(S) endpoints for clients."
+			}
+		},
+		{
+			"targetItemId": "java",
+			"type": "runtime",
+			"scope": "required",
+			"reason": {
+				"de": "Keycloak läuft auf der JVM.",
+				"en": "Keycloak runs on the JVM."
+			}
+		},
+		{
+			"targetItemId": "open-authorization-oauth",
+			"type": "protocol",
+			"scope": "required",
+			"reason": {
+				"de": "OAuth ist Kernprotokoll für Autorisierung und Token-Flows.",
+				"en": "OAuth is a core protocol for authorization and token flows."
+			}
+		},
+		{
+			"targetItemId": "transport-layer-security-tls",
+			"type": "protocol",
+			"scope": "required",
+			"reason": {
+				"de": "TLS schützt Token-, Session- und Login-Kommunikation.",
+				"en": "TLS secures token, session, and login communication."
+			}
+		}
+	],
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{ "type": "url", "url": "https://www.keycloak.org/" },
+		{ "type": "url", "url": "https://github.com/keycloak/keycloak" },
+		{ "type": "url", "url": "https://en.wikipedia.org/wiki/Keycloak" }
+	]
+}

@@ -1,0 +1,43 @@
+{
+	"id": "swift",
+	"name": "Swift",
+	"layer": "building-blocks",
+	"sublayer": "sprachen",
+	"itemKind": "language",
+	"description": {
+		"de": "Swift dient für die Entwicklung von Apps für Apple-Geräte.",
+		"en": ""
+	},
+	"homepage": "https://www.swift.org/",
+	"tags": ["multi-plattform", "programmierung", "sprache"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://www.swift.org/documentation/"
+	},
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://swift.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/apple/swift"
+		}
+	]
+}

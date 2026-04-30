@@ -1,0 +1,36 @@
+{
+	"id": "presto",
+	"name": "Presto",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "Presto ist eine verteilte SQL-Query-Engine für föderierte Abfragen über heterogene Datenquellen: von Iceberg-Tabellen über relationale Datenbanken bis zu Object Storage."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"homepage": "https://trino.io/",
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://prestodb.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/prestodb/presto"
+		}
+	]
+}

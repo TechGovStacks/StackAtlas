@@ -1,0 +1,34 @@
+{
+	"id": "xrechnung",
+	"name": "XRechnung",
+	"layer": "sovereign-standards",
+	"itemKind": "format",
+	"description": {
+		"de": "XRechnung ist ein eigenständiger Standard, der speziell für E-Rechnungen im öffentlichen Auftragswesen entwickelt wurde."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://xeinkauf.de/xrechnung/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/itplr-kosit/validator-configuration-xrechnung"
+		}
+	]
+}

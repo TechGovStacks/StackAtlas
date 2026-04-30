@@ -1,0 +1,43 @@
+{
+	"id": "robot-framework",
+	"name": "Robot Framework",
+	"layer": "platform",
+	"sublayer": "ki",
+	"groupKey": "test-automation",
+	"itemKind": "platform",
+	"description": {
+		"de": "Robot Framework ist ein Framework für Automatisierung von Tests und im Rahmen von Robot Process Automation. Genutzt wird eine prozedurale Skriptsprache.",
+		"en": ""
+	},
+	"homepage": "https://robotframework.org/",
+	"tags": ["robot-process-automation", "verarbeitung", "rpa"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://docs.robotframework.org/docs"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://robotframework.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/robotframework/robotframework"
+		}
+	]
+}

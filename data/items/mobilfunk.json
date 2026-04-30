@@ -1,0 +1,42 @@
+{
+	"id": "mobilfunk",
+	"name": "Mobilfunk",
+	"layer": "infrastructure",
+	"sublayer": "anschluss",
+	"itemKind": "platform",
+	"description": {
+		"de": "Der Mobilfunk wird zum Vernetzen von Mobilfunkgeräte (Smartphones) genutzt und erfolgt über die Verbindung zu Basisstationen zwecks weiterer Verteilung. Die Verbindung zum Netzwerk-Betreiber erfolgt über das Subscriber Identity Module (SIM).",
+		"en": ""
+	},
+	"homepage": "https://www.3gpp.org/",
+	"tags": ["lte", "funk", "zelle", "drahtlos"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": false,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://www.3gpp.org/specifications-technologies"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.3gpp.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.etsi.org/technologies/mobile/"
+		}
+	]
+}

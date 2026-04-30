@@ -1,0 +1,37 @@
+{
+	"id": "ldap",
+	"name": "LDAP",
+	"layer": "infrastructure",
+	"itemKind": "protocol",
+	"description": {
+		"de": "Das \"Lightweight Directory Access Protocol\" ist ein offener Standard zum Abruf von Informationen über Identitäten und Organisationsstrukturen (z.B. Gruppen) mit Optionen zur Authentifikation. LDAP wird flankiert von RfCs zur Standardisierung der Datenformate.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"homepage": "https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol",
+	"license": "RFC",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc4511"
+		},
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc4511"
+		}
+	]
+}

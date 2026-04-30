@@ -1,0 +1,36 @@
+{
+	"id": "ceph",
+	"name": "Ceph",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "Ceph ist eine quelloffene (Open Source), verteilte und softwaredefinierte Speicherplattform (SDS), die speziell für die hochverfügbare und massiv skalierbare Verwaltung von Daten in Cloud-Infrastrukturen sowie modernen Rechenzentren entwickelt wurde. Sie bietet Unternehmen eine vereinheitlichte Architektur für Object-, Block- und File-Storage auf Basis von Standard-Hardware und ist für den Einsatz in geschäftskritischen Umgebungen optimiert, in denen maximale Ausfallsicherheit, Transparenz und nahtloses Wachstum gefragt sind.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://ceph.io/",
+	"license": "LGPL-2.1-or-later",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://ceph.io/en/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/ceph/ceph"
+		}
+	]
+}

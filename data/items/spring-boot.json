@@ -1,0 +1,40 @@
+{
+	"id": "spring-boot",
+	"name": "Spring Boot",
+	"layer": "building-blocks",
+	"sublayer": "frameworks",
+	"groupKey": "web-framework",
+	"itemKind": "framework",
+	"description": {
+		"de": "Spring Boot ist ein Java-Framework für die schnelle Entwicklung produktionsreifer Microservices. Es ist De-facto-Standard für Backend-Services in zahlreichen GovTech-Stacks – darunter FIT-Connect, BundID, GovStack, India Stack (UPI) und MOSIP.",
+		"en": "Spring Boot is a Java framework for rapidly building production-ready microservices. It is the de-facto standard for backend services in many GovTech stacks, including FIT-Connect, BundID, GovStack, India Stack (UPI) and MOSIP."
+	},
+	"homepage": "https://spring.io/projects/spring-boot",
+	"license": "Apache-2.0",
+	"tags": ["java", "framework", "microservices"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://spring.io/projects/spring-boot"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/spring-projects/spring-boot"
+		}
+	]
+}

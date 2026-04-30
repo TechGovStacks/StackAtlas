@@ -1,0 +1,42 @@
+{
+	"id": "open-authorization-oauth",
+	"name": "Open Authorization (OAuth)",
+	"layer": "building-blocks",
+	"sublayer": "sicherheit",
+	"itemKind": "protocol",
+	"description": {
+		"de": "Ermöglicht sichere Autorisierung und delegierten Zugriff auf Ressourcen ohne Preisgabe von Benutzeranmeldedaten. Fungiert als standardisiertes Framework für die Berechtigung von Drittanbieter-Anwendungen zum Zugriff auf geschützte APIs und Benutzerdaten.",
+		"en": ""
+	},
+	"homepage": "https://oauth.net/2/",
+	"tags": ["protokoll", "zugriff", "autorisierung"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://datatracker.ietf.org/doc/html/rfc6750"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://oauth.net/2/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc6749"
+		}
+	]
+}

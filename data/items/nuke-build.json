@@ -1,0 +1,36 @@
+{
+	"id": "nuke-build",
+	"name": "NUKE.build",
+	"layer": "sovereign-standards",
+	"itemKind": "tool",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Build Automatisierung für .NET' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
+	},
+	"homepage": "https://nuke.build/",
+	"license": "MIT",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://nuke.build/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/nuke-build/nuke"
+		}
+	]
+}

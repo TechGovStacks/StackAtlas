@@ -1,0 +1,35 @@
+{
+	"id": "oauth-2-0",
+	"name": "OAuth 2.0",
+	"layer": "sovereign-standards",
+	"itemKind": "protocol",
+	"description": {
+		"de": "OAuth 2.0 ist ein Standard zur Autorisierung zwischen Anwendungen.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc6749"
+		},
+		{
+			"type": "url",
+			"url": "https://oauth.net/2/"
+		}
+	]
+}

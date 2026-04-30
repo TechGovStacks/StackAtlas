@@ -1,0 +1,36 @@
+{
+	"id": "openvox",
+	"name": "openVOX",
+	"layer": "building-blocks",
+	"itemKind": "tool",
+	"description": {
+		"de": "OpenSource IaS-Lösung, als community-Fork von Puppet"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
+	},
+	"homepage": "https://voxpupuli.org/openvox/",
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://voxpupuli.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/voxpupuli/vox-pupuli-tasks"
+		}
+	]
+}

@@ -1,0 +1,39 @@
+{
+	"id": "gov-uk-notify",
+	"name": "GOV.UK Notify",
+	"layer": "applications",
+	"sublayer": "integration",
+	"itemKind": "service",
+	"description": {
+		"de": "GOV.UK Notify ist ein hochskalierbarer Benachrichtigungsdienst des britischen Government Digital Service. Er versendet E-Mails, SMS und Briefe für Behördenleistungen und reduziert telefonische Statusabfragen erheblich.",
+		"en": "GOV.UK Notify is a highly scalable notification service from the UK's Government Digital Service. It sends emails, SMS messages and letters for public services and significantly reduces phone-based status enquiries."
+	},
+	"homepage": "https://www.notifications.service.gov.uk/",
+	"license": "MIT",
+	"tags": ["egovernment", "notification", "uk"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.notifications.service.gov.uk/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/alphagov/notifications-api"
+		}
+	]
+}

@@ -1,0 +1,153 @@
+{
+	"id": "singapore",
+	"name": {
+		"de": "Singapur Stack (SGTS)",
+		"en": "Singapore Stack (SGTS)"
+	},
+	"description": {
+		"de": "Singapore Government Tech Stack mit Fokus auf Wiederverwendbarkeit, Cybersecurity und Whole-of-Government Entwicklungsplattformen.",
+		"en": "Singapore Government Tech Stack focused on reusability, cybersecurity and whole-of-government development platforms."
+	},
+	"country": "SG",
+	"issuer": "GovTech Singapore",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-13",
+	"items": [
+		{
+			"itemId": "singpass",
+			"status": "recommended",
+			"role": "maintainer",
+			"rationale": {
+				"de": "Nationaler Login-Dienst der NDI-Plattform.",
+				"en": "National login service of the NDI platform."
+			}
+		},
+		{
+			"itemId": "myinfo",
+			"status": "recommended",
+			"role": "maintainer",
+			"rationale": {
+				"de": "Datenfreigabe-Service mit Nutzerzustimmung im SGTS.",
+				"en": "Consent-based data sharing service in SGTS."
+			}
+		},
+		{
+			"itemId": "java",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Backend-Sprache vieler SGTS-Komponenten.",
+				"en": "Backend language of many SGTS components."
+			}
+		},
+		{
+			"itemId": "spring-boot",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Standard-Framework für SGTS-Microservices.",
+				"en": "Standard framework for SGTS microservices."
+			}
+		},
+		{
+			"itemId": "react",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Frontend vieler regierungsweiter Anwendungen.",
+				"en": "Frontend of many whole-of-government applications."
+			}
+		},
+		{
+			"itemId": "node-js",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Leichtgewichtige APIs und Tooling im SGTS.",
+				"en": "Lightweight APIs and tooling in SGTS."
+			}
+		},
+		{
+			"itemId": "go",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Performance-kritische Services und API-Gateways.",
+				"en": "Performance-critical services and API gateways."
+			}
+		},
+		{
+			"itemId": "postgresql",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Bevorzugte relationale Datenbank im SGTS.",
+				"en": "Preferred relational database in SGTS."
+			}
+		},
+		{
+			"itemId": "kubernetes",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Container Stack der SGTS Base Layer.",
+				"en": "Container Stack of the SGTS base layer."
+			}
+		},
+		{
+			"itemId": "kong",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "API-Gateway für SGTS-Dienste.",
+				"en": "API gateway for SGTS services."
+			}
+		},
+		{
+			"itemId": "openid",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Standardprotokoll für Singpass-Logins.",
+				"en": "Standard protocol for Singpass logins."
+			}
+		},
+		{
+			"itemId": "keycloak",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "IAM-Plattform in vielen SGTS-Deployments.",
+				"en": "IAM platform in many SGTS deployments."
+			}
+		},
+		{
+			"itemId": "prometheus",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Monitoring-Komponente in StackOps.",
+				"en": "Monitoring component in StackOps."
+			}
+		},
+		{
+			"itemId": "grafana",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Dashboards für SGTS Observability.",
+				"en": "Dashboards for SGTS observability."
+			}
+		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "Singapore Government Tech Stack",
+				"en": "Singapore Government Tech Stack",
+				"fr": "Singapore Government Tech Stack"
+			},
+			"url": "https://www.tech.gov.sg/products-and-services/sgts"
+		}
+	]
+}

@@ -1,0 +1,40 @@
+{
+	"id": "govstack-information-mediator",
+	"name": "GovStack Information Mediator",
+	"layer": "building-blocks",
+	"sublayer": "integration",
+	"groupKey": "gov-integration-platform",
+	"itemKind": "protocol",
+	"description": {
+		"de": "Der Information Mediator ist der zentrale Building Block der GovStack-Initiative für sicheren, asynchronen Datenaustausch zwischen Behörden. Er kombiniert einen X-Road Security Server mit ActiveMQ Artemis und stellt API-Gateway-, Routing- und Event-Mesh-Funktionen bereit.",
+		"en": "The Information Mediator is the GovStack initiative's central building block for secure asynchronous data exchange between public authorities. It combines an X-Road Security Server with ActiveMQ Artemis and provides API gateway, routing and event-mesh capabilities."
+	},
+	"homepage": "https://govstack.gitbook.io/bb-information-mediator",
+	"tags": ["egovernment", "integration", "govstack", "interoperability"],
+	"oss": true,
+	"maturity": "incubation",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"license": "BSD-3-Clause",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://govstack.global/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/GovStackWorkingGroup"
+		}
+	]
+}

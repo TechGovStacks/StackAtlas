@@ -1,0 +1,44 @@
+{
+	"id": "appsmith",
+	"name": "Appsmith",
+	"layer": "platform",
+	"sublayer": "lowcode",
+	"groupKey": "low-code-app-builder",
+	"itemKind": "platform",
+	"description": {
+		"de": "Appsmith will die Erstellung individueller Admin-Panels und interner Apps mit vorgefertigten Widgets und Datenquellenanbindung beschleunigen.",
+		"en": ""
+	},
+	"homepage": "https://www.appsmith.com/",
+	"tags": ["rest-graphql", "open-source", "drag-drop", "javascript"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://github.com/appsmithorg/appsmith"
+	},
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.appsmith.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/appsmithorg/appsmith"
+		}
+	]
+}

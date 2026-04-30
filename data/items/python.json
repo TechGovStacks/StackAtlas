@@ -1,0 +1,43 @@
+{
+	"id": "python",
+	"name": "Python",
+	"layer": "building-blocks",
+	"sublayer": "sprachen",
+	"itemKind": "language",
+	"description": {
+		"de": "Python ist eine Programmiersprache zur Webentwicklung und für Prototyping.",
+		"en": ""
+	},
+	"homepage": "https://www.python.org/",
+	"tags": ["programmierung", "sprache"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://docs.python.org/3/"
+	},
+	"license": "PSF",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.python.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/python/cpython"
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"id": "xslt-xsl-transformations",
+	"name": "XSLT / XSL Transformations",
+	"layer": "building-blocks",
+	"itemKind": "tool",
+	"description": {
+		"de": "Mächtige Sprache zur Transformation von XML-Dokumenten in Bezug auf die XML-Struktur oder gänzlich andere Formate (PDF / HTML / TEXT / JSON / ..)."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/xslt-30/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/xslt20/"
+		}
+	]
+}

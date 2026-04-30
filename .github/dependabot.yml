@@ -1,0 +1,27 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      github-actions:
+        patterns:
+          - '*'
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      public-ui:
+        patterns:
+          - '@public-ui/*'
+      dependencies:
+        dependency-type: production
+        exclude-patterns:
+          - '@public-ui/*'
+      dev-dependencies:
+        dependency-type: development
+        exclude-patterns:
+          - '@public-ui/*'

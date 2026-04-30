@@ -1,0 +1,34 @@
+{
+	"id": "xkatalog",
+	"name": "XKatalog",
+	"layer": "infrastructure",
+	"itemKind": "format",
+	"description": {
+		"de": "XKatalog verbindet den unstrukturierten Übergang zwischen Vergabe- und Vertragsausführungsphase.\n\nIn der Standardfamilie XStandards Einkauf sind alle maßgeblichen Standards für die Beschaffung in Deutschland zusammengefasst. Alle Standards stellen nationale Konkretisierungen europäischer und internationaler Normen und Standards dar. Grundlage sind in der Regel europäische Normen (CEN basierend auf Normungsaufträgen der Europäischen Kommission) oder internationale Standards (Peppol Business Interoperability Specifications). XStandards Einkauf sind dabei konsequent auf Digitalisierung und Automatisierung über den gesamten Beschaffungsprozess ausgerichtet. Dies wird durch Fokus auf maschinenlesbare Formate (reines XML), Bündelung der Expertise in Bund-Länder-Kommunen-Arbeitsgruppen und Bereitstellung von technischen Komponenten zur Implementierung. Alle Standards werden transparent und open source entwickelt, die Bereitstellung aller Standards und Komponenten erfolgt kostenfrei und frei zugänglich. Die XStandards Einkauf gewährleisten zentrale normative Anforderungen in aktuellen Beschaffungsvorhaben von Bund und Ländern (Marktplatz Deutschland, Marktplatz Deutschland Digital, Lizenzmanagement Bund, Konsolidierung der eRechnungsplattform)."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.xoev.de/xkatalog"
+		},
+		{
+			"type": "url",
+			"url": "https://www.xoev.de/"
+		}
+	]
+}

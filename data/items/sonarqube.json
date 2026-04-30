@@ -1,0 +1,34 @@
+{
+	"id": "sonarqube",
+	"name": "SonarQube",
+	"layer": "sovereign-standards",
+	"itemKind": "tool",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Statische Codeanalyse' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.sonarsource.com/products/sonarqube/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/SonarSource/sonarqube"
+		}
+	]
+}

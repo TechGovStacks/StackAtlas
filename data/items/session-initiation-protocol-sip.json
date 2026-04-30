@@ -1,0 +1,42 @@
+{
+	"id": "session-initiation-protocol-sip",
+	"name": "Session Initiation Protocol (SIP)",
+	"layer": "infrastructure",
+	"sublayer": "transport",
+	"itemKind": "protocol",
+	"description": {
+		"de": "SIP ist ein Netzprotokoll zur Etablierung und Steuerung von Kommunikationssitzungen mit mehreren Teilnehmenden. SIP ist Grundlage für IP-Telefonie (Voice over IP).",
+		"en": ""
+	},
+	"homepage": "https://datatracker.ietf.org/wg/sipcore/about/",
+	"tags": ["telefonie", "kommunikation"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://github.com/ietf-wg-sipcore"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc3261"
+		},
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc3261"
+		}
+	]
+}

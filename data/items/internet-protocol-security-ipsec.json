@@ -1,0 +1,42 @@
+{
+	"id": "internet-protocol-security-ipsec",
+	"name": "Internet Protocol Security (IPSec)",
+	"layer": "infrastructure",
+	"sublayer": "verteilung",
+	"itemKind": "protocol",
+	"description": {
+		"de": "IPSec ist eine Protokoll-Suite, die Sicherheitsdienste für IP-basierte Netzwerkkommunikation bereitstellt. Es bietet Authentifizierung, Integrität und Vertraulichkeit auf der Netzwerkebene (Layer 3) des OSI-Modells. IPSec wird hauptsächlich für VPN-Verbindungen, sichere Site-to-Site-Kommunikation und End-to-End-Verschlüsselung verwendet.",
+		"en": ""
+	},
+	"homepage": "https://datatracker.ietf.org/wg/ipsec/about/",
+	"tags": ["ikev", "netzwerk", "sicherheit"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://tools.ietf.org/html/rfc4835"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc4301"
+		},
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc4301"
+		}
+	]
+}

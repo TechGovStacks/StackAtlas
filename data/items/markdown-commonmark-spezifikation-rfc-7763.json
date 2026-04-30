@@ -1,0 +1,37 @@
+{
+	"id": "markdown-commonmark-spezifikation-rfc-7763",
+	"name": "Markdown (CommonMark-Spezifikation / RFC 7763)",
+	"layer": "building-blocks",
+	"itemKind": "format",
+	"description": {
+		"de": "Leichtgewichtiges, menschenlesbares Textformat für strukturierte Dokumentation. Referenzspezifikation: CommonMark (commonmark.org), registriert als IETF-Medientyp text/markdown (RFC 7763).",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
+	},
+	"homepage": "https://spec.commonmark.org/",
+	"license": "CC-BY-SA-4.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://commonmark.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://spec.commonmark.org/"
+		}
+	]
+}

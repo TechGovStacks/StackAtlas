@@ -1,0 +1,36 @@
+{
+	"id": "grafana-mimir",
+	"name": "Grafana Mimir",
+	"layer": "platform",
+	"groupKey": "metrics-backend",
+	"itemKind": "platform",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Skalierbares Metrics Backend' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://grafana.com/oss/mimir/",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://grafana.com/oss/mimir/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/grafana/mimir"
+		}
+	]
+}

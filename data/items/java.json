@@ -1,0 +1,38 @@
+{
+	"id": "java",
+	"name": "Java",
+	"layer": "building-blocks",
+	"sublayer": "sprachen",
+	"itemKind": "language",
+	"description": {
+		"de": "Java dient der plattformunabhängige Softwareentwicklung . Der Quellcode wird kompiliert und als Ergebnis im Java Runtime Environment ausgeführt.",
+		"en": ""
+	},
+	"homepage": "https://www.oracle.com/java/",
+	"tags": ["programmierung", "plattformunabhaengig", "sprache"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.java.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/openjdk/jdk"
+		}
+	]
+}

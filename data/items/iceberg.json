@@ -1,0 +1,35 @@
+{
+	"id": "iceberg",
+	"name": "Iceberg",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "Iceberg ist ein offenes Tabellenformat für große analytische Datenbestände auf Object Storage (S3/COS/MinIO). Es bietet ACID-Transaktionen, Schema Evolution und Time-Travel über Engine-Grenzen hinweg (Spark, Trino, Flink, u.a.).",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://iceberg.apache.org/",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://iceberg.apache.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/apache/iceberg"
+		}
+	]
+}

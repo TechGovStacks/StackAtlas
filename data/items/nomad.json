@@ -1,0 +1,43 @@
+{
+	"id": "nomad",
+	"name": "Nomad",
+	"layer": "platform",
+	"sublayer": "integration",
+	"groupKey": "container-orchestration",
+	"itemKind": "platform",
+	"description": {
+		"de": "Nomad ist ein Open-Source-System zur Orchestrierung von Anwendungen und deren Workloads auf hybriden Umgebungen. Es ist eine flexible Lösung, die für ihre Einfachheit und Benutzerfreundlichkeit bekannt ist, da sie eine einzelne Binärdatei zur Installation und Konfiguration bietet.",
+		"en": ""
+	},
+	"homepage": "https://developer.hashicorp.com/nomad",
+	"tags": ["orchestrierung", "container"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://developer.hashicorp.com/nomad/docs"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.nomadproject.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/hashicorp/nomad"
+		}
+	]
+}

@@ -1,0 +1,39 @@
+{
+	"id": "r",
+	"name": "R",
+	"layer": "building-blocks",
+	"sublayer": "sprachen",
+	"itemKind": "language",
+	"description": {
+		"de": "R ist eine Programmiersprache Analyse, Bereinigung, Modellierung und Visualisierung von Daten.",
+		"en": ""
+	},
+	"homepage": "https://www.r-project.org/",
+	"tags": ["programmierung", "sprache"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"license": "GPL-2.0-or-later",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.r-project.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/wch/r-source"
+		}
+	]
+}

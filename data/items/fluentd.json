@@ -1,0 +1,35 @@
+{
+	"id": "fluentd",
+	"name": "Fluentd",
+	"layer": "sovereign-standards",
+	"itemKind": "tool",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Log Aggregation und Weiterleitung' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": "An open-source data collector and log aggregation tool with Apache License, enabling unified log forwarding across distributed systems with plugin architecture."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.fluentd.org/",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.fluentd.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/fluent/fluentd"
+		}
+	]
+}

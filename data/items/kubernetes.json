@@ -1,0 +1,68 @@
+{
+	"id": "kubernetes",
+	"name": "Kubernetes",
+	"layer": "platform",
+	"sublayer": "integration",
+	"groupKey": "container-orchestration",
+	"itemKind": "platform",
+	"description": {
+		"de": "Kubernetes ist eine Open-Source-Plattform zur Automatisierung der Bereitstellung, Skalierung und Verwaltung containerisierter Anwendungen. Das System orchestriert Container-Workloads über Cluster von Maschinen hinweg und bietet dabei umfangreiche APIs für Netzwerk-, Speicher- und Runtime-Integrationen. Kubernetes ist zum de-facto Standard für Container-Orchestrierung geworden und bildet das Fundament moderner Cloud-Native-Architekturen.",
+		"en": ""
+	},
+	"homepage": "https://kubernetes.io",
+	"tags": ["orchestrierung", "container"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://kubernetes.io/docs/home/"
+	},
+	"dependencies": [
+		{
+			"targetItemId": "hypertext-transfer-protocol-http",
+			"type": "protocol",
+			"scope": "required",
+			"reason": {
+				"de": "API-Aufrufe und Integrationen erfolgen über HTTP(S).",
+				"en": "API calls and integrations are performed over HTTP(S)."
+			}
+		},
+		{
+			"targetItemId": "transport-layer-security-tls",
+			"type": "protocol",
+			"scope": "required",
+			"reason": {
+				"de": "Die Kubernetes-API und Control-Plane-Kommunikation nutzt TLS.",
+				"en": "Kubernetes API and control-plane communication rely on TLS."
+			}
+		}
+	],
+	"license": "Apache-2.0",
+	"popularityMetrics": {
+		"updatedAt": "2026-04-20",
+		"githubStars": 113000
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://kubernetes.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/kubernetes/kubernetes"
+		}
+	]
+}

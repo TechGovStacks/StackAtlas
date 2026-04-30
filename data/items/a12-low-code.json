@@ -1,0 +1,36 @@
+{
+	"id": "a12-low-code",
+	"name": "A12 Low Code",
+	"layer": "building-blocks",
+	"itemKind": "tool",
+	"description": {
+		"de": "A12 ist ein offenes und ausgereiftes Low Code Framework, welches die modellgetriebene Entwicklung von Portalen, Fach- und Antragsverfahren inkl. KI-Integration nachhaltig unterstützt. A12 ist ab Mai 2026 Open Source und schafft somit vollständige Transparenz, Auditierbarkeit und kann souverän genutzt werden.",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.mgm-tp.com/a12.html",
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.mgm-tp.com/a12.html"
+		},
+		{
+			"type": "url",
+			"url": "https://de.wikipedia.org/wiki/Low-Code-Entwicklung"
+		}
+	]
+}

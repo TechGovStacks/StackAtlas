@@ -1,0 +1,34 @@
+{
+	"id": "xjustiz",
+	"name": "XJustiz",
+	"layer": "building-blocks",
+	"itemKind": "format",
+	"description": {
+		"de": "Datenaustauschformat für den elektronischen Rechtsverkehr zwischen Gerichten und Verfahrensbeteiligten"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.xjustiz.de/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.justiz.de/xjustiz/"
+		}
+	]
+}

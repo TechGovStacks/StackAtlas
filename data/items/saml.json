@@ -1,0 +1,36 @@
+{
+	"id": "saml",
+	"name": "SAML",
+	"layer": "building-blocks",
+	"itemKind": "protocol",
+	"description": {
+		"de": "SAML (Security Assertion Markup Language) ist ein etablierter Standard für den föderierten Identitätsaustausch und Single Sign-On (SSO). Er ermöglicht die sichere Übertragung von Authentifizierungs- und Autorisierungsinformationen zwischen Identitätsanbietern (IdP) und Anwendungen (Service Provider)."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"homepage": "https://en.wikipedia.org/wiki/SAML",
+	"license": "OASIS",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=security"
+		},
+		{
+			"type": "url",
+			"url": "https://wiki.oasis-open.org/security/FrontPage"
+		}
+	]
+}

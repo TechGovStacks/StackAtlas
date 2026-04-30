@@ -1,0 +1,36 @@
+{
+	"id": "osci",
+	"name": "OSCI",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "OSCI ist ein Standard des IT-Planungsrates. Laut Jahresbericht 2024/2025 wurden über OSCI mehr als eine Milliarde Nachrichten übertragen. Aktuell wird eine Studie durchgeführt, in wie weit dieser Standards in Zukunft noch Standard des IT-PLR bleiben soll. Selbst wenn er \"morgen\" diesen Status verliert, sind in den aktuellen Entwürfen des NOOTS nicht alle Anwendungsfälle abgedeckt, die OSCI aktuell abdeckt (z.B. Übertragung sehr großer Nachrichten)."
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"homepage": "https://www.osci.de/",
+	"license": "Government",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.osci.de/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.xoev.de/osci"
+		}
+	]
+}

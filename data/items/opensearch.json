@@ -1,0 +1,36 @@
+{
+	"id": "opensearch",
+	"name": "OpenSearch",
+	"layer": "building-blocks",
+	"itemKind": "tool",
+	"description": {
+		"de": "OpenSearch ist eine offene Such-, Analyse- und Vektordaten-Plattform. Sie eignet sich für Indizierung, Log-Analyse, Volltextsuche sowie Retrieval-Augmented-Generation-Szenarien mit Vektor- und Fachdaten."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"homepage": "https://opensearch.org/",
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://opensearch.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/opensearch-project/OpenSearch"
+		}
+	]
+}

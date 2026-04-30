@@ -1,0 +1,32 @@
+{
+	"id": "com-despina",
+	"name": "COM Despina",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "COM Despina ist ein Baustein für fachunabhängigen Datenaustausch gemäß ITPLR-Standards. COM Despina kann sowohl zentral als auch dezentral betrieben werden und erleichtert den Fachverfahren die Verarbeitung von Transportnachrichten. Dieser Baustein ist ein Produkt des ITPLR und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung. Diese Lösung ist in vielen Ländern schon als Basisdienst etabliert.",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": false,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.governikus.de/en/produkte/com-despina/",
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/en/produkte/com-despina/"
+		}
+	]
+}

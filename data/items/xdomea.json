@@ -1,0 +1,34 @@
+{
+	"id": "xdomea",
+	"name": "xdomea",
+	"layer": "infrastructure",
+	"itemKind": "format",
+	"description": {
+		"de": "xdomea ist der vom IT-Planungsrat beschlossene verbindliche Standard für den elektronischen Austausch von Schriftgutobjekten (Akten, Vorgänge und Dokumente) und ihren Metadaten im Kontext der Übermittlung, der Abgabe sowie der Aussonderung von Schriftgutobjekten. Weitere Anwendungsbereiche beziehen sich auf die Kommunikation zwischen Fachverfahren und DMS/VBS sowie die Zwischenarchivierung. Details können dem entsprechenden Beschluss des IT-Planungsrates entnommen werden, siehe https://www.it-planungsrat.de/beschluss/beschluss-2017-39. Die Versionen von xdomea sind im XRepository veröffentlicht."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.xdomea.de/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.kbst.bund.de/kbst/themen/e-government/xdomea"
+		}
+	]
+}

@@ -1,0 +1,42 @@
+{
+	"id": "messaging-layer-security-mls",
+	"name": "Messaging Layer Security (MLS)",
+	"layer": "infrastructure",
+	"sublayer": "transport",
+	"itemKind": "protocol",
+	"description": {
+		"de": "MLS dient der Ende-zu-Ende-Verschlüsselung von Nachrichten in kleinen und großen Gruppen.",
+		"en": ""
+	},
+	"homepage": "https://messaginglayersecurity.rocks/",
+	"tags": ["sicherheit", "kurznachricht", "datenuebertragung"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://github.com/mlswg/mls-protocol"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://messaginglayersecurity.rocks/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc9420"
+		}
+	]
+}

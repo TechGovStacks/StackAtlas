@@ -1,0 +1,44 @@
+{
+	"id": "ai-sdk-by-vercel",
+	"name": "AI SDK by Vercel",
+	"layer": "building-blocks",
+	"itemKind": "tool",
+	"description": {
+		"de": "Das AI SDK von Vercel ist eine TypeScript-Bibliothek, die eine einheitliche Schnittstelle zu verschiedenen Large-Language-Model-Anbietern bereitstellt. Es unterstützt Streaming, Structured Outputs und Tool Use und vereinfacht die Integration von KI-Funktionalitäten in Webanwendungen erheblich.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://ai-sdk.dev/",
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/vercel/ai"
+		},
+		{
+			"type": "url",
+			"url": "https://raw.githubusercontent.com/vercel/ai/main/packages/ai/package.json"
+		},
+		{
+			"type": "url",
+			"url": "https://raw.githubusercontent.com/vercel/ai/main/packages/ai/src/telemetry/telemetry-options.ts"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Vercel"
+		}
+	]
+}

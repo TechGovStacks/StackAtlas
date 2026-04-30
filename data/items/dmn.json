@@ -1,0 +1,36 @@
+{
+	"id": "dmn",
+	"name": "DMN",
+	"layer": "sovereign-standards",
+	"itemKind": "standard",
+	"description": {
+		"de": "DMN (Decision Model and Notation) ist ein Standard zur formalen Beschreibung und Ausführung von Entscheidungslogik. Regeln, Entscheidungstabellen und Fachlogik lassen sich damit transparent dokumentieren und wiederverwenden.",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.omg.org/dmn/",
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.omg.org/dmn/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Decision_Model_and_Notation"
+		}
+	]
+}

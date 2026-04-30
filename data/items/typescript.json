@@ -1,0 +1,55 @@
+{
+	"id": "typescript",
+	"name": "TypeScript",
+	"layer": "building-blocks",
+	"sublayer": "sprachen",
+	"groupKey": "web-scripting-language",
+	"itemKind": "language",
+	"description": {
+		"de": "TypeScript ist eine Programmiersprache die JavaScript um statische Typisierung erweitert.",
+		"en": ""
+	},
+	"homepage": "https://www.typescriptlang.org/",
+	"tags": ["programmierung", "sprache"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://www.typescriptlang.org/docs/handbook/intro.html"
+	},
+	"dependencies": [
+		{
+			"targetItemId": "javascript-ecma-script",
+			"type": "compiles-to",
+			"scope": "required",
+			"reason": {
+				"de": "TypeScript wird zu JavaScript transpiliert.",
+				"en": "TypeScript transpiles to JavaScript."
+			}
+		}
+	],
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.typescriptlang.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/microsoft/TypeScript"
+		}
+	]
+}

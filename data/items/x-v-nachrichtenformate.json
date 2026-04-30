@@ -1,0 +1,34 @@
+{
+	"id": "x-v-nachrichtenformate",
+	"name": "XÖV-Nachrichtenformate",
+	"layer": "infrastructure",
+	"itemKind": "format",
+	"description": {
+		"de": "XML-basierte Nachrichtenformate für den OSCI-Datenaustausch https://www.itzbund.de/DE/itloesungen/standardloesungen/xoev/xoev.html"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://consumerdatastandardsaustralia.github.io/standards/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/ConsumerDataStandardsAustralia/standards"
+		}
+	]
+}

@@ -1,0 +1,38 @@
+{
+	"id": "ebms-as4",
+	"name": "ebMS/AS4",
+	"layer": "applications",
+	"sublayer": "integration",
+	"groupKey": "b2b-exchange-standard",
+	"itemKind": "service",
+	"description": {
+		"de": "AS4 (Applicability Statement 4) ist ein offener Standard für den sicheren und nutzdatenunabhängigen Austausch von Business-to-Business-Dokumenten mithilfe von Webservices. Es wird in der EU-eDelivery-Infrastruktur eingesetzt.",
+		"en": "AS4 (Applicability Statement 4) is an open standard for secure, payload-independent exchange of business-to-business documents using web services. It is used in EU eDelivery infrastructure."
+	},
+	"oss": true,
+	"tags": ["b2b", "standard", "exchange", "webservice"],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.oasis-open.org/committees/ebxml-msg/",
+	"license": "OASIS",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.oasis-open.org/committees/ebxml-msg/"
+		},
+		{
+			"type": "url",
+			"url": "https://ec.europa.eu/cefdigital/wiki/display/EDELIVERY/AS4"
+		}
+	]
+}

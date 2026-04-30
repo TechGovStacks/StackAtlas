@@ -1,0 +1,48 @@
+{
+	"id": "ansible",
+	"name": "Ansible",
+	"layer": "platform",
+	"sublayer": "inbetriebnahme",
+	"groupKey": "infrastructure-as-code",
+	"itemKind": "tool",
+	"description": {
+		"de": "Ansible ist ein Open-Source-Werkzeug für Konfigurationsmanagement, Provisioning und Anwendungs-Deployment. Es nutzt deklarative YAML-Playbooks und benötigt keine Agenten auf den Zielsystemen.",
+		"en": "Ansible is an open-source tool for configuration management, provisioning and application deployment. It uses declarative YAML playbooks and requires no agents on the target systems."
+	},
+	"homepage": "https://www.ansible.com/",
+	"license": "GPL-3.0-or-later",
+	"tags": ["automation", "configuration", "iac"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/ansible/ansible"
+		},
+		{
+			"type": "url",
+			"url": "https://raw.githubusercontent.com/ansible/ansible/devel/COPYING"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.ansible.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Ansible_(software)"
+		}
+	]
+}

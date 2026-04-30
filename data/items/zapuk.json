@@ -1,0 +1,34 @@
+{
+	"id": "zapuk",
+	"name": "ZAPUK",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "Konsolidierungsvorhaben für Postfächer der FITKO"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.xoev.de/zapuk"
+		},
+		{
+			"type": "url",
+			"url": "https://www.xoev.de/"
+		}
+	]
+}

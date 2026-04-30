@@ -1,0 +1,42 @@
+{
+	"id": "glasfaser",
+	"name": "Glasfaser",
+	"layer": "infrastructure",
+	"sublayer": "anschluss",
+	"itemKind": "platform",
+	"description": {
+		"de": "Mit Glasfaser können Daten durch dünne Fasern in Lichtgeschwindigkeit übertragen werden. Im Kern werden Glasfaser für die Backbones genutzt aber zunehmend bis zum Endanschluss ausgebaut.",
+		"en": ""
+	},
+	"homepage": "https://www.itu.int/",
+	"tags": ["gigabit", "kabel"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://www.itu.int/itu-t/recommendations/index.aspx?ser=G"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.itu.int/rec/T-REC-G.652/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.bundesnetzagentur.de/"
+		}
+	]
+}

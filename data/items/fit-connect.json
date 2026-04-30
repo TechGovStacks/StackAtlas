@@ -1,0 +1,39 @@
+{
+	"id": "fit-connect",
+	"name": "FIT-Connect",
+	"layer": "building-blocks",
+	"sublayer": "integration",
+	"groupKey": "gov-integration-platform",
+	"itemKind": "tool",
+	"description": {
+		"de": "FIT-Connect ist der digitale Postbote des deutschen OZG-Ökosystems. Über eine Submission-API werden Anträge sicher, maschinenlesbar und Ende-zu-Ende-verschlüsselt zwischen Online-Antragsdiensten und den Backend-Systemen der Fachbehörden zugestellt; ein Event-Log gewährleistet die lückenlose Nachverfolgung der Übermittlung.",
+		"en": "FIT-Connect is the digital postal service of Germany's OZG ecosystem. A Submission API delivers applications securely, machine-readably and end-to-end encrypted between online services and the back-office systems of public authorities; an event log provides full traceability."
+	},
+	"homepage": "https://docs.fitko.de/fit-connect/",
+	"tags": ["egovernment", "integration", "germany", "ozg"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://docs.fitko.de/fit-connect/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.fitko.de/fit-connect"
+		}
+	]
+}

@@ -1,0 +1,44 @@
+{
+	"id": "apex-oracle",
+	"name": "Apex Oracle",
+	"layer": "applications",
+	"itemKind": "language",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Low-Code Webanwendungen auf Oracle' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.oracle.com/apex/",
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://apex.oracle.com/en/platform/deployment/"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.oracle.com/en/database/oracle/apex/22.1/htmdb/importing-export-files.html"
+		},
+		{
+			"type": "url",
+			"url": "https://apex.oracle.com/en/platform/features/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Oracle_Application_Express"
+		}
+	]
+}

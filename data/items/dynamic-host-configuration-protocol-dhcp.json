@@ -1,0 +1,42 @@
+{
+	"id": "dynamic-host-configuration-protocol-dhcp",
+	"name": "Dynamic Host Configuration Protocol (DHCP)",
+	"layer": "infrastructure",
+	"sublayer": "verteilung",
+	"itemKind": "protocol",
+	"description": {
+		"de": "DHCP ermöglicht automatische Netzwerkkonfiguration durch dynamische Zuweisung von IP-Adressen und Netzwerkparametern an verbundene Geräte. Fungiert als zentraler Service für Plug-and-Play-Netzwerkkonnektivität und reduziert manuellen Administrationsaufwand in lokalen und Unternehmensnetzwerken.",
+		"en": ""
+	},
+	"homepage": "https://datatracker.ietf.org/wg/dhc/about/",
+	"tags": ["adresse", "netzwerk"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://datatracker.ietf.org/doc/html/rfc8415"
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/wg/dhc/about/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol"
+		}
+	]
+}

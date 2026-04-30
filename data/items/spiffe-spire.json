@@ -1,0 +1,34 @@
+{
+	"id": "spiffe-spire",
+	"name": "SPIFFE/SPIRE",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "SPIFFE ist ein offener Standard für workload-basierte Identitäten in verteilten Systemen. SPIRE ist die Referenzimplementierung, die automatisch kryptografische Identitätszertifikate (SVIDs) für Dienste ausstellt, verwaltet und rotiert."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://spiffe.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/spiffe/spire"
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"id": "osci-xta-soap",
+	"name": "OSCI | XTA | SOAP",
+	"layer": "infrastructure",
+	"itemKind": "protocol",
+	"description": {
+		"de": "Online Services Computer Interface – kurz OSCI – sind Protokollstandards für den sicheren elektronischen Nachrichtenaustausch über das Internet und andere Netze. Sie garantieren Integrität, Authentizität, Vertraulichkeit und Nachweisbarkeit der Daten und ermöglichen ihre medienbruchfreie, effiziente Verarbeitung."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"homepage": "https://www.xoev.de/osci-xta-3355",
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.xta.de/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.osci.de/xta"
+		}
+	]
+}

@@ -1,0 +1,43 @@
+{
+	"id": "javascript-ecma-script",
+	"name": "JavaScript (ECMA Script)",
+	"layer": "building-blocks",
+	"sublayer": "sprachen",
+	"groupKey": "web-scripting-language",
+	"itemKind": "language",
+	"description": {
+		"de": "JavaScript wird primär für die Entwicklung von dynamischen Webseiten verwendet.",
+		"en": ""
+	},
+	"homepage": "https://ecma-international.org/publications-and-standards/standards/ecma-262/",
+	"tags": ["programmierung", "sprache"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://www.iso.org/standard/73002.html"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://tc39.es/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.ecma-international.org/publications-and-standards/standards/ecma-262/"
+		}
+	]
+}

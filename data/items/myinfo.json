@@ -1,0 +1,39 @@
+{
+	"id": "myinfo",
+	"name": "Myinfo",
+	"layer": "applications",
+	"sublayer": "daten",
+	"groupKey": "digital-citizen-service",
+	"itemKind": "service",
+	"description": {
+		"de": "Myinfo ist ein Datenfreigabe-Dienst aus Singapurs SGTS-Stack. Bürger geben mit ihrer Zustimmung verifizierte Stammdaten an Drittdienste weiter und vermeiden so erneute Eingaben.",
+		"en": "Myinfo is a data-sharing service from Singapore's SGTS stack. With user consent, citizens share verified personal data with third-party services and avoid re-entering it."
+	},
+	"homepage": "https://www.singpass.gov.sg/myinfo/",
+	"tags": ["egovernment", "data-sharing", "singapore"],
+	"oss": false,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.singpass.gov.sg/myinfo/intro"
+		},
+		{
+			"type": "url",
+			"url": "https://api.singpass.gov.sg/"
+		}
+	]
+}

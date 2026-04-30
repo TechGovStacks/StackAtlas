@@ -1,0 +1,44 @@
+{
+	"id": "capacitor",
+	"name": "Capacitor",
+	"layer": "building-blocks",
+	"sublayer": "frameworks",
+	"groupKey": "cross-platform-ui-framework",
+	"itemKind": "tool",
+	"description": {
+		"de": "Capacitor ist ein Open-Source-Runtime-Framework, mit dem Web-Apps als native iOS- und Android-Apps mit Zugriff auf native Gerätefunktionen bereitgestellt werden können.",
+		"en": ""
+	},
+	"homepage": "https://capacitorjs.com/",
+	"tags": ["mobile", "cross-platform", "user-interface"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2026-04-24",
+		"url": "https://capacitorjs.com/docs"
+	},
+	"license": "MIT",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://capacitorjs.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/ionic-team/capacitor"
+		}
+	]
+}

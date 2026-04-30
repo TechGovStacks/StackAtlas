@@ -1,0 +1,36 @@
+{
+	"id": "open-virtualization-format-ovf-open-virtual-appliance-ova",
+	"name": "Open Virtualization Format (OVF) / Open Virtual Appliance (OVA)",
+	"layer": "building-blocks",
+	"itemKind": "format",
+	"description": {
+		"de": "Industriestandard für virtuelle Maschinen und Appliances"
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"homepage": "https://www.dmtf.org/standards/ovf",
+	"license": "DMTF",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.dmtf.org/standards/ovf"
+		},
+		{
+			"type": "url",
+			"url": "https://www.dmtf.org/sites/default/files/standards/documents/DSP0243_2.1.1.pdf"
+		}
+	]
+}

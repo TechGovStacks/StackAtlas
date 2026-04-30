@@ -1,0 +1,42 @@
+{
+	"id": "open-shortest-path-first-ospf",
+	"name": "Open Shortest Path First (OSPF)",
+	"layer": "infrastructure",
+	"sublayer": "verteilung",
+	"itemKind": "platform",
+	"description": {
+		"de": "OSPF ist ein Link-State-Routing-Protokoll, das in IP-Netzwerken zur automatischen Berechnung der optimalen Routen zwischen Netzwerkknoten verwendet wird. Es ermöglicht Routern, dynamisch die kürzesten Pfade durch ein Netzwerk zu finden und sich automatisch an Netzwerkänderungen anzupassen. OSPF arbeitet hierarchisch mit Areas und eignet sich besonders für große Unternehmensnetzwerke.",
+		"en": ""
+	},
+	"homepage": "https://datatracker.ietf.org/wg/ospf/about/",
+	"tags": ["netzwerk", "routing"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://datatracker.ietf.org/doc/html/rfc8362"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc2328"
+		},
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc2328"
+		}
+	]
+}

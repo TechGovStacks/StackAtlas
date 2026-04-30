@@ -1,0 +1,37 @@
+{
+	"id": "kitten",
+	"name": "Kitten",
+	"layer": "sovereign-standards",
+	"itemKind": "protocol",
+	"description": {
+		"de": "Kitten ist ein Open-Source-Projekt, das einen dezentralen, datensouveränen Technologie-Stack entwickelt. Es verfolgt das Ziel, eine Alternative zu zentralen Plattformen großer Tech-Konzerne zu schaffen. Der Fokus liegt auf Transparenz, Nutzerkontrolle und ethischer Gestaltung, wobei der Stack bewusst einfach und zugänglich gehalten wird, um auch Nicht-Expert:innen die Nutzung zu ermöglichen.\nKitten setzt auf offene Protokolle und dezentrale Architektur, um Abhängigkeiten von zentralen Servern zu vermeiden. Der Ansatz kombiniert technische Einfachheit mit starken Datenschutzprinzipien, die direkt an europäische Regularien wie die DSGVO anknüpfen.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
+	},
+	"homepage": "https://kittenlang.org/",
+	"license": "MIT",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://codeberg.org/kitten/app"
+		},
+		{
+			"type": "url",
+			"url": "https://kitten.sh/"
+		}
+	]
+}

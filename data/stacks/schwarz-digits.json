@@ -1,0 +1,111 @@
+{
+	"id": "schwarz-digits",
+	"name": {
+		"de": "Schwarz Digits",
+		"en": "Schwarz Digits"
+	},
+	"description": {
+		"de": "Technologie- und Cloud-Stack von Schwarz Digits (Schwarz Gruppe), dem Betreiber der STACKIT-Cloud-Plattform. Schwarz Digits hat mit dem European Sovereign Stack Standard (ES³) einen messbaren Rahmen fuer digitale Souveraenitaet veroeffentlicht und positioniert sich als europaeischer Cloud-Anbieter fuer Industrie, Mittelstand und regulierte Branchen.",
+		"en": "Technology and cloud stack of Schwarz Digits (Schwarz Group), operator of the STACKIT cloud platform. Schwarz Digits published the European Sovereign Stack Standard (ES³), a measurable framework for digital sovereignty, and positions itself as a European cloud provider for industry, SMEs, and regulated sectors."
+	},
+	"country": "DE",
+	"issuer": "Schwarz Digits GmbH & Co. KG",
+	"version": "1.0.0",
+	"publishedAt": "2026-04-20",
+	"items": [
+		{
+			"itemId": "es3-standard",
+			"status": "recommended",
+			"role": "maintainer",
+			"since": "2026-04-20",
+			"rationale": {
+				"de": "Schwarz Digits ist Herausgeber und Maintainer des ES³-Standards.",
+				"en": "Schwarz Digits is the author and maintainer of the ES³ standard."
+			}
+		},
+		{
+			"itemId": "kubernetes",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "STACKIT Kubernetes Engine als Kernbestandteil der Cloud-Plattform.",
+				"en": "STACKIT Kubernetes Engine as a core component of the cloud platform."
+			}
+		},
+		{
+			"itemId": "keycloak",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Open-Source-IAM fuer OIDC/OAuth2-konforme Zugriffssteuerung.",
+				"en": "Open-source IAM for OIDC/OAuth2-compliant access control."
+			}
+		},
+		{
+			"itemId": "postgresql",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Souveraene, quelloffene Datenbank fuer Kernanwendungen.",
+				"en": "Sovereign open-source database for core applications."
+			}
+		},
+		{
+			"itemId": "advanced-encryption-standard",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Verschluesselungsstandard fuer Daten im Ruhezustand, konforme Anforderung des ES³.",
+				"en": "Encryption standard for data at rest, compliant with ES³ requirements."
+			}
+		},
+		{
+			"itemId": "transport-layer-security-tls",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Mindeststandard fuer verschluesselte Transportkommunikation nach ES³.",
+				"en": "Minimum standard for encrypted transport communication per ES³."
+			}
+		},
+		{
+			"itemId": "openapi",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Offene API-Beschreibungen als Interoperabilitaetsgrundlage im STACKIT-Oekosystem.",
+				"en": "Open API descriptions as interoperability baseline in the STACKIT ecosystem."
+			}
+		}
+	],
+	"participants": [
+		{
+			"name": "Schwarz Digits GmbH & Co. KG",
+			"role": "maintainer",
+			"jurisdiction": "DE",
+			"url": "https://schwarz-digits.de"
+		},
+		{
+			"name": "BDO AG Wirtschaftspruefungsgesellschaft",
+			"role": "contributor",
+			"jurisdiction": "DE",
+			"url": "https://www.bdo.de"
+		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "Schwarz Digits – Digitale Souveraenitaet",
+				"en": "Schwarz Digits – Digital Sovereignty"
+			},
+			"url": "https://schwarz-digits.de/en/digitale-souveraenitaet"
+		},
+		{
+			"label": {
+				"de": "heise online – Schwarz Digits stellt Standard fuer digitale Souveraenitaet vor",
+				"en": "heise online – Schwarz Digits introduces standard for digital sovereignty"
+			},
+			"url": "https://www.heise.de/en/news/Schwarz-Digits-introduces-standard-for-digital-sovereignty-11264279.html"
+		}
+	]
+}

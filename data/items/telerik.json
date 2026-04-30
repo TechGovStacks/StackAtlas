@@ -1,0 +1,36 @@
+{
+	"id": "telerik",
+	"name": "Telerik",
+	"layer": "sovereign-standards",
+	"itemKind": "framework",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'UI Komponenten für .NET' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen."
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
+	},
+	"homepage": "https://www.telerik.com/",
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.telerik.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.progress.com/telerik"
+		}
+	]
+}

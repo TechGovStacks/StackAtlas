@@ -1,0 +1,44 @@
+{
+	"id": "traefik",
+	"name": "Traefik",
+	"layer": "platform",
+	"sublayer": "integration",
+	"groupKey": "k8s-ingress-controller",
+	"itemKind": "platform",
+	"description": {
+		"de": "Traefik ist ein moderner, Cloud-nativer Open-Source-Reverse-Proxy und Load Balancer. Er integriert sich dynamisch in bestehende Infrastrukturen wie Docker und Kubernetes, verwaltet eingehenden Traffic und leitet ihn an die richtigen Dienste weiter.",
+		"en": ""
+	},
+	"homepage": "https://traefik.io/traefik",
+	"tags": ["proxy", "load-balancer", "orchestrierung"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://github.com/traefik/traefik"
+	},
+	"license": "MIT",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://traefik.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/traefik/traefik"
+		}
+	]
+}

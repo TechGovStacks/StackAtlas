@@ -1,0 +1,42 @@
+{
+	"id": "axolotl",
+	"name": "Axolotl",
+	"layer": "platform",
+	"sublayer": "ki",
+	"itemKind": "platform",
+	"description": {
+		"de": "Axolotl ist ein Framework zum Feintuning von großen Sprachmodellen. Dafür können optimierte Workflows genutzt werden.",
+		"en": ""
+	},
+	"homepage": "https://axolotl.ai/",
+	"tags": ["verarbeitung", "training", "feintuning"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://docs.axolotl.ai/"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/axolotl-ai-cloud/axolotl"
+		},
+		{
+			"type": "url",
+			"url": "https://axolotl.ai/"
+		}
+	]
+}

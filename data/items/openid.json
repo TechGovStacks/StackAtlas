@@ -1,0 +1,44 @@
+{
+	"id": "openid",
+	"name": "Open ID Connect (OIDC)",
+	"layer": "building-blocks",
+	"sublayer": "sicherheit",
+	"groupKey": "authentication-protocol",
+	"itemKind": "protocol",
+	"description": {
+		"de": "OIDC erweitert OAuth 2.0 um standardisierte Authentifizierung und Identitätsverwaltung durch ID Tokens, ermöglicht einheitliche Benutzeranmeldung über verschiedene Anwendungen hinweg und stellt strukturierte Identitätsinformationen in einem interoperablen Format bereit.",
+		"en": ""
+	},
+	"homepage": "https://openid.net/developers/how-connect-works/",
+	"tags": ["authentifizierung", "protokoll", "zugriff"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://openid.net/specs/openid-connect-core-1_0.html#:~:text=Final:%20OpenID%20Connect%20Core%201.0%20incorporating%20errata%20set%202"
+	},
+	"license": "Various",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://openid.net/developers/how-connect-works/"
+		},
+		{
+			"type": "url",
+			"url": "https://openid.net/specs/openid-connect-core-1_0.html"
+		}
+	]
+}

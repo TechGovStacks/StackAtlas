@@ -1,0 +1,36 @@
+{
+	"id": "cdxgen",
+	"name": "cdxgen",
+	"layer": "building-blocks",
+	"itemKind": "tool",
+	"description": {
+		"de": "Bill of material Standard (ECMA 424) Cyclone DX",
+		"en": ""
+	},
+	"tags": ["negz-import", "researched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"homepage": "https://github.com/CycloneDX/cdxgen",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/CycloneDX/cdxgen"
+		},
+		{
+			"type": "url",
+			"url": "https://cyclonedx.org/"
+		}
+	]
+}

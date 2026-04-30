@@ -1,0 +1,48 @@
+{
+	"id": "agent-to-agent-protocol",
+	"name": "Agent-to-Agent Protocol",
+	"layer": "platform",
+	"sublayer": "ki",
+	"groupKey": "ai-agent-protocol",
+	"itemKind": "protocol",
+	"description": {
+		"de": "A2A ermöglicht KI-Agenten, die auf unterschiedlichen Frameworks verschiedener Unternehmen basieren und auf separaten Servern laufen, effektiv zu kommunizieren und zusammenzuarbeiten. A2A zielt darauf ab, eine gemeinsame Sprache für Agenten bereitzustellen und so ein stärker vernetztes, leistungsfähigeres und innovativeres KI-Ökosystem zu fördern. A2A integriert ACP (Agent Communication Protocol).",
+		"en": ""
+	},
+	"homepage": "https://a2aprotocol.ai/",
+	"tags": ["agent", "prozess", "agentische-ki", "automatisierung"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://a2aprotocol.ai/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/a2aproject"
+		},
+		{
+			"type": "url",
+			"url": "https://www.linuxfoundation.org/press/linux-foundation-launches-the-agent2agent-protocol-project-to-enable-secure-intelligent-communication-between-ai-agents"
+		},
+		{
+			"type": "url",
+			"url": "https://www.linuxfoundation.org/press/a2a-protocol-surpasses-150-organizations-lands-in-major-cloud-platforms-and-sees-enterprise-production-use-in-first-year"
+		}
+	]
+}

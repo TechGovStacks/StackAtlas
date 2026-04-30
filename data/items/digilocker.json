@@ -1,0 +1,39 @@
+{
+	"id": "digilocker",
+	"name": "DigiLocker",
+	"layer": "applications",
+	"sublayer": "daten",
+	"groupKey": "digital-citizen-service",
+	"itemKind": "service",
+	"description": {
+		"de": "DigiLocker ist Indiens nationale Plattform für sichere Dokumentenspeicherung und papierlose Verwaltung. Sie wird vom Ministerium für Elektronik und IT (MeitY) betrieben und bildet zusammen mit eSign die Daten-Schicht des India Stack.",
+		"en": "DigiLocker is India's national platform for secure document storage and paperless administration. It is operated by the Ministry of Electronics and Information Technology (MeitY) and, together with eSign, forms the data layer of the India Stack."
+	},
+	"homepage": "https://www.digilocker.gov.in/",
+	"tags": ["egovernment", "documents", "india"],
+	"oss": false,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": false,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.digilocker.gov.in/"
+		},
+		{
+			"type": "url",
+			"url": "https://negd.gov.in/blog/digilocker-the-digital-briefcase-for-indias-authentic-e-documents/"
+		}
+	]
+}

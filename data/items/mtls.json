@@ -1,0 +1,36 @@
+{
+	"id": "mtls",
+	"name": "mTLS",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "Verschlüsselter Datentransport"
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"homepage": "https://datatracker.ietf.org/doc/html/rfc8705",
+	"license": "IETF-RFC",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc8446"
+		},
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc5246"
+		}
+	]
+}

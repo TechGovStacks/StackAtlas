@@ -1,0 +1,90 @@
+{
+	"id": "canada",
+	"name": {
+		"de": "Kanada Stack (CDS)",
+		"en": "Canada Stack (CDS)"
+	},
+	"description": {
+		"de": "Cloud-native Stack des Canadian Digital Service mit TypeScript-Frontends, Python-APIs und IaC-Pipelines.",
+		"en": "Cloud-native stack of the Canadian Digital Service with TypeScript frontends, Python APIs and IaC pipelines."
+	},
+	"country": "CA",
+	"issuer": "Canadian Digital Service (CDS)",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-16",
+	"items": [
+		{
+			"itemId": "docker-swarm",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Containerisierte Entwicklungs- und Testumgebungen erhöhen die Reproduzierbarkeit.",
+				"en": "Containerized development and test environments improve reproducibility."
+			}
+		},
+		{
+			"itemId": "github-actions",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "GitHub Actions ist zentral für CI/CD im CDS-Portfolio.",
+				"en": "GitHub Actions is central to CI/CD across the CDS portfolio."
+			}
+		},
+		{
+			"itemId": "nextjs",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Next.js wird für moderne, barrierefreie Service-Frontends eingesetzt.",
+				"en": "Next.js is used for modern, accessible service frontends."
+			}
+		},
+		{
+			"itemId": "node-js",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Node.js unterstützt API-Dienste und SSR-Anwendungen.",
+				"en": "Node.js supports API services and SSR applications."
+			}
+		},
+		{
+			"itemId": "python",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Python bildet die Basis asynchroner APIs wie bei Notify-Diensten.",
+				"en": "Python powers asynchronous APIs such as notification services."
+			}
+		},
+		{
+			"itemId": "terraform",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Terraform orchestriert Cloud-Infrastruktur auf AWS und Azure.",
+				"en": "Terraform orchestrates cloud infrastructure on AWS and Azure."
+			}
+		},
+		{
+			"itemId": "typescript",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "TypeScript ist bevorzugte Sprache für Frontend und Plattform-Clients.",
+				"en": "TypeScript is the preferred language for frontend and platform clients."
+			}
+		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "Canadian Digital Service",
+				"en": "Canadian Digital Service",
+				"fr": "Canadian Digital Service"
+			},
+			"url": "https://digital.canada.ca/"
+		}
+	]
+}

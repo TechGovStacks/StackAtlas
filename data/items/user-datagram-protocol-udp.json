@@ -1,0 +1,39 @@
+{
+	"id": "user-datagram-protocol-udp",
+	"name": "User Datagram Protocol (UDP)",
+	"layer": "infrastructure",
+	"sublayer": "transport",
+	"groupKey": "transport-protocol",
+	"itemKind": "protocol",
+	"description": {
+		"de": "UDP ist ein einfaches Datenübertragungsprotokoll ohne Zusatzfunktionen.",
+		"en": ""
+	},
+	"homepage": "https://datatracker.ietf.org/doc/html/rfc768",
+	"tags": ["datenuebertragung", "echtzeit"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc768"
+		},
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc768"
+		}
+	]
+}

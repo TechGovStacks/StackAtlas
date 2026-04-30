@@ -1,0 +1,43 @@
+{
+	"id": "spacy",
+	"name": "spaCy",
+	"layer": "platform",
+	"sublayer": "ki",
+	"itemKind": "platform",
+	"description": {
+		"de": "spaCy ist eine Python-Bibliothek für Natural Language Processing. Sie bietet Informationsextraktion, Textanalyse und Vorverarbeitung für Deep Learning. Die Bibliothek bietet gebrauchsfertige Modelle sowie die Möglichkeit zum Training eigener Modelle.",
+		"en": ""
+	},
+	"homepage": "https://spacy.io/usage",
+	"tags": ["dl", "verarbeitung", "nlp"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://v2.spacy.io/"
+	},
+	"license": "MIT",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://spacy.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/explosion/spaCy"
+		}
+	]
+}

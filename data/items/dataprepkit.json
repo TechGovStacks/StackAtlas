@@ -1,0 +1,36 @@
+{
+	"id": "dataprepkit",
+	"name": "DataPrepKit",
+	"layer": "building-blocks",
+	"itemKind": "tool",
+	"description": {
+		"de": "DPK ist ein Open-Source-Toolkit für skalierbare Datenaufbereitung von Trainings- und RAG-Daten für LLMs, mit Modulen für Deduplizierung, PII-Filterung und Qualitätsbewertung.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://github.com/data-prep-kit/data-prep-kit",
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/data-prep-kit/data-prep-kit"
+		},
+		{
+			"type": "url",
+			"url": "https://www.ibm.com/think/topics/data-prep-kit"
+		}
+	]
+}

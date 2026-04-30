@@ -1,0 +1,26 @@
+import type { ParticipantRole, StackItemStatus } from '../types/index.js';
+
+export declare const ROLE_WEIGHTS: Readonly<Record<ParticipantRole, number>>;
+export declare const STATUS_WEIGHTS: Readonly<Record<StackItemStatus, number>>;
+export declare const TRANSITIVE_WEIGHT: number;
+export declare const DIVERSITY_MIN_FACTOR: number;
+export declare const DIVERSITY_MAX_FACTOR: number;
+export declare const SOVEREIGNTY_THRESHOLD: number;
+export declare const SIZE_DAMP_REFERENCE: number;
+export declare const LOW_COVERAGE_THRESHOLD: number;
+export declare const MAINTAINER_LOW_COVERAGE_BOOST: number;
+export declare const CONTRIBUTOR_LOW_COVERAGE_BOOST: number;
+export declare const ADOPTION_NORMALIZATION_PERCENTILE: number;
+export declare const ADOPTION_NORMALIZATION_ANCHOR: number;
+export declare const HIGH_SOVEREIGNTY_THRESHOLD: number;
+export declare const HIGH_SOVEREIGNTY_SOFT_FLOOR_SCORE: number;
+export declare const MAINTAINER_CONTEXT_MIN_ADOPTION: number;
+export declare const MAINTAINER_CONTEXT_MIN_SOVEREIGN_ADOPTION: number;
+export declare const CONTRIBUTOR_CONTEXT_MIN_ADOPTION: number;
+export declare const CONTRIBUTOR_CONTEXT_MIN_SOVEREIGN_ADOPTION: number;
+export declare const POPULARITY_ADOPTION_BLEND: number;
+export declare const POPULARITY_ADOPTION_WEIGHT: number;
+export declare const POPULARITY_REF_GITHUB_STARS: number;
+export declare const POPULARITY_REF_NPM_WEEKLY: number;
+export declare const POPULARITY_REF_DOCKER_WEEKLY: number;
+export declare const POPULARITY_REF_PYPI_WEEKLY: number;

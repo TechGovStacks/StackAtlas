@@ -1,0 +1,68 @@
+{
+	"id": "angular",
+	"name": "Angular",
+	"layer": "building-blocks",
+	"sublayer": "frameworks",
+	"groupKey": "component-framework",
+	"itemKind": "framework",
+	"description": {
+		"de": "Angular ist ein Webframework, das Entwicklern die Erstellung schneller und zuverlässiger Anwendungen ermöglicht.",
+		"en": ""
+	},
+	"homepage": "https://angular.dev/",
+	"tags": ["webframework", "user-interface"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"dependencies": [
+		{
+			"targetItemId": "javascript-ecma-script",
+			"type": "runtime",
+			"scope": "required",
+			"reason": {
+				"de": "Im Browser läuft Angular als JavaScript.",
+				"en": "Angular executes as JavaScript in the browser."
+			}
+		},
+		{
+			"targetItemId": "typescript",
+			"type": "language",
+			"scope": "required",
+			"reason": {
+				"de": "Angular-Projekte werden üblicherweise in TypeScript entwickelt.",
+				"en": "Angular projects are typically developed in TypeScript."
+			}
+		}
+	],
+	"license": "MIT",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://angular.dev/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/angular/angular"
+		},
+		{
+			"type": "url",
+			"url": "https://raw.githubusercontent.com/angular/angular/main/LICENSE"
+		},
+		{
+			"type": "url",
+			"url": "https://angular.dev/cli/analytics/enable"
+		}
+	]
+}

@@ -1,0 +1,38 @@
+{
+	"id": "egvp",
+	"name": "EGVP",
+	"layer": "infrastructure",
+	"sublayer": "transport",
+	"groupKey": "legal-communication-infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "EGVP (Elektronischer Gerichts- und Verwaltungspostfach) ist eine auf dem OSCI-Standard beruhende Transportinfrastruktur für den elektronischen Rechtsverkehr zwischen Gerichten und Verfahrensbeteiligten in Deutschland.",
+		"en": "EGVP (Electronic Court and Administration Mailbox) is a transport infrastructure based on the OSCI standard for electronic legal communication between courts and participants in legal proceedings in Germany."
+	},
+	"oss": false,
+	"tags": ["legal", "communication", "germany", "justice"],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": false,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.justiz.de/egvp/",
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.justiz.de/egvp/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.justiz.de/"
+		}
+	]
+}

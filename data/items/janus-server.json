@@ -1,0 +1,35 @@
+{
+	"id": "janus-server",
+	"name": "Janus Server",
+	"layer": "sovereign-standards",
+	"itemKind": "tool",
+	"description": {
+		"de": "Standard for video based communications services",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://janus.conf.meetecho.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/meetecho/janus-gateway"
+		}
+	]
+}

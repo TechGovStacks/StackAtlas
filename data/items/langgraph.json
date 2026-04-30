@@ -1,0 +1,43 @@
+{
+	"id": "langgraph",
+	"name": "LangGraph",
+	"layer": "platform",
+	"sublayer": "ki",
+	"groupKey": "llm-framework",
+	"itemKind": "platform",
+	"description": {
+		"de": "LangGraph ist ein low-level Orchestrierungs-Framework für den Aufbau, die Verwaltung und das Deployment von langlebigen, zustandsbehafteten AI-Agenten und Multi-Agent-Workflows. Das Framework nutzt eine graph-basierte Architektur zur Modellierung komplexer Agent-Interaktionen, wobei Knoten (Nodes) die Agent-Logik enthalten und Kanten (Edges) den Kontrollfluss zwischen ihnen definieren. LangGraph ermöglicht sowohl vordefinierte Workflows als auch dynamische Agenten-Systeme mit Human-in-the-Loop-Funktionalitäten.",
+		"en": ""
+	},
+	"homepage": "https://www.langchain.com/langgraph",
+	"tags": ["ki", "agent"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://langchain-ai.github.io/langgraphjs/tutorials/quickstart/"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://langchain-ai.github.io/langgraph/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/langchain-ai/langgraph"
+		}
+	]
+}

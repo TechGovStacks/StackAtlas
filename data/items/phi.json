@@ -1,0 +1,36 @@
+{
+	"id": "phi",
+	"name": "Phi",
+	"layer": "sovereign-standards",
+	"itemKind": "tool",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Leichtgewichtiges Sprachmodell' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
+	},
+	"homepage": "https://huggingface.co/microsoft/phi-4",
+	"license": "MIT",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://azure.microsoft.com/en-us/products/phi/"
+		},
+		{
+			"type": "url",
+			"url": "https://huggingface.co/microsoft"
+		}
+	]
+}

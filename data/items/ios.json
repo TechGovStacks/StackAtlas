@@ -1,0 +1,38 @@
+{
+	"id": "ios",
+	"name": "iOS",
+	"layer": "applications",
+	"sublayer": "ios-os",
+	"itemKind": "service",
+	"description": {
+		"de": "iOS ist das Betriebssystem für die Arbeit auf mobilen Endgeräten von Apple.",
+		"en": ""
+	},
+	"homepage": "https://www.apple.com/de/os/ios/",
+	"tags": ["mobil", "app", "betriebssystem"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.apple.com/ios/"
+		},
+		{
+			"type": "url",
+			"url": "https://developer.apple.com/ios/"
+		}
+	]
+}

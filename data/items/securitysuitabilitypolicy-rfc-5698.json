@@ -1,0 +1,34 @@
+{
+	"id": "securitysuitabilitypolicy-rfc-5698",
+	"name": "SecuritySuitabilityPolicy / RFC 5698",
+	"layer": "infrastructure",
+	"itemKind": "standard",
+	"description": {
+		"de": "Ermöglicht Erstellung von maschinenlesbaren Katalogen mit kryptographischen Algorithmen."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc5698"
+		},
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc5698"
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"id": "xml-signature",
+	"name": "XML Signature",
+	"layer": "building-blocks",
+	"itemKind": "standard",
+	"description": {
+		"de": "Signatur für XML-Nachrichten, um eine Authentisierung durchführen zu können. Siehe DSGVO, Art. 5."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/xmldsig-core1/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/xmldsig-core/"
+		}
+	]
+}

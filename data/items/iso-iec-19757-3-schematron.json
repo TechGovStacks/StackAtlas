@@ -1,0 +1,35 @@
+{
+	"id": "iso-iec-19757-3-schematron",
+	"name": "ISO/IEC 19757-3 (Schematron)",
+	"layer": "building-blocks",
+	"itemKind": "standard",
+	"description": {
+		"de": "Regelbasierte Validierungssprache für XML-Dokumente. Dient u. a. der Formulierung von Geschäftsregeln, die automatisiert geprüft werden können",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.iso.org/standard/74515.html"
+		},
+		{
+			"type": "url",
+			"url": "https://www.schematron.com/"
+		}
+	]
+}

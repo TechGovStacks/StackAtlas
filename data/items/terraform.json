@@ -1,0 +1,41 @@
+{
+	"id": "terraform",
+	"name": "Terraform",
+	"layer": "platform",
+	"sublayer": "inbetriebnahme",
+	"groupKey": "infrastructure-as-code",
+	"itemKind": "platform",
+	"description": {
+		"de": "Terraform ist ein Infrastructure-as-Code-Werkzeug von HashiCorp (IBM). Es ermöglicht das deklarative Provisioning von Cloud- und On-Premise-Ressourcen über Provider und sorgt für reproduzierbare, versionierte Infrastruktur-Setups.",
+		"en": "Terraform is an Infrastructure-as-Code tool by HashiCorp (IBM). It enables declarative provisioning of cloud and on-premise resources via providers and produces reproducible, versioned infrastructure setups."
+	},
+	"homepage": "https://www.terraform.io/",
+	"license": "BUSL-1.1",
+	"ownerCountry": "US",
+	"tags": ["iac", "infrastructure", "automation"],
+	"oss": false,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.terraform.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/hashicorp/terraform"
+		}
+	]
+}

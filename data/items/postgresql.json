@@ -1,0 +1,45 @@
+{
+	"id": "postgresql",
+	"name": "PostgreSQL",
+	"layer": "platform",
+	"sublayer": "daten",
+	"groupKey": "sql-db",
+	"itemKind": "platform",
+	"description": {
+		"de": "PostgreSQL ist ein objektrelationales Datenbankmanagementsystem (ORDBMS), das für seine Einhaltung von SQL-Standards, seine Erweiterbarkeit und seine Zuverlässigkeit bekannt ist. Es wird häufig in Anwendungen eingesetzt, die komplexe Transaktionen und große Datenmengen verarbeiten.",
+		"en": ""
+	},
+	"homepage": "https://www.postgresql.org/",
+	"tags": ["open-source", "datenbank", "sql", "relational"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"license": "PostgreSQL",
+	"popularityMetrics": {
+		"updatedAt": "2026-04-20",
+		"githubStars": 24000,
+		"dockerWeeklyPulls": 5200000
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.postgresql.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/postgres/postgres"
+		}
+	]
+}

@@ -1,0 +1,39 @@
+{
+	"id": "segment-routing-sr",
+	"name": "Segment Routing (SR)",
+	"layer": "infrastructure",
+	"sublayer": "verteilung",
+	"groupKey": "traffic-engineering",
+	"itemKind": "platform",
+	"description": {
+		"de": "Segment Routing ist eine Technologie zur Vereinfachung des Routens von Daten. Zur Optimierung werden Pfadinformationen im Header gespeichert.",
+		"en": ""
+	},
+	"homepage": "https://datatracker.ietf.org/doc/html/rfc8402",
+	"tags": ["netz", "netzwerk", "segment", "routing"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc8402"
+		},
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc8402"
+		}
+	]
+}

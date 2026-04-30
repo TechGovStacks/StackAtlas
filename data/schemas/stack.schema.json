@@ -1,0 +1,157 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Stack Definition",
+	"description": "Defines a government or organizational software stack (e.g., Germany Stack) with item recommendations and participant metadata",
+	"type": "object",
+	"required": ["id", "name", "version", "items"],
+	"additionalProperties": false,
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "Unique stack identifier (lowercase, e.g., 'germany', 'eu', 'default')"
+		},
+		"name": {
+			"type": "object",
+			"description": "Localized display name of the stack",
+			"required": ["de", "en"],
+			"additionalProperties": false,
+			"properties": {
+				"de": { "type": "string", "minLength": 1 },
+				"en": { "type": "string", "minLength": 1 },
+				"fr": { "type": "string" }
+			}
+		},
+		"description": {
+			"type": "object",
+			"description": "Optional localized description of the stack's purpose",
+			"additionalProperties": false,
+			"properties": {
+				"de": { "type": "string" },
+				"en": { "type": "string" },
+				"fr": { "type": "string" }
+			}
+		},
+		"country": {
+			"type": "string",
+			"description": "ISO 3166-1 alpha-2 country code (e.g., 'DE', 'AT', 'EU' for multi-country)",
+			"pattern": "^[A-Z]{2}$"
+		},
+		"issuer": {
+			"type": "string",
+			"description": "Organization or authority responsible for this stack definition"
+		},
+		"version": {
+			"type": "string",
+			"description": "Semantic version (e.g., '0.1.0', '1.0.0')"
+		},
+		"publishedAt": {
+			"type": "string",
+			"description": "ISO 8601 publication date (YYYY-MM-DD)"
+		},
+		"sources": {
+			"type": "array",
+			"description": "Reference sources for this stack definition",
+			"items": {
+				"type": "object",
+				"required": ["url"],
+				"additionalProperties": false,
+				"properties": {
+					"label": {
+						"type": "object",
+						"description": "Optional localized label for the source link",
+						"additionalProperties": false,
+						"properties": {
+							"de": { "type": "string" },
+							"en": { "type": "string" },
+							"fr": { "type": "string" }
+						}
+					},
+					"url": {
+						"type": "string",
+						"description": "URL to the source",
+						"format": "uri"
+					}
+				}
+			}
+		},
+		"items": {
+			"type": "array",
+			"description": "Items included in this stack with status and role-based sovereignty scoring",
+			"items": {
+				"type": "object",
+				"required": ["itemId", "status", "role"],
+				"additionalProperties": false,
+				"properties": {
+					"itemId": {
+						"type": "string",
+						"description": "Reference to an item ID from data/items/",
+						"pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$"
+					},
+					"status": {
+						"type": "string",
+						"description": "Status in this stack",
+						"enum": ["recommended", "approved", "deprecated"]
+					},
+					"role": {
+						"type": "string",
+						"description": "Role of the stack (country) relative to this item. Multiplier: maintainer=1.0, contributor=0.75, funder=0.5, consumer=0.25",
+						"enum": ["maintainer", "contributor", "funder", "consumer"]
+					},
+					"since": {
+						"type": "string",
+						"description": "ISO 8601 date when this item was added to the stack"
+					},
+					"rationale": {
+						"type": "object",
+						"description": "Localized explanation of the role and inclusion rationale",
+						"additionalProperties": false,
+						"properties": {
+							"de": { "type": "string" },
+							"en": { "type": "string" },
+							"fr": { "type": "string" }
+						}
+					},
+					"alternatives": {
+						"type": "array",
+						"description": "Alternative item IDs that could replace this one",
+						"items": { "type": "string" }
+					}
+				}
+			}
+		},
+		"participants": {
+			"type": "array",
+			"description": "Organizations involved with this stack (metadata only)",
+			"items": {
+				"type": "object",
+				"required": ["name", "role"],
+				"additionalProperties": false,
+				"properties": {
+					"name": {
+						"type": "string",
+						"description": "Name of the participant (organization or person)"
+					},
+					"role": {
+						"type": "string",
+						"description": "Role of the participant organization",
+						"enum": ["maintainer", "contributor", "funder", "consumer"]
+					},
+					"jurisdiction": {
+						"type": "string",
+						"description": "ISO country code or 'EU' — relevant for funders to flag non-EU dependencies",
+						"pattern": "^([A-Z]{2}|EU)$"
+					},
+					"url": {
+						"type": "string",
+						"description": "URL to participant's website or project page",
+						"format": "uri"
+					},
+					"since": {
+						"type": "string",
+						"description": "ISO 8601 date when this participant joined"
+					}
+				}
+			}
+		}
+	}
+}

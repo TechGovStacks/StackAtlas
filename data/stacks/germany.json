@@ -1,0 +1,1179 @@
+{
+	"id": "germany",
+	"name": {
+		"de": "Deutschland Stack",
+		"en": "Germany Stack"
+	},
+	"description": {
+		"de": "Empfohlener und zugelassener Software-Stack für die deutsche öffentliche Verwaltung.",
+		"en": "Recommended and approved software stack for German public administration."
+	},
+	"country": "DE",
+	"issuer": "Bundesministeriums für Digitales und Staatsmodernisierung (BMDS)",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-07",
+	"items": [
+		{
+			"itemId": "advanced-encryption-standard",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "agent-network-protocol",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "agent-to-agent-protocol",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "agent-user-interaction-protocol-ag-ui",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "android",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "angel-ml",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "angular",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "appsmith",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "axolotl",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "blink",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "bluetooth",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "border-gateway-protocol-bgp",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "budibase",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "c",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "cassandra",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "chroma",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "circleci",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "comma-separated-values-csv",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "comprehensive-knowledge-archive-network-ckan",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "contour",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "couchdb",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "css",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "data-catalog-vocabulary-dcat",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "docker-swarm",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "domain-name-system-dns",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "dynamic-host-configuration-protocol-dhcp",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "elliptic-curve-integrated-encryption-scheme",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "emissary-ingress",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "envoy-proxy",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "ethernet",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "extensible-markup-language-xml",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "file-transfer-protocol-uber-tls-ftps",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "flutter",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "flux",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "gecko",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "general-purpose-remote-procedure-calls",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "github-actions",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "gitlab",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "glasfaser",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "go",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "graphql",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "haystack",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "hbase",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "huggingface-transformers",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "hypertext-transfer-protocol-http",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "internal-gateway-protocols-igp",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "internet-message-access-protocol-secure-imaps",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "internet-protocol-security-ipsec",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "internet-protocol-version-6-ipv6",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "ios",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "istio",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "java",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "javascript-ecma-script",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "javascript-object-notation-json",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "jenkins",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "joget",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "json-web-tokens-jwt",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "kerberos",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "kong",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "kubernetes",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "langgraph",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "mariadb",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "markdown-md",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "media-access-control-mac",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "messaging-layer-security-mls",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "milvus",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "mlflow",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "mobilfunk",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "model-context-protocol-mcp",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "module-lattice-based-key-encapsulation-mechanism",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "mongodb",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "multiprotocol-label-switching-mpls",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "mysql-server",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "n8n",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "neo4j",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "nextjs",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "nginx",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "node-red",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "nomad",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "qdrant",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "one-time-password-otp",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "open-archives-initiative-protocol-for-metadata-harvesting",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "open-authorization-oauth",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "openid",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "open-internet-exchange-point-ixp-oix-1",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "open-neural-network-exchange",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "open-shortest-path-first-ospf",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "openapi",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "openkruise",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "openshift-origin-okd",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "php",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "piveau",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "portainer",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "postgresql",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "promptflow",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "pyro",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "python",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "pytorch",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "quick-udp-internet-connections-quic",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "r",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "ragflow",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "rancher",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "react",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "representational-state-transfer",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "resource-description-framework-rdf",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "rivest-shamir-adleman",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "robot-framework",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "rust",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "scylla",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "sd-wan-service-attributes-and-service-framework-mef",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "secure-hash-algorithm",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "segment-routing-sr",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "selenium",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "session-initiation-protocol-sip",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "simple-mail-transfer-protocol-secure-smtps",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "simple-object-access-protocol",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "spacy",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "spinnaker",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "swift",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "tensorflow",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "traefik",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "transmission-control-protocol-tcp",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "transport-layer-security-tls",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "typescript",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "user-datagram-protocol-udp",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "webkit",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "wifi",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		},
+		{
+			"itemId": "yaml-ain-t-markup-language",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Integriert in den Deutschland Stack",
+				"en": "Integrated into Germany Stack"
+			}
+		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "Deutschland-Stack Dokumentation",
+				"en": "Germany Stack documentation",
+				"fr": "Documentation Germany Stack"
+			},
+			"url": "https://github.com/TechGovStacks/StackAtlas/blob/main/data/stacks/germany.json"
+		}
+	]
+}

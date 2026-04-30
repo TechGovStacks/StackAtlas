@@ -1,0 +1,38 @@
+{
+	"id": "internet-message-access-protocol-secure-imaps",
+	"name": "Internet Message Access Protocol Secure (IMAPS)",
+	"layer": "infrastructure",
+	"sublayer": "transport",
+	"itemKind": "protocol",
+	"description": {
+		"de": "IMAPS dient dem sicheren Zugriff auf E-Mails auf Mailservern. Die E-Mails verbleiben dabei auf dem Mailserver.",
+		"en": ""
+	},
+	"homepage": "https://datatracker.ietf.org/doc/html/rfc9051",
+	"tags": ["dateiuebertragung", "e-mail"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc9051"
+		},
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc9051"
+		}
+	]
+}

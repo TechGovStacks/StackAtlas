@@ -1,0 +1,47 @@
+{
+	"id": "apache-kafka",
+	"name": "Apache Kafka",
+	"layer": "platform",
+	"sublayer": "integration",
+	"itemKind": "platform",
+	"description": {
+		"de": "Apache Kafka ist eine verteilte Event-Streaming-Plattform für hochskalierbare, asynchrone Nachrichtenverarbeitung. Sie wird in vielen GovTech-Stacks für Echtzeit-Datenverteilung, Microservice-Integration und Event-Driven-Architekturen eingesetzt.",
+		"en": "Apache Kafka is a distributed event-streaming platform for highly scalable, asynchronous message processing. It is used in many GovTech stacks for real-time data distribution, microservice integration and event-driven architectures."
+	},
+	"homepage": "https://kafka.apache.org/",
+	"license": "Apache-2.0",
+	"tags": ["streaming", "events", "messaging"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://kafka.apache.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/apache/kafka"
+		},
+		{
+			"type": "url",
+			"url": "https://kafka.apache.org/protocol"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Apache_Kafka"
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"id": "ozg-cloud",
+	"name": "OZG Cloud",
+	"layer": "building-blocks",
+	"itemKind": "tool",
+	"description": {
+		"de": "OZG-Cloud ist eine Open-Source-Plattform zur digitalen Antragsbearbeitung in kommunalen Verwaltungen, entwickelt im Kontext des Onlinezugangsgesetzes."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"homepage": "https://ozg-cloud.de/",
+	"license": "EUPL-1.2",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://ozg-cloud.de/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.it-planungsrat.de/"
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"id": "gemma",
+	"name": "Gemma",
+	"layer": "building-blocks",
+	"groupKey": "llm-models",
+	"itemKind": "tool",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Offenes Large Language Model' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://ai.google.dev/gemma",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://ai.google.dev/gemma"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/google/gemma.cpp"
+		}
+	]
+}

@@ -1,0 +1,10 @@
+{
+	"id": "sovereign-standards",
+	"order": 5,
+	"name": { "de": "Souveränitätsstandards", "en": "Sovereign Standards" },
+	"description": {
+		"de": "Übergreifende Standards und Prinzipien für digitale Souveränität: Offene Standards, Interoperabilität, Datenschutz und regulatorische Anforderungen.",
+		"en": "Cross-cutting standards and principles for digital sovereignty: open standards, interoperability, data protection and regulatory requirements."
+	},
+	"color": "#e8e8e8"
+}

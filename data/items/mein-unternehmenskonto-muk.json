@@ -1,0 +1,36 @@
+{
+	"id": "mein-unternehmenskonto-muk",
+	"name": "Mein Unternehmenskonto (MUK)",
+	"layer": "building-blocks",
+	"itemKind": "tool",
+	"description": {
+		"de": "Über den D-Stack können Behörden Zugang zum MUK bekommen, um mit Unternehmen und anderen Organisationen kommunizieren zu können. Das kann analog zum ZBP der BundID erfolgen."
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"homepage": "https://www.mein-unternehmenskonto.de/",
+	"license": "proprietary",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.mein-unternehmenskonto.de/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.bmi.bund.de/"
+		}
+	]
+}

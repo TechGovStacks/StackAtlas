@@ -1,0 +1,42 @@
+{
+	"id": "ethernet",
+	"name": "Ethernet",
+	"layer": "infrastructure",
+	"sublayer": "anschluss",
+	"itemKind": "platform",
+	"description": {
+		"de": "Mit Ethernet können kabelgebunden in kleiner bis mittlerer Reichweite Endgeräte vernetzt werden. Die IEEE standardisiert die Technologie mit IEEE 802.3 ff. Die Konfiguration erfolgt zumeist automatisch über das Betriebssystem. Wi-Fi dient als Kennzeichen für zertifizierte Produkte zur Sicherstellung von Interoperabilität.",
+		"en": ""
+	},
+	"homepage": "https://www.ieee802.org/3/",
+	"tags": ["paket", "kabelgebunden", "rj", "lan", "frame"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=68"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://standards.ieee.org/ieee/802.3/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Ethernet"
+		}
+	]
+}

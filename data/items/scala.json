@@ -1,0 +1,36 @@
+{
+	"id": "scala",
+	"name": "Scala",
+	"layer": "building-blocks",
+	"itemKind": "language",
+	"description": {
+		"de": "Hybride Programmiersprache mit Unterstützung für die JVM, JavaScript und Native Entwicklung, die objektorientierte (OO) und funktionale Programmierung (FP) vereint."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"homepage": "https://www.scala-lang.org/",
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.scala-lang.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/scala/scala"
+		}
+	]
+}

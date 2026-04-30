@@ -1,0 +1,43 @@
+{
+	"id": "n8n",
+	"name": "n8n",
+	"layer": "platform",
+	"sublayer": "lowcode",
+	"groupKey": "workflow-automation",
+	"itemKind": "platform",
+	"description": {
+		"de": "n8n ist eine flexible Automatisierungsplattform mit 400+ Integrationen, die visuelles Bauen und Code kombiniert und Self-Hosting erlaubt.",
+		"en": ""
+	},
+	"homepage": "https://www.n8n.io",
+	"tags": ["automatisierung", "open-source", "no-code", "api", "integration"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://docs.n8n.io/"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://n8n.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/n8n-io/n8n"
+		}
+	]
+}

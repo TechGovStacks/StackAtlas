@@ -1,0 +1,35 @@
+{
+	"id": "id-mercury",
+	"name": "ID Mercury",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "ID Mercury dient als Zugang zu verschiednen eID-Systemen und Infrastrukturen. In seiner Rolle als AUtentisierungs-Broker ist ID Mercury eine Erleicherung für die Online-Dienste. Derzeit wird ID Mercury als Wallet-Adapter weiterentwickelt, so dass auch das kommende EUDI-Wallet ohne große ANpassunegnen in den bestehenden Online-Diensten genutz twerden kann. Darüber kann ein wichtiger Mehrwert über den D-Stack erreicht werden.  Dieser Baustein ist ein Produkt des ITPLR und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung. Diese Lösung ist in vielen Ländern schon als Basisdienst etabliert.",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": false,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.governikus.de/en/produkte/id-mercury/",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/en/produkte/id-mercury/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/de/produkte/id-mercury/"
+		}
+	]
+}

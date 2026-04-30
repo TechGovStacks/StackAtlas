@@ -1,0 +1,37 @@
+{
+	"id": "extensible-markup-language-xml",
+	"name": "Extensible Markup Language (XML)",
+	"layer": "platform",
+	"sublayer": "daten",
+	"groupKey": "data-serialization-format",
+	"itemKind": "format",
+	"description": {
+		"de": "XML ist ein Datenformat für den Datenaustausch.",
+		"en": "XML is a widely used, standardized data format for data exchange managed by W3C, enabling interoperable structured document representation."
+	},
+	"homepage": "https://www.w3.org/XML/",
+	"tags": ["data-format", "serialization", "standard", "w3c"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.w3.org/XML/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/xml11/"
+		}
+	]
+}

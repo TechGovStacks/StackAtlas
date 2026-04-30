@@ -1,0 +1,37 @@
+{
+	"id": "json-web-encryption-jwe",
+	"name": "JSON Web Encryption (JWE)",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "JSON Web Encryption ist ein IETF-Standard, der eine standardisierte Syntax für den Austausch verschlüsselter Daten basierend auf JSON und Base64 bereitstellt.",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"homepage": "https://datatracker.ietf.org/doc/html/rfc7516",
+	"license": "IETF-RFC",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc7516"
+		},
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc7516"
+		}
+	]
+}

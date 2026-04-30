@@ -1,0 +1,36 @@
+{
+	"id": "argocd",
+	"name": "ArgoCD",
+	"layer": "platform",
+	"itemKind": "tool",
+	"description": {
+		"de": "Werkzeug zur Synchronisation von Ressourcen (u.a. Git Repo) und einem Kubernetes Clusters gemäß GitOps-Ansatz.",
+		"en": ""
+	},
+	"tags": ["negz-import", "researched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"homepage": "https://argo-cd.readthedocs.io/",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://argoproj.github.io/cd/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/argoproj/argo-cd"
+		}
+	]
+}

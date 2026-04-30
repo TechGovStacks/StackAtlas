@@ -1,0 +1,39 @@
+{
+	"id": "representational-state-transfer",
+	"name": "Representational State Transfer",
+	"layer": "platform",
+	"sublayer": "integration",
+	"groupKey": "api-style",
+	"itemKind": "standard",
+	"description": {
+		"de": "REST ist ein Architekturstil für verteilte Systeme, der 2000 von Roy Fielding definiert wurde. REST basiert auf den etablierten Web-Standards HTTP, URI und JSON und ermöglicht eine einfache, skalierbare Kommunikation zwischen verschiedenen Systemen über das Internet. REST Schnittstellen folgen einem ressourcenorientierten Ansatz mit einheitlichen Schnittstellen und sind zustandslos konzipiert.",
+		"en": ""
+	},
+	"homepage": "https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
+	"tags": ["schnittstelle"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm"
+		},
+		{
+			"type": "url",
+			"url": "https://restfulapi.net/"
+		}
+	]
+}

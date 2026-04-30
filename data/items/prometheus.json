@@ -1,0 +1,34 @@
+{
+	"id": "prometheus",
+	"name": "Prometheus",
+	"layer": "platform",
+	"sublayer": "inbetriebnahme",
+	"itemKind": "platform",
+	"description": {
+		"de": "Prometheus ist ein quelloffenes Monitoring- und Alerting-System aus dem CNCF-Ökosystem. Es sammelt Metriken über ein Pull-Modell, speichert Zeitreihen und ist Standardwerkzeug für Cloud-Native-Observability.",
+		"en": "Prometheus is an open-source monitoring and alerting system from the CNCF ecosystem. It scrapes metrics, stores time-series data and is the standard tool for cloud-native observability."
+	},
+	"homepage": "https://prometheus.io/",
+	"license": "Apache-2.0",
+	"tags": ["monitoring", "metrics", "observability", "cncf"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{ "type": "url", "url": "https://prometheus.io/" },
+		{ "type": "url", "url": "https://github.com/prometheus/prometheus" },
+		{ "type": "url", "url": "https://www.cncf.io/projects/prometheus/" }
+	]
+}

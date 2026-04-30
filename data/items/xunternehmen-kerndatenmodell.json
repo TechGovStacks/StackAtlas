@@ -1,0 +1,34 @@
+{
+	"id": "xunternehmen-kerndatenmodell",
+	"name": "XUnternehmen.Kerndatenmodell",
+	"layer": "building-blocks",
+	"itemKind": "standard",
+	"description": {
+		"de": "Der XUnternehmen.Kerndatenmodell spezifiziert ein semantisches Datenmodell für die fachübergreifende, interoperable Übermittlung von Kerndaten (Stammdaten) zu Unternehmen im Bereich der öffentlichen Wirtschaftsverwaltung"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.xoev.de/xunternehmen"
+		},
+		{
+			"type": "url",
+			"url": "https://www.xoev.de/"
+		}
+	]
+}

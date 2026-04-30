@@ -1,0 +1,42 @@
+{
+	"id": "open-internet-exchange-point-ixp-oix-1",
+	"name": "Open Internet Exchange Point (IXP OIX-1)",
+	"layer": "infrastructure",
+	"sublayer": "verteilung",
+	"itemKind": "platform",
+	"description": {
+		"de": "IXP OIX-1 ist eine Zertifizierung für Internet-Knotenpunkte (IXPs) für die Sicherstellung verschiedener Standards zu Leistungsfähigkeit, Verfügbarkeit, Ausfallsicherheit und Datensicherheit. Ein IXP verbindet Internetdienstanbieter (ISPs) und Content-Netzwerke (CDNs) um den Datenverkehr zu optimieren.",
+		"en": ""
+	},
+	"homepage": "https://www.oix.org/standards-and-certifications/ixp-oix-1-certification/",
+	"tags": ["netz", "netzwerk", "internet-exchange-point", "ixp"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://www.oix.org/"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.euro-ix.net/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.de-cix.net/"
+		}
+	]
+}

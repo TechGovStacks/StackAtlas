@@ -1,0 +1,34 @@
+{
+	"id": "ozg-datenmodelle-fim-datenmodelle",
+	"name": "OZG-Datenmodelle / FIM-Datenmodelle",
+	"layer": "building-blocks",
+	"itemKind": "tool",
+	"description": {
+		"de": "OZG-Datenmodelle strukturieren die für Verwaltungsleistungen benötigten Informationen fachlich konsistent. Sie dienen als Grundlage dafür, Daten zwischen Portalen, Fachverfahren und Registern ohne Medienbrüche auszutauschen."
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.fitko.de/produktmanagement/fim",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.fitko.de/produktmanagement/fim"
+		},
+		{
+			"type": "url",
+			"url": "https://de.wikipedia.org/wiki/F%C3%B6derales_Informationsmanagement"
+		}
+	]
+}

@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Security Policy
+    url: https://github.com/techgovstacks/stackatlas/security/policy
+    about: Melden Sie Sicherheitsprobleme vertraulich
+  - name: Code of Conduct
+    url: https://github.com/techgovstacks/stackatlas/blob/main/CODE_OF_CONDUCT.md
+    about: Unsere Community-Richtlinien

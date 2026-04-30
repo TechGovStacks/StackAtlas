@@ -1,0 +1,36 @@
+{
+	"id": "gitlabrunner",
+	"name": "GitlabRunner",
+	"layer": "platform",
+	"groupKey": "ci-cd",
+	"itemKind": "tool",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'CI/CD Pipeline' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false
+	},
+	"homepage": "https://docs.gitlab.com/runner/",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://docs.gitlab.com/runner/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/gitlabhq/gitlab-runner"
+		}
+	]
+}

@@ -1,0 +1,81 @@
+{
+	"id": "south-korea",
+	"name": {
+		"de": "Südkorea Stack (eGovFrame)",
+		"en": "South Korea Stack (eGovFrame)"
+	},
+	"description": {
+		"de": "Standardisierter Behörden-Stack auf Basis von eGovFrame zur Reduktion von Fragmentierung und Vendor-Lock-in.",
+		"en": "Standardized public-sector stack built on eGovFrame to reduce fragmentation and vendor lock-in."
+	},
+	"country": "KR",
+	"issuer": "Ministry of the Interior and Safety / NIA",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-16",
+	"items": [
+		{
+			"itemId": "java",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Java ist Kernsprache des eGovFrame-Runtime-Standards.",
+				"en": "Java is the core language of the eGovFrame runtime standard."
+			}
+		},
+		{
+			"itemId": "kubernetes",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Container-Orchestrierung unterstützt moderne Betriebsmodelle im öffentlichen Sektor.",
+				"en": "Container orchestration supports modern operating models in the public sector."
+			}
+		},
+		{
+			"itemId": "openapi",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "OpenAPI standardisiert Schnittstellen für wiederverwendbare Behördenmodule.",
+				"en": "OpenAPI standardizes interfaces for reusable public modules."
+			}
+		},
+		{
+			"itemId": "postgresql",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "PostgreSQL wird als robuster Open-Source-Datenspeicher eingesetzt.",
+				"en": "PostgreSQL is used as a robust open-source data store."
+			}
+		},
+		{
+			"itemId": "spring-boot",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Spring-basierte Referenzarchitekturen prägen den eGovFrame-Stack.",
+				"en": "Spring-based reference architectures shape the eGovFrame stack."
+			}
+		},
+		{
+			"itemId": "typescript",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "TypeScript unterstützt moderne, wartbare Frontend-Implementierungen.",
+				"en": "TypeScript supports modern, maintainable frontend implementations."
+			}
+		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "eGovFrame",
+				"en": "eGovFrame",
+				"fr": "eGovFrame"
+			},
+			"url": "https://www.egovframe.go.kr/"
+		}
+	]
+}

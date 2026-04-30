@@ -1,0 +1,10 @@
+{
+	"id": "building-blocks",
+	"order": 3,
+	"name": { "de": "Bausteine", "en": "Building Blocks" },
+	"description": {
+		"de": "Wiederverwendbare Bausteine: APIs, Bibliotheken, SDKs und gemeinsame Dienste für den Betrieb.",
+		"en": "Reusable building blocks: APIs, libraries, SDKs and shared operational services."
+	},
+	"color": "#00883d"
+}

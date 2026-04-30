@@ -1,0 +1,43 @@
+{
+	"id": "simple-object-access-protocol",
+	"name": "Simple Object Access Protocol",
+	"layer": "platform",
+	"sublayer": "integration",
+	"groupKey": "api-style",
+	"itemKind": "protocol",
+	"description": {
+		"de": "SOAP ist ein Protokoll, das den Austausch von strukturierten Informationen in verteilten und dezentralisierten Umgebungen ermöglicht. Es nutzt XML als Format für Anfragen und Antworten und arbeitet oft über HTTP, kann aber auch andere Protokolle nutzen. Der Hauptzweck von SOAP liegt in der Unterstützung von Interoperabilität und Sicherheit in komplexen Unternehmensanwendungen, wobei es strikt definierten Standards für Webservices folgt.",
+		"en": ""
+	},
+	"homepage": "https://www.w3.org/TR/soap/",
+	"tags": ["api", "xml", "schnittstelle"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://www.w3.org/2000/xp/Group/"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/soap12/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/soap12-part1/"
+		}
+	]
+}

@@ -1,0 +1,108 @@
+{
+	"id": "brazil",
+	"name": {
+		"de": "Brasilien Stack (Gov.br/Pix)",
+		"en": "Brazil Stack (Gov.br/Pix)"
+	},
+	"description": {
+		"de": "Öffentliche DPI-Architektur rund um Gov.br-Identität, Echtzeit-Zahlungen und föderierte APIs.",
+		"en": "Public DPI architecture centered on Gov.br identity, real-time payments and federated APIs."
+	},
+	"country": "BR",
+	"issuer": "Secretaria de Governo Digital / Banco Central do Brasil",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-16",
+	"items": [
+		{
+			"itemId": "docker-swarm",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Containerisierung wird für servicebasierte Gov.br-Workloads eingesetzt.",
+				"en": "Containerization is used for service-based Gov.br workloads."
+			}
+		},
+		{
+			"itemId": "graphql",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "GraphQL wird für datenreiche Integrations- und Portalanwendungen genutzt.",
+				"en": "GraphQL is used for data-rich integration and portal applications."
+			}
+		},
+		{
+			"itemId": "keycloak",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Keycloak dient als zentraler IAM-Baustein in Gov.br-nahen Integrationen.",
+				"en": "Keycloak serves as a central IAM building block in Gov.br-related integrations."
+			}
+		},
+		{
+			"itemId": "kubernetes",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Kubernetes orchestriert skalierbare Microservices in föderalen Plattformen.",
+				"en": "Kubernetes orchestrates scalable microservices across federal platforms."
+			}
+		},
+		{
+			"itemId": "node-js",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Node.js wird breit für API- und Integrationsdienste verwendet.",
+				"en": "Node.js is widely used for API and integration services."
+			}
+		},
+		{
+			"itemId": "open-authorization-oauth",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "OAuth-basierte Föderation koppelt Fachverfahren an Gov.br-Identitäten.",
+				"en": "OAuth-based federation connects domain systems to Gov.br identities."
+			}
+		},
+		{
+			"itemId": "openid",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "OIDC standardisiert sichere Login- und Token-Flüsse im Ökosystem.",
+				"en": "OIDC standardizes secure login and token flows across the ecosystem."
+			}
+		},
+		{
+			"itemId": "postgresql",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "PostgreSQL ist ein häufig eingesetzter Datenspeicher für Verwaltungsdienste.",
+				"en": "PostgreSQL is a common data store for public digital services."
+			}
+		},
+		{
+			"itemId": "react",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "React treibt Benutzeroberflächen in Portalen und Signaturdiensten.",
+				"en": "React powers user interfaces in portals and signature services."
+			}
+		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "Gov.br",
+				"en": "Gov.br",
+				"fr": "Gov.br"
+			},
+			"url": "https://www.gov.br/"
+		}
+	]
+}

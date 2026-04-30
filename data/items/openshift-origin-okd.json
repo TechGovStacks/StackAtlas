@@ -1,0 +1,42 @@
+{
+	"id": "openshift-origin-okd",
+	"name": "OpenShift Origin (OKD)",
+	"layer": "platform",
+	"sublayer": "integration",
+	"itemKind": "platform",
+	"description": {
+		"de": "OpenShift ist eine Kubernetes-basierte Plattform von Red Hat für die Entwicklung und Bereitstellung von Cloud-nativen Anwendungen, die eine einheitliche Basis für Hybrid-Cloud-, Multi-Cloud- und Edge-Umgebungen bietet und den gesamten Lebenszyklus von Anwendunen unterstützt. OKD ist die Community Version von OpenShift welche 2018 abgeleitet wurde.",
+		"en": ""
+	},
+	"homepage": "http://www.openshift.org/",
+	"tags": ["orchestrierung", "container"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://okd.io/docs/documentation/"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.okd.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/okd-project/okd"
+		}
+	]
+}

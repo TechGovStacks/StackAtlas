@@ -1,0 +1,40 @@
+{
+	"id": "wordpress",
+	"name": "WordPress",
+	"layer": "applications",
+	"sublayer": "lowcode",
+	"groupKey": "cms",
+	"itemKind": "platform",
+	"description": {
+		"de": "WordPress ist ein weit verbreitetes Open-Source-CMS für Websites und Blogs. Es wird in vielen Verwaltungs-Webauftritten und Informationsportalen eingesetzt.",
+		"en": "WordPress is a widely used open-source CMS for websites and blogs. It is deployed by many public-administration websites and information portals."
+	},
+	"homepage": "https://wordpress.org/",
+	"license": "GPL-2.0-or-later",
+	"tags": ["cms", "blogging"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": false,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://wordpress.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/WordPress/WordPress"
+		}
+	]
+}

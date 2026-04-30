@@ -1,0 +1,87 @@
+name: Bug Report
+description: Melden Sie einen Fehler oder ein Problem
+title: '[BUG] '
+labels: ['bug', 'needs-triage']
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke, dass Sie einen Bug melden! Bitte füllen Sie die folgenden Details aus.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Fehlerbeschreibung
+      description: Beschreiben Sie das Problem genau
+      placeholder: Der Bug tritt auf, wenn...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Schritte zur Reproduktion
+      description: Wie können wir den Bug reproduzieren?
+      placeholder: |
+        1. Navigieren Sie zu...
+        2. Klicken Sie auf...
+        3. Beobachten Sie...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Erwartetes Verhalten
+      description: Was sollte stattdessen passieren?
+      placeholder: Das sollte...
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Aktuelles Verhalten
+      description: Was passiert stattdessen?
+      placeholder: Stattdessen...
+    validations:
+      required: true
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      description: Welcher Browser wird verwendet?
+      placeholder: Chrome 120, Firefox 121, Safari 17, etc.
+
+  - type: input
+    id: os
+    attributes:
+      label: Betriebssystem
+      description: Welches Betriebssystem wird verwendet?
+      placeholder: Windows 11, macOS 14, Ubuntu 22.04, etc.
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Fügen Sie Screenshots oder Videos ein (optional)
+      placeholder: Drag & drop oder paste hier...
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Zusätzlicher Kontext
+      description: Weitere relevante Informationen?
+      placeholder: z.B. Error-Konsole, Netzwerk-Tabs, etc.
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checkliste
+      options:
+        - label: Ich habe ähnliche Issues durchsucht
+          required: true
+        - label: Dies ist ein Bug und keine Feature-Anfrage
+          required: true

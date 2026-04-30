@@ -1,0 +1,36 @@
+{
+	"id": "fido2-standards",
+	"name": "FIDO2-Standards",
+	"layer": "sovereign-standards",
+	"itemKind": "standard",
+	"description": {
+		"de": "siehe https://de.wikipedia.org/wiki/FIDO2",
+		"en": ""
+	},
+	"tags": ["negz-import", "researched"],
+	"oss": false,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"homepage": "https://fidoalliance.org/fido2/",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://fidoalliance.org/fido2/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/webauthn-2/"
+		}
+	]
+}

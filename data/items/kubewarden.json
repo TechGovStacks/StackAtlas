@@ -1,0 +1,37 @@
+{
+	"id": "kubewarden",
+	"name": "kubewarden",
+	"layer": "platform",
+	"itemKind": "platform",
+	"description": {
+		"de": "Kubewarden ist ein cloud-native Policy-Governance-Framework für Kubernetes, das als dynamischer Admission Controller fungiert. Es ermöglicht die Definition, Validierung und Mutation von Cluster-Ressourcen basierend auf plattformübergreifenden Richtlinien (Policies).",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"homepage": "https://www.kubewarden.io/",
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.kubewarden.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/kubewarden"
+		}
+	]
+}

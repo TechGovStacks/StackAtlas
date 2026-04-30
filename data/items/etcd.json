@@ -1,0 +1,35 @@
+{
+	"id": "etcd",
+	"name": "etcd",
+	"layer": "sovereign-standards",
+	"itemKind": "platform",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Verteilte Konfigurationsdatenbank' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": "A strongly consistent, distributed key-value store built with Apache License for reliable service discovery and configuration management in cloud-native environments."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://etcd.io/",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://etcd.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/etcd-io/etcd"
+		}
+	]
+}

@@ -1,0 +1,152 @@
+{
+	"id": "european-union",
+	"name": {
+		"de": "EU Referenz-Stack (EIRA / EUDI)",
+		"en": "EU Reference Stack (EIRA / EUDI)"
+	},
+	"description": {
+		"de": "Supranationaler Referenz-Stack der Europäischen Kommission auf Basis der European Interoperability Reference Architecture (EIRA) und des EUDI Wallets.",
+		"en": "Supranational reference stack from the European Commission based on the European Interoperability Reference Architecture (EIRA) and the EUDI Wallet."
+	},
+	"issuer": "Europäische Kommission / DG DIGIT",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-13",
+	"items": [
+		{
+			"itemId": "eudi-wallet",
+			"status": "recommended",
+			"role": "maintainer",
+			"rationale": {
+				"de": "Harmonisierte EU-weite digitale Brieftasche.",
+				"en": "Harmonised EU-wide digital wallet."
+			}
+		},
+		{
+			"itemId": "keycloak",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Open-Source-IAM-Standard für eIDAS-konforme Login-Dienste.",
+				"en": "Open-source IAM standard for eIDAS-compliant login services."
+			}
+		},
+		{
+			"itemId": "openid",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Föderiertes SSO als Standardbaustein des EIRA-Ökosystems.",
+				"en": "Federated SSO as a standard building block of the EIRA ecosystem."
+			}
+		},
+		{
+			"itemId": "open-authorization-oauth",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Autorisierungs-Standard in EU-Diensten.",
+				"en": "Authorisation standard in EU services."
+			}
+		},
+		{
+			"itemId": "openapi",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "API-Beschreibung als EIRA-konformer Architecture Building Block.",
+				"en": "API description as an EIRA-compliant architecture building block."
+			}
+		},
+		{
+			"itemId": "comprehensive-knowledge-archive-network-ckan",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Open-Data-Plattform vieler europäischer Datenportale.",
+				"en": "Open data platform used by many European data portals."
+			}
+		},
+		{
+			"itemId": "piveau",
+			"status": "approved",
+			"role": "contributor",
+			"rationale": {
+				"de": "EU-Datenkatalog-Implementierung in europaweiten Open-Data-Portalen.",
+				"en": "EU data catalogue implementation used in pan-European open-data portals."
+			}
+		},
+		{
+			"itemId": "data-catalog-vocabulary-dcat",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Standard-Vokabular für europäische Datenkataloge.",
+				"en": "Standard vocabulary for European data catalogues."
+			}
+		},
+		{
+			"itemId": "java",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Backend-Sprache vieler EIRA-Referenzimplementierungen.",
+				"en": "Backend language of many EIRA reference implementations."
+			}
+		},
+		{
+			"itemId": "spring-boot",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Microservice-Framework in EU-Referenzprojekten.",
+				"en": "Microservice framework in EU reference projects."
+			}
+		},
+		{
+			"itemId": "postgresql",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Standard-Datenbank für EU-Referenzimplementierungen.",
+				"en": "Standard database for EU reference implementations."
+			}
+		},
+		{
+			"itemId": "kubernetes",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Container-Orchestrierung in europäischen Cloud-Umgebungen.",
+				"en": "Container orchestration in European cloud environments."
+			}
+		},
+		{
+			"itemId": "fido2-webauthn",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Phishing-resistente Authentifizierung im EUDI-Kontext.",
+				"en": "Phishing-resistant authentication in the EUDI context."
+			}
+		},
+		{
+			"itemId": "transport-layer-security-tls",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Standardverschlüsselung aller EU-API-Endpunkte.",
+				"en": "Standard encryption for all EU API endpoints."
+			}
+		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "EIRA (EU)",
+				"en": "EIRA (EU)",
+				"fr": "EIRA (UE)"
+			},
+			"url": "https://joinup.ec.europa.eu/collection/european-interoperability-reference-architecture-eira"
+		}
+	]
+}

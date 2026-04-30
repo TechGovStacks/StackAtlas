@@ -1,0 +1,82 @@
+name: New Item/Technology
+description: Schlagen Sie eine neue Technologie oder einen Standard vor
+title: '[ITEM] '
+labels: ['data', 'item', 'needs-triage']
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Danke, dass Sie eine neue Technologie oder einen Standard vorschlagen! Bitte füllen Sie die folgenden Details aus.
+
+  - type: input
+    id: item-name
+    attributes:
+      label: Name der Technologie/des Standards
+      description: Offizieller Name
+      placeholder: z.B. "Kubernetes" oder "OpenID Connect"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Kurzbeschreibung
+      description: Was ist diese Technologie/dieser Standard?
+      placeholder: |
+        Kubernetes ist ein Open-Source-Orchestrierungs-System für...
+    validations:
+      required: true
+
+  - type: input
+    id: category
+    attributes:
+      label: Kategorie/Schicht
+      description: Zu welcher Schicht gehört diese Technologie?
+      placeholder: z.B. "Plattform", "Infrastruktur", "Entwicklung"
+    validations:
+      required: true
+
+  - type: input
+    id: official-url
+    attributes:
+      label: Offizielle Website/Repository
+      description: URL zur offiziellen Quelle
+      placeholder: https://kubernetes.io
+    validations:
+      required: true
+
+  - type: textarea
+    id: metrics
+    attributes:
+      label: Metriken/Kennzahlen
+      description: Relevante Metriken oder Dimensionen für diese Technologie
+      placeholder: |
+        - Lizenzentyp: Open Source / Commercial
+        - Entwickler: ...
+        - Community-Größe: ...
+        - Marktreife: ...
+
+  - type: input
+    id: license
+    attributes:
+      label: Lizenz
+      description: Lizenz der Technologie (z.B. MIT, Apache 2.0, GPL)
+      placeholder: z.B. "Apache License 2.0"
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Zusätzliche Informationen
+      description: Weitere relevante Details oder Kontext
+      placeholder: z.B. Abhängigkeiten, verwandte Technologien...
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checkliste
+      options:
+        - label: Ich habe überprüft, dass diese Technologie/dieser Standard nicht bereits in StackAtlas existiert
+          required: true
+        - label: Ich habe die offizielle Dokumentation gelesen
+          required: true

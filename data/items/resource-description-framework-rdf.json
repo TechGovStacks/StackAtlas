@@ -1,0 +1,42 @@
+{
+	"id": "resource-description-framework-rdf",
+	"name": "Resource Description Framework (RDF)",
+	"layer": "platform",
+	"sublayer": "daten",
+	"itemKind": "format",
+	"description": {
+		"de": "RDF ist ein Datenformat für den Datenaustausch.",
+		"en": ""
+	},
+	"homepage": "https://www.w3.org/RDF/",
+	"tags": ["datenformat"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://www.w3.org/standards/techs/rdf"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.w3.org/RDF/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/rdf11-concepts/"
+		}
+	]
+}

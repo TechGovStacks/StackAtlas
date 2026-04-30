@@ -1,0 +1,144 @@
+{
+	"id": "estonia",
+	"name": {
+		"de": "Estland Stack",
+		"en": "Estonia Stack"
+	},
+	"description": {
+		"de": "Estnisches e-Government-Ökosystem mit X-Road als dezentraler Datenaustausch-Plattform und einem klaren Once-Only-Prinzip.",
+		"en": "Estonia's e-government ecosystem built around X-Road as a decentralised data exchange platform and a clear once-only principle."
+	},
+	"country": "EE",
+	"issuer": "Riigi Infosüsteemi Amet (RIA) / NIIS",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-13",
+	"items": [
+		{
+			"itemId": "x-road",
+			"status": "recommended",
+			"role": "maintainer",
+			"rationale": {
+				"de": "Kernkomponente des estnischen Stacks, von Estland und NIIS gepflegt.",
+				"en": "Core component of the Estonia stack, maintained by Estonia and NIIS."
+			}
+		},
+		{
+			"itemId": "activemq-artemis",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Asynchrone Nachrichtenwarteschlangen rund um den X-Road Security Server.",
+				"en": "Asynchronous message queues around the X-Road Security Server."
+			}
+		},
+		{
+			"itemId": "java",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Implementierungssprache des X-Road Security Servers.",
+				"en": "Implementation language of the X-Road Security Server."
+			}
+		},
+		{
+			"itemId": "spring-boot",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Backend-Microservices in der estnischen Verwaltungs-IT.",
+				"en": "Backend microservices in Estonian public-administration IT."
+			}
+		},
+		{
+			"itemId": "postgresql",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Standard-Datenbank für X-Road und angeschlossene Fachverfahren.",
+				"en": "Standard database for X-Road and attached domain systems."
+			}
+		},
+		{
+			"itemId": "vuejs",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Frontend-Framework des X-Road Admin UIs.",
+				"en": "Frontend framework of the X-Road admin UI."
+			}
+		},
+		{
+			"itemId": "openapi",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "REST-Schnittstellen werden mit OpenAPI3 beschrieben.",
+				"en": "REST services are described with OpenAPI3."
+			}
+		},
+		{
+			"itemId": "simple-object-access-protocol",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Legacy-SOAP-Dienste werden über X-Road weiter unterstützt.",
+				"en": "Legacy SOAP services are still supported via X-Road."
+			}
+		},
+		{
+			"itemId": "transport-layer-security-tls",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Transportverschlüsselung zwischen Security Servern.",
+				"en": "Transport encryption between Security Servers."
+			}
+		},
+		{
+			"itemId": "openid",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Föderierte Authentifizierung von Bürgern und Organisationen.",
+				"en": "Federated authentication of citizens and organisations."
+			}
+		},
+		{
+			"itemId": "keycloak",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Häufig genutzter IAM-Provider in estnischen Behörden-Setups.",
+				"en": "Frequently used IAM provider in Estonian agency setups."
+			}
+		},
+		{
+			"itemId": "kubernetes",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Container-Orchestrierung für moderne X-Road-Deployments.",
+				"en": "Container orchestration for modern X-Road deployments."
+			}
+		},
+		{
+			"itemId": "docker-swarm",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Container-Orchestrierung in kleineren Setups.",
+				"en": "Container orchestration in smaller setups."
+			}
+		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "X-Road",
+				"en": "X-Road",
+				"fr": "X-Road"
+			},
+			"url": "https://x-road.global/"
+		}
+	]
+}

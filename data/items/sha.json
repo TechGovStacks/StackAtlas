@@ -1,0 +1,34 @@
+{
+	"id": "sha",
+	"name": "SHA",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "SSH-Schlüssel\n\nSHA ist zwar aufgeführt, aber ohne Hinweise siehe Spalte D"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://csrc.nist.gov/projects/hash-functions"
+		},
+		{
+			"type": "url",
+			"url": "https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.180-4.pdf"
+		}
+	]
+}

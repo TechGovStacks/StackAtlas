@@ -1,0 +1,34 @@
+{
+	"id": "symfony-php-stack",
+	"name": "Symfony + PHP \"Stack\"",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "Symfony ist ein offener in der EU entwickelter \"Baukasten\" bzw. ein Framework auf Basis von PHP (Programmiersprache, bereits im D-Stack) um primär Webanwendungen zu entwickeln - Onlinedienste, Verwaltungssysteme und co lassen sich mit wenig Aufwand und vielen bereits vorhandenen Bausteinen aufbauen."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://symfony.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/symfony/symfony"
+		}
+	]
+}

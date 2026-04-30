@@ -1,0 +1,36 @@
+{
+	"id": "hypertext-transfer-protocol-http",
+	"name": "Hypertext Transfer Protocol (HTTP)",
+	"layer": "infrastructure",
+	"sublayer": "transport",
+	"itemKind": "protocol",
+	"description": {
+		"de": "HTTP wird verwendet um Ressoucen wie Webseiten, APIs, Formulare, Bilder oder Videos abzurufen und zu senden.",
+		"en": ""
+	},
+	"homepage": "https://datatracker.ietf.org/wg/httpbis/documents/",
+	"tags": ["protocol", "web", "standard", "ietf", "transport"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/wg/httpbis/documents/"
+		},
+		{
+			"type": "url",
+			"url": "https://de.wikipedia.org/wiki/Hypertext_Transfer_Protocol"
+		}
+	]
+}

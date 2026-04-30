@@ -1,0 +1,103 @@
+{
+	"id": "sovereign-cloud-stack",
+	"name": {
+		"de": "Sovereign Cloud Stack",
+		"en": "Sovereign Cloud Stack"
+	},
+	"description": {
+		"de": "Offener europaeischer Referenz-Stack fuer souveraene Cloud-Infrastruktur mit standardisierten IaaS-, KaaS- und IAM-Bausteinen. Die Aufbauphase wurde von Juli 2021 bis Dezember 2024 durch BMWK-Foerderung unterstuetzt; seit 2025 erfolgt die Weiterentwicklung community-getrieben.",
+		"en": "Open European reference stack for sovereign cloud infrastructure with standardized IaaS, KaaS, and IAM building blocks. The initial build-up phase was supported by BMWK funding from July 2021 through December 2024; since 2025, development continues in a community-driven model."
+	},
+	"country": "EU",
+	"issuer": "Open Source Business Alliance (OSBA)",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-19",
+	"items": [
+		{
+			"itemId": "ansible",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Automatisierung von Deployment und Betrieb in Referenzumgebungen.",
+				"en": "Automation of deployment and operations in reference environments."
+			}
+		},
+		{
+			"itemId": "grafana",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Observability und Dashboards fuer den Cloud-Betrieb.",
+				"en": "Observability and dashboards for cloud operations."
+			}
+		},
+		{
+			"itemId": "keycloak",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Identitaets- und Zugriffsmanagement im IAM-Layer.",
+				"en": "Identity and access management in the IAM layer."
+			}
+		},
+		{
+			"itemId": "kubernetes",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Container-Orchestrierung als zentrale KaaS-Komponente.",
+				"en": "Container orchestration as a core KaaS component."
+			}
+		},
+		{
+			"itemId": "prometheus",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Monitoring und Metriksammlung fuer Betriebs- und Gesundheitsdaten.",
+				"en": "Monitoring and metrics collection for operational and health data."
+			}
+		},
+		{
+			"itemId": "terraform",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Infrastructure as Code fuer reproduzierbare Bereitstellung.",
+				"en": "Infrastructure as Code for reproducible provisioning."
+			}
+		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "SCS Community",
+				"en": "SCS Community"
+			},
+			"url": "https://scs.community/"
+		}
+	],
+	"participants": [
+		{
+			"name": "Bundesministerium fuer Wirtschaft und Klimaschutz (BMWK)",
+			"role": "funder",
+			"jurisdiction": "DE",
+			"url": "https://www.bmwk.de/",
+			"since": "2021-07-01"
+		},
+		{
+			"name": "Open Source Business Alliance (OSBA)",
+			"role": "maintainer",
+			"jurisdiction": "DE",
+			"url": "https://www.osb-alliance.de/",
+			"since": "2021-07-01"
+		},
+		{
+			"name": "SCS Community",
+			"role": "contributor",
+			"jurisdiction": "EU",
+			"url": "https://scs.community/",
+			"since": "2025-01-01"
+		}
+	]
+}

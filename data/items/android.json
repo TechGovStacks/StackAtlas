@@ -1,0 +1,43 @@
+{
+	"id": "android",
+	"name": "Android",
+	"layer": "applications",
+	"sublayer": "android-os",
+	"itemKind": "service",
+	"description": {
+		"de": "Android ist ein offenes Betriebssystem für die Arbeit auf mobilen Endgeräten.",
+		"en": ""
+	},
+	"homepage": "https://www.android.com/",
+	"tags": ["mobil", "app", "betriebssystem"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://source.android.com/docs?hl=de"
+	},
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.android.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://source.android.com/"
+		}
+	]
+}

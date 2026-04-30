@@ -1,0 +1,34 @@
+{
+	"id": "sql",
+	"name": "SQL",
+	"layer": "building-blocks",
+	"itemKind": "language",
+	"description": {
+		"de": "SQL (Structured Query Language) ist die standardisierte Sprache zur Verwaltung, Abfrage und Bearbeitung von Daten in relationalen Datenbanken."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.iso.org/standard/63555.html"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/SQL"
+		}
+	]
+}

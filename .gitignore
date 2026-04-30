@@ -1,0 +1,43 @@
+# IDE's
+.idea
+.project
+*.sublime-*
+*.code-*
+
+
+# Node.js
+node_modules
+npm-debug.log
+package-lock.json
+yarn.lock
+
+
+# Build and test tools
+dist/
+public/assets/*
+!public/assets/broken-logo.svg
+src/data/articles.generated.ts
+src/data/items.generated.ts
+
+# Playwright
+playwright-report/
+test-results/
+
+# Cache
+.sass-cache
+.cache
+
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+
+# Other
+/.husky/_
+/.reports
+.env
+.eslintcache
+*~
+*.log
+*.tgz

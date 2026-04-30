@@ -1,0 +1,43 @@
+{
+	"id": "portainer",
+	"name": "Portainer",
+	"layer": "platform",
+	"sublayer": "integration",
+	"groupKey": "k8s-management-ui",
+	"itemKind": "platform",
+	"description": {
+		"de": "Portainer ist eine benutzerfreundliche, webbasierte Management-Plattform für Container, die es ermöglicht, Docker- und Kubernetes-Umgebungen mit einer einfachen Oberfläche zu verwalten und zu überwachen.",
+		"en": ""
+	},
+	"homepage": "https://www.portainer.io/",
+	"tags": ["orchestrierung"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://github.com/portainer"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.portainer.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/portainer/portainer"
+		}
+	]
+}

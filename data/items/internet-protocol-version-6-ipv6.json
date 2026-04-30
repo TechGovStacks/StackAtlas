@@ -1,0 +1,38 @@
+{
+	"id": "internet-protocol-version-6-ipv6",
+	"name": "Internet Protocol Version 6 (IPv6)",
+	"layer": "infrastructure",
+	"sublayer": "transport",
+	"itemKind": "protocol",
+	"description": {
+		"de": "IPv6 dient der Adressierung in der Vermittlung. IP selbst stellt keine Verbindung her.",
+		"en": ""
+	},
+	"homepage": "https://datatracker.ietf.org/doc/html/rfc8200",
+	"tags": ["adresse", "internet"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc8200"
+		},
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc8200"
+		}
+	]
+}

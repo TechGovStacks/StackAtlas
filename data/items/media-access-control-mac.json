@@ -1,0 +1,42 @@
+{
+	"id": "media-access-control-mac",
+	"name": "Media Access Control (MAC)",
+	"layer": "infrastructure",
+	"sublayer": "verteilung",
+	"itemKind": "platform",
+	"description": {
+		"de": "MAC ist eine Unterschicht der Sicherungsschicht (Layer 2) im OSI-Modell, die den Zugriff auf das Übertragungsmedium in Netzwerken regelt. MAC-Protokolle koordinieren, wie mehrere Geräte gemeinsam auf ein geteiltes Kommunikationsmedium zugreifen können, ohne sich gegenseitig zu stören. Jedes Netzwerkgerät erhält eine eindeutige MAC-Adresse zur Identifikation im lokalen Netzwerksegment.",
+		"en": ""
+	},
+	"homepage": "https://datatracker.ietf.org/doc/rfc9724/",
+	"tags": ["identifier", "uuid", "adresse", "guid", "oui"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://tools.ietf.org/rfc/rfc826.txt"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://standards.ieee.org/ieee/802.3/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/MAC_address"
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"id": "fido2-webauthn",
+	"name": "FIDO2 / WebAuthn",
+	"layer": "sovereign-standards",
+	"sublayer": "sicherheit",
+	"itemKind": "protocol",
+	"description": {
+		"de": "FIDO2 und WebAuthn sind offene Standards für passwortlose und Hardware-Token-basierte Authentifizierung. Sie ermöglichen sichere Anmeldungen via Smartphones, Sicherheitsschlüsseln und biometrischen Sensoren und sind eine Grundlage für moderne, phishing-resistente Identitätssysteme.",
+		"en": "FIDO2 and WebAuthn are open standards for passwordless and hardware-token authentication. They enable secure sign-in via smartphones, security keys and biometric sensors and form a foundation for modern, phishing-resistant identity systems."
+	},
+	"homepage": "https://fidoalliance.org/fido2/",
+	"tags": ["authentication", "passwordless", "security", "standard", "webauthn"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://fidoalliance.org/fido2/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/webauthn-2/"
+		}
+	]
+}

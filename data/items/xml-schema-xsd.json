@@ -1,0 +1,34 @@
+{
+	"id": "xml-schema-xsd",
+	"name": "XML-Schema (XSD)",
+	"layer": "building-blocks",
+	"itemKind": "format",
+	"description": {
+		"de": "Legt Strukturen für XML-Nachrichten fest. Eine Überprüfung von XML-Nachrichten gegen ein zugehöriges Schema sollte immer stattfinden (Überprüfung von Eingabedaten gemäß IT-Grundschutz)."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/xmlschema-1/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.w3.org/XML/Schema"
+		}
+	]
+}

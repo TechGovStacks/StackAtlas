@@ -1,0 +1,43 @@
+{
+	"id": "css",
+	"name": "CSS",
+	"groupKey": "styling-language",
+	"itemKind": "language",
+	"layer": "building-blocks",
+	"sublayer": "sprachen",
+	"description": {
+		"de": "Cascading Style Sheets (CSS) ist eine Kernsprache der offenen Webplattform und wird zum Hinzufügen von Stilen (z. B. Schriftarten, Farben, Abstände) zu Webdokumenten verwendet.",
+		"en": ""
+	},
+	"homepage": "https://www.w3.org/Style/CSS/",
+	"tags": ["stil", "user-interface"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://www.w3.org/Style/CSS/"
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.w3.org/Style/CSS/"
+		},
+		{
+			"type": "url",
+			"url": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+		}
+	]
+}

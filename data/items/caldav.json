@@ -1,0 +1,36 @@
+{
+	"id": "caldav",
+	"name": "CalDav",
+	"layer": "building-blocks",
+	"itemKind": "protocol",
+	"description": {
+		"de": "Protokoll für die Synchronisation und den gemeinsamen Zugriff auf Kalenderdaten",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://datatracker.ietf.org/doc/html/rfc4791",
+	"license": "IETF",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc4791"
+		},
+		{
+			"type": "url",
+			"url": "https://icalendar.org/RFC-Specifications/CalDAV-Access-RFC-4791/"
+		}
+	]
+}

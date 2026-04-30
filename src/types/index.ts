@@ -1,0 +1,373 @@
+/**
+ * ResearchSource: Source used for sovereignty research
+ */
+export type ResearchSource = {
+	/** Type of source: url or file */
+	type: 'url' | 'file';
+	/** URL if type is url */
+	url?: string;
+	/** File path if type is file */
+	path?: string;
+	/** Optional note or description */
+	note?: string;
+};
+export type LanguageCode = 'da' | 'de' | 'en' | 'es' | 'fr' | 'it' | 'no' | 'sv';
+
+export type LocalizedText = {
+	[K in LanguageCode]?: string;
+} & {
+	de: string;
+	en?: string;
+};
+
+export type LocalizableText = string | LocalizedText;
+
+// ---------------------------------------------------------------------------
+// Layer (replaces Category) — the 5 Splash layers
+// ---------------------------------------------------------------------------
+
+export type Layer = {
+	id: string;
+	order: number;
+	name: LocalizableText;
+	description?: LocalizableText;
+	color: string;
+};
+
+// ---------------------------------------------------------------------------
+// Item (replaces Article)
+// ---------------------------------------------------------------------------
+
+export type Maturity = 'sandbox' | 'incubation' | 'graduated';
+export type OwnerType = 'independentConsortium' | 'corporation' | 'community' | 'oneManShow';
+export type DependencyType = 'build' | 'compiles-to' | 'language' | 'protocol' | 'runtime';
+
+/**
+ * ItemKind: The fundamental nature of an item — what kind of thing it is.
+ *
+ * Distinct from `layer` (where it lives in the stack) and `groupKey` (what it competes with).
+ * Formats and standards are never technical `ItemDependency` targets; they represent
+ * compliance/adoption relationships modeled via `StackItem`.
+ *
+ * - format:   Data serialization or document format (CSV, JSON, ODF, PDF/A, Protobuf)
+ * - standard: Normative specification or regulation (ISO, DIN, RFC, W3C, eIDAS)
+ * - protocol: Communication protocol (HTTP, TLS, OAuth, SMTP, AMQP)
+ * - language: Programming or markup language (TypeScript, Python, SQL)
+ * - runtime:  Execution runtime (JVM, Node.js, WebAssembly)
+ * - framework:Application or web framework (Angular, Spring, Django)
+ * - library:  Software library or SDK
+ * - tool:     Developer or operational tool (CLI, scanner, build tool)
+ * - platform: Infrastructure platform (database, broker, orchestrator)
+ * - service:  Hosted or SaaS service
+ */
+export type ItemKind = 'format' | 'standard' | 'protocol' | 'language' | 'runtime' | 'framework' | 'library' | 'tool' | 'platform' | 'service';
+export type DependencyScope = 'dev' | 'optional' | 'required';
+
+export type ItemDependency = {
+	targetItemId: string;
+	/** Technical dependency relation. */
+	type: DependencyType;
+	/** Whether the dependency is required, optional, or only needed in development. */
+	scope?: DependencyScope;
+	reason?: string | LocalizedText;
+};
+
+// Hybrid Scoring Scale: 6 Categories + Numeric Score
+export type SovereigntyScoreCategory =
+	| 'insufficient' // 0-30
+	| 'minimal' // 31-45
+	| 'adequate' // 46-60
+	| 'good' // 61-75
+	| 'excellent' // 76-90
+	| 'outstanding'; // 91-100
+
+export type SovereigntyScoreResult = {
+	/** Raw score: 0-100 */
+	score: number;
+	/** Category: one of 6 categories */
+	category: SovereigntyScoreCategory;
+	/** Color code for UI visualization (hex) */
+	color: string;
+	/** Position within category range (0-100) */
+	percentileInCategory: number;
+};
+
+export type StackSelectionItemClass =
+	| 'architekturPattern'
+	| 'beobachtungskandidat'
+	| 'offenerStandard'
+	| 'produktPlattformFramework'
+	| 'referenzimplementierung';
+
+export type StackSelectionDecisionClass = 'beobachtungPilotierung' | 'kernstack' | 'nichtAufnehmen' | 'optionaleReferenztechnologie' | 'referenzstack';
+
+export type StackSelectionLifecycleStatus = 'deprecated' | 'kandidat' | 'kernstack' | 'referenz' | 'sunset';
+
+export type StackSelectionDimensionKey =
+	| 'austauschbarkeit'
+	| 'betriebsGovernanceFaehigkeit'
+	| 'interoperabilitaet'
+	| 'offenheitStandardisierung'
+	| 'patternFit'
+	| 'reifegrad'
+	| 'steuerbarkeit'
+	| 'souveraenitaet';
+
+export type StackSelectionDimensions = Record<StackSelectionDimensionKey, number>;
+
+export type StackSelectionHardExclusion = {
+	geringeAustauschbarkeit: boolean;
+	keinDokumentierterStandard: boolean;
+	keinKlaresPattern: boolean;
+	keinMehrwertGegenueberBestand: boolean;
+	nichtOperationalisierbar: boolean;
+	nurHypeToolMode: boolean;
+	starkeHerstellerCloudBindung: boolean;
+	ueberschneidungOhneZusatznutzen: boolean;
+	unreiferInstabilerReifegrad: boolean;
+};
+
+export type StackSelectionAssessmentInput = {
+	dimensions: StackSelectionDimensions;
+	hardExclusion: StackSelectionHardExclusion;
+	itemClass: StackSelectionItemClass;
+	lifecycleStatus: StackSelectionLifecycleStatus;
+};
+
+export type StackSelectionAssessmentResult = {
+	decisionClass: StackSelectionDecisionClass;
+	governanceStatus: StackSelectionLifecycleStatus;
+	hardExclusionFailed: boolean;
+	isEligibleForCore: boolean;
+	points: number;
+	thresholdFailed: boolean;
+	weightedScore: number;
+};
+export type PopularityMetrics = {
+	/** ISO 8601 date when metrics were last updated — required for ageFactor calculation */
+	updatedAt: string;
+	/** GitHub star count */
+	githubStars?: number;
+	/** npm weekly download count */
+	npmWeeklyDownloads?: number;
+	/** Docker Hub weekly pull count */
+	dockerWeeklyPulls?: number;
+	/** PyPI weekly download count */
+	pypiWeeklyDownloads?: number;
+};
+
+export type AdoptionResult = {
+	/** Adoption score (0-100): stack frequency with role/status weighting */
+	adoptionScore: number;
+	/** Sovereign adoption score (0-100): adoption by sovereignly-rated items/stacks only */
+	sovereignAdoptionScore: number;
+	/** Overall score (0-100): combined 60% sovereignty + 25% sovereign adoption + 15% adoption */
+	overallScore: number;
+	/** Direct stack coverage: weighted sum of stack appearances */
+	directCoverage: number;
+	/** Transitive coverage: 0.3 * coverage of items depending on this one */
+	transitiveCoverage: number;
+	/** Geographic diversity (Simpson-Index 0-1): 1.0 = perfectly diverse */
+	diversity: number;
+	/** List of stack IDs where this item appears */
+	usedInStacks: string[];
+	/** Popularity score (0-100): normalized log-scale from external signals. Undefined if no data. */
+	popularityScore?: number;
+};
+
+export type SovereigntyCriteria = {
+	/** Open-source with publicly accessible source code (+15) */
+	openSource: boolean;
+	/** Headquartered or legally registered in the EU (+5) */
+	euHeadquartered: boolean;
+	/** Has a documented and publicly available security/compliance audit (+5) */
+	hasAudit: boolean;
+	/** Uses a permissive or copyleft open-source license that allows forking (+10) */
+	permissiveLicense: boolean;
+	/** Project is mature — graduated/stable lifecycle status (+5) */
+	matureProject: boolean;
+	/** Can be operated by the user without depending on third-party infrastructure (+20) */
+	selfHostable: boolean;
+	/** User data can be exported in open, non-proprietary formats (+15) */
+	dataPortability: boolean;
+	/** Built on or implements open, vendor-neutral standards and protocols (+10) */
+	openStandards: boolean;
+	/** Does not collect usage telemetry by default — privacy-respecting out of the box (+5) */
+	noTelemetryByDefault: boolean;
+	/** Ownership / governance model of the project (+0 to +10) */
+	ownerType?: OwnerType;
+};
+
+/**
+ * Item: A technology, standard, or tool — essentially a dependency.
+ *
+ * All Items are dependencies organized by layer. Items in the "sovereign-standards"
+ * layer are foundational standards that stacks may commit to maintaining or contributing.
+ * Items in other layers (infrastructure, platform, building-blocks, applications) are
+ * operational dependencies.
+ */
+export type Item = {
+	id: string;
+	name: LocalizableText;
+	/** The layer this item belongs to (infrastructure, platform, building-blocks, applications, sovereign-standards) */
+	layer: string;
+	sublayer?: string;
+	groupKey?: string;
+	/** The fundamental nature of this item. Formats and standards are never ItemDependency targets. */
+	itemKind?: ItemKind;
+	/** ISO 3166-1 alpha-2 country code of the owner/maintainer organization (e.g. DE, FR, US) */
+	ownerCountry?: string;
+	description: LocalizableText;
+	homepage?: string;
+	logo?: string;
+	tags: string[];
+	license?: string;
+	oss: boolean;
+	maturity?: Maturity;
+	dependencies?: ItemDependency[];
+	sovereigntyCriteria: SovereigntyCriteria;
+	sovereigntyScore?: number;
+	/** Computed from sovereigntyCriteria: category, color, percentile */
+	sovereigntyScoreResult?: SovereigntyScoreResult;
+	/** Adoption metrics: stack frequency, diversity, transitive coverage */
+	adoption?: AdoptionResult;
+	github?: {
+		repo?: string;
+		stars?: number;
+	};
+	audit?: {
+		lastDate?: string;
+		url?: string;
+	};
+	popularityMetrics?: PopularityMetrics;
+	/** ISO 8601 date of last sovereignty research (YYYY-MM-DD) */
+	lastResearchDate?: string;
+	/** Sources used for sovereignty research */
+	researchSources?: ResearchSource[];
+};
+
+// ---------------------------------------------------------------------------
+// Stack (Gov-Stack mapping)
+// ---------------------------------------------------------------------------
+
+/**
+ * ParticipantRole: The role a stack plays in relation to an item (dependency).
+ * - maintainer: Actively develops and maintains the item/standard
+ * - contributor: Actively contributes to the development
+ * - funder: Provides funding for development
+ * - consumer: Uses the item/standard but does not contribute
+ *
+ * For items in the "sovereign-standards" layer, the role indicates the stack's
+ * responsibility level for that foundational standard.
+ */
+export type ParticipantRole = 'maintainer' | 'contributor' | 'funder' | 'consumer';
+
+export type StackItemStatus = 'recommended' | 'approved' | 'deprecated';
+
+/**
+ * StackItem: A dependency declaration.
+ *
+ * Represents a Stack's relationship to an Item (dependency), including:
+ * - What role the stack plays (maintainer, contributor, funder, consumer)
+ * - Whether this is a recommended, approved, or deprecated choice
+ * - The rationale for including this dependency
+ * - Alternative items that could fulfill the same function
+ *
+ * For items in the "sovereign-standards" layer, the role indicates the stack's
+ * commitment to that foundational standard.
+ */
+export type StackItem = {
+	itemId: string;
+	status: StackItemStatus;
+	role: ParticipantRole;
+	since?: string;
+	rationale?: LocalizableText;
+	alternatives?: string[];
+};
+
+export type StackParticipant = {
+	name: string;
+	role: ParticipantRole;
+	jurisdiction?: string;
+	url?: string;
+	since?: string;
+};
+
+export type Stack = {
+	id: string;
+	name: LocalizableText;
+	description?: LocalizableText;
+	country?: string;
+	issuer?: string;
+	sources?: StackSource[];
+	version: string;
+	publishedAt?: string;
+	items: StackItem[];
+	participants?: StackParticipant[];
+	/** Average sovereignty score of items in this stack (0-100) */
+	avgSovereigntyScore?: number;
+	/** Average adoption score of items in this stack (0-100) */
+	avgAdoptionScore?: number;
+	/** Average overall score of items in this stack (0-100) */
+	avgOverallScore?: number;
+};
+
+export type StackSource = {
+	label?: LocalizableText;
+	url: string;
+};
+
+// ---------------------------------------------------------------------------
+// Filter state
+// ---------------------------------------------------------------------------
+
+export type FilterState = {
+	searchQuery: string;
+	selectedLayer: string | null;
+	selectedSublayer: string | null;
+	selectedRelation: ParticipantRole | null;
+	onlyDirectDependencies: boolean;
+	dependencyDepth: 1 | 2 | 3 | null;
+	selectedDependencyType: DependencyType | null;
+};
+
+// ---------------------------------------------------------------------------
+// Metric Explainer
+// ---------------------------------------------------------------------------
+
+export type MetricExplainerSection = {
+	definition: LocalizableText;
+	importance: LocalizableText;
+	calculation?: LocalizableText;
+	example?: LocalizableText;
+};
+
+export type MetricExplainerId =
+	| 'sovereigntyScore'
+	| 'adoptionScore'
+	| 'overallScore'
+	| 'sovereignAdoptionScore'
+	| 'directCoverage'
+	| 'transitiveCoverage'
+	| 'diversity'
+	| 'openSource'
+	| 'euHeadquartered'
+	| 'auditedCode'
+	| 'permissiveLicense'
+	| 'mature'
+	| 'selfHostable'
+	| 'dataPortability'
+	| 'openStandards'
+	| 'noTelemetry'
+	| 'ownerType';
+
+export type MetricExplainer = MetricExplainerSection & {
+	id: MetricExplainerId;
+	label: LocalizableText;
+};
+
+// ---------------------------------------------------------------------------
+// Legacy aliases — kept for gradual migration
+// ---------------------------------------------------------------------------
+// Stack (Gov-Stack mapping)
+// ---------------------------------------------------------------------------

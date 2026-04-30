@@ -1,0 +1,32 @@
+{
+	"id": "cloudogu-ecosystem",
+	"name": "Cloudogu EcoSystem",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "Open Source Applikations-Plattform zur Bereitstellung souveräner Tool-Chains. Layer zwischen Infrastruktur und Tools. Läuft auf unterschiedlichen Infrastrukturen, von Multi-Cloud bis air-gapped, inklusive automatischem Cloud-Switching. Schafft Standards, die Tools austauschbar und einfach betreibbar machen, inklusive automatisierbaren Updates und anwendungsübergreifendem KI-Assistenten. Made in Germany.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://platform.cloudogu.com/en/info/cloudogu-ecosystem/"
+		}
+	],
+	"homepage": "https://platform.cloudogu.com/en/info/cloudogu-ecosystem/",
+	"license": "AGPL-3.0-only"
+}

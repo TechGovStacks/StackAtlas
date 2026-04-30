@@ -1,0 +1,44 @@
+{
+	"id": "budibase",
+	"name": "Budibase",
+	"layer": "platform",
+	"sublayer": "lowcode",
+	"groupKey": "low-code-app-builder",
+	"itemKind": "platform",
+	"description": {
+		"de": "Budibase ermöglicht das schnelle Erstellen interner Business-Apps, mit vorgefertigten Komponenten und breiter Datenquellenunterstützung.",
+		"en": ""
+	},
+	"homepage": "https://budibase.com/",
+	"tags": ["automations", "open-source", "datenquellen", "low-code"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://docs.budibase.com/docs/what-is-budibase"
+	},
+	"license": "AGPL-3.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://budibase.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/Budibase/budibase"
+		}
+	]
+}

@@ -1,0 +1,44 @@
+{
+	"id": "milvus",
+	"name": "Milvus",
+	"layer": "platform",
+	"sublayer": "daten",
+	"groupKey": "vector-db",
+	"itemKind": "platform",
+	"description": {
+		"de": "Milvus ist eine Vektor-Datenbank.",
+		"en": ""
+	},
+	"homepage": "https://milvus.io/de",
+	"tags": ["datenbank", "vektor"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://milvus.io/docs/de"
+	},
+	"license": "AGPL-3.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://milvus.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/milvus-io/milvus"
+		}
+	]
+}

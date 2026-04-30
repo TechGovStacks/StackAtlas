@@ -1,0 +1,37 @@
+{
+	"id": "hbase",
+	"name": "HBase",
+	"layer": "platform",
+	"sublayer": "daten",
+	"groupKey": "nosql-db",
+	"itemKind": "platform",
+	"description": {
+		"de": "HBase ist eine spaltenorientierte NoSQL Datenbank. HBase ist Teil des Apache Hadoop-Ökosystems und basiert auf dem Bigtable-Modell.",
+		"en": ""
+	},
+	"homepage": "https://hbase.apache.org/",
+	"tags": ["nosql", "database", "hadoop", "column-oriented", "big-data"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://hbase.apache.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/apache/hbase"
+		}
+	]
+}

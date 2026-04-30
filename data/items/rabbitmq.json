@@ -1,0 +1,40 @@
+{
+	"id": "rabbitmq",
+	"name": "RabbitMQ",
+	"layer": "platform",
+	"sublayer": "integration",
+	"groupKey": "message-broker",
+	"itemKind": "platform",
+	"description": {
+		"de": "RabbitMQ ist ein quelloffener, queue-basierter Message-Broker. Er unterstützt offene Protokolle wie AMQP, MQTT und STOMP und ist ein Standard-Tool für asynchrone System-Integration und entkoppelte Microservices in Verwaltungsanwendungen.",
+		"en": "RabbitMQ is an open-source queue-based message broker. It supports open protocols such as AMQP, MQTT and STOMP and is a standard tool for asynchronous system integration and decoupled microservices in public administration applications."
+	},
+	"homepage": "https://www.rabbitmq.com/",
+	"license": "MPL-2.0",
+	"tags": ["messaging", "queue", "amqp"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.rabbitmq.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/rabbitmq/rabbitmq-server"
+		}
+	]
+}

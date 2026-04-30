@@ -1,0 +1,32 @@
+{
+	"id": "kafka",
+	"name": "Kafka",
+	"layer": "sovereign-standards",
+	"itemKind": "platform",
+	"description": {
+		"de": "Kafka ist die De-facto-Standardplattform für ereignisgetriebene Architekturen, verteiltes Event-Streaming und entkoppelte Datenintegration zwischen Fachverfahren. Sie ermöglicht hochskalierbare, persistente Nachrichtenflüsse zwischen Registern, Portalen und nachgelagerten Systemen.",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"homepage": "https://kafka.apache.org/",
+	"license": "Apache-2.0",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{ "type": "url", "url": "https://kafka.apache.org/" },
+		{ "type": "url", "url": "https://github.com/apache/kafka" },
+		{ "type": "url", "url": "https://en.wikipedia.org/wiki/Apache_Kafka" }
+	]
+}

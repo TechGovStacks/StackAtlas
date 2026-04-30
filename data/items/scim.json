@@ -1,0 +1,34 @@
+{
+	"id": "scim",
+	"name": "SCIM",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "SCIM (System for Cross-Domain Identity Management) ist ein als REST API konzipierter offener Standard für den aktiven Austausch von Informationen zu Identitäten, Gruppen und anderen Ressourcen einer Organisation zwischen Identity-Providern und Anwendungen."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://datatracker.ietf.org/doc/html/rfc7644"
+		},
+		{
+			"type": "url",
+			"url": "https://scim.cloud/"
+		}
+	]
+}

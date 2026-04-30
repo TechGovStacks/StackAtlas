@@ -1,0 +1,49 @@
+{
+	"id": "react",
+	"name": "React",
+	"layer": "building-blocks",
+	"sublayer": "frameworks",
+	"groupKey": "component-framework",
+	"itemKind": "framework",
+	"description": {
+		"de": "Mit React können Sie Benutzeroberflächen aus einzelnen Teilen, sogenannten Komponenten, erstellen. Kombinieren Sie diese dann zu ganzen Webseiten und Apps.",
+		"en": ""
+	},
+	"homepage": "https://react.dev/",
+	"tags": ["webdesign", "components", "user-interface"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://react.dev/learn"
+	},
+	"license": "MIT",
+	"popularityMetrics": {
+		"updatedAt": "2026-04-20",
+		"githubStars": 230000,
+		"npmWeeklyDownloads": 52000000
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://react.dev/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/facebook/react"
+		}
+	]
+}

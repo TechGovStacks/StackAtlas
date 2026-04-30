@@ -1,0 +1,39 @@
+{
+	"id": "open-policy-agent",
+	"name": "Open Policy Agent",
+	"layer": "building-blocks",
+	"sublayer": "sicherheit",
+	"itemKind": "tool",
+	"description": {
+		"de": "Open Policy Agent (OPA) ist eine Open-Source Policy-Engine, die Sicherheitsregeln und Zugriffsentscheidungen als Code (Policy-as-Code) umsetzt. OPA wird unter anderem zur Absicherung von Kubernetes-Pods und für Compliance-Prüfungen eingesetzt.",
+		"en": "Open Policy Agent (OPA) is an open-source policy engine that expresses security rules and access decisions as code (policy-as-code). OPA is used for example to secure Kubernetes pods and to perform compliance checks."
+	},
+	"homepage": "https://www.openpolicyagent.org/",
+	"license": "Apache-2.0",
+	"tags": ["policy", "security", "compliance", "cncf"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.openpolicyagent.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/open-policy-agent/opa"
+		}
+	]
+}

@@ -1,0 +1,43 @@
+{
+	"id": "wifi",
+	"name": "WiFi",
+	"layer": "infrastructure",
+	"sublayer": "anschluss",
+	"groupKey": "short-range-wireless",
+	"itemKind": "platform",
+	"description": {
+		"de": "Mit Wireless LAN können in kleiner bis mittlerer Reichweite Endgeräte vernetzt werden (Ad-hoc, via Basisstation/ Access Point oder als Mesh). Die IEEE standardisiert die Technologie mit IEEE 802.11 ff. Die Konfiguration erfolgt durch SSID und Passwort. Wi-Fi dient als Kennzeichen für zertifizierte Produkte zur Sicherstellung von Interoperabilität.",
+		"en": ""
+	},
+	"homepage": "https://www.wi-fi.org/",
+	"tags": ["funk", "hotspot", "tethering", "drahtlos"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=68"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.wi-fi.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://standards.ieee.org/ieee/802.11/"
+		}
+	]
+}

@@ -1,0 +1,39 @@
+{
+	"id": "opentelemetry",
+	"name": "OpenTelemetry",
+	"layer": "platform",
+	"sublayer": "inbetriebnahme",
+	"itemKind": "platform",
+	"description": {
+		"de": "OpenTelemetry ist ein CNCF-Projekt für herstellerunabhängige Instrumentierung von Logs, Metriken und Traces. Es definiert offene Standards und SDKs für Distributed Tracing in verteilten Verwaltungssystemen.",
+		"en": "OpenTelemetry is a CNCF project for vendor-neutral instrumentation of logs, metrics and traces. It defines open standards and SDKs for distributed tracing in distributed public-administration systems."
+	},
+	"homepage": "https://opentelemetry.io/",
+	"license": "Apache-2.0",
+	"tags": ["observability", "tracing", "metrics", "cncf"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://opentelemetry.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/open-telemetry"
+		}
+	]
+}

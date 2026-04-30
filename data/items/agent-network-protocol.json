@@ -1,0 +1,48 @@
+{
+	"id": "agent-network-protocol",
+	"name": "Agent Network Protocol",
+	"layer": "platform",
+	"sublayer": "ki",
+	"groupKey": "ai-agent-protocol",
+	"itemKind": "protocol",
+	"description": {
+		"de": "ANP ermöglicht sichere, dezentralisierte Kommunikation zwischen KI-Agenten über offene Internet-Infrastrukturen. Fungiert als standardisiertes Peer-to-Peer-Protokoll für agentengesteuerte Kollaborationen und etabliert ein \"HTTP für das Agent-Internet-Zeitalter\" durch interoperable Identitätsverwaltung und semantische Datenverknüpfung.",
+		"en": ""
+	},
+	"homepage": "https://agent-network-protocol.com/",
+	"tags": ["agent", "kommunikation", "agentische-ki"],
+	"oss": true,
+	"maturity": "incubation",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"license": "MIT",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://agent-network-protocol.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/agent-network-protocol/AgentNetworkProtocol"
+		},
+		{
+			"type": "url",
+			"url": "https://www.agent-network-protocol.com/specs/white-paper.html"
+		},
+		{
+			"type": "url",
+			"url": "https://arxiv.org/abs/2508.00007"
+		}
+	]
+}

@@ -1,0 +1,40 @@
+{
+	"id": "temporal",
+	"name": "Temporal",
+	"layer": "building-blocks",
+	"sublayer": "lowcode",
+	"groupKey": "workflow-orchestration",
+	"itemKind": "tool",
+	"description": {
+		"de": "Temporal ist eine moderne Open-Source-Orchestrierungsplattform für codebasierte Workflows in Microservice-Architekturen. Sie übernimmt automatisches State-Management, Wiederaufnahme und Versionierung von langlaufenden Prozessen.",
+		"en": "Temporal is a modern open-source orchestration platform for code-based workflows in microservice architectures. It handles automatic state management, resumption and versioning of long-running processes."
+	},
+	"homepage": "https://temporal.io/",
+	"license": "MIT",
+	"tags": ["workflow", "orchestration", "microservices"],
+	"oss": true,
+	"maturity": "incubation",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://temporal.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/temporalio/temporal"
+		}
+	]
+}

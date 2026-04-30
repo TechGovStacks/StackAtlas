@@ -1,0 +1,36 @@
+{
+	"id": "contextforge",
+	"name": "ContextForge",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "ContextForge ist ein Open-Source-Gateway, -Registry und -Proxy für das Model Context Protocol (MCP). Es föderiert MCP- und REST-Dienste unter einem einheitlichen Endpunkt, virtualisiert bestehende REST- und gRPC-APIs als MCP-konforme Tools und bietet integrierte OAuth-Authentifizierung, Rate-Limiting und OpenTelemetry-Observability.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://github.com/IBM/mcp-context-forge",
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-27",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/IBM/mcp-context-forge"
+		},
+		{
+			"type": "url",
+			"url": "https://ibm.github.io/mcp-context-forge/"
+		}
+	]
+}

@@ -1,0 +1,90 @@
+{
+	"id": "united-states",
+	"name": {
+		"de": "USA Stack (USDS/18F)",
+		"en": "US Stack (USDS/18F)"
+	},
+	"description": {
+		"de": "Agiler Bundes-Stack mit Fokus auf Open Source, De-Risking, DevSecOps und automatisierte Deployments.",
+		"en": "Agile federal stack focused on open source, de-risking, DevSecOps and automated deployments."
+	},
+	"country": "US",
+	"issuer": "U.S. Digital Service (USDS) / 18F",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-16",
+	"items": [
+		{
+			"itemId": "github-actions",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "CI/CD-Automatisierung ist Kernprinzip des Digital Services Playbook.",
+				"en": "CI/CD automation is a core principle of the Digital Services Playbook."
+			}
+		},
+		{
+			"itemId": "node-js",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Node.js wird breit für föderale Web-Services und Tooling eingesetzt.",
+				"en": "Node.js is widely used for federal web services and tooling."
+			}
+		},
+		{
+			"itemId": "openapi",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "OpenAPI erleichtert behördenübergreifende API-Standardisierung.",
+				"en": "OpenAPI improves cross-agency API standardization."
+			}
+		},
+		{
+			"itemId": "python",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Python bleibt zentrale Sprache in Digital-Service- und Datenprojekten.",
+				"en": "Python remains a central language in digital service and data projects."
+			}
+		},
+		{
+			"itemId": "react",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "React wird für performante, barrierearme Nutzeroberflächen eingesetzt.",
+				"en": "React is used for performant, accessible user interfaces."
+			}
+		},
+		{
+			"itemId": "ruby-on-rails",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Ruby/Rails prägt historisch viele 18F- und GDS-nahe Service-Backends.",
+				"en": "Ruby/Rails historically shaped many 18F and GDS-style service backends."
+			}
+		},
+		{
+			"itemId": "terraform",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Terraform unterstützt IaC in föderalen Multi-Cloud-Betriebsmodellen.",
+				"en": "Terraform supports IaC in federal multi-cloud operating models."
+			}
+		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "U.S. Digital Service",
+				"en": "U.S. Digital Service",
+				"fr": "U.S. Digital Service"
+			},
+			"url": "https://www.usds.gov/"
+		}
+	]
+}

@@ -1,0 +1,34 @@
+{
+	"id": "yaml",
+	"name": "YAML",
+	"layer": "building-blocks",
+	"itemKind": "format",
+	"description": {
+		"de": "YAML ist ein textbasiertes Dateiformat zur Datenserialisierung, das außerdem für Konfigurationsdateien verbreitet ist."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://yaml.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://yaml.org/spec/1.2.2/"
+		}
+	]
+}

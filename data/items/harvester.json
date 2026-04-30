@@ -1,0 +1,35 @@
+{
+	"id": "harvester",
+	"name": "Harvester",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "Harvester ist eine Open-Source Hyperconverged Infrastructure (HCI) Lösung auf Basis von Kubernetes. Es vereint Virtualisierung (VMs) und Cloud-Native-Speicher (Longhorn) auf Standard-Hardware. Als moderne Alternative zu proprietären Stacks ermöglicht es den parallelen Betrieb von virtuellen Maschinen und Containern in einer einheitlichen, schlanken Infrastruktur.",
+		"en": ""
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://harvesterhci.io/",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://harvesterhci.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/harvester/harvester"
+		}
+	]
+}

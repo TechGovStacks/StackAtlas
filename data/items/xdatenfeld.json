@@ -1,0 +1,34 @@
+{
+	"id": "xdatenfeld",
+	"name": "XDatenfeld",
+	"layer": "infrastructure",
+	"itemKind": "standard",
+	"description": {
+		"de": "XÖV-Standard XDatenfeld als FIM-Baustein zum Aufbau von Registerdatenbanken u. Registerdatenmodellen. Unter dem Grundkonstrukt \"stammdatenschema\" gibt es verschiedene weitere Knoten für Informationen, wie Name und ID. Eine weitere Besonderheit besteht darin, dass auf dieser Ebene Regeln definiert werden können, einerseits als Prosatext, andererseits als JavaScript (was bisher nicht aufgetaucht ist). Diese Regeln beziehen sich auf die Datenfeldstrukturen, die nachfolgend definiert werden. Unter dem Knoten Struktur wird die Datenfeldgruppe mit eigenen Regeln, Informationen, Freigaben und weiteren Unterstukturen definiert. https://www.xrepository.de/details/urn:xoev-de:fim:standard:xdatenfelder"
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.xoev.de/xdatenfeld"
+		},
+		{
+			"type": "url",
+			"url": "https://www.xoev.de/"
+		}
+	]
+}

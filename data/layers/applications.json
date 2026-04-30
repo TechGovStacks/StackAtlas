@@ -1,0 +1,10 @@
+{
+	"id": "applications",
+	"order": 4,
+	"name": { "de": "Anwendungen", "en": "Applications" },
+	"description": {
+		"de": "Endnutzer-Anwendungen und Fachverfahren: Portale, E-Government-Services und Verwaltungsanwendungen.",
+		"en": "End-user applications and specialist procedures: portals, e-government services and public administration applications."
+	},
+	"color": "#f39c12"
+}

@@ -1,0 +1,36 @@
+{
+	"id": "datenschutzcockpit",
+	"name": "Datenschutzcockpit",
+	"layer": "building-blocks",
+	"itemKind": "tool",
+	"description": {
+		"de": "Im Datenschutzcockpit (DSC) werden auf Basis der Zustimmung einer natürlichen Person erfolgte Datenübermittlungen zur Anzeige gebracht. Diese Teilfunktionalität kann für den Funktionsbaustein \"Consent\" nachgenutzt werden. Das DSC wird aktuell einamlig zentral bereitgestellt (durch den Bund) und liefert so Mehrwerte für den kommenden D-Stack.",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": true,
+		"hasAudit": true,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.finanzen.bremen.de/digitalisierung/digitalisierungsbuero/datenschutzcockpit-107106",
+	"license": "Proprietary",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.finanzen.bremen.de/digitalisierung/digitalisierungsbuero/datenschutzcockpit-107106"
+		},
+		{
+			"type": "url",
+			"url": "https://www.digitale-verwaltung.de/Webs/DV/DE/registermodernisierung/elemente/datenschutzcockpit/datenschutzcockpit-node.html"
+		}
+	]
+}

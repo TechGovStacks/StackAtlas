@@ -1,0 +1,35 @@
+{
+	"id": "xml",
+	"name": "XML",
+	"layer": "sovereign-standards",
+	"itemKind": "format",
+	"description": {
+		"de": "Standard der in OSCI, XTA, XÖV, ebMS, AS4, eDelivery etc. eingesetzt wird um Nachrichteninhalte zu übermitteln.",
+		"en": ""
+	},
+	"tags": ["negz-import", "unresearched"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.w3.org/XML/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/xml/"
+		}
+	]
+}

@@ -1,0 +1,54 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Layer Definition",
+	"description": "Defines one of the 5 Splash layers (Infrastructure, Platform, Building Blocks, Applications, Sovereign Standards)",
+	"type": "object",
+	"required": ["id", "order", "name", "color"],
+	"additionalProperties": false,
+	"properties": {
+		"id": {
+			"type": "string",
+			"description": "Unique layer identifier (lowercase with hyphens)",
+			"enum": ["infrastructure", "platform", "building-blocks", "applications", "sovereign-standards"]
+		},
+		"order": {
+			"type": "integer",
+			"description": "Display order (1–5)",
+			"minimum": 1,
+			"maximum": 5
+		},
+		"name": {
+			"type": "object",
+			"description": "Localized layer name",
+			"required": ["de", "en"],
+			"additionalProperties": false,
+			"properties": {
+				"de": { "type": "string", "minLength": 1 },
+				"en": { "type": "string", "minLength": 1 },
+				"fr": { "type": "string" }
+			}
+		},
+		"description": {
+			"type": "object",
+			"description": "Optional localized description",
+			"additionalProperties": false,
+			"properties": {
+				"de": { "type": "string" },
+				"en": { "type": "string" },
+				"fr": { "type": "string" }
+			}
+		},
+		"color": {
+			"type": "string",
+			"description": "Hex color code",
+			"pattern": "^#[0-9a-fA-F]{6}$"
+		},
+		"weight": {
+			"type": "number",
+			"description": "Weight factor for overall sovereignty score calculation. Higher weight = more impact on the total stack score. Default: 1.0",
+			"minimum": 0,
+			"maximum": 5,
+			"default": 1
+		}
+	}
+}

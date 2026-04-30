@@ -1,0 +1,38 @@
+{
+	"id": "ecdsa",
+	"name": "ECDSA",
+	"layer": "infrastructure",
+	"sublayer": "sicherheit",
+	"groupKey": "digital-signature-algorithm",
+	"itemKind": "platform",
+	"description": {
+		"de": "ECDSA ist ein weit verbreitetes, effizientes kryptografisches Verfahren zur Erstellung digitaler Signaturen, basierend auf der Elliptische-Kurven-Kryptografie (ECC). Es bietet Sicherheit mit kleineren Schlüsseln als RSA.",
+		"en": "ECDSA is a widely-used, efficient cryptographic algorithm for creating digital signatures based on elliptic curve cryptography (ECC). It provides security with smaller key sizes than RSA."
+	},
+	"oss": true,
+	"tags": ["cryptography", "digital-signature", "ecc"],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.secg.org/",
+	"license": "Public Domain",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.secg.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm"
+		}
+	]
+}

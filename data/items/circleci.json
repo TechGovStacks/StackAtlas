@@ -1,0 +1,43 @@
+{
+	"id": "circleci",
+	"name": "circleCI",
+	"layer": "building-blocks",
+	"sublayer": "inbetriebnahme",
+	"groupKey": "ci-cd",
+	"itemKind": "tool",
+	"description": {
+		"de": "CircleCI ist eine CI/CD-Plattform zur Automatisierung des Softwareentwicklungsprozesses. Für mobile Entwickler bietet CircleCI robuste Umgebungen zum Erstellen, Testen und Bereitstellen von iOS- und Android-Apps.",
+		"en": ""
+	},
+	"homepage": "https://circleci.com/",
+	"tags": ["pipeline", "cd", "bereitstellung", "ci"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": true,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": false,
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://circleci.com/docs/"
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/CircleCI"
+		},
+		{
+			"type": "url",
+			"url": "https://circleci.com/"
+		}
+	]
+}

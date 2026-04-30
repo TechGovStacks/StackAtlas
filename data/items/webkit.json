@@ -1,0 +1,44 @@
+{
+	"id": "webkit",
+	"name": "WebKit",
+	"layer": "applications",
+	"sublayer": "browser",
+	"groupKey": "browser-engine",
+	"itemKind": "service",
+	"description": {
+		"de": "WebKit ist eine Browser-Engine zum Rendern von Webseiten. Es wird insbesondere von Apple für Safari genutzt.",
+		"en": ""
+	},
+	"homepage": "https://webkit.org/",
+	"tags": ["webseite", "browser-engine", "rendern"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://github.com/WebKit/WebKit"
+	},
+	"license": "LGPL-2.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://webkit.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/WebKit/WebKit"
+		}
+	]
+}

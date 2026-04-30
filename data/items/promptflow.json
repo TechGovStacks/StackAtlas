@@ -1,0 +1,43 @@
+{
+	"id": "promptflow",
+	"name": "PromptFlow",
+	"layer": "platform",
+	"sublayer": "ki",
+	"groupKey": "llm-framework",
+	"itemKind": "platform",
+	"description": {
+		"de": "PromptFlow ist ein Framework von Entwicklungswerkzeugen für KI-Anwendungen von der Ideenfindung bis zum Monitoring.",
+		"en": ""
+	},
+	"homepage": "https://microsoft.github.io/promptflow/",
+	"tags": ["entwicklung", "verarbeitung"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://github.com/microsoft/promptflow"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://microsoft.github.io/promptflow/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/microsoft/promptflow"
+		}
+	]
+}

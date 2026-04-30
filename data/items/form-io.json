@@ -1,0 +1,35 @@
+{
+	"id": "form-io",
+	"name": "form.io",
+	"layer": "building-blocks",
+	"itemKind": "tool",
+	"description": {
+		"de": "Framework zur Erzeugung von Formularen",
+		"en": "Open-source form builder framework with OSL 3.0 license, enabling self-hosted form creation and submission management."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": false
+	},
+	"homepage": "https://form.io/",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://form.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/formio/formio.js"
+		}
+	]
+}

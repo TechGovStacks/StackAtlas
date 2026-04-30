@@ -1,0 +1,36 @@
+{
+	"id": "opendocument-format-odf",
+	"name": "OpenDocument Format (ODF)",
+	"layer": "building-blocks",
+	"itemKind": "format",
+	"description": {
+		"de": "OASIS Open Document Format for Office Applications sit ein international genormter quelloffener Standard für Dateiformate von Bürodokumenten wie Texten, Tabellendokumenten, Präsentationen, Zeichnungen, Bildern und Diagrammen."
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"homepage": "https://www.oasis-open.org/standards/",
+	"license": "OASIS",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=office"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.oasis-open.org/office/OpenDocument/v1.3/"
+		}
+	]
+}

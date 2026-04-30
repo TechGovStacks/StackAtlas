@@ -1,0 +1,42 @@
+{
+	"id": "ragflow",
+	"name": "RAGFlow",
+	"layer": "platform",
+	"sublayer": "ki",
+	"itemKind": "platform",
+	"description": {
+		"de": "RAGFlow wird als Engine für Retrieval-Augmented Generation (RAG) eingesetzt um Ergebnisse anhand von Kontext zu verbessern beziehungsweise die Wissensbasis zu erweitern.",
+		"en": ""
+	},
+	"homepage": "https://ragflow.io/",
+	"tags": ["retrieval-augmented-generation", "rag", "verarbeitung"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": false,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://ragflow.io/docs/dev/"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://ragflow.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/infiniflow/ragflow"
+		}
+	]
+}

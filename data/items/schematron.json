@@ -1,0 +1,34 @@
+{
+	"id": "schematron",
+	"name": "Schematron",
+	"layer": "building-blocks",
+	"itemKind": "standard",
+	"description": {
+		"de": "A language for making assertions about the presence or absence of patterns in linked XML documents, and reporting them in useful ways."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.schematron.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.iso.org/standard/74515.html"
+		}
+	]
+}

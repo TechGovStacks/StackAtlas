@@ -1,0 +1,43 @@
+{
+	"id": "sd-wan-service-attributes-and-service-framework-mef",
+	"name": "SD-WAN Service Attributes and Service Framework (MEF)",
+	"layer": "infrastructure",
+	"sublayer": "verteilung",
+	"groupKey": "traffic-engineering",
+	"itemKind": "platform",
+	"description": {
+		"de": "MEF definiert SD-WAN Services und Attribute. SD-WAN ist eine Technologie zur Verbindung weit entfernter Netzwerksegemente über verschiedene Anschlusstypen/ Medien.",
+		"en": ""
+	},
+	"homepage": "https://www.mplify.net/resources/mef-70-2-sd-wan-service-attributes-and-service-framework/",
+	"tags": ["netz", "sd-wan", "netzwerk", "wide-area", "wan"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://www.mplify.net/service-standards/overlay-services/sd-wan/"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.mef.net/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.mef.net/resources/mef-standards/"
+		}
+	]
+}

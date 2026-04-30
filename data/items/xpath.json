@@ -1,0 +1,34 @@
+{
+	"id": "xpath",
+	"name": "XPath",
+	"layer": "building-blocks",
+	"itemKind": "tool",
+	"description": {
+		"de": "Abfragesprache, um XML-Inhalte zu adressieren und auszuwerten."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/xpath-31/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.w3.org/TR/xpath/"
+		}
+	]
+}

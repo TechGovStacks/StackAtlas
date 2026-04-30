@@ -1,0 +1,43 @@
+{
+	"id": "istio",
+	"name": "Istio",
+	"layer": "platform",
+	"sublayer": "integration",
+	"itemKind": "platform",
+	"description": {
+		"de": "Istio ist ein Open-Source Service Mesh zum Management von Microservices in containerisierten Umgebungen. Es erleichtert das Sichern, Verbinden und Überwachen verteilter Anwendungen, indem es Funktionen wie Lastenausgleich, Authentifizierung, Autorisierung, Traffic-Steuerung und detaillierte Einblicke in die Kommunikation zwischen Diensten bereitstellt.",
+		"en": ""
+	},
+	"homepage": "https://istio.io/",
+	"tags": ["load-balancer", "orchestrierung", "mesh"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://github.com/istio/istio"
+	},
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://istio.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/istio/istio"
+		}
+	]
+}

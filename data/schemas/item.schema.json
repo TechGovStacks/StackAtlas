@@ -1,0 +1,269 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"title": "Item Definition",
+	"description": "Defines a technology, standard, or tool in the digital stack landscape",
+	"type": "object",
+	"required": ["id", "name", "layer", "description", "oss", "sovereigntyCriteria"],
+	"additionalProperties": false,
+	"properties": {
+		"researchSources": {
+			"type": "array",
+			"description": "Quellen für die Recherche der sovereigntyCriteria und anderer Meta-Informationen (z. B. URLs oder Pfade zu eingecheckten Dateien)",
+			"items": {
+				"type": "object",
+				"oneOf": [{ "required": ["url"] }, { "required": ["repoPath"] }],
+				"properties": {
+					"type": {
+						"type": "string",
+						"enum": ["url", "file"],
+						"description": "Art der Quelle: 'url' für Web-Links, 'file' für Repository-Dateien"
+					},
+					"url": { "type": "string", "format": "uri", "description": "URL der Quelle (bei type=url)" },
+					"path": { "type": "string", "description": "Pfad zu einer eingecheckten Datei im Repository (bei type=file), z. B. data/items/foo.json" }
+				},
+				"additionalProperties": false
+			}
+		},
+		"lastResearchDate": {
+			"type": "string",
+			"description": "ISO 8601 date of last meta-information research (YYYY-MM-DD)",
+			"format": "date"
+		},
+		"id": {
+			"type": "string",
+			"description": "Unique item identifier (slug format: lowercase with hyphens)",
+			"pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$"
+		},
+		"name": {
+			"type": "string",
+			"description": "Display name (English, original name of the technology)"
+		},
+		"layer": {
+			"type": "string",
+			"description": "One of the 5 Splash layers",
+			"enum": ["infrastructure", "platform", "building-blocks", "applications", "sovereign-standards"]
+		},
+		"sublayer": {
+			"type": "string",
+			"description": "Optional sub-category within the layer (e.g., 'security', 'database')"
+		},
+		"itemKind": {
+			"type": "string",
+			"description": "The fundamental nature of the item. Formats and standards are never ItemDependency targets — they represent compliance/adoption relationships via StackItem.",
+			"enum": ["format", "standard", "protocol", "language", "runtime", "framework", "library", "tool", "platform", "service"]
+		},
+		"groupKey": {
+			"type": "string",
+			"description": "Optional functional grouping key for direct comparability inside a layer (e.g., 'component-framework', 'sql-db')."
+		},
+		"ownerCountry": {
+			"type": "string",
+			"description": "ISO 3166-1 alpha-2 country code of the owner/maintainer organization (e.g., DE, FR, US)",
+			"pattern": "^[A-Z]{2}$"
+		},
+		"description": {
+			"type": "object",
+			"description": "Localized description of the item",
+			"required": ["de"],
+			"additionalProperties": false,
+			"properties": {
+				"de": { "type": "string", "minLength": 1 },
+				"en": { "type": "string" },
+				"fr": { "type": "string" }
+			}
+		},
+		"dependencies": {
+			"type": "array",
+			"description": "Optional technical dependencies to other items",
+			"items": {
+				"type": "object",
+				"required": ["targetItemId", "type"],
+				"additionalProperties": false,
+				"properties": {
+					"targetItemId": {
+						"type": "string",
+						"description": "Referenced item identifier (slug format: lowercase with hyphens)",
+						"pattern": "^[a-z0-9]([a-z0-9-]*[a-z0-9])?$"
+					},
+					"type": {
+						"type": "string",
+						"description": "Technical relationship between source item and target item (optionality is expressed via scope)",
+						"enum": ["build", "compiles-to", "language", "protocol", "runtime"]
+					},
+					"scope": {
+						"type": "string",
+						"description": "Dependency optionality/relevance for operation/build lifecycle",
+						"enum": ["dev", "optional", "required"]
+					},
+					"reason": {
+						"description": "Short explanation of why the dependency exists",
+						"oneOf": [
+							{ "type": "string", "minLength": 1 },
+							{
+								"type": "object",
+								"required": ["de", "en"],
+								"additionalProperties": false,
+								"properties": {
+									"de": { "type": "string", "minLength": 1 },
+									"en": { "type": "string" },
+									"fr": { "type": "string" }
+								}
+							}
+						]
+					}
+				}
+			}
+		},
+		"homepage": {
+			"type": "string",
+			"description": "Official homepage or project URL",
+			"format": "uri"
+		},
+		"logo": {
+			"type": "string",
+			"description": "Logo URL (HTTP/HTTPS) or path to local asset"
+		},
+		"tags": {
+			"type": "array",
+			"description": "List of tags for categorization and search",
+			"items": { "type": "string" }
+		},
+		"license": {
+			"type": "string",
+			"description": "License identifier (e.g., 'MIT', 'Apache-2.0', 'GPL-3.0-or-later')"
+		},
+		"oss": {
+			"type": "boolean",
+			"description": "Whether the item is open-source"
+		},
+		"maturity": {
+			"type": "string",
+			"description": "Project maturity status",
+			"enum": ["sandbox", "incubation", "graduated"]
+		},
+		"sovereigntyCriteria": {
+			"type": "object",
+			"description": "Criteria used to calculate the user-sovereignty score (0–100)",
+			"required": [
+				"openSource",
+				"euHeadquartered",
+				"hasAudit",
+				"permissiveLicense",
+				"matureProject",
+				"selfHostable",
+				"dataPortability",
+				"openStandards",
+				"noTelemetryByDefault"
+			],
+			"additionalProperties": false,
+			"properties": {
+				"openSource": {
+					"type": "boolean",
+					"description": "Open-source with publicly accessible source code (+15 points)"
+				},
+				"euHeadquartered": {
+					"type": "boolean",
+					"description": "Headquartered or legally registered in the EU (+5 points)"
+				},
+				"hasAudit": {
+					"type": "boolean",
+					"description": "Has documented and publicly available security/compliance audit (+5 points)"
+				},
+				"permissiveLicense": {
+					"type": "boolean",
+					"description": "Uses a permissive or copyleft open-source license that allows forking (+10 points)"
+				},
+				"matureProject": {
+					"type": "boolean",
+					"description": "Project is mature — graduated/stable lifecycle status (+5 points)"
+				},
+				"selfHostable": {
+					"type": "boolean",
+					"description": "Can be operated by the user without depending on third-party infrastructure (+20 points)"
+				},
+				"dataPortability": {
+					"type": "boolean",
+					"description": "User data can be exported in open, non-proprietary formats (+15 points)"
+				},
+				"openStandards": {
+					"type": "boolean",
+					"description": "Built on or implements open, vendor-neutral standards and protocols (+10 points)"
+				},
+				"noTelemetryByDefault": {
+					"type": "boolean",
+					"description": "Does not collect usage telemetry by default; privacy-respecting out of the box (+5 points)"
+				},
+				"ownerType": {
+					"type": "string",
+					"description": "Ownership / governance model (+0 to +10 points)",
+					"enum": ["independentConsortium", "corporation", "community", "oneManShow"]
+				}
+			}
+		},
+		"github": {
+			"type": "object",
+			"description": "GitHub repository metadata",
+			"additionalProperties": false,
+			"properties": {
+				"repo": {
+					"type": "string",
+					"description": "GitHub repository URL"
+				},
+				"stars": {
+					"type": "integer",
+					"description": "Number of GitHub stars",
+					"minimum": 0
+				}
+			}
+		},
+		"audit": {
+			"type": "object",
+			"description": "Audit/compliance information",
+			"additionalProperties": false,
+			"properties": {
+				"lastDate": {
+					"type": "string",
+					"description": "ISO 8601 date of last audit (YYYY-MM-DD)"
+				},
+				"url": {
+					"type": "string",
+					"description": "URL to audit report or compliance documentation",
+					"format": "uri"
+				}
+			}
+		},
+		"popularityMetrics": {
+			"type": "object",
+			"description": "Optional external popularity signals for scoring (manually curated)",
+			"additionalProperties": false,
+			"required": ["updatedAt"],
+			"properties": {
+				"updatedAt": {
+					"type": "string",
+					"description": "ISO 8601 date when metrics were last updated (YYYY-MM-DD)",
+					"format": "date"
+				},
+				"githubStars": {
+					"type": "integer",
+					"description": "GitHub star count at time of updatedAt",
+					"minimum": 0
+				},
+				"npmWeeklyDownloads": {
+					"type": "integer",
+					"description": "npm weekly download count at time of updatedAt",
+					"minimum": 0
+				},
+				"dockerWeeklyPulls": {
+					"type": "integer",
+					"description": "Docker Hub weekly pull count at time of updatedAt",
+					"minimum": 0
+				},
+				"pypiWeeklyDownloads": {
+					"type": "integer",
+					"description": "PyPI weekly download count at time of updatedAt",
+					"minimum": 0
+				}
+			}
+		}
+	}
+}

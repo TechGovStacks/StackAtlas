@@ -1,0 +1,35 @@
+{
+	"id": "en-301-549-accessibility-requirements-for-ict-products-and-services",
+	"name": "EN 301 549 – Accessibility requirements for ICT products and services",
+	"layer": "applications",
+	"itemKind": "service",
+	"description": {
+		"de": "Die EN 301 549 ist der übergreifende europäische Barrierefreiheitsstandard für IKT-Produkte und -Dienste (CEN/CENELEC/ETSI). Er referenziert die WCAG 2.1 (bald 2.2) für Web-Inhalte, Software, mobile Anwendungen, Hardware und  Dokumente sowie weitere spezifische Normen.",
+		"en": "EN 301 549 is the comprehensive European accessibility standard for ICT products and services (CEN/CENELEC/ETSI), referencing WCAG 2.1/2.2 for web, software, mobile apps, hardware, and documents."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": true,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": false,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://www.etsi.org/deliver/etsi_en/301500_302000/301549/03.02.01_60/en_301549v030201p.pdf",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.etsi.org/deliver/etsi_en/301500_302000/301549/03.02.01_60/en_301549v030201p.pdf"
+		},
+		{
+			"type": "url",
+			"url": "https://www.accessibility.eu/en-301-549/"
+		}
+	]
+}

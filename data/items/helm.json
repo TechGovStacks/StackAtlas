@@ -1,0 +1,36 @@
+{
+	"id": "helm",
+	"name": "Helm",
+	"layer": "platform",
+	"sublayer": "inbetriebnahme",
+	"itemKind": "platform",
+	"description": {
+		"de": "Helm ist der De-facto-Paketmanager für Kubernetes. Mit Helm-Charts werden komplexe Kubernetes-Anwendungen versioniert, geteilt und reproduzierbar deployt.",
+		"en": "Helm is the de-facto package manager for Kubernetes. Helm charts version, share and reproducibly deploy complex Kubernetes applications."
+	},
+	"homepage": "https://helm.sh/",
+	"tags": ["kubernetes", "package-manager", "deployment", "charts"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://helm.sh/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/helm/helm"
+		}
+	]
+}

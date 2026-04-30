@@ -1,0 +1,37 @@
+{
+	"id": "haystack",
+	"name": "Haystack",
+	"layer": "platform",
+	"sublayer": "ki",
+	"groupKey": "llm-framework",
+	"itemKind": "platform",
+	"description": {
+		"de": "Haystack ist Framework für die Entwicklung von KI-Anwendungen. Das Framework ermöglicht es Entwicklern, produktionsreife Systeme für Aufgaben wie Retrieval-Augmented Generation (RAG), Dokumentensuche und Frage-Antwort-Systeme zu erstellen.",
+		"en": ""
+	},
+	"homepage": "https://haystack.deepset.ai/",
+	"tags": ["rag", "llm", "nlp", "ai-framework", "document-search"],
+	"oss": true,
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": true,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://haystack.deepset.ai/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/deepset-ai/haystack"
+		}
+	]
+}

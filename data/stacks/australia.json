@@ -1,0 +1,81 @@
+{
+	"id": "australia",
+	"name": {
+		"de": "Australien Stack (DTA/CDR)",
+		"en": "Australia Stack (DTA/CDR)"
+	},
+	"description": {
+		"de": "Nationaler DPI-Stack mit Fokus auf Consumer Data Right, FAPI-Sicherheit und vertrauenswürdige digitale Identitäten.",
+		"en": "National DPI stack focused on Consumer Data Right, FAPI security and trusted digital identities."
+	},
+	"country": "AU",
+	"issuer": "Digital Transformation Agency (DTA)",
+	"version": "0.1.0",
+	"publishedAt": "2026-04-16",
+	"items": [
+		{
+			"itemId": "json-web-tokens-jwt",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "JWTs sind Kernbestandteil der FAPI- und CDR-Sicherheitsarchitektur.",
+				"en": "JWTs are a core part of the FAPI and CDR security architecture."
+			}
+		},
+		{
+			"itemId": "open-authorization-oauth",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "OAuth 2.0 ist zentral für Consent- und Autorisierungsflüsse im CDR.",
+				"en": "OAuth 2.0 is central to consent and authorization flows in CDR."
+			}
+		},
+		{
+			"itemId": "openid",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "OIDC ergänzt OAuth für föderierte Identität und sichere Anmeldung.",
+				"en": "OIDC complements OAuth for federated identity and secure login."
+			}
+		},
+		{
+			"itemId": "r",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "R wird in staatlichen Evaluations- und Datenanalyseprojekten eingesetzt.",
+				"en": "R is used in public-sector evaluation and data analysis projects."
+			}
+		},
+		{
+			"itemId": "react",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "React bildet die Basis für wiederverwendbare Civic-UI-Komponenten.",
+				"en": "React provides the basis for reusable civic UI components."
+			}
+		},
+		{
+			"itemId": "transport-layer-security-tls",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "TLS/MTLS ist Pflicht für die abgesicherte Datenübertragung im CDR.",
+				"en": "TLS/MTLS is mandatory for secure data transport in CDR."
+			}
+		}
+	],
+	"sources": [
+		{
+			"label": {
+				"de": "Digital Transformation Agency",
+				"en": "Digital Transformation Agency",
+				"fr": "Digital Transformation Agency"
+			},
+			"url": "https://www.dta.gov.au/"
+		}
+	]
+}

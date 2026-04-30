@@ -1,0 +1,39 @@
+{
+	"id": "singpass",
+	"name": "Singpass",
+	"layer": "applications",
+	"sublayer": "sicherheit",
+	"groupKey": "national-digital-id-platform",
+	"itemKind": "service",
+	"description": {
+		"de": "Singpass ist Singapurs nationaler Login-Dienst und Teil der National Digital Identity (NDI). Er bietet Bürgerinnen und Bürgern sicheren Zugriff auf hunderte digitale Verwaltungsdienste.",
+		"en": "Singpass is Singapore's national login service and part of its National Digital Identity (NDI) programme. It gives citizens secure access to hundreds of digital government services."
+	},
+	"homepage": "https://www.singpass.gov.sg/",
+	"tags": ["egovernment", "identity", "singapore"],
+	"oss": false,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": false,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": false,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.singpass.gov.sg/"
+		},
+		{
+			"type": "url",
+			"url": "https://api.singpass.gov.sg/"
+		}
+	]
+}

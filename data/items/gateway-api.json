@@ -1,0 +1,35 @@
+{
+	"id": "gateway-api",
+	"name": "Gateway API",
+	"layer": "infrastructure",
+	"itemKind": "platform",
+	"description": {
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Kubernetes Ingress Controller' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": "Kubernetes Gateway API is a next-generation API for managing ingress and routing with Apache License, providing expressive and extensible Kubernetes networking configuration."
+	},
+	"oss": true,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": true,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true
+	},
+	"homepage": "https://gateway-api.sigs.k8s.io/",
+	"lastResearchDate": "2026-04-28",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://gateway-api.sigs.k8s.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/kubernetes-sigs/gateway-api"
+		}
+	]
+}

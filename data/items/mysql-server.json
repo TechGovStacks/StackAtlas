@@ -1,0 +1,44 @@
+{
+	"id": "mysql-server",
+	"name": "MySQL Server",
+	"layer": "platform",
+	"sublayer": "daten",
+	"groupKey": "sql-db",
+	"itemKind": "platform",
+	"description": {
+		"de": "MySQL ist ein relationales Datenbankmanagementsystem für die Organisation von strukturierten Daten in Tabellen.",
+		"en": ""
+	},
+	"homepage": "https://www.mysql.com/",
+	"tags": ["datenbank", "sql", "relational"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"audit": {
+		"lastDate": "2025-11-11",
+		"url": "https://dev.mysql.com/doc/"
+	},
+	"license": "GPL-2.0",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.mysql.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/mysql/mysql-server"
+		}
+	]
+}

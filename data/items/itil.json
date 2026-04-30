@@ -1,0 +1,37 @@
+{
+	"id": "itil",
+	"name": "ITIL",
+	"layer": "sovereign-standards",
+	"itemKind": "standard",
+	"description": {
+		"de": "Standard für den Betrieb von IT-Lösungen",
+		"en": ""
+	},
+	"oss": false,
+	"tags": [],
+	"sovereigntyCriteria": {
+		"openSource": false,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": false,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
+	},
+	"homepage": "https://www.axelos.com/",
+	"license": "proprietary",
+	"lastResearchDate": "2026-04-29",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.axelos.com/best-practice-solutions/itil"
+		},
+		{
+			"type": "url",
+			"url": "https://www.itlibrary.org/"
+		}
+	]
+}
