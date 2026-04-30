@@ -1,0 +1,1 @@
+import{ft as e}from"./index-BB34jtA5.js";var t=(t,n)=>{e(t,`_rows`,n,{min:1})};export{t};

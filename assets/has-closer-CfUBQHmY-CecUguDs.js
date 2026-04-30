@@ -1,1 +1,0 @@
-import{ut as e}from"./index-nWl-dwNI.js";var t=(t,n)=>{e(t,`_hasCloser`,n)};export{t};
