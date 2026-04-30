@@ -1,0 +1,1 @@
+import{pt as e}from"./index-BS22rsKi.js";var t=(t,n,r={})=>{e(t,`_placeholder`,n,r)};export{t};

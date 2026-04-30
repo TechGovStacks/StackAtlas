@@ -1,1 +1,0 @@
-import{pt as e}from"./index-BB34jtA5.js";var t=(t,n,r={})=>{e(t,`_href`,n,r)};export{t};

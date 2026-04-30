@@ -1,1 +1,0 @@
-import{pt as e}from"./index-BB34jtA5.js";var t=(t,n)=>{e(t,`_customClass`,n,{defaultValue:``})};export{t};
