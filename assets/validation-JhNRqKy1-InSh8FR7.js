@@ -1,1 +1,0 @@
-import{dt as e,lt as t}from"./index-Bikbkf5q.js";var n=(n,r,i)=>{e(r,`_links`,e=>typeof e==`object`&&(typeof e._href==`string`||typeof e._label==`string`),i),t(n,r.state._links.length)};export{n as t};

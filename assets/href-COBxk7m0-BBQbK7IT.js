@@ -1,1 +1,0 @@
-import{pt as e}from"./index-Bikbkf5q.js";var t=(t,n,r={})=>{e(t,`_href`,n,r)};export{t};
