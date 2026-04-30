@@ -1,5 +1,4 @@
-
-import { useState, useMemo } from 'preact/hooks';
+import { useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import type { FilterState, Item, StackItem } from '../types';
 import { buildDependencyGraph, getLocalizedText, hasDependencyWithinDepth } from '../utils';
