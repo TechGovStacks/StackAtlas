@@ -1,1 +1,0 @@
-import{ut as e}from"./index-_jAleQV9.js";var t=(t,n)=>{e(t,`_spellCheck`,n,{defaultValue:void 0})};export{t};

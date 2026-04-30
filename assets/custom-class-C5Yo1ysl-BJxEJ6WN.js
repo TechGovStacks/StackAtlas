@@ -1,0 +1,1 @@
+import{pt as e}from"./index-Bikbkf5q.js";var t=(t,n)=>{e(t,`_customClass`,n,{defaultValue:``})};export{t};
