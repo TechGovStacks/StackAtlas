@@ -38,7 +38,7 @@ jobs:
         env:
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          VIBE_VERBOSE: "0"
+          VIBE_VERBOSE: '0'
         run: |
           vibe --trust --output text "Lies die Datei data/items/AGENTS.md und führe alle darin enthaltenen Aufgaben und Anweisungen aus. Arbeite alle Tasks ab, die in der Datei definiert sind. Aktualisiere Dateien im Repository wie in AGENTS.md beschrieben. Committe die Änderungen nicht selbst - das übernimmt der nächste Schritt." 2>&1 | grep -v "^⠈\|^⢸\|^ ⠉\|^  ⠉\|^ ⢸" || true
 
