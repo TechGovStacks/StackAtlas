@@ -24,7 +24,7 @@ jobs:
           node-version: '20'
 
       - name: Install Vibe CLI
-        run: npm install -g @mistralai/vibe-cli
+        run: npm install -g @mistralai/vibe
 
       - name: Execute AGENTS.md tasks with Vibe
         env:
