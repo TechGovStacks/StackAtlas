@@ -9,8 +9,8 @@ permissions:
   contents: write
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event.pull_request.head.ref || github.ref }}
-  cancel-in-progress: true
+  group: ${{ github.workflow }}-main
+  cancel-in-progress: false
 
 jobs:
   bump-version:
