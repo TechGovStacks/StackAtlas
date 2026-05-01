@@ -1,1 +1,0 @@
-import{lt as e}from"./index-B2ccmd2V-O00m6k1e.js";var t=(t,n,r={})=>{e(t,`_placeholder`,n,r)};export{t};
