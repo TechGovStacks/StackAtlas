@@ -27,7 +27,7 @@ interface FilterBarProps {
 	showDependencyControls?: boolean;
 }
 
-const SEARCH_INPUT_DEBOUNCE_MS = 250;
+const SEARCH_INPUT_DEBOUNCE_MS = 500;
 
 export function FilterBar({
 	filters,
