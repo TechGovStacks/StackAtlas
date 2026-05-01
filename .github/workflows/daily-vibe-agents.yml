@@ -2,37 +2,55 @@ name: Daily Vibe AGENDS.md Processing
 
 on:
   schedule:
-    - cron: '0 1 * * *'  # 1 Uhr UTC = 2 Uhr MEZ (Winterzeit) / 3 Uhr MESZ (Sommerzeit)
+    - cron: '0 1 * * *'  # 1 UTC = 2 MEZ (Winter) / 3 MESZ (Summer)
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
-  process-with-vibe:
+  process:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
+          persist-credentials: false
           fetch-depth: 0
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: '20'
 
       - name: Install Vibe CLI
         run: npm install -g @mistralai/vibe-cli
 
-      - name: Run Vibe on AGENDS.md
+      - name: Execute AGENDS.md tasks with Vibe
         env:
-          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY || '' }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          vibe "Analysiere und verarbeite die Datei data/items/AGENDS.md gemäß den darin enthaltenen Anweisungen. Aktualisiere die Datei bei Bedarf."
+          vibe "Lies die Datei data/items/AGENDS.md und führe alle darin enthaltenen Aufgaben und Anweisungen aus. Arbeite alle Tasks ab, die in der Datei definiert sind. Aktualisiere Dateien im Repository wie in AGENDS.md beschrieben. Committe die Änderungen nicht selbst - das übernimmt der nächste Schritt."
 
-      - name: Commit and push changes
-        if: success()
+      - name: Check for changes
+        id: verify-changed-files
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/items/AGENDS.md
-          git diff --cached --quiet || git commit -m "chore: update AGENDS.md via Vibe"
-          git push
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Pull Request
+        if: steps.verify-changed-files.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: main
+          branch: auto-execute-agents-md
+          commit-message: 'chore: execute AGENDS.md tasks via Vibe'
+          title: 'chore: execute AGENDS.md tasks via Vibe'
+          body: 'Automatische Abarbeitung der Aufgaben aus data/items/AGENDS.md durch Mistral Vibe.'
+          delete-branch: true
+          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
