@@ -1,1 +1,0 @@
-import{ft as e}from"./index-CMeK0Iue.js";var t=(t,n)=>{e(t,`_rows`,n,{min:1})};export{t};
