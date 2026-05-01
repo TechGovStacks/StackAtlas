@@ -1,8 +1,8 @@
-name: Daily Vibe AGENDS.md Processing
+name: Daily Vibe AGENTS.md Processing
 
 on:
   schedule:
-    - cron: '0 1 * * *'  # 1 UTC = 2 MEZ (Winter) / 3 MESZ (Summer)
+    - cron: '0 1 * * *' # 1 UTC = 2 MEZ (Winter) / 3 MESZ (Summer)
   workflow_dispatch:
 
 permissions:
@@ -26,12 +26,12 @@ jobs:
       - name: Install Vibe CLI
         run: npm install -g @mistralai/vibe-cli
 
-      - name: Execute AGENDS.md tasks with Vibe
+      - name: Execute AGENTS.md tasks with Vibe
         env:
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          vibe "Lies die Datei data/items/AGENDS.md und führe alle darin enthaltenen Aufgaben und Anweisungen aus. Arbeite alle Tasks ab, die in der Datei definiert sind. Aktualisiere Dateien im Repository wie in AGENDS.md beschrieben. Committe die Änderungen nicht selbst - das übernimmt der nächste Schritt."
+          vibe "Lies die Datei data/items/AGENTS.md und führe alle darin enthaltenen Aufgaben und Anweisungen aus. Arbeite alle Tasks ab, die in der Datei definiert sind. Aktualisiere Dateien im Repository wie in AGENTS.md beschrieben. Committe die Änderungen nicht selbst - das übernimmt der nächste Schritt."
 
       - name: Check for changes
         id: verify-changed-files
@@ -49,8 +49,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           base: main
           branch: auto-execute-agents-md
-          commit-message: 'chore: execute AGENDS.md tasks via Vibe'
-          title: 'chore: execute AGENDS.md tasks via Vibe'
-          body: 'Automatische Abarbeitung der Aufgaben aus data/items/AGENDS.md durch Mistral Vibe.'
+          commit-message: 'chore: execute AGENTS.md tasks via Vibe'
+          title: 'chore: execute AGENTS.md tasks via Vibe'
+          body: 'Automatische Abarbeitung der Aufgaben aus data/items/AGENTS.md durch Mistral Vibe.'
           delete-branch: true
           author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
