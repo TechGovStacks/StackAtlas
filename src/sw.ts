@@ -28,7 +28,9 @@ self.addEventListener('notificationclick', (event) => {
 					clientList[0].focus();
 				} else {
 					// Open new window - use the data.url if available, otherwise fall back to root
-					const url = (event.notification.data && event.notification.data.url) || '/';
+					const defaultUrl = self.registration.scope;
+					const requestedUrl = event.notification.data?.url;
+					const url = typeof requestedUrl === 'string' && requestedUrl.length > 0 ? requestedUrl : defaultUrl;
 					self.clients.openWindow(url);
 				}
 			}),
