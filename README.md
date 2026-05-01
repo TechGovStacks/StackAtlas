@@ -86,4 +86,4 @@ Weitere Details: [DEVELOPMENT.md](DEVELOPMENT.md)
 - 💬 Issues: [GitHub Issues](https://github.com/techgovstacks/stackatlas/issues)
 - 📋 Website: https://techgovstacks.github.io/StackAtlas/
 
-- 
+-
