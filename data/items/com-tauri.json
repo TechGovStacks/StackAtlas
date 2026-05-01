@@ -21,7 +21,8 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://v2.tauri.app/",
-	"lastResearchDate": "2026-04-27",
+	"groupKey": "cross-platform-ui-framework",
+	"lastResearchDate": "2026-04-29",
 	"researchSources": [
 		{
 			"type": "url",

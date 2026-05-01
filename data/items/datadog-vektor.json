@@ -21,8 +21,9 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://vector.dev/",
+	"groupKey": "log-aggregation",
 	"license": "MPL-2.0",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-04-29",
 	"researchSources": [
 		{
 			"type": "url",

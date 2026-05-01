@@ -21,6 +21,7 @@
 		"ownerType": "corporation"
 	},
 	"homepage": "https://www.projectquay.io/",
+	"groupKey": "container-registry",
 	"license": "Apache-2.0",
 	"lastResearchDate": "2026-04-29",
 	"researchSources": [

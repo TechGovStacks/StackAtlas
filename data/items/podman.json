@@ -21,6 +21,7 @@
 		"ownerType": "corporation"
 	},
 	"homepage": "https://podman.io/",
+	"groupKey": "container-runtime",
 	"license": "Apache-2.0",
 	"lastResearchDate": "2026-04-29",
 	"researchSources": [

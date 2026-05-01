@@ -21,6 +21,7 @@
 		"ownerType": "corporation"
 	},
 	"homepage": "https://nats.io/",
+	"groupKey": "message-broker",
 	"license": "Apache-2.0",
 	"lastResearchDate": "2026-04-29",
 	"researchSources": [

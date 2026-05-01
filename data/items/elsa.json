@@ -21,7 +21,8 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://docs.elsaworkflows.io/",
-	"lastResearchDate": "2026-04-28",
+	"groupKey": "workflow-orchestration",
+	"lastResearchDate": "2026-04-29",
 	"researchSources": [
 		{
 			"type": "url",

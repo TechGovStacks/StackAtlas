@@ -21,6 +21,7 @@
 		"ownerType": "oneManShow"
 	},
 	"homepage": "https://www.sqlite.org/",
+	"groupKey": "sql-db",
 	"license": "Public Domain",
 	"lastResearchDate": "2026-04-29",
 	"researchSources": [

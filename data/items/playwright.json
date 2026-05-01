@@ -21,6 +21,7 @@
 		"ownerType": "corporation"
 	},
 	"homepage": "https://playwright.dev/",
+	"groupKey": "test-automation",
 	"license": "Apache-2.0",
 	"lastResearchDate": "2026-04-29",
 	"researchSources": [

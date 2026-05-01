@@ -20,6 +20,7 @@
 		"noTelemetryByDefault": false,
 		"ownerType": "corporation"
 	},
+	"groupKey": "llm-framework",
 	"lastResearchDate": "2026-04-29",
 	"researchSources": [
 		{

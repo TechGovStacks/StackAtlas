@@ -22,6 +22,7 @@
 		"ownerType": "independentConsortium"
 	},
 	"homepage": "https://www.jaegertracing.io/",
+	"groupKey": "distributed-tracing",
 	"license": "Apache-2.0",
 	"lastResearchDate": "2026-04-29",
 	"researchSources": [

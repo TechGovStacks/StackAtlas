@@ -21,7 +21,8 @@
 		"noTelemetryByDefault": true
 	},
 	"homepage": "https://www.fluentd.org/",
-	"lastResearchDate": "2026-04-28",
+	"groupKey": "log-aggregation",
+	"lastResearchDate": "2026-04-29",
 	"researchSources": [
 		{
 			"type": "url",
