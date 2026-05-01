@@ -1,1 +1,0 @@
-import{ut as e}from"./index-Cx2GYRtj.js";var t=(t,n)=>{e(t,`_readOnly`,n)};export{t};

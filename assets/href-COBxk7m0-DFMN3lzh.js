@@ -1,0 +1,1 @@
+import{pt as e}from"./index-CcA6LQs9.js";var t=(t,n,r={})=>{e(t,`_href`,n,r)};export{t};

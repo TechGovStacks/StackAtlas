@@ -1,0 +1,1 @@
+import{ut as e}from"./index-CcA6LQs9.js";var t=(t,n,r)=>{e(t,`_open`,n,r)};export{t};
