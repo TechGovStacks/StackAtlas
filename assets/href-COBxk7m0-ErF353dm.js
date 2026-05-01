@@ -1,0 +1,1 @@
+import{pt as e}from"./index-DUMb461y.js";var t=(t,n,r={})=>{e(t,`_href`,n,r)};export{t};
