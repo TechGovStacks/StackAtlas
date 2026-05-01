@@ -1,1 +1,0 @@
-import{ut as e}from"./index-Bs96k91F.js";var t=(t,n,r={})=>{e(t,`_inline`,n,r)};export{t};
