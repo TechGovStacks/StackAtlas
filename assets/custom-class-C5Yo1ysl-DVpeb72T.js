@@ -1,0 +1,1 @@
+import{pt as e}from"./index-Bs96k91F.js";var t=(t,n)=>{e(t,`_customClass`,n,{defaultValue:``})};export{t};

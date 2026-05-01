@@ -1,0 +1,1 @@
+import{ut as e}from"./index-Bs96k91F.js";var t=(t,n)=>{e(t,`_spellCheck`,n,{defaultValue:void 0})};export{t};
