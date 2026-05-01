@@ -1,0 +1,1 @@
+import{ut as e}from"./index-DMcsTkGX.js";var t=(t,n,r={})=>{e(t,`_inline`,n,r)};export{t};
