@@ -85,5 +85,3 @@ Weitere Details: [DEVELOPMENT.md](DEVELOPMENT.md)
 - 📧 Security: [SECURITY.md](SECURITY.md)
 - 💬 Issues: [GitHub Issues](https://github.com/techgovstacks/stackatlas/issues)
 - 📋 Website: https://techgovstacks.github.io/StackAtlas/
-
-- 
