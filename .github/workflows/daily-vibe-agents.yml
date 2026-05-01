@@ -21,10 +21,15 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: '20'
+          node-version: '24'
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
 
       - name: Install Vibe CLI
-        run: npm install -g @mistralai/vibe
+        run: pip install mistral-vibe
 
       - name: Execute AGENTS.md tasks with Vibe
         env:
