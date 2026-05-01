@@ -26,10 +26,10 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v6
         with:
-          python-version: '3.11'
+          python-version: '3.12'
 
       - name: Install Vibe CLI
-        run: pip install mistral-vibe
+        run: curl -LsSf https://mistral.ai/vibe/install.sh | bash
 
       - name: Execute AGENTS.md tasks with Vibe
         env:
