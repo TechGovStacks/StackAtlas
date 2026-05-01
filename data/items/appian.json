@@ -2,25 +2,42 @@
 	"id": "appian",
 	"name": "Appian",
 	"layer": "applications",
+	"sublayer": "low-code",
+	"groupKey": "low-code-app-builder",
 	"itemKind": "service",
 	"description": {
-		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Low-Code Prozessautomatisierung' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
-		"en": ""
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Low-Code Prozessautomatisierung' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen. Proprietäre Enterprise Low-Code-Plattform mit Sitz in den USA.",
+		"en": "Enterprise low-code process automation platform. Proprietary software headquartered in McLean, Virginia, USA. Supports on-premise deployment with Kubernetes."
 	},
 	"oss": false,
-	"tags": [],
+	"tags": ["low-code", "process-automation", "enterprise", "proprietary"],
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": false,
 		"hasAudit": false,
 		"permissiveLicense": false,
 		"matureProject": true,
-		"selfHostable": false,
+		"selfHostable": true,
 		"dataPortability": false,
 		"openStandards": false,
-		"noTelemetryByDefault": false
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
 	},
 	"homepage": "https://appian.com/",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-04-27"
+	"lastResearchDate": "2026-05-01",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Appian_Corporation"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.appian.com/suite/help/25.4/aok-faq.html"
+		},
+		{
+			"type": "url",
+			"url": "https://appian.com/products/platform/overview"
+		}
+	]
 }

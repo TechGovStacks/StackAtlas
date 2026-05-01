@@ -2,13 +2,14 @@
 	"id": "archimate",
 	"name": "ArchiMate",
 	"layer": "sovereign-standards",
+	"sublayer": "architecture",
 	"itemKind": "standard",
 	"description": {
-		"de": "Offener Standard zur Modellierung von Organisationen, von Organisationszielen bis zu deren Umsetzung",
-		"en": ""
+		"de": "ArchiMate ist ein offener Standard der Open Group zur Modellierung von Unternehmen und IT-Architekturen. Er bietet eine einheitliche Sprache zur Beschreibung von Organisationszielen, Geschäftsprozessen, Anwendungen, Daten und technischer Infrastruktur.",
+		"en": "ArchiMate is an open standard by The Open Group for modeling enterprise and IT architectures. It provides a unified language for describing organizational goals, business processes, applications, data, and technical infrastructure."
 	},
 	"oss": false,
-	"tags": [],
+	"tags": ["architecture", "enterprise", "modeling", "open-standard", "the-open-group"],
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": false,
@@ -18,11 +19,12 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
 	},
-	"homepage": "https://www.opengroup.org/archimate-forum/archimate-overview",
+	"homepage": "https://www.opengroup.org/archimate-forum",
 	"license": "The Open Group License",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-01",
 	"researchSources": [
 		{
 			"type": "url",
@@ -39,6 +41,14 @@
 		{
 			"type": "url",
 			"url": "https://en.wikipedia.org/wiki/ArchiMate"
+		},
+		{
+			"type": "url",
+			"url": "https://www.opengroup.org/archimate-forum"
+		},
+		{
+			"type": "url",
+			"url": "https://pubs.opengroup.org/architecture/archimate3-doc/"
 		}
 	]
 }

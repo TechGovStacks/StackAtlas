@@ -1,14 +1,16 @@
 {
 	"id": "apache-camel-integration-framework",
-	"name": "Apache Camel Integration Framework",
+	"name": "Apache Camel",
 	"layer": "building-blocks",
-	"itemKind": "tool",
+	"sublayer": "integration",
+	"groupKey": "integration-framework",
+	"itemKind": "framework",
 	"description": {
-		"de": "Java/XML-Basiertes OPEN SOURCE Integration Framework mit unendlich vielen und einfach soliden performant en und IT-sicheren Adapter -Componenten.  Quasi-Standard, wenn es um IT-Systemintegration nach EIPs in Unternehmen geht",
-		"en": ""
+		"de": "Apache Camel ist ein Open-Source-Integrationsframework, das auf Enterprise Integration Patterns (EIP) basiert. Es bietet eine breite Palette von Adaptern und Komponenten für die Verbindung unterschiedlichster Systeme und Protokolle und ist ein Quasi-Standard für IT-Systemintegration in Unternehmen.",
+		"en": "Apache Camel is an open-source integration framework based on Enterprise Integration Patterns (EIP). It provides a wide range of adapters and components for connecting diverse systems and protocols and is a quasi-standard for IT system integration in enterprises."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["integration", "eip", "enterprise", "java", "framework"],
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -18,11 +20,12 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": false,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
 	},
 	"homepage": "https://camel.apache.org/",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-01",
 	"researchSources": [
 		{
 			"type": "url",
@@ -39,6 +42,10 @@
 		{
 			"type": "url",
 			"url": "https://en.wikipedia.org/wiki/Apache_Camel"
+		},
+		{
+			"type": "url",
+			"url": "https://camel.apache.org/manual/latest/"
 		}
 	]
 }

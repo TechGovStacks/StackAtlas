@@ -1,14 +1,16 @@
 {
 	"id": "argo-workflow",
-	"name": "Argo Workflow",
+	"name": "Argo Workflows",
 	"layer": "platform",
+	"sublayer": "workflow",
+	"groupKey": "workflow-orchestration",
 	"itemKind": "tool",
 	"description": {
-		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Kubernetes Workflow Engine' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
-		"en": ""
+		"de": "Argo Workflows ist eine Workflow-Engine für Kubernetes, die die Orchestrierung von parallelen Jobs ermöglicht. Als CNCF-Projekt dient es als Standard für Workflow-Orchestrierung und ermöglicht konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": "Argo Workflows is a workflow engine for Kubernetes that enables orchestration of parallel jobs. As a CNCF project, it serves as a standard for workflow orchestration and enables consistent, interoperable and reusable implementations."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["workflow", "kubernetes", "cncf", "orchestration"],
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -18,11 +20,12 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": false,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
 	},
 	"homepage": "https://argoproj.github.io/workflows/",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-01",
 	"researchSources": [
 		{
 			"type": "url",

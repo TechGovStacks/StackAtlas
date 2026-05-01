@@ -2,15 +2,16 @@
 	"id": "helm",
 	"name": "Helm",
 	"layer": "platform",
-	"sublayer": "inbetriebnahme",
-	"itemKind": "platform",
+	"sublayer": "deployment",
+	"itemKind": "tool",
 	"description": {
-		"de": "Helm ist der De-facto-Paketmanager für Kubernetes. Mit Helm-Charts werden komplexe Kubernetes-Anwendungen versioniert, geteilt und reproduzierbar deployt.",
-		"en": "Helm is the de-facto package manager for Kubernetes. Helm charts version, share and reproducibly deploy complex Kubernetes applications."
+		"de": "Helm ist der De-facto-Paketmanager für Kubernetes. Mit Helm-Charts werden komplexe Kubernetes-Anwendungen versioniert, geteilt und reproduzierbar deployt. Als CNCF-Graduated-Projekt ist Helm der Standard für Kubernetes-Paketmanagement.",
+		"en": "Helm is the de-facto package manager for Kubernetes. Helm charts version, share and reproducibly deploy complex Kubernetes applications. As a CNCF graduated project, Helm is the standard for Kubernetes package management."
 	},
 	"homepage": "https://helm.sh/",
-	"tags": ["kubernetes", "package-manager", "deployment", "charts"],
+	"tags": ["kubernetes", "package-manager", "deployment", "charts", "cncf"],
 	"oss": true,
+	"license": "Apache-2.0",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -20,9 +21,10 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-01",
 	"researchSources": [
 		{
 			"type": "url",
@@ -31,6 +33,10 @@
 		{
 			"type": "url",
 			"url": "https://github.com/helm/helm"
+		},
+		{
+			"type": "url",
+			"url": "https://www.cncf.io/projects/helm/"
 		}
 	]
 }

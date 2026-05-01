@@ -2,13 +2,15 @@
 	"id": "asciidoc",
 	"name": "AsciiDoc",
 	"layer": "building-blocks",
+	"sublayer": "documentation",
+	"groupKey": "documentation-format",
 	"itemKind": "format",
 	"description": {
-		"de": "AsciiDoc ist ein textbasiertes, standardisiertes und leicht versionierbares Format für die Dokumentation technischre Sachverhalte.",
-		"en": ""
+		"de": "AsciiDoc ist ein textbasiertes, standardisiertes und leicht versionierbares Format für die Dokumentation technischer Sachverhalte. Als offener Standard ermöglicht es die Erstellung von strukturierten Dokumenten in reinem Textformat.",
+		"en": "AsciiDoc is a text-based, standardized, and easily versionable format for documenting technical subjects. As an open standard, it enables the creation of structured documents in plain text format."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["documentation", "format", "markup", "open-standard"],
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -17,20 +19,29 @@
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": false,
-		"noTelemetryByDefault": true
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
 	},
 	"homepage": "https://asciidoc.org/",
 	"license": "MIT",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-01",
 	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://asciidoc.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://asciidoctor.org/"
+		},
 		{
 			"type": "url",
 			"url": "https://github.com/asciidoctor/asciidoctor"
 		},
 		{
 			"type": "url",
-			"url": "https://asciidoctor.org/"
+			"url": "https://docs.asciidoctor.org/"
 		}
 	]
 }

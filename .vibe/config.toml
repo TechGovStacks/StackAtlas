@@ -1,0 +1,4 @@
+[[mcp_servers]]
+name = "kolibri-mcp"
+transport = "http"
+url = "https://public-ui-kolibri-mcp.vercel.app/mcp"

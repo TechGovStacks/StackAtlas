@@ -1,14 +1,16 @@
 {
 	"id": "acr-azure-container-registry",
-	"name": "ACR (Azure Container Registry)",
+	"name": "Azure Container Registry",
 	"layer": "infrastructure",
-	"itemKind": "platform",
+	"sublayer": "container",
+	"groupKey": "container-registry",
+	"itemKind": "service",
 	"description": {
-		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Verwaltete Container Registry' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
-		"en": ""
+		"de": "Azure Container Registry (ACR) ist eine verwaltete Container-Registry von Microsoft Azure für das Speichern und Verwalten von Docker-Container-Images. Als verwalteter Dienst ermöglicht ACR sichere, skalierbare und private Container-Registries mit Integration in Azure DevOps und Kubernetes.",
+		"en": "Azure Container Registry (ACR) is a managed container registry service by Microsoft Azure for storing and managing Docker container images. As a managed service, ACR provides secure, scalable, and private container registries with integration into Azure DevOps and Kubernetes."
 	},
 	"oss": false,
-	"tags": [],
+	"tags": ["container", "registry", "cloud", "azure", "proprietary"],
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": false,
@@ -23,7 +25,7 @@
 	},
 	"homepage": "https://azure.microsoft.com/en-us/products/container-registry",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-01",
 	"researchSources": [
 		{
 			"type": "url",
@@ -32,6 +34,10 @@
 		{
 			"type": "url",
 			"url": "https://en.wikipedia.org/wiki/Azure_Container_Registry"
+		},
+		{
+			"type": "url",
+			"url": "https://learn.microsoft.com/en-us/azure/container-registry/"
 		}
 	]
 }

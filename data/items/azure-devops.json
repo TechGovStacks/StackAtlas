@@ -2,13 +2,15 @@
 	"id": "azure-devops",
 	"name": "Azure DevOps",
 	"layer": "platform",
+	"sublayer": "devops",
+	"groupKey": "ci-cd",
 	"itemKind": "tool",
 	"description": {
-		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'CI/CD und Projektmanagement' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
-		"en": ""
+		"de": "Azure DevOps ist eine proprietäre CI/CD- und Projektmanagement-Plattform von Microsoft. Sie bietet integrierte Tools für Build-Pipelines, Testmanagement und Artefaktverwaltung und dient als Referenz für CI/CD-Prozesse in Cloud-Umgebungen.",
+		"en": "Azure DevOps is a proprietary CI/CD and project management platform by Microsoft. It provides integrated tools for build pipelines, test management, and artifact management, serving as a reference for CI/CD processes in cloud environments."
 	},
 	"oss": false,
-	"tags": [],
+	"tags": ["ci-cd", "devops", "cloud", "proprietary"],
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": false,
@@ -23,7 +25,7 @@
 	},
 	"homepage": "https://azure.microsoft.com/en-us/products/devops",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-01",
 	"researchSources": [
 		{
 			"type": "url",

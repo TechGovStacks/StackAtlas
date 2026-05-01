@@ -2,27 +2,30 @@
 	"id": "a12-low-code",
 	"name": "A12 Low Code",
 	"layer": "building-blocks",
+	"sublayer": "low-code",
+	"groupKey": "low-code-app-builder",
 	"itemKind": "tool",
 	"description": {
-		"de": "A12 ist ein offenes und ausgereiftes Low Code Framework, welches die modellgetriebene Entwicklung von Portalen, Fach- und Antragsverfahren inkl. KI-Integration nachhaltig unterstützt. A12 ist ab Mai 2026 Open Source und schafft somit vollständige Transparenz, Auditierbarkeit und kann souverän genutzt werden.",
-		"en": ""
+		"de": "A12 ist ein offenes und ausgereiftes Low Code Framework, welches die modellgetriebene Entwicklung von Portalen, Fach- und Antragsverfahren inkl. KI-Integration nachhaltig unterstützt. A12 ist ab Mai 2026 Open Source (EUPL 1.2) und schafft somit vollständige Transparenz, Auditierbarkeit und kann souverän genutzt werden.",
+		"en": "A12 is an open and mature low-code framework that sustainably supports model-driven development of portals, professional and application procedures including AI integration. A12 has been open source (EUPL 1.2) since May 2026, providing full transparency, auditability and sovereign usability."
 	},
-	"oss": false,
-	"tags": [],
+	"oss": true,
+	"tags": ["low-code", "ai-integration", "e-government", "open-source", "eupl"],
 	"sovereigntyCriteria": {
-		"openSource": false,
+		"openSource": true,
 		"euHeadquartered": true,
-		"hasAudit": false,
-		"permissiveLicense": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": false,
-		"noTelemetryByDefault": true
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
 	"homepage": "https://www.mgm-tp.com/a12.html",
-	"license": "Proprietary",
-	"lastResearchDate": "2026-04-27",
+	"license": "EUPL-1.2",
+	"lastResearchDate": "2026-05-01",
 	"researchSources": [
 		{
 			"type": "url",
@@ -31,6 +34,18 @@
 		{
 			"type": "url",
 			"url": "https://de.wikipedia.org/wiki/Low-Code-Entwicklung"
+		},
+		{
+			"type": "url",
+			"url": "https://insights.mgm-tp.com/en/2026/publicsector/a12-enterprise-ai-low-code-platform-goes-open-source-bavarian-state-office-for-taxation-and-mgm-open-up-source-code/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/orgs/mgm-tp/repositories"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/mgm-tp/a12-tutorial-application"
 		}
 	]
 }

@@ -1,14 +1,15 @@
 {
 	"id": "atag-2-0-authoring-tool-accessibility-guidelines-w3c",
-	"name": "ATAG 2.0 – Authoring Tool Accessibility Guidelines (W3C)",
-	"layer": "applications",
+	"name": "ATAG 2.0",
+	"layer": "sovereign-standards",
+	"sublayer": "accessibility",
 	"itemKind": "standard",
 	"description": {
-		"de": "ATAG 2.0 (W3C-Standard) definiert Barrierefreiheitsanforderungen für Autorenwerkzeuge – d. h. alle Systeme, mit denen digitale Inhalte erstellt, bearbeitet oder veröffentlicht werden. Teil A: Das Werkzeug selbst muss barrierefrei bedienbar sein. Teil B: Das Werkzeug muss die Erstellung barrierefreier Inhalte unterstützen und fördern. Anwendungsbereich: CMS, Formular-Builder, Dokumentengeneratoren, E-Government-Redaktionssysteme.",
-		"en": ""
+		"de": "ATAG 2.0 (Authoring Tool Accessibility Guidelines) ist ein W3C-Standard, der Barrierefreiheitsanforderungen für Autorenwerkzeuge definiert – also alle Systeme, mit denen digitale Inhalte erstellt, bearbeitet oder veröffentlicht werden. Teil A: Das Werkzeug selbst muss barrierefrei bedienbar sein. Teil B: Das Werkzeug muss die Erstellung barrierefreier Inhalte unterstützen und fördern. Anwendungsbereich: CMS, Formular-Builder, Dokumentengeneratoren, E-Government-Redaktionssysteme.",
+		"en": "ATAG 2.0 (Authoring Tool Accessibility Guidelines) is a W3C standard that defines accessibility requirements for authoring tools – i.e., all systems used to create, edit, or publish digital content. Part A: The tool itself must be accessible. Part B: The tool must support and promote the creation of accessible content. Scope: CMS, form builders, document generators, e-government editorial systems."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["accessibility", "w3c", "authoring", "standard", "atag"],
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -18,11 +19,12 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
 	},
 	"homepage": "https://www.w3.org/TR/ATAG20/",
 	"license": "W3C-20150513",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-01",
 	"researchSources": [
 		{
 			"type": "url",

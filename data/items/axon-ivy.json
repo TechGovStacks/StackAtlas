@@ -1,14 +1,16 @@
 {
 	"id": "axon-ivy",
 	"name": "Axon Ivy",
-	"layer": "infrastructure",
+	"layer": "applications",
+	"sublayer": "low-code",
+	"groupKey": "low-code-app-builder",
 	"itemKind": "platform",
 	"description": {
-		"de": "Betriebssystem- und Datenbankagnostische Nocode und Lowcode fähige Plattform zur Automatisierung von Geschäftsprozessen und zur Orchestrierung vorhandener Systeme. Sie unterstützt offene Standards (jeva-basiert) und kann beliebig an alle vorhandenen Systeme angepasst werden.",
-		"en": ""
+		"de": "Axon Ivy ist eine betriebssystem- und datenbankagnostische No-Code- und Low-Code-Plattform zur Automatisierung von Geschäftsprozessen und zur Orchestrierung vorhandener Systeme. Die Java-basierte Plattform unterstützt offene Standards und kann beliebig an bestehende Systeme angepasst werden.",
+		"en": "Axon Ivy is an OS- and database-agnostic no-code and low-code platform for business process automation and orchestration of existing systems. The Java-based platform supports open standards and can be adapted to any existing system."
 	},
 	"oss": false,
-	"tags": [],
+	"tags": ["low-code", "no-code", "bpm", "java", "process-automation", "swiss"],
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": true,
@@ -18,10 +20,12 @@
 		"selfHostable": true,
 		"dataPortability": false,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
 	"homepage": "https://www.axonivy.com/",
-	"lastResearchDate": "2026-04-27",
+	"license": "Proprietary",
+	"lastResearchDate": "2026-05-01",
 	"researchSources": [
 		{
 			"type": "url",
@@ -30,7 +34,14 @@
 		{
 			"type": "url",
 			"url": "https://github.com/axonivy"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.axonivy.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.axonivy.com/company/"
 		}
-	],
-	"license": "Proprietary"
+	]
 }

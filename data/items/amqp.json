@@ -1,14 +1,14 @@
 {
 	"id": "amqp",
 	"name": "AMQP",
-	"layer": "platform",
+	"layer": "sovereign-standards",
 	"itemKind": "protocol",
 	"description": {
-		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Standardisiertes Messaging Protokoll' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
-		"en": ""
+		"de": "Advanced Message Queuing Protocol (AMQP) ist ein offener Standard für die Nachrichtenübermittlung. Er definiert einen organisationsweit gültigen technischen Standard für standardisiertes Messaging und dient als Referenz für konsistente, interoperable Implementierungen in verteilten Systemen.",
+		"en": "Advanced Message Queuing Protocol (AMQP) is an open standard for message queuing. It defines an organization-wide technical standard for standardized messaging and serves as a reference for consistent, interoperable implementations in distributed systems."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["messaging", "protocol", "open-standard", "oasis"],
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -18,11 +18,12 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
 	},
 	"homepage": "https://www.amqp.org/",
 	"license": "OASIS RF on RAND",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-01",
 	"researchSources": [
 		{
 			"type": "url",

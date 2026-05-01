@@ -1,14 +1,16 @@
 {
 	"id": "agentgateway",
-	"name": "Agentgateway",
+	"name": "AgentGateway",
 	"layer": "sovereign-standards",
-	"itemKind": "tool",
+	"sublayer": "ai-agents",
+	"groupKey": "ai-agent-protocol",
+	"itemKind": "protocol",
 	"description": {
-		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Schnittstellen zwischen AI-Agenten und Ressourcen' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
-		"en": ""
+		"de": "AgentGateway ist ein offenes Protokoll für die Kommunikation zwischen KI-Agenten und externen Ressourcen. Es definiert einen Standard für die sichere und interoperable Interaktion von Agenten mit Tools, APIs und Datenquellen und ermöglicht so die modulaire und erweiterbare Architektur von KI-Systemen.",
+		"en": "AgentGateway is an open protocol for communication between AI agents and external resources. It defines a standard for secure and interoperable interaction of agents with tools, APIs, and data sources, enabling modular and extensible AI system architectures."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["ai", "agent", "protocol", "communication", "open-standard"],
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -18,15 +20,20 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
 	"homepage": "https://agentgateway.dev/",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-01",
 	"researchSources": [
 		{
 			"type": "url",
 			"url": "https://agentgateway.dev/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/AgentGateway"
 		},
 		{
 			"type": "url",

@@ -2,13 +2,15 @@
 	"id": "blazor",
 	"name": "Blazor",
 	"layer": "building-blocks",
+	"sublayer": "web",
+	"groupKey": "web-framework",
 	"itemKind": "framework",
 	"description": {
-		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Web UI Framework für .NET' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
-		"en": ""
+		"de": "Blazor ist ein Open-Source-Web-Framework von Microsoft für die Entwicklung von interaktiven Webanwendungen mit .NET und C#. Es ermöglicht die Ausführung von .NET-Code direkt im Browser (WebAssembly) oder auf dem Server und bietet eine vollwertige Alternative zu JavaScript-basierten Frameworks.",
+		"en": "Blazor is an open-source web framework by Microsoft for building interactive web applications with .NET and C#. It enables running .NET code directly in the browser (WebAssembly) or on the server, providing a full-fledged alternative to JavaScript-based frameworks."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["web-framework", "dotnet", "csharp", "webassembly", "microsoft"],
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -18,11 +20,12 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
 	"homepage": "https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-01",
 	"researchSources": [
 		{
 			"type": "url",
@@ -31,6 +34,18 @@
 		{
 			"type": "url",
 			"url": "https://dotnet.microsoft.com/en-us/platform/open-source"
+		},
+		{
+			"type": "url",
+			"url": "https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/dotnet/aspnetcore"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Blazor"
 		}
 	]
 }

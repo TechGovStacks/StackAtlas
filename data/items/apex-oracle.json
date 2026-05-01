@@ -1,14 +1,16 @@
 {
 	"id": "apex-oracle",
-	"name": "Apex Oracle",
+	"name": "Oracle APEX",
 	"layer": "applications",
-	"itemKind": "language",
+	"sublayer": "low-code",
+	"groupKey": "low-code-app-builder",
+	"itemKind": "platform",
 	"description": {
-		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Low-Code Webanwendungen auf Oracle' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
-		"en": ""
+		"de": "Oracle Application Express (APEX) ist eine Low-Code-Entwicklungsplattform von Oracle für das schnelle Erstellen von skalierbaren, sicheren Webanwendungen und Berichten direkt in der Oracle Database. Als proprietäre Plattform ermöglicht APEX die Entwicklung von Enterprise-Anwendungen mit minimalem Codeaufwand.",
+		"en": "Oracle Application Express (APEX) is a low-code development platform by Oracle for rapidly building scalable, secure web applications and reports directly within the Oracle Database. As a proprietary platform, APEX enables enterprise application development with minimal coding effort."
 	},
 	"oss": false,
-	"tags": [],
+	"tags": ["low-code", "web-application", "oracle", "database", "proprietary"],
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": false,
@@ -18,11 +20,12 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": false,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
-	"homepage": "https://www.oracle.com/apex/",
+	"homepage": "https://www.oracle.com/database/technologies/appdev/apex.html",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-01",
 	"researchSources": [
 		{
 			"type": "url",
@@ -35,6 +38,14 @@
 		{
 			"type": "url",
 			"url": "https://apex.oracle.com/en/platform/features/"
+		},
+		{
+			"type": "url",
+			"url": "https://apex.oracle.com/en/"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.oracle.com/en/database/oracle/apex/"
 		},
 		{
 			"type": "url",

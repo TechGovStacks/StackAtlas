@@ -2,13 +2,15 @@
 	"id": "argo-cd",
 	"name": "Argo CD",
 	"layer": "platform",
+	"sublayer": "devops",
+	"groupKey": "ci-cd",
 	"itemKind": "tool",
 	"description": {
-		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'GitOps Deployment Tool' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
-		"en": ""
+		"de": "Argo CD ist ein GitOps Continuous Delivery Tool für Kubernetes. Es ermöglicht deklarative, git-basierte Application Deployment und trärt als CNCF-Graduated-Projekt zur konsistenten, interoperablen und wiederverwendbaren Implementierung von CI/CD-Pipelines bei.",
+		"en": "Argo CD is a GitOps continuous delivery tool for Kubernetes. It enables declarative, git-based application deployment and serves as a CNCF graduated project for consistent, interoperable and reusable CI/CD pipeline implementations."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["gitops", "cd", "kubernetes", "cncf"],
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -18,11 +20,12 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": false,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
 	},
 	"homepage": "https://argoproj.github.io/cd/",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-01",
 	"researchSources": [
 		{
 			"type": "url",

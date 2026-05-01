@@ -2,13 +2,15 @@
 	"id": "ai-sdk-by-vercel",
 	"name": "AI SDK by Vercel",
 	"layer": "building-blocks",
-	"itemKind": "tool",
+	"sublayer": "ai",
+	"groupKey": "ai-sdk",
+	"itemKind": "library",
 	"description": {
 		"de": "Das AI SDK von Vercel ist eine TypeScript-Bibliothek, die eine einheitliche Schnittstelle zu verschiedenen Large-Language-Model-Anbietern bereitstellt. Es unterstützt Streaming, Structured Outputs und Tool Use und vereinfacht die Integration von KI-Funktionalitäten in Webanwendungen erheblich.",
-		"en": ""
+		"en": "Vercel's AI SDK is a TypeScript library that provides a unified interface to various Large Language Model providers. It supports streaming, structured outputs, and tool use, significantly simplifying the integration of AI functionality into web applications."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["ai", "sdk", "typescript", "llm", "library"],
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -18,11 +20,12 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": false,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
 	"homepage": "https://ai-sdk.dev/",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-01",
 	"researchSources": [
 		{
 			"type": "url",
@@ -39,6 +42,10 @@
 		{
 			"type": "url",
 			"url": "https://en.wikipedia.org/wiki/Vercel"
+		},
+		{
+			"type": "url",
+			"url": "https://ai-sdk.dev/"
 		}
 	]
 }

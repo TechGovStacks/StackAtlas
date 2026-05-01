@@ -2,26 +2,46 @@
 	"id": "ams",
 	"name": "AMS",
 	"layer": "applications",
+	"sublayer": "identity",
+	"groupKey": "national-digital-id-platform",
 	"itemKind": "service",
 	"description": {
-		"de": "Application Management System vom Auswärtigen Amt",
-		"en": ""
+		"de": "Application Management System vom Auswärtigen Amt, entwickelt von Governikus. Teil der digitalen Identitätsinfrastruktur des Bundes, basierend auf der AusweisApp-Technologie.",
+		"en": "Application Management System of the German Federal Foreign Office, developed by Governikus. Part of the federal digital identity infrastructure, based on AusweisApp technology."
 	},
-	"oss": false,
-	"tags": [],
+	"oss": true,
+	"tags": ["eid", "identity-management", "e-government", "open-source"],
 	"sovereigntyCriteria": {
-		"openSource": false,
+		"openSource": true,
 		"euHeadquartered": true,
-		"hasAudit": false,
-		"permissiveLicense": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
-		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": true
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
 	"homepage": "https://www.governikus.de/en/",
-	"license": "Proprietary",
-	"lastResearchDate": "2026-04-27",
-	"researchSources": []
+	"license": "EUPL-1.2",
+	"lastResearchDate": "2026-05-01",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://github.com/Governikus/AusweisApp"
+		},
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/en/loesungen/kundenprojekte/ausweisapp/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.software-journal.de/author/firma_governikusgmbhco/"
+		},
+		{
+			"type": "url",
+			"url": "https://it-planungsrat.de/DE/Projekte/Anwendungen/Governikus/governikus_node.html"
+		}
+	]
 }
