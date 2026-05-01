@@ -1,0 +1,38 @@
+name: Daily Vibe AGENDS.md Processing
+
+on:
+  schedule:
+    - cron: '0 1 * * *'  # 1 Uhr UTC = 2 Uhr MEZ (Winterzeit) / 3 Uhr MESZ (Sommerzeit)
+  workflow_dispatch:
+
+jobs:
+  process-with-vibe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Vibe CLI
+        run: npm install -g @mistralai/vibe-cli
+
+      - name: Run Vibe on AGENDS.md
+        env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY || '' }}
+        run: |
+          vibe "Analysiere und verarbeite die Datei data/items/AGENDS.md gemäß den darin enthaltenen Anweisungen. Aktualisiere die Datei bei Bedarf."
+
+      - name: Commit and push changes
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/items/AGENDS.md
+          git diff --cached --quiet || git commit -m "chore: update AGENDS.md via Vibe"
+          git push
