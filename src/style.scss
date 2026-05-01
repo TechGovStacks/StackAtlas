@@ -766,26 +766,6 @@ main {
 	gap: var(--ds-space-3);
 }
 
-.beta-modal-badge {
-	display: inline-flex;
-	align-items: center;
-	background: rgb(255 255 255 / 18%);
-	color: var(--ds-color-text-inverse);
-	font-size: var(--ds-text-xs);
-	font-weight: 700;
-	letter-spacing: 0.12em;
-	padding: 3px 10px;
-	border-radius: 100px;
-	border: 1px solid rgb(255 255 255 / 30%);
-	width: fit-content;
-}
-
-@media (width <= 768px) {
-	.beta-modal-badge {
-		display: none;
-	}
-}
-
 .beta-modal-icon {
 	width: 44px;
 	height: 44px;

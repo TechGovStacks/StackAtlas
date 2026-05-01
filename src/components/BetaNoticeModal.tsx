@@ -46,7 +46,6 @@ export function BetaNoticeModal({ isOpen, onClose }: BetaNoticeModalProps) {
 		>
 			<div role="dialog" aria-modal="true" aria-labelledby="beta-modal-title" aria-describedby="beta-modal-description" className="beta-modal-dialog">
 				<div className="beta-modal-header">
-					<span className="beta-modal-badge">BETA</span>
 					<div className="beta-modal-icon" aria-hidden="true">
 						<i className="fas fa-flask" />
 					</div>
