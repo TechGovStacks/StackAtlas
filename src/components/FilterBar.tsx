@@ -1,7 +1,8 @@
 import { KolButton, KolInputCheckbox, KolInputText } from '@public-ui/preact';
-import { useMemo } from 'preact/hooks';
+import { useEffect, useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { PARTICIPANT_ROLES } from '../constants/roleColors';
+import { useDebounce } from '../hooks/useDebounce';
 import { FilterState, Item, Layer, ParticipantRole, Stack } from '../types';
 import { asNullableParticipantRole, asNullableString, asString } from '../types/kolibri';
 import { getDependencyTypes, getLocalizedText } from '../utils';
@@ -26,6 +27,8 @@ interface FilterBarProps {
 	showDependencyControls?: boolean;
 }
 
+const SEARCH_INPUT_DEBOUNCE_MS = 250;
+
 export function FilterBar({
 	filters,
 	onFilterChange,
@@ -41,6 +44,18 @@ export function FilterBar({
 	showDependencyControls = false,
 }: FilterBarProps) {
 	const { i18n, t } = useTranslation();
+	const [searchText, setSearchText] = useState(filters.searchQuery);
+	const debouncedSearchText = useDebounce(searchText, SEARCH_INPUT_DEBOUNCE_MS);
+
+	useEffect(() => {
+		setSearchText(filters.searchQuery);
+	}, [filters.searchQuery]);
+
+	useEffect(() => {
+		if (debouncedSearchText !== filters.searchQuery) {
+			onFilterChange({ ...filters, searchQuery: debouncedSearchText });
+		}
+	}, [debouncedSearchText, filters, onFilterChange]);
 
 	const layerOptions = [
 		{ label: t('search.allCategories'), value: '' },
@@ -101,10 +116,10 @@ export function FilterBar({
 					_label={t('search.inputLabel')}
 					_hideLabel
 					_type="search"
-					_value={filters.searchQuery}
+					_value={searchText}
 					_placeholder={t('search.placeholder')}
 					_on={{
-						onInput: asString((searchQuery) => onFilterChange({ ...filters, searchQuery })),
+						onInput: asString((searchQuery) => setSearchText(searchQuery)),
 					}}
 				/>
 				<KolSingleSelect

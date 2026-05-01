@@ -2,9 +2,6 @@ import { useMemo, useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import type { FilterState, Item, StackItem } from '../types';
 import { buildDependencyGraph, getLocalizedText, hasDependencyWithinDepth } from '../utils';
-import { useDebounce } from './useDebounce';
-
-const SEARCH_DEBOUNCE_MS = 200;
 
 export function useFilters(items: Item[], stackItemMap?: Map<string, StackItem>) {
 	const { i18n } = useTranslation();
@@ -17,9 +14,6 @@ export function useFilters(items: Item[], stackItemMap?: Map<string, StackItem>)
 		dependencyDepth: null,
 		selectedDependencyType: null,
 	});
-
-	// Debounce nur für searchQuery
-	const debouncedSearchQuery = useDebounce(filters.searchQuery, SEARCH_DEBOUNCE_MS);
 
 	const dependencyGraph = useMemo(() => buildDependencyGraph(items), [items]);
 
@@ -59,7 +53,7 @@ export function useFilters(items: Item[], stackItemMap?: Map<string, StackItem>)
 	}, [items, dependencyGraph, filters.dependencyDepth, filters.selectedDependencyType]);
 
 	const filtered = useMemo(() => {
-		const normalizedQuery = debouncedSearchQuery.toLowerCase();
+		const normalizedQuery = filters.searchQuery.toLowerCase();
 
 		return items.filter((item) => {
 			// Early-Exit: günstige Checks zuerst
@@ -83,17 +77,14 @@ export function useFilters(items: Item[], stackItemMap?: Map<string, StackItem>)
 		});
 	}, [
 		items,
-		debouncedSearchQuery,
-		i18n.language,
 		stackItemMap,
 		directDependencySourceIds,
-		dependencyGraph,
 		filters.selectedLayer,
 		filters.selectedSublayer,
 		filters.selectedRelation,
 		filters.onlyDirectDependencies,
 		filters.dependencyDepth,
-		filters.selectedDependencyType,
+		filters.searchQuery,
 		normalizedItemTexts,
 		depthFilterCache,
 	]);
