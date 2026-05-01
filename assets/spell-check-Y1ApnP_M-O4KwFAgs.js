@@ -1,0 +1,1 @@
+import{ut as e}from"./index-uzCK2vtb.js";var t=(t,n)=>{e(t,`_spellCheck`,n,{defaultValue:void 0})};export{t};
