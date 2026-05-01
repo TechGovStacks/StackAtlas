@@ -33,10 +33,10 @@ self.addEventListener('notificationclick', (event) => {
 					if ('navigate' in firstClient && typeof firstClient.navigate === 'function') {
 						void firstClient.navigate(url);
 					}
-					firstClient.focus();
+					return firstClient.focus();
 				} else {
 					// Open new window - use the data.url if available, otherwise fall back to service worker scope
-					self.clients.openWindow(url);
+					return self.clients.openWindow(url);
 				}
 			}),
 	);
