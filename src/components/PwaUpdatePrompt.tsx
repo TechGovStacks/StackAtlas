@@ -4,6 +4,11 @@ import { useTranslation } from 'react-i18next';
 import { useRegisterSW } from 'virtual:pwa-register/preact';
 
 const UPDATE_NOTIFICATION_TAG = 'pwa-update';
+const APP_BASE_URL = import.meta.env.BASE_URL || '/';
+
+function resolveBaseAsset(path: string): string {
+	return new globalThis.URL(path, window.location.origin + APP_BASE_URL).toString();
+}
 
 async function closeUpdateNotification(registration: ServiceWorkerRegistration) {
 	const notifications = await registration.getNotifications({ tag: UPDATE_NOTIFICATION_TAG });
@@ -44,12 +49,12 @@ export function PwaUpdatePrompt() {
 			void navigator.serviceWorker.ready.then((registration) => {
 				registration.showNotification(t('pwa.notificationTitle'), {
 					body: t('pwa.notificationBody'),
-					icon: '/icons/pwa-192x192.png',
-					badge: '/icons/pwa-192x192.png',
+					icon: resolveBaseAsset('icons/pwa-192x192.png'),
+					badge: resolveBaseAsset('icons/pwa-192x192.png'),
 					tag: UPDATE_NOTIFICATION_TAG,
 					requireInteraction: true,
 					data: {
-						url: '/',
+						url: APP_BASE_URL,
 					},
 				});
 			});

@@ -23,12 +23,19 @@ self.addEventListener('notificationclick', (event) => {
 				includeUncontrolled: true,
 			})
 			.then((clientList) => {
+				const defaultUrl = self.registration.scope;
+				const requestedUrl = event.notification.data?.url;
+				const url = typeof requestedUrl === 'string' && requestedUrl.length > 0 ? requestedUrl : defaultUrl;
+
 				// Focus on existing window
 				if (clientList.length > 0) {
-					clientList[0].focus();
+					const firstClient = clientList[0];
+					if ('navigate' in firstClient && typeof firstClient.navigate === 'function') {
+						void firstClient.navigate(url);
+					}
+					firstClient.focus();
 				} else {
-					// Open new window - use the data.url if available, otherwise fall back to root
-					const url = (event.notification.data && event.notification.data.url) || '/';
+					// Open new window - use the data.url if available, otherwise fall back to service worker scope
 					self.clients.openWindow(url);
 				}
 			}),
