@@ -51,6 +51,12 @@ export default defineConfig({
 		VitePWA({
 			registerType: isPwaEnabled ? 'prompt' : undefined,
 			includeAssets: isPwaEnabled ? ['favicon.ico', 'icons/*.png', 'assets/**/*', 'logos/*.svg'] : [],
+			strategies: 'injectManifest',
+			srcDir: 'src',
+			filename: 'sw.ts',
+			injectManifest: {
+				maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
+			},
 			manifest: {
 				name: 'StackAtlas',
 				short_name: 'StackAtlas',
@@ -85,7 +91,7 @@ export default defineConfig({
 			},
 			workbox: {
 				cacheId: 'stackatlas',
-				maximumFileSizeToCacheInBytes: 8 * 1024 * 1024,
+				maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
 				globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2,woff}'],
 				navigateFallback: 'index.html',
 				cleanupOutdatedCaches: true,

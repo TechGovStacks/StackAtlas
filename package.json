@@ -53,7 +53,6 @@
 		"@hookform/resolvers": "5.2.2",
 		"@public-ui/components": "4.1.4",
 		"@public-ui/preact": "4.1.4",
-		"@public-ui/react": "4.1.4",
 		"@public-ui/theme-default": "4.1.4",
 		"@public-ui/theme-kern": "4.1.4",
 		"i18next": "26.0.8",
@@ -70,8 +69,8 @@
 		"@capacitor/android": "8.3.1",
 		"@capacitor/cli": "8.3.1",
 		"@capacitor/ios": "8.3.1",
-		"@commitlint/cli": "^20.5.3",
-		"@commitlint/config-conventional": "^20.5.3",
+		"@commitlint/cli": "20.5.3",
+		"@commitlint/config-conventional": "20.5.3",
 		"@eslint/js": "10.0.1",
 		"@playwright/test": "1.59.1",
 		"@preact/preset-vite": "2.10.5",
@@ -104,6 +103,9 @@
 		"vite": "8.0.10",
 		"vite-plugin-pwa": "1.2.0",
 		"vitest": "4.1.5",
+		"workbox-core": "7.4.0",
+		"workbox-precaching": "7.4.0",
+		"workbox-routing": "7.4.0",
 		"workbox-window": "7.4.0"
 	},
 	"pnpm": {

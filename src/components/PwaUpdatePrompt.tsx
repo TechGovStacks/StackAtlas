@@ -48,6 +48,9 @@ export function PwaUpdatePrompt() {
 					badge: '/icons/pwa-192x192.png',
 					tag: UPDATE_NOTIFICATION_TAG,
 					requireInteraction: true,
+					data: {
+						url: '/',
+					},
 				});
 			});
 		};
