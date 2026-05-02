@@ -16,7 +16,7 @@ export interface StackMetrics {
 	pctPermissiveLicense: number;
 	pctAudit: number;
 	/** Anzahl Items je Rolle */
-	rolleCounts: Record<ParticipantRole, number>;
+	roleCounts: Record<ParticipantRole, number>;
 	/** Anzahl Items je Status */
 	statusCounts: Record<StackItemStatus, number>;
 	/** Items je Layer, sortiert nach Layer-Order */
@@ -81,7 +81,7 @@ export function useStackMetrics(stack: Stack, allItems: Item[], allLayers?: Laye
 		// Rollen-Zählung
 		const roleCounts = Object.fromEntries(PARTICIPANT_ROLES.map((r) => [r, 0])) as Record<ParticipantRole, number>;
 		for (const si of stackItemMap.values()) {
-			rolleCounts[si.role]++;
+			roleCounts[si.role]++;
 		}
 
 		// Status-Zählung
@@ -114,7 +114,7 @@ export function useStackMetrics(stack: Stack, allItems: Item[], allLayers?: Laye
 			pctEuHQ,
 			pctPermissiveLicense,
 			pctAudit,
-			rolleCounts,
+			roleCounts,
 			statusCounts,
 			layerBreakdown,
 			totalItems: total,
