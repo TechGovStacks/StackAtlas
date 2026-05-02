@@ -134,8 +134,9 @@ export function CategoryGrid({
 			<div className="grid grid-cols-3 items-end gap-4 w-full my-4">
 				<KolPagination
 					className="col-span-2 justify-start"
-					_max={totalPages}
+					_max={activeCount}
 					_page={currentPage}
+					_pageSize={ITEMS_PER_PAGE}
 					_on={{
 						onChangePage: (_e: Event, page: number) => setCurrentPage(page),
 					}}
