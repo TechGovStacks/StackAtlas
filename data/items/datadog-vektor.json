@@ -19,7 +19,7 @@
 		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": true,
-		"ownerType": "community"
+		"ownerType": "corporation"
 	},
 	"homepage": "https://vector.dev/",
 	"groupKey": "log-aggregation",

@@ -19,7 +19,7 @@
 		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": true,
-		"ownerType": "corporation"
+		"ownerType": "community"
 	},
 	"homepage": "https://v2.tauri.app/",
 	"groupKey": "cross-platform-ui-framework",

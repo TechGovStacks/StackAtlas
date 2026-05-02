@@ -20,7 +20,7 @@
 		"dataPortability": true,
 		"openStandards": false,
 		"noTelemetryByDefault": true,
-		"ownerType": "community"
+		"ownerType": "corporation"
 	},
 	"homepage": "https://ai.google.dev/gemma",
 	"lastResearchDate": "2026-05-02",

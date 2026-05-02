@@ -19,7 +19,7 @@
 		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": true,
-		"ownerType": "community"
+		"ownerType": "independentConsortium"
 	},
 	"homepage": "https://hive.apache.org/",
 	"lastResearchDate": "2026-05-02",

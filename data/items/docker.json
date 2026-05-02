@@ -21,7 +21,7 @@
 		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": false,
-		"ownerType": "community"
+		"ownerType": "corporation"
 	},
 	"homepage": "https://www.docker.com/",
 	"license": "Apache-2.0",

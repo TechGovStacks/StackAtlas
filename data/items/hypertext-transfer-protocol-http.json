@@ -21,7 +21,7 @@
 		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": true,
-		"ownerType": "community"
+		"ownerType": "independentConsortium"
 	},
 	"lastResearchDate": "2026-05-02",
 	"researchSources": [
