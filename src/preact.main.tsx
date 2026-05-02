@@ -8,7 +8,7 @@ import i18next from 'i18next';
 import { render } from 'preact';
 import App from './App';
 import { i18nReady } from './i18n';
-import { EXTRA_KOLIBRI_TRANSLATIONS } from './i18n/kolibri-translations';
+import { KOLIBRI_TRANSLATIONS } from './i18n/kolibri-translations';
 import { normalizeLanguage } from './i18n/language';
 import { LanguageCode } from './types';
 import { logger } from './utils/logger';
@@ -55,9 +55,9 @@ function syncKoliBriLanguage(language: string): Promise<void[]> | void {
 		getKolibriI18nInstance()?.setLanguage(kolibriLanguage as string);
 		return;
 	}
-	return register([DEFAULT, KERN_V2], defineCustomElements, { translation: { name: kolibriLanguage } }).then((result) => {
-		getKolibriI18nInstance()?.addTranslations(EXTRA_KOLIBRI_TRANSLATIONS);
-		return result;
+	return register([DEFAULT, KERN_V2], defineCustomElements, {
+		translation: { name: kolibriLanguage },
+		translations: KOLIBRI_TRANSLATIONS,
 	});
 }
 
