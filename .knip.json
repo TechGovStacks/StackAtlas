@@ -4,6 +4,7 @@
 	"ignoreBinaries": [],
 	"ignoreDependencies": [
 		"lint-staged",
+		"@kolibri-i18n-internal",
 		"uno.css",
 		"@capacitor/core",
 		"@hookform/resolvers",
