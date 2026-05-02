@@ -4,7 +4,11 @@
  * Finds missing icons/logos for items
  *
  * Usage:
- *   node scripts/find-missing-icons.mjs [--output=report.json]
+ *   node scripts/find-missing-icons.mjs [--output=report.json] [--verbose]
+ *
+ * Next steps:
+ *   node scripts/fetch-external-logos.mjs --update
+ *   node scripts/cache-logos-local.mjs
  */
 
 import { readdirSync, writeFileSync } from 'fs';
@@ -15,6 +19,7 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const ITEMS_DIR = join(ROOT, 'data', 'items');
 const LOGOS_DIR = join(ROOT, 'public', 'logos');
 const OUTPUT_FILE = process.argv.find((arg) => arg.startsWith('--output='))?.split('=')[1] || 'missing-icons-report.json';
+const VERBOSE = process.argv.includes('--verbose');
 
 function slugifyName(name) {
 	return (
@@ -68,6 +73,11 @@ function main() {
 			if (missing.length > 20) {
 				console.log(`   ... and ${missing.length - 20} more`);
 			}
+
+			console.log(`\n💡 To fetch missing icons from external sources:`);
+			console.log(`   1. node scripts/fetch-external-logos.mjs --update`);
+			console.log(`   2. node scripts/cache-logos-local.mjs`);
+			console.log(`   3. pnpm prebuild`);
 		}
 
 		// Save detailed report
@@ -84,6 +94,11 @@ function main() {
 
 		writeFileSync(join(ROOT, OUTPUT_FILE), JSON.stringify(report, null, 2), 'utf-8');
 		console.log(`\n📋 Detailed report saved to: ${OUTPUT_FILE}`);
+
+		if (VERBOSE) {
+			console.log(`\n📝 Full missing list:`);
+			missing.forEach(({ name }) => console.log(`   ${name}`));
+		}
 
 		process.exit(missing.length > 0 ? 1 : 0);
 	} catch (error) {
