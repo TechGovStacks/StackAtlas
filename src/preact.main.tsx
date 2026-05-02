@@ -1,4 +1,5 @@
-import { register } from '@public-ui/components';
+import { g as getKolibriI18nInstance } from '@kolibri-i18n-internal';
+import { isInitialized, register } from '@public-ui/components';
 import { defineCustomElements } from '@public-ui/components/loader';
 import { DEFAULT } from '@public-ui/theme-default';
 import { KERN_V2 } from '@public-ui/theme-kern';
@@ -47,8 +48,12 @@ function mapAppLanguageToKolibriLanguage(language: string): KolibriLanguage {
 	return kolibriLanguage;
 }
 
-function syncKoliBriLanguage(language: string): Promise<void[]> {
+function syncKoliBriLanguage(language: string): Promise<void[]> | void {
 	const kolibriLanguage = mapAppLanguageToKolibriLanguage(language);
+	if (isInitialized()) {
+		getKolibriI18nInstance()?.setLanguage(kolibriLanguage as string);
+		return;
+	}
 	return register([DEFAULT, KERN_V2], defineCustomElements, { translation: { name: kolibriLanguage } });
 }
 
@@ -130,14 +135,17 @@ function waitForSplashCompletion(): Promise<void> {
 }
 
 i18next.on('languageChanged', (language: string) => {
-	void syncKoliBriLanguage(language).catch((error: unknown) => {
-		console.warn('Unable to synchronize KoliBri translations:', error);
-	});
+	const result = syncKoliBriLanguage(language);
+	if (result) {
+		void result.catch((error: unknown) => {
+			console.warn('Unable to synchronize KoliBri translations:', error);
+		});
+	}
 });
 
 Promise.all([
 	Promise.race([
-		i18nReady.then(() => syncKoliBriLanguage(i18next.resolvedLanguage ?? i18next.language ?? globalThis.navigator.language)),
+		i18nReady.then(() => syncKoliBriLanguage(i18next.resolvedLanguage ?? i18next.language ?? globalThis.navigator.language) ?? Promise.resolve([])),
 		new Promise<void>((_, reject) => setTimeout(() => reject(new Error('KoliBri registration timeout')), 3000)),
 	]),
 	waitForSplashCompletion(),

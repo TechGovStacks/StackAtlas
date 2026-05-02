@@ -3,9 +3,21 @@ import UnoCSS from '@unocss/vite';
 import matter from 'gray-matter';
 import MarkdownIt from 'markdown-it';
 import taskLists from 'markdown-it-task-lists';
-import { readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
+import { resolve as resolvePath } from 'node:path';
 import { defineConfig, type Plugin } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
+
+const KOLIBRI_ESM_DIR = './node_modules/@public-ui/components/dist/esm';
+const kolibriI18nInternalFile = (() => {
+	try {
+		return readdirSync(KOLIBRI_ESM_DIR).find(
+			(f) => f.startsWith('i18n-') && f.endsWith('.js') && readFileSync(`${KOLIBRI_ESM_DIR}/${f}`, 'utf-8').includes('class I18nService'),
+		);
+	} catch {
+		return undefined;
+	}
+})();
 
 function markdownItPlugin(): Plugin {
 	// html: true passes through raw HTML tags in content (safe: content is git-managed, not user-input)
@@ -38,6 +50,9 @@ const { version: appVersion } = JSON.parse(readFileSync(new URL('./package.json'
 
 export default defineConfig({
 	base: './',
+	resolve: {
+		alias: kolibriI18nInternalFile ? { '@kolibri-i18n-internal': resolvePath(`${KOLIBRI_ESM_DIR}/${kolibriI18nInternalFile}`) } : {},
+	},
 	build: {
 		dynamicImportVarsOptions: {
 			exclude: [],
