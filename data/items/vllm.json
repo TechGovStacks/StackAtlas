@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "platform",
 	"description": {
-		"de": "vLLM ist eine Open-Source-Inference-Engine für LLMs (Large Language Models) mit PagedAttention und Continuous Batching. Sie ist heute der De-facto-Standard für selbstgehostetes LLM-Serving auf GPUs."
+		"de": "vLLM ist eine Open-Source-Inference-Engine für LLMs (Large Language Models) mit PagedAttention und Continuous Batching. Sie ist heute der De-facto-Standard für selbstgehostetes LLM-Serving auf GPUs.",
+		"en": "vLLM is an open-source inference engine for Large Language Models (LLMs) with high throughput."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "community"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

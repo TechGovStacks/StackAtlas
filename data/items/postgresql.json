@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "PostgreSQL ist ein objektrelationales Datenbankmanagementsystem (ORDBMS), das für seine Einhaltung von SQL-Standards, seine Erweiterbarkeit und seine Zuverlässigkeit bekannt ist. Es wird häufig in Anwendungen eingesetzt, die komplexe Transaktionen und große Datenmengen verarbeiten.",
-		"en": ""
+		"en": "PostgreSQL is an object-relational database management system (ORDBMS) that supports advanced data types and performance optimization."
 	},
 	"homepage": "https://www.postgresql.org/",
 	"tags": ["open-source", "datenbank", "sql", "relational"],
@@ -31,7 +31,7 @@
 		"githubStars": 24000,
 		"dockerWeeklyPulls": 5200000
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

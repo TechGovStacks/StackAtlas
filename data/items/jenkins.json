@@ -7,7 +7,7 @@
 	"itemKind": "tool",
 	"description": {
 		"de": "Jenkins ist ein Open-Source-Automatisierungsserver, der für die kontinuierliche Integration (CI) und kontinuierliche Bereitstellung (CD) von Software verwendet wird.",
-		"en": ""
+		"en": "Jenkins is an open-source automation server for continuous integration and delivery."
 	},
 	"homepage": "https://www.jenkins.io/",
 	"tags": ["pipeline", "cd", "bereitstellung", "ci"],
@@ -30,7 +30,7 @@
 		"url": "https://github.com/jenkinsci/jenkins"
 	},
 	"license": "MIT",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

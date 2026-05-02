@@ -5,7 +5,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "ID Crucis ist ein Baustein, um Zustimmungen (Consent) von einem oder mehreren Personen (juristisch oder natürlich) zu einem Vorgang einzuholen. Diese Zustimmung wird menschen- und maschinenlesbar an die weiterverarbeitenden Prozesse weitergereicht. Dieser Baustein ist ein Produkt des ITPLR und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung. Diese Lösung ist in vielen Ländern schon als Basisdienst etabliert.",
-		"en": ""
+		"en": "ID Crucis is a component for managing consent from one or more persons (legally or naturally) in a standardized way."
 	},
 	"oss": false,
 	"tags": [],
@@ -18,10 +18,11 @@
 		"selfHostable": true,
 		"dataPortability": false,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
 	"homepage": "https://www.governikus.de/en/produkte/id-crucis/",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

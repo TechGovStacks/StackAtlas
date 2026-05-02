@@ -6,7 +6,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "IMAPS dient dem sicheren Zugriff auf E-Mails auf Mailservern. Die E-Mails verbleiben dabei auf dem Mailserver.",
-		"en": ""
+		"en": "IMAPS provides secure email retrieval using TLS encryption."
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc9051",
 	"tags": ["dateiuebertragung", "e-mail"],
@@ -24,7 +24,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

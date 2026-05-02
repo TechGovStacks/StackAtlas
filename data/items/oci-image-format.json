@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "format",
 	"description": {
-		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Standard für Container Images' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen."
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Standard für Container Images' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": "Open Container Initiative image format is the industry standard for container images."
 	},
 	"oss": true,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://specs.opencontainers.org/image-spec/",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

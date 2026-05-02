@@ -7,7 +7,7 @@
 	"itemKind": "language",
 	"description": {
 		"de": "JavaScript wird primär für die Entwicklung von dynamischen Webseiten verwendet.",
-		"en": ""
+		"en": "JavaScript (ECMAScript) is a scripting language for web development and server-side applications."
 	},
 	"homepage": "https://ecma-international.org/publications-and-standards/standards/ecma-262/",
 	"tags": ["programmierung", "sprache"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://www.iso.org/standard/73002.html"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

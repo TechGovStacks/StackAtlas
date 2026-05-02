@@ -20,11 +20,12 @@
 		"selfHostable": true,
 		"dataPortability": false,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
 	"homepage": "https://www.justiz.de/egvp/",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

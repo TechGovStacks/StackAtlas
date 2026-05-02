@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "platform",
 	"description": {
-		"de": "SSH-Schlüssel\n\nSHA ist zwar aufgeführt, aber ohne Hinweise siehe Spalte D"
+		"de": "SSH-Schlüssel\n\nSHA ist zwar aufgeführt, aber ohne Hinweise siehe Spalte D",
+		"en": "SHA (Secure Hash Algorithm) is a family of cryptographic hash functions."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

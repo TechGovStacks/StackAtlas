@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "standard",
 	"description": {
-		"de": "Der XUnternehmen.Kerndatenmodell spezifiziert ein semantisches Datenmodell für die fachübergreifende, interoperable Übermittlung von Kerndaten (Stammdaten) zu Unternehmen im Bereich der öffentlichen Wirtschaftsverwaltung"
+		"de": "Der XUnternehmen.Kerndatenmodell spezifiziert ein semantisches Datenmodell für die fachübergreifende, interoperable Übermittlung von Kerndaten (Stammdaten) zu Unternehmen im Bereich der öffentlichen Wirtschaftsverwaltung",
+		"en": "XUnternehmen core data model specifies a semantic data model for company data in German administration."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

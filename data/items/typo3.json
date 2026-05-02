@@ -18,15 +18,15 @@
 		"openSource": true,
 		"euHeadquartered": true,
 		"hasAudit": false,
-		"permissiveLicense": true,
+		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": false,
+		"openStandards": true,
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -35,6 +35,18 @@
 		{
 			"type": "url",
 			"url": "https://github.com/TYPO3/typo3"
+		},
+		{
+			"type": "url",
+			"url": "https://typo3.org/project/association/structure/the-typo3-company"
+		},
+		{
+			"type": "url",
+			"url": "https://typo3.org/community/teams/typo3-development/initiatives/gdpr"
+		},
+		{
+			"type": "url",
+			"url": "https://news.typo3.com/archive/html5-and-accessibility-in-typo3-laying-a-foundation-for-the-future"
 		}
 	]
 }

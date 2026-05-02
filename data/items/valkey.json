@@ -4,7 +4,8 @@
 	"layer": "platform",
 	"itemKind": "platform",
 	"description": {
-		"de": "Valkey ist eine offene Weiterentwicklung von Redis."
+		"de": "Valkey ist eine offene Weiterentwicklung von Redis.",
+		"en": "Valkey is an open-source continuation of Redis as a key-value store."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

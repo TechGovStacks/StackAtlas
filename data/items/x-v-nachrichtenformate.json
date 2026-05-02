@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "format",
 	"description": {
-		"de": "XML-basierte Nachrichtenformate für den OSCI-Datenaustausch https://www.itzbund.de/DE/itloesungen/standardloesungen/xoev/xoev.html"
+		"de": "XML-basierte Nachrichtenformate für den OSCI-Datenaustausch https://www.itzbund.de/DE/itloesungen/standardloesungen/xoev/xoev.html",
+		"en": "X-V message formats define standardized formats for digital communication in administration."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

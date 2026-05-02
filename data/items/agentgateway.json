@@ -21,11 +21,11 @@
 		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": true,
-		"ownerType": "corporation"
+		"ownerType": "independentConsortium"
 	},
 	"homepage": "https://agentgateway.dev/",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-05-01",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -38,6 +38,14 @@
 		{
 			"type": "url",
 			"url": "https://en.wikipedia.org/wiki/Agent_communication_language"
+		},
+		{
+			"type": "url",
+			"url": "https://www.linuxfoundation.org/press/linux-foundation-welcomes-agentgateway-project-to-accelerate-ai-agent-adoption-while-maintaining-security-observability-and-governance"
+		},
+		{
+			"type": "url",
+			"url": "https://agentgateway.dev/docs/kubernetes/latest/tutorials/telemetry/"
 		}
 	]
 }

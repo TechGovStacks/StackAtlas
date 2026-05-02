@@ -4,11 +4,13 @@
 	"layer": "infrastructure",
 	"itemKind": "platform",
 	"description": {
-		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Microservice Runtime Abstraktion' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
-		"en": ""
+		"de": "Dapr (Distributed Application Runtime) ist eine portable, serverless, ereignisgesteuerte Runtime, die Entwicklern das Erstellen von verteilten Micro-Service-Anwendungen erleichtert. Sie bietet eingebaute Best Practices für State Management, Service-to-Service-Aufrufe, Pub/Sub und mehr.",
+		"en": "Dapr (Distributed Application Runtime) is a portable, serverless, event-driven runtime that makes it easy for developers to build distributed microservice applications. It provides built-in best practices for state management, service-to-service invocation, pub/sub, and more."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["microservice", "runtime", "distributed", "cncf"],
+	"homepage": "https://dapr.io/",
+	"license": "Apache-2.0",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -18,11 +20,10 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
 	},
-	"homepage": "https://dapr.io/",
-	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -31,6 +32,10 @@
 		{
 			"type": "url",
 			"url": "https://github.com/dapr/dapr"
+		},
+		{
+			"type": "url",
+			"url": "https://dapr.io/docs/"
 		}
 	]
 }

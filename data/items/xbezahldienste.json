@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "standard",
 	"description": {
-		"de": "XBezahldienste ist ein fachlicher Standard in Form einer OpenAPI-Spezifikation und beschreibt die Kommunikationsbeziehung zwischen (EfA-)Online-Diensten und Bezahldiensten. Durch eine standardisierte Schnittstelle zwischen (EfA-)Online-Diensten und Bezahldiensten sollen proprietäre Lösungen abgelöst werden. Damit können insbesondere Anpassungsaufwände und Kosten für die Implementierung von ePayment reduziert werden. XBezahldienste unterstützt das Angebot digitaler Zahlverfahren in der gesamten öffentlichen Verwaltung, unabhängig davon, welche Bezahlkomponenten im Einsatz sind. Seit dem 01.01.2026 ist XBezahldienste verpflichtend für die Anbieter und Nachnutzer von bezahlpflichtigen EfA-Leistungen (Beschluss 2023/51 - XBezahldienste | IT-Planungsrat: https://www.it-planungsrat.de/beschluss/beschluss-2023-51)."
+		"de": "XBezahldienste ist ein fachlicher Standard in Form einer OpenAPI-Spezifikation und beschreibt die Kommunikationsbeziehung zwischen (EfA-)Online-Diensten und Bezahldiensten. Durch eine standardisierte Schnittstelle zwischen (EfA-)Online-Diensten und Bezahldiensten sollen proprietäre Lösungen abgelöst werden. Damit können insbesondere Anpassungsaufwände und Kosten für die Implementierung von ePayment reduziert werden. XBezahldienste unterstützt das Angebot digitaler Zahlverfahren in der gesamten öffentlichen Verwaltung, unabhängig davon, welche Bezahlkomponenten im Einsatz sind. Seit dem 01.01.2026 ist XBezahldienste verpflichtend für die Anbieter und Nachnutzer von bezahlpflichtigen EfA-Leistungen (Beschluss 2023/51 - XBezahldienste | IT-Planungsrat: https://www.it-planungsrat.de/beschluss/beschluss-2023-51).",
+		"en": "XBezahldienste defines standards for electronic payment services in public administration."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

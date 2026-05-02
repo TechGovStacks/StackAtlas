@@ -7,7 +7,7 @@
 	"itemKind": "framework",
 	"description": {
 		"de": "Mit React können Sie Benutzeroberflächen aus einzelnen Teilen, sogenannten Komponenten, erstellen. Kombinieren Sie diese dann zu ganzen Webseiten und Apps.",
-		"en": ""
+		"en": "React enables building user interfaces from individual components and managing their state efficiently."
 	},
 	"homepage": "https://react.dev/",
 	"tags": ["webdesign", "components", "user-interface"],
@@ -35,7 +35,7 @@
 		"githubStars": 230000,
 		"npmWeeklyDownloads": 52000000
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

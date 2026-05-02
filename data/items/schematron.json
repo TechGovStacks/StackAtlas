@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "standard",
 	"description": {
-		"de": "A language for making assertions about the presence or absence of patterns in linked XML documents, and reporting them in useful ways."
+		"de": "A language for making assertions about the presence or absence of patterns in linked XML documents, and reporting them in useful ways.",
+		"en": "Schematron is a rule-based validation language for XML documents."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

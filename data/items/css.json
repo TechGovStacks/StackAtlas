@@ -7,7 +7,7 @@
 	"sublayer": "sprachen",
 	"description": {
 		"de": "Cascading Style Sheets (CSS) ist eine Kernsprache der offenen Webplattform und wird zum Hinzufügen von Stilen (z. B. Schriftarten, Farben, Abstände) zu Webdokumenten verwendet.",
-		"en": ""
+		"en": "CSS (Cascading Style Sheets) is a core language of the open web platform for styling web pages."
 	},
 	"homepage": "https://www.w3.org/Style/CSS/",
 	"tags": ["stil", "user-interface"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://www.w3.org/Style/CSS/"
 	},
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

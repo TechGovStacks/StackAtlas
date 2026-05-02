@@ -7,7 +7,7 @@
 	"itemKind": "service",
 	"description": {
 		"de": "Blink ist eine Browser-Engine zum Rendern von Webseiten. Es wird insbesondere von Google für Chrome, Microsoft für Edge und Opera genutzt.",
-		"en": ""
+		"en": "Blink is a browser engine for rendering web pages. It is primarily used by Chrome and Edge."
 	},
 	"homepage": "https://www.chromium.org/blink/",
 	"tags": ["webseite", "browser-engine", "rendern"],
@@ -30,7 +30,7 @@
 		"url": "https://developer.chrome.com/docs/web-platform/blink?hl=de"
 	},
 	"license": "BSD-3-Clause",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

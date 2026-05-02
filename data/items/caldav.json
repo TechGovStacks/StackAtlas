@@ -5,10 +5,12 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "Protokoll für die Synchronisation und den gemeinsamen Zugriff auf Kalenderdaten",
-		"en": ""
+		"en": "Protocol for synchronization and shared access to calendar data"
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["protocol", "calendar", "ietf", "synchronization"],
+	"homepage": "https://datatracker.ietf.org/doc/html/rfc4791",
+	"license": "IETF",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -18,11 +20,10 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
 	},
-	"homepage": "https://datatracker.ietf.org/doc/html/rfc4791",
-	"license": "IETF",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -31,6 +32,14 @@
 		{
 			"type": "url",
 			"url": "https://icalendar.org/RFC-Specifications/CalDAV-Access-RFC-4791/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/CalDAV"
+		},
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/info/rfc4791"
 		}
 	]
 }

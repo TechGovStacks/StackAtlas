@@ -18,15 +18,15 @@
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": false,
-		"permissiveLicense": true,
+		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": false,
-		"noTelemetryByDefault": false,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -35,6 +35,10 @@
 		{
 			"type": "url",
 			"url": "https://github.com/WordPress/WordPress"
+		},
+		{
+			"type": "url",
+			"url": "https://core.trac.wordpress.org/ticket/38418"
 		}
 	]
 }

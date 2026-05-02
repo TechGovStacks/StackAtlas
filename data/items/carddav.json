@@ -5,10 +5,12 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "Protokoll für die Synchronisation und den gemeinsamen Zugriff auf Kontaktdaten",
-		"en": ""
+		"en": "Protocol for synchronization and shared access to contact data"
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["protocol", "contacts", "ietf", "synchronization"],
+	"homepage": "https://datatracker.ietf.org/doc/html/rfc6352",
+	"license": "IETF",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -18,11 +20,10 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
 	},
-	"homepage": "https://datatracker.ietf.org/doc/html/rfc6352",
-	"license": "IETF",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -31,6 +32,14 @@
 		{
 			"type": "url",
 			"url": "https://devguide.calconnect.org/CardDAV/introduction/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/CardDAV"
+		},
+		{
+			"type": "url",
+			"url": "https://www.rfc-editor.org/rfc/rfc6352"
 		}
 	]
 }

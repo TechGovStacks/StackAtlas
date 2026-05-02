@@ -4,7 +4,8 @@
 	"layer": "sovereign-standards",
 	"itemKind": "tool",
 	"description": {
-		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Build Automatisierung für .NET' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen."
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Build Automatisierung für .NET' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": "NUKE is a build automation system for .NET projects using C# scripts."
 	},
 	"oss": true,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://nuke.build/",
 	"license": "MIT",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

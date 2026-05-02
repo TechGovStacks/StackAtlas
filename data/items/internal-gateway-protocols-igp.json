@@ -6,7 +6,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "IGP sind Routing-Protokolle, die für die automatische Weiterleitung von Datenpaketen innerhalb eines autonomen Systems verwendet werden. Sie ermöglichen es Routern, dynamisch die besten Pfade zu Zielnetzwerken zu ermitteln und sich automatisch an Netzwerkänderungen anzupassen. IGPs sind essentiell für die Funktionsfähigkeit moderner IP-Netzwerke in Unternehmen und Service-Provider-Umgebungen.",
-		"en": ""
+		"en": "IGP (Internal Gateway Protocols) are routing protocols used within autonomous systems."
 	},
 	"homepage": "https://datatracker.ietf.org/wg/",
 	"tags": ["netzwerk", "internet"],
@@ -28,7 +28,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://www.rfc-editor.org/rfc/rfc9350.html"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

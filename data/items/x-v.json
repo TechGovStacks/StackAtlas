@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "standard",
 	"description": {
-		"de": "xöv (XML im öffentlichen Verwaltung) ist ein deutscher Standardisierungsrahmen, der den elektronischen Datenaustausch zwischen Behörden, Ländern und dem Bund vereinheitlicht. Er basiert auf XML-Technologie, fördert die Interoperabilität durch einheitliche Datensätze und wird zentral von der Koordinierungsstelle für IT-Standards (KoSIT) betreut, um medienbruchfreie Prozesse zu ermöglichen"
+		"de": "xöv (XML im öffentlichen Verwaltung) ist ein deutscher Standardisierungsrahmen, der den elektronischen Datenaustausch zwischen Behörden, Ländern und dem Bund vereinheitlicht. Er basiert auf XML-Technologie, fördert die Interoperabilität durch einheitliche Datensätze und wird zentral von der Koordinierungsstelle für IT-Standards (KoSIT) betreut, um medienbruchfreie Prozesse zu ermöglichen",
+		"en": "X-V is a standard for digital administration in Germany."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

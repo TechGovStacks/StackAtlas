@@ -7,7 +7,7 @@
 	"itemKind": "framework",
 	"description": {
 		"de": "Angular ist ein Webframework, das Entwicklern die Erstellung schneller und zuverlässiger Anwendungen ermöglicht.",
-		"en": ""
+		"en": "Angular is a web framework that enables developers to create fast and reliable applications."
 	},
 	"homepage": "https://angular.dev/",
 	"tags": ["webframework", "user-interface"],
@@ -46,7 +46,7 @@
 		}
 	],
 	"license": "MIT",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -6,7 +6,7 @@
 	"itemKind": "tool",
 	"description": {
 		"de": "Das Bezahlsystem GNU Taler ermöglicht das schnelle und einfache Geldüberweisen mit Datenschutz und hoher technischer Sicherheit.\n\n    - Bezahlen ohne Registrierung\n    - Datenschutz als Grundeinstellung\n    - Systematisch gesichert gegen Betrug\n    - Keine neue Währung!\n    - Ermöglicht die Entwicklung einer selbstbestimmten Zahlungsinfrastruktur\n    - Freie Software\n\nsiehe https://www.taler.net/de/ und https://www.taler.net/de/ngi-taler.html",
-		"en": ""
+		"en": "The GNU Taler payment system enables fast and simple money transfers with privacy and high security."
 	},
 	"oss": true,
 	"tags": [],
@@ -19,10 +19,11 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
 	},
 	"homepage": "https://www.taler.net/",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

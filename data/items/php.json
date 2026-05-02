@@ -7,7 +7,7 @@
 	"itemKind": "language",
 	"description": {
 		"de": "PHP dient der serverseitigen Entwicklung von dynamischen Webseiten und Anwendungen.",
-		"en": ""
+		"en": "PHP is a server-side scripting language for dynamic web development and applications."
 	},
 	"homepage": "https://www.php.net/",
 	"tags": ["programmierung", "sprache"],
@@ -30,7 +30,7 @@
 		"url": "https://www.php.net/docs.php"
 	},
 	"license": "PHP-3.01",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

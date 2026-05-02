@@ -5,7 +5,7 @@
 	"itemKind": "format",
 	"description": {
 		"de": "Standard der in OSCI, XTA, XÖV, ebMS, AS4, eDelivery etc. eingesetzt wird um Nachrichteninhalte zu übermitteln.",
-		"en": ""
+		"en": "XML (eXtensible Markup Language) is a markup language for structured data representation."
 	},
 	"tags": ["negz-import", "unresearched"],
 	"oss": true,
@@ -21,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

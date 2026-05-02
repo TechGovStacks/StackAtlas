@@ -6,7 +6,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Envoy Proxy ist ein Open-Source-Proxy für Microservices. Ursprünglich von Lyft entwickelt und jetzt ein Projekt der Cloud Native Computing Foundation (CNCF) dient Envoy als Edge-Proxy an der Netzwerkschnittstelle oder als Sidecar-Proxy für Anwendungen. Er bietet Funktionen wie Lastausgleich, Service-Discovery, dynamische Konfiguration, Resilienz (z. B. Timeouts, Wiederholungsversuche) und Beobachtbarkeit (Metriken).",
-		"en": ""
+		"en": "Envoy Proxy is an open-source proxy for microservices, originally developed by Lyft."
 	},
 	"homepage": "https://www.envoyproxy.io/",
 	"tags": ["proxy", "orchestrierung"],
@@ -29,7 +29,7 @@
 		"url": "https://github.com/envoyproxy/envoy"
 	},
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

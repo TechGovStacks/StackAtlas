@@ -15,7 +15,7 @@
 		"openSource": true,
 		"euHeadquartered": true,
 		"hasAudit": true,
-		"permissiveLicense": true,
+		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
@@ -25,7 +25,7 @@
 	},
 	"homepage": "https://www.mgm-tp.com/a12.html",
 	"license": "EUPL-1.2",
-	"lastResearchDate": "2026-05-01",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -46,6 +46,10 @@
 		{
 			"type": "url",
 			"url": "https://github.com/mgm-tp/a12-tutorial-application"
+		},
+		{
+			"type": "url",
+			"url": "https://www.mgm-tp.com/certifications.html"
 		}
 	]
 }

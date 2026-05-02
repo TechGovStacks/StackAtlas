@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "platform",
 	"description": {
-		"de": "Solid ist ein offenes Protokoll für ein dezentrales Web, bei dem Daten in Datenspeichern (Pods) verwaltet werden, aber auch externe Datenquellen eingebunden und referenziert werden können. Über standardisierte Schnittstellen und Linked-Data-Prinzipien lassen sich bestehende Systeme interoperabel integrieren, ohne Daten zentral zu kopieren. Im Kontext eines Deutschland-Stacks stärkt Solid damit sowohl digitale Souveränität als auch die Anschlussfähigkeit an vorhandene IT-Landschaften."
+		"de": "Solid ist ein offenes Protokoll für ein dezentrales Web, bei dem Daten in Datenspeichern (Pods) verwaltet werden, aber auch externe Datenquellen eingebunden und referenziert werden können. Über standardisierte Schnittstellen und Linked-Data-Prinzipien lassen sich bestehende Systeme interoperabel integrieren, ohne Daten zentral zu kopieren. Im Kontext eines Deutschland-Stacks stärkt Solid damit sowohl digitale Souveränität als auch die Anschlussfähigkeit an vorhandene IT-Landschaften.",
+		"en": "Solid is a web decentralization project for social linked data."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -6,7 +6,7 @@
 	"itemKind": "language",
 	"description": {
 		"de": "Java dient der plattformunabhängige Softwareentwicklung . Der Quellcode wird kompiliert und als Ergebnis im Java Runtime Environment ausgeführt.",
-		"en": ""
+		"en": "Java is a general-purpose programming language for building cross-platform applications."
 	},
 	"homepage": "https://www.oracle.com/java/",
 	"tags": ["programmierung", "plattformunabhaengig", "sprache"],
@@ -24,7 +24,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

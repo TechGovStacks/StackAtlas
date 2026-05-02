@@ -7,7 +7,7 @@
 	"itemKind": "tool",
 	"description": {
 		"de": "Spinnaker ist eine quelloffene Continuous-Delivery-(CD)-Plattform. Sie konzentriert sich auf die schnelle und sichere Bereitstellung von Softwareänderungen.",
-		"en": ""
+		"en": "Spinnaker is an open-source continuous delivery (CD) platform focused on multi-cloud deployments."
 	},
 	"homepage": "https://spinnaker.io/",
 	"tags": ["pipeline", "cd", "bereitstellung", "ci"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://github.com/spinnaker/spinnaker"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

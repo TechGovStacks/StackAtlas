@@ -7,7 +7,7 @@
 	"itemKind": "language",
 	"description": {
 		"de": "TypeScript ist eine Programmiersprache die JavaScript um statische Typisierung erweitert.",
-		"en": ""
+		"en": "TypeScript is a programming language that extends JavaScript with static typing for improved code quality and maintainability."
 	},
 	"homepage": "https://www.typescriptlang.org/",
 	"tags": ["programmierung", "sprache"],
@@ -41,7 +41,7 @@
 		}
 	],
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

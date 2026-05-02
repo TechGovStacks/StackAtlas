@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "format",
 	"description": {
-		"de": "Legt Strukturen für XML-Nachrichten fest. Eine Überprüfung von XML-Nachrichten gegen ein zugehöriges Schema sollte immer stattfinden (Überprüfung von Eingabedaten gemäß IT-Grundschutz)."
+		"de": "Legt Strukturen für XML-Nachrichten fest. Eine Überprüfung von XML-Nachrichten gegen ein zugehöriges Schema sollte immer stattfinden (Überprüfung von Eingabedaten gemäß IT-Grundschutz).",
+		"en": "XML Schema (XSD) defines the structure, content, and semantics of XML documents."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

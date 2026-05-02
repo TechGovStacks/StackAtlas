@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Traefik ist ein moderner, Cloud-nativer Open-Source-Reverse-Proxy und Load Balancer. Er integriert sich dynamisch in bestehende Infrastrukturen wie Docker und Kubernetes, verwaltet eingehenden Traffic und leitet ihn an die richtigen Dienste weiter.",
-		"en": ""
+		"en": "Traefik is a modern, cloud-native, open-source reverse proxy and load balancer for microservices."
 	},
 	"homepage": "https://traefik.io/traefik",
 	"tags": ["proxy", "load-balancer", "orchestrierung"],
@@ -30,7 +30,7 @@
 		"url": "https://github.com/traefik/traefik"
 	},
 	"license": "MIT",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

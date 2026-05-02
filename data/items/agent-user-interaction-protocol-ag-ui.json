@@ -7,7 +7,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "AG-UI standardisiert Status, Ziel und Interaktion von KI-Agenten und deren Laufzeit gegenüber den Nutzenden.",
-		"en": ""
+		"en": "AG-UI standardizes the status, purpose, and interaction of AI agents and their runtimes with users."
 	},
 	"homepage": "https://ag-ui.com",
 	"tags": ["protocol", "ai-agent", "interaction", "standardization"],
@@ -21,9 +21,10 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
 	},
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

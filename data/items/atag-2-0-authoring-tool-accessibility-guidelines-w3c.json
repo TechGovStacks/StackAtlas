@@ -10,6 +10,8 @@
 	},
 	"oss": true,
 	"tags": ["accessibility", "w3c", "authoring", "standard", "atag"],
+	"homepage": "https://www.w3.org/TR/ATAG20/",
+	"license": "W3C-20150513",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -22,9 +24,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"homepage": "https://www.w3.org/TR/ATAG20/",
-	"license": "W3C-20150513",
-	"lastResearchDate": "2026-05-01",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -33,6 +33,10 @@
 		{
 			"type": "url",
 			"url": "https://www.w3.org/WAI/standards-guidelines/atag/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.compliant.io/compliance/atag"
 		}
 	]
 }

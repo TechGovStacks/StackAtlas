@@ -5,7 +5,7 @@
 	"itemKind": "standard",
 	"description": {
 		"de": "Die ISO 9241 ist eine umfangreiche Normenreihe zur Gebrauchstauglichkeit (Usability) und Ergonomie interaktiver Systeme. Ergänzend zu dem Beitrag in Zeile 273 (ISO 9241-171:2025), können die Teile 1-20 als grundlegendes Fundament, sowie Teil 210 (Menschzentrierte Gestaltung interaktiver Systeme) für den D-Stack besonders relevant sein.",
-		"en": ""
+		"en": "ISO 9241 is a comprehensive series of standards for usability and ergonomics in human-system interaction."
 	},
 	"oss": true,
 	"tags": [],
@@ -21,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

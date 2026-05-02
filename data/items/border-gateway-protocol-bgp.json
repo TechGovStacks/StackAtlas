@@ -6,7 +6,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "BGP ist ein entscheidendes Routing-Protokoll im Internet, das Netzwerke miteinander verbindet und dafür sorgt, dass Datenpakete ihren optimalen Weg durch verschiedene autonome Systeme finden. BGP ermöglicht es Internetdienstleistern (ISPs) und größeren Netzwerken, Routeninformationen effizient auszutauschen, um die Datenübertragung zu optimieren. Es spielt eine Schlüsselrolle bei der Aufrechterhaltung der Stabilität und Skalierbarkeit der globalen Internetinfrastruktur",
-		"en": ""
+		"en": "BGP (Border Gateway Protocol) is a critical routing protocol that connects networks on the internet."
 	},
 	"homepage": "https://github.com/bgp",
 	"tags": ["netzwerk", "isp", "routing"],
@@ -28,7 +28,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://fgithub.com/bgp/bgpq4"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

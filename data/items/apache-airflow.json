@@ -3,6 +3,7 @@
 	"name": "Apache Airflow",
 	"layer": "platform",
 	"sublayer": "daten",
+	"groupKey": "workflow-orchestration",
 	"itemKind": "platform",
 	"description": {
 		"de": "Apache Airflow ist eine Open-Source-Plattform zur Orchestrierung von Datenpipelines. Workflows werden als Python-Code definiert und ermöglichen Extraktion, Transformation und Laden zwischen heterogenen Verwaltungs-Systemen.",
@@ -21,11 +22,11 @@
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": false,
+		"openStandards": true,
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -34,6 +35,14 @@
 		{
 			"type": "url",
 			"url": "https://github.com/apache/airflow"
+		},
+		{
+			"type": "url",
+			"url": "https://airflow.apache.org/docs/task-sdk/stable/"
+		},
+		{
+			"type": "url",
+			"url": "https://airflow.apache.org/docs/apache-airflow/stable/security/security_model.html"
 		}
 	]
 }

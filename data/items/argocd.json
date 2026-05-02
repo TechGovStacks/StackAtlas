@@ -2,17 +2,19 @@
 	"id": "argocd",
 	"name": "ArgoCD",
 	"layer": "platform",
+	"groupKey": "gitops",
 	"itemKind": "tool",
 	"description": {
 		"de": "Werkzeug zur Synchronisation von Ressourcen (u.a. Git Repo) und einem Kubernetes Clusters gemäß GitOps-Ansatz.",
-		"en": ""
+		"en": "Argo CD is a tool for synchronizing resources (e.g., Git repositories) with a Kubernetes cluster using GitOps principles."
 	},
-	"tags": ["negz-import", "researched"],
+	"tags": ["gitops", "kubernetes", "cd", "cncf", "negz-import", "researched"],
 	"oss": true,
+	"homepage": "https://argo-cd.readthedocs.io/",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
@@ -21,8 +23,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"homepage": "https://argo-cd.readthedocs.io/",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -31,6 +32,10 @@
 		{
 			"type": "url",
 			"url": "https://github.com/argoproj/argo-cd"
+		},
+		{
+			"type": "url",
+			"url": "https://dev.to/mechcloud_academy/the-gitops-standard-in-2026-a-comparative-research-analysis-of-argocd-and-fluxcd-46d8"
 		}
 	]
 }

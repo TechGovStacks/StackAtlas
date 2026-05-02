@@ -7,7 +7,7 @@
 	"itemKind": "format",
 	"description": {
 		"de": "Leichtgewichtiges, menschenlesbares Textformat für strukturierte Dokumentation. Referenzspezifikation: CommonMark (commonmark.org), registriert als IETF-Medientyp text/markdown (RFC 7763).",
-		"en": ""
+		"en": "Markdown is a lightweight, human-readable text format for structured documentation. Reference specification per RFC 7763."
 	},
 	"oss": true,
 	"tags": [],
@@ -25,7 +25,7 @@
 	},
 	"homepage": "https://spec.commonmark.org/",
 	"license": "CC-BY-SA-4.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

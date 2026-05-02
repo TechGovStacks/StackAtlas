@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "MongoDB ist eine dokumentenorientierte NoSQL-Datenbank.",
-		"en": ""
+		"en": "MongoDB is a document-oriented NoSQL database."
 	},
 	"homepage": "https://www.mongodb.com/",
 	"tags": ["nosql", "datenbank", "dokumentenbasiert"],
@@ -30,7 +30,7 @@
 		"url": "https://github.com/mongodb"
 	},
 	"license": "SSPL-1.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

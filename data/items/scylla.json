@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Scylla ist eine spaltenorientierte NoSQL Datenbank.",
-		"en": ""
+		"en": "Scylla is a column-oriented NoSQL database compatible with Apache Cassandra."
 	},
 	"homepage": "https://www.scylladb.com/",
 	"tags": ["nosql", "datenbank", "spalten"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://github.com/scylladb"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

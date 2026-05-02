@@ -25,10 +25,19 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
-		{ "type": "url", "url": "https://prometheus.io/" },
-		{ "type": "url", "url": "https://github.com/prometheus/prometheus" },
-		{ "type": "url", "url": "https://www.cncf.io/projects/prometheus/" }
+		{
+			"type": "url",
+			"url": "https://prometheus.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/prometheus/prometheus"
+		},
+		{
+			"type": "url",
+			"url": "https://www.cncf.io/projects/prometheus/"
+		}
 	]
 }

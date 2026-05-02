@@ -10,6 +10,8 @@
 	},
 	"oss": false,
 	"tags": ["architecture", "enterprise", "modeling", "open-standard", "the-open-group"],
+	"homepage": "https://www.opengroup.org/archimate-forum",
+	"license": "The Open Group License",
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": false,
@@ -22,9 +24,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"homepage": "https://www.opengroup.org/archimate-forum",
-	"license": "The Open Group License",
-	"lastResearchDate": "2026-05-01",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -44,11 +44,11 @@
 		},
 		{
 			"type": "url",
-			"url": "https://www.opengroup.org/archimate-forum"
+			"url": "https://www.opengroup.org/archimate-licensed-downs"
 		},
 		{
 			"type": "url",
-			"url": "https://pubs.opengroup.org/architecture/archimate3-doc/"
+			"url": "https://find-and-update.company-information.service.gov.uk/company/02134862"
 		}
 	]
 }

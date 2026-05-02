@@ -7,7 +7,7 @@
 	"itemKind": "tool",
 	"description": {
 		"de": "ECIES ist ein hybrides Verschlüsselungsverfahren unter Kombination von Diffie-Hellman und elliptischen Kurven.",
-		"en": ""
+		"en": "ECIES (Elliptic Curve Integrated Encryption Scheme) is a hybrid encryption method combining Diffie-Hellman key exchange with symmetric encryption."
 	},
 	"homepage": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf?__blob=publicationFile",
 	"tags": ["schluessel", "hybrid", "verschluesselung"],
@@ -25,7 +25,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

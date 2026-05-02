@@ -4,7 +4,8 @@
 	"layer": "sovereign-standards",
 	"itemKind": "standard",
 	"description": {
-		"de": "Ein Standard des IT-Planungsrats für die einheitliche Schnittstelle zwischen Fach- und Transportverfahren und ermöglicht eine einheitliche Beauftragung, Steuerung und Überprüfung des Nachrichtentransports. Weiteres unter https://www.xoev.de/xta"
+		"de": "Ein Standard des IT-Planungsrats für die einheitliche Schnittstelle zwischen Fach- und Transportverfahren und ermöglicht eine einheitliche Beauftragung, Steuerung und Überprüfung des Nachrichtentransports. Weiteres unter https://www.xoev.de/xta",
+		"en": "XTA (XML Transport Adapter) is a standard by the IT Planning Council for uniform interfaces between specialized procedures."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

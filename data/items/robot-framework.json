@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Robot Framework ist ein Framework für Automatisierung von Tests und im Rahmen von Robot Process Automation. Genutzt wird eine prozedurale Skriptsprache.",
-		"en": ""
+		"en": "Robot Framework is an open-source framework for test automation and robotic process automation."
 	},
 	"homepage": "https://robotframework.org/",
 	"tags": ["robot-process-automation", "verarbeitung", "rpa"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://docs.robotframework.org/docs"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

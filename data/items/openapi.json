@@ -6,7 +6,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "OpenAPI ist eine herstellerunabhängige Spezifikation zur Beschreibung von RESTful APIs. Sie ermöglicht eine standardisierte, maschinen- und menschenlesbare Beschreibung von Schnittstellen (inklusive Endpunkte, Operationen, Datenstrukturen). Die Spezifikation entstand aus dem früheren Projekt Swagger und wird heute unter der Schirmherrschaft der OpenAPI-Initiative weiterentwickelt.",
-		"en": ""
+		"en": "OpenAPI is a vendor-neutral specification for describing RESTful APIs. It enables standardized API documentation and client generation."
 	},
 	"homepage": "https://www.openapis.org/",
 	"tags": ["rest", "api", "schnittstelle", "rpc"],
@@ -29,7 +29,7 @@
 		"url": "https://github.com/OAI/OpenAPI-Specification"
 	},
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -7,7 +7,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "MPLS dient der Übertragung von Datenpaketen in einem verbindungslosen Netz. Das Verfahren zur Verteilung wird in großen Netzwerken eingesetzt.",
-		"en": ""
+		"en": "MPLS (Multi-Protocol Label Switching) is a routing technique for efficient data transport in networks."
 	},
 	"homepage": "https://datatracker.ietf.org/wg/mpls/documents/",
 	"tags": ["netzwerk", "weitverkehr"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://datatracker.ietf.org/doc/html/rfc6790"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

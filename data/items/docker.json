@@ -20,11 +20,12 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": false
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
 	},
 	"homepage": "https://www.docker.com/",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

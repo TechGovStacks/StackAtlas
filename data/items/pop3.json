@@ -4,7 +4,8 @@
 	"layer": "sovereign-standards",
 	"itemKind": "protocol",
 	"description": {
-		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Lokaler E-Mail Abruf' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen."
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Lokaler E-Mail Abruf' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": "The technology forms a binding architecture and functional component within the D-Stack. It defines an organization-wide technical standard and serves as a reference for consistent, interoperable, and reusable implementations."
 	},
 	"oss": false,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc1939",
 	"license": "IETF-RFC",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

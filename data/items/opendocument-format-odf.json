@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "format",
 	"description": {
-		"de": "OASIS Open Document Format for Office Applications sit ein international genormter quelloffener Standard für Dateiformate von Bürodokumenten wie Texten, Tabellendokumenten, Präsentationen, Zeichnungen, Bildern und Diagrammen."
+		"de": "OASIS Open Document Format for Office Applications sit ein international genormter quelloffener Standard für Dateiformate von Bürodokumenten wie Texten, Tabellendokumenten, Präsentationen, Zeichnungen, Bildern und Diagrammen.",
+		"en": "OASIS Open Document Format for Office Applications is an internationally standardized open format for office documents."
 	},
 	"oss": false,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://www.oasis-open.org/standards/",
 	"license": "OASIS",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

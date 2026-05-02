@@ -5,7 +5,7 @@
 	"itemKind": "tool",
 	"description": {
 		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Performanter LLM Inference Server' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
-		"en": ""
+		"en": "LightLLM is a lightweight framework for efficient large language model inference and serving."
 	},
 	"oss": true,
 	"tags": [],
@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://github.com/ModelTC/LightLLM",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

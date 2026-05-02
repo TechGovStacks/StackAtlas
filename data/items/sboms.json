@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "tool",
 	"description": {
-		"de": "Software Bill of Materials"
+		"de": "Software Bill of Materials",
+		"en": "Software Bill of Materials provides a machine-readable inventory of software components and dependencies."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

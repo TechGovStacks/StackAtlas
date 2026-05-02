@@ -22,10 +22,10 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true,
+		"noTelemetryByDefault": false,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -34,6 +34,14 @@
 		{
 			"type": "url",
 			"url": "https://github.com/open-telemetry"
+		},
+		{
+			"type": "url",
+			"url": "https://opentelemetry.io/blog/2024/security-audit-results/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.cncf.io/blog/2024/12/30/opentelemetry-collector-completes-fuzzing-audit/"
 		}
 	]
 }

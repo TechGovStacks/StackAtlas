@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "CKAN ist ein Werkzeug für Open Data Portale zur Katalogisierung, Veröffentlichung, Suche und Bereitstellung von Daten.",
-		"en": ""
+		"en": "CKAN is a tool for open data portals for cataloging, publishing, and managing datasets."
 	},
 	"homepage": "https://ckan.org/",
 	"tags": ["veroeffentlichung", "datenkatalog", "open-data", "suche", "bereitstellung"],
@@ -30,7 +30,7 @@
 		"url": "https://github.com/ckan/ckan"
 	},
 	"license": "AGPL-3.0",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

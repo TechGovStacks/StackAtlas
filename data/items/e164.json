@@ -19,11 +19,12 @@
 		"selfHostable": false,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
 	},
 	"homepage": "https://www.itu.int/rec/T-REC-E.164/",
 	"license": "ITU-T",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

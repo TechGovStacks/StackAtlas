@@ -13,7 +13,7 @@
 	"tags": ["documentation", "format", "markup", "open-standard"],
 	"sovereigntyCriteria": {
 		"openSource": true,
-		"euHeadquartered": false,
+		"euHeadquartered": true,
 		"hasAudit": false,
 		"permissiveLicense": true,
 		"matureProject": true,
@@ -21,11 +21,11 @@
 		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": true,
-		"ownerType": "community"
+		"ownerType": "independentConsortium"
 	},
 	"homepage": "https://asciidoc.org/",
 	"license": "MIT",
-	"lastResearchDate": "2026-05-01",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -42,6 +42,10 @@
 		{
 			"type": "url",
 			"url": "https://docs.asciidoctor.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://asciidoc-wg.eclipse.org/"
 		}
 	]
 }

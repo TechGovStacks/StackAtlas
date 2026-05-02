@@ -5,7 +5,8 @@
 	"sublayer": "inbetriebnahme",
 	"itemKind": "platform",
 	"description": {
-		"de": "Multi-Cloud-fähige Plattform des ITZBunds für die Bereitstellung souveräner Tool-Chains, z. B. für Softwareentwicklung, Projektmanagement und Dokumentation.\nBasierend auf der Open-Source-Applikationsplattform Cloudogu EcoSystem und Open-Source-Werkzeugen wie Redmine, SonarQube, Sonatype Nexus, SCM-Manager und BlueSpice-Wiki; weitere Entwicklungswerkzeuge können bedarfsabhängig integriert und gemeinsam betrieben werden."
+		"de": "Multi-Cloud-fähige Plattform des ITZBunds für die Bereitstellung souveräner Tool-Chains, z. B. für Softwareentwicklung, Projektmanagement und Dokumentation.\nBasierend auf der Open-Source-Applikationsplattform Cloudogu EcoSystem und Open-Source-Werkzeugen wie Redmine, SonarQube, Sonatype Nexus, SCM-Manager und BlueSpice-Wiki; weitere Entwicklungswerkzeuge können bedarfsabhängig integriert und gemeinsam betrieben werden.",
+		"en": "Multi-cloud capable platform by ITZBund for providing sovereign tool chains, e.g., for the D-Stack."
 	},
 	"oss": true,
 	"tags": [],
@@ -21,7 +22,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "corporation"
 	},
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

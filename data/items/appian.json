@@ -14,18 +14,18 @@
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": false,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
-		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": false,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
 		"ownerType": "corporation"
 	},
 	"homepage": "https://appian.com/",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-05-01",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -38,6 +38,18 @@
 		{
 			"type": "url",
 			"url": "https://appian.com/products/platform/overview"
+		},
+		{
+			"type": "url",
+			"url": "https://appian.com/support/resources/trust/compliance"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.appian.com/suite/help/26.3/Application_Deployment_Guidelines.html"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.appian.com/suite/help/25.4/process_modeling.html"
 		}
 	]
 }

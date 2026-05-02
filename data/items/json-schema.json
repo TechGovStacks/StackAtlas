@@ -5,7 +5,7 @@
 	"itemKind": "format",
 	"description": {
 		"de": "JSON-basierte Variante zu XML-Schema / Schematron",
-		"en": ""
+		"en": "JSON Schema is a JSON-based alternative to XML Schema / Schematron for data validation."
 	},
 	"oss": true,
 	"tags": [],
@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://json-schema.org/",
 	"license": "IETF-draft",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

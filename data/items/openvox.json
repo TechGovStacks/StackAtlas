@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "tool",
 	"description": {
-		"de": "OpenSource IaS-Lösung, als community-Fork von Puppet"
+		"de": "OpenSource IaS-Lösung, als community-Fork von Puppet",
+		"en": "OpenVox is an open-source IaC solution, a community fork of Puppet."
 	},
 	"oss": true,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://voxpupuli.org/openvox/",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

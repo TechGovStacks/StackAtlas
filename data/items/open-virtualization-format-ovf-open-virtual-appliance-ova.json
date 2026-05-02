@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "format",
 	"description": {
-		"de": "Industriestandard für virtuelle Maschinen und Appliances"
+		"de": "Industriestandard für virtuelle Maschinen und Appliances",
+		"en": "Open Virtualization Format is the industry standard for virtual machines and appliances."
 	},
 	"oss": false,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://www.dmtf.org/standards/ovf",
 	"license": "DMTF",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

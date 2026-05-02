@@ -7,7 +7,7 @@
 	"itemKind": "format",
 	"description": {
 		"de": "CSV ist ein Datenformat für den Datenaustausch.",
-		"en": ""
+		"en": "CSV (Comma-Separated Values) is a simple data format for tabular data exchange."
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc7111",
 	"tags": ["datenformat"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://datatracker.ietf.org/doc/html/rfc4180"
 	},
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

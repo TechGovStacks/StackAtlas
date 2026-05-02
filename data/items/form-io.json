@@ -18,10 +18,11 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": false
+		"noTelemetryByDefault": false,
+		"ownerType": "community"
 	},
 	"homepage": "https://form.io/",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

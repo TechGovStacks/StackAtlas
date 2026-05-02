@@ -7,7 +7,7 @@
 	"itemKind": "tool",
 	"description": {
 		"de": "RSA ist ein asymmetrisches kryptographisches Verfahren für das Verschlüsseln und Signieren auf Basis des Faktorisierungsproblems. Es wird eine Schlüssellänge von mindestens 3000 empfohlen.",
-		"en": ""
+		"en": "RSA is an asymmetric cryptographic algorithm for encryption and digital signatures."
 	},
 	"homepage": "https://csrc.nist.gov/projects/digital-signatures",
 	"tags": ["asymmetrisch", "pki", "schluessel", "kryptografie", "algorithmus", "verschluesselung"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf?__blob=publicationFile"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Qdrant ist eine container-basierte Vektor-Datenbank mit integrierter Ähnlichkeitssuche.",
-		"en": ""
+		"en": "Qdrant is a container-based vector database with integrated similarity search capabilities."
 	},
 	"homepage": "https://qdrant.tech/",
 	"tags": ["datenbank", "vektor"],
@@ -30,7 +30,7 @@
 		"url": "https://github.com/qdrant/qdrant"
 	},
 	"license": "AGPL-3.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

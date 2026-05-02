@@ -7,7 +7,7 @@
 	"itemKind": "tool",
 	"description": {
 		"de": "CircleCI ist eine CI/CD-Plattform zur Automatisierung des Softwareentwicklungsprozesses. Für mobile Entwickler bietet CircleCI robuste Umgebungen zum Erstellen, Testen und Bereitstellen von iOS- und Android-Apps.",
-		"en": ""
+		"en": "CircleCI is a CI/CD platform for automating software development processes in the cloud."
 	},
 	"homepage": "https://circleci.com/",
 	"tags": ["pipeline", "cd", "bereitstellung", "ci"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://circleci.com/docs/"
 	},
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

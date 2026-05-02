@@ -6,7 +6,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "TLS dient der Verschlüsselung der Datenübertragung. TLS besteht aus dem Austausch von Schlüsseln, der Authentifizierung und der Realisierung der sicheren Datenübertragung.",
-		"en": ""
+		"en": "TLS (Transport Layer Security) provides encryption for data transmission. It secures data exchange through certificate-based handshake."
 	},
 	"homepage": "https://datatracker.ietf.org/wg/tls/documents/",
 	"tags": ["ssl", "sicherheit", "sdns", "datenuebertragung"],
@@ -28,7 +28,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://datatracker.ietf.org/doc/html/rfc8446"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

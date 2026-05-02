@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "MariaDB ist ein relationales Datenbankmanagementsystem für die Organisation von strukturierten Daten in Tabellen.",
-		"en": ""
+		"en": "MariaDB is an open-source relational database management system, compatible with MySQL."
 	},
 	"homepage": "https://mariadb.org/",
 	"tags": ["datenbank", "sql", "relational"],
@@ -30,7 +30,7 @@
 		"url": "https://mariadb.org/documentation/"
 	},
 	"license": "GPL-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

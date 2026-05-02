@@ -7,7 +7,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "Bluetooth ermöglicht eine Ad-hoc oder Punkt-zu-Punkt Funk-Verbindung. Die Verbindung von zwei Geräten erfolgt über die Aktivierung zwischen den Geräte (Koppeln/ Pairing). Bluetooth bietet in der Variante LE ergänzende Funktionen zu Broadcast, Mesh und Geräteposition.",
-		"en": ""
+		"en": "Bluetooth enables ad-hoc or point-to-point radio connections between devices."
 	},
 	"homepage": "https://www.bluetooth.com/",
 	"tags": ["kurze-distanz", "pairing", "koppeln", "drahtlos", "funk", "wpan"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://www.bluetooth.com/specifications/specs/"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

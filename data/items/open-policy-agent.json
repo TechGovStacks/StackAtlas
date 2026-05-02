@@ -22,10 +22,10 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true,
+		"noTelemetryByDefault": false,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -34,6 +34,14 @@
 		{
 			"type": "url",
 			"url": "https://github.com/open-policy-agent/opa"
+		},
+		{
+			"type": "url",
+			"url": "https://www.cncf.io/announcements/2021/02/04/cloud-native-computing-foundation-announces-open-policy-agent-graduation/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.openpolicyagent.org/docs/latest/privacy/"
 		}
 	]
 }

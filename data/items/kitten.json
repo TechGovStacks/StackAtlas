@@ -5,7 +5,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "Kitten ist ein Open-Source-Projekt, das einen dezentralen, datensouveränen Technologie-Stack entwickelt. Es verfolgt das Ziel, eine Alternative zu zentralen Plattformen großer Tech-Konzerne zu schaffen. Der Fokus liegt auf Transparenz, Nutzerkontrolle und ethischer Gestaltung, wobei der Stack bewusst einfach und zugänglich gehalten wird, um auch Nicht-Expert:innen die Nutzung zu ermöglichen.\nKitten setzt auf offene Protokolle und dezentrale Architektur, um Abhängigkeiten von zentralen Servern zu vermeiden. Der Ansatz kombiniert technische Einfachheit mit starken Datenschutzprinzipien, die direkt an europäische Regularien wie die DSGVO anknüpfen.",
-		"en": ""
+		"en": "Kitten is an open-source project developing a decentralized, data-sovereign technology stack."
 	},
 	"oss": true,
 	"tags": [],
@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://kittenlang.org/",
 	"license": "MIT",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

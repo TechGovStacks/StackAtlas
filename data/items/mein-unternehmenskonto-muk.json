@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "tool",
 	"description": {
-		"de": "Über den D-Stack können Behörden Zugang zum MUK bekommen, um mit Unternehmen und anderen Organisationen kommunizieren zu können. Das kann analog zum ZBP der BundID erfolgen."
+		"de": "Über den D-Stack können Behörden Zugang zum MUK bekommen, um mit Unternehmen und anderen Organisationen kommunizieren zu können. Das kann analog zum ZBP der BundID erfolgen.",
+		"en": "The company account (MUK) allows authorities to access company data and communicate with businesses and other organizations."
 	},
 	"oss": false,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://www.mein-unternehmenskonto.de/",
 	"license": "proprietary",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

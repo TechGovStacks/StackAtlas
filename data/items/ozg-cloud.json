@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "tool",
 	"description": {
-		"de": "OZG-Cloud ist eine Open-Source-Plattform zur digitalen Antragsbearbeitung in kommunalen Verwaltungen, entwickelt im Kontext des Onlinezugangsgesetzes."
+		"de": "OZG-Cloud ist eine Open-Source-Plattform zur digitalen Antragsbearbeitung in kommunalen Verwaltungen, entwickelt im Kontext des Onlinezugangsgesetzes.",
+		"en": "OZG-Cloud is an open-source platform for digital application processing in municipal administrations."
 	},
 	"oss": true,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://ozg-cloud.de/",
 	"license": "EUPL-1.2",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

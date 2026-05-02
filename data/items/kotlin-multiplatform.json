@@ -5,7 +5,7 @@
 	"itemKind": "language",
 	"description": {
 		"de": "Framework",
-		"en": ""
+		"en": "Kotlin Multiplatform is a framework for cross-platform development with Kotlin."
 	},
 	"oss": true,
 	"tags": [],
@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://kotlinlang.org/docs/multiplatform.html",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

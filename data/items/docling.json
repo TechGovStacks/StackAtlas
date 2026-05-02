@@ -20,11 +20,12 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": false,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
 	},
 	"homepage": "https://github.com/DS4SD/docling",
 	"license": "MIT",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

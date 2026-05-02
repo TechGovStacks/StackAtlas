@@ -19,13 +19,13 @@
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": false,
-		"openStandards": false,
+		"openStandards": true,
 		"noTelemetryByDefault": false,
 		"ownerType": "corporation"
 	},
 	"homepage": "https://azure.microsoft.com/en-us/products/devops",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-05-01",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -34,6 +34,18 @@
 		{
 			"type": "url",
 			"url": "https://learn.microsoft.com/en-us/compliance/regulatory/gdpr-dsr-vsts"
+		},
+		{
+			"type": "url",
+			"url": "https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-soc-2"
+		},
+		{
+			"type": "url",
+			"url": "https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-iso-27001"
+		},
+		{
+			"type": "url",
+			"url": "https://learn.microsoft.com/en-us/rest/api/azure/devops/git/?view=azure-devops-rest-7.1"
 		}
 	]
 }

@@ -6,7 +6,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "SIP ist ein Netzprotokoll zur Etablierung und Steuerung von Kommunikationssitzungen mit mehreren Teilnehmenden. SIP ist Grundlage für IP-Telefonie (Voice over IP).",
-		"en": ""
+		"en": "SIP (Session Initiation Protocol) is a network protocol for establishing and controlling communication sessions."
 	},
 	"homepage": "https://datatracker.ietf.org/wg/sipcore/about/",
 	"tags": ["telefonie", "kommunikation"],
@@ -28,7 +28,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://github.com/ietf-wg-sipcore"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

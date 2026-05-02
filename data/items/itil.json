@@ -5,7 +5,7 @@
 	"itemKind": "standard",
 	"description": {
 		"de": "Standard für den Betrieb von IT-Lösungen",
-		"en": ""
+		"en": "ITIL is a standard framework for IT service management and IT operations."
 	},
 	"oss": false,
 	"tags": [],
@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://www.axelos.com/",
 	"license": "proprietary",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

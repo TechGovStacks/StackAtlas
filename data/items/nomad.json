@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Nomad ist ein Open-Source-System zur Orchestrierung von Anwendungen und deren Workloads auf hybriden Umgebungen. Es ist eine flexible Lösung, die für ihre Einfachheit und Benutzerfreundlichkeit bekannt ist, da sie eine einzelne Binärdatei zur Installation und Konfiguration bietet.",
-		"en": ""
+		"en": "Nomad is a workload orchestrator for deploying and managing containers and non-containerized applications."
 	},
 	"homepage": "https://developer.hashicorp.com/nomad",
 	"tags": ["orchestrierung", "container"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://developer.hashicorp.com/nomad/docs"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -6,7 +6,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "IPv6 dient der Adressierung in der Vermittlung. IP selbst stellt keine Verbindung her.",
-		"en": ""
+		"en": "IPv6 (Internet Protocol version 6) is the next generation internet protocol with 128-bit addresses."
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc8200",
 	"tags": ["adresse", "internet"],
@@ -24,7 +24,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

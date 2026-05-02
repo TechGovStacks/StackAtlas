@@ -5,7 +5,7 @@
 	"itemKind": "standard",
 	"description": {
 		"de": "Regelbasierte Validierungssprache für XML-Dokumente. Dient u. a. der Formulierung von Geschäftsregeln, die automatisiert geprüft werden können",
-		"en": ""
+		"en": "ISO/IEC 19757-3 Schematron is a rule-based validation language for XML documents, used for formulating business rules."
 	},
 	"oss": true,
 	"tags": [],
@@ -21,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

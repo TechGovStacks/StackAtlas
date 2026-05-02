@@ -5,7 +5,7 @@
 	"itemKind": "standard",
 	"description": {
 		"de": "BPMN (Business Process Model and Notation) ist eine standardisierte grafische Sprache zur Modellierung, Visualisierung und Kommunikation von Geschäftsprozessen zwischen Fach- und IT‑Teams.\naktuell stehen in der Kateogie Low Code Lösungen, der gemeinsame Standard sollte BPMN sein.",
-		"en": ""
+		"en": "BPMN (Business Process Model and Notation) is a standardized graphical language for modeling, visualizing, and communicating business processes between business and IT teams."
 	},
 	"oss": false,
 	"tags": [],
@@ -18,11 +18,12 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
 	},
 	"homepage": "https://www.omg.org/bpmn/",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

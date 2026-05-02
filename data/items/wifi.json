@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Mit Wireless LAN können in kleiner bis mittlerer Reichweite Endgeräte vernetzt werden (Ad-hoc, via Basisstation/ Access Point oder als Mesh). Die IEEE standardisiert die Technologie mit IEEE 802.11 ff. Die Konfiguration erfolgt durch SSID und Passwort. Wi-Fi dient als Kennzeichen für zertifizierte Produkte zur Sicherstellung von Interoperabilität.",
-		"en": ""
+		"en": "Wireless LAN enables networking of end devices in short to medium range using radio technology."
 	},
 	"homepage": "https://www.wi-fi.org/",
 	"tags": ["funk", "hotspot", "tethering", "drahtlos"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=68"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

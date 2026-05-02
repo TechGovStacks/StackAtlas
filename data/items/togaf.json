@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "tool",
 	"description": {
-		"de": "Standrad zur Abstimmung der Geschäftsprozesse und der IT, damit die Unternehmensziele erreicht werden und Veränderungen nachvollziehbar gestaltet werden. Siehe https://www.opengroup.org/togaf"
+		"de": "Standrad zur Abstimmung der Geschäftsprozesse und der IT, damit die Unternehmensziele erreicht werden und Veränderungen nachvollziehbar gestaltet werden. Siehe https://www.opengroup.org/togaf",
+		"en": "TOGAF is a standard for aligning business processes and IT to ensure enterprise architecture consistency."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

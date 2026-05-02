@@ -7,7 +7,7 @@
 	"itemKind": "tool",
 	"description": {
 		"de": "Selenium ist ein Open‑Source‑Projekt, das Entwicklern und Testern ermöglicht, Web‑Browser automatisch zu steuern. Mit Selenium können wiederkehrende Aufgaben – etwa das Öffnen einer Webseite, das Ausfüllen von Formularen, das Klicken auf Buttons oder das Prüfen von Inhalten – programmgesteuert durchgeführt werden. Der Hauptzweck liegt darin, funktionale Tests von Web‑Anwendungen zu automatisieren, sodass die Qualität der Software zuverlässig und effizient überprüft werden kann, ohne dass jede Testschritt manuell ausgeführt werden muss. Durch die Unterstützung verschiedener Browser (wie Chrome, Firefox, Edge und Safari) und Programmiersprachen (z. B. Java, Python, C#) lässt sich Selenium flexibel in bestehende Entwicklungs‑ und Continuous‑Integration‑Umgebungen integrieren.",
-		"en": ""
+		"en": "Selenium is an open-source project that enables developers and testers to automate web browser interactions."
 	},
 	"homepage": "https://www.selenium.dev/",
 	"tags": ["automation", "testing", "user-interface"],
@@ -30,7 +30,7 @@
 		"url": "https://www.selenium.dev/documentation/"
 	},
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

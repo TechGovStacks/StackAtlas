@@ -25,7 +25,7 @@
 	},
 	"homepage": "https://ai-sdk.dev/",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-05-01",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -46,6 +46,14 @@
 		{
 			"type": "url",
 			"url": "https://ai-sdk.dev/"
+		},
+		{
+			"type": "url",
+			"url": "https://ai-sdk.dev/docs/ai-sdk-core/telemetry"
+		},
+		{
+			"type": "url",
+			"url": "https://vercel.com/security"
 		}
 	]
 }

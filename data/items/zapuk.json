@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "platform",
 	"description": {
-		"de": "Konsolidierungsvorhaben für Postfächer der FITKO"
+		"de": "Konsolidierungsvorhaben für Postfächer der FITKO",
+		"en": "Zapuk is a consolidation project for mailboxes by FITKO."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

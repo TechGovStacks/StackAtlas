@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "platform",
 	"description": {
-		"de": "Symfony ist ein offener in der EU entwickelter \"Baukasten\" bzw. ein Framework auf Basis von PHP (Programmiersprache, bereits im D-Stack) um primär Webanwendungen zu entwickeln - Onlinedienste, Verwaltungssysteme und co lassen sich mit wenig Aufwand und vielen bereits vorhandenen Bausteinen aufbauen."
+		"de": "Symfony ist ein offener in der EU entwickelter \"Baukasten\" bzw. ein Framework auf Basis von PHP (Programmiersprache, bereits im D-Stack) um primär Webanwendungen zu entwickeln - Onlinedienste, Verwaltungssysteme und co lassen sich mit wenig Aufwand und vielen bereits vorhandenen Bausteinen aufbauen.",
+		"en": "Symfony is an open-source PHP framework for building web applications and APIs."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "corporation"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -6,7 +6,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Der Governikus Mulitmessenger (GMM) ist  eine Multikanallösung, die im D-Stack die Verbindung zwischen verschiedenen Kommunikationsinfrastrukturen herstellen kann (Stichworte Peppol-Netzwerk und Justiz). Das ist sowohl national als auch international darstellbar. Dieser Baustein ist ein Produkt des ITPLR und steht Bund sowie den meisten Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung.",
-		"en": ""
+		"en": "The Governikus Multi-Messenger (GMM) is a multi-channel solution that connects different messaging systems within the D-Stack."
 	},
 	"oss": false,
 	"tags": [],
@@ -19,10 +19,11 @@
 		"selfHostable": true,
 		"dataPortability": false,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
 	"homepage": "https://www.governikus.de/en/produkte/multimessenger/",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

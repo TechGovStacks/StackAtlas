@@ -5,7 +5,7 @@
 	"itemKind": "standard",
 	"description": {
 		"de": "Die DIN 91379 definiert diejenige Teilmenge des Internationalen Standards ISO 10646 (Unicode), die aus fachlichen Gründen von jedem IT-Verfahren der deutschen Verwaltung mindestens unterstützt werden muss.",
-		"en": ""
+		"en": "DIN 91379 defines the subset of the International Standard ISO 10646 (Unicode) that applies to the exchange of information in German administration."
 	},
 	"oss": false,
 	"tags": [],
@@ -18,11 +18,12 @@
 		"selfHostable": false,
 		"dataPortability": false,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
 	},
 	"homepage": "https://www.din.de/en/getting-involved/standards-committees/nid/standards/wdc-beuth:din21:353496951",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -4,11 +4,13 @@
 	"layer": "infrastructure",
 	"itemKind": "platform",
 	"description": {
-		"de": "COM Despina ist ein Baustein für fachunabhängigen Datenaustausch gemäß ITPLR-Standards. COM Despina kann sowohl zentral als auch dezentral betrieben werden und erleichtert den Fachverfahren die Verarbeitung von Transportnachrichten. Dieser Baustein ist ein Produkt des ITPLR und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung. Diese Lösung ist in vielen Ländern schon als Basisdienst etabliert.",
-		"en": ""
+		"de": "COM Despina ist ein Baustein für fachunabhängigen Datenaustausch gemäß XÖV- und XTA-Standards. COM Despina kann sowohl zentral als auch dezentral betrieben werden und erleichtert den Fachverfahren die Verarbeitung von Transportnachrichten. Dieser Baustein ist ein Produkt von Governikus und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung.",
+		"en": "COM Despina is a component for domain-independent data exchange according to XÖV and XTA standards. COM Despina can be operated both centrally and decentrally and facilitates the processing of transport messages for specialized procedures. This component is a Governikus product and is already available to the federal government and states without additional license costs."
 	},
 	"oss": false,
-	"tags": [],
+	"tags": ["governikus", "data-exchange", "xoev", "xta", "osci", "as4"],
+	"homepage": "https://www.governikus.de/en/produkte/com-despina/",
+	"license": "Proprietary",
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": true,
@@ -16,17 +18,28 @@
 		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
-		"dataPortability": false,
+		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
-	"homepage": "https://www.governikus.de/en/produkte/com-despina/",
-	"license": "Proprietary",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
 			"url": "https://www.governikus.de/en/produkte/com-despina/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/en/produkte/com-despina-dvdv-osci/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/en/produkte/com-despina-peppol-as4-edition/"
 		}
 	]
 }

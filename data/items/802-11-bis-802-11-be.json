@@ -3,9 +3,10 @@
 	"name": "802.11 bis 802.11 be",
 	"layer": "sovereign-standards",
 	"itemKind": "protocol",
+	"groupKey": "short-range-wireless",
 	"description": {
 		"de": "IEEE Wi-Fi Standards",
-		"en": ""
+		"en": "IEEE Wi-Fi standards (802.11 family through 802.11be)"
 	},
 	"oss": false,
 	"tags": [],
@@ -18,11 +19,12 @@
 		"selfHostable": false,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
 	},
 	"homepage": "https://www.ieee802.org/11/",
 	"license": "IEEE",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

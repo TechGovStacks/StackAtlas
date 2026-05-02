@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "standard",
 	"description": {
-		"de": "Ermöglicht Erstellung von maschinenlesbaren Katalogen mit kryptographischen Algorithmen."
+		"de": "Ermöglicht Erstellung von maschinenlesbaren Katalogen mit kryptographischen Algorithmen.",
+		"en": "RFC 5698 defines security suitability policy for cryptographic modules."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

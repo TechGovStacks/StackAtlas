@@ -14,18 +14,18 @@
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": false,
+		"openStandards": true,
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
 	"homepage": "https://argoproj.github.io/workflows/",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-05-01",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -34,6 +34,18 @@
 		{
 			"type": "url",
 			"url": "https://argoproj.github.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.cncf.io/projects/argo/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.cncf.io/announcements/2022/12/06/the-cloud-native-computing-foundation-announces-argo-has-graduated/"
+		},
+		{
+			"type": "url",
+			"url": "https://ostif.org/our-audit-of-argo-is-complete-critical-and-high-severity-security-issues-found-and-fixed/"
 		}
 	]
 }

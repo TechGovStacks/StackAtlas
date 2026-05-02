@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "n8n ist eine flexible Automatisierungsplattform mit 400+ Integrationen, die visuelles Bauen und Code kombiniert und Self-Hosting erlaubt.",
-		"en": ""
+		"en": "n8n is an open-source workflow automation tool for connecting applications."
 	},
 	"homepage": "https://www.n8n.io",
 	"tags": ["automatisierung", "open-source", "no-code", "api", "integration"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://docs.n8n.io/"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

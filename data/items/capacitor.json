@@ -7,7 +7,7 @@
 	"itemKind": "tool",
 	"description": {
 		"de": "Capacitor ist ein Open-Source-Runtime-Framework, mit dem Web-Apps als native iOS- und Android-Apps mit Zugriff auf native Gerätefunktionen bereitgestellt werden können.",
-		"en": ""
+		"en": "Capacitor is an open-source runtime framework that allows web apps to run as native iOS and Android apps."
 	},
 	"homepage": "https://capacitorjs.com/",
 	"tags": ["mobile", "cross-platform", "user-interface"],
@@ -30,7 +30,7 @@
 		"url": "https://capacitorjs.com/docs"
 	},
 	"license": "MIT",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -7,7 +7,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "MCP ist ein offenes Protokoll, welches standardisiert wie Anwendungen Kontextinformationen an große Sprachmodelle liefert. MCP liefert einen standardisierten Weg um KI Modelle mit verschiedenen Datenquellen und -werkzeugen zu verbinden. MCP ermöglicht Agenten und komplexe Workflows auf Basis von großen Sprachmodellen zu bauen.",
-		"en": ""
+		"en": "MCP is an open protocol that standardizes how applications exchange context information with large language models."
 	},
 	"homepage": "https://modelcontextprotocol.io/",
 	"tags": ["agent", "agentische-ki", "kontext"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://modelcontextprotocol.io/specification/2025-06-18"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

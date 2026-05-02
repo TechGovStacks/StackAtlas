@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "tool",
 	"description": {
-		"de": "OZG-Datenmodelle strukturieren die für Verwaltungsleistungen benötigten Informationen fachlich konsistent. Sie dienen als Grundlage dafür, Daten zwischen Portalen, Fachverfahren und Registern ohne Medienbrüche auszutauschen."
+		"de": "OZG-Datenmodelle strukturieren die für Verwaltungsleistungen benötigten Informationen fachlich konsistent. Sie dienen als Grundlage dafür, Daten zwischen Portalen, Fachverfahren und Registern ohne Medienbrüche auszutauschen.",
+		"en": "OZG data models structure the information required for administrative services in a technically consistent manner."
 	},
 	"oss": false,
 	"tags": [],
@@ -17,10 +18,11 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
 	"homepage": "https://www.fitko.de/produktmanagement/fim",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

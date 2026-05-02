@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Rancher ist eine Open-Source-Plattform zur Verwaltung und Bereitstellung mehrerer Kubernetes-Cluster und Container-Anwendungen. Es bietet eine einfache Benutzeroberfläche.",
-		"en": ""
+		"en": "Rancher is an open-source platform for managing and deploying multiple Kubernetes clusters."
 	},
 	"homepage": "https://www.rancher.com/",
 	"tags": ["orchestrierung", "container"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://github.com/rancher/rancher"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

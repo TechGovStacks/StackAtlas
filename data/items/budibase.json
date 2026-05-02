@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Budibase ermöglicht das schnelle Erstellen interner Business-Apps, mit vorgefertigten Komponenten und breiter Datenquellenunterstützung.",
-		"en": ""
+		"en": "Budibase enables rapid creation of internal business apps with pre-built components and automation."
 	},
 	"homepage": "https://budibase.com/",
 	"tags": ["automations", "open-source", "datenquellen", "low-code"],
@@ -30,7 +30,7 @@
 		"url": "https://docs.budibase.com/docs/what-is-budibase"
 	},
 	"license": "AGPL-3.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -5,7 +5,7 @@
 	"sublayer": "frameworks",
 	"description": {
 		"de": "Flutter ist ein Open-Source-UI-Toolkit zum Erstellen nativ kompilierter Anwendungen für Mobil-, Web-, Desktop- und eingebettete Geräte aus einer einzigen Codebasis.",
-		"en": ""
+		"en": "Flutter is an open-source UI framework for building natively compiled applications for mobile, web, and desktop."
 	},
 	"homepage": "https://flutter.dev/",
 	"tags": ["user-interface"],
@@ -30,7 +30,7 @@
 	"license": "BSD-3-Clause",
 	"groupKey": "cross-platform-ui-framework",
 	"itemKind": "tool",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

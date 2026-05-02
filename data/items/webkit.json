@@ -7,7 +7,7 @@
 	"itemKind": "service",
 	"description": {
 		"de": "WebKit ist eine Browser-Engine zum Rendern von Webseiten. Es wird insbesondere von Apple für Safari genutzt.",
-		"en": ""
+		"en": "WebKit is a browser engine for rendering web pages. It is primarily used by Apple for Safari."
 	},
 	"homepage": "https://webkit.org/",
 	"tags": ["webseite", "browser-engine", "rendern"],
@@ -30,7 +30,7 @@
 		"url": "https://github.com/WebKit/WebKit"
 	},
 	"license": "LGPL-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

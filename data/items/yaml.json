@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "format",
 	"description": {
-		"de": "YAML ist ein textbasiertes Dateiformat zur Datenserialisierung, das außerdem für Konfigurationsdateien verbreitet ist."
+		"de": "YAML ist ein textbasiertes Dateiformat zur Datenserialisierung, das außerdem für Konfigurationsdateien verbreitet ist.",
+		"en": "YAML Ain't Markup Language is a text-based data serialization format used for configuration files and data exchange."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "community"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

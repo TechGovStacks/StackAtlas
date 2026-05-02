@@ -5,10 +5,12 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Open Source Applikations-Plattform zur Bereitstellung souveräner Tool-Chains. Layer zwischen Infrastruktur und Tools. Läuft auf unterschiedlichen Infrastrukturen, von Multi-Cloud bis air-gapped, inklusive automatischem Cloud-Switching. Schafft Standards, die Tools austauschbar und einfach betreibbar machen, inklusive automatisierbaren Updates und anwendungsübergreifendem KI-Assistenten. Made in Germany.",
-		"en": ""
+		"en": "Open source application platform for providing sovereign tool chains. Layer between infrastructure and tools. Runs on different infrastructures, from multi-cloud to air-gapped, including automatic cloud switching. Creates standards that make tools interchangeable and easy to operate, including automatable updates and cross-application AI assistant. Made in Germany."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["platform", "sovereign", "tool-chain", "germany"],
+	"homepage": "https://platform.cloudogu.com/en/info/cloudogu-ecosystem/",
+	"license": "AGPL-3.0-only",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": true,
@@ -17,16 +19,23 @@
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": false,
-		"noTelemetryByDefault": true
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
 			"url": "https://platform.cloudogu.com/en/info/cloudogu-ecosystem/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/cloudogu/ecosystem"
+		},
+		{
+			"type": "url",
+			"url": "https://platform.cloudogu.com/en/blog/license-change-agpl3/"
 		}
-	],
-	"homepage": "https://platform.cloudogu.com/en/info/cloudogu-ecosystem/",
-	"license": "AGPL-3.0-only"
+	]
 }

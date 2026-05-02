@@ -1,0 +1,49 @@
+{
+	"id": "joomla",
+	"name": "Joomla",
+	"layer": "applications",
+	"sublayer": "lowcode",
+	"groupKey": "cms",
+	"itemKind": "platform",
+	"description": {
+		"de": "Joomla ist ein quelloffenes Content-Management-System für Websites und Webanwendungen. Es bietet Flexibilität durch Erweiterungen und Vorlagen und wird in der öffentlichen Verwaltung sowie im Bildungsbereich eingesetzt.",
+		"en": "Joomla is an open-source content management system for websites and web applications. It offers flexibility through extensions and templates and is used in public administration and education."
+	},
+	"homepage": "https://www.joomla.org/",
+	"license": "GPL-2.0-or-later",
+	"tags": ["cms"],
+	"oss": true,
+	"maturity": "graduated",
+	"ownerCountry": "US",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
+	},
+	"lastResearchDate": "2026-05-02",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://www.joomla.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/joomla/joomla-cms"
+		},
+		{
+			"type": "url",
+			"url": "https://opensourcematters.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.joomla.org/about-joomla/licenses.html"
+		}
+	]
+}

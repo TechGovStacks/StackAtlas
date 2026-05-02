@@ -7,7 +7,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "UDP ist ein einfaches Datenübertragungsprotokoll ohne Zusatzfunktionen.",
-		"en": ""
+		"en": "UDP (User Datagram Protocol) is a simple data transmission protocol without additional features like delivery guarantee."
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc768",
 	"tags": ["datenuebertragung", "echtzeit"],
@@ -25,7 +25,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

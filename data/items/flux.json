@@ -3,15 +3,17 @@
 	"name": "flux",
 	"layer": "building-blocks",
 	"sublayer": "inbetriebnahme",
+	"groupKey": "gitops",
 	"itemKind": "tool",
 	"description": {
 		"de": "Flux ist ein Werkzeug zur Synchronisation von Ressourcen (u.a. Git Repo) und einem Kubernetes Clusters.",
-		"en": ""
+		"en": "Flux is a set of continuous and progressive delivery solutions for Kubernetes."
 	},
 	"homepage": "https://fluxcd.io/",
-	"tags": ["pipeline", "cd", "bereitstellung", "ci"],
+	"tags": ["pipeline", "cd", "bereitstellung", "ci", "gitops"],
 	"oss": true,
 	"maturity": "graduated",
+	"license": "Apache-2.0",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -28,8 +30,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://fluxcd.io/flux/"
 	},
-	"license": "AGPL-3.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -38,6 +39,10 @@
 		{
 			"type": "url",
 			"url": "https://github.com/fluxcd/flux2"
+		},
+		{
+			"type": "url",
+			"url": "https://dev.to/mechcloud_academy/the-gitops-standard-in-2026-a-comparative-research-analysis-of-argocd-and-fluxcd-46d8"
 		}
 	]
 }

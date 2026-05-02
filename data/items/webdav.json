@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "tool",
 	"description": {
-		"de": "Protokoll für den Dateizugriff über das Internet"
+		"de": "Protokoll für den Dateizugriff über das Internet",
+		"en": "WebDAV (Web Distributed Authoring and Versioning) is a protocol for file access and management over the internet."
 	},
 	"oss": true,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://www.rfc-editor.org/rfc/rfc4918",
 	"license": "IETF",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

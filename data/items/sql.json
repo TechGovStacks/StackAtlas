@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "language",
 	"description": {
-		"de": "SQL (Structured Query Language) ist die standardisierte Sprache zur Verwaltung, Abfrage und Bearbeitung von Daten in relationalen Datenbanken."
+		"de": "SQL (Structured Query Language) ist die standardisierte Sprache zur Verwaltung, Abfrage und Bearbeitung von Daten in relationalen Datenbanken.",
+		"en": "SQL (Structured Query Language) is the standard language for managing and manipulating relational databases."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

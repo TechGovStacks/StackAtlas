@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "TensorFlow ist eine Bibliothek für maschinelles Lernen und Künstliche Intelligen. Es wird insbesondere für Training und Inferenz von neuronalen Netzen eingesetzt.",
-		"en": ""
+		"en": "TensorFlow is a library for machine learning and artificial intelligence. It supports deep learning, neural networks, and distributed training."
 	},
 	"homepage": "https://www.tensorflow.org/",
 	"tags": ["machine-learning", "inferenz", "verarbeitung", "training"],
@@ -30,7 +30,7 @@
 		"url": "https://github.com/tensorflow/serving"
 	},
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

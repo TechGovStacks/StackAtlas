@@ -5,10 +5,12 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Open-Source-Engine zur Datenverarbeitung für maschinelles Lernen und KI-Anwendungen.",
-		"en": ""
+		"en": "Open-source engine for distributed data processing, machine learning, and AI applications."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["big-data", "data-processing", "ml", "ai"],
+	"homepage": "https://spark.apache.org/",
+	"license": "Apache-2.0",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -17,12 +19,11 @@
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": false,
-		"noTelemetryByDefault": true
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
 	},
-	"homepage": "https://spark.apache.org/",
-	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -39,6 +40,10 @@
 		{
 			"type": "url",
 			"url": "https://spark.apache.org/docs/latest/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.flexera.com/blog/finops/apache-spark-alternatives/"
 		}
 	]
 }

@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "HBase ist eine spaltenorientierte NoSQL Datenbank. HBase ist Teil des Apache Hadoop-Ökosystems und basiert auf dem Bigtable-Modell.",
-		"en": ""
+		"en": "HBase is a distributed, scalable NoSQL database based on Apache Hadoop."
 	},
 	"homepage": "https://hbase.apache.org/",
 	"tags": ["nosql", "database", "hadoop", "column-oriented", "big-data"],
@@ -21,9 +21,10 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": false,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

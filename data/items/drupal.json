@@ -18,7 +18,7 @@
 		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": true,
-		"permissiveLicense": true,
+		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
@@ -26,7 +26,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -35,6 +35,14 @@
 		{
 			"type": "url",
 			"url": "https://github.com/drupal/drupal"
+		},
+		{
+			"type": "url",
+			"url": "https://www.drupal.org/association/contact"
+		},
+		{
+			"type": "url",
+			"url": "https://www.drupal.org/security"
 		}
 	]
 }

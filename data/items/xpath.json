@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "tool",
 	"description": {
-		"de": "Abfragesprache, um XML-Inhalte zu adressieren und auszuwerten."
+		"de": "Abfragesprache, um XML-Inhalte zu adressieren und auszuwerten.",
+		"en": "XPath is a query language for selecting nodes in XML documents."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

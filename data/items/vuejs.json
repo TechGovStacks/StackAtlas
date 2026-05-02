@@ -16,21 +16,17 @@
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
-		"hasAudit": true,
+		"hasAudit": false,
 		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": false,
+		"noTelemetryByDefault": true,
 		"ownerType": "community"
 	},
-	"audit": {
-		"lastDate": "2025-11-11",
-		"url": "https://vuejs.org/guide/"
-	},
 	"license": "MIT",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -39,6 +35,14 @@
 		{
 			"type": "url",
 			"url": "https://github.com/vuejs/core"
+		},
+		{
+			"type": "url",
+			"url": "https://vuejs.org/guide/best-practices/security"
+		},
+		{
+			"type": "url",
+			"url": "https://evanyou.me/"
 		}
 	]
 }

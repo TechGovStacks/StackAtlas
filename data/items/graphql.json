@@ -7,7 +7,7 @@
 	"itemKind": "standard",
 	"description": {
 		"de": "Ein Abfragesprache und Laufzeitumgebung, die es Clients ermöglicht, genau die Daten abzufragen, die sie benötigen. Sie bietet eine effiziente und flexible Alternative zu traditionellen APIs, indem sie es Clients ermöglicht, nur die exakt benötigten Daten mit einem einzigen Aufruf abzurufen. Ein zentrales Element ist das GraphQL-Schema, das die Datenstrukturen definiert, und der Client sendet eine Abfrage (Query), die durch das Schema validiert und von einem Resolver auf dem Server ausgeführt wird.",
-		"en": ""
+		"en": "GraphQL is a query language and runtime environment that enables clients to request exactly the data they need. It offers an efficient and flexible alternative to traditional REST APIs by allowing clients to fetch only the required data with a single call. A central element is the GraphQL schema, which defines the data structures."
 	},
 	"homepage": "https://graphql.org/",
 	"tags": ["abfrage", "daten", "schnittstelle"],
@@ -30,7 +30,7 @@
 		"url": "https://spec.graphql.org/"
 	},
 	"license": "MIT",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

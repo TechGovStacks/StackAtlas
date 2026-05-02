@@ -6,7 +6,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Ermöglicht sichere Übertragung von strukturierten Informationen zwischen Parteien als selbstverifizierende JSON-Objekte. Fungiert als kompakter, URL-sicherer Token-Standard für Authentifizierung, Autorisierung und sichere Datenübertragung ohne zentrale Session-Speicherung.",
-		"en": ""
+		"en": "JWT (JSON Web Tokens) is a compact, URL-safe standard for representing claims between parties."
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc7519",
 	"tags": ["authentifizierung", "autorisierung", "token", "json"],
@@ -29,7 +29,7 @@
 		"url": "https://datatracker.ietf.org/doc/html/rfc8725"
 	},
 	"license": "public-domain",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

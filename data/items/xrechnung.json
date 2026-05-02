@@ -4,7 +4,8 @@
 	"layer": "sovereign-standards",
 	"itemKind": "format",
 	"description": {
-		"de": "XRechnung ist ein eigenständiger Standard, der speziell für E-Rechnungen im öffentlichen Auftragswesen entwickelt wurde."
+		"de": "XRechnung ist ein eigenständiger Standard, der speziell für E-Rechnungen im öffentlichen Auftragswesen entwickelt wurde.",
+		"en": "XRechnung is the standard for electronic invoicing in German public administration."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

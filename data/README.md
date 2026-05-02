@@ -43,7 +43,7 @@ Das optionale Feld `groupKey` kennzeichnet Items, die **dieselbe Kernfunktion** 
 
 **Vergabekriterium:** `groupKey` wird nur gesetzt, wenn im Katalog **mindestens zwei Items** existieren, zwischen denen ein Stack tatsächlich wählen kann. Fundamentalstandards ohne Alternative (HTTP, TLS, DNS …) und singuläre Spezialwerkzeuge erhalten keinen `groupKey`. Items ohne `groupKey` nehmen an keinem Vergleich teil — der `sublayer` allein löst keinen Coverage-Hint aus.
 
-#### Alle 36 Vergleichsgruppen (Stand 2026-04-27)
+#### Alle 36 Vergleichsgruppen (Stand 2026-05-02)
 
 | groupKey                       | Items (Anzahl) | Typische Entscheidung                                    |
 | :----------------------------- | :------------: | :------------------------------------------------------- |
@@ -64,7 +64,7 @@ Das optionale Feld `groupKey` kennzeichnet Items, die **dieselbe Kernfunktion** 
 | `llm-framework`                |       3        | LangGraph · Haystack · PromptFlow                        |
 | `ai-agent-protocol`            |       4        | MCP · ANP · A2A · AG-UI                                  |
 | `national-digital-id-platform` |       5        | MOSIP · BundID · Aadhaar · SingPass · GOV.UK One Login   |
-| `cms`                          |       3        | Drupal · TYPO3 · WordPress                               |
+| `cms`                          |       4        | Drupal · Joomla · TYPO3 · WordPress                      |
 | `browser-engine`               |       3        | Blink · Gecko · WebKit                                   |
 | `systems-language`             |       3        | C · Go · Rust                                            |
 | `web-scripting-language`       |       2        | JavaScript · TypeScript                                  |

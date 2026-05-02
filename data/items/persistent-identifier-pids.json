@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "tool",
 	"description": {
-		"de": "Ein Persistenter Identifier (PID) ist eine dauerhafte, eindeutige Kennung, die einem digitalen oder physischen Objekt (z. B. Publikationen, Datensätzen, Personen oder Organisationen) zugewiesen wird.\nEr bleibt stabil über lange Zeit, auch wenn sich Speicherort oder Metadaten ändern, und ermöglicht dadurch eine zuverlässige Referenzierung und Verknüpfung in wissenschaftlichen und digitalen Informationssystemen."
+		"de": "Ein Persistenter Identifier (PID) ist eine dauerhafte, eindeutige Kennung, die einem digitalen oder physischen Objekt (z. B. Publikationen, Datensätzen, Personen oder Organisationen) zugewiesen wird.\nEr bleibt stabil über lange Zeit, auch wenn sich Speicherort oder Metadaten ändern, und ermöglicht dadurch eine zuverlässige Referenzierung und Verknüpfung in wissenschaftlichen und digitalen Informationssystemen.",
+		"en": "Persistent Identifiers (PIDs) provide long-term stable references to digital objects."
 	},
 	"oss": false,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://www.dona.net/handle-system",
 	"license": "Open Standard",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "platform",
 	"description": {
-		"de": "Protocol Buffers (protobuf) ist ein Datenformat zur Serialisierung mit einer Schnittstellen-Beschreibungssprache.\nHauptsächliche Entwurfskriterien der Protocol Buffers sind Einfachheit und Performance. Daher ist es als ein Binärformat konzipiert im Gegensatz zu XML, welches auf ein textuelles Format setzt."
+		"de": "Protocol Buffers (protobuf) ist ein Datenformat zur Serialisierung mit einer Schnittstellen-Beschreibungssprache.\nHauptsächliche Entwurfskriterien der Protocol Buffers sind Einfachheit und Performance. Daher ist es als ein Binärformat konzipiert im Gegensatz zu XML, welches auf ein textuelles Format setzt.",
+		"en": "Protocol Buffers (protobuf) is a language-neutral, platform-neutral extensible mechanism for serializing structured data."
 	},
 	"oss": true,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://protobuf.dev/",
 	"license": "BSD-3-Clause",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

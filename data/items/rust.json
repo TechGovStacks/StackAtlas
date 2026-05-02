@@ -7,7 +7,7 @@
 	"itemKind": "language",
 	"description": {
 		"de": "Rust ist eine systemnahe Programmiersprache. Rust arbeitet mit Typen statt einer Garbage Collection um Speichermanagement zu verbessern.",
-		"en": ""
+		"en": "Rust is a systems programming language focused on performance, reliability, and memory safety."
 	},
 	"homepage": "https://rust-lang.org/",
 	"tags": ["programmierung", "sprache"],
@@ -30,7 +30,7 @@
 		"url": "https://rust-lang.org/learn/"
 	},
 	"license": "MIT",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

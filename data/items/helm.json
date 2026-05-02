@@ -24,7 +24,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-05-01",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -37,6 +37,10 @@
 		{
 			"type": "url",
 			"url": "https://www.cncf.io/projects/helm/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.cncf.io/"
 		}
 	]
 }

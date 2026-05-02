@@ -6,7 +6,7 @@
 	"itemKind": "service",
 	"description": {
 		"de": "iOS ist das Betriebssystem für die Arbeit auf mobilen Endgeräten von Apple.",
-		"en": ""
+		"en": "iOS is a mobile operating system by Apple for iPhones, iPads, and iPod Touch."
 	},
 	"homepage": "https://www.apple.com/de/os/ios/",
 	"tags": ["mobil", "app", "betriebssystem"],
@@ -24,7 +24,7 @@
 		"noTelemetryByDefault": false,
 		"ownerType": "corporation"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

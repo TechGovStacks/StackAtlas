@@ -5,7 +5,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "JSON Web Encryption ist ein IETF-Standard, der eine standardisierte Syntax für den Austausch verschlüsselter Daten basierend auf JSON und Base64 bereitstellt.",
-		"en": ""
+		"en": "JSON Web Encryption (JWE) is an IETF standard that provides a standardized syntax for encrypted data exchange."
 	},
 	"oss": false,
 	"tags": [],
@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc7516",
 	"license": "IETF-RFC",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

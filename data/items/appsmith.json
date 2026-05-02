@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Appsmith will die Erstellung individueller Admin-Panels und interner Apps mit vorgefertigten Widgets und Datenquellenanbindung beschleunigen.",
-		"en": ""
+		"en": "Appsmith enables rapid creation of custom admin panels and internal apps with pre-built components."
 	},
 	"homepage": "https://www.appsmith.com/",
 	"tags": ["rest-graphql", "open-source", "drag-drop", "javascript"],
@@ -30,7 +30,7 @@
 		"url": "https://github.com/appsmithorg/appsmith"
 	},
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

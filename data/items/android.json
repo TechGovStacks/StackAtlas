@@ -6,7 +6,7 @@
 	"itemKind": "service",
 	"description": {
 		"de": "Android ist ein offenes Betriebssystem für die Arbeit auf mobilen Endgeräten.",
-		"en": ""
+		"en": "Android is an open operating system for mobile devices developed by Google."
 	},
 	"homepage": "https://www.android.com/",
 	"tags": ["mobil", "app", "betriebssystem"],
@@ -29,7 +29,7 @@
 		"url": "https://source.android.com/docs?hl=de"
 	},
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

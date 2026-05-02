@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "platform",
 	"description": {
-		"de": "Rook ist ein quelloffener (Open Source), Cloud-native Storage-Orchestrator, der speziell dafür entwickelt wurde, Speicherlösungen wie Ceph nahtlos in Kubernetes-Umgebungen zu integrieren. Er fungiert als intelligenter „Operator“, der die Bereitstellung, Konfiguration und Verwaltung von Speicherressourcen automatisiert und diese in moderne, containerbasierte Infrastrukturen überführt. Rook verwandelt statischen Speicher in einen dynamischen, selbstverwalteten Dienst, der perfekt auf die Anforderungen agiler Cloud-Plattformen abgestimmt ist."
+		"de": "Rook ist ein quelloffener (Open Source), Cloud-native Storage-Orchestrator, der speziell dafür entwickelt wurde, Speicherlösungen wie Ceph nahtlos in Kubernetes-Umgebungen zu integrieren. Er fungiert als intelligenter „Operator“, der die Bereitstellung, Konfiguration und Verwaltung von Speicherressourcen automatisiert und diese in moderne, containerbasierte Infrastrukturen überführt. Rook verwandelt statischen Speicher in einen dynamischen, selbstverwalteten Dienst, der perfekt auf die Anforderungen agiler Cloud-Plattformen abgestimmt ist.",
+		"en": "Rook is an open-source cloud-native storage orchestrator for Kubernetes."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

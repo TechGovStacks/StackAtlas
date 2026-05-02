@@ -17,16 +17,16 @@
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": true,
-		"hasAudit": false,
-		"permissiveLicense": false,
+		"hasAudit": true,
+		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": false,
+		"noTelemetryByDefault": true,
 		"ownerType": "corporation"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -35,6 +35,14 @@
 		{
 			"type": "url",
 			"url": "https://github.com/camunda/camunda-bpm-platform"
+		},
+		{
+			"type": "url",
+			"url": "https://camunda.com/blog/2024/07/camunda-security-iso-27001-upgrade-soc-2-type-2/"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.camunda.io/docs/self-managed/console-deployment/telemetry/"
 		}
 	]
 }

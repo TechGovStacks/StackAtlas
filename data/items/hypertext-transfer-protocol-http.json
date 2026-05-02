@@ -6,7 +6,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "HTTP wird verwendet um Ressoucen wie Webseiten, APIs, Formulare, Bilder oder Videos abzurufen und zu senden.",
-		"en": ""
+		"en": "HTTP (Hypertext Transfer Protocol) is used to retrieve and send resources such as web pages, APIs, forms, images, or videos."
 	},
 	"homepage": "https://datatracker.ietf.org/wg/httpbis/documents/",
 	"tags": ["protocol", "web", "standard", "ietf", "transport"],
@@ -20,9 +20,10 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

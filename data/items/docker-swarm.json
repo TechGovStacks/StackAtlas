@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Docker Swarm ist ein in die Docker-Engine integriertes Orchestrierungswerkzeug mit dem mehrere Docker-Hosts gebündelt werden können. Derart kann ein Cluster definiert werden. Es automatisiert das Deployment, die Skalierung und die Verwaltung von Containern und bietet eine einfache Benutzeroberfläche und integrierte Funktionen wie Service Discovery, Lastenausgleich und hohe Verfügbarkeit.",
-		"en": ""
+		"en": "Docker Swarm is an orchestration tool integrated into the Docker Engine that allows multiple Docker hosts to be managed as a single virtual host."
 	},
 	"homepage": "https://www.docker.com/",
 	"tags": ["orchestrierung", "container"],
@@ -30,7 +30,7 @@
 		"url": "https://docs.docker.com/engine/swarm/"
 	},
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

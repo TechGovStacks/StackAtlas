@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "platform",
 	"description": {
-		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Netzwerk Dateisystem' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen."
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Netzwerk Dateisystem' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": "Network File System is a distributed file system protocol for accessing files over a network."
 	},
 	"oss": true,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://www.rfc-editor.org/rfc/rfc7530.html",
 	"license": "IETF",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
