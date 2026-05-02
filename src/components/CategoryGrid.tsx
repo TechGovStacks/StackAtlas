@@ -136,6 +136,7 @@ export function CategoryGrid({
 					className="col-span-2 justify-start"
 					_max={totalPages}
 					_page={currentPage}
+					_pageSize={ITEMS_PER_PAGE}
 					_on={{
 						onChangePage: (_e: Event, page: number) => setCurrentPage(page),
 					}}
