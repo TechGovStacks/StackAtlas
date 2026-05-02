@@ -21,14 +21,14 @@ type KolibriLanguage = NonNullable<NonNullable<Parameters<typeof register>[2]>['
 
 const KOLIBRI_FALLBACK_LANGUAGE: KolibriLanguage = 'en';
 const APP_TO_KOLIBRI_LANGUAGE: Readonly<Record<LanguageCode, KolibriLanguage>> = {
-	da: 'da',
+	da: 'en',
 	de: 'de',
 	en: 'en',
-	es: 'es',
-	fr: 'fr',
-	it: 'it',
-	no: 'no',
-	sv: 'sv',
+	es: 'en',
+	fr: 'en',
+	it: 'en',
+	no: 'en',
+	sv: 'en',
 };
 const warnedKolibriFallbackLanguages = new Set<string>();
 
