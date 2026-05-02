@@ -67,6 +67,10 @@ export default defineConfig({
 			registerType: isPwaEnabled ? 'prompt' : undefined,
 			includeAssets: isPwaEnabled ? ['favicon.ico', 'icons/*.png', 'assets/**/*', 'logos/*.svg'] : [],
 			strategies: 'injectManifest',
+			devOptions: {
+				enabled: true,
+				type: 'module',
+			},
 			srcDir: 'src',
 			filename: 'sw.ts',
 			manifest: {
