@@ -19,17 +19,29 @@ self.addEventListener('message', (event: ExtendableMessageEvent) => {
 });
 
 // SPA-Fallback: alle Navigations-Requests auf die gecachte index.html leiten
-registerRoute(new NavigationRoute(createHandlerBoundToURL('./index.html')));
+// Im Dev-Modus ist __WB_MANIFEST leer → createHandlerBoundToURL wirft, daher Fallback auf Netzwerk
+const navigationHandler = (() => {
+	try {
+		return createHandlerBoundToURL('./index.html');
+	} catch {
+		return () => fetch('./index.html');
+	}
+})();
+registerRoute(new NavigationRoute(navigationHandler));
 
 async function cacheFirst(cacheName: string, request: Request): Promise<Response> {
 	const cached = await caches.match(request);
 	if (cached) return cached;
-	const response = await fetch(request);
-	if (response.ok || response.type === 'opaque') {
-		const cache = await caches.open(cacheName);
-		await cache.put(request, response.clone());
+	try {
+		const response = await fetch(request);
+		if (response.ok || response.type === 'opaque') {
+			const cache = await caches.open(cacheName);
+			await cache.put(request, response.clone());
+		}
+		return response;
+	} catch {
+		return Response.error();
 	}
-	return response;
 }
 
 async function networkFirst(cacheName: string, request: Request): Promise<Response> {
