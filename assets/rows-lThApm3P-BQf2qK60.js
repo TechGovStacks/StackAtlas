@@ -1,1 +1,0 @@
-import{ft as e}from"./index-C1FkSf_d.js";var t=(t,n)=>{e(t,`_rows`,n,{min:1})};export{t};

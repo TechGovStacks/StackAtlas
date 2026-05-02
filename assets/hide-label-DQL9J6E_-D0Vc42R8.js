@@ -1,0 +1,1 @@
+import{ut as e}from"./index-B3elEngz.js";var t=(t,n,r={})=>{e(t,`_hideLabel`,n,r)};export{t};
