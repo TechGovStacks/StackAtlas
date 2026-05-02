@@ -7,8 +7,8 @@
  *   node scripts/find-missing-icons.mjs [--output=report.json]
  */
 
-import { readdirSync, readFileSync, existsSync, writeFileSync } from 'fs';
-import { join, dirname } from 'path';
+import { readdirSync, writeFileSync } from 'fs';
+import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -37,7 +37,7 @@ function main() {
 		const existingLogos = new Set(
 			readdirSync(LOGOS_DIR)
 				.filter((f) => f.endsWith('.svg'))
-				.map((f) => f.replace('.svg', ''))
+				.map((f) => f.replace('.svg', '')),
 		);
 
 		console.log(`📊 Audit Results:`);
