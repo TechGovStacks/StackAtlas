@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "platform",
 	"description": {
-		"de": "SCIM (System for Cross-Domain Identity Management) ist ein als REST API konzipierter offener Standard für den aktiven Austausch von Informationen zu Identitäten, Gruppen und anderen Ressourcen einer Organisation zwischen Identity-Providern und Anwendungen."
+		"de": "SCIM (System for Cross-Domain Identity Management) ist ein als REST API konzipierter offener Standard für den aktiven Austausch von Informationen zu Identitäten, Gruppen und anderen Ressourcen einer Organisation zwischen Identity-Providern und Anwendungen.",
+		"en": "System for Cross-domain Identity Management is an open standard for identity information exchange."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -16,18 +16,18 @@
 	"oss": false,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
-		"openSource": true,
+		"openSource": false,
 		"euHeadquartered": false,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": false,
-		"noTelemetryByDefault": false,
+		"noTelemetryByDefault": true,
 		"ownerType": "corporation"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -36,6 +36,18 @@
 		{
 			"type": "url",
 			"url": "https://github.com/hashicorp/terraform"
+		},
+		{
+			"type": "url",
+			"url": "https://spacelift.io/blog/terraform-license-change"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/hashicorp/terraform/blob/main/telemetry.go"
+		},
+		{
+			"type": "url",
+			"url": "https://www.hashicorp.com/en/trust/security"
 		}
 	]
 }

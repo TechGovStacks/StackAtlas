@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "tool",
 	"description": {
-		"de": "SPDX ist ein Standardformat für Software Bill of Materials (SBOM) und Lizenzinformationen. Er macht transparent, welche Komponenten in einer Softwarelieferkette enthalten sind und unter welchen Bedingungen sie genutzt werden."
+		"de": "SPDX ist ein Standardformat für Software Bill of Materials (SBOM) und Lizenzinformationen. Er macht transparent, welche Komponenten in einer Softwarelieferkette enthalten sind und unter welchen Bedingungen sie genutzt werden.",
+		"en": "SPDX is an open standard for software bill of materials and license information."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

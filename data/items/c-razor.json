@@ -2,13 +2,16 @@
 	"id": "c-razor",
 	"name": "C# Razor",
 	"layer": "building-blocks",
-	"itemKind": "language",
+	"sublayer": "frameworks",
+	"itemKind": "framework",
 	"description": {
-		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Serverseitige Web Templates' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
-		"en": ""
+		"de": "Razor ist eine Markup-Syntax für die Erstellung dynamischer Webseiten mit C#. Sie ermöglicht die Einbettung von serverseitigem Code in HTML und ist ein Kernbestandteil von ASP.NET Core.",
+		"en": "Razor is a markup syntax for creating dynamic web pages using C#. It enables embedding server-side code within HTML and is a core component of ASP.NET Core."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["templating", "web", "csharp", "aspnet"],
+	"homepage": "https://dotnet.microsoft.com/en-us/apps/aspnet",
+	"license": "MIT",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -18,11 +21,10 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
 	},
-	"homepage": "https://dotnet.microsoft.com/en-us/apps/aspnet",
-	"license": "MIT",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -31,6 +33,14 @@
 		{
 			"type": "url",
 			"url": "https://dotnet.microsoft.com/en-us/platform/free"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/ASP.NET_Razor"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/dotnet/vscode-csharp/issues/7136"
 		}
 	]
 }

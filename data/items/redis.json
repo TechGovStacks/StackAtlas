@@ -3,6 +3,7 @@
 	"name": "Redis",
 	"layer": "platform",
 	"sublayer": "daten",
+	"groupKey": "nosql-db",
 	"itemKind": "platform",
 	"description": {
 		"de": "Redis ist eine schnelle, in-memory arbeitende Schlüssel-Wert-Datenbank. Sie wird typischerweise für Caching, Session-Speicher, Pub/Sub und Echtzeit-Lastspitzen in skalierbaren GovTech-Anwendungen eingesetzt.",
@@ -16,7 +17,7 @@
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": false,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
@@ -25,7 +26,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "corporation"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -34,6 +35,14 @@
 		{
 			"type": "url",
 			"url": "https://github.com/redis/redis"
+		},
+		{
+			"type": "url",
+			"url": "https://trust.redis.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://redis.io/blog/redis-iso-27001-cybersecurity-certification/"
 		}
 	]
 }

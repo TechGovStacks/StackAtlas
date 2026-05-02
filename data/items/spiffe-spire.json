@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "platform",
 	"description": {
-		"de": "SPIFFE ist ein offener Standard für workload-basierte Identitäten in verteilten Systemen. SPIRE ist die Referenzimplementierung, die automatisch kryptografische Identitätszertifikate (SVIDs) für Dienste ausstellt, verwaltet und rotiert."
+		"de": "SPIFFE ist ein offener Standard für workload-basierte Identitäten in verteilten Systemen. SPIRE ist die Referenzimplementierung, die automatisch kryptografische Identitätszertifikate (SVIDs) für Dienste ausstellt, verwaltet und rotiert.",
+		"en": "SPIFFE (Secure Production Identity Framework for Everyone) with SPIRE provides identity management for distributed systems."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

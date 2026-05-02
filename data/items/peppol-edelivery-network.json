@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "platform",
 	"description": {
-		"de": "Das auf AS4 basierende Peppol eDelivery Network dient dem sichereren Austausch von strukturierten Daten (Peppol BIS) im B2G und B2B Bereich. Es nutzt eine Reihe technischer Spezifikationen und Prozessdefinitionen. Diese Spezifikationen ermöglichen es Peppol-zertifizierten Dienstleistern, die erforderliche semantische und technische Interoperabilität im Auftrag der Peppol-Endbenutzer bereitzustellen.\n \nZu diesen Spezifikationen gehören insbesondere: Packaging and Security specifications; Messaging specifications; Capability Lookup and Addressing specifications; ggf. Peppol Authority-governed specifications. ( eDelivery Documentation - OpenPeppol: https://peppol.org/documentation/technical-documentation/edelivery-documentation/)"
+		"de": "Das auf AS4 basierende Peppol eDelivery Network dient dem sichereren Austausch von strukturierten Daten (Peppol BIS) im B2G und B2B Bereich. Es nutzt eine Reihe technischer Spezifikationen und Prozessdefinitionen. Diese Spezifikationen ermöglichen es Peppol-zertifizierten Dienstleistern, die erforderliche semantische und technische Interoperabilität im Auftrag der Peppol-Endbenutzer bereitzustellen.\n \nZu diesen Spezifikationen gehören insbesondere: Packaging and Security specifications; Messaging specifications; Capability Lookup and Addressing specifications; ggf. Peppol Authority-governed specifications. ( eDelivery Documentation - OpenPeppol: https://peppol.org/documentation/technical-documentation/edelivery-documentation/)",
+		"en": "The AS4-based Peppol eDelivery Network serves the secure exchange of structured data in procurement."
 	},
 	"oss": true,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://peppol.org/",
 	"license": "CC0-1.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

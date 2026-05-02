@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "format",
 	"description": {
-		"de": "Standards für Software-Lokalisierung (gettext)"
+		"de": "Standards für Software-Lokalisierung (gettext)",
+		"en": "PO/MO format with XLIFF is a standard for localization and translation files."
 	},
 	"oss": false,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://docs.oasis-open.org/xliff/xliff-core/v2.1/xliff-core-v2.1.html",
 	"license": "OASIS",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

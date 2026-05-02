@@ -6,7 +6,7 @@
 	"itemKind": "language",
 	"description": {
 		"de": "Swift dient für die Entwicklung von Apps für Apple-Geräte.",
-		"en": ""
+		"en": "Swift is a programming language for developing apps for Apple devices (iOS, macOS, watchOS, tvOS)."
 	},
 	"homepage": "https://www.swift.org/",
 	"tags": ["multi-plattform", "programmierung", "sprache"],
@@ -29,7 +29,7 @@
 		"url": "https://www.swift.org/documentation/"
 	},
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

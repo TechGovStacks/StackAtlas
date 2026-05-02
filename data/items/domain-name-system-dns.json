@@ -6,7 +6,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Das DNS ist ein hierarchisches, dezentrales Namensauflösungssystem, das menschenlesbare Domainnamen in IP-Adressen übersetzt. DNS ist fundamental für das Funktionieren des modernen Internets und ermöglicht die Navigation zwischen verschiedenen Online-Diensten.",
-		"en": ""
+		"en": "DNS (Domain Name System) is a hierarchical, decentralized name resolution system for translating domain names to IP addresses."
 	},
 	"homepage": "https://datatracker.ietf.org/wg/dns/",
 	"tags": ["adresse", "netzwerk"],
@@ -28,7 +28,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://tools.ietf.org/html/rfc7858"
 	},
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

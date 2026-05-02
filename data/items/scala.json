@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "language",
 	"description": {
-		"de": "Hybride Programmiersprache mit Unterstützung für die JVM, JavaScript und Native Entwicklung, die objektorientierte (OO) und funktionale Programmierung (FP) vereint."
+		"de": "Hybride Programmiersprache mit Unterstützung für die JVM, JavaScript und Native Entwicklung, die objektorientierte (OO) und funktionale Programmierung (FP) vereint.",
+		"en": "Scala is a general-purpose programming language that combines object-oriented and functional programming."
 	},
 	"oss": true,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://www.scala-lang.org/",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

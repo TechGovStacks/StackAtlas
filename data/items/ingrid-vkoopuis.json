@@ -5,7 +5,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "InGrid (Projekt-Webseite: https://ingrid-oss.eu/) ist eine modular aufgebaute Softwareplattform (Details: https://ingrid-oss.eu/8.2.0/components/overview/), Kernkomponenten sind\n\n- ein Portalframework zur Recherche und Darstellung von Daten und Informationen, \n\n- ein Harvester für externe Datenquellen, \n\n- ein Metadaten-Katalog zum Nachweis von Geo-, Umwelt- und offenen Daten, \n\n- ein Katalogsystem zur Umsetzung der Anforderungen der UVP-Richtlinie, \n\n- eine Visualisierungskomponente für OGC WMS/WMTS-konforme Kartendienste, \n\n- eine Zeitreihendatenbank auf Basis der OGC Sensorthings-API, \n\n- ein Client zur Visualisierung von Zeitreihendaten auf Basis des Masterportals (https://www.masterportal.org/) sowie \n\n- diverse An- und Abfrageschnittstellen für die Recherche angeschlossener Komponenten und die Weiterleitung der Ergebnisse an externe Systeme, z. B. Geoportal.de (OGC CSW/API Records) und Govdata.de (DCAT-AP.de).\n\nDokumentation des Projekts: https://ingrid-oss.eu/.\n\nDas Projekt InGrid arbeitet seit 2014 unter dem organisatorischen Dach der Kooperation bei Konzeptionen und Entwicklungen von Software für Umweltinformationssysteme (KoopUIS: https://www.blag-udig.de/KoopUIS-Organisation-340.html) der Bund/Länder-Arbeitsgemeinschaft Umwelt und Digitalisierung (BLAG UDig: https://www.blag-udig.de/) der Umweltministerkonferenz. Projektpartner sind zahlreiche Behörden des Bundes und der Länder (https://ingrid-oss.eu/8.2.0/contributing/partner/).\n\nInGrid-Komponenten werden in allen Ländern und beim Bund eingesetzt, einige produktive Beispielapplikationen:\n\n- Bundesamt für Kartographie und Geodäsie: https://mis.bkg.bund.de/  \n\n- Bundesanstalt für Wasserbau: https://datenrepository.baw.de/ \n\n- Arbeitsgemeinschaft der Vermessungsverwaltungen der Länder der Bundesrepublik Deutschland: https://advmis.geodatenzentrum.de/   \n\n- UVP-Verbund-Portal: https://www.uvp-verbund.de/  \n\n- Metadatenverbund BB, HB, HH, HE, MV, SL, SN, ST: https://metaver.de/  \n\n- Nds. Umweltinformationsportal: https://numis.niedersachsen.de/  \n\n- Umweltgeodaten BW: https://rips-metadaten.lubw.de/  \n\nInGrid wird als Open Source Software unter der European Union Public License (https://interoperable-europe.ec.europa.eu/collection/eupl) entwickelt und laufend an aktuelle fachliche und sicherheitstechnische Anforderungen und Bedarfe angepasst. Der Quellcode wird auf GitHub (https://github.com/informationgrid) bereitgestellt, eine Spiegelung zu OpenCode (https://opencode.de/de) befindet sich derzeit in Vorbereitung.",
-		"en": ""
+		"en": "InGrid (project website: https://ingrid-oss.eu/) is a modular software platform (details: https://www.ingrid-oss.eu/en/about-ingrid/) developed by public administration for public administration."
 	},
 	"oss": true,
 	"tags": [],
@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://ingrid-oss.eu/",
 	"license": "EUPL-1.2",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

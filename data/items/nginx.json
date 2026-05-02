@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "NGINX ein Open-Source-Webserver der auch als Reverse-Proxy, HTTP-Cache und Load-Balancer eingesetzt wird. Er ist bekannt für seine hohe Leistung bei der Verarbeitung vieler gleichzeitiger Anfragen, seine Effizienz bei geringer Speichernutzung und seine Flexibilität.",
-		"en": ""
+		"en": "Nginx is an open-source web server, reverse proxy, and load balancer."
 	},
 	"homepage": "https://nginx.org/",
 	"tags": ["proxy", "load-balancer", "gateway", "orchestrierung"],
@@ -35,7 +35,7 @@
 		"githubStars": 23500,
 		"dockerWeeklyPulls": 8500000
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

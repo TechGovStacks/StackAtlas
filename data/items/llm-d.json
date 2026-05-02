@@ -5,7 +5,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "llm-d ist ein Kubernetes-natives, verteiltes Inferenz-Framework für skalierbares LLM-Serving auf Cluster-Ebene mit Disaggregated Prefill/Decode und KV-Cache-Aware Routing.",
-		"en": ""
+		"en": "llm-d is a Kubernetes-native, distributed inference framework for scalable LLM serving on clusters."
 	},
 	"oss": true,
 	"tags": [],
@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://github.com/llm-d/llm-d",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -7,7 +7,7 @@
 	"itemKind": "tool",
 	"description": {
 		"de": "GitHub Actions können Entwicklungsprozesse automatisieren und anpassen (CI/CD).",
-		"en": ""
+		"en": "GitHub Actions can automate and customize development processes (CI/CD)."
 	},
 	"homepage": "https://github.com/actions",
 	"tags": ["ci-cd", "automation", "github", "workflow"],
@@ -21,9 +21,10 @@
 		"selfHostable": false,
 		"dataPortability": false,
 		"openStandards": true,
-		"noTelemetryByDefault": false
+		"noTelemetryByDefault": false,
+		"ownerType": "corporation"
 	},
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

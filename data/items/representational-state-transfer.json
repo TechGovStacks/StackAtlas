@@ -7,7 +7,7 @@
 	"itemKind": "standard",
 	"description": {
 		"de": "REST ist ein Architekturstil für verteilte Systeme, der 2000 von Roy Fielding definiert wurde. REST basiert auf den etablierten Web-Standards HTTP, URI und JSON und ermöglicht eine einfache, skalierbare Kommunikation zwischen verschiedenen Systemen über das Internet. REST Schnittstellen folgen einem ressourcenorientierten Ansatz mit einheitlichen Schnittstellen und sind zustandslos konzipiert.",
-		"en": ""
+		"en": "REST (Representational State Transfer) is an architectural style for distributed systems, defined by Roy Fielding in 2000."
 	},
 	"homepage": "https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm",
 	"tags": ["schnittstelle"],
@@ -25,7 +25,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "community"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -6,7 +6,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "SMTPS dient dem sicheren Austausch von E-Mails.",
-		"en": ""
+		"en": "SMTPS provides secure email exchange using TLS encryption."
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc8314",
 	"tags": ["msa", "e-mail", "mta", "datenuebertragung", "mua"],
@@ -24,7 +24,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -5,7 +5,7 @@
 	"itemKind": "tool",
 	"description": {
 		"de": "Standard for video based communications services",
-		"en": ""
+		"en": "Janus Server is a WebRTC media server for real-time audio, video, and data streaming."
 	},
 	"tags": ["negz-import", "unresearched"],
 	"oss": true,
@@ -21,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "community"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

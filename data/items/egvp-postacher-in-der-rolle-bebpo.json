@@ -5,7 +5,7 @@
 	"itemKind": "service",
 	"description": {
 		"de": "Über den D-Stack sollten Behörden Zugang zu dem jeweiligen BeBPo bekommen. Stichwort \"BeBpo as a Service\"",
-		"en": ""
+		"en": "Via the D-Stack, authorities should get access to the respective BeBPo. This is a key component for electronic communication."
 	},
 	"tags": ["negz-import", "researched"],
 	"oss": true,
@@ -21,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

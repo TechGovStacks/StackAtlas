@@ -6,7 +6,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "RAGFlow wird als Engine für Retrieval-Augmented Generation (RAG) eingesetzt um Ergebnisse anhand von Kontext zu verbessern beziehungsweise die Wissensbasis zu erweitern.",
-		"en": ""
+		"en": "RAGFlow is an engine for Retrieval-Augmented Generation (RAG) applications to enhance LLM results."
 	},
 	"homepage": "https://ragflow.io/",
 	"tags": ["retrieval-augmented-generation", "rag", "verarbeitung"],
@@ -28,7 +28,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://ragflow.io/docs/dev/"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -4,7 +4,8 @@
 	"layer": "platform",
 	"itemKind": "platform",
 	"description": {
-		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Technische Integration Nvidia Accelerator in Kubernetes' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen."
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Technische Integration Nvidia Accelerator in Kubernetes' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": "NVIDIA GPU Operator automates the management of GPU resources in Kubernetes clusters."
 	},
 	"oss": true,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://docs.nvidia.com/datacenter/cloud-native/gpu-operator/latest/index.html",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

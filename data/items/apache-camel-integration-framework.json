@@ -19,13 +19,13 @@
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": false,
+		"openStandards": true,
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
 	"homepage": "https://camel.apache.org/",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-05-01",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -46,6 +46,14 @@
 		{
 			"type": "url",
 			"url": "https://camel.apache.org/manual/latest/"
+		},
+		{
+			"type": "url",
+			"url": "https://apache.org/press/highlights"
+		},
+		{
+			"type": "url",
+			"url": "https://camel.apache.org/camel-quarkus/3.27.x/reference/extensions/observability-services.html"
 		}
 	]
 }

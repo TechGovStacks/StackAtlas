@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "platform",
 	"description": {
-		"de": "Presto ist eine verteilte SQL-Query-Engine für föderierte Abfragen über heterogene Datenquellen: von Iceberg-Tabellen über relationale Datenbanken bis zu Object Storage."
+		"de": "Presto ist eine verteilte SQL-Query-Engine für föderierte Abfragen über heterogene Datenquellen: von Iceberg-Tabellen über relationale Datenbanken bis zu Object Storage.",
+		"en": "Presto is an open-source distributed SQL query engine for big data analytics."
 	},
 	"oss": true,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://trino.io/",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

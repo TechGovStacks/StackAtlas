@@ -25,7 +25,7 @@
 	},
 	"homepage": "https://azure.microsoft.com/en-us/products/container-registry",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-05-01",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -38,6 +38,14 @@
 		{
 			"type": "url",
 			"url": "https://learn.microsoft.com/en-us/azure/container-registry/"
+		},
+		{
+			"type": "url",
+			"url": "https://learn.microsoft.com/en-us/azure/container-registry/container-registry-image-formats"
+		},
+		{
+			"type": "url",
+			"url": "https://learn.microsoft.com/en-us/azure/container-registry/monitor-container-registry"
 		}
 	]
 }

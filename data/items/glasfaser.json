@@ -6,7 +6,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Mit Glasfaser können Daten durch dünne Fasern in Lichtgeschwindigkeit übertragen werden. Im Kern werden Glasfaser für die Backbones genutzt aber zunehmend bis zum Endanschluss ausgebaut.",
-		"en": ""
+		"en": "Fiber optic technology enables data transmission at the speed of light through thin glass fibers. It is primarily used for backbone networks and is increasingly being extended to end-user connections."
 	},
 	"homepage": "https://www.itu.int/",
 	"tags": ["gigabit", "kabel"],
@@ -28,7 +28,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://www.itu.int/itu-t/recommendations/index.aspx?ser=G"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

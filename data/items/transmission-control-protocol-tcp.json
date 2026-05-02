@@ -7,7 +7,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "TCP ist in Verbindung mit IP Kern für die Funktionsfähigkeit des Internet. Die Datenübertragung erfolgt durch Zerlegung in einzelne Pakete inklusive der Sicherstellung der Übermittlung.",
-		"en": ""
+		"en": "TCP (Transmission Control Protocol) with IP is core to internet functionality, ensuring reliable data transmission."
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc9293",
 	"tags": ["paket", "datenuebertragung", "zustellung", "datenintegritaet"],
@@ -25,7 +25,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

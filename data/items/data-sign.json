@@ -6,7 +6,7 @@
 	"layer": "infrastructure",
 	"description": {
 		"de": "Data Sign ist eine anbieterunhabhängige Signatur- und Siegelplattform, die einen einheitlichen Zugang zum europäischen Markt der Vertrauensdiensteanbieter zur Verfügung stellt. Im Sinne eines Basisdienstes stellt DATA Sign einen zentralen Zugang für Fachverfahren und E-Akten Systemen bereit. DATA Sign ist bereits ein Produkt des ITPLR und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung. Sign hat eine eigene Benutzeroverfläche und stellt darüber einen Basisworkflow bereit um Mehrfachzeichnungen umzusetzen.  Dieser Baustein ist ein Produkt des ITPLR und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung. Diese Lösung ist in vielen Ländern schon als Basisdienst etabliert.",
-		"en": ""
+		"en": "DATA Sign is a vendor-independent signature and seal platform that provides uniform access to the European market of trust service providers."
 	},
 	"oss": false,
 	"tags": [],
@@ -19,15 +19,20 @@
 		"selfHostable": true,
 		"dataPortability": false,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
 	"homepage": "https://www.init.de/en/",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
 			"url": "https://www.init.de/en/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/en/produkte/data-sign/"
 		}
 	]
 }

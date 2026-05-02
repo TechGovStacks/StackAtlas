@@ -1,14 +1,17 @@
 {
 	"id": "bruno",
 	"name": "Bruno",
-	"layer": "sovereign-standards",
+	"layer": "building-blocks",
+	"sublayer": "tools",
 	"itemKind": "tool",
 	"description": {
-		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'API Client für Entwickler' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
-		"en": ""
+		"de": "Bruno ist ein Open-Source-API-Client-Werkzeug als leichtgewichtige Alternative zu Postman und Insomnia. Er ermöglicht das Erkunden und Testen von APIs mit lokaler Datenhaltung.",
+		"en": "Bruno is an open-source API client tool, a lightweight alternative to Postman and Insomnia. It enables exploring and testing APIs with local-first data storage."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["api", "client", "testing", "postman-alternative"],
+	"homepage": "https://www.usebruno.com/",
+	"license": "MIT",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -17,12 +20,11 @@
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": false,
-		"noTelemetryByDefault": true
+		"openStandards": true,
+		"noTelemetryByDefault": false,
+		"ownerType": "community"
 	},
-	"homepage": "https://www.usebruno.com/",
-	"license": "MIT",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -31,6 +33,14 @@
 		{
 			"type": "url",
 			"url": "https://www.usebruno.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/usebruno/bruno/blob/main/license.md"
+		},
+		{
+			"type": "url",
+			"url": "https://www.usebruno.com/security"
 		}
 	]
 }

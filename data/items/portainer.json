@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Portainer ist eine benutzerfreundliche, webbasierte Management-Plattform für Container, die es ermöglicht, Docker- und Kubernetes-Umgebungen mit einer einfachen Oberfläche zu verwalten und zu überwachen.",
-		"en": ""
+		"en": "Portainer is an open-source management UI for containerized environments like Docker and Kubernetes."
 	},
 	"homepage": "https://www.portainer.io/",
 	"tags": ["orchestrierung"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://github.com/portainer"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

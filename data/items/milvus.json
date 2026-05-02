@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Milvus ist eine Vektor-Datenbank.",
-		"en": ""
+		"en": "Milvus is an open-source vector database for AI applications."
 	},
 	"homepage": "https://milvus.io/de",
 	"tags": ["datenbank", "vektor"],
@@ -30,7 +30,7 @@
 		"url": "https://milvus.io/docs/de"
 	},
 	"license": "AGPL-3.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -5,7 +5,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "Das \"Lightweight Directory Access Protocol\" ist ein offener Standard zum Abruf von Informationen über Identitäten und Organisationsstrukturen (z.B. Gruppen) mit Optionen zur Authentifikation. LDAP wird flankiert von RfCs zur Standardisierung der Datenformate.",
-		"en": ""
+		"en": "The Lightweight Directory Access Protocol is an open standard for retrieving information from directory services."
 	},
 	"oss": true,
 	"tags": [],
@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol",
 	"license": "RFC",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

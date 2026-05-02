@@ -6,7 +6,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Private Container Registry' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
-		"en": ""
+		"en": "The technology forms a binding architecture and functional component within the D-Stack. It defines an organization-wide technical standard and serves as a reference for consistent, interoperable, and reusable implementations."
 	},
 	"oss": true,
 	"tags": [],
@@ -19,10 +19,11 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
 	},
 	"homepage": "https://goharbor.io/",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

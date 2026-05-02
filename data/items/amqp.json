@@ -9,6 +9,8 @@
 	},
 	"oss": true,
 	"tags": ["messaging", "protocol", "open-standard", "oasis"],
+	"homepage": "https://www.amqp.org/",
+	"license": "OASIS RF on RAND",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -21,9 +23,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"homepage": "https://www.amqp.org/",
-	"license": "OASIS RF on RAND",
-	"lastResearchDate": "2026-05-01",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -40,6 +40,14 @@
 		{
 			"type": "url",
 			"url": "https://qpid.apache.org/releases/qpid-broker-j-9.2.1/book/Java-Broker-Introduction.html"
+		},
+		{
+			"type": "url",
+			"url": "https://www.oasis-open.org/news/announcements/60-day-public-review-for-advanced-message-queueing-protocol-amqp-v1-0-candidate-o/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.amqp.org/node/102"
 		}
 	]
 }

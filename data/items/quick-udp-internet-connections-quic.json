@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "QUIC ist ein verbindungsorientiertes, performantes und verschlüsseltes Protokoll für die Datenübertragung.",
-		"en": ""
+		"en": "QUIC is a connection-oriented, high-performance, encrypted protocol for data transmission."
 	},
 	"homepage": "https://quicwg.org/",
 	"tags": ["sicherheit", "datenuebertragung"],
@@ -30,7 +30,7 @@
 		"url": "https://github.com/quicwg"
 	},
 	"license": "MIT",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

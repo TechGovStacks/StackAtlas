@@ -7,7 +7,7 @@
 	"itemKind": "format",
 	"description": {
 		"de": "YAML ist ein Datenformat für den Datenaustausch.",
-		"en": ""
+		"en": "YAML is a data serialization format for data exchange, human-readable and widely used in configuration files."
 	},
 	"homepage": "https://yaml.org/",
 	"tags": ["datenformat"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://github.com/yaml/"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

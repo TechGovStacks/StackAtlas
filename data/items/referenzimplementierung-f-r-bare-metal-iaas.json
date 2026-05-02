@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "platform",
 	"description": {
-		"de": "metal-stack.io (Bare-Metal IaaS Plattform)\n\nmetal-stack.io ist eine Open-Source-Plattform zur automatisierten Bereitstellung und Verwaltung von physischer Server-Infrastruktur („Bare Metal as a Service“). Sie stellt Cloud-ähnliche Funktionen wie Provisionierung, Netzwerkmanagement und Lifecycle-Steuerung über APIs bereit und ermöglicht den Betrieb souveräner Infrastruktur auf eigener Hardware."
+		"de": "metal-stack.io (Bare-Metal IaaS Plattform)\n\nmetal-stack.io ist eine Open-Source-Plattform zur automatisierten Bereitstellung und Verwaltung von physischer Server-Infrastruktur („Bare Metal as a Service“). Sie stellt Cloud-ähnliche Funktionen wie Provisionierung, Netzwerkmanagement und Lifecycle-Steuerung über APIs bereit und ermöglicht den Betrieb souveräner Infrastruktur auf eigener Hardware.",
+		"en": "Reference implementation for bare metal IaaS provides a standard implementation for cloud infrastructure."
 	},
 	"oss": true,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://canonical.com/maas",
 	"license": "AGPL-3.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

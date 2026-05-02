@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Piveau ist ein Datenmanagement Werkzeug für die Verarbeitungskette von der Erfassung, Aggregation, Bereitstellung bis zur Nutzung der Daten.",
-		"en": ""
+		"en": "Piveau is a data management tool for the processing chain from collection, aggregation, to publication of open data."
 	},
 	"homepage": "https://www.piveau.de/",
 	"tags": ["aggregation", "datennutzung", "bereitstellung", "erfassung", "datenkonvertierung"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://interoperable-europe.ec.europa.eu/collection/open-data/solution/piveau"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

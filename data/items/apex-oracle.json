@@ -19,13 +19,13 @@
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": false,
-		"noTelemetryByDefault": true,
+		"openStandards": true,
+		"noTelemetryByDefault": false,
 		"ownerType": "corporation"
 	},
 	"homepage": "https://www.oracle.com/database/technologies/appdev/apex.html",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-05-01",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -50,6 +50,14 @@
 		{
 			"type": "url",
 			"url": "https://en.wikipedia.org/wiki/Oracle_Application_Express"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.oracle.com/database/apex-18.1/AEADM/monitoring-activity-within-a-workspace.htm"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.oracle.com/database/apex-18.1/HTMDB/creating-custom-activity-reports-using-apex_activity_log.htm"
 		}
 	]
 }

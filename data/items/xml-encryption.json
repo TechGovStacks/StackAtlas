@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "standard",
 	"description": {
-		"de": "Verschlüsselung von XML-Nachrichten, um eine Nicht-Einsehbarkeit umzusetzen. Siehe DSGVO, Art. 5."
+		"de": "Verschlüsselung von XML-Nachrichten, um eine Nicht-Einsehbarkeit umzusetzen. Siehe DSGVO, Art. 5.",
+		"en": "XML Encryption is a W3C standard for encrypting XML data elements."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

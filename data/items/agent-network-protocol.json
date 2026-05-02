@@ -7,7 +7,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "ANP ermöglicht sichere, dezentralisierte Kommunikation zwischen KI-Agenten über offene Internet-Infrastrukturen. Fungiert als standardisiertes Peer-to-Peer-Protokoll für agentengesteuerte Kollaborationen und etabliert ein \"HTTP für das Agent-Internet-Zeitalter\" durch interoperable Identitätsverwaltung und semantische Datenverknüpfung.",
-		"en": ""
+		"en": "ANP enables secure, decentralized communication between AI agents over the open internet."
 	},
 	"homepage": "https://agent-network-protocol.com/",
 	"tags": ["agent", "kommunikation", "agentische-ki"],
@@ -26,7 +26,7 @@
 		"ownerType": "independentConsortium"
 	},
 	"license": "MIT",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

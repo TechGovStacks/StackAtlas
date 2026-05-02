@@ -14,18 +14,18 @@
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": true,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
-		"dataPortability": false,
+		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": true,
 		"ownerType": "corporation"
 	},
 	"homepage": "https://www.axonivy.com/",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-05-01",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -42,6 +42,10 @@
 		{
 			"type": "url",
 			"url": "https://www.axonivy.com/company/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.saasworthy.com/product/axon-ivy"
 		}
 	]
 }

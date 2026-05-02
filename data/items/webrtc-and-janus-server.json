@@ -4,7 +4,8 @@
 	"layer": "applications",
 	"itemKind": "service",
 	"description": {
-		"de": "Standard for video based communications services"
+		"de": "Standard for video based communications services",
+		"en": "WebRTC with Janus Server enables real-time communication (video, audio, data) in web applications."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "community"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

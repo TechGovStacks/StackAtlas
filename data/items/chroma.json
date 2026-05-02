@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Chroma ist eine Vektor-Datenbank.",
-		"en": ""
+		"en": "Chroma is a vector database for AI applications, enabling efficient similarity search."
 	},
 	"homepage": "https://www.trychroma.com/",
 	"tags": ["datenbank", "vektor"],
@@ -30,7 +30,7 @@
 		"url": "https://docs.trychroma.com/docs/overview/introduction"
 	},
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

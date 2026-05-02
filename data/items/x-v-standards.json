@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "standard",
 	"description": {
-		"de": "XÖV ist die Familie standardisierter XML-basierter Datenaustauschformate für die öffentliche Verwaltung in Deutschland. Sie definiert strukturierte Nachrichten und gemeinsame Semantiken für Fachverfahren und Register."
+		"de": "XÖV ist die Familie standardisierter XML-basierter Datenaustauschformate für die öffentliche Verwaltung in Deutschland. Sie definiert strukturierte Nachrichten und gemeinsame Semantiken für Fachverfahren und Register.",
+		"en": "X-V standards are a family of standards for digital administration and interoperability in Germany."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

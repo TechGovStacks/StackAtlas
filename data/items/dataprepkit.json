@@ -4,11 +4,13 @@
 	"layer": "building-blocks",
 	"itemKind": "tool",
 	"description": {
-		"de": "DPK ist ein Open-Source-Toolkit für skalierbare Datenaufbereitung von Trainings- und RAG-Daten für LLMs, mit Modulen für Deduplizierung, PII-Filterung und Qualitätsbewertung.",
-		"en": ""
+		"de": "DataPrepKit (DPK) ist ein Open-Source-Toolkit für skalierbare Datenaufbereitung von Trainings- und RAG-Daten für LLMs. Es bietet Module für Deduplizierung, PII-Filterung und Qualitätsbewertung.",
+		"en": "DataPrepKit (DPK) is an open-source toolkit for scalable data preparation of training and RAG data for AI applications. It provides modules for deduplication, PII filtering, and quality assessment."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["data-preparation", "llm", "ai", "deduplication", "pii-filtering"],
+	"homepage": "https://github.com/data-prep-kit/data-prep-kit",
+	"license": "Apache-2.0",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -18,11 +20,10 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
 	},
-	"homepage": "https://github.com/data-prep-kit/data-prep-kit",
-	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

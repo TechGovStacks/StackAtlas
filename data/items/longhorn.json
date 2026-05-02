@@ -5,7 +5,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Longhorn ist eine leichtgewichtige, cloud-native Block-Storage-Lösung für Kubernetes. Es verwandelt lokalen Festplattenspeicher von Cluster-Knoten in hochverfügbare, replizierte Speicher-Pools. Als CNCF-Projekt bietet es Funktionen wie inkrementelle Snapshots, Backups und Disaster Recovery, die einfach über ein grafisches Dashboard oder Kubernetes-Ressourcen verwaltet werden können.",
-		"en": ""
+		"en": "Longhorn is a lightweight, cloud-native block storage solution for Kubernetes. It transforms Kubernetes clusters into powerful storage platforms."
 	},
 	"oss": true,
 	"tags": [],
@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://longhorn.io/",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

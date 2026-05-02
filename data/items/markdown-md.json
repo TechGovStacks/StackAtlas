@@ -7,7 +7,7 @@
 	"itemKind": "format",
 	"description": {
 		"de": "MD ist ein Datenformat für den Datenaustausch.",
-		"en": ""
+		"en": "Markdown is a lightweight markup language for formatting plain text."
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc7763",
 	"tags": ["datenformat"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://daringfireball.net/projects/markdown/"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

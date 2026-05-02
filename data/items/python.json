@@ -6,7 +6,7 @@
 	"itemKind": "language",
 	"description": {
 		"de": "Python ist eine Programmiersprache zur Webentwicklung und für Prototyping.",
-		"en": ""
+		"en": "Python is a programming language for web development, data analysis, prototyping, and general-purpose programming."
 	},
 	"homepage": "https://www.python.org/",
 	"tags": ["programmierung", "sprache"],
@@ -29,7 +29,7 @@
 		"url": "https://docs.python.org/3/"
 	},
 	"license": "PSF",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

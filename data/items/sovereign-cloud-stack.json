@@ -21,7 +21,7 @@
 		"euHeadquartered": true,
 		"hasAudit": false,
 		"permissiveLicense": true,
-		"matureProject": true,
+		"matureProject": false,
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
@@ -29,7 +29,7 @@
 		"ownerType": "independentConsortium"
 	},
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -38,6 +38,10 @@
 		{
 			"type": "url",
 			"url": "https://github.com/SovereignCloudStack"
+		},
+		{
+			"type": "url",
+			"url": "https://sovereigncloudstack.org/ueber-scs/"
 		}
 	]
 }

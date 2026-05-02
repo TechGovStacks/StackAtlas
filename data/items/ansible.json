@@ -22,11 +22,11 @@
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": false,
-		"noTelemetryByDefault": true,
+		"openStandards": true,
+		"noTelemetryByDefault": false,
 		"ownerType": "corporation"
 	},
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -43,6 +43,14 @@
 		{
 			"type": "url",
 			"url": "https://en.wikipedia.org/wiki/Ansible_(software)"
+		},
+		{
+			"type": "url",
+			"url": "https://www.redhat.com/en/about/press-releases/ibm-closes-landmark-acquisition-red-hat-34-billion-defines-open-hybrid-cloud-future"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.redhat.com/en/documentation/red_hat_ansible_automation_platform/2.4/html/automation_controller_administration_guide/controller-usability-analytics-data-collection"
 		}
 	]
 }

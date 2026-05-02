@@ -6,7 +6,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "ONNX ist ein offener Standard zur Darstellung von Machine Learning-Modellen, der die Interoperabilität zwischen verschiedenen AI-Frameworks ermöglicht. Der Standard definiert ein erweiterbares Berechnungsmodell sowie Standard-Datentypen und Operatoren, wodurch Modelle zwischen Frameworks wie PyTorch, TensorFlow, scikit-learn und anderen portiert werden können. ONNX fungiert als universelle \"Sprache\" für neuronale Netzwerke und eliminiert die Notwendigkeit komplexer Konvertierungs-Pipelines zwischen verschiedenen ML-Ökosystemen.",
-		"en": ""
+		"en": "ONNX (Open Neural Network Exchange) is an open standard for representing machine learning models, enabling interoperability between frameworks."
 	},
 	"homepage": "https://onnx.ai/",
 	"tags": ["machine-learning", "neuronale-netze", "verarbeitung", "ml"],
@@ -28,7 +28,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://github.com/onnx/onnx"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

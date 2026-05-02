@@ -7,7 +7,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "Ermöglicht sichere Netzwerk-Authentifizierung durch ein Ticket-basiertes System ohne Übertragung von Passwörtern über das Netzwerk. Fungiert als vertrauenswürdiger Drittanbieter (Key Distribution Center) für Single Sign-On in Enterprise-Umgebungen und stellt mutual Authentication zwischen Clients und Services sicher.",
-		"en": ""
+		"en": "Kerberos is a network authentication protocol for secure client-server communication."
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc4120",
 	"tags": ["authentifizierung", "token", "zugriff", "autorisierung"],
@@ -30,7 +30,7 @@
 		"url": "https://web.mit.edu/kerberos/"
 	},
 	"license": "MIT",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

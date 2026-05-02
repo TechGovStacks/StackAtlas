@@ -6,7 +6,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Neo4j ist eine Graphdatenbank.",
-		"en": ""
+		"en": "Neo4j is a graph database for storing and querying highly connected data."
 	},
 	"homepage": "https://neo4j.com/",
 	"tags": ["nosql", "datenbank", "graph"],
@@ -29,7 +29,7 @@
 		"url": "https://neo4j.com/docs/"
 	},
 	"license": "SSPL-1.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

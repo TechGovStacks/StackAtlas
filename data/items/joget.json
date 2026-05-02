@@ -6,7 +6,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Joget beschleunigt die Entwicklung und Automatisierung von Enterprise-Anwendungen mit visuellem Builder, Governance-Funktionen und neuen AI-Fähigkeiten in DX 9.",
-		"en": ""
+		"en": "Joget is an open-source low-code application platform for building enterprise applications."
 	},
 	"homepage": "https://www.joget.org/",
 	"tags": ["plugins", "no-code-low-code", "ai", "workflow", "java"],
@@ -28,7 +28,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://joget.com/joget-earns-govstack-software-requirements-compliance-helping-governments-fast-track-digital-transformation/"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

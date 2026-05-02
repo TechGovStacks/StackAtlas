@@ -7,7 +7,7 @@
 	"itemKind": "language",
 	"description": {
 		"de": "C++ ist eine objektorientierte Programmiersprache für die Entwicklung von Systemsoftware.",
-		"en": ""
+		"en": "C++ is an object-oriented programming language for system software development."
 	},
 	"homepage": "https://en.cppreference.com/w/c",
 	"tags": ["programmierung", "sprache"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://isocpp.org/std/standing-documents"
 	},
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

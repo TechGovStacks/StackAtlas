@@ -5,7 +5,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "DATA Varuna ermöglicht die Prüfung von Signaturen und Siegeln, damit stellt DATA Varuna einen flexibel einsetzbaren Baustein dar, der in verschiedensten Einsatzszenarien Anwendung findet. Im Rahmen der elektronischen Aktenführung ist die Prüfung der kryptografisch gesicherter Daten essenziell für die rechtskonforme Aktenfühung. Diese Daten können Dokumente, Vertrauensanker, Nachweise (QEAA) und weitere sein. Dieser Baustein ist ein Produkt des ITPLR und steht Bund sowie Ländern bereits ohne zusätzliche Lizenzkosten zur Verfügung. Diese Lösung ist in vielen Ländern schon als Basisdienst etabliert.",
-		"en": ""
+		"en": "DATA Varuna enables the verification of signatures and seals, thus providing DATA Varuna with a flexible validation service."
 	},
 	"oss": false,
 	"tags": [],
@@ -18,11 +18,12 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
 	"homepage": "https://www.governikus.de/en/produkte/data-varuna/",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

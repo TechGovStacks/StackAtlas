@@ -7,7 +7,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "OIDC erweitert OAuth 2.0 um standardisierte Authentifizierung und Identitätsverwaltung durch ID Tokens, ermöglicht einheitliche Benutzeranmeldung über verschiedene Anwendungen hinweg und stellt strukturierte Identitätsinformationen in einem interoperablen Format bereit.",
-		"en": ""
+		"en": "OpenID Connect extends OAuth 2.0 with standardized authentication and identity management."
 	},
 	"homepage": "https://openid.net/developers/how-connect-works/",
 	"tags": ["authentifizierung", "protokoll", "zugriff"],
@@ -30,7 +30,7 @@
 		"url": "https://openid.net/specs/openid-connect-core-1_0.html#:~:text=Final:%20OpenID%20Connect%20Core%201.0%20incorporating%20errata%20set%202"
 	},
 	"license": "Various",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

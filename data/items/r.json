@@ -6,7 +6,7 @@
 	"itemKind": "language",
 	"description": {
 		"de": "R ist eine Programmiersprache Analyse, Bereinigung, Modellierung und Visualisierung von Daten.",
-		"en": ""
+		"en": "R is a programming language for statistical analysis, data cleaning, modeling, and visualization."
 	},
 	"homepage": "https://www.r-project.org/",
 	"tags": ["programmierung", "sprache"],
@@ -25,7 +25,7 @@
 		"ownerType": "independentConsortium"
 	},
 	"license": "GPL-2.0-or-later",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

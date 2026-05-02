@@ -7,7 +7,7 @@
 	"sublayer": "daten",
 	"description": {
 		"de": "DCAT dient der Beschreibung von Daten in Datenkatalogen.",
-		"en": ""
+		"en": "DCAT (Data Catalog Vocabulary) is used for describing datasets in data catalogs."
 	},
 	"homepage": "https://www.w3.org/TR/vocab-dcat-3/",
 	"tags": ["datenkatalog", "open-data"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://github.com/SEMICeu/DCAT-AP"
 	},
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

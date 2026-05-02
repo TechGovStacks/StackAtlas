@@ -4,7 +4,8 @@
 	"layer": "sovereign-standards",
 	"itemKind": "format",
 	"description": {
-		"de": "PDF/A ist der ISO-standardisierte (ISO 19005) Archivierungsstandard für langzeitstabile Dokumente"
+		"de": "PDF/A ist der ISO-standardisierte (ISO 19005) Archivierungsstandard für langzeitstabile Dokumente",
+		"en": "PDF/A is the ISO-standardized (ISO 19005) archival standard for long-term stable documents."
 	},
 	"oss": false,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://pdfa.org/resource/iso-19005-pdfa/",
 	"license": "ISO",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

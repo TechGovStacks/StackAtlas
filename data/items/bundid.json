@@ -16,16 +16,16 @@
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": true,
-		"hasAudit": false,
-		"permissiveLicense": true,
+		"hasAudit": true,
+		"permissiveLicense": false,
 		"matureProject": true,
-		"selfHostable": true,
+		"selfHostable": false,
 		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -34,6 +34,14 @@
 		{
 			"type": "url",
 			"url": "https://www.bmi.bund.de/bundid"
+		},
+		{
+			"type": "url",
+			"url": "https://bmi.usercontent.opencode.de/eudi-wallet/eidas2/en/faq/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.digitale-verwaltung.de/Webs/DV/EN/digital-identities/digital-identities.html"
 		}
 	]
 }

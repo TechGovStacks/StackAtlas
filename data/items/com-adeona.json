@@ -4,11 +4,13 @@
 	"layer": "building-blocks",
 	"itemKind": "tool",
 	"description": {
-		"de": "COM ist eine Ergänzungskomponente für die Kommunikaiton mit dem NOOTS. Diese Lösung sollte zenral zur Verfügung gestellt werden und dezentral betrieben werden.",
-		"en": ""
+		"de": "COM Adeona ist eine Ergänzungskomponente für die Kommunikation mit dem NOOTS. Diese Lösung sollte zentral zur Verfügung gestellt werden und dezentral betrieben werden. Sie nutzt offene Standards wie XÖV und XTA für die Anbindung.",
+		"en": "COM Adeona is a supplementary component for communication with NOOTS. This solution should be provided centrally and operated decentrally. It uses open standards such as XÖV and XTA for connectivity."
 	},
 	"oss": false,
-	"tags": [],
+	"tags": ["governikus", "noots", "xoev", "data-exchange"],
+	"homepage": "https://www.governikus.de/en/produkte/com-adeona/",
+	"license": "Proprietary",
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": true,
@@ -16,17 +18,28 @@
 		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
-		"dataPortability": false,
-		"openStandards": false,
-		"noTelemetryByDefault": true
+		"dataPortability": true,
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
-	"homepage": "https://www.governikus.de/en/produkte/com-adeona/",
-	"license": "Proprietary",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
 			"url": "https://www.governikus.de/en/produkte/com-adeona/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/2025/04/10/eine-einfache-loesung-zur-anbindung-an-das-noots/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/en/xoev-standards-im-kontext-der-registermodernisierung/"
 		}
 	]
 }

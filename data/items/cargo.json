@@ -6,7 +6,7 @@
 	"layer": "building-blocks",
 	"description": {
 		"de": "Buildtool für Rust-basierte Anwendungen.",
-		"en": ""
+		"en": "Build tool for Rust-based applications."
 	},
 	"oss": true,
 	"tags": [],
@@ -19,11 +19,12 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": false,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
 	},
 	"homepage": "https://doc.rust-lang.org/cargo/",
 	"license": "MIT OR Apache-2.0",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

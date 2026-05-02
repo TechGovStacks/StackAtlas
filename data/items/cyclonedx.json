@@ -5,10 +5,12 @@
 	"itemKind": "tool",
 	"description": {
 		"de": "CycloneDX ist ein offenes SBOM-Format zur Beschreibung von Softwarekomponenten, Abhängigkeiten und Schwachstellenbezügen. Es wird häufig für Security- und Compliance-Automatisierung in modernen Entwicklungs- und Betriebsumgebungen genutzt.",
-		"en": ""
+		"en": "CycloneDX is an open SBOM format for describing software components, dependencies, and vulnerability references. It is frequently used for security and compliance automation in modern development and operations environments."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["sbom", "security", "compliance", "owasp"],
+	"homepage": "https://cyclonedx.org/",
+	"license": "Apache-2.0",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -18,11 +20,10 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
 	},
-	"homepage": "https://cyclonedx.org/",
-	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -31,6 +32,10 @@
 		{
 			"type": "url",
 			"url": "https://github.com/CycloneDX/specification"
+		},
+		{
+			"type": "url",
+			"url": "https://owasp.org/www-project-cyclonedx/"
 		}
 	]
 }

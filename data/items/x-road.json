@@ -25,7 +25,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -34,6 +34,10 @@
 		{
 			"type": "url",
 			"url": "https://github.com/nordic-institute/X-Road"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Nordic_Institute_for_Interoperability_Solutions"
 		}
 	]
 }

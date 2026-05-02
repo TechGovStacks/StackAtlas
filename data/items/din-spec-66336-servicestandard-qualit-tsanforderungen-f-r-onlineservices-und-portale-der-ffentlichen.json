@@ -5,7 +5,7 @@
 	"itemKind": "standard",
 	"description": {
 		"de": "Die DIN SPEC 66336 definiert überprüfbare Qualitätsanforderungen für Onlineservices und -portale der öffentlichen Verwaltung. Sie bildet die fachlich-inhaltliche Grundlage für die Qualitätsanforderungen der Verordnung über Standards für den Onlinezugang zu Verwaltungsleistungen (OZSV, § 2 i. V. m. § 6 Abs. 1 OZG); bestehende Angebote haben Übergangsfrist bis 31.03.2030, neue Angebote ab 01.01.2028 müssen die Anforderungen sofort erfüllen.",
-		"en": ""
+		"en": "DIN SPEC 66336 defines verifiable quality requirements for online services and portals of public administration in Germany."
 	},
 	"oss": false,
 	"tags": [],
@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://www.din.de/en/getting-involved/standards-committees/nid/din-spec/wdc-beuth:din21:371369268",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "CouchDB ist eine dokumentenorientierte NoSQL-Datenbank.",
-		"en": ""
+		"en": "CouchDB is a document-oriented NoSQL database with built-in replication."
 	},
 	"homepage": "https://couchdb.apache.org/",
 	"tags": ["nosql", "datenbank", "dokumentenbasiert"],
@@ -30,7 +30,7 @@
 		"url": "https://docs.couchdb.org/en/stable/"
 	},
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

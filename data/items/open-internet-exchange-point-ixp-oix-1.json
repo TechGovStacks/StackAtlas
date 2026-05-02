@@ -6,7 +6,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "IXP OIX-1 ist eine Zertifizierung für Internet-Knotenpunkte (IXPs) für die Sicherstellung verschiedener Standards zu Leistungsfähigkeit, Verfügbarkeit, Ausfallsicherheit und Datensicherheit. Ein IXP verbindet Internetdienstanbieter (ISPs) und Content-Netzwerke (CDNs) um den Datenverkehr zu optimieren.",
-		"en": ""
+		"en": "IXP OIX-1 is a certification for Internet Exchange Points (IXPs) ensuring standardization and interoperability."
 	},
 	"homepage": "https://www.oix.org/standards-and-certifications/ixp-oix-1-certification/",
 	"tags": ["netz", "netzwerk", "internet-exchange-point", "ixp"],
@@ -28,7 +28,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://www.oix.org/"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

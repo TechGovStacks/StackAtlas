@@ -3,13 +3,14 @@
 	"name": "Axolotl",
 	"layer": "platform",
 	"sublayer": "ki",
-	"itemKind": "platform",
+	"groupKey": "llm-framework",
+	"itemKind": "framework",
 	"description": {
-		"de": "Axolotl ist ein Framework zum Feintuning von großen Sprachmodellen. Dafür können optimierte Workflows genutzt werden.",
-		"en": ""
+		"de": "Axolotl ist ein Framework zum Feintuning von großen Sprachmodellen. Es unterstützt verschiedene Architekturen und Optimierungstechniken wie LoRA und QLoRA.",
+		"en": "Axolotl is a framework for fine-tuning large language models with support for various architectures and optimization techniques like LoRA and QLoRA."
 	},
 	"homepage": "https://axolotl.ai/",
-	"tags": ["verarbeitung", "training", "feintuning"],
+	"tags": ["verarbeitung", "training", "feintuning", "llm"],
 	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
@@ -20,15 +21,15 @@
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": false,
-		"noTelemetryByDefault": true,
+		"openStandards": true,
+		"noTelemetryByDefault": false,
 		"ownerType": "community"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://docs.axolotl.ai/"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -37,6 +38,14 @@
 		{
 			"type": "url",
 			"url": "https://axolotl.ai/"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.axolotl.ai/"
+		},
+		{
+			"type": "url",
+			"url": "https://axolotlai.substack.com/p/fine-tuning-llms-as-a-cost-strategy"
 		}
 	]
 }

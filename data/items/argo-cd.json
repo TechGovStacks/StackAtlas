@@ -19,13 +19,13 @@
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": false,
+		"openStandards": true,
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
 	"homepage": "https://argoproj.github.io/cd/",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-05-01",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -41,7 +41,11 @@
 		},
 		{
 			"type": "url",
-			"url": "https://www.cncf.io/blog/2022/07/19/ostifs-audit-of-argo-is-complete-critical-and-high-severity-security-issues-found-and-fixed/"
+			"url": "https://ostif.org/our-audit-of-argo-is-complete-critical-and-high-severity-security-issues-found-and-fixed/"
+		},
+		{
+			"type": "url",
+			"url": "https://argo-cd.readthedocs.io/en/latest/operator-manual/metrics/"
 		}
 	]
 }

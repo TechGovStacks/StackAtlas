@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "platform",
 	"description": {
-		"de": "Werkzeug zur automatisierten Prüfung elektronischer Dokumente im behördenübergreifenden Datenaustausch und in der Kommunikation mit Unternehmen\n\nDer Validator ist eine einheitliche Open-Source-Lösung zur automatisierten Prüfung von XML-strukturierten Dokumenten. Er reduziert manuelle Qualitätsprüfungen eingehender und ausgehender Dokumente erheblich. Seine modulare Architektur erlaubt eine feingranulare Konfiguration für unterschiedliche Anwendungsszenarien. Zum Einsatz kommen ausschließlich offene Standards und Komponenten wie XML, XML Schema, Schematron, OpenAPI, Saxon, Picocli und Jakarta.\n\nhttps://github.com/itplr-kosit/validator"
+		"de": "Werkzeug zur automatisierten Prüfung elektronischer Dokumente im behördenübergreifenden Datenaustausch und in der Kommunikation mit Unternehmen\n\nDer Validator ist eine einheitliche Open-Source-Lösung zur automatisierten Prüfung von XML-strukturierten Dokumenten. Er reduziert manuelle Qualitätsprüfungen eingehender und ausgehender Dokumente erheblich. Seine modulare Architektur erlaubt eine feingranulare Konfiguration für unterschiedliche Anwendungsszenarien. Zum Einsatz kommen ausschließlich offene Standards und Komponenten wie XML, XML Schema, Schematron, OpenAPI, Saxon, Picocli und Jakarta.\n\nhttps://github.com/itplr-kosit/validator",
+		"en": "Validator is a tool for automated validation of electronic documents across agencies."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

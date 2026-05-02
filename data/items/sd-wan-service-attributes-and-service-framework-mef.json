@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "MEF definiert SD-WAN Services und Attribute. SD-WAN ist eine Technologie zur Verbindung weit entfernter Netzwerksegemente über verschiedene Anschlusstypen/ Medien.",
-		"en": ""
+		"en": "MEF defines SD-WAN services and attributes. SD-WAN is a technology for connecting wide area networks."
 	},
 	"homepage": "https://www.mplify.net/resources/mef-70-2-sd-wan-service-attributes-and-service-framework/",
 	"tags": ["netz", "sd-wan", "netzwerk", "wide-area", "wan"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://www.mplify.net/service-standards/overlay-services/sd-wan/"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

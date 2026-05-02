@@ -4,7 +4,8 @@
 	"layer": "sovereign-standards",
 	"itemKind": "framework",
 	"description": {
-		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Cloud-native .NET Entwicklung' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen."
+		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Cloud-native .NET Entwicklung' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen.",
+		"en": "ASP.NET Core Aspire is a cloud-ready stack for building observable, production-ready applications with .NET."
 	},
 	"oss": true,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://learn.microsoft.com/en-us/dotnet/aspire/get-started/aspire-overview",
 	"license": "MIT",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

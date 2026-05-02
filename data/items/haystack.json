@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Haystack ist Framework für die Entwicklung von KI-Anwendungen. Das Framework ermöglicht es Entwicklern, produktionsreife Systeme für Aufgaben wie Retrieval-Augmented Generation (RAG), Dokumentensuche und Frage-Antwort-Systeme zu erstellen.",
-		"en": ""
+		"en": "Haystack is a framework for developing AI applications. It enables developers to build production-ready systems for tasks such as Retrieval-Augmented Generation (RAG), document search, and question-answering systems."
 	},
 	"homepage": "https://haystack.deepset.ai/",
 	"tags": ["rag", "llm", "nlp", "ai-framework", "document-search"],
@@ -21,9 +21,10 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
 	},
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -4,11 +4,13 @@
 	"layer": "building-blocks",
 	"itemKind": "tool",
 	"description": {
-		"de": "Bill of material Standard (ECMA 424) Cyclone DX",
-		"en": ""
+		"de": "cdxgen ist ein OWASP CycloneDX-Tool zur Generierung von Software Bill of Materials (SBOM). Es unterstützt zahlreiche Programmiersprachen und Paketmanager und kann in CI/CD-Pipelines integriert werden.",
+		"en": "cdxgen is an OWASP CycloneDX tool for generating Software Bill of Materials (SBOM). It supports many programming languages and package managers and can be integrated into CI/CD pipelines."
 	},
-	"tags": ["negz-import", "researched"],
+	"tags": ["sbom", "security", "cyclonedx", "owasp", "negz-import", "researched"],
 	"oss": true,
+	"homepage": "https://github.com/CycloneDX/cdxgen",
+	"license": "Apache-2.0",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -21,8 +23,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"homepage": "https://github.com/CycloneDX/cdxgen",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -31,6 +32,14 @@
 		{
 			"type": "url",
 			"url": "https://cyclonedx.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://appsecsanta.com/cdxgen"
+		},
+		{
+			"type": "url",
+			"url": "https://owasp.org/blog/2025/08/11/cyclonedx-projects-in-github-sosf"
 		}
 	]
 }

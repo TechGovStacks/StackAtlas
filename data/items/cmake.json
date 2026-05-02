@@ -3,9 +3,10 @@
 	"name": "CMake",
 	"layer": "building-blocks",
 	"itemKind": "tool",
+	"groupKey": "build-tool",
 	"description": {
 		"de": "Buildtool für C++-basierte Anwendungen.",
-		"en": ""
+		"en": "Build tool for C++-based applications"
 	},
 	"oss": true,
 	"tags": [],
@@ -18,11 +19,12 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": false,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
 	"homepage": "https://cmake.org/",
 	"license": "BSD-3-Clause",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

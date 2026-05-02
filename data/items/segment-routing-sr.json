@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Segment Routing ist eine Technologie zur Vereinfachung des Routens von Daten. Zur Optimierung werden Pfadinformationen im Header gespeichert.",
-		"en": ""
+		"en": "Segment Routing simplifies routing by dividing paths into segments for optimization."
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc8402",
 	"tags": ["netz", "netzwerk", "segment", "routing"],
@@ -25,7 +25,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -6,7 +6,7 @@
 	"itemKind": "format",
 	"description": {
 		"de": "RDF ist ein Datenformat für den Datenaustausch.",
-		"en": ""
+		"en": "RDF (Resource Description Framework) is a data format for data exchange on the semantic web."
 	},
 	"homepage": "https://www.w3.org/RDF/",
 	"tags": ["datenformat"],
@@ -28,7 +28,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://www.w3.org/standards/techs/rdf"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

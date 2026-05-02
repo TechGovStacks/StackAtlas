@@ -6,7 +6,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "DHCP ermöglicht automatische Netzwerkkonfiguration durch dynamische Zuweisung von IP-Adressen und Netzwerkparametern an verbundene Geräte. Fungiert als zentraler Service für Plug-and-Play-Netzwerkkonnektivität und reduziert manuellen Administrationsaufwand in lokalen und Unternehmensnetzwerken.",
-		"en": ""
+		"en": "DHCP (Dynamic Host Configuration Protocol) enables automatic network configuration through dynamic IP address assignment."
 	},
 	"homepage": "https://datatracker.ietf.org/wg/dhc/about/",
 	"tags": ["adresse", "netzwerk"],
@@ -28,7 +28,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://datatracker.ietf.org/doc/html/rfc8415"
 	},
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

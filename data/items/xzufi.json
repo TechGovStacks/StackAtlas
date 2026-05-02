@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "standard",
 	"description": {
-		"de": "Ein Standard des IT-Planungsrates. XZuFi dient dem produkt- und herstellerunabhängigen Austausch von Informationen zu Verwaltungsleistungen und den hierfür zuständigen Organisationseinheiten."
+		"de": "Ein Standard des IT-Planungsrates. XZuFi dient dem produkt- und herstellerunabhängigen Austausch von Informationen zu Verwaltungsleistungen und den hierfür zuständigen Organisationseinheiten.",
+		"en": "XZuFi is a standard by the IT Planning Council for product- and vendor-independent file access in administration."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

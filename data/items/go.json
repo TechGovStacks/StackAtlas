@@ -7,7 +7,7 @@
 	"itemKind": "language",
 	"description": {
 		"de": "Go ist eine Programmiersprache für Cloud- und Netzwerkanwendungen.",
-		"en": ""
+		"en": "Go is a programming language for cloud and network applications developed by Google."
 	},
 	"homepage": "https://go.dev/",
 	"tags": ["programmierung", "sprache"],
@@ -30,7 +30,7 @@
 		"url": "https://go.dev/ref/spec"
 	},
 	"license": "BSD-3-Clause",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

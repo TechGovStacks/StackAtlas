@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Node-RED ist eine Open-Source-Software, die es ermöglicht, visuell Programmierflüsse zu erstellen. Diese Software wird häufig im Bereich der Internet der Dinge (IoT) und zur Automatisierung von Prozessen eingesetzt.",
-		"en": ""
+		"en": "Node-RED is a flow-based programming tool for event-driven applications."
 	},
 	"homepage": "https://nodered.org/",
 	"tags": ["no-code", "javascript", "low-code"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://nodered.org/docs/developing-flows/"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

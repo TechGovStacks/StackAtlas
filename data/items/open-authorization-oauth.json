@@ -6,7 +6,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "Ermöglicht sichere Autorisierung und delegierten Zugriff auf Ressourcen ohne Preisgabe von Benutzeranmeldedaten. Fungiert als standardisiertes Framework für die Berechtigung von Drittanbieter-Anwendungen zum Zugriff auf geschützte APIs und Benutzerdaten.",
-		"en": ""
+		"en": "Open Authorization enables secure authorization and delegated access to resources without revealing user credentials."
 	},
 	"homepage": "https://oauth.net/2/",
 	"tags": ["protokoll", "zugriff", "autorisierung"],
@@ -28,7 +28,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://datatracker.ietf.org/doc/html/rfc6750"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

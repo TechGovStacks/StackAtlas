@@ -4,7 +4,8 @@
 	"layer": "applications",
 	"itemKind": "service",
 	"description": {
-		"de": "Standardisierte, browserbasierte Videokommunikation zur Durchführung synchroner Interaktionen zwischen Verwaltung und Bürgern. Ermöglicht terminierte und Ad-hoc-Kommunikation sowie Integration in Fachverfahren, Identitätsdienste und Portale."
+		"de": "Standardisierte, browserbasierte Videokommunikation zur Durchführung synchroner Interaktionen zwischen Verwaltung und Bürgern. Ermöglicht terminierte und Ad-hoc-Kommunikation sowie Integration in Fachverfahren, Identitätsdienste und Portale.",
+		"en": "WebRTC-based video communication interface enables standardized, browser-based synchronous video communication."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

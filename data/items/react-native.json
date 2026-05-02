@@ -7,7 +7,7 @@
 	"itemKind": "tool",
 	"description": {
 		"de": "React Native ist ein Open-Source-Framework zur Entwicklung nativer iOS- und Android-Apps mit React und JavaScript/TypeScript aus einer gemeinsamen Codebasis.",
-		"en": ""
+		"en": "React Native is an open-source framework for developing native iOS and Android applications using JavaScript."
 	},
 	"homepage": "https://reactnative.dev/",
 	"tags": ["mobile", "cross-platform", "user-interface"],
@@ -30,7 +30,7 @@
 		"url": "https://reactnative.dev/docs/getting-started"
 	},
 	"license": "MIT",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

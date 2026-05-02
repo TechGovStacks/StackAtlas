@@ -5,7 +5,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Kubewarden ist ein cloud-native Policy-Governance-Framework für Kubernetes, das als dynamischer Admission Controller fungiert. Es ermöglicht die Definition, Validierung und Mutation von Cluster-Ressourcen basierend auf plattformübergreifenden Richtlinien (Policies).",
-		"en": ""
+		"en": "Kubewarden is a cloud-native policy governance framework for Kubernetes that acts as a dynamic admission controller."
 	},
 	"oss": true,
 	"tags": [],
@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://www.kubewarden.io/",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "protocol",
 	"description": {
-		"de": "Online Services Computer Interface – kurz OSCI – sind Protokollstandards für den sicheren elektronischen Nachrichtenaustausch über das Internet und andere Netze. Sie garantieren Integrität, Authentizität, Vertraulichkeit und Nachweisbarkeit der Daten und ermöglichen ihre medienbruchfreie, effiziente Verarbeitung."
+		"de": "Online Services Computer Interface – kurz OSCI – sind Protokollstandards für den sicheren elektronischen Nachrichtenaustausch über das Internet und andere Netze. Sie garantieren Integrität, Authentizität, Vertraulichkeit und Nachweisbarkeit der Daten und ermöglichen ihre medienbruchfreie, effiziente Verarbeitung.",
+		"en": "Online Services Computer Interface (OSCI) defines protocol standards for secure electronic message exchange over the internet using SOAP."
 	},
 	"oss": true,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://www.xoev.de/osci-xta-3355",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

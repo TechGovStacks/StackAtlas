@@ -2,13 +2,16 @@
 	"id": "eforms-unterschwelle",
 	"name": "eForms Unterschwelle",
 	"layer": "infrastructure",
+	"groupKey": "eforms",
 	"itemKind": "platform",
 	"description": {
-		"de": "In der Standardfamilie XStandards Einkauf sind alle maßgeblichen Standards für die Beschaffung in Deutschland zusammengefasst. Alle Standards stellen nationale Konkretisierungen europäischer und internationaler Normen und Standards dar. Grundlage sind in der Regel europäische Normen (CEN basierend auf Normungsaufträgen der Europäischen Kommission) oder internationale Standards (Peppol Business Interoperability Specifications). XStandards Einkauf sind dabei konsequent auf Digitalisierung und Automatisierung über den gesamten Beschaffungsprozess ausgerichtet. Dies wird durch Fokus auf maschinenlesbare Formate (reines XML), Bündelung der Expertise in Bund-Länder-Kommunen-Arbeitsgruppen und Bereitstellung von technischen Komponenten zur Implementierung. Alle Standards werden transparent und open source entwickelt, die Bereitstellung aller Standards und Komponenten erfolgt kostenfrei und frei zugänglich. Die XStandards Einkauf gewährleisten zentrale normative Anforderungen in aktuellen Beschaffungsvorhaben von Bund und Ländern (Marktplatz Deutschland, Marktplatz Deutschland Digital, Lizenzmanagement Bund, Konsolidierung der eRechnungsplattform).",
-		"en": ""
+		"de": "eForms Unterschwelle ist Teil der XStandards Einkauf Standardfamilie. Alle Standards stellen nationale Konkretisierungen europäischer und internationaler Normen und Standards für die Beschaffung in Deutschland dar.",
+		"en": "eForms Unterschwelle is part of the XStandards Einkauf (Procurement) standard family. All standards represent national concretizations of European and international norms and standards for procurement in Germany."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["procurement", "standard", "xeinkauf", "public-sector", "below-threshold"],
+	"homepage": "https://xeinkauf.de/",
+	"license": "Apache-2.0",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": true,
@@ -18,11 +21,10 @@
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "community"
 	},
-	"homepage": "https://xeinkauf.de/",
-	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

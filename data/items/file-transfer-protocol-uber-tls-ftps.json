@@ -6,7 +6,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "FTPS dient der über TLS gesicherten Übertragung von Dateien. Es wurde entwickelt, um Dateien zuverlässig zu übertragen, Verzeichnisse zu verwalten (z.B. anlegen, löschen, navigieren) und den Zugriff auf entfernte Dateisysteme zu ermöglichen.",
-		"en": ""
+		"en": "FTPS (FTP over TLS) provides secure file transfer using TLS encryption."
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc4217",
 	"tags": ["datei", "datenuebertragung"],
@@ -28,7 +28,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://www.cerberusftp.com/blog/eight-essential-tips-for-securing-an-ftp-or-sftp-server"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

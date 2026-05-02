@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "protocol",
 	"description": {
-		"de": "OSCI defiiert Protokollstandards für den sicheren elektronischen Nachrichtenaustausch über das Internet und andere Netze. Diese garantieren Integrität, Authentizität, Vertraulichkeit und Nachweisbarkeit der Daten und Datenflüsse und ermöglichen medienbruchfreien, effizienten Transport und Verarbeitung."
+		"de": "OSCI defiiert Protokollstandards für den sicheren elektronischen Nachrichtenaustausch über das Internet und andere Netze. Diese garantieren Integrität, Authentizität, Vertraulichkeit und Nachweisbarkeit der Daten und Datenflüsse und ermöglichen medienbruchfreien, effizienten Transport und Verarbeitung.",
+		"en": "OSCI defines protocol standards for secure electronic message exchange over the internet."
 	},
 	"oss": true,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://www.xoev.de/osci-xta-3355",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -7,7 +7,7 @@
 	"itemKind": "service",
 	"description": {
 		"de": "Gecko ist eine Browser-Engine zum Rendern von Webseiten. Es wird insbesondere von Mozilla für Firefox genutzt.",
-		"en": ""
+		"en": "Gecko is a browser engine for rendering web pages, developed by Mozilla."
 	},
 	"homepage": "https://firefox-source-docs.mozilla.org/overview/gecko.html",
 	"tags": ["webseite", "browser-engine", "rendern"],
@@ -30,7 +30,7 @@
 		"url": "https://github.com/mozilla"
 	},
 	"license": "MPL-2.0",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

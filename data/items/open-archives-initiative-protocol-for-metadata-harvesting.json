@@ -6,7 +6,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "OAI-PMH ist ein leichtgewichtiges Protokoll für Metadaten.",
-		"en": ""
+		"en": "OAI-PMH (Open Archives Initiative Protocol for Metadata Harvesting) is a lightweight protocol for harvesting metadata from digital repositories."
 	},
 	"homepage": "https://www.openarchives.org/pmh/",
 	"tags": ["datenkatalog", "metadaten"],
@@ -24,7 +24,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

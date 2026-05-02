@@ -7,7 +7,7 @@
 	"itemKind": "tool",
 	"description": {
 		"de": "Next.js ist ein React-Framework zum Erstellen von Full-Stack-Webanwendungen. Sie verwenden React-Komponenten zum Erstellen von Benutzeroberflächen und Next.js für zusätzliche Funktionen und Optimierungen.",
-		"en": ""
+		"en": "Next.js is a React framework for building server-rendered and static web applications."
 	},
 	"homepage": "https://nextjs.org/",
 	"tags": ["rendering", "user-interface"],
@@ -30,7 +30,7 @@
 		"url": "https://nextjs.org/docs"
 	},
 	"license": "MIT",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

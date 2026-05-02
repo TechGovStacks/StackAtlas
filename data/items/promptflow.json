@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "PromptFlow ist ein Framework von Entwicklungswerkzeugen für KI-Anwendungen von der Ideenfindung bis zum Monitoring.",
-		"en": ""
+		"en": "PromptFlow is a framework of development tools for AI applications from ideation to production."
 	},
 	"homepage": "https://microsoft.github.io/promptflow/",
 	"tags": ["entwicklung", "verarbeitung"],
@@ -29,7 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://github.com/microsoft/promptflow"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

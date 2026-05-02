@@ -4,7 +4,8 @@
 	"layer": "infrastructure",
 	"itemKind": "platform",
 	"description": {
-		"de": "OpenGDX ist ein Open-Source Projekt für den generischen Datenaustausch zwischen Fachverfahren, Service-Portalen, Registern bzw. allgemeinen Data Providern und Data Consumern. Es ermöglicht eine einfache und beliebig skalierbare Anbindung in jedem Kontext multi-dimensionaler Daten- & Protokoll-Standards (XTA, OSCI, SFTP, etc.) und damit auch eine vereinfachte Anbindung an FIT-Connect.\nOpenGDX basiert auf der seit 2020 in NRW eingesetzten zentralen Datenaustauschinfrastruktur."
+		"de": "OpenGDX ist ein Open-Source Projekt für den generischen Datenaustausch zwischen Fachverfahren, Service-Portalen, Registern bzw. allgemeinen Data Providern und Data Consumern. Es ermöglicht eine einfache und beliebig skalierbare Anbindung in jedem Kontext multi-dimensionaler Daten- & Protokoll-Standards (XTA, OSCI, SFTP, etc.) und damit auch eine vereinfachte Anbindung an FIT-Connect.\nOpenGDX basiert auf der seit 2020 in NRW eingesetzten zentralen Datenaustauschinfrastruktur.",
+		"en": "OpenGDX is an open-source project for generic data exchange between specialized procedures, services, and systems."
 	},
 	"oss": false,
 	"tags": [],
@@ -22,7 +23,7 @@
 	},
 	"homepage": "https://www.xoev.de/",
 	"license": "Government",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

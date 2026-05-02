@@ -25,7 +25,7 @@
 	},
 	"homepage": "https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-05-01",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -46,6 +46,10 @@
 		{
 			"type": "url",
 			"url": "https://en.wikipedia.org/wiki/Blazor"
+		},
+		{
+			"type": "url",
+			"url": "https://learn.microsoft.com/en-us/dotnet/core/tools/telemetry"
 		}
 	]
 }

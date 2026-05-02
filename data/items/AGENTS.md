@@ -140,10 +140,12 @@
 1. **Vor Update:** Aktuelles Item gegen Schema prüfen (`node scripts/validate-schemas.mjs`)
 2. `sovereigntyCriteria`-Werte aktualisieren (alle 9 required Fields!)
 3. **groupKey überprüfen** und ggf. hinzufügen/aktualisieren
-4. `lastResearchDate` (Format: `YYYY-MM-DD`) auf heute setzen
+4. `lastResearchDate` (Format: `YYYY-MM-DD`) auf heute setzen **⚠️ NUR wenn Metadaten tatsächlich aktualisiert wurden!**
 5. `ownerType` aus Enum wählen: `independentConsortium` | `corporation` | `community` | `oneManShow`
 6. **Keine Kommentare** im JSON
 7. Alle Dateien validieren
+
+> **⚠️ WICHTIG:** `lastResearchDate` **NUR ändern, wenn mindestens eines der folgenden Felder aktualisiert wurde:** `sovereigntyCriteria`, `groupKey`, `researchSources`, `description`, `ownerType`. Wird NUR das Datum geändert ohne inhaltliche Aktualisierung der Metadaten, ist das kein valider Update!
 
 ---
 

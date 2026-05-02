@@ -4,11 +4,13 @@
 	"layer": "building-blocks",
 	"itemKind": "tool",
 	"description": {
-		"de": "Data Aeonia ist eine TR-ESOR konforme Lösung, die die rechtskonforme Aufbewahrung von Akten ermöglicht. Hierüber wird der Beweiswert erhalten. Ist bereits beim Bund und vielen Ländern im Einsatz. Im D-Stack kann eine zentraler Betrieb genauso wie einheitliche zentrale Bereitstellung der Lösung realisiert werden.",
-		"en": ""
+		"de": "DATA Aeonia ist eine TR-ESOR konforme Lösung, die die rechtskonforme Aufbewahrung von Akten ermöglicht. Hierüber wird der Beweiswert erhalten. Sie unterstützt den Export von Evidence Records (ER) und Dokumentencontainern (XAIP) für Datenportabilität. Ist bereits beim Bund und vielen Ländern im Einsatz.",
+		"en": "DATA Aeonia is a TR-ESOR compliant solution that enables legally compliant storage of records. This preserves evidential value. It supports export of Evidence Records (ER) and document containers (XAIP) for data portability. It is already in use at the federal level and in many states."
 	},
 	"oss": false,
-	"tags": [],
+	"tags": ["governikus", "tr-esor", "records", "archiving", "evidence"],
+	"homepage": "https://www.governikus.de/en/produkte/data-aeonia/",
+	"license": "Proprietary",
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": true,
@@ -16,13 +18,12 @@
 		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
-		"dataPortability": false,
+		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
-	"homepage": "https://www.governikus.de/en/produkte/data-aeonia/",
-	"license": "Proprietary",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -31,6 +32,10 @@
 		{
 			"type": "url",
 			"url": "https://www.governikus.de/en/loesungen/produkte/data-aeonia/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.governikus.de/en/digitale-dokumente-mit-dauerhaftem-beweiswert/"
 		}
 	]
 }

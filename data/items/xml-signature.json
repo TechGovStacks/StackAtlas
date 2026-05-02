@@ -4,7 +4,8 @@
 	"layer": "building-blocks",
 	"itemKind": "standard",
 	"description": {
-		"de": "Signatur für XML-Nachrichten, um eine Authentisierung durchführen zu können. Siehe DSGVO, Art. 5."
+		"de": "Signatur für XML-Nachrichten, um eine Authentisierung durchführen zu können. Siehe DSGVO, Art. 5.",
+		"en": "XML Signature is a W3C standard for digital signatures in XML documents."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

@@ -5,7 +5,7 @@
 	"itemKind": "protocol",
 	"description": {
 		"de": "OAuth 2.0 ist ein Standard zur Autorisierung zwischen Anwendungen.",
-		"en": ""
+		"en": "OAuth 2.0 is an open standard for authorization between applications."
 	},
 	"oss": true,
 	"tags": [],
@@ -21,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

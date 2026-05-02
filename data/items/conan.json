@@ -5,10 +5,12 @@
 	"itemKind": "tool",
 	"description": {
 		"de": "Package-Manager für C++-Anwendungen.",
-		"en": ""
+		"en": "Package manager for C++ applications"
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["package-manager", "cplus", "jfrog"],
+	"homepage": "https://conan.io/",
+	"license": "MIT",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -17,12 +19,11 @@
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
-		"openStandards": false,
-		"noTelemetryByDefault": true
+		"openStandards": true,
+		"noTelemetryByDefault": true,
+		"ownerType": "corporation"
 	},
-	"homepage": "https://conan.io/",
-	"license": "MIT",
-	"lastResearchDate": "2026-04-27",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -31,6 +32,10 @@
 		{
 			"type": "url",
 			"url": "https://github.com/conan-io/conan"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.conan.io/2.9/conan.pdf"
 		}
 	]
 }

@@ -4,7 +4,8 @@
 	"layer": "applications",
 	"itemKind": "service",
 	"description": {
-		"de": "SEMIC‑Spezifikationen sind offene, wiederverwendbare semantische Datenmodelle und Application Profiles der Europäischen Kommission, die grundlegende Konzepte wie Personen, Organisationen, Leistungen, Kriterien und Nachweise kontextneutral beschreiben, um semantische Interoperabilität zwischen Verwaltungen zu ermöglichen. Sie dienen als europaweite Referenzbasis für Austausch, Mapping und Integration von Daten."
+		"de": "SEMIC‑Spezifikationen sind offene, wiederverwendbare semantische Datenmodelle und Application Profiles der Europäischen Kommission, die grundlegende Konzepte wie Personen, Organisationen, Leistungen, Kriterien und Nachweise kontextneutral beschreiben, um semantische Interoperabilität zwischen Verwaltungen zu ermöglichen. Sie dienen als europaweite Referenzbasis für Austausch, Mapping und Integration von Daten.",
+		"en": "SEMIC specifications are open, reusable semantic data models for interoperability in European public administration."
 	},
 	"oss": true,
 	"tags": [],
@@ -20,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",

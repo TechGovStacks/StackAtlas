@@ -7,7 +7,7 @@
 	"itemKind": "platform",
 	"description": {
 		"de": "Cassandra ist eine spaltenbasierte NoSQL-Datenbank.",
-		"en": ""
+		"en": "Cassandra is a column-based NoSQL database designed for high scalability and fault tolerance."
 	},
 	"homepage": "https://cassandra.apache.org/",
 	"tags": ["nosql", "datenbank", "spalten"],
@@ -30,7 +30,7 @@
 		"url": "https://cassandra.apache.org/doc/latest/"
 	},
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-05-02",
 	"researchSources": [
 		{
 			"type": "url",
