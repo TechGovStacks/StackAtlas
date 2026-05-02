@@ -1,1 +1,0 @@
-import{ot as e}from"./index-B2ccmd2V--doya1-9.js";var t=(t,n)=>{e(t,`_hasCloser`,n)};export{t};

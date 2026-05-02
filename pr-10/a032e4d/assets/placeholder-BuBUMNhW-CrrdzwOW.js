@@ -1,1 +1,0 @@
-import{lt as e}from"./index-B2ccmd2V--doya1-9.js";var t=(t,n,r={})=>{e(t,`_placeholder`,n,r)};export{t};
