@@ -2,8 +2,8 @@ import { register } from '@public-ui/components';
 
 type KolibriTranslationsOption = NonNullable<NonNullable<Parameters<typeof register>[2]>['translations']>;
 
-type PatchCallback = (name: string, map: Record<string, string>) => string;
-type TranslationPatch = (patch: PatchCallback) => string;
+type PatchCallback = (name: string, map: Record<string, string>) => void;
+type TranslationPatch = (patch: PatchCallback) => void;
 
 const mapWithPrefix = (map: Record<string, string>): Record<string, string> => Object.fromEntries(Object.entries(map).map(([k, v]) => [`kol-${k}`, v]));
 
@@ -618,10 +618,8 @@ const locales: Record<string, Record<string, string>> = {
 	},
 };
 
-const patches: TranslationPatch[] = Object.entries(locales).map(
-	([lang, map]) =>
-		(patch: PatchCallback) =>
-			patch(lang, mapWithPrefix(map)),
-);
+const patches: TranslationPatch[] = Object.entries(locales).map(([lang, map]) => (patch: PatchCallback) => {
+	patch(lang, mapWithPrefix(map));
+});
 
 export const KOLIBRI_TRANSLATIONS = patches as unknown as KolibriTranslationsOption;
