@@ -54,9 +54,6 @@ export default defineConfig({
 			strategies: 'injectManifest',
 			srcDir: 'src',
 			filename: 'sw.ts',
-			injectManifest: {
-				maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
-			},
 			manifest: {
 				name: 'StackAtlas',
 				short_name: 'StackAtlas',
@@ -89,49 +86,9 @@ export default defineConfig({
 					},
 				],
 			},
-			workbox: {
-				cacheId: 'stackatlas',
+			injectManifest: {
 				maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
 				globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2,woff}'],
-				navigateFallback: 'index.html',
-				cleanupOutdatedCaches: true,
-				skipWaiting: false,
-				clientsClaim: true,
-				runtimeCaching: [
-					{
-						urlPattern: ({ request }) => request.mode === 'navigate',
-						handler: 'NetworkFirst',
-						options: {
-							cacheName: 'pages-cache',
-							expiration: {
-								maxEntries: 20,
-								maxAgeSeconds: 60 * 60 * 24 * 30,
-							},
-						},
-					},
-					{
-						urlPattern: /^https:\/\/fonts\./,
-						handler: 'CacheFirst',
-						options: {
-							cacheName: 'fonts-cache',
-							expiration: {
-								maxEntries: 30,
-								maxAgeSeconds: 60 * 60 * 24 * 365,
-							},
-						},
-					},
-					{
-						urlPattern: /^https:\/\/cdn\.simpleicons\.org\//,
-						handler: 'CacheFirst',
-						options: {
-							cacheName: 'logo-cache',
-							expiration: {
-								maxEntries: 200,
-								maxAgeSeconds: 60 * 60 * 24 * 30,
-							},
-						},
-					},
-				],
 			},
 		}),
 	],
