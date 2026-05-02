@@ -1,12 +1,13 @@
 /// <reference lib="WebWorker" />
 /* eslint-disable no-undef */
 import { clientsClaim } from 'workbox-core';
-import { createHandlerBoundToURL, precacheAndRoute } from 'workbox-precaching';
+import { cleanupOutdatedCaches, createHandlerBoundToURL, precacheAndRoute } from 'workbox-precaching';
 import { NavigationRoute, registerRoute } from 'workbox-routing';
 
 declare const self: ServiceWorkerGlobalScope;
 
 precacheAndRoute(self.__WB_MANIFEST);
+cleanupOutdatedCaches();
 
 clientsClaim();
 
@@ -24,8 +25,10 @@ async function cacheFirst(cacheName: string, request: Request): Promise<Response
 	const cached = await caches.match(request);
 	if (cached) return cached;
 	const response = await fetch(request);
-	const cache = await caches.open(cacheName);
-	cache.put(request, response.clone());
+	if (response.ok || response.type === 'opaque') {
+		const cache = await caches.open(cacheName);
+		await cache.put(request, response.clone());
+	}
 	return response;
 }
 
@@ -33,7 +36,9 @@ async function networkFirst(cacheName: string, request: Request): Promise<Respon
 	const cache = await caches.open(cacheName);
 	try {
 		const response = await fetch(request);
-		cache.put(request, response.clone());
+		if (response.ok || response.type === 'opaque') {
+			await cache.put(request, response.clone());
+		}
 		return response;
 	} catch {
 		const cached = await cache.match(request);
