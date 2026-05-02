@@ -1,0 +1,1 @@
+import{ot as e}from"./index-B2ccmd2V-CDdT1Nfr.js";var t=(t,n,r={})=>{e(t,`_hideLabel`,n,r)};export{t};
