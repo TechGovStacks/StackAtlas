@@ -1,0 +1,1 @@
+import"./index-B2ccmd2V--doya1-9.js";import{r as e}from"./align-D3Z54kEL-C1jBZSBW.js";var t=(t,n)=>{e(t,`_tooltipAlign`,n)};export{t};
