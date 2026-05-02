@@ -1,0 +1,1 @@
+import{ut as e}from"./index-CqoRsuu_.js";var t=(t,n)=>{e(t,`_hasCloser`,n)};export{t};
