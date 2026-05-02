@@ -16,7 +16,7 @@ export interface StackMetrics {
 	pctPermissiveLicense: number;
 	pctAudit: number;
 	/** Anzahl Items je Rolle */
-	roleCounts: Record<ParticipantRole, number>;
+	rolleCounts: Record<ParticipantRole, number>;
 	/** Anzahl Items je Status */
 	statusCounts: Record<StackItemStatus, number>;
 	/** Items je Layer, sortiert nach Layer-Order */
@@ -63,17 +63,25 @@ export function useStackMetrics(stack: Stack, allItems: Item[], allLayers?: Laye
 			scoreDistribution[cat]++;
 		}
 
-		// Kriterien-Prozentsätze (rohe Kriterien, kontextunabhängig)
-		const pctSelfHostable = pct(items.filter((i) => i.sovereigntyCriteria.selfHostable).length);
-		const pctOpenSource = pct(items.filter((i) => i.sovereigntyCriteria.openSource).length);
-		const pctEuHQ = pct(items.filter((i) => i.sovereigntyCriteria.euHeadquartered).length);
-		const pctPermissiveLicense = pct(items.filter((i) => i.sovereigntyCriteria.permissiveLicense).length);
-		const pctAudit = pct(items.filter((i) => i.sovereigntyCriteria.hasAudit).length);
+		// Kriterien-Prozentsätze in einem Durchlauf (rohe Kriterien, kontextunabhängig)
+		let countSelfHostable = 0, countOpenSource = 0, countEuHQ = 0, countPermissiveLicense = 0, countAudit = 0;
+		for (const i of items) {
+			if (i.sovereigntyCriteria.selfHostable) countSelfHostable++;
+			if (i.sovereigntyCriteria.openSource) countOpenSource++;
+			if (i.sovereigntyCriteria.euHeadquartered) countEuHQ++;
+			if (i.sovereigntyCriteria.permissiveLicense) countPermissiveLicense++;
+			if (i.sovereigntyCriteria.hasAudit) countAudit++;
+		}
+		const pctSelfHostable = pct(countSelfHostable);
+		const pctOpenSource = pct(countOpenSource);
+		const pctEuHQ = pct(countEuHQ);
+		const pctPermissiveLicense = pct(countPermissiveLicense);
+		const pctAudit = pct(countAudit);
 
 		// Rollen-Zählung
 		const roleCounts = Object.fromEntries(PARTICIPANT_ROLES.map((r) => [r, 0])) as Record<ParticipantRole, number>;
 		for (const si of stackItemMap.values()) {
-			roleCounts[si.role]++;
+			rolleCounts[si.role]++;
 		}
 
 		// Status-Zählung
@@ -87,14 +95,13 @@ export function useStackMetrics(stack: Stack, allItems: Item[], allLayers?: Laye
 		for (const item of items) {
 			layerCountMap.set(item.layer, (layerCountMap.get(item.layer) ?? 0) + 1);
 		}
-		// Nach Layer-Order sortieren, falls Layer-Daten vorhanden
+		// Layer-Order als Map vorberechnen, um find() im Sort-Comparator zu vermeiden
+		const layerOrderMap = allLayers ? new Map(allLayers.map((l) => [l.id, l.order])) : null;
 		const layerBreakdown = Array.from(layerCountMap.entries())
 			.map(([layerId, count]) => ({ layerId, count }))
 			.sort((a, b) => {
-				if (!allLayers) return a.layerId.localeCompare(b.layerId);
-				const orderA = allLayers.find((l) => l.id === a.layerId)?.order ?? 99;
-				const orderB = allLayers.find((l) => l.id === b.layerId)?.order ?? 99;
-				return orderA - orderB;
+				if (!layerOrderMap) return a.layerId.localeCompare(b.layerId);
+				return (layerOrderMap.get(a.layerId) ?? 99) - (layerOrderMap.get(b.layerId) ?? 99);
 			});
 
 		return {
@@ -107,7 +114,7 @@ export function useStackMetrics(stack: Stack, allItems: Item[], allLayers?: Laye
 			pctEuHQ,
 			pctPermissiveLicense,
 			pctAudit,
-			roleCounts,
+			rolleCounts,
 			statusCounts,
 			layerBreakdown,
 			totalItems: total,
