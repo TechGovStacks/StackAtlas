@@ -36,7 +36,7 @@ jobs:
       - name: Audit missing icons
         id: audit
         run: |
-          node scripts/find-missing-icons.mjs --output=missing-before.json
+          node scripts/find-missing-icons.mjs --output=missing-before.json || true
           echo "Audit completed"
           cat missing-before.json | jq '.summary'
 
@@ -71,7 +71,7 @@ jobs:
       - name: Audit after fetch
         if: steps.verify-changed-files.outputs.changed == 'true'
         run: |
-          node scripts/find-missing-icons.mjs --output=missing-after.json
+          node scripts/find-missing-icons.mjs --output=missing-after.json || true
           echo "## 📊 Icons Status After Fetch:" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Before:**" >> $GITHUB_STEP_SUMMARY
