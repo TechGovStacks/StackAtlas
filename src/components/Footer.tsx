@@ -68,7 +68,6 @@ export function Footer() {
 									_label={copied ? t('footer.shareCopied') : t('footer.share')}
 									_icons={copied ? 'fas fa-check' : 'fas fa-share-nodes'}
 									_hideLabel
-									_variant="ghost"
 									_on={{ onClick: () => void handleShare() }}
 									className="footer__share-btn"
 								/>
