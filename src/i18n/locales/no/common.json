@@ -37,7 +37,10 @@
 		"buildCommitAria": "Bygg commit {{commit}}",
 		"buildCommitLabel": "Bygg forpliktelse:",
 		"buildInfoAria": "Bygg versjon {{version}} og forplikt {{commit}}",
-		"buildVersionLabel": "Byggversjon:"
+		"buildVersionLabel": "Byggversjon:",
+		"share": "Del app",
+		"shareCopied": "Lenke kopiert!",
+		"shareText": "Mål & sammenlign digital suverenitet – StackAtlas"
 	},
 	"search": {
 		"regionAria": "Søk og filtrer",

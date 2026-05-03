@@ -38,7 +38,10 @@
 		"buildCommitAria": "Crea commit {{commit}}",
 		"buildCommitLabel": "Compila commit:",
 		"buildInfoAria": "Crea la versione {{version}} ed esegui il commit di {{commit}}",
-		"buildVersionLabel": "Versione di creazione:"
+		"buildVersionLabel": "Versione di creazione:",
+		"share": "Condividi app",
+		"shareCopied": "Link copiato!",
+		"shareText": "Misura e confronta la sovranità digitale – StackAtlas"
 	},
 	"search": {
 		"regionAria": "Cerca e filtra",

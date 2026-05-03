@@ -1,4 +1,5 @@
-import { KolLinkButton } from '@public-ui/preact';
+import { KolButton, KolLinkButton } from '@public-ui/preact';
+import { useState } from 'preact/hooks';
 import { useTranslation } from 'react-i18next';
 import { getAppVersion, getCommitDisplay } from '../utils';
 
@@ -7,6 +8,24 @@ export function Footer() {
 	const year = new Date().getFullYear();
 	const commitDisplay = getCommitDisplay();
 	const appVersion = getAppVersion();
+
+	const [copied, setCopied] = useState(false);
+
+	const handleShare = async () => {
+		const url = window.location.href;
+		const shareData = {
+			title: 'StackAtlas',
+			text: t('footer.shareText'),
+			url,
+		};
+		if (navigator.share) {
+			await navigator.share(shareData);
+		} else {
+			await navigator.clipboard.writeText(url);
+			setCopied(true);
+			setTimeout(() => setCopied(false), 2000);
+		}
+	};
 
 	return (
 		<footer className="footer w-full border-t mt-auto">
@@ -42,6 +61,16 @@ export function Footer() {
 									_href="https://github.com/TechGovStacks/StackAtlas"
 									_hideLabel
 									className="footer__github-corner-btn"
+								/>
+							</li>
+							<li className="mb-1">
+								<KolButton
+									_label={copied ? t('footer.shareCopied') : t('footer.share')}
+									_icons={copied ? 'fas fa-check' : 'fas fa-share-nodes'}
+									_hideLabel
+									_variant="ghost"
+									_on={{ onClick: () => void handleShare() }}
+									className="footer__share-btn"
 								/>
 							</li>
 						</ul>

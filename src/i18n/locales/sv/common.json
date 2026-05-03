@@ -38,7 +38,10 @@
 		"buildCommitAria": "Bygg commit {{commit}}",
 		"buildCommitLabel": "Bygg engagemang:",
 		"buildInfoAria": "Bygg version {{version}} och commit {{commit}}",
-		"buildVersionLabel": "Byggversion:"
+		"buildVersionLabel": "Byggversion:",
+		"share": "Dela app",
+		"shareCopied": "Länk kopierad!",
+		"shareText": "Mät & jämför digital suveränitet – StackAtlas"
 	},
 	"search": {
 		"regionAria": "Sök och filtrera",
