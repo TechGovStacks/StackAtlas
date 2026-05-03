@@ -52,9 +52,9 @@ export function useStackMetrics(stack: Stack, allItems: Item[], allLayers?: Laye
 
 		const pct = (count: number) => (total > 0 ? Math.round((count / total) * 100) : 0);
 
-		// Overall Scores (für Ranking und Galerie)
+		// Overall Scores (für Ranking und Galerie) - reuse computeStackAvgScore to avoid duplication
 		const overallScores = items.map((item) => computeItemContextualOverallScore(item, stackItemMap.get(item.id)));
-		const avgScore = total > 0 ? Math.round((overallScores.reduce((a, b) => a + b, 0) / overallScores.length) * 10) / 10 : 0;
+		const avgScore = computeStackAvgScore(stack, allItems);
 
 		// Score-Verteilung nach Kategorie (basierend auf Overall Scores)
 		const scoreDistribution = Object.fromEntries(SCORE_CATEGORIES.map(({ category }) => [category, 0])) as Record<SovereigntyScoreCategory, number>;
