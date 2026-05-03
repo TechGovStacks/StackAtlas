@@ -1,1 +1,0 @@
-import{ft as e}from"./index-Cuc4c_vJ.js";var t=(t,n)=>{e(t,`_rows`,n,{min:1})};export{t};

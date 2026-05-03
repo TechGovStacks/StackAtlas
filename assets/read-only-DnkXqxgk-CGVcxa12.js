@@ -1,0 +1,1 @@
+import{ut as e}from"./index-ui8Z3MnW.js";var t=(t,n)=>{e(t,`_readOnly`,n)};export{t};
