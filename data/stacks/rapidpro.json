@@ -88,10 +88,10 @@
 		{
 			"type": "url",
 			"label": {
-				"de": "RapidSMS GitHub",
-				"en": "RapidSMS GitHub"
+				"de": "RapidPro GitHub",
+				"en": "RapidPro GitHub"
 			},
-			"url": "https://github.com/rapidsms"
+			"url": "https://github.com/rapidpro"
 		}
 	]
 }
