@@ -13,17 +13,20 @@ export function Footer() {
 
 	const handleShare = async () => {
 		const url = window.location.href;
-		const shareData = {
-			title: 'StackAtlas',
-			text: t('footer.shareText'),
-			url,
-		};
-		if (navigator.share) {
-			await navigator.share(shareData);
-		} else {
-			await navigator.clipboard.writeText(url);
-			setCopied(true);
-			setTimeout(() => setCopied(false), 2000);
+		try {
+			if (navigator.share) {
+				await navigator.share({
+					title: 'StackAtlas',
+					text: t('footer.shareText'),
+					url,
+				});
+			} else {
+				await navigator.clipboard.writeText(url);
+				setCopied(true);
+				setTimeout(() => setCopied(false), 2000);
+			}
+		} catch {
+			// AbortError when user cancels the share dialog; clipboard permission denied — no recovery path
 		}
 	};
 
