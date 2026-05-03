@@ -66,7 +66,24 @@
 				"en": "CISA Thorium",
 				"fr": "CISA Thorium"
 			},
-			"url": "https://www.cisa.gov/resources-tools/services/thorium"
+			"url": "https://www.cisa.gov/resources-tools/services/thorium",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "Thorium GitHub",
+				"en": "Thorium GitHub"
+			},
+			"url": "https://github.com/cisagov/thorium"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "CISA Threats & Advisories",
+				"en": "CISA Threats & Advisories"
+			},
+			"url": "https://www.cisa.gov/topics/cyber-threats-and-advisories"
 		}
 	]
 }

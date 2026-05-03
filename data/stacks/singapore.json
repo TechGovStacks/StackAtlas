@@ -147,7 +147,24 @@
 				"en": "Singapore Government Tech Stack",
 				"fr": "Singapore Government Tech Stack"
 			},
-			"url": "https://www.tech.gov.sg/products-and-services/sgts"
+			"url": "https://www.tech.gov.sg/products-and-services/sgts",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "GovTech Website",
+				"en": "GovTech Website"
+			},
+			"url": "https://www.tech.gov.sg/"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "GovTechSG GitHub",
+				"en": "GovTechSG GitHub"
+			},
+			"url": "https://github.com/GovTechSG"
 		}
 	]
 }

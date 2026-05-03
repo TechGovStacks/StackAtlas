@@ -147,7 +147,32 @@
 				"en": "India Stack",
 				"fr": "India Stack"
 			},
-			"url": "https://indiastack.org/"
+			"url": "https://indiastack.org/",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "UIDAI",
+				"en": "UIDAI"
+			},
+			"url": "https://uidai.gov.in/"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "NPCI",
+				"en": "NPCI"
+			},
+			"url": "https://www.npci.org.in/"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "MeitY",
+				"en": "MeitY"
+			},
+			"url": "https://meity.gov.in/"
 		}
 	]
 }

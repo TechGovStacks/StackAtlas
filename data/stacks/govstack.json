@@ -146,7 +146,24 @@
 				"en": "GovStack",
 				"fr": "GovStack"
 			},
-			"url": "https://www.govstack.global/"
+			"url": "https://www.govstack.global/",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "GovStack GitHub",
+				"en": "GovStack GitHub"
+			},
+			"url": "https://github.com/GovStackWorkingGroup"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "ITU GovStack",
+				"en": "ITU GovStack"
+			},
+			"url": "https://www.itu.int/en/ITU-D/Digital-Inclusion/Pages/govstack.aspx"
 		}
 	]
 }

@@ -74,7 +74,24 @@
 				"en": "RapidPro",
 				"fr": "RapidPro"
 			},
-			"url": "https://www.rapidpro.io/"
+			"url": "https://www.rapidpro.io/",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "RapidPro Website",
+				"en": "RapidPro Website"
+			},
+			"url": "https://rapidpro.io/"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "RapidPro GitHub",
+				"en": "RapidPro GitHub"
+			},
+			"url": "https://github.com/rapidpro"
 		}
 	]
 }

@@ -75,7 +75,24 @@
 				"en": "openDesk",
 				"fr": "openDesk"
 			},
-			"url": "https://opendesk.eu/"
+			"url": "https://opendesk.eu/",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "openDesk GitHub",
+				"en": "openDesk GitHub"
+			},
+			"url": "https://github.com/opendesk-eu"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "openDesk Docs",
+				"en": "openDesk Documentation"
+			},
+			"url": "https://docs.opendesk.eu/"
 		}
 	]
 }

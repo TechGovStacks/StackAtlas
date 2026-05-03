@@ -147,7 +147,24 @@
 				"en": "Government Digital Service",
 				"fr": "Government Digital Service"
 			},
-			"url": "https://www.gov.uk/government/organisations/government-digital-service"
+			"url": "https://www.gov.uk/government/organisations/government-digital-service",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "GDS Blog",
+				"en": "GDS Blog"
+			},
+			"url": "https://gds.blog.gov.uk/"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "GOV.UK Service Manual",
+				"en": "GOV.UK Service Manual"
+			},
+			"url": "https://www.gov.uk/service-manual"
 		}
 	]
 }

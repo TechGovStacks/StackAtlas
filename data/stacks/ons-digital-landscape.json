@@ -66,7 +66,24 @@
 				"en": "ONS Technology",
 				"fr": "ONS Technology"
 			},
-			"url": "https://technology.blog.gov.uk/"
+			"url": "https://technology.blog.gov.uk/",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "ONS Website",
+				"en": "ONS Website"
+			},
+			"url": "https://www.ons.gov.uk/"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "ONS Digital GitHub",
+				"en": "ONS Digital GitHub"
+			},
+			"url": "https://github.com/ONSdigital"
 		}
 	]
 }
