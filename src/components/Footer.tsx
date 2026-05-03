@@ -25,11 +25,8 @@ export function Footer() {
 				setCopied(true);
 				setTimeout(() => setCopied(false), 2000);
 			}
-		} catch (err) {
-			if (err instanceof DOMException && err.name === 'AbortError') {
-				return;
-			}
-			// Silently ignore other errors (e.g. clipboard permission denied)
+		} catch (_err) {
+			// AbortError when user cancels the share dialog; clipboard permission denied — no recovery path
 		}
 	};
 
