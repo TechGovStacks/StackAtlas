@@ -3,18 +3,14 @@
 	"project": ["src/**/*.{ts,tsx}"],
 	"ignoreBinaries": [],
 	"ignoreDependencies": [
-		"lint-staged",
 		"@kolibri-i18n-internal",
 		"uno.css",
 		"@capacitor/core",
 		"@hookform/resolvers",
 		"react-hook-form",
 		"@capacitor/android",
-		"@capacitor/ios",
-		"workbox-core",
-		"workbox-precaching",
-		"workbox-routing"
+		"@capacitor/ios"
 	],
-	"ignoreFiles": ["src/sw.ts"],
+	"ignoreFiles": [],
 	"ignoreExportsUsedInFile": true
 }

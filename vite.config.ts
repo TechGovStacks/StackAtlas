@@ -66,13 +66,11 @@ export default defineConfig({
 		VitePWA({
 			registerType: isPwaEnabled ? 'prompt' : undefined,
 			includeAssets: isPwaEnabled ? ['favicon.ico', 'icons/*.png', 'assets/**/*', 'logos/*.svg'] : [],
-			strategies: 'injectManifest',
+			strategies: 'generateSW',
 			devOptions: {
 				enabled: true,
 				type: 'module',
 			},
-			srcDir: 'src',
-			filename: 'sw.ts',
 			manifest: {
 				name: 'StackAtlas',
 				short_name: 'StackAtlas',
@@ -105,9 +103,53 @@ export default defineConfig({
 					},
 				],
 			},
-			injectManifest: {
+			workbox: {
 				maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
 				globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2,woff}'],
+				cleanupOutdatedCaches: true,
+				clientsClaim: true,
+				skipWaiting: false,
+				navigateFallback: 'index.html',
+				importScripts: ['push-sw.js'],
+				runtimeCaching: [
+					{
+						urlPattern: /^https:\/\/fonts\.(googleapis|gstatic)\.com\/.*/i,
+						handler: 'CacheFirst',
+						options: {
+							cacheName: 'fonts-cache',
+							expiration: {
+								maxEntries: 30,
+								maxAgeSeconds: 365 * 24 * 60 * 60,
+							},
+							cacheableResponse: { statuses: [0, 200] },
+						},
+					},
+					{
+						urlPattern: /^https:\/\/cdn\.simpleicons\.org\/.*/i,
+						handler: 'CacheFirst',
+						options: {
+							cacheName: 'logo-cache',
+							expiration: {
+								maxEntries: 100,
+								maxAgeSeconds: 30 * 24 * 60 * 60,
+							},
+							cacheableResponse: { statuses: [0, 200] },
+						},
+					},
+					{
+						urlPattern: ({ sameOrigin, request }) => !sameOrigin && request.mode !== 'navigate',
+						handler: 'NetworkFirst',
+						options: {
+							cacheName: 'external-cache',
+							networkTimeoutSeconds: 10,
+							expiration: {
+								maxEntries: 50,
+								maxAgeSeconds: 24 * 60 * 60,
+							},
+							cacheableResponse: { statuses: [0, 200] },
+						},
+					},
+				],
 			},
 		}),
 	],
