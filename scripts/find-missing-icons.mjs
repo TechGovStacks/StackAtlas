@@ -36,13 +36,13 @@ function main() {
 	try {
 		// Get all item files
 		const itemFiles = readdirSync(ITEMS_DIR).filter((f) => f.endsWith('.json'));
-		const loggedItems = itemFiles.map((f) => f.replace('.json', ''));
+		const loggedItems = itemFiles.map((f) => f.replace(/\.json$/, ''));
 
-		// Get all existing logos
+		// Get all existing logos (supports SVG, PNG, WebP, AVIF, JPG, GIF, ICO)
 		const existingLogos = new Set(
 			readdirSync(LOGOS_DIR)
-				.filter((f) => f.endsWith('.svg'))
-				.map((f) => f.replace('.svg', '')),
+				.filter((f) => /\.(svg|png|webp|avif|jpg|jpeg|gif|ico)$/i.test(f))
+				.map((f) => f.replace(/\.[^.]+$/, '')),
 		);
 
 		console.log(`📊 Audit Results:`);
@@ -87,7 +87,7 @@ function main() {
 				total: loggedItems.length,
 				available: available.length,
 				missing: missing.length,
-				percentageComplete: ((available.length / loggedItems.length) * 100).toFixed(2) + '%',
+				percentageComplete: loggedItems.length > 0 ? ((available.length / loggedItems.length) * 100).toFixed(2) + '%' : '0%',
 			},
 			missing: missing.map((m) => m.name),
 		};
