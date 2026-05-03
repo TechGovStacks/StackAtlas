@@ -25,7 +25,7 @@ export function Footer() {
 				setCopied(true);
 				setTimeout(() => setCopied(false), 2000);
 			}
-		} catch (_err) {
+		} catch {
 			// AbortError when user cancels the share dialog; clipboard permission denied — no recovery path
 		}
 	};
