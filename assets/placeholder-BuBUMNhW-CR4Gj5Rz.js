@@ -1,0 +1,1 @@
+import{pt as e}from"./index-Cuc4c_vJ.js";var t=(t,n,r={})=>{e(t,`_placeholder`,n,r)};export{t};

@@ -1,0 +1,1 @@
+import{ut as e}from"./index-Cuc4c_vJ.js";var t=(t,n)=>{e(t,`_readOnly`,n)};export{t};
