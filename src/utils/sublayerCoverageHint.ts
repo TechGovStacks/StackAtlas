@@ -33,7 +33,8 @@ export function computeSublayerCoverageHints(items: Item[], stackItemMap?: Map<s
 		const groupItems = groupedItems.get(groupKey) ?? [];
 		const stackItem = stackItemMap?.get(item.id);
 		const sovereigntyScore = computeEffectiveSovereigntyScore(item.sovereigntyCriteria, stackItem);
-		const score = stackItemMap && item.adoption ? computeContextualOverallScore(sovereigntyScore, item.adoption, stackItem) : sovereigntyScore;
+		// Use stackItem (already retrieved) instead of stackItemMap for consistency
+		const score = stackItem && item.adoption ? computeContextualOverallScore(sovereigntyScore, item.adoption, stackItem) : sovereigntyScore;
 		groupItems.push({
 			id: item.id,
 			score,
