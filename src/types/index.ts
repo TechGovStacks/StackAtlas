@@ -313,6 +313,7 @@ export type Stack = {
 };
 
 export type StackSource = {
+	type: 'url';
 	label?: LocalizableText;
 	url: string;
 };

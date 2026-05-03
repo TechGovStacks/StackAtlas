@@ -84,7 +84,24 @@
 				"en": "La Suite Numérique",
 				"fr": "La Suite Numérique"
 			},
-			"url": "https://lasuite.numerique.gouv.fr/"
+			"url": "https://lasuite.numerique.gouv.fr/",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "DINUM Website",
+				"en": "DINUM Website"
+			},
+			"url": "https://www.numerique.gouv.fr/"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "beta.gouv.fr GitHub",
+				"en": "beta.gouv.fr GitHub"
+			},
+			"url": "https://github.com/entallement"
 		}
 	]
 }

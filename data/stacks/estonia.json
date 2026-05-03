@@ -138,7 +138,32 @@
 				"en": "X-Road",
 				"fr": "X-Road"
 			},
-			"url": "https://x-road.global/"
+			"url": "https://x-road.global/",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "Estnische Regierung",
+				"en": "Estonia Government"
+			},
+			"url": "https://eesti.ee/en"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "RIA",
+				"en": "RIA"
+			},
+			"url": "https://ria.ee/en"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "X-Road Information",
+				"en": "X-Road Information"
+			},
+			"url": "https://www.ria.ee/en/x-road"
 		}
 	]
 }

@@ -84,7 +84,24 @@
 				"en": "U.S. Digital Service",
 				"fr": "U.S. Digital Service"
 			},
-			"url": "https://www.usds.gov/"
+			"url": "https://www.usds.gov/",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "18F Website",
+				"en": "18F Website"
+			},
+			"url": "https://18f.gsa.gov/"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "USDS GitHub",
+				"en": "USDS GitHub"
+			},
+			"url": "https://github.com/USDigitalService"
 		}
 	]
 }

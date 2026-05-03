@@ -254,21 +254,24 @@
 				"de": "GAIA-X",
 				"en": "GAIA-X"
 			},
-			"url": "https://gaia-x.eu/"
+			"url": "https://gaia-x.eu/",
+			"type": "url"
 		},
 		{
 			"label": {
 				"de": "CIGREF Trusted Cloud Referential",
 				"en": "CIGREF Trusted Cloud Referential"
 			},
-			"url": "https://www.cigref.fr/"
+			"url": "https://www.cigref.fr/",
+			"type": "url"
 		},
 		{
 			"label": {
 				"de": "CNCF Landscape",
 				"en": "CNCF Landscape"
 			},
-			"url": "https://landscape.cncf.io/"
+			"url": "https://landscape.cncf.io/",
+			"type": "url"
 		}
 	]
 }

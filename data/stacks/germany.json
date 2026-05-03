@@ -1173,7 +1173,24 @@
 				"en": "Germany Stack documentation",
 				"fr": "Documentation Germany Stack"
 			},
-			"url": "https://github.com/TechGovStacks/StackAtlas/blob/main/data/stacks/germany.json"
+			"url": "https://github.com/TechGovStacks/StackAtlas/blob/main/data/stacks/germany.json",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "BMDS Website",
+				"en": "BMDS Website"
+			},
+			"url": "https://www.digitaler-staat.de/"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "DigitalService Bund GitHub",
+				"en": "DigitalService Bund GitHub"
+			},
+			"url": "https://github.com/digital-service-bund"
 		}
 	]
 }

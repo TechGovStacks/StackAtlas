@@ -53,9 +53,14 @@
 			"description": "Reference sources for this stack definition",
 			"items": {
 				"type": "object",
-				"required": ["url"],
+				"required": ["type", "url"],
 				"additionalProperties": false,
 				"properties": {
+					"type": {
+						"type": "string",
+						"enum": ["url"],
+						"description": "Type of the source: 'url' for web links"
+					},
 					"label": {
 						"type": "object",
 						"description": "Optional localized label for the source link",

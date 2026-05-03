@@ -102,7 +102,24 @@
 				"en": "Gov.br",
 				"fr": "Gov.br"
 			},
-			"url": "https://www.gov.br/"
+			"url": "https://www.gov.br/",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "Gov.br Portal",
+				"en": "Gov.br Portal"
+			},
+			"url": "https://www.gov.br/governodigital"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "Banco Central do Brasil",
+				"en": "Central Bank of Brazil"
+			},
+			"url": "https://www.bcb.gov.br/"
 		}
 	]
 }
