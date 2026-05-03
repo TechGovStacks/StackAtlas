@@ -1,1 +1,0 @@
-import{lt as e}from"./index-B2ccmd2V-BsqPL74j.js";var t=(t,n)=>{e(t,`_customClass`,n,{defaultValue:``})};export{t};
