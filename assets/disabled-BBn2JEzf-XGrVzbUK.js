@@ -1,1 +1,0 @@
-import{D as e,ut as t}from"./index-B3elEngz.js";var n=(n,r)=>{t(n,`_disabled`,r,{hooks:{afterPatch:t=>{!0===t&&e()}}})};export{n as t};
