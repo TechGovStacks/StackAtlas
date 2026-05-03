@@ -38,7 +38,10 @@
 		"buildCommitAria": "Crear compromiso {{commit}}",
 		"buildCommitLabel": "Compromiso de compilación:",
 		"buildInfoAria": "Compile la versión {{version}} y confirme {{commit}}",
-		"buildVersionLabel": "Versión de compilación:"
+		"buildVersionLabel": "Versión de compilación:",
+		"share": "Compartir app",
+		"shareCopied": "¡Enlace copiado!",
+		"shareText": "Medir y comparar la soberanía digital – StackAtlas"
 	},
 	"search": {
 		"regionAria": "Buscar y filtrar",

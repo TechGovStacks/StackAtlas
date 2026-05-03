@@ -38,7 +38,10 @@
 		"buildCommitAria": "Build commit {{commit}}",
 		"buildCommitLabel": "Build commit:",
 		"buildInfoAria": "Build version {{version}} and commit {{commit}}",
-		"buildVersionLabel": "Build version:"
+		"buildVersionLabel": "Build version:",
+		"share": "Share app",
+		"shareCopied": "Link copied!",
+		"shareText": "Measure & compare digital sovereignty – StackAtlas"
 	},
 	"search": {
 		"regionAria": "Search and filter",

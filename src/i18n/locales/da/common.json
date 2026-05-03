@@ -38,7 +38,10 @@
 		"buildCommitAria": "Byg commit {{commit}}",
 		"buildCommitLabel": "Byg forpligtelse:",
 		"buildInfoAria": "Byg version {{version}} og commit {{commit}}",
-		"buildVersionLabel": "Byg version:"
+		"buildVersionLabel": "Byg version:",
+		"share": "Del app",
+		"shareCopied": "Link kopieret!",
+		"shareText": "Mål & sammenlign digital suverænitet – StackAtlas"
 	},
 	"search": {
 		"regionAria": "Søg og filtrer",
