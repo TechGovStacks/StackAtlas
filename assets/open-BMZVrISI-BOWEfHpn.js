@@ -1,1 +1,0 @@
-import{ut as e}from"./index-BeG_bEgb.js";var t=(t,n,r)=>{e(t,`_open`,n,r)};export{t};
