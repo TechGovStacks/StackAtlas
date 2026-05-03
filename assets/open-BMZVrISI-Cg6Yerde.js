@@ -1,0 +1,1 @@
+import{ut as e}from"./index-DcIL16Fp.js";var t=(t,n,r)=>{e(t,`_open`,n,r)};export{t};
