@@ -5,7 +5,7 @@ function isLocalizedText(value: LocalizableText): value is LocalizedText {
 	return typeof value === 'object' && value !== null && ('de' in value || 'en' in value);
 }
 
-function getLanguageCandidates(language: string): LanguageCode[] {
+function getLanguageCandidates(language: string, fallback: LanguageCode = FALLBACK_LANGUAGE): LanguageCode[] {
 	const normalizedLanguage = normalizeLanguage(language);
 	const candidates: LanguageCode[] = [normalizedLanguage];
 
@@ -22,6 +22,11 @@ function getLanguageCandidates(language: string): LanguageCode[] {
 		candidates.push(FALLBACK_LANGUAGE);
 	}
 
+	// Add custom fallback if different from FALLBACK_LANGUAGE
+	if (fallback !== FALLBACK_LANGUAGE && !candidates.includes(fallback)) {
+		candidates.push(fallback);
+	}
+
 	return candidates;
 }
 
@@ -30,11 +35,7 @@ export function getLocalizedText(value: LocalizableText, lng: string, fallback: 
 		return value;
 	}
 
-	const fallbackCandidates = getLanguageCandidates(lng);
-
-	if (!fallbackCandidates.includes(fallback)) {
-		fallbackCandidates.push(fallback);
-	}
+	const fallbackCandidates = getLanguageCandidates(lng, fallback);
 
 	for (const candidate of fallbackCandidates) {
 		const localizedValue = value[candidate];

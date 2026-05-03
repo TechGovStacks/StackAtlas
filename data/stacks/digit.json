@@ -102,7 +102,24 @@
 				"en": "DIGIT",
 				"fr": "DIGIT"
 			},
-			"url": "https://digit.org/"
+			"url": "https://digit.org/",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "DIGIT auf Joinup",
+				"en": "DIGIT on Joinup"
+			},
+			"url": "https://joinup.ec.europa.eu/collection/digit-digital-public-administration"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "EU DIGIT Department",
+				"en": "EU DIGIT Department"
+			},
+			"url": "https://ec.europa.eu/info/departments/digital-public-administration-en"
 		}
 	]
 }

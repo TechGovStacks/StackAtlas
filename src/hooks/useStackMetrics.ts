@@ -54,7 +54,7 @@ export function useStackMetrics(stack: Stack, allItems: Item[], allLayers?: Laye
 
 		// Overall Scores (für Ranking und Galerie)
 		const overallScores = items.map((item) => computeItemContextualOverallScore(item, stackItemMap.get(item.id)));
-		const avgScore = total > 0 ? Math.round((overallScores.reduce((a, b) => a + b, 0) / overallScores.length) * 10) / 10 : 0;
+		const avgScore = total > 0 ? Math.round((overallScores.reduce((a, b) => a + b, 0) / total) * 10) / 10 : 0;
 
 		// Score-Verteilung nach Kategorie (basierend auf Overall Scores)
 		const scoreDistribution = Object.fromEntries(SCORE_CATEGORIES.map(({ category }) => [category, 0])) as Record<SovereigntyScoreCategory, number>;

@@ -74,7 +74,24 @@
 				"de": "SCS Community",
 				"en": "SCS Community"
 			},
-			"url": "https://scs.community/"
+			"url": "https://scs.community/",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "OSBA Website",
+				"en": "OSBA Website"
+			},
+			"url": "https://osb-alliance.de/"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "SCS GitHub",
+				"en": "SCS GitHub"
+			},
+			"url": "https://github.com/SovereignCloudStack"
 		}
 	],
 	"participants": [

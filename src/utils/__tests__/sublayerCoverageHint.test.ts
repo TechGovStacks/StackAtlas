@@ -146,8 +146,10 @@ describe('computeSublayerCoverageHints', () => {
 		expect(hintsWithStack.has('high-adoption')).toBe(false);
 
 		const hintsWithoutStack = computeSublayerCoverageHints([itemA, itemB]);
-		// Without stack: compare sovereignty scores only → A(65) > B(30), so B gets the hint
-		expect(hintsWithoutStack.get('high-adoption')).toMatchObject({ betterItemId: 'high-sovereignty' });
-		expect(hintsWithoutStack.has('high-sovereignty')).toBe(false);
+		// Without stack but with adoption data: uses overall score (sovereignty + adoption)
+		// A: sovereignty=50, adoption=0 → overall=30; B: sovereignty=33, adoption=80/100 → overall=57
+		// So A gets the hint for B
+		expect(hintsWithoutStack.get('high-sovereignty')).toMatchObject({ betterItemId: 'high-adoption' });
+		expect(hintsWithoutStack.has('high-adoption')).toBe(false);
 	});
 });

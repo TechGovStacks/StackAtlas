@@ -98,14 +98,24 @@
 				"de": "Schwarz Digits – Digitale Souveraenitaet",
 				"en": "Schwarz Digits – Digital Sovereignty"
 			},
-			"url": "https://schwarz-digits.de/en/digitale-souveraenitaet"
+			"url": "https://schwarz-digits.de/en/digitale-souveraenitaet",
+			"type": "url"
 		},
 		{
 			"label": {
 				"de": "heise online – Schwarz Digits stellt Standard fuer digitale Souveraenitaet vor",
 				"en": "heise online – Schwarz Digits introduces standard for digital sovereignty"
 			},
-			"url": "https://www.heise.de/en/news/Schwarz-Digits-introduces-standard-for-digital-sovereignty-11264279.html"
+			"url": "https://www.heise.de/en/news/Schwarz-Digits-introduces-standard-for-digital-sovereignty-11264279.html",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "Schwarz Digits Website",
+				"en": "Schwarz Digits Website"
+			},
+			"url": "https://www.schwarz-digits.com/"
 		}
 	]
 }

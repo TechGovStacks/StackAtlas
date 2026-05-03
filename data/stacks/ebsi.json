@@ -47,7 +47,24 @@
 				"en": "European Blockchain Services Infrastructure",
 				"fr": "European Blockchain Services Infrastructure"
 			},
-			"url": "https://ec.europa.eu/digital-building-blocks/sites/display/EBSI"
+			"url": "https://ec.europa.eu/digital-building-blocks/sites/display/EBSI",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "EBSI Wiki",
+				"en": "EBSI Wiki"
+			},
+			"url": "https://ec.europa.eu/digital-building-blocks/wikis/display/DIGIT/EBSI"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "EU Digital Building Blocks",
+				"en": "EU Digital Building Blocks"
+			},
+			"url": "https://ec.europa.eu/digital-building-blocks/"
 		}
 	]
 }

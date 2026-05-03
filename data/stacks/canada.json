@@ -84,7 +84,24 @@
 				"en": "Canadian Digital Service",
 				"fr": "Canadian Digital Service"
 			},
-			"url": "https://digital.canada.ca/"
+			"url": "https://digital.canada.ca/",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "CDS GitHub",
+				"en": "CDS GitHub"
+			},
+			"url": "https://github.com/cds-snc"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "Digital Government Canada",
+				"en": "Digital Government Canada"
+			},
+			"url": "https://www.canada.ca/en/government/system/digital-government.html"
 		}
 	]
 }

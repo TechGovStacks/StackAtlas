@@ -18,7 +18,24 @@
 				"de": "NEGZ-Feedback-CSV",
 				"en": "NEGZ Feedback CSV"
 			},
-			"url": "https://negz.org"
+			"url": "https://negz.org",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "NEGZ Website",
+				"en": "NEGZ Website"
+			},
+			"url": "https://www.negz.org/"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "NEGZ GitHub",
+				"en": "NEGZ GitHub"
+			},
+			"url": "https://github.com/negz"
 		}
 	],
 	"items": [

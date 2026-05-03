@@ -146,7 +146,24 @@
 				"en": "EIRA (EU)",
 				"fr": "EIRA (UE)"
 			},
-			"url": "https://joinup.ec.europa.eu/collection/european-interoperability-reference-architecture-eira"
+			"url": "https://joinup.ec.europa.eu/collection/european-interoperability-reference-architecture-eira",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "EIRA auf Joinup",
+				"en": "EIRA on Joinup"
+			},
+			"url": "https://joinup.ec.europa.eu/collection/eira-european-interoperability-reference-architecture"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "EU Digital Strategy",
+				"en": "EU Digital Strategy"
+			},
+			"url": "https://digital-strategy.ec.europa.eu/en"
 		}
 	]
 }

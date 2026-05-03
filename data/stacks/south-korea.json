@@ -75,7 +75,24 @@
 				"en": "eGovFrame",
 				"fr": "eGovFrame"
 			},
-			"url": "https://www.egovframe.go.kr/"
+			"url": "https://www.egovframe.go.kr/",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "MOIS",
+				"en": "Ministry of the Interior and Safety"
+			},
+			"url": "https://www.mois.go.kr/eng/"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "NIA",
+				"en": "National Information Society Agency"
+			},
+			"url": "https://www.nia.or.kr/eng/"
 		}
 	]
 }

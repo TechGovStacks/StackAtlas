@@ -75,7 +75,24 @@
 				"en": "Digital Transformation Agency",
 				"fr": "Digital Transformation Agency"
 			},
-			"url": "https://www.dta.gov.au/"
+			"url": "https://www.dta.gov.au/",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "DTA Digital Service Standard",
+				"en": "DTA Digital Service Standard"
+			},
+			"url": "https://www.dta.gov.au/help-and-advice/our-ict-policy-and-guidance/digital-service-standard"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "AusDTO GitHub",
+				"en": "AusDTO GitHub"
+			},
+			"url": "https://github.com/AusDTO"
 		}
 	]
 }

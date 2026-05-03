@@ -65,7 +65,24 @@
 				"en": "Wikimedia Production Architecture",
 				"fr": "Architecture de production Wikimedia"
 			},
-			"url": "https://wikitech.wikimedia.org/wiki/Production_architecture"
+			"url": "https://wikitech.wikimedia.org/wiki/Production_architecture",
+			"type": "url"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "MediaWiki",
+				"en": "MediaWiki"
+			},
+			"url": "https://www.mediawiki.org/"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "Wikimedia Tech",
+				"en": "Wikimedia Tech"
+			},
+			"url": "https://wikitech.wikimedia.org/"
 		}
 	]
 }
