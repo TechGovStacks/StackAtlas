@@ -1,0 +1,1 @@
+import{ut as e}from"./index-UZTZQSp1.js";var t=(t,n)=>{e(t,`_hasCloser`,n)};export{t};
