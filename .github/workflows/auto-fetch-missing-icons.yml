@@ -1,0 +1,106 @@
+name: Auto-fetch Missing Icons
+
+on:
+  schedule:
+    # Every Monday at 2 AM UTC (3 AM CET / 4 AM CEST)
+    - cron: '0 2 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  fetch-icons:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: 'pnpm'
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v8
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Audit missing icons
+        id: audit
+        run: |
+          node scripts/find-missing-icons.mjs --output=missing-before.json
+          echo "Audit completed"
+          cat missing-before.json | jq '.summary'
+
+      - name: Fetch external logos
+        run: |
+          node scripts/fetch-external-logos.mjs --update
+
+      - name: Cache logos locally
+        run: |
+          node scripts/cache-logos-local.mjs
+
+      - name: Run prebuild
+        run: |
+          pnpm run prebuild
+
+      - name: Format code
+        run: |
+          pnpm format:write
+
+      - name: Check for changes
+        id: verify-changed-files
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "## 📋 Changed Files:" >> $GITHUB_STEP_SUMMARY
+            git diff --name-only >> $GITHUB_STEP_SUMMARY
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "✅ No missing icons found" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Audit after fetch
+        if: steps.verify-changed-files.outputs.changed == 'true'
+        run: |
+          node scripts/find-missing-icons.mjs --output=missing-after.json
+          echo "## 📊 Icons Status After Fetch:" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Before:**" >> $GITHUB_STEP_SUMMARY
+          cat missing-before.json | jq '.summary' >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**After:**" >> $GITHUB_STEP_SUMMARY
+          cat missing-after.json | jq '.summary' >> $GITHUB_STEP_SUMMARY
+
+      - name: Create Pull Request
+        if: steps.verify-changed-files.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: main
+          branch: auto-fetch-missing-icons
+          commit-message: 'chore: Fetch missing icon logos from external sources'
+          title: 'chore: Fetch missing icon logos from external sources'
+          body: |
+            ## 🎯 Automatic Icon Fetching
+
+            This PR automatically fetches missing icon logos from external sources:
+            - **Simple Icons CDN** (3300+ brand SVGs)
+            - **Wikidata** (P154/P18 images)
+            - **Wikipedia** page images
+
+            ### Process:
+            1. Audited missing icons
+            2. Fetched logos from external sources
+            3. Cached logos locally
+            4. Generated logo data
+
+            ✅ See the workflow run for detailed statistics.
+          delete-branch: true
+          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
