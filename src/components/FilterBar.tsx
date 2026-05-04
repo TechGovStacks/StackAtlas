@@ -57,29 +57,35 @@ export function FilterBar({
 		}
 	}, [debouncedSearchText, filters, onFilterChange]);
 
-	const layerOptions = [
-		{ label: t('search.allCategories'), value: '' },
-		...layers.map((layer) => ({ label: getLocalizedText(layer.name, i18n.language), value: layer.id })),
-	];
+	const layerOptions = useMemo(
+		() => [
+			{ label: t('search.allCategories'), value: '' },
+			...layers.map((layer) => ({ label: getLocalizedText(layer.name, i18n.language), value: layer.id })),
+		],
+		[layers, i18n.language, t],
+	);
 
-	const stackOptions = [
-		{ label: t('stack.all'), value: '' },
-		...stacks.map((stack) => ({
-			label: `${getLocalizedText(stack.name, i18n.language)} (${stack.items.length})`,
-			value: stack.id,
-		})),
-	];
-	const activeStack = activeStackId ? stacks.find((stack) => stack.id === activeStackId) : null;
+	const stackOptions = useMemo(
+		() => [
+			{ label: t('stack.all'), value: '' },
+			...stacks.map((stack) => ({
+				label: `${getLocalizedText(stack.name, i18n.language)} (${stack.items.length})`,
+				value: stack.id,
+			})),
+		],
+		[stacks, i18n.language, t],
+	);
+	const activeStack = useMemo(() => (activeStackId ? stacks.find((stack) => stack.id === activeStackId) : null), [activeStackId, stacks]);
 
-	const sublayerOptions = (() => {
+	const sublayerOptions = useMemo(() => {
 		if (!filters.selectedLayer) return [];
 		const layerItems = items.filter((item) => item.layer === filters.selectedLayer);
 		const sublayers = new Set(layerItems.map((item) => item.sublayer).filter((sublayer): sublayer is string => Boolean(sublayer)));
 		return Array.from(sublayers).sort();
-	})();
+	}, [items, filters.selectedLayer]);
 	const sublayerLabel = (slug: string) => t(`search.sublayers.${slug}`, { defaultValue: slug });
 
-	const relationOptions = (() => {
+	const relationOptions = useMemo(() => {
 		if (!activeStackId || !activeStack) return [];
 		const roleCounts = activeStack.items.reduce(
 			(acc, stackItem) => {
@@ -92,7 +98,7 @@ export function FilterBar({
 			label: `${t(`stack.roles.${role}`)} (${roleCounts[role]})`,
 			value: role,
 		}));
-	})();
+	}, [activeStackId, activeStack, t]);
 
 	const dependencyTypeOptions = useMemo(
 		() => [
