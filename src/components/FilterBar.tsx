@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { PARTICIPANT_ROLES } from '../constants/roleColors';
 import { useDebounce } from '../hooks/useDebounce';
 import { FilterState, Item, Layer, ParticipantRole, Stack } from '../types';
-import { asNullableParticipantRole, asNullableString, asString } from '../types/kolibri';
+import { asBoolean, asNullableDependencyType, asNullableParticipantRole, asNullableString, asString } from '../types/kolibri';
 import { getDependencyTypes, getLocalizedText } from '../utils';
 import { AutoSingleSelect as KolSingleSelect } from './AutoSingleSelect';
 
@@ -193,13 +193,13 @@ export function FilterBar({
 							]}
 							_value={filters.dependencyDepth ? String(filters.dependencyDepth) : ''}
 							_on={{
-								onChange: (_e: globalThis.Event, value: unknown) => {
-									const parsedDepth = value ? Number(value) : null;
+								onChange: asNullableString((value) => {
+									const num = Number(value);
 									onFilterChange({
 										...filters,
-										dependencyDepth: parsedDepth && [1, 2, 3].includes(parsedDepth) ? (parsedDepth as 1 | 2 | 3) : null,
+										dependencyDepth: ([1, 2, 3] as const).find((d) => d === num) ?? null,
 									});
-								},
+								}),
 							}}
 						/>
 						<KolSingleSelect
@@ -209,8 +209,7 @@ export function FilterBar({
 							_options={dependencyTypeOptions}
 							_value={filters.selectedDependencyType ?? ''}
 							_on={{
-								onChange: (_e: globalThis.Event, value: unknown) =>
-									onFilterChange({ ...filters, selectedDependencyType: value ? (value as FilterState['selectedDependencyType']) : null }),
+								onChange: asNullableDependencyType((selectedDependencyType) => onFilterChange({ ...filters, selectedDependencyType })),
 							}}
 						/>
 						<KolInputCheckbox
@@ -219,7 +218,7 @@ export function FilterBar({
 							_variant="switch"
 							_checked={filters.onlyDirectDependencies}
 							_on={{
-								onChange: (_e: globalThis.Event, value: unknown) => onFilterChange({ ...filters, onlyDirectDependencies: Boolean(value) }),
+								onChange: asBoolean((onlyDirectDependencies) => onFilterChange({ ...filters, onlyDirectDependencies })),
 							}}
 						/>
 					</>
