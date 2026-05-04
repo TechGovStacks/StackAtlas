@@ -79,11 +79,19 @@ export function FilterBar({
 
 	const sublayerOptions = useMemo(() => {
 		if (!filters.selectedLayer) return [];
-		const layerItems = items.filter((item) => item.layer === filters.selectedLayer);
-		const sublayers = new Set(layerItems.map((item) => item.sublayer).filter((sublayer): sublayer is string => Boolean(sublayer)));
-		return Array.from(sublayers).sort();
-	}, [items, filters.selectedLayer]);
-	const sublayerLabel = (slug: string) => t(`search.sublayers.${slug}`, { defaultValue: slug });
+		const sublayers = new Set<string>();
+		for (const item of items) {
+			if (item.layer === filters.selectedLayer && item.sublayer) {
+				sublayers.add(item.sublayer);
+			}
+		}
+		return [
+			{ label: t('search.allSublayers'), value: '' },
+			...Array.from(sublayers)
+				.sort()
+				.map((sublayer) => ({ label: t(`search.sublayers.${sublayer}`, { defaultValue: sublayer }), value: sublayer })),
+		];
+	}, [items, filters.selectedLayer, t]);
 
 	const relationOptions = useMemo(() => {
 		if (!activeStackId || !activeStack) return [];
@@ -156,12 +164,9 @@ export function FilterBar({
 						className="filter-bar__select filter-bar__select--sublayer sort-select"
 						_label={t('search.sublayerLabel')}
 						_hideLabel
-						_options={[
-							{ label: t('search.allSublayers'), value: '' },
-							...sublayerOptions.map((sublayer) => ({ label: sublayerLabel(sublayer), value: sublayer })),
-						]}
+						_options={sublayerOptions}
 						_value={filters.selectedSublayer ?? ''}
-						_disabled={sublayerOptions.length === 0}
+						_disabled={sublayerOptions.length <= 1}
 						_on={{
 							onChange: asNullableString((selectedSublayer) => onFilterChange({ ...filters, selectedSublayer })),
 						}}
