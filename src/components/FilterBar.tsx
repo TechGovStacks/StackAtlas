@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { PARTICIPANT_ROLES } from '../constants/roleColors';
 import { useDebounce } from '../hooks/useDebounce';
 import { FilterState, Item, Layer, ParticipantRole, Stack } from '../types';
-import { asNullableParticipantRole, asNullableString, asString } from '../types/kolibri';
+import { asBoolean, asNullableDependencyType, asNullableParticipantRole, asNullableString, asString } from '../types/kolibri';
 import { getDependencyTypes, getLocalizedText } from '../utils';
 import { AutoSingleSelect as KolSingleSelect } from './AutoSingleSelect';
 
@@ -57,29 +57,43 @@ export function FilterBar({
 		}
 	}, [debouncedSearchText, filters, onFilterChange]);
 
-	const layerOptions = [
-		{ label: t('search.allCategories'), value: '' },
-		...layers.map((layer) => ({ label: getLocalizedText(layer.name, i18n.language), value: layer.id })),
-	];
+	const layerOptions = useMemo(
+		() => [
+			{ label: t('search.allCategories'), value: '' },
+			...layers.map((layer) => ({ label: getLocalizedText(layer.name, i18n.language), value: layer.id })),
+		],
+		[layers, i18n.language, t],
+	);
 
-	const stackOptions = [
-		{ label: t('stack.all'), value: '' },
-		...stacks.map((stack) => ({
-			label: `${getLocalizedText(stack.name, i18n.language)} (${stack.items.length})`,
-			value: stack.id,
-		})),
-	];
-	const activeStack = activeStackId ? stacks.find((stack) => stack.id === activeStackId) : null;
+	const stackOptions = useMemo(
+		() => [
+			{ label: t('stack.all'), value: '' },
+			...stacks.map((stack) => ({
+				label: `${getLocalizedText(stack.name, i18n.language)} (${stack.items.length})`,
+				value: stack.id,
+			})),
+		],
+		[stacks, i18n.language, t],
+	);
+	const activeStack = useMemo(() => (activeStackId ? stacks.find((stack) => stack.id === activeStackId) : null), [activeStackId, stacks]);
 
-	const sublayerOptions = (() => {
+	const sublayerOptions = useMemo(() => {
 		if (!filters.selectedLayer) return [];
-		const layerItems = items.filter((item) => item.layer === filters.selectedLayer);
-		const sublayers = new Set(layerItems.map((item) => item.sublayer).filter((sublayer): sublayer is string => Boolean(sublayer)));
-		return Array.from(sublayers).sort();
-	})();
-	const sublayerLabel = (slug: string) => t(`search.sublayers.${slug}`, { defaultValue: slug });
+		const sublayers = new Set<string>();
+		for (const item of items) {
+			if (item.layer === filters.selectedLayer && item.sublayer) {
+				sublayers.add(item.sublayer);
+			}
+		}
+		return [
+			{ label: t('search.allSublayers'), value: '' },
+			...Array.from(sublayers)
+				.sort()
+				.map((sublayer) => ({ label: t(`search.sublayers.${sublayer}`, { defaultValue: sublayer }), value: sublayer })),
+		];
+	}, [items, filters.selectedLayer, t]);
 
-	const relationOptions = (() => {
+	const relationOptions = useMemo(() => {
 		if (!activeStackId || !activeStack) return [];
 		const roleCounts = activeStack.items.reduce(
 			(acc, stackItem) => {
@@ -92,7 +106,7 @@ export function FilterBar({
 			label: `${t(`stack.roles.${role}`)} (${roleCounts[role]})`,
 			value: role,
 		}));
-	})();
+	}, [activeStackId, activeStack, t]);
 
 	const dependencyTypeOptions = useMemo(
 		() => [
@@ -150,12 +164,9 @@ export function FilterBar({
 						className="filter-bar__select filter-bar__select--sublayer sort-select"
 						_label={t('search.sublayerLabel')}
 						_hideLabel
-						_options={[
-							{ label: t('search.allSublayers'), value: '' },
-							...sublayerOptions.map((sublayer) => ({ label: sublayerLabel(sublayer), value: sublayer })),
-						]}
+						_options={sublayerOptions}
 						_value={filters.selectedSublayer ?? ''}
-						_disabled={sublayerOptions.length === 0}
+						_disabled={sublayerOptions.length <= 1}
 						_on={{
 							onChange: asNullableString((selectedSublayer) => onFilterChange({ ...filters, selectedSublayer })),
 						}}
@@ -187,13 +198,13 @@ export function FilterBar({
 							]}
 							_value={filters.dependencyDepth ? String(filters.dependencyDepth) : ''}
 							_on={{
-								onChange: (_e: globalThis.Event, value: unknown) => {
-									const parsedDepth = value ? Number(value) : null;
+								onChange: asNullableString((value) => {
+									const num = Number(value);
 									onFilterChange({
 										...filters,
-										dependencyDepth: parsedDepth && [1, 2, 3].includes(parsedDepth) ? (parsedDepth as 1 | 2 | 3) : null,
+										dependencyDepth: ([1, 2, 3] as const).find((d) => d === num) ?? null,
 									});
-								},
+								}),
 							}}
 						/>
 						<KolSingleSelect
@@ -203,8 +214,7 @@ export function FilterBar({
 							_options={dependencyTypeOptions}
 							_value={filters.selectedDependencyType ?? ''}
 							_on={{
-								onChange: (_e: globalThis.Event, value: unknown) =>
-									onFilterChange({ ...filters, selectedDependencyType: value ? (value as FilterState['selectedDependencyType']) : null }),
+								onChange: asNullableDependencyType((selectedDependencyType) => onFilterChange({ ...filters, selectedDependencyType })),
 							}}
 						/>
 						<KolInputCheckbox
@@ -213,7 +223,7 @@ export function FilterBar({
 							_variant="switch"
 							_checked={filters.onlyDirectDependencies}
 							_on={{
-								onChange: (_e: globalThis.Event, value: unknown) => onFilterChange({ ...filters, onlyDirectDependencies: Boolean(value) }),
+								onChange: asBoolean((onlyDirectDependencies) => onFilterChange({ ...filters, onlyDirectDependencies })),
 							}}
 						/>
 					</>
