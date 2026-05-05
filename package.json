@@ -129,6 +129,5 @@
 			"stylelint --fix",
 			"prettier --write"
 		]
-	},
-	"packageManager": "pnpm@10.19.0"
+	}
 }
