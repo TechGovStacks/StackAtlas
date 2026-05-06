@@ -87,6 +87,14 @@ export function HashLocationProvider({ children }: HashLocationProviderProps) {
 				}
 				window.location.hash = nextRoute;
 			},
+			back: () => {
+				wasPushRef.current = false;
+				window.history.back();
+			},
+			forward: () => {
+				wasPushRef.current = true;
+				window.history.forward();
+			},
 			wasPush: wasPushRef.current,
 		};
 	}, [route]);
