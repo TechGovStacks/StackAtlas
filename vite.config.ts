@@ -115,14 +115,16 @@ export default defineConfig({
 				clientsClaim: true,
 				skipWaiting: false,
 				navigateFallback: 'index.html',
-				// push-sw.js ist kein HTML-Dokument – darf nicht als Navigation-Fallback gelten
-				navigateFallbackDenylist: [/^\/push-sw\.js$/],
+				// push-sw.js ist kein HTML-Dokument – darf nicht als Navigation-Fallback gelten.
+				// Ohne ^ damit die Regel auch bei Subdirectory-Deployments greift (z.B. /StackAtlas/push-sw.js)
+				navigateFallbackDenylist: [/push-sw\.js$/],
 				importScripts: ['push-sw.js'],
 				runtimeCaching: [
 					{
 						// Lokale Logos: CacheFirst – werden beim ersten Zugriff gecacht,
 						// nicht beim SW-Install. So blockiert kein fehlendes Logo die Installation.
-						urlPattern: /\/logos\//,
+						// sameOrigin-Check verhindert, dass externe URLs versehentlich in diesen Cache fallen.
+						urlPattern: ({ sameOrigin, url }) => sameOrigin && url.pathname.includes('/logos/'),
 						handler: 'CacheFirst',
 						options: {
 							cacheName: 'logos-local-cache',
