@@ -65,7 +65,9 @@ export default defineConfig({
 		UnoCSS(),
 		VitePWA({
 			registerType: isPwaEnabled ? 'prompt' : undefined,
-			includeAssets: isPwaEnabled ? ['favicon.ico', 'icons/*.png', 'assets/**/*', 'logos/*.svg'] : [],
+			// logos/* werden via Runtime-Cache abgedeckt – nicht mehr in includeAssets,
+			// damit ein einzelnes fehlendes Logo nicht die gesamte SW-Installation blockiert
+			includeAssets: isPwaEnabled ? ['favicon.ico', 'icons/*.png', 'assets/**/*'] : [],
 			strategies: 'generateSW',
 			devOptions: {
 				enabled: true,
@@ -105,13 +107,32 @@ export default defineConfig({
 			},
 			workbox: {
 				maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
-				globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2,woff}'],
+				// logos/** via Runtime-Cache (CacheFirst), daher hier ausgeschlossen.
+				// ttf ergänzt für KoliBri-Theme-Fonts, die als .ttf ausgeliefert werden können.
+				globPatterns: ['**/*.{js,css,html,ico,png,svg,woff2,woff,ttf}'],
+				globIgnores: ['logos/**'],
 				cleanupOutdatedCaches: true,
 				clientsClaim: true,
 				skipWaiting: false,
 				navigateFallback: 'index.html',
+				// push-sw.js ist kein HTML-Dokument – darf nicht als Navigation-Fallback gelten
+				navigateFallbackDenylist: [/^\/push-sw\.js$/],
 				importScripts: ['push-sw.js'],
 				runtimeCaching: [
+					{
+						// Lokale Logos: CacheFirst – werden beim ersten Zugriff gecacht,
+						// nicht beim SW-Install. So blockiert kein fehlendes Logo die Installation.
+						urlPattern: /\/logos\//,
+						handler: 'CacheFirst',
+						options: {
+							cacheName: 'logos-local-cache',
+							expiration: {
+								maxEntries: 250,
+								maxAgeSeconds: 30 * 24 * 60 * 60,
+							},
+							cacheableResponse: { statuses: [0, 200] },
+						},
+					},
 					{
 						urlPattern: /^https:\/\/fonts\.(googleapis|gstatic)\.com\/.*/i,
 						handler: 'CacheFirst',
@@ -141,7 +162,9 @@ export default defineConfig({
 						handler: 'NetworkFirst',
 						options: {
 							cacheName: 'external-cache',
-							networkTimeoutSeconds: 10,
+							// 3 s statt 10 s: Offline-Nutzer warten nicht unnötig lange bevor
+							// der SW auf den Cache zurückfällt
+							networkTimeoutSeconds: 3,
 							expiration: {
 								maxEntries: 50,
 								maxAgeSeconds: 24 * 60 * 60,
