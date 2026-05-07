@@ -55,14 +55,14 @@
 		"@public-ui/preact": "4.1.4",
 		"@public-ui/theme-default": "4.1.4",
 		"@public-ui/theme-kern": "4.1.4",
-		"i18next": "26.0.8",
+		"i18next": "26.0.10",
 		"i18next-browser-languagedetector": "8.2.1",
 		"preact": "10.29.1",
 		"preact-iso": "2.12.0",
 		"preact-render-to-string": "6.6.7",
 		"react-hook-form": "7.75.0",
-		"react-i18next": "17.0.6",
-		"zod": "4.4.2"
+		"react-i18next": "17.0.7",
+		"zod": "4.4.3"
 	},
 	"devDependencies": {
 		"@axe-core/playwright": "4.11.3",
