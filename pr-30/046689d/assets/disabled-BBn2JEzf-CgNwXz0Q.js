@@ -1,0 +1,1 @@
+import{V as e,wt as t}from"./index-Dsz4H9Db.js";var n=(n,r)=>{t(n,`_disabled`,r,{hooks:{afterPatch:t=>{!0===t&&e()}}})};export{n as t};
