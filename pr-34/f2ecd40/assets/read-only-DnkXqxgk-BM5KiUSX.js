@@ -1,0 +1,1 @@
+import{wt as e}from"./index-_robEx9E.js";var t=(t,n)=>{e(t,`_readOnly`,n)};export{t};

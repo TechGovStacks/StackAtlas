@@ -1,0 +1,1 @@
+import{V as e,wt as t}from"./index-_robEx9E.js";var n=(n,r)=>{t(n,`_disabled`,r,{hooks:{afterPatch:t=>{!0===t&&e()}}})};export{n as t};
