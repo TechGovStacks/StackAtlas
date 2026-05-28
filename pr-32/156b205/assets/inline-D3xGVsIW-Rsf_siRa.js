@@ -1,1 +1,0 @@
-import{wt as e}from"./index-D_i6BVb1.js";var t=(t,n,r={})=>{e(t,`_inline`,n,r)};export{t};
