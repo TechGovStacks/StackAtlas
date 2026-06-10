@@ -1,1 +1,0 @@
-import"./index-_robEx9E.js";import{r as e}from"./align-D3Z54kEL-P5Pw_HTR.js";var t=(t,n)=>{e(t,`_tooltipAlign`,n)};export{t};

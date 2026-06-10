@@ -1,1 +1,0 @@
-import{ut as e}from"./index-De_Nv_Yf.js";var t=(t,n)=>{e(t,`_hasCloser`,n)};export{t};
