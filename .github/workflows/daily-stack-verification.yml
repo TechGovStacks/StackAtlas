@@ -1,0 +1,70 @@
+name: Daily Stack Verification
+
+on:
+  schedule:
+    - cron: '0 4 * * *' # 4 UTC, zeitversetzt zur Item-Routine (1 UTC), um PR-Kollisionen zu vermeiden
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install Vibe CLI
+        run: curl -LsSf https://mistral.ai/vibe/install.sh | bash
+
+      - name: Ensure Vibe is in PATH
+        run: echo "$HOME/.local/bin" >> $GITHUB_PATH
+
+      - name: Verify one stack with Vibe
+        env:
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VIBE_VERBOSE: '0'
+        run: |
+          vibe --trust --output text "Lies die Datei data/stacks/AGENTS.md und führe die darin beschriebene Stack-Verifizierungs-Routine aus. Wähle gemäß der Rotation in der Datei GENAU EINEN Stack aus und verifiziere ihn vollständig (referentielle Integrität, Status/Rollen, Aktualität, Quellen, Metadaten). Aktualisiere nur die betroffene Stack-Datei in data/stacks/. Validiere mit 'node scripts/validate-schemas.mjs'. Ändere KEINE Dateien in data/items/ und KEINE generierten Dateien (src/data/*.generated.ts). Committe die Änderungen nicht selbst - das übernimmt der nächste Schritt." 2>&1 | grep -v "^⠈\|^⢸\|^ ⠉\|^  ⠉\|^ ⢸" || true
+
+      - name: Discard accidental changes outside data/stacks
+        run: |
+          git checkout -- src/data 2>/dev/null || true
+          git clean -fd src/data 2>/dev/null || true
+
+      - name: Check for changes
+        id: verify-changed-files
+        run: |
+          if [ -n "$(git status --porcelain data/stacks)" ]; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create Pull Request
+        if: steps.verify-changed-files.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v8
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          base: main
+          branch: auto-verify-stacks
+          commit-message: 'chore: verify and refresh stack definition'
+          title: 'chore: verify and refresh stack definition'
+          body: 'Automatische Stack-Verifizierung gemäß data/stacks/AGENTS.md durch Mistral Vibe. Verifiziert pro Lauf genau einen Stack (Rotation).'
+          delete-branch: true
+          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>

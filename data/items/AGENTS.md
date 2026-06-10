@@ -2,9 +2,13 @@
 
 ## Scope
 
-- Nur Items in `data/stacks/negz.json` → `items[]` bearbeiten
-- Andere Items ignorieren
-- **Reihenfolge:** Item ohne `lastResearchDate` zuerst → ältere `lastResearchDate` → fehlender `groupKey`
+- **Alle Items, die von mindestens einem Stack in `data/stacks/*.json` (`items[]`) referenziert werden**, sind im Scope.
+- Die jeweilige Item-Datei liegt unter `data/items/<itemId>.json`.
+- Nicht referenzierte Item-Dateien (von keinem Stack genutzt) haben niedrigste Priorität.
+- **Reihenfolge (sukzessive Verifizierung):** Item ohne `lastResearchDate` zuerst → ältestes `lastResearchDate` → fehlender `groupKey` → < 2 `researchSources`.
+- Diese Routine läuft regelmäßig (siehe `.github/workflows/daily-vibe-agents.yml`). Bei jedem Lauf wird ein **Batch der am längsten nicht verifizierten Items** abgearbeitet, sodass der gesamte Katalog kontinuierlich aktuell gehalten wird.
+
+> **Ranking:** Die Scores (`sovereigntyScore`, `adoptionScore`, `overallScore`) werden NICHT manuell gepflegt. Sie werden bei jedem Build deterministisch aus den Item-Metadaten neu berechnet (`scripts/generate-data.mjs`). Werden die `sovereigntyCriteria` hier aktuell gehalten, aktualisiert sich das Ranking automatisch. **Generierte Dateien (`src/data/*.generated.ts`) niemals committen.**
 
 ## Schema-Konformität (MUSS vor jedem Update geprüft werden!)
 
@@ -168,13 +172,19 @@
 #### 1. Batch vorbereiten
 
 ```bash
-# Items nach Priorität auflisten
+# Items aus ALLEN Stacks nach Priorität auflisten (am längsten nicht verifiziert zuerst)
 node -e "
 const fs = require('fs');
-const negz = JSON.parse(fs.readFileSync('data/stacks/negz.json', 'utf8'));
-const itemIds = [...new Set(negz.items.map(i => i.itemId))];
+const stackDir = 'data/stacks';
+const itemIds = new Set();
+fs.readdirSync(stackDir).filter(f => f.endsWith('.json')).forEach(f => {
+  try {
+    const stack = JSON.parse(fs.readFileSync(\`\${stackDir}/\${f}\`, 'utf8'));
+    (stack.items || []).forEach(i => itemIds.add(i.itemId));
+  } catch (e) {}
+});
 const results = [];
-itemIds.forEach(id => {
+[...itemIds].forEach(id => {
   try {
     const path = \`data/items/\${id}.json\`;
     if (fs.existsSync(path)) {
@@ -189,12 +199,12 @@ itemIds.forEach(id => {
   } catch (e) {}
 });
 results.sort((a, b) => {
-  if (!a.lastResearchDate || a.lastResearchDate === 'MISSING') return -1;
-  if (!b.lastResearchDate || b.lastResearchDate === 'MISSING') return 1;
-  if (!a.hasGroupKey) return -1;
-  if (!b.hasGroupKey) return 1;
+  if (a.lastResearchDate === 'MISSING' && b.lastResearchDate !== 'MISSING') return -1;
+  if (b.lastResearchDate === 'MISSING' && a.lastResearchDate !== 'MISSING') return 1;
+  if (a.lastResearchDate === 'MISSING' && b.lastResearchDate === 'MISSING') return a.hasGroupKey - b.hasGroupKey;
   return new Date(a.lastResearchDate) - new Date(b.lastResearchDate);
 });
+console.log(\`\${results.length} Items im Scope. Nächster Batch (15 älteste):\`);
 console.log(results.slice(0, 15).map(r => \`\${r.id}: date=\${r.lastResearchDate}, groupKey=\${r.hasGroupKey}, sources=\${r.researchSourcesCount}\`).join('\n'));
 "
 ```
