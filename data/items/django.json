@@ -26,7 +26,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-28",
+	"lastResearchDate": "2026-06-10",
 	"researchSources": [
 		{
 			"type": "url",
@@ -35,6 +35,10 @@
 		{
 			"type": "url",
 			"url": "https://www.djangoproject.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.djangoproject.com/en/dev/internals/security/"
 		}
 	]
 }

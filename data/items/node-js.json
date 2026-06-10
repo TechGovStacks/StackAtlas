@@ -16,7 +16,7 @@
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
@@ -25,7 +25,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-06-10",
 	"researchSources": [
 		{
 			"type": "url",
@@ -34,6 +34,14 @@
 		{
 			"type": "url",
 			"url": "https://github.com/nodejs/node"
+		},
+		{
+			"type": "url",
+			"url": "https://openjsf.org/blog/objectives-of-the-audit"
+		},
+		{
+			"type": "url",
+			"url": "https://ostif.org/node-js-fuzzing-audit-complete/"
 		}
 	]
 }

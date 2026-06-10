@@ -14,26 +14,34 @@
 	"oss": false,
 	"maturity": "incubation",
 	"sovereigntyCriteria": {
-		"openSource": true,
-		"euHeadquartered": false,
-		"hasAudit": false,
-		"permissiveLicense": true,
+		"openSource": false,
+		"euHeadquartered": true,
+		"hasAudit": true,
+		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": true,
-		"ownerType": "independentConsortium"
+		"ownerType": "corporation"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-06-10",
 	"researchSources": [
 		{
 			"type": "url",
-			"url": "https://www.ecma-international.org/publications-and-standards/standards/ecma-262/"
+			"url": "https://schwarz-digits.de/en/presse/archive/2026/european-sovereign-stack-standard"
 		},
 		{
 			"type": "url",
-			"url": "https://tc39.es/"
+			"url": "https://stackit.com/en/why-stackit/benefits/es3"
+		},
+		{
+			"type": "url",
+			"url": "https://www.bdo.de/en-gb/insights/updates/advisory-service/european-sovereign-stack-standard-es%C2%B3-a-milestone-for-digital-sovereignty-in-europe"
+		},
+		{
+			"type": "url",
+			"url": "https://www.heise.de/en/news/Schwarz-Digits-introduces-standard-for-digital-sovereignty-11264279.html"
 		}
 	]
 }

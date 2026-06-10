@@ -9,12 +9,12 @@
 		"en": "Elasticsearch is a distributed search and analytics engine at the heart of the ELK stack (Elasticsearch, Logstash, Kibana). It is used in public administration IT for full-text search, log aggregation and SIEM use cases."
 	},
 	"homepage": "https://www.elastic.co/elasticsearch/",
-	"license": "SSPL-1.0",
+	"license": "SSPL-1.0 OR AGPL-3.0",
 	"tags": ["search", "logging", "analytics"],
-	"oss": false,
+	"oss": true,
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
-		"openSource": false,
+		"openSource": true,
 		"euHeadquartered": false,
 		"hasAudit": false,
 		"permissiveLicense": false,
@@ -25,7 +25,7 @@
 		"noTelemetryByDefault": false,
 		"ownerType": "corporation"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-06-10",
 	"researchSources": [
 		{
 			"type": "url",
@@ -34,6 +34,10 @@
 		{
 			"type": "url",
 			"url": "https://github.com/elastic/elasticsearch"
+		},
+		{
+			"type": "url",
+			"url": "https://www.elastic.co/blog/elasticsearch-is-open-source-again"
 		}
 	]
 }

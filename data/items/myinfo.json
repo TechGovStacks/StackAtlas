@@ -17,7 +17,7 @@
 		"openSource": false,
 		"euHeadquartered": false,
 		"hasAudit": false,
-		"permissiveLicense": true,
+		"permissiveLicense": false,
 		"matureProject": true,
 		"selfHostable": false,
 		"dataPortability": true,
@@ -25,7 +25,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-06-10",
 	"researchSources": [
 		{
 			"type": "url",
@@ -34,6 +34,10 @@
 		{
 			"type": "url",
 			"url": "https://api.singpass.gov.sg/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.developer.tech.gov.sg/products/categories/digital-identity/myinfo/getting-started"
 		}
 	]
 }

@@ -17,7 +17,7 @@
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
@@ -26,7 +26,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-06-10",
 	"researchSources": [
 		{
 			"type": "url",
@@ -35,6 +35,10 @@
 		{
 			"type": "url",
 			"url": "https://github.com/alphagov/di-authentication-api"
+		},
+		{
+			"type": "url",
+			"url": "https://www.computerweekly.com/news/366623357/Govuk-One-Login-yet-to-meet-government-cyber-security-standards-for-critical-public-services"
 		}
 	]
 }
