@@ -10,8 +10,8 @@
 	},
 	"country": "AU",
 	"issuer": "Digital Transformation Agency (DTA)",
-	"version": "0.1.0",
-	"publishedAt": "2026-04-16",
+	"version": "0.1.1",
+	"publishedAt": "2026-06-10",
 	"items": [
 		{
 			"itemId": "json-web-tokens-jwt",
@@ -66,6 +66,24 @@
 				"de": "TLS/MTLS ist Pflicht für die abgesicherte Datenübertragung im CDR.",
 				"en": "TLS/MTLS is mandatory for secure data transport in CDR."
 			}
+		},
+		{
+			"itemId": "mtls",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Mutual TLS ist für alle Back-Channel-Verbindungen zwischen CDR-Data-Recipients und Data-Holders vorgeschrieben.",
+				"en": "Mutual TLS is mandatory for all back-channel connections between CDR Data Recipients and Data Holders."
+			}
+		},
+		{
+			"itemId": "openapi",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Die CDR-REST-APIs sind mittels OpenAPI-Spezifikation definiert und veröffentlicht.",
+				"en": "CDR REST APIs are defined and published using the OpenAPI specification."
+			}
 		}
 	],
 	"sources": [
@@ -81,10 +99,10 @@
 		{
 			"type": "url",
 			"label": {
-				"de": "DTA Digital Service Standard",
-				"en": "DTA Digital Service Standard"
+				"de": "DTA Digital Service Standard (Kriterien)",
+				"en": "DTA Digital Service Standard (Criteria)"
 			},
-			"url": "https://www.dta.gov.au/help-and-advice/our-ict-policy-and-guidance/digital-service-standard"
+			"url": "https://www.dta.gov.au/help-and-advice/digital-service-standard/digital-service-standard-criteria"
 		},
 		{
 			"type": "url",
@@ -93,6 +111,14 @@
 				"en": "AusDTO GitHub"
 			},
 			"url": "https://github.com/AusDTO"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "CDR Data Standards – Consumer Data Standards Australia",
+				"en": "CDR Data Standards – Consumer Data Standards Australia"
+			},
+			"url": "https://consumerdatastandardsaustralia.github.io/standards/"
 		}
 	]
 }
