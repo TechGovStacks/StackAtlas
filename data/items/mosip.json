@@ -13,7 +13,7 @@
 	"license": "MPL-2.0",
 	"tags": ["egovernment", "identity", "open-source"],
 	"oss": true,
-	"maturity": "incubation",
+	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -26,7 +26,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-06-11",
 	"researchSources": [
 		{
 			"type": "url",
@@ -35,6 +35,10 @@
 		{
 			"type": "url",
 			"url": "https://github.com/mosip"
+		},
+		{
+			"type": "url",
+			"url": "https://www.biometricupdate.com/202603/mosip-community-shares-practical-digital-identity-deployment-lessons-at-connect-2026"
 		}
 	]
 }
