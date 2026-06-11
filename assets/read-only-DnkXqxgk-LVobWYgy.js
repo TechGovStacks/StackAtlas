@@ -1,0 +1,1 @@
+import{ut as e}from"./index-CDi4s5LA.js";var t=(t,n)=>{e(t,`_readOnly`,n)};export{t};
