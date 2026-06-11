@@ -26,7 +26,7 @@
 		"ownerType": "independentConsortium"
 	},
 	"license": "BSD-3-Clause",
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-06-11",
 	"researchSources": [
 		{
 			"type": "url",
@@ -34,7 +34,11 @@
 		},
 		{
 			"type": "url",
-			"url": "https://github.com/GovStackWorkingGroup"
+			"url": "https://github.com/GovStackWorkingGroup/bb-information-mediator"
+		},
+		{
+			"type": "url",
+			"url": "https://mediator.govstack.global/1-version-history"
 		}
 	]
 }

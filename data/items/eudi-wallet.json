@@ -10,6 +10,7 @@
 	},
 	"homepage": "https://github.com/eu-digital-identity-wallet",
 	"tags": ["identity", "wallet", "eidas", "eu"],
+	"license": "Apache-2.0",
 	"oss": true,
 	"maturity": "incubation",
 	"sovereigntyCriteria": {
@@ -24,7 +25,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-06-11",
 	"researchSources": [
 		{
 			"type": "url",
@@ -33,6 +34,10 @@
 		{
 			"type": "url",
 			"url": "https://github.com/eu-digital-identity-wallet"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/eu-digital-identity-wallet/eudi-srv-wallet-provider"
 		}
 	]
 }
