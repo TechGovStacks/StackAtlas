@@ -10,8 +10,8 @@
 	},
 	"country": "EU",
 	"issuer": "EU Cloud Sovereignty Framework Working Context",
-	"version": "1.2.1",
-	"publishedAt": "2025-10-01",
+	"version": "1.2.2",
+	"publishedAt": "2026-06-11",
 	"items": [
 		{
 			"itemId": "advanced-encryption-standard",
@@ -83,6 +83,15 @@
 			"rationale": {
 				"de": "Visualisierung von Betriebs- und Compliance-Metriken.",
 				"en": "Visualization for operations and compliance metrics."
+			}
+		},
+		{
+			"itemId": "harbor",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "CNCF-graduierte selbstgehostete Container-Registry fuer souveraene Image-Verwaltung ohne externe Registry-Abhaengigkeit.",
+				"en": "CNCF-graduated self-hosted container registry for sovereign image management without external registry dependency."
 			}
 		},
 		{
@@ -167,6 +176,15 @@
 			}
 		},
 		{
+			"itemId": "openbao",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "MPL-2.0-lizenziertes Secrets-Management als SEAL-4-konformer Ersatz fuer das BSL-lizenzierte HashiCorp Vault.",
+				"en": "MPL-2.0-licensed secrets management as SEAL-4-compliant replacement for BSL-licensed HashiCorp Vault."
+			}
+		},
+		{
 			"itemId": "opentelemetry",
 			"status": "recommended",
 			"role": "consumer",
@@ -231,11 +249,11 @@
 		},
 		{
 			"itemId": "terraform",
-			"status": "approved",
+			"status": "deprecated",
 			"role": "consumer",
 			"rationale": {
-				"de": "IaC fuer reproduzierbare Infrastruktur ohne proprietaere Betriebswerkzeuge.",
-				"en": "IaC for reproducible infrastructure without proprietary operations tooling."
+				"de": "Seit der BUSL-1.1-Lizenzierung und IBM-Akquisition nicht mehr SEAL-4-konform; OpenTofu (MPL-2.0, Linux Foundation) ist die souveraene IaC-Alternative.",
+				"en": "No longer SEAL-4-compliant since BUSL-1.1 licensing and IBM acquisition; OpenTofu (MPL-2.0, Linux Foundation) is the sovereign IaC alternative."
 			}
 		},
 		{
@@ -271,6 +289,22 @@
 				"en": "CNCF Landscape"
 			},
 			"url": "https://landscape.cncf.io/",
+			"type": "url"
+		},
+		{
+			"label": {
+				"de": "EU-Kommission: Cloud Sovereignty Framework v1.2.1 (Dokument)",
+				"en": "European Commission: Cloud Sovereignty Framework v1.2.1 (Document)"
+			},
+			"url": "https://commission.europa.eu/document/download/09579818-64a6-4dd5-9577-446ab6219113_en",
+			"type": "url"
+		},
+		{
+			"label": {
+				"de": "EU-Kommission: Cloud Sovereignty Framework erklaert (Juni 2026)",
+				"en": "European Commission: Sovereign Cloud Framework Explained (June 2026)"
+			},
+			"url": "https://commission.europa.eu/news-and-media/news/sovereign-cloud-framework-explained-2026-06-01_en",
 			"type": "url"
 		}
 	]
