@@ -349,7 +349,8 @@
 				"reportTemplate": "Obiettivo: modello di rapporto",
 				"scoringExplained": "Focus: Spiegazione del punteggio",
 				"dataEntities": "Focus: Modello dati ed entità",
-				"groupComparison": "Focus: Gruppi di confronto"
+				"groupComparison": "Focus: Gruppi di confronto",
+				"openSourceLicensing": "Focus: Licenze Open Source"
 			}
 		}
 	},

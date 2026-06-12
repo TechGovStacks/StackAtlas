@@ -389,7 +389,8 @@
 				"reportTemplate": "Fokus: Report-Template",
 				"scoringExplained": "Fokus: Scoring erklärt",
 				"dataEntities": "Fokus: Datenmodell & Entitäten",
-				"groupComparison": "Fokus: Vergleichsgruppen"
+				"groupComparison": "Fokus: Vergleichsgruppen",
+				"openSourceLicensing": "Fokus: Open-Source-Lizenzierung"
 			}
 		}
 	},

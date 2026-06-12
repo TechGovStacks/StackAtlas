@@ -353,7 +353,8 @@
 				"reportTemplate": "Enfoque: Plantilla de informe",
 				"scoringExplained": "Enfoque: Explicación del scoring",
 				"dataEntities": "Enfoque: Modelo de datos y entidades",
-				"groupComparison": "Foco: Grupos de comparación"
+				"groupComparison": "Foco: Grupos de comparación",
+				"openSourceLicensing": "Foco: Licencias de Código Abierto"
 			}
 		}
 	},
