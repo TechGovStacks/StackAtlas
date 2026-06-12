@@ -4,16 +4,17 @@
 	"layer": "sovereign-standards",
 	"itemKind": "standard",
 	"description": {
-		"de": "Dokumentationsstandard für pragmatische Softwarearchitekturen, siehe: https://arc42.org/",
-		"en": "Documentation standard for pragmatic software architectures. See: https://arc42.org/"
+		"de": "arc42 ist ein pragmatischer, praxisbewährter Dokumentationsstandard für Softwarearchitektur. Er bietet ein Template mit 12 Abschnitten, das Teams hilft, Architekturentscheidungen nachvollziehbar und konsistent zu dokumentieren.",
+		"en": "arc42 is a practical, proven template for documenting software architecture. It provides 12 standardised sections guiding teams to describe, communicate and review architectural decisions consistently."
 	},
 	"oss": true,
-	"tags": [],
+	"tags": ["architecture", "documentation", "template", "software-architecture"],
+	"ownerCountry": "DE",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": true,
 		"hasAudit": false,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
@@ -23,7 +24,7 @@
 	},
 	"homepage": "https://arc42.org/",
 	"license": "CC-BY-SA-4.0",
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-06-12",
 	"researchSources": [
 		{
 			"type": "url",

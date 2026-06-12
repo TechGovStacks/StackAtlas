@@ -5,9 +5,10 @@
 	"itemKind": "format",
 	"description": {
 		"de": "Standard der in OSCI, XTA, XÖV, ebMS, AS4, eDelivery etc. eingesetzt wird um Nachrichteninhalte zu übermitteln.",
-		"en": "XML (eXtensible Markup Language) is a markup language for structured data representation."
+		"en": "XML (eXtensible Markup Language) is a W3C-standardised markup language for encoding structured data in a human- and machine-readable text format. It underpins many eGovernment data-exchange formats such as XÖV, OSCI and eDelivery."
 	},
-	"tags": ["negz-import", "unresearched"],
+	"groupKey": "data-format",
+	"tags": ["xml", "markup-language", "data-format", "w3c", "open-standard"],
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,
@@ -21,7 +22,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-06-12",
 	"researchSources": [
 		{
 			"type": "url",

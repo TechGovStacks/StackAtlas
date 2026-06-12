@@ -1,14 +1,20 @@
 {
 	"id": "janus-server",
 	"name": "Janus Server",
-	"layer": "sovereign-standards",
+	"layer": "platform",
+	"sublayer": "kommunikation",
 	"itemKind": "tool",
+	"groupKey": "webrtc-media-server",
 	"description": {
-		"de": "Standard for video based communications services",
-		"en": "Janus Server is a WebRTC media server for real-time audio, video, and data streaming."
+		"de": "Janus ist ein quelloffener WebRTC-Medienserver, der Echtzeit-Audio-, Video- und Datenkommunikation zwischen Browsern ermöglicht. Er wird von Meetecho (Italien) entwickelt und dient als WebRTC-Gateway für Video-Konferenzen und Streaming-Anwendungen.",
+		"en": "Janus Server is an open-source WebRTC media server for real-time audio, video, and data streaming. Developed by Meetecho in Italy, it serves as a WebRTC gateway for video-conferencing and live-streaming applications."
 	},
-	"tags": ["negz-import", "unresearched"],
+	"homepage": "https://janus.conf.meetecho.com/",
+	"license": "GPL-3.0-or-later",
+	"tags": ["webrtc", "media-server", "video", "real-time-communication"],
 	"oss": true,
+	"maturity": "graduated",
+	"ownerCountry": "IT",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": true,
@@ -21,7 +27,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "community"
 	},
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-06-12",
 	"researchSources": [
 		{
 			"type": "url",

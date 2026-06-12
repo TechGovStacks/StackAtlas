@@ -11,9 +11,11 @@
 	},
 	"homepage": "https://activemq.apache.org/components/artemis/",
 	"license": "Apache-2.0",
+	"sublayer": "integration",
 	"tags": ["messaging", "queue", "broker"],
 	"oss": true,
 	"maturity": "graduated",
+	"ownerCountry": "US",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -26,7 +28,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"lastResearchDate": "2026-06-12",
 	"researchSources": [
 		{
 			"type": "url",
