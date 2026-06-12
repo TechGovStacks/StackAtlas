@@ -1,1 +1,0 @@
-import{V as e,wt as t}from"./index-Clg7i0Zw.js";var n=(n,r)=>{t(n,`_disabled`,r,{hooks:{afterPatch:t=>{!0===t&&e()}}})};export{n as t};

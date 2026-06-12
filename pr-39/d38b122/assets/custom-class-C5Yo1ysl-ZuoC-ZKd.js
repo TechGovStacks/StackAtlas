@@ -1,1 +1,0 @@
-import{Dt as e}from"./index-Clg7i0Zw.js";var t=(t,n)=>{e(t,`_customClass`,n,{defaultValue:``})};export{t};

@@ -1,1 +1,0 @@
-import{ut as e}from"./index-B2ccmd2V-B0-3b7PM.js";var t=(t,n,r)=>{e(t,n,e=>typeof e==`string`&&i.includes(e),new Set(i),r,{defaultValue:`top`})},n=[`left`,`right`],r=[`top`,`bottom`],i=[...n,...r],a=(e,n)=>{t(e,`_align`,n)};export{a as n,t as r,i as t};
