@@ -254,7 +254,8 @@
 			"rationale": {
 				"de": "Seit der BUSL-1.1-Lizenzierung und IBM-Akquisition nicht mehr SEAL-4-konform; OpenTofu (MPL-2.0, Linux Foundation) ist die souveraene IaC-Alternative.",
 				"en": "No longer SEAL-4-compliant since BUSL-1.1 licensing and IBM acquisition; OpenTofu (MPL-2.0, Linux Foundation) is the sovereign IaC alternative."
-			}
+			},
+			"alternatives": ["opentofu"]
 		},
 		{
 			"itemId": "transport-layer-security-tls",
