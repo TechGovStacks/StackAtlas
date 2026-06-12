@@ -180,8 +180,8 @@
 			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
-				"de": "MPL-2.0-lizenziertes Secrets-Management als SEAL-4-konformer Ersatz fuer das BSL-lizenzierte HashiCorp Vault.",
-				"en": "MPL-2.0-licensed secrets management as SEAL-4-compliant replacement for BSL-licensed HashiCorp Vault."
+				"de": "MPL-2.0-lizenziertes Secrets-Management als SEAL-4-konformer Ersatz fuer das BUSL-1.1-lizenzierte HashiCorp Vault.",
+				"en": "MPL-2.0-licensed secrets management as SEAL-4-compliant replacement for BUSL-1.1-licensed HashiCorp Vault."
 			}
 		},
 		{
