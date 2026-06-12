@@ -348,7 +348,8 @@
 				"reportTemplate": "Fokus: Rapportmal",
 				"scoringExplained": "Fokus: Scoring forklart",
 				"dataEntities": "Fokus: Datamodell & entiteter",
-				"groupComparison": "Fokus: Sammenligningsgrupper"
+				"groupComparison": "Fokus: Sammenligningsgrupper",
+				"openSourceLicensing": "Fokus: Åpen kildekode-lisensiering"
 			}
 		}
 	},

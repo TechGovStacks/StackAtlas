@@ -1,0 +1,53 @@
+{
+	"id": "opentofu",
+	"name": "OpenTofu",
+	"layer": "platform",
+	"sublayer": "inbetriebnahme",
+	"groupKey": "infrastructure-as-code",
+	"itemKind": "tool",
+	"description": {
+		"de": "OpenTofu ist das quelloffene, MPL-2.0-lizenzierte Infrastructure-as-Code-Werkzeug unter dem Dach der Linux Foundation und CNCF. Es entstand 2023 als Community-Fork nach HashiCorps Lizenzwechsel zu BUSL-1.1, ist API-kompatibel zu Terraform und ergänzt native State-Verschlüsselung sowie vollständige Telemetriefreiheit.",
+		"en": "OpenTofu is the open-source, MPL-2.0-licensed infrastructure-as-code tool under the Linux Foundation and CNCF. It was created in 2023 as a community fork after HashiCorp switched Terraform to BUSL-1.1, is API-compatible with Terraform, and adds native state encryption and zero telemetry."
+	},
+	"homepage": "https://opentofu.org/",
+	"license": "MPL-2.0",
+	"ownerCountry": "US",
+	"tags": ["iac", "infrastructure", "automation"],
+	"oss": true,
+	"maturity": "graduated",
+	"sovereigntyCriteria": {
+		"openSource": true,
+		"euHeadquartered": false,
+		"hasAudit": false,
+		"permissiveLicense": false,
+		"matureProject": true,
+		"selfHostable": true,
+		"dataPortability": true,
+		"openStandards": false,
+		"noTelemetryByDefault": true,
+		"ownerType": "independentConsortium"
+	},
+	"lastResearchDate": "2026-06-12",
+	"researchSources": [
+		{
+			"type": "url",
+			"url": "https://opentofu.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/opentofu/opentofu"
+		},
+		{
+			"type": "url",
+			"url": "https://www.linuxfoundation.org/press/opentofu-announces-general-availability"
+		},
+		{
+			"type": "url",
+			"url": "https://www.cncf.io/projects/opentofu/"
+		},
+		{
+			"type": "url",
+			"url": "https://endoflife.date/opentofu"
+		}
+	]
+}
