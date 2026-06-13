@@ -15,7 +15,7 @@
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
@@ -28,7 +28,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/TechnischeRichtlinien/TR02102/BSI-TR-02102.pdf?__blob=publicationFile"
 	},
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-06-13",
 	"researchSources": [
 		{
 			"type": "url",
