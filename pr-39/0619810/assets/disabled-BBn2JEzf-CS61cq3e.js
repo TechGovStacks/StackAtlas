@@ -1,1 +1,0 @@
-import{V as e,wt as t}from"./index-D5zlm019.js";var n=(n,r)=>{t(n,`_disabled`,r,{hooks:{afterPatch:t=>{!0===t&&e()}}})};export{n as t};
