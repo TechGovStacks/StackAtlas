@@ -25,7 +25,8 @@
 		"noTelemetryByDefault": false,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"ownerCountry": "IN",
+	"lastResearchDate": "2026-06-12",
 	"researchSources": [
 		{
 			"type": "url",
@@ -34,6 +35,10 @@
 		{
 			"type": "url",
 			"url": "https://developers.uidai.gov.in/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Aadhaar"
 		}
 	]
 }

@@ -22,10 +22,11 @@
 		"selfHostable": false,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true,
+		"noTelemetryByDefault": false,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"ownerCountry": "IN",
+	"lastResearchDate": "2026-06-12",
 	"researchSources": [
 		{
 			"type": "url",
@@ -34,6 +35,10 @@
 		{
 			"type": "url",
 			"url": "https://www.upiindia.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Unified_Payments_Interface"
 		}
 	]
 }

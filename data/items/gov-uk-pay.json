@@ -26,7 +26,8 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"ownerCountry": "GB",
+	"lastResearchDate": "2026-06-12",
 	"researchSources": [
 		{
 			"type": "url",
@@ -35,6 +36,10 @@
 		{
 			"type": "url",
 			"url": "https://github.com/alphagov/pay-publicapi"
+		},
+		{
+			"type": "url",
+			"url": "https://www.gov.uk/guidance/govuk-pay"
 		}
 	]
 }

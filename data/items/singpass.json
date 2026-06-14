@@ -25,7 +25,8 @@
 		"noTelemetryByDefault": false,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-04-29",
+	"ownerCountry": "SG",
+	"lastResearchDate": "2026-06-12",
 	"researchSources": [
 		{
 			"type": "url",
@@ -34,6 +35,14 @@
 		{
 			"type": "url",
 			"url": "https://api.singpass.gov.sg/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.tech.gov.sg/products-and-services/for-citizens/digital-services/singpass/"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/Singpass"
 		}
 	]
 }
