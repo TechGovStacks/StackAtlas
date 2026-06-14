@@ -1,0 +1,1 @@
+import{mt as e}from"./index-Do-QlfO3.js";var t=(t,n,r={})=>{e(t,`_href`,n,r)};export{t};

@@ -1,0 +1,1 @@
+import{dt as e}from"./index-Do-QlfO3.js";var t=(t,n)=>{e(t,`_spellCheck`,n,{defaultValue:void 0})};export{t};
