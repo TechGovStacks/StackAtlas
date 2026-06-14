@@ -1,0 +1,1 @@
+import{ut as e}from"./index-tlAEI4r6.js";var t=(t,n)=>{e(t,`_readOnly`,n)};export{t};
