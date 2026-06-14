@@ -27,6 +27,9 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
+	"audit": {
+		"url": "https://www.payments.service.gov.uk/security/"
+	},
 	"lastResearchDate": "2026-06-13",
 	"researchSources": [
 		{
