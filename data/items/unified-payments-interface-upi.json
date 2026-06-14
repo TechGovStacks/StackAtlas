@@ -13,6 +13,7 @@
 	"tags": ["egovernment", "payments", "india"],
 	"oss": false,
 	"maturity": "graduated",
+	"ownerCountry": "IN",
 	"sovereigntyCriteria": {
 		"openSource": false,
 		"euHeadquartered": false,
@@ -25,8 +26,7 @@
 		"noTelemetryByDefault": false,
 		"ownerType": "independentConsortium"
 	},
-	"ownerCountry": "IN",
-	"lastResearchDate": "2026-06-12",
+	"lastResearchDate": "2026-06-13",
 	"researchSources": [
 		{
 			"type": "url",
@@ -34,7 +34,7 @@
 		},
 		{
 			"type": "url",
-			"url": "https://www.upiindia.com/"
+			"url": "https://www.npci.org.in/product/upi"
 		},
 		{
 			"type": "url",

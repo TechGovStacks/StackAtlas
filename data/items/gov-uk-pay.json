@@ -14,10 +14,11 @@
 	"tags": ["egovernment", "payments", "uk"],
 	"oss": true,
 	"maturity": "graduated",
+	"ownerCountry": "GB",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
@@ -26,8 +27,10 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"ownerCountry": "GB",
-	"lastResearchDate": "2026-06-12",
+	"audit": {
+		"url": "https://www.payments.service.gov.uk/security/"
+	},
+	"lastResearchDate": "2026-06-13",
 	"researchSources": [
 		{
 			"type": "url",
@@ -40,6 +43,10 @@
 		{
 			"type": "url",
 			"url": "https://www.gov.uk/guidance/govuk-pay"
+		},
+		{
+			"type": "url",
+			"url": "https://www.payments.service.gov.uk/security/"
 		}
 	]
 }

@@ -1,17 +1,16 @@
 {
 	"id": "activemq-artemis",
-	"name": "Apache ActiveMQ Artemis",
+	"name": "Apache Artemis",
 	"layer": "platform",
 	"sublayer": "integration",
 	"groupKey": "message-broker",
 	"itemKind": "platform",
 	"description": {
-		"de": "Apache ActiveMQ Artemis ist ein hochperformanter, nicht-blockierender Message-Broker. Er wird unter anderem im GovStack Information Mediator und in X-Road-Umgebungen für asynchrone Nachrichtenwarteschlangen zwischen Behörden eingesetzt.",
-		"en": "Apache ActiveMQ Artemis is a high-performance, non-blocking message broker. It is used in the GovStack Information Mediator and in X-Road environments for asynchronous message queues between public authorities."
+		"de": "Apache Artemis ist ein hochperformanter, nicht-blockierender Message-Broker (seit Dezember 2025 eigenständiges Apache Top-Level-Projekt, zuvor als Apache ActiveMQ Artemis bekannt). Er wird unter anderem im GovStack Information Mediator und in X-Road-Umgebungen für asynchrone Nachrichtenwarteschlangen zwischen Behörden eingesetzt.",
+		"en": "Apache Artemis is a high-performance, non-blocking message broker (since December 2025 a standalone Apache Top-Level Project, formerly known as Apache ActiveMQ Artemis). It is used in the GovStack Information Mediator and in X-Road environments for asynchronous message queues between public authorities."
 	},
-	"homepage": "https://activemq.apache.org/components/artemis/",
+	"homepage": "https://artemis.apache.org/",
 	"license": "Apache-2.0",
-	"sublayer": "integration",
 	"tags": ["messaging", "queue", "broker"],
 	"oss": true,
 	"maturity": "graduated",
@@ -28,7 +27,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-06-12",
+	"lastResearchDate": "2026-06-13",
 	"researchSources": [
 		{
 			"type": "url",
@@ -37,6 +36,14 @@
 		{
 			"type": "url",
 			"url": "https://github.com/apache/activemq-artemis"
+		},
+		{
+			"type": "url",
+			"url": "https://artemis.apache.org/"
+		},
+		{
+			"type": "url",
+			"url": "https://activemq.apache.org/news/artemis-tlp"
 		}
 	]
 }
