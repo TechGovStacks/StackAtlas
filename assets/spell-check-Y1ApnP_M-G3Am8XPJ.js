@@ -1,1 +1,0 @@
-import{ut as e}from"./index-BdaSSWo4.js";var t=(t,n)=>{e(t,`_spellCheck`,n,{defaultValue:void 0})};export{t};

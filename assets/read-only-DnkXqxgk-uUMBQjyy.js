@@ -1,1 +1,0 @@
-import{ut as e}from"./index-BdaSSWo4.js";var t=(t,n)=>{e(t,`_readOnly`,n)};export{t};

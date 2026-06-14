@@ -1,1 +1,0 @@
-import{pt as e}from"./index-BdaSSWo4.js";var t=(t,n,r={})=>{e(t,`_placeholder`,n,r)};export{t};
