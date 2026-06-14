@@ -1,0 +1,1 @@
+import{mt as e}from"./index-DO7HPnw0.js";var t=(t,n)=>{e(t,`_customClass`,n,{defaultValue:``})};export{t};

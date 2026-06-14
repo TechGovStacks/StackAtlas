@@ -1,1 +1,0 @@
-import{mt as e}from"./index-Do-QlfO3.js";var t=(t,n)=>{e(t,`_customClass`,n,{defaultValue:``})};export{t};
