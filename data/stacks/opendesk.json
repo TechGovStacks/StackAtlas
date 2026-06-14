@@ -10,16 +10,16 @@
 	},
 	"country": "DE",
 	"issuer": "ZenDiS",
-	"version": "0.1.0",
-	"publishedAt": "2026-04-16",
+	"version": "0.1.1",
+	"publishedAt": "2026-06-14",
 	"items": [
 		{
 			"itemId": "gitlab",
 			"status": "recommended",
-			"role": "maintainer",
+			"role": "consumer",
 			"rationale": {
-				"de": "openDesk wird offen über GitLab-Repositories entwickelt und veröffentlicht.",
-				"en": "openDesk is openly developed and released through GitLab repositories."
+				"de": "openDesk wird offen über GitLab-Repositories auf openCode entwickelt und veröffentlicht.",
+				"en": "openDesk is openly developed and released through GitLab repositories on openCode."
 			}
 		},
 		{
@@ -47,6 +47,15 @@
 			"rationale": {
 				"de": "Kubernetes ist die empfohlene Laufzeit für den produktiven Betrieb.",
 				"en": "Kubernetes is the recommended runtime for production operations."
+			}
+		},
+		{
+			"itemId": "matrix",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "openDesk nutzt Element und den Matrix-Standard als Echtzeit-Kommunikationsschicht für Chat sowie Audio- und Videoanrufe.",
+				"en": "openDesk uses Element and the Matrix standard as the real-time communication layer for chat and audio/video calls."
 			}
 		},
 		{
@@ -81,10 +90,10 @@
 		{
 			"type": "url",
 			"label": {
-				"de": "openDesk GitHub",
-				"en": "openDesk GitHub"
+				"de": "openDesk Quellcode (openCode)",
+				"en": "openDesk Source (openCode)"
 			},
-			"url": "https://github.com/opendesk-eu"
+			"url": "https://gitlab.opencode.de/bmi/opendesk"
 		},
 		{
 			"type": "url",
