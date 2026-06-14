@@ -1,0 +1,1 @@
+import{ut as e}from"./index-BdaSSWo4.js";var t=(t,n,r={})=>{e(t,`_hideLabel`,n,r)};export{t};
