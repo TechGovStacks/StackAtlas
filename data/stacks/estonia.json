@@ -10,8 +10,8 @@
 	},
 	"country": "EE",
 	"issuer": "Riigi Infosüsteemi Amet (RIA) / NIIS",
-	"version": "0.1.0",
-	"publishedAt": "2026-04-13",
+	"version": "0.1.1",
+	"publishedAt": "2026-06-16",
 	"items": [
 		{
 			"itemId": "x-road",
@@ -163,7 +163,7 @@
 				"de": "X-Road Information",
 				"en": "X-Road Information"
 			},
-			"url": "https://www.ria.ee/en/x-road"
+			"url": "https://www.ria.ee/en/state-information-system/data-exchange-platforms/data-exchange-layer-x-tee"
 		}
 	]
 }
