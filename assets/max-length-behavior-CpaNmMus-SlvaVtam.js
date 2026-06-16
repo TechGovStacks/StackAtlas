@@ -1,1 +1,0 @@
-import{dt as e,ht as t,pt as n}from"./index-6f38VXjG.js";var r=(t,n,r)=>{e(t,`_hasCounter`,n,r)},i=(e,t,r={})=>{n(e,`_maxLength`,t,Object.assign({min:0},r))},a=[`hard`,`soft`],o=(e,n)=>{t(e,`_maxLengthBehavior`,e=>typeof e==`string`&&a.includes(e),new Set([`String {hard, soft}`]),n)};export{i as n,o as r,r as t};

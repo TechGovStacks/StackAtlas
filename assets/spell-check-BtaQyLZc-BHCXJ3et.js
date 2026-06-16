@@ -1,0 +1,1 @@
+import{dt as e}from"./index-DsTAS621.js";var t=(t,n)=>{e(t,`_spellCheck`,n,{defaultValue:void 0})};export{t};

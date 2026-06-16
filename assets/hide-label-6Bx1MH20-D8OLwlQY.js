@@ -1,0 +1,1 @@
+import{dt as e}from"./index-DsTAS621.js";var t=(t,n,r={})=>{e(t,`_hideLabel`,n,r)};export{t};
