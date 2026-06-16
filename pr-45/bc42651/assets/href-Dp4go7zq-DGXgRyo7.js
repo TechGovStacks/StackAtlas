@@ -1,0 +1,1 @@
+import{ct as e}from"./index-BQlHOxik-Bqnw8dr2.js";var t=(t,n,r={})=>{e(t,`_href`,n,r)};export{t};
