@@ -15,7 +15,7 @@
 		"openSource": true,
 		"euHeadquartered": true,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
@@ -25,7 +25,7 @@
 	},
 	"homepage": "https://www.mgm-tp.com/a12.html",
 	"license": "EUPL-1.2",
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-06-18",
 	"researchSources": [
 		{
 			"type": "url",
@@ -38,6 +38,14 @@
 		{
 			"type": "url",
 			"url": "https://insights.mgm-tp.com/en/2026/publicsector/a12-enterprise-ai-low-code-platform-goes-open-source-bavarian-state-office-for-taxation-and-mgm-open-up-source-code/"
+		},
+		{
+			"type": "url",
+			"url": "https://insights.mgm-tp.com/en/2026/publicsector/a12-ai-low-code-platform-is-open-source/"
+		},
+		{
+			"type": "url",
+			"url": "https://gitlab.opencode.de/mgm-tp/a12/a12overview"
 		},
 		{
 			"type": "url",
