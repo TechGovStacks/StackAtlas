@@ -1,0 +1,1 @@
+import{at as e,y as t}from"./index-BQlHOxik-B62Ymb56.js";var n=(n,r)=>{e(n,`_disabled`,r,{hooks:{afterPatch:e=>{e===!0&&t()}}})};export{n as t};
