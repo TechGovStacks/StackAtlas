@@ -15,7 +15,7 @@
 		"openSource": true,
 		"euHeadquartered": true,
 		"hasAudit": true,
-		"permissiveLicense": false,
+		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
@@ -25,7 +25,7 @@
 	},
 	"homepage": "https://www.governikus.de/en/",
 	"license": "EUPL-1.2",
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-06-18",
 	"researchSources": [
 		{
 			"type": "url",
