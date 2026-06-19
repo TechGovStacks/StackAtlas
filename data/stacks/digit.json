@@ -10,8 +10,8 @@
 	},
 	"country": "IN",
 	"issuer": "eGovernments Foundation",
-	"version": "0.1.0",
-	"publishedAt": "2026-04-16",
+	"version": "0.1.1",
+	"publishedAt": "2026-06-17",
 	"items": [
 		{
 			"itemId": "apache-kafka",
@@ -23,12 +23,12 @@
 			}
 		},
 		{
-			"itemId": "docker-swarm",
-			"status": "approved",
+			"itemId": "docker",
+			"status": "recommended",
 			"role": "consumer",
 			"rationale": {
-				"de": "Containerisierung ist Grundlage der portablen Servicebereitstellung.",
-				"en": "Containerization is the basis for portable service deployment."
+				"de": "Docker-Container sind die Grundlage der portablen DIGIT-Servicebereitstellung.",
+				"en": "Docker containers are the basis for portable DIGIT service deployment."
 			}
 		},
 		{
@@ -68,6 +68,15 @@
 			}
 		},
 		{
+			"itemId": "node-js",
+			"status": "approved",
+			"role": "consumer",
+			"rationale": {
+				"de": "Node.js ist Laufzeit der DIGIT-Frontend-WebApps und einzelner Dienste.",
+				"en": "Node.js is the runtime for the DIGIT frontend web apps and select services."
+			}
+		},
+		{
 			"itemId": "postgresql",
 			"status": "recommended",
 			"role": "consumer",
@@ -98,28 +107,28 @@
 	"sources": [
 		{
 			"label": {
-				"de": "DIGIT",
-				"en": "DIGIT",
-				"fr": "DIGIT"
+				"de": "eGov Foundation DIGIT",
+				"en": "eGov Foundation DIGIT",
+				"fr": "eGov Foundation DIGIT"
 			},
-			"url": "https://digit.org/",
+			"url": "https://egov.org.in/digit",
 			"type": "url"
 		},
 		{
 			"type": "url",
 			"label": {
-				"de": "DIGIT auf Joinup",
-				"en": "DIGIT on Joinup"
+				"de": "DIGIT Core Dokumentation",
+				"en": "DIGIT Core Documentation"
 			},
-			"url": "https://joinup.ec.europa.eu/collection/digit-digital-public-administration"
+			"url": "https://core.digit.org/"
 		},
 		{
 			"type": "url",
 			"label": {
-				"de": "EU DIGIT Department",
-				"en": "EU DIGIT Department"
+				"de": "DIGIT-OSS auf GitHub",
+				"en": "DIGIT-OSS on GitHub"
 			},
-			"url": "https://ec.europa.eu/info/departments/digital-public-administration-en"
+			"url": "https://github.com/egovernments/DIGIT-OSS"
 		}
 	]
 }
