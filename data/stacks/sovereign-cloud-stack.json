@@ -10,8 +10,8 @@
 	},
 	"country": "EU",
 	"issuer": "Open Source Business Alliance (OSBA)",
-	"version": "0.1.0",
-	"publishedAt": "2026-04-19",
+	"version": "0.1.1",
+	"publishedAt": "2026-06-19",
 	"items": [
 		{
 			"itemId": "ansible",
@@ -20,6 +20,15 @@
 			"rationale": {
 				"de": "Automatisierung von Deployment und Betrieb in Referenzumgebungen.",
 				"en": "Automation of deployment and operations in reference environments."
+			}
+		},
+		{
+			"itemId": "ceph",
+			"status": "recommended",
+			"role": "consumer",
+			"rationale": {
+				"de": "Softwaredefinierter Speicher (Object/Block/File) als Storage-Schicht der SCS-Referenzarchitektur.",
+				"en": "Software-defined storage (object/block/file) as the storage layer of the SCS reference architecture."
 			}
 		},
 		{
@@ -74,7 +83,7 @@
 				"de": "SCS Community",
 				"en": "SCS Community"
 			},
-			"url": "https://scs.community/",
+			"url": "https://sovereigncloudstack.org/",
 			"type": "url"
 		},
 		{
@@ -113,7 +122,7 @@
 			"name": "SCS Community",
 			"role": "contributor",
 			"jurisdiction": "EU",
-			"url": "https://scs.community/",
+			"url": "https://sovereigncloudstack.org/",
 			"since": "2025-01-01"
 		}
 	]
