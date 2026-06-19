@@ -1,1 +1,0 @@
-import{ct as e}from"./index-BQlHOxik-_t9KyGKm.js";var t=(t,n)=>{e(t,`_customClass`,n,{defaultValue:``})};export{t};
