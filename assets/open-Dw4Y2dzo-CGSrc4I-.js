@@ -1,1 +1,0 @@
-import{dt as e}from"./index-ClDpkwS6.js";var t=(t,n,r)=>{e(t,`_open`,n,r)};export{t};

@@ -1,0 +1,1 @@
+import{ht as e}from"./index-yYANhSk9.js";var t=(t,n,r)=>{e(t,n,e=>typeof e==`string`&&i.includes(e),new Set(i),r,{defaultValue:`top`})},n=[`left`,`right`],r=[`top`,`bottom`],i=[...n,...r],a=(e,n)=>{t(e,`_align`,n)};export{a as n,t as r,i as t};

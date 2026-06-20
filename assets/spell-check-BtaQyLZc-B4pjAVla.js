@@ -1,0 +1,1 @@
+import{dt as e}from"./index-yYANhSk9.js";var t=(t,n)=>{e(t,`_spellCheck`,n,{defaultValue:void 0})};export{t};
