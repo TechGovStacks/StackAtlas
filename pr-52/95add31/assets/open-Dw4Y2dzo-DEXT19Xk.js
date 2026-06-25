@@ -1,0 +1,1 @@
+import{at as e}from"./index-BQlHOxik-Ckxl2gkB.js";var t=(t,n,r)=>{e(t,`_open`,n,r)};export{t};
