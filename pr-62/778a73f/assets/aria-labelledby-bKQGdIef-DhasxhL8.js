@@ -1,0 +1,1 @@
+import{dt as e,h as t}from"./index-CJ6nR8sE-Dp8UOnMJ.js";import{n}from"./aria-labelledby-6-ki3akM-cozb02Bx.js";var r=(r,i,a,o)=>{e(r,`_ariaLabelledby`,e=>typeof e==`string`||e===void 0,new Set([`string`]),o);let s=n(i,o);if(a){try{a.ariaLabelledByElements=s}catch{}t.debug([`WebComponent internals`,a])}return s};export{r as t};
