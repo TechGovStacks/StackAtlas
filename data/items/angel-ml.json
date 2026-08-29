@@ -29,7 +29,8 @@
 		"lastDate": "2025-11-11",
 		"url": "https://github.com/Angel-ML/angel/"
 	},
-	"lastResearchDate": "2026-05-02",
+	"license": "Apache-2.0",
+	"lastResearchDate": "2026-08-29",
 	"researchSources": [
 		{
 			"type": "url",
