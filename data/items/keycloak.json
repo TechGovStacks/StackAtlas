@@ -23,7 +23,7 @@
 		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": true,
-		"ownerType": "community"
+		"ownerType": "independentConsortium"
 	},
 	"dependencies": [
 		{
@@ -63,7 +63,7 @@
 			}
 		}
 	],
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-08-31",
 	"researchSources": [
 		{
 			"type": "url",
@@ -76,6 +76,10 @@
 		{
 			"type": "url",
 			"url": "https://en.wikipedia.org/wiki/Keycloak"
+		},
+		{
+			"type": "url",
+			"url": "https://www.cncf.io/projects/keycloak/"
 		}
 	]
 }
