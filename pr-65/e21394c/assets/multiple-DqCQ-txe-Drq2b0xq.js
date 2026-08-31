@@ -1,0 +1,1 @@
+import{at as e}from"./index-BQlHOxik-B7-MMmPL.js";var t=(t,n,r)=>{e(t,`_multiple`,n,r)};export{t};
