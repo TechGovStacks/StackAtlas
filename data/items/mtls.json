@@ -7,7 +7,7 @@
 		"de": "Verschlüsselter Datentransport",
 		"en": "Mutual TLS provides encrypted data transport with bidirectional authentication."
 	},
-	"oss": false,
+	"oss": true,
 	"tags": [],
 	"sovereigntyCriteria": {
 		"openSource": true,
@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc8705",
 	"license": "IETF-RFC",
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-09-04",
 	"researchSources": [
 		{
 			"type": "url",
