@@ -2,12 +2,12 @@
 	"id": "mtls",
 	"name": "mTLS",
 	"layer": "infrastructure",
-	"itemKind": "platform",
+	"itemKind": "protocol",
 	"description": {
-		"de": "Verschlüsselter Datentransport",
+		"de": "Mutual TLS (mTLS) erweitert TLS um eine beidseitige, zertifikatsbasierte Authentifizierung: Nicht nur der Server, sondern auch der Client weist sich mit einem Zertifikat aus. mTLS bildet die Grundlage für Zero-Trust-Architekturen und die gesicherte Service-to-Service-Kommunikation.",
 		"en": "Mutual TLS provides encrypted data transport with bidirectional authentication."
 	},
-	"oss": false,
+	"oss": true,
 	"tags": [],
 	"sovereigntyCriteria": {
 		"openSource": true,
@@ -23,7 +23,7 @@
 	},
 	"homepage": "https://datatracker.ietf.org/doc/html/rfc8705",
 	"license": "IETF-RFC",
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-09-05",
 	"researchSources": [
 		{
 			"type": "url",
