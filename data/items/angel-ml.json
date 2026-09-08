@@ -23,13 +23,13 @@
 		"dataPortability": true,
 		"openStandards": false,
 		"noTelemetryByDefault": true,
-		"ownerType": "community"
+		"ownerType": "independentConsortium"
 	},
 	"audit": {
 		"lastDate": "2025-11-11",
 		"url": "https://github.com/Angel-ML/angel/"
 	},
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-09-08",
 	"researchSources": [
 		{
 			"type": "url",
@@ -38,6 +38,15 @@
 		{
 			"type": "url",
 			"url": "https://angel-ml.github.io/"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/Angel-ML/angel/blob/master/LICENSE.TXT"
+		},
+		{
+			"type": "url",
+			"url": "https://www.linuxfoundation.org/press/press-release/lf-deep-learning-adds-two-new-framework-projects-to-expand-community-and-ecosystem"
 		}
-	]
+	],
+	"license": "Apache-2.0"
 }
