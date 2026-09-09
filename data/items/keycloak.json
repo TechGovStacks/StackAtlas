@@ -23,7 +23,7 @@
 		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": true,
-		"ownerType": "community"
+		"ownerType": "independentConsortium"
 	},
 	"dependencies": [
 		{
