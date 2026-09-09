@@ -12,7 +12,7 @@
 	"tags": ["iam", "sso", "oidc", "saml"],
 	"license": "Apache-2.0",
 	"oss": true,
-	"maturity": "graduated",
+	"maturity": "incubation",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -63,7 +63,7 @@
 			}
 		}
 	],
-	"lastResearchDate": "2026-09-03",
+	"lastResearchDate": "2026-09-04",
 	"researchSources": [
 		{
 			"type": "url",
