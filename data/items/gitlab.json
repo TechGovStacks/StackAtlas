@@ -14,14 +14,14 @@
 	"oss": true,
 	"sovereigntyCriteria": {
 		"openSource": true,
-		"euHeadquartered": true,
+		"euHeadquartered": false,
 		"hasAudit": true,
 		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
 		"dataPortability": true,
 		"openStandards": true,
-		"noTelemetryByDefault": true,
+		"noTelemetryByDefault": false,
 		"ownerType": "corporation"
 	},
 	"lastResearchDate": "2026-09-08",
@@ -33,6 +33,14 @@
 		{
 			"type": "url",
 			"url": "https://github.com/gitlabhq/gitlabhq"
+		},
+		{
+			"type": "url",
+			"url": "https://en.wikipedia.org/wiki/GitLab_Inc."
+		},
+		{
+			"type": "url",
+			"url": "https://docs.gitlab.com/administration/settings/usage_statistics"
 		}
 	],
 	"license": "MIT"

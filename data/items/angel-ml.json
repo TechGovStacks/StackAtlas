@@ -29,6 +29,7 @@
 		"lastDate": "2025-11-11",
 		"url": "https://github.com/Angel-ML/angel/"
 	},
+	"license": "Apache-2.0",
 	"lastResearchDate": "2026-09-08",
 	"researchSources": [
 		{
@@ -47,6 +48,5 @@
 			"type": "url",
 			"url": "https://www.linuxfoundation.org/press/press-release/lf-deep-learning-adds-two-new-framework-projects-to-expand-community-and-ecosystem"
 		}
-	],
-	"license": "Apache-2.0"
+	]
 }

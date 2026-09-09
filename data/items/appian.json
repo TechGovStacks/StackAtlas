@@ -4,7 +4,7 @@
 	"layer": "applications",
 	"sublayer": "low-code",
 	"groupKey": "low-code-app-builder",
-	"itemKind": "service",
+	"itemKind": "platform",
 	"description": {
 		"de": "Die Technologie bildet einen verbindlichen Architektur- und Funktionsbaustein innerhalb des D-Stacks. Sie definiert einen organisationsweit gültigen technischen Standard für den Bereich 'Low-Code Prozessautomatisierung' und dient als Referenz für konsistente, interoperable und wiederverwendbare Implementierungen. Proprietäre Enterprise Low-Code-Plattform mit Sitz in den USA.",
 		"en": "Enterprise low-code process automation platform. Proprietary software headquartered in McLean, Virginia, USA. Supports on-premise deployment with Kubernetes."
@@ -25,7 +25,7 @@
 	},
 	"homepage": "https://appian.com/",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-09-01",
 	"researchSources": [
 		{
 			"type": "url",
