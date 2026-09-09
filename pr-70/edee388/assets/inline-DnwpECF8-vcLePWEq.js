@@ -1,1 +1,0 @@
-import{at as e}from"./index-BQlHOxik-DSLYCB7w.js";var t=(t,n,r={})=>{e(t,`_inline`,n,r)};export{t};

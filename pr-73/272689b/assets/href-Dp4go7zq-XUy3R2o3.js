@@ -1,1 +1,0 @@
-import{ct as e}from"./index-BQlHOxik-DtW7BAm-.js";var t=(t,n,r={})=>{e(t,`_href`,n,r)};export{t};

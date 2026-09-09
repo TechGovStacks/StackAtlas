@@ -1,1 +1,0 @@
-import{dt as e}from"./index-BFXox298.js";var t=(t,n)=>{e(t,`_spellCheck`,n,{defaultValue:void 0})};export{t};
