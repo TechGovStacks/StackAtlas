@@ -25,10 +25,7 @@
 		"noTelemetryByDefault": false,
 		"ownerType": "community"
 	},
-	"audit": {
-		"lastDate": "2025-11-11",
-		"url": "https://docs.axolotl.ai/"
-	},
+	"license": "Apache-2.0",
 	"lastResearchDate": "2026-09-08",
 	"researchSources": [
 		{
@@ -47,6 +44,5 @@
 			"type": "url",
 			"url": "https://axolotlai.substack.com/p/fine-tuning-llms-as-a-cost-strategy"
 		}
-	],
-	"license": "Apache-2.0"
+	]
 }

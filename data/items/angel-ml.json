@@ -10,6 +10,7 @@
 		"en": "Angel-ML is a high-performance distributed machine learning platform based on parameter server architecture."
 	},
 	"homepage": "https://angelml.ai",
+	"ownerCountry": "CN",
 	"tags": ["machine-learning", "verarbeitung", "ml"],
 	"oss": true,
 	"maturity": "graduated",
@@ -25,10 +26,6 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"audit": {
-		"lastDate": "2025-11-11",
-		"url": "https://github.com/Angel-ML/angel/"
-	},
 	"license": "Apache-2.0",
 	"lastResearchDate": "2026-09-08",
 	"researchSources": [
@@ -38,7 +35,7 @@
 		},
 		{
 			"type": "url",
-			"url": "https://angel-ml.github.io/"
+			"url": "https://lfaidata.foundation/projects/angel-ml/"
 		},
 		{
 			"type": "url",
