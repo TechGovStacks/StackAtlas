@@ -3,7 +3,7 @@
 	"name": "Android",
 	"layer": "applications",
 	"sublayer": "android-os",
-	"itemKind": "service",
+	"itemKind": "platform",
 	"description": {
 		"de": "Android ist ein offenes Betriebssystem für die Arbeit auf mobilen Endgeräten.",
 		"en": "Android is an open operating system for mobile devices developed by Google."
@@ -29,7 +29,7 @@
 		"url": "https://source.android.com/docs?hl=de"
 	},
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-09-01",
 	"researchSources": [
 		{
 			"type": "url",
@@ -38,6 +38,10 @@
 		{
 			"type": "url",
 			"url": "https://source.android.com/"
+		},
+		{
+			"type": "url",
+			"url": "https://source.android.com/docs/setup/about/faqs"
 		}
 	]
 }
