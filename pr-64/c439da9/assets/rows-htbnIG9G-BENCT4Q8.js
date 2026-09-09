@@ -1,1 +1,0 @@
-import{st as e}from"./index-BQlHOxik-_DiI4Taq.js";var t=(t,n)=>{e(t,`_rows`,n,{min:1})};export{t};
