@@ -10,10 +10,11 @@
 		"en": "Axon Ivy is an OS- and database-agnostic no-code and low-code platform for business process automation and orchestration of existing systems. The Java-based platform supports open standards and can be adapted to any existing system."
 	},
 	"oss": false,
+	"ownerCountry": "CH",
 	"tags": ["low-code", "no-code", "bpm", "java", "process-automation", "swiss"],
 	"sovereigntyCriteria": {
 		"openSource": false,
-		"euHeadquartered": true,
+		"euHeadquartered": false,
 		"hasAudit": true,
 		"permissiveLicense": false,
 		"matureProject": true,
@@ -25,7 +26,7 @@
 	},
 	"homepage": "https://www.axonivy.com/",
 	"license": "Proprietary",
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-09-02",
 	"researchSources": [
 		{
 			"type": "url",
@@ -46,6 +47,10 @@
 		{
 			"type": "url",
 			"url": "https://www.saasworthy.com/product/axon-ivy"
+		},
+		{
+			"type": "url",
+			"url": "https://www.moneyhouse.ch/en/company/axon-ivy-ag-13391299301"
 		}
 	]
 }
