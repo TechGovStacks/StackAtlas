@@ -12,7 +12,7 @@
 	"tags": ["iam", "sso", "oidc", "saml"],
 	"license": "Apache-2.0",
 	"oss": true,
-	"maturity": "graduated",
+	"maturity": "incubation",
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
@@ -23,7 +23,7 @@
 		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": true,
-		"ownerType": "community"
+		"ownerType": "independentConsortium"
 	},
 	"dependencies": [
 		{
@@ -63,7 +63,7 @@
 			}
 		}
 	],
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-09-09",
 	"researchSources": [
 		{
 			"type": "url",
@@ -76,6 +76,10 @@
 		{
 			"type": "url",
 			"url": "https://en.wikipedia.org/wiki/Keycloak"
+		},
+		{
+			"type": "url",
+			"url": "https://www.cncf.io/projects/keycloak/"
 		}
 	]
 }

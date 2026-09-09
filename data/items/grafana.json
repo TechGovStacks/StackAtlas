@@ -10,6 +10,7 @@
 		"en": "Grafana is an open-source platform for visualisation and dashboards. Combined with Prometheus and many other data sources it presents metrics, logs and traces for operational reliability and observability."
 	},
 	"homepage": "https://grafana.com/oss/grafana/",
+	"license": "AGPL-3.0-only",
 	"tags": ["observability", "monitoring", "dashboard", "metrics", "visualization"],
 	"oss": true,
 	"sovereigntyCriteria": {
@@ -22,9 +23,9 @@
 		"dataPortability": true,
 		"openStandards": true,
 		"noTelemetryByDefault": true,
-		"ownerType": "community"
+		"ownerType": "corporation"
 	},
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-09-09",
 	"researchSources": [
 		{
 			"type": "url",
@@ -33,6 +34,14 @@
 		{
 			"type": "url",
 			"url": "https://github.com/grafana/grafana"
+		},
+		{
+			"type": "url",
+			"url": "https://grafana.com/blog/grafana-loki-tempo-relicensing-to-agplv3/"
+		},
+		{
+			"type": "url",
+			"url": "https://grafana.com/licensing/"
 		}
 	]
 }
