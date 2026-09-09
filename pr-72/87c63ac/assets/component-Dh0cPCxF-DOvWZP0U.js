@@ -1,0 +1,1 @@
+import{s as e}from"./index-BQlHOxik-D6iNUyk2.js";import{t}from"./component-DvjvBJeK-Da5-sEy_.js";var n=({label:n,badgeText:r,id:i,refFloating:a})=>e(`div`,{class:`kol-tooltip__floating`,hidden:n.length===0,ref:a},e(`div`,{class:`kol-tooltip__arrow`}),e(t,{class:`kol-tooltip__content`,id:i||void 0,badgeText:r,label:n}));export{n as t};
