@@ -1,0 +1,1 @@
+import{mt as e}from"./index-BFXox298.js";var t=(t,n,r={})=>{e(t,`_placeholder`,n,r)};export{t};

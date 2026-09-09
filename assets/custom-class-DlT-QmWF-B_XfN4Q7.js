@@ -1,1 +1,0 @@
-import{mt as e}from"./index-yYANhSk9.js";var t=(t,n)=>{e(t,`_customClass`,n,{defaultValue:``})};export{t};

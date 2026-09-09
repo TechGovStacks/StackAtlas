@@ -1,1 +1,0 @@
-import{st as e}from"./index-BQlHOxik-B7-MMmPL.js";var t=(t,n)=>{e(t,`_rows`,n,{min:1})};export{t};
