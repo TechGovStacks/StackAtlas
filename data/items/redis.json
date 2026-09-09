@@ -47,6 +47,10 @@
 		{
 			"type": "url",
 			"url": "https://redis.io/blog/agplv3/"
+		},
+		{
+			"type": "url",
+			"url": "https://redis.io/legal/licenses/"
 		}
 	]
 }

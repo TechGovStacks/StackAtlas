@@ -14,7 +14,7 @@
 	"maturity": "graduated",
 	"sovereigntyCriteria": {
 		"openSource": true,
-		"euHeadquartered": false,
+		"euHeadquartered": true,
 		"hasAudit": false,
 		"permissiveLicense": true,
 		"matureProject": true,
@@ -25,7 +25,7 @@
 		"ownerType": "independentConsortium"
 	},
 	"license": "GPL-2.0-or-later",
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-09-03",
 	"researchSources": [
 		{
 			"type": "url",
@@ -34,6 +34,10 @@
 		{
 			"type": "url",
 			"url": "https://github.com/wch/r-source"
+		},
+		{
+			"type": "url",
+			"url": "https://www.r-project.org/foundation/"
 		}
 	]
 }
