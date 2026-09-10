@@ -49,19 +49,19 @@
 		"validate-schemas:cycles": "node scripts/validate-schemas.mjs --check-cycles"
 	},
 	"dependencies": {
-		"@capacitor/core": "8.5.0",
+		"@capacitor/core": "8.5.1",
 		"@hookform/resolvers": "5.9.1",
 		"@public-ui/components": "4.3.0",
 		"@public-ui/preact": "4.3.0",
 		"@public-ui/theme-default": "4.3.0",
 		"@public-ui/theme-kern": "4.3.0",
-		"i18next": "26.4.0",
+		"i18next": "26.4.2",
 		"i18next-browser-languagedetector": "8.2.1",
 		"preact": "10.29.8",
 		"preact-iso": "2.12.2",
 		"preact-render-to-string": "6.7.0",
 		"react-hook-form": "7.87.0",
-		"react-i18next": "17.0.12",
+		"react-i18next": "17.0.13",
 		"zod": "4.5.4"
 	},
 	"devDependencies": {
