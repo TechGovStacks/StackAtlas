@@ -1,1 +1,0 @@
-import{ht as e}from"./index-Bzsf6a1p.js";var t=(t,n,r={})=>{e(t,`_placeholder`,n,r)};export{t};

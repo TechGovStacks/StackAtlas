@@ -1,1 +1,0 @@
-import{ft as e}from"./index-Bzsf6a1p.js";var t=(t,n,r={})=>{e(t,`_inline`,n,r)};export{t};
