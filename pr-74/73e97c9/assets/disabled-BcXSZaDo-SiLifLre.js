@@ -1,0 +1,1 @@
+import{b as e,st as t}from"./index-CJ6nR8sE-BVpuueRK.js";var n=(n,r)=>{t(n,`_disabled`,r,{hooks:{afterPatch:t=>{t===!0&&e()}}})};export{n as t};
