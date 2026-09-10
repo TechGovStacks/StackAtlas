@@ -1,1 +1,0 @@
-import{dt as e}from"./index-ZjbrhTiG.js";var t=(t,n,r={})=>{e(t,`_inline`,n,r)};export{t};
