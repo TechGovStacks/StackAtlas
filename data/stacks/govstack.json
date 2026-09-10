@@ -5,12 +5,12 @@
 		"en": "GovStack Initiative"
 	},
 	"description": {
-		"de": "Internationale Initiative von Estland, Deutschland, ITU und DIAL für 19 essenzielle Digital-Public-Infrastructure-Building-Blocks und einen quelloffenen Werkzeugkasten.",
-		"en": "International initiative by Estonia, Germany, ITU and DIAL defining 19 essential digital public infrastructure building blocks and an open-source toolkit."
+		"de": "Internationale Initiative von Estland, Deutschland, ITU und DIAL für 15 essenzielle Digital-Public-Infrastructure-Building-Blocks und einen quelloffenen Werkzeugkasten.",
+		"en": "International initiative by Estonia, Germany, ITU and DIAL defining 15 essential digital public infrastructure building blocks and an open-source toolkit."
 	},
 	"issuer": "ITU / DIAL / Estonia / Germany",
-	"version": "0.1.0",
-	"publishedAt": "2026-04-13",
+	"version": "0.1.1",
+	"publishedAt": "2026-09-10",
 	"items": [
 		{
 			"itemId": "govstack-information-mediator",
@@ -163,7 +163,7 @@
 				"de": "ITU GovStack",
 				"en": "ITU GovStack"
 			},
-			"url": "https://www.itu.int/en/ITU-D/Digital-Inclusion/Pages/govstack.aspx"
+			"url": "https://www.itu.int/en/ITU-D/ICT-Applications/Pages/digital-government.aspx"
 		}
 	]
 }
