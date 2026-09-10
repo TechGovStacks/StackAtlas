@@ -1,1 +1,0 @@
-import{at as e}from"./index-BQlHOxik-bjxBWhzi.js";var t=(t,n)=>{e(t,`_spellCheck`,n,{defaultValue:void 0})};export{t};
