@@ -1,0 +1,1 @@
+import{mt as e}from"./index-ZjbrhTiG.js";var t=(t,n,r={})=>{e(t,`_href`,n,r)};export{t};

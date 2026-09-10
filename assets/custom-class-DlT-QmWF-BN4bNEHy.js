@@ -1,0 +1,1 @@
+import{mt as e}from"./index-ZjbrhTiG.js";var t=(t,n)=>{e(t,`_customClass`,n,{defaultValue:``})};export{t};
