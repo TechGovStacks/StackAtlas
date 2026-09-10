@@ -21,7 +21,7 @@
 		"noTelemetryByDefault": true,
 		"ownerType": "independentConsortium"
 	},
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-09-08",
 	"researchSources": [
 		{
 			"type": "url",
@@ -31,5 +31,6 @@
 			"type": "url",
 			"url": "https://github.com/tektoncd/pipeline"
 		}
-	]
+	],
+	"license": "Apache-2.0"
 }
