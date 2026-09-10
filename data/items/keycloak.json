@@ -63,7 +63,7 @@
 			}
 		}
 	],
-	"lastResearchDate": "2026-09-04",
+	"lastResearchDate": "2026-09-05",
 	"researchSources": [
 		{
 			"type": "url",
@@ -80,6 +80,10 @@
 		{
 			"type": "url",
 			"url": "https://www.cncf.io/projects/keycloak/"
+		},
+		{
+			"type": "url",
+			"url": "https://www.cncf.io/blog/2024/11/19/keycloak-completes-fuzzing-audit/"
 		}
 	]
 }
