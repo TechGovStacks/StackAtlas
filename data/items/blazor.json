@@ -24,8 +24,8 @@
 		"ownerType": "corporation"
 	},
 	"homepage": "https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor",
-	"license": "Apache-2.0",
-	"lastResearchDate": "2026-05-02",
+	"license": "MIT",
+	"lastResearchDate": "2026-09-11",
 	"researchSources": [
 		{
 			"type": "url",
@@ -42,6 +42,10 @@
 		{
 			"type": "url",
 			"url": "https://github.com/dotnet/aspnetcore"
+		},
+		{
+			"type": "url",
+			"url": "https://github.com/dotnet/aspnetcore/blob/main/LICENSE.txt"
 		},
 		{
 			"type": "url",
