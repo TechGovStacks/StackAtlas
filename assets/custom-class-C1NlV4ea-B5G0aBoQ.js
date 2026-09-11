@@ -1,0 +1,1 @@
+import{ht as e}from"./index-DY1oqeCJ.js";var t=(t,n)=>{e(t,`_customClass`,n,{defaultValue:``})};export{t};
