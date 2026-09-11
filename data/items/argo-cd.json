@@ -6,7 +6,7 @@
 	"groupKey": "ci-cd",
 	"itemKind": "tool",
 	"description": {
-		"de": "Argo CD ist ein GitOps Continuous Delivery Tool für Kubernetes. Es ermöglicht deklarative, git-basierte Application Deployment und trärt als CNCF-Graduated-Projekt zur konsistenten, interoperablen und wiederverwendbaren Implementierung von CI/CD-Pipelines bei.",
+		"de": "Argo CD ist ein GitOps Continuous Delivery Tool für Kubernetes. Es ermöglicht deklarative, git-basierte Application Deployment und trägt als CNCF-Graduated-Projekt zur konsistenten, interoperablen und wiederverwendbaren Implementierung von CI/CD-Pipelines bei.",
 		"en": "Argo CD is a GitOps continuous delivery tool for Kubernetes. It enables declarative, git-based application deployment and serves as a CNCF graduated project for consistent, interoperable and reusable CI/CD pipeline implementations."
 	},
 	"oss": true,
@@ -25,7 +25,7 @@
 	},
 	"homepage": "https://argoproj.github.io/cd/",
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-09-11",
 	"researchSources": [
 		{
 			"type": "url",
