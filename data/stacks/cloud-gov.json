@@ -10,16 +10,16 @@
 	},
 	"country": "US",
 	"issuer": "U.S. General Services Administration (GSA)",
-	"version": "0.1.0",
-	"publishedAt": "2026-04-16",
+	"version": "0.2.0",
+	"publishedAt": "2026-09-12",
 	"items": [
 		{
 			"itemId": "docker-swarm",
-			"status": "approved",
+			"status": "deprecated",
 			"role": "consumer",
 			"rationale": {
-				"de": "Containerisierte Workloads bilden die operative Basis der Plattform.",
-				"en": "Containerized workloads form the operational base of the platform."
+				"de": "cloud.gov betreibt Container über Cloud Foundry (Diego/Garden), nicht über Docker Swarm.",
+				"en": "cloud.gov runs containers via Cloud Foundry (Diego/Garden), not Docker Swarm."
 			}
 		},
 		{
@@ -27,17 +27,26 @@
 			"status": "approved",
 			"role": "consumer",
 			"rationale": {
-				"de": "OpenSearch/Elasticsearch-Muster für Logs und Suchindizes.",
-				"en": "OpenSearch/Elasticsearch patterns are used for logs and search indexes."
+				"de": "Elasticsearch wird als gebrokerter AWS-Service für Logs und Suchindizes bereitgestellt.",
+				"en": "Elasticsearch is provided as a brokered AWS service for logs and search indexes."
 			}
 		},
 		{
 			"itemId": "kubernetes",
+			"status": "deprecated",
+			"role": "consumer",
+			"rationale": {
+				"de": "cloud.gov basiert als PaaS auf Cloud Foundry, nicht auf Kubernetes.",
+				"en": "cloud.gov is built as a PaaS on Cloud Foundry, not Kubernetes."
+			}
+		},
+		{
+			"itemId": "postgresql",
 			"status": "approved",
 			"role": "consumer",
 			"rationale": {
-				"de": "Cloud-native Betriebsmodell mit orchestrierten Plattformkomponenten.",
-				"en": "Cloud-native operations model with orchestrated platform components."
+				"de": "PostgreSQL wird als verwalteter RDS-Service über den cloud.gov Service Broker angeboten.",
+				"en": "PostgreSQL is offered as a managed RDS service through the cloud.gov service broker."
 			}
 		},
 		{
@@ -45,8 +54,8 @@
 			"status": "approved",
 			"role": "consumer",
 			"rationale": {
-				"de": "Redis wird als verwalteter Service-Baustein bereitgestellt.",
-				"en": "Redis is provided as a managed service building block."
+				"de": "Redis wird über AWS ElastiCache als gebrokerter Service bereitgestellt.",
+				"en": "Redis is provided through AWS ElastiCache as a brokered service."
 			}
 		},
 		{
@@ -75,7 +84,7 @@
 				"de": "cloud.gov Dokumentation",
 				"en": "cloud.gov Documentation"
 			},
-			"url": "https://cloud.gov/docs/"
+			"url": "https://docs.cloud.gov/"
 		},
 		{
 			"type": "url",
@@ -83,7 +92,7 @@
 				"de": "cloud.gov GitHub",
 				"en": "cloud.gov GitHub"
 			},
-			"url": "https://github.com/18F/cloud-gov"
+			"url": "https://github.com/cloud-gov"
 		}
 	]
 }
