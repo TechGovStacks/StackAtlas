@@ -8,14 +8,14 @@
 		"de": "Europäische, permissioned Blockchain-Infrastruktur mit APIs, Vertrauensdiensten und Governance für öffentliche Anwendungsfälle.",
 		"en": "European permissioned blockchain infrastructure with APIs, trust services and governance for public-sector use cases."
 	},
-	"issuer": "European Commission",
-	"version": "0.1.0",
-	"publishedAt": "2026-04-16",
+	"issuer": "Europeum-EDIC",
+	"version": "0.1.1",
+	"publishedAt": "2026-09-13",
 	"items": [
 		{
 			"itemId": "openapi",
 			"status": "recommended",
-			"role": "contributor",
+			"role": "consumer",
 			"rationale": {
 				"de": "Öffentliche API-Schnittstellen werden dokumentiert und versioniert bereitgestellt.",
 				"en": "Public API interfaces are documented and published in versioned form."
@@ -47,16 +47,16 @@
 				"en": "European Blockchain Services Infrastructure",
 				"fr": "European Blockchain Services Infrastructure"
 			},
-			"url": "https://ec.europa.eu/digital-building-blocks/sites/display/EBSI",
+			"url": "https://ebsi.eu",
 			"type": "url"
 		},
 		{
 			"type": "url",
 			"label": {
-				"de": "EBSI Wiki",
-				"en": "EBSI Wiki"
+				"de": "EBSI – Über uns (Governance durch Europeum-EDIC)",
+				"en": "EBSI – About us (governance by Europeum-EDIC)"
 			},
-			"url": "https://ec.europa.eu/digital-building-blocks/wikis/display/DIGIT/EBSI"
+			"url": "https://ebsi.eu/about-us"
 		},
 		{
 			"type": "url",
