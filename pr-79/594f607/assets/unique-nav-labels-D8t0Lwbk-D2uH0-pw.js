@@ -1,0 +1,1 @@
+import{h as e}from"./index-CJ6nR8sE-DXR_UvKx.js";var t=new Set;function n(n){t.has(n)?e.warn(`There already is a nav element with the label "${n}"`):t.add(n)}function r(e){t.delete(e)}export{r as n,n as t};
