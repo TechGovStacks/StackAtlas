@@ -5,12 +5,12 @@
 		"en": "European Blockchain Services Infrastructure (EBSI)"
 	},
 	"description": {
-		"de": "Europäische, permissioned Blockchain-Infrastruktur mit APIs, Vertrauensdiensten und Governance für öffentliche Anwendungsfälle.",
-		"en": "European permissioned blockchain infrastructure with APIs, trust services and governance for public-sector use cases."
+		"de": "Europäische, permissioned Blockchain-Infrastruktur mit APIs, Vertrauensdiensten und Governance für öffentliche Anwendungsfälle, betrieben von Europeum-EDIC im Auftrag der teilnehmenden EU-Mitgliedstaaten.",
+		"en": "European permissioned blockchain infrastructure with APIs, trust services and governance for public-sector use cases, operated by Europeum-EDIC on behalf of participating EU Member States."
 	},
-	"issuer": "European Commission",
-	"version": "0.1.0",
-	"publishedAt": "2026-04-16",
+	"issuer": "Europeum-EDIC",
+	"version": "0.1.1",
+	"publishedAt": "2026-09-14",
 	"items": [
 		{
 			"itemId": "openapi",
@@ -43,28 +43,28 @@
 	"sources": [
 		{
 			"label": {
-				"de": "European Blockchain Services Infrastructure",
-				"en": "European Blockchain Services Infrastructure",
-				"fr": "European Blockchain Services Infrastructure"
+				"de": "EBSI – Offizielle Website (Europeum-EDIC)",
+				"en": "EBSI – Official Website (Europeum-EDIC)",
+				"fr": "EBSI – Site officiel (Europeum-EDIC)"
 			},
-			"url": "https://ec.europa.eu/digital-building-blocks/sites/display/EBSI",
+			"url": "https://ebsi.eu/",
 			"type": "url"
 		},
 		{
 			"type": "url",
 			"label": {
-				"de": "EBSI Wiki",
-				"en": "EBSI Wiki"
+				"de": "Über EBSI und Europeum-EDIC",
+				"en": "About EBSI and Europeum-EDIC"
 			},
-			"url": "https://ec.europa.eu/digital-building-blocks/wikis/display/DIGIT/EBSI"
+			"url": "https://ebsi.eu/about-us"
 		},
 		{
 			"type": "url",
 			"label": {
-				"de": "EU Digital Building Blocks",
-				"en": "EU Digital Building Blocks"
+				"de": "EBSI im EU Digital Building Blocks Portal",
+				"en": "EBSI on the EU Digital Building Blocks portal"
 			},
-			"url": "https://ec.europa.eu/digital-building-blocks/"
+			"url": "https://ec.europa.eu/digital-building-blocks/sites/spaces/EBSI/overview"
 		}
 	]
 }
