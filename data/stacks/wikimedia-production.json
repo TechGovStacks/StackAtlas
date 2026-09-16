@@ -9,8 +9,8 @@
 		"en": "Production-oriented Wikimedia operations architecture with Kubernetes, observability and MediaWiki-adjacent services."
 	},
 	"issuer": "Wikimedia Foundation",
-	"version": "0.1.0",
-	"publishedAt": "2026-04-16",
+	"version": "0.1.1",
+	"publishedAt": "2026-09-16",
 	"items": [
 		{
 			"itemId": "apache-kafka",
@@ -61,11 +61,11 @@
 	"sources": [
 		{
 			"label": {
-				"de": "Wikimedia Production Architecture",
-				"en": "Wikimedia Production Architecture",
-				"fr": "Architecture de production Wikimedia"
+				"de": "Wikimedia SRE Service Operations",
+				"en": "Wikimedia SRE Service Operations",
+				"fr": "Wikimedia SRE Service Operations"
 			},
-			"url": "https://wikitech.wikimedia.org/wiki/Production_architecture",
+			"url": "https://wikitech.wikimedia.org/wiki/SRE/Service_Operations",
 			"type": "url"
 		},
 		{
