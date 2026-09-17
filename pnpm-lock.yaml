@@ -19,17 +19,17 @@ importers:
         specifier: 5.9.1
         version: 5.9.1(@standard-schema/spec@1.1.0)(ajv-formats@3.0.1(ajv@8.20.0))(ajv@8.20.0)(react-hook-form@7.87.0(react@19.2.4))(zod@4.5.4)
       '@public-ui/components':
-        specifier: 4.3.0
-        version: 4.3.0(adopted-style-sheets@1.1.9-rc.25)
+        specifier: 4.4.0
+        version: 4.4.0(adopted-style-sheets@1.1.9-rc.25)
       '@public-ui/preact':
-        specifier: 4.3.0
-        version: 4.3.0(@public-ui/react@4.3.0(@public-ui/components@4.3.0(adopted-style-sheets@1.1.9-rc.25))(react-dom@18.3.1(react@19.2.4))(react@19.2.4))(preact@10.29.8)
+        specifier: 4.4.0
+        version: 4.4.0(@public-ui/react@4.4.0(@public-ui/components@4.4.0(adopted-style-sheets@1.1.9-rc.25))(react-dom@18.3.1(react@19.2.4))(react@19.2.4))(preact@10.29.8)
       '@public-ui/theme-default':
-        specifier: 4.3.0
-        version: 4.3.0(@public-ui/components@4.3.0(adopted-style-sheets@1.1.9-rc.25))
+        specifier: 4.4.0
+        version: 4.4.0(@public-ui/components@4.4.0(adopted-style-sheets@1.1.9-rc.25))
       '@public-ui/theme-kern':
-        specifier: 4.3.0
-        version: 4.3.0(@public-ui/components@4.3.0(adopted-style-sheets@1.1.9-rc.25))
+        specifier: 4.4.0
+        version: 4.4.0(@public-ui/components@4.4.0(adopted-style-sheets@1.1.9-rc.25))
       i18next:
         specifier: 26.4.2
         version: 26.4.2(typescript@6.0.3)
@@ -1962,34 +1962,34 @@ packages:
       preact: ^10.4.0 || ^11.0.0-0
       vite: '>=2.0.0'
 
-  '@public-ui/components@4.3.0':
-    resolution: {integrity: sha512-I/wI1aC/aVlP2pJ/ifX/yeKKcQS4cuul53ISiKZpI0Op56kjjpCfkGU+wLYYohWzfqSmY+DacMrtw72lq9hPqw==}
+  '@public-ui/components@4.4.0':
+    resolution: {integrity: sha512-fYMb9Dz+5ItHjoHAQ+JJAaHoEGa6+qLF1Z4GbjXt/meRsnxVaH7FgffSxieo84PAlSp6JBIldMgN2LfZBbD2lA==}
     hasBin: true
     peerDependencies:
       adopted-style-sheets: 1.1.9-rc.25
 
-  '@public-ui/preact@4.3.0':
-    resolution: {integrity: sha512-DTASLAH6JEmfMVMpYjuRWsITy0fe8Jw+WcUxyVzq9Tzqa0itDSLuz5WNkw+YyX/Cm7NYALX+4OsPKVxFXNvr+A==}
+  '@public-ui/preact@4.4.0':
+    resolution: {integrity: sha512-qG3zgvXB6G9s0ENJ1+TtleiBpBkQI+cUcjxRc7sby28PdYvlBsAt3ru6OslietkDAznZdhtDR4jH6YjcSB+jug==}
     peerDependencies:
-      '@public-ui/react': 4.3.0
+      '@public-ui/react': 4.4.0
       preact: 10.x
 
-  '@public-ui/react@4.3.0':
-    resolution: {integrity: sha512-WHNunMjGjiDot95BKSX+Jb72YmM2JGdtkxtymSJTnZGsazb0qXnYVmP1X7/Rmay+P0KnM5Y/PIGEeUhtsshvgg==}
+  '@public-ui/react@4.4.0':
+    resolution: {integrity: sha512-LV7ojNjvJGe77SQQekPOoOCiuk2fVY6iPFT8m/CHfE5aAwtOB8gvN651B12chTXbSWqgrfY2DOMEyqaLfjf7HQ==}
     peerDependencies:
-      '@public-ui/components': 4.3.0
+      '@public-ui/components': 4.4.0
       react: 16.x || 17.x || 18.x
       react-dom: 16.x || 17.x || 18.x
 
-  '@public-ui/theme-default@4.3.0':
-    resolution: {integrity: sha512-S+1DDTIZ73ydJc9tyAIRQe6USCH/AGo1N2ijRY6eVlIEk9Q+cDGYIPUWjQlOBcmDRsybpq2LDrqAMECuLHtjug==}
+  '@public-ui/theme-default@4.4.0':
+    resolution: {integrity: sha512-Y/EnhiIrErTob6+QCIQtlOFkID6OCoJ/i3ByJ7bofbE/Y2uF+bFbIhWNr6Us64jrH8/J4+cUoOxNjvucAZ6jRw==}
     peerDependencies:
-      '@public-ui/components': 4.3.0
+      '@public-ui/components': 4.4.0
 
-  '@public-ui/theme-kern@4.3.0':
-    resolution: {integrity: sha512-gPoQmEVQ+FIu+C+iHWDVYbPKxty7B8+s1hbnbOfg6jpg2Ods9D4hTscRx9FGllws4msh/C1eNC0TVTRFFoAhIg==}
+  '@public-ui/theme-kern@4.4.0':
+    resolution: {integrity: sha512-iTE148F6lS6TFUzGzXxosWa8SCor7D0gpsyuec/CiH5qnwjwHP4VYSL6hs4nG2riwqgzCU5a1kpwIlqF9pIODA==}
     peerDependencies:
-      '@public-ui/components': 4.3.0
+      '@public-ui/components': 4.4.0
 
   '@quansync/fs@1.0.0':
     resolution: {integrity: sha512-4TJ3DFtlf1L5LDMaM6CanJ/0lckGNtJcMjQ1NAV6zDmA0tEHKZtxNKin8EgPaVX1YzljbxckyT2tJrpQKAtngQ==}
@@ -6981,7 +6981,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@public-ui/components@4.3.0(adopted-style-sheets@1.1.9-rc.25)':
+  '@public-ui/components@4.4.0(adopted-style-sheets@1.1.9-rc.25)':
     dependencies:
       '@floating-ui/dom': 1.8.0
       adopted-style-sheets: 1.1.9-rc.25
@@ -6993,24 +6993,24 @@ snapshots:
       typed-bem: 1.0.2
       wcag-contrast: 3.0.0
 
-  '@public-ui/preact@4.3.0(@public-ui/react@4.3.0(@public-ui/components@4.3.0(adopted-style-sheets@1.1.9-rc.25))(react-dom@18.3.1(react@19.2.4))(react@19.2.4))(preact@10.29.8)':
+  '@public-ui/preact@4.4.0(@public-ui/react@4.4.0(@public-ui/components@4.4.0(adopted-style-sheets@1.1.9-rc.25))(react-dom@18.3.1(react@19.2.4))(react@19.2.4))(preact@10.29.8)':
     dependencies:
-      '@public-ui/react': 4.3.0(@public-ui/components@4.3.0(adopted-style-sheets@1.1.9-rc.25))(react-dom@18.3.1(react@19.2.4))(react@19.2.4)
+      '@public-ui/react': 4.4.0(@public-ui/components@4.4.0(adopted-style-sheets@1.1.9-rc.25))(react-dom@18.3.1(react@19.2.4))(react@19.2.4)
       preact: 10.29.8(preact-render-to-string@6.7.0)
 
-  '@public-ui/react@4.3.0(@public-ui/components@4.3.0(adopted-style-sheets@1.1.9-rc.25))(react-dom@18.3.1(react@19.2.4))(react@19.2.4)':
+  '@public-ui/react@4.4.0(@public-ui/components@4.4.0(adopted-style-sheets@1.1.9-rc.25))(react-dom@18.3.1(react@19.2.4))(react@19.2.4)':
     dependencies:
-      '@public-ui/components': 4.3.0(adopted-style-sheets@1.1.9-rc.25)
+      '@public-ui/components': 4.4.0(adopted-style-sheets@1.1.9-rc.25)
       react: 19.2.4
       react-dom: 18.3.1(react@19.2.4)
 
-  '@public-ui/theme-default@4.3.0(@public-ui/components@4.3.0(adopted-style-sheets@1.1.9-rc.25))':
+  '@public-ui/theme-default@4.4.0(@public-ui/components@4.4.0(adopted-style-sheets@1.1.9-rc.25))':
     dependencies:
-      '@public-ui/components': 4.3.0(adopted-style-sheets@1.1.9-rc.25)
+      '@public-ui/components': 4.4.0(adopted-style-sheets@1.1.9-rc.25)
 
-  '@public-ui/theme-kern@4.3.0(@public-ui/components@4.3.0(adopted-style-sheets@1.1.9-rc.25))':
+  '@public-ui/theme-kern@4.4.0(@public-ui/components@4.4.0(adopted-style-sheets@1.1.9-rc.25))':
     dependencies:
-      '@public-ui/components': 4.3.0(adopted-style-sheets@1.1.9-rc.25)
+      '@public-ui/components': 4.4.0(adopted-style-sheets@1.1.9-rc.25)
 
   '@quansync/fs@1.0.0':
     dependencies:
