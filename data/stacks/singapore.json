@@ -10,8 +10,8 @@
 	},
 	"country": "SG",
 	"issuer": "GovTech Singapore",
-	"version": "0.1.0",
-	"publishedAt": "2026-04-13",
+	"version": "0.1.1",
+	"publishedAt": "2026-09-21",
 	"items": [
 		{
 			"itemId": "singpass",
@@ -147,7 +147,7 @@
 				"en": "Singapore Government Tech Stack",
 				"fr": "Singapore Government Tech Stack"
 			},
-			"url": "https://www.tech.gov.sg/products-and-services/sgts",
+			"url": "https://www.tech.gov.sg/products-and-services/for-government-agencies/software-development/sg-tech-stack/",
 			"type": "url"
 		},
 		{
