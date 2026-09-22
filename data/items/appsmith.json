@@ -16,7 +16,7 @@
 	"sovereigntyCriteria": {
 		"openSource": true,
 		"euHeadquartered": false,
-		"hasAudit": false,
+		"hasAudit": true,
 		"permissiveLicense": true,
 		"matureProject": true,
 		"selfHostable": true,
@@ -26,11 +26,11 @@
 		"ownerType": "corporation"
 	},
 	"audit": {
-		"lastDate": "2025-11-11",
-		"url": "https://github.com/appsmithorg/appsmith"
+		"lastDate": "2022-09-29",
+		"url": "https://www.appsmith.com/blog/appsmith-has-been-certified-soc-2-type-ii"
 	},
 	"license": "Apache-2.0",
-	"lastResearchDate": "2026-05-02",
+	"lastResearchDate": "2026-09-22",
 	"researchSources": [
 		{
 			"type": "url",
@@ -39,6 +39,14 @@
 		{
 			"type": "url",
 			"url": "https://github.com/appsmithorg/appsmith"
+		},
+		{
+			"type": "url",
+			"url": "https://www.appsmith.com/blog/appsmith-has-been-certified-soc-2-type-ii"
+		},
+		{
+			"type": "url",
+			"url": "https://docs.appsmith.com/product/telemetry"
 		}
 	]
 }
