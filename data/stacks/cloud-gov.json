@@ -10,16 +10,16 @@
 	},
 	"country": "US",
 	"issuer": "U.S. General Services Administration (GSA)",
-	"version": "0.1.0",
-	"publishedAt": "2026-04-16",
+	"version": "0.1.1",
+	"publishedAt": "2026-09-23",
 	"items": [
 		{
 			"itemId": "docker-swarm",
-			"status": "approved",
+			"status": "deprecated",
 			"role": "consumer",
 			"rationale": {
-				"de": "Containerisierte Workloads bilden die operative Basis der Plattform.",
-				"en": "Containerized workloads form the operational base of the platform."
+				"de": "cloud.gov betreibt Anwendungen auf Cloud Foundry (Diego), nicht auf Docker Swarm; daher als deprecated markiert.",
+				"en": "cloud.gov runs applications on Cloud Foundry (Diego), not Docker Swarm; therefore marked as deprecated."
 			}
 		},
 		{
@@ -33,11 +33,11 @@
 		},
 		{
 			"itemId": "kubernetes",
-			"status": "approved",
+			"status": "deprecated",
 			"role": "consumer",
 			"rationale": {
-				"de": "Cloud-native Betriebsmodell mit orchestrierten Plattformkomponenten.",
-				"en": "Cloud-native operations model with orchestrated platform components."
+				"de": "Die Plattform basiert auf Cloud Foundry, nicht auf Kubernetes; daher als deprecated markiert.",
+				"en": "The platform is based on Cloud Foundry, not Kubernetes; therefore marked as deprecated."
 			}
 		},
 		{
@@ -83,7 +83,7 @@
 				"de": "cloud.gov GitHub",
 				"en": "cloud.gov GitHub"
 			},
-			"url": "https://github.com/18F/cloud-gov"
+			"url": "https://github.com/cloud-gov"
 		}
 	]
 }
