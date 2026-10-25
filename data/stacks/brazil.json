@@ -10,8 +10,8 @@
 	},
 	"country": "BR",
 	"issuer": "Secretaria de Governo Digital / Banco Central do Brasil",
-	"version": "0.1.0",
-	"publishedAt": "2026-04-16",
+	"version": "0.1.1",
+	"publishedAt": "2026-10-25",
 	"items": [
 		{
 			"itemId": "docker-swarm",
@@ -120,6 +120,14 @@
 				"en": "Central Bank of Brazil"
 			},
 			"url": "https://www.bcb.gov.br/"
+		},
+		{
+			"type": "url",
+			"label": {
+				"de": "Pix (Echtzeit-Zahlungssystem, Banco Central)",
+				"en": "Pix (real-time payment system, Central Bank)"
+			},
+			"url": "https://www.bcb.gov.br/estabilidadefinanceira/pix"
 		}
 	]
 }
